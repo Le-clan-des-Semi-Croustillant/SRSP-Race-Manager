@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "consoleTests/1.0.0": {
+        "dependencies": {
+          "RaceManager": "1.0.0"
+        },
+        "runtime": {
+          "consoleTests.dll": {}
+        }
+      },
+      "RaceManager/1.0.0": {
+        "runtime": {
+          "RaceManager.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "consoleTests/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RaceManager/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
