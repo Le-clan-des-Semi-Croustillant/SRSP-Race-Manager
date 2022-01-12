@@ -15,7 +15,7 @@ namespace Race_Manager.Communication
         public const int BufferSize = 1024;
         // Receive buffer.
         public byte[] buffer = new byte[BufferSize];
-        // Received data string.
+        // Received data string. 
         public StringBuilder sb = new StringBuilder();
     }
 
@@ -39,18 +39,18 @@ namespace Race_Manager.Communication
             IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());
 
             IPAddress ipAddress = ipHostInfo.AddressList[0];
-            if (ipAddress.AddressFamily == AddressFamily.InterNetworkV6)
-            {
-                ipAddress = ipHostInfo.AddressList[1];
-            }
+            //if (ipAddress.AddressFamily == AddressFamily.InterNetworkV6)
+            //{
+            //    ipAddress = ipHostInfo.AddressList[1];
+            //}
             Console.WriteLine(ipAddress.ToString());
 
             IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 11000);
 
             // Create a TCP/IP socket.
-            Socket listener = new Socket(AddressFamily.InterNetwork,
+            Socket listener = new Socket(AddressFamily.InterNetworkV6,
                 SocketType.Stream, ProtocolType.Tcp);
-
+            listener.SetSocketOption(SocketOptionLevel.IPv6, SocketOptionName.IPv6Only, false);
             // Bind the socket to the local endpoint and listen for incoming connections.
             try
             {

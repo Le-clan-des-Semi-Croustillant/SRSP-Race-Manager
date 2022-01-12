@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Documents\\GitHub\\LCSC-Sailing-Race-Simulation-Plateform\\consoleTests\\consoleTests.csproj": {}
+    "G:\\Documents\\GitHub\\SRSP-Race-Manager\\consoleTests\\consoleTests.csproj": {}
   },
   "projects": {
-    "G:\\Documents\\GitHub\\LCSC-Sailing-Race-Simulation-Plateform\\consoleTests\\consoleTests.csproj": {
+    "G:\\Documents\\GitHub\\SRSP-Race-Manager\\consoleTests\\consoleTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Documents\\GitHub\\LCSC-Sailing-Race-Simulation-Plateform\\consoleTests\\consoleTests.csproj",
+        "projectUniqueName": "G:\\Documents\\GitHub\\SRSP-Race-Manager\\consoleTests\\consoleTests.csproj",
         "projectName": "consoleTests",
-        "projectPath": "G:\\Documents\\GitHub\\LCSC-Sailing-Race-Simulation-Plateform\\consoleTests\\consoleTests.csproj",
+        "projectPath": "G:\\Documents\\GitHub\\SRSP-Race-Manager\\consoleTests\\consoleTests.csproj",
         "packagesPath": "C:\\Users\\green\\.nuget\\packages\\",
-        "outputPath": "G:\\Documents\\GitHub\\LCSC-Sailing-Race-Simulation-Plateform\\consoleTests\\obj\\",
+        "outputPath": "G:\\Documents\\GitHub\\SRSP-Race-Manager\\consoleTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\green\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "G:\\Documents\\GitHub\\LCSC-Sailing-Race-Simulation-Plateform\\Race Manager\\RaceManager.csproj": {
-                "projectPath": "G:\\Documents\\GitHub\\LCSC-Sailing-Race-Simulation-Plateform\\Race Manager\\RaceManager.csproj"
+              "G:\\Documents\\GitHub\\SRSP-Race-Manager\\Race Manager\\RaceManager.csproj": {
+                "projectPath": "G:\\Documents\\GitHub\\SRSP-Race-Manager\\Race Manager\\RaceManager.csproj"
               }
             }
           }
@@ -62,14 +62,14 @@
         }
       }
     },
-    "G:\\Documents\\GitHub\\LCSC-Sailing-Race-Simulation-Plateform\\Race Manager\\RaceManager.csproj": {
+    "G:\\Documents\\GitHub\\SRSP-Race-Manager\\Race Manager\\RaceManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Documents\\GitHub\\LCSC-Sailing-Race-Simulation-Plateform\\Race Manager\\RaceManager.csproj",
+        "projectUniqueName": "G:\\Documents\\GitHub\\SRSP-Race-Manager\\Race Manager\\RaceManager.csproj",
         "projectName": "RaceManager",
-        "projectPath": "G:\\Documents\\GitHub\\LCSC-Sailing-Race-Simulation-Plateform\\Race Manager\\RaceManager.csproj",
+        "projectPath": "G:\\Documents\\GitHub\\SRSP-Race-Manager\\Race Manager\\RaceManager.csproj",
         "packagesPath": "C:\\Users\\green\\.nuget\\packages\\",
-        "outputPath": "G:\\Documents\\GitHub\\LCSC-Sailing-Race-Simulation-Plateform\\Race Manager\\obj\\",
+        "outputPath": "G:\\Documents\\GitHub\\SRSP-Race-Manager\\Race Manager\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\green\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -97,6 +97,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "docfx.console": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.58.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

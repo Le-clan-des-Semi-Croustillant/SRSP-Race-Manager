@@ -7,4 +7,16 @@
     <RootNamespace>Race_Manager</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="index.md" />
+    <None Remove="toc.yml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="docfx.console" Version="2.58.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
 </Project>

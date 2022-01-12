@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8IWOh35ekQPMgLwlOLckTbatV07HfhPG4Cf4MrEvl8Czakz+iL/kHgUsO8PkjzhcBQzyPA75yXQUETgoCg0zKQ==",
+  "dgSpecHash": "rEW6yG4d6ojKcINNUZ6TWaswKB/MZFMF7youNWscn7Br7YUPhMokxo/sYoNiaqfgWOwr9+V/vfXT/Np3gVnW+Q==",
   "success": true,
-  "projectFilePath": "G:\\Documents\\GitHub\\LCSC-Sailing-Race-Simulation-Plateform\\consoleTests\\consoleTests.csproj",
+  "projectFilePath": "G:\\Documents\\GitHub\\SRSP-Race-Manager\\consoleTests\\consoleTests.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

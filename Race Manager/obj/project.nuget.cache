@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "bm2Ltw6h9V1wsTKsVpNqieNLYqdiGdswJPRtrTe2lLOMY1j7gN4GgQKZECSIaAp5WPaiwhTkc4zhzuNGUXs3Iw==",
+  "dgSpecHash": "PLfqkpnnYLFrD0eO3fznMajGykIAXMzrlvcCm9CBiLes4tEKkk6GHmYbtGc6VZAhOuvjuJbgcyG76fUqaaJv3Q==",
   "success": true,
-  "projectFilePath": "G:\\Documents\\GitHub\\LCSC-Sailing-Race-Simulation-Plateform\\Race Manager\\RaceManager.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "G:\\Documents\\GitHub\\SRSP-Race-Manager\\Race Manager\\RaceManager.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\green\\.nuget\\packages\\docfx.console\\2.58.9\\docfx.console.2.58.9.nupkg.sha512"
+  ],
   "logs": []
 }
