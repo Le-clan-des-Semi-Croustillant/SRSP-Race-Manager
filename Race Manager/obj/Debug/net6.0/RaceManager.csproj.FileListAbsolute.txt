@@ -50,3 +50,4 @@ G:\Documents\GitHub\SRSP-Race-Manager\Race Manager\obj\Debug\net6.0\ref\RaceMana
 G:\Documents\GitHub\SRSP-Race-Manager\Race Manager\obj\Debug\net6.0\RaceManager.pdb
 G:\Documents\GitHub\SRSP-Race-Manager\Race Manager\obj\Debug\net6.0\RaceManager.genruntimeconfig.cache
 G:\Documents\GitHub\SRSP-Race-Manager\Race Manager\bin\Debug\net6.0\docfx.json
+G:\Documents\GitHub\SRSP-Race-Manager\Race Manager\obj\Debug\net6.0\RaceManager.csproj.AssemblyReference.cache

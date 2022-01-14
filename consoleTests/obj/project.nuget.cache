@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "rEW6yG4d6ojKcINNUZ6TWaswKB/MZFMF7youNWscn7Br7YUPhMokxo/sYoNiaqfgWOwr9+V/vfXT/Np3gVnW+Q==",
+  "dgSpecHash": "tcfedd6Xk8l/qoJf0EamgqzfSgo2RZjK1vg0K8G8W5ZStiMPWHsESx4O3+0WoMfPbjy/7pPrxMaw3BCzzoIsHQ==",
   "success": true,
   "projectFilePath": "G:\\Documents\\GitHub\\SRSP-Race-Manager\\consoleTests\\consoleTests.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\green\\.nuget\\packages\\dvdpro.staruml.fileformat\\0.2.1\\dvdpro.staruml.fileformat.0.2.1.nupkg.sha512",
+    "C:\\Users\\green\\.nuget\\packages\\system.text.json\\4.6.0\\system.text.json.4.6.0.nupkg.sha512"
+  ],
   "logs": []
 }

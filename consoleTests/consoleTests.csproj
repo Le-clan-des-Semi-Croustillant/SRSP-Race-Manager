@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="DVDpro.StarUML.FileFormat" Version="0.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Race Manager\RaceManager.csproj" />
   </ItemGroup>
 

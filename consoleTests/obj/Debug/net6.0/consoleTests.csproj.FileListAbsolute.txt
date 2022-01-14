@@ -46,3 +46,4 @@ G:\Documents\GitHub\SRSP-Race-Manager\consoleTests\obj\Debug\net6.0\consoleTests
 G:\Documents\GitHub\SRSP-Race-Manager\consoleTests\obj\Debug\net6.0\ref\consoleTests.dll
 G:\Documents\GitHub\SRSP-Race-Manager\consoleTests\obj\Debug\net6.0\consoleTests.pdb
 G:\Documents\GitHub\SRSP-Race-Manager\consoleTests\obj\Debug\net6.0\consoleTests.genruntimeconfig.cache
+G:\Documents\GitHub\SRSP-Race-Manager\consoleTests\bin\Debug\net6.0\docfx.json

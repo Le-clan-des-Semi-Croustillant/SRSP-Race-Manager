@@ -19,35 +19,26 @@ namespace Race_Manager.Communication
         public StringBuilder sb = new StringBuilder();
     }
 
-    public class AsynchronousSocketListener
+    public partial class AsyncServer
     {
+        
         // Thread signal.
         public static ManualResetEvent allDone = new ManualResetEvent(false);
 
-        public AsynchronousSocketListener()
+        public AsyncServer()
         {
         }
 
-        public static void StartListening()
+        public static void StartListening(int port)
         {
             // Data buffer for incoming data.
             byte[] bytes = new Byte[1024];
 
-            // Establish the local endpoint for the socket.
-            // The DNS name of the computer
-            // running the listener is "host.contoso.com".
+            // Réservation du port d'écoute selon l'ip du serveur.
             IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());
-
             IPAddress ipAddress = ipHostInfo.AddressList[0];
-            //if (ipAddress.AddressFamily == AddressFamily.InterNetworkV6)
-            //{
-            //    ipAddress = ipHostInfo.AddressList[1];
-            //}
-            Console.WriteLine(ipAddress.ToString());
-
-            IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 11000);
-
-            // Create a TCP/IP socket.
+            Console.WriteLine("Adresse de l'hote : " + ipAddress);
+            IPEndPoint localEndPoint = new IPEndPoint(ipAddress, port);
             Socket listener = new Socket(AddressFamily.InterNetworkV6,
                 SocketType.Stream, ProtocolType.Tcp);
             listener.SetSocketOption(SocketOptionLevel.IPv6, SocketOptionName.IPv6Only, false);
@@ -173,7 +164,7 @@ namespace Race_Manager.Communication
 
         public static int Main(String[] args)
         {
-            StartListening();
+            StartListening(1000);
             return 0;
         }
     }

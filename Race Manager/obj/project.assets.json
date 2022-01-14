@@ -7,6 +7,27 @@
         "build": {
           "build/docfx.console.targets": {}
         }
+      },
+      "DVDpro.StarUML.FileFormat/0.2.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Json": "4.6.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/DVDpro.StarUML.FileFormat.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/DVDpro.StarUML.FileFormat.dll": {}
+        }
+      },
+      "System.Text.Json/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {}
+        }
       }
     }
   },
@@ -241,10 +262,44 @@
         "tools/docfx_project/toc.yml",
         "tools/itextsharp.dll"
       ]
+    },
+    "DVDpro.StarUML.FileFormat/0.2.1": {
+      "sha512": "k78oBu0jdCNI1BtW+l4gDEfUYKkoWYoVvA0Fbhv/gz4z+u4Ht+CnPGrs+snEUf6QAK0xrxTKTe9BQCLJMuwcSw==",
+      "type": "package",
+      "path": "dvdpro.staruml.fileformat/0.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dvdpro.staruml.fileformat.0.2.1.nupkg.sha512",
+        "dvdpro.staruml.fileformat.nuspec",
+        "lib/netstandard2.0/DVDpro.StarUML.FileFormat.dll"
+      ]
+    },
+    "System.Text.Json/4.6.0": {
+      "sha512": "4F8Xe+JIkVoDJ8hDAZ7HqLkjctN/6WItJIzQaifBwClC7wmoLSda/Sv2i6i1kycqDb3hWF4JCVbpAweyOKHEUA==",
+      "type": "package",
+      "path": "system.text.json/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Text.Json.dll",
+        "lib/net461/System.Text.Json.xml",
+        "lib/netcoreapp3.0/System.Text.Json.dll",
+        "lib/netcoreapp3.0/System.Text.Json.xml",
+        "lib/netstandard2.0/System.Text.Json.dll",
+        "lib/netstandard2.0/System.Text.Json.xml",
+        "system.text.json.4.6.0.nupkg.sha512",
+        "system.text.json.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "DVDpro.StarUML.FileFormat >= 0.2.1",
       "docfx.console >= 2.58.9"
     ]
   },
@@ -287,6 +342,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "DVDpro.StarUML.FileFormat": {
+            "target": "Package",
+            "version": "[0.2.1, )"
+          },
           "docfx.console": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",

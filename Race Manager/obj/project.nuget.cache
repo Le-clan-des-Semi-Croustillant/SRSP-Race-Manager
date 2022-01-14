@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "PLfqkpnnYLFrD0eO3fznMajGykIAXMzrlvcCm9CBiLes4tEKkk6GHmYbtGc6VZAhOuvjuJbgcyG76fUqaaJv3Q==",
+  "dgSpecHash": "RE3x/Bkr633kANZPefTN6ZV8IFEtSJgMIOT4CSV1OzLErmXONI3Wn8yvJbqWG0g78RDRQbxdnk/vIn+BlgW/Ww==",
   "success": true,
   "projectFilePath": "G:\\Documents\\GitHub\\SRSP-Race-Manager\\Race Manager\\RaceManager.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\green\\.nuget\\packages\\docfx.console\\2.58.9\\docfx.console.2.58.9.nupkg.sha512"
+    "C:\\Users\\green\\.nuget\\packages\\docfx.console\\2.58.9\\docfx.console.2.58.9.nupkg.sha512",
+    "C:\\Users\\green\\.nuget\\packages\\dvdpro.staruml.fileformat\\0.2.1\\dvdpro.staruml.fileformat.0.2.1.nupkg.sha512",
+    "C:\\Users\\green\\.nuget\\packages\\system.text.json\\4.6.0\\system.text.json.4.6.0.nupkg.sha512"
   ],
   "logs": []
 }

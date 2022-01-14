@@ -6,5 +6,5 @@
 Console.WriteLine("Hello, World!");
 string[] str = new string[] { "a", "b" };
 
-AsynchronousSocketListener.Main(str);
+AsyncServer.Main(str);
 Console.WriteLine();
