@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Documents\\GitHub\\SRSP-Race-Manager\\Race Manager\\RaceManager.csproj": {}
+    "C:\\Users\\green\\Desktop\\SRSP-Race-Manager\\Race Manager\\RaceManager.csproj": {}
   },
   "projects": {
-    "G:\\Documents\\GitHub\\SRSP-Race-Manager\\Race Manager\\RaceManager.csproj": {
+    "C:\\Users\\green\\Desktop\\SRSP-Race-Manager\\Race Manager\\RaceManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Documents\\GitHub\\SRSP-Race-Manager\\Race Manager\\RaceManager.csproj",
+        "projectUniqueName": "C:\\Users\\green\\Desktop\\SRSP-Race-Manager\\Race Manager\\RaceManager.csproj",
         "projectName": "RaceManager",
-        "projectPath": "G:\\Documents\\GitHub\\SRSP-Race-Manager\\Race Manager\\RaceManager.csproj",
+        "projectPath": "C:\\Users\\green\\Desktop\\SRSP-Race-Manager\\Race Manager\\RaceManager.csproj",
         "packagesPath": "C:\\Users\\green\\.nuget\\packages\\",
-        "outputPath": "G:\\Documents\\GitHub\\SRSP-Race-Manager\\Race Manager\\obj\\",
+        "outputPath": "C:\\Users\\green\\Desktop\\SRSP-Race-Manager\\Race Manager\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\green\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -69,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200-preview.21617.4\\RuntimeIdentifierGraph.json"
         }
       }
     }

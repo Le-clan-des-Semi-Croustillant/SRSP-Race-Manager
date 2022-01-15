@@ -1,114 +1,18 @@
 {
   "homepages": [],
-  "source_base_path": "G:/Documents/GitHub/SRSP-Race-Manager/Race Manager",
+  "source_base_path": "C:/Users/green/Desktop/SRSP-Race-Manager/Race Manager",
   "xrefmap": "xrefmap.yml",
   "files": [
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.Communication.AsynchronousSocketListener.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.Communication.AsynchronousSocketListener.html",
-          "hash": "tt/tcJ+kG2t/XTXfVdyLU8sFBfoTJV/k/Mgf67N+VmQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.Communication.StateObject.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.Communication.StateObject.html",
-          "hash": "Hd8sOG9fgRt7BwyOEZayOqxPavtrjsZ162JYXDZ2u4Y="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.Communication.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.Communication.html",
-          "hash": "6V8v+D9tRXcHamm9fOZBW1rhzzblljzbYDIP0kO4dsk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.Controllers.HomeController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.Controllers.HomeController.html",
-          "hash": "xWrDV3A5t7pdkMHUB9Bvg4e0RzQcY+mnh6MAJXGIf0w="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.Controllers.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.Controllers.html",
-          "hash": "6ENTlKPHnEHyQpS84c1kQTaeG1qiVfS2z0Ijpvly9BU="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.Models.ErrorViewModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.Models.ErrorViewModel.html",
-          "hash": "fEpjo3sLxP/fP2NWIhNs5f7FGHfr4SrjsmHRb7TTtpI="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.Models.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.Models.html",
-          "hash": "KMBzX0iviuMV700cm3/H267FZL/5S6bAZKv0c4Ny+60="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
     {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "3yK6g7SLDI2O+bsBEkLp4onW5P5S7Zrp0gYdXu9GYlM="
+          "hash": "2vz3gxuuGfvY7SSiaqJBffJLuGPHJXXhj75VjGf5rYw="
         }
       },
       "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "api/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "dBYek0U0/CLrQ7iUt6rox6z+tHQTCz9D3s1KJ6SoW/E="
-        }
-      },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -117,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "AEOap43CVKY/dsP0PEsDnseN4M8SBYFAYSN3y1yF7nI="
+          "hash": "J16tPljbCW5UQZHXkCSKEgj/ndCORtU7lIyC3KiEN9I="
         }
       },
       "is_incremental": true,
@@ -141,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "Z3b7pvAJ581UT9PzOHbeKMUM58uHib8SLL92L0N+MLk="
+          "hash": "71UpMZJug9QybLQYimi63CvRXELuAw6EFW73qUKtaok="
         }
       },
       "is_incremental": true,
@@ -153,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "WSuRrYiGwKKMbtdG9z8W9fXmLoCyTnGg9AxbPKLXm2Y="
+          "hash": "4TEgJl9AhuPIoP9weFbgLuRejAX7WRouRdNP0UiX0nY="
         }
       },
       "is_incremental": false,
@@ -174,12 +78,6 @@
           "incrementalPhase": "build",
           "total_file_count": 3,
           "skipped_file_count": 3
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 7,
-          "skipped_file_count": 5
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
