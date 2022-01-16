@@ -5,6 +5,7 @@
         CONNECTION,
         DISCONNECTION,
         INFO,
+        BOATSELECT,
 
     }
 }

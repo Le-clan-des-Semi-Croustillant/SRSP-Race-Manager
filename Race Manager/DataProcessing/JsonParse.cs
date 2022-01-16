@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
+using Race_Manager.Communication;
 
-namespace Race_Manager.DataProssesing
+namespace Race_Manager.DataProcessing
 {
     public class JsonParse
     {
@@ -31,13 +32,13 @@ namespace Race_Manager.DataProssesing
         }
     }
 
-    public enum IMessageType
-    {
-        CONNECTION,
-        DISCONNECTION,
-        INFO,
-        BOATSELECT,
-    }
+    //public enum IMessageType
+    //{
+    //    CONNECTION,
+    //    DISCONNECTION,
+    //    INFO,
+    //    BOATSELECT,
+    //}
 
     class JsonInformation
     {
