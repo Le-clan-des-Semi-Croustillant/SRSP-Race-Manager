@@ -5,11 +5,11 @@ namespace Race_Manager.DataProcessing
 {
     public class JsonParse
     {
-        public static dynamic GameIdJsonDeserialize(string data)
+        public static dynamic JsonDeserialize(string data)
         {
             return JsonConvert.DeserializeObject(data);
         }
-        public static string DataFormatting(IMessageType TypeMessage, long Id, long IdGame, string NMEA, long Boat)
+        public static string JsonSerialise(IMessageType TypeMessage, long Id, long IdGame, string NMEA, long Boat)
         {
             var serialiseJsonInfo = new JsonInformation
             {
@@ -27,7 +27,7 @@ namespace Race_Manager.DataProcessing
     {
         public static void TraitementIMessageType()
         {
-            JsonParse.GameIdJsonDeserialize(data);
+            JsonParse.JsonDeserialize(data);
 
         }
     }
@@ -47,7 +47,6 @@ namespace Race_Manager.DataProcessing
         public long IdGame { get; set; }
         public string? NMEA { get; set; }
         public long Boat { get; set; }
-
     }
 
     class EnvironmentInfo
