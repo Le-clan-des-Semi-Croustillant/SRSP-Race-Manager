@@ -1,3 +1,11 @@
 {
-
+  "TypeMessage": 0,
+  "Id": 4242,
+  "IdGame": 1,
+  "NMEA": "YOLO",
+  "Boat": 0,
+  "EnvironmentInfos": {
+    "IdPlayer": 123,
+    "NamePlayer": "Sky"
+  }
 }

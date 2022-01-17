@@ -150,6 +150,7 @@ namespace consoleTests
                     if (state.sb.Length > 1)
                     {
                         response = state.sb.ToString();
+                        Console.WriteLine(response);
                     }
                     // Signal that all bytes have been received.  
                     receiveDone.Set();
