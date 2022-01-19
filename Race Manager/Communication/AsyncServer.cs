@@ -3,6 +3,8 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
+using Microsoft.AspNetCore.SignalR;
+
 namespace Race_Manager.Communication
 {
     // https://docs.microsoft.com/en-us/dotnet/framework/network-programming/asynchronous-server-socket-example?redirectedfrom=MSDN
@@ -23,7 +25,10 @@ namespace Race_Manager.Communication
     {
 
         private static List<Client> clients = new List<Client>();
-        
+
+        private static Thread thread;
+        private static int Port {get;set;}
+
         // Semaphore
         public static ManualResetEvent allDone = new ManualResetEvent(false);
 
@@ -31,7 +36,16 @@ namespace Race_Manager.Communication
         {
         }
 
-        public static void StartListening(int port)
+        public static void Run(int port)
+        {
+            Port = port;
+            thread = new Thread(new ThreadStart(StartListening));
+        }
+
+
+
+
+        private static void StartListening()
         {
             // Data buffer for incoming data.
             byte[] bytes = new byte[1024];
@@ -40,7 +54,7 @@ namespace Race_Manager.Communication
             IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());
             IPAddress ipAddress = ipHostInfo.AddressList[0];
             Console.WriteLine("Adresse de l'hote : " + ipAddress);
-            IPEndPoint localEndPoint = new IPEndPoint(ipAddress, port);
+            IPEndPoint localEndPoint = new IPEndPoint(ipAddress, Port);
             Socket listener = new Socket(AddressFamily.InterNetworkV6,
                 SocketType.Stream, ProtocolType.Tcp);
             listener.SetSocketOption(SocketOptionLevel.IPv6, SocketOptionName.IPv6Only, false);
