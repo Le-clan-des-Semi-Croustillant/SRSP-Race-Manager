@@ -27,7 +27,7 @@ namespace Race_Manager.DataProcessing
     {
         public static void TraitementIMessageType()
         {
-            JsonParse.JsonDeserialize(data);
+            //JsonParse.JsonDeserialize(data);
 
         }
     }
