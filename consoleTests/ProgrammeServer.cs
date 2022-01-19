@@ -3,7 +3,7 @@ using Race_Manager.DataProcessing;
 
 // See https://aka.ms/new-console-template for more information
 
-class Server
+class ProgrammeServer
 {
     public static int Main(String[] args)
     {
@@ -25,6 +25,7 @@ class Server
         string[] str = new string[] { "a", "b" };
 
         AsyncServer.StartListening(65432);
+
 
         Console.WriteLine();
         return 0;
