@@ -136,3 +136,5 @@ _NCrunch*
 consoleTests/obj/project.nuget.cache
 *.cache
 docs/manifest.json
+Race Manager/log.txt
+Race Manager/api/**

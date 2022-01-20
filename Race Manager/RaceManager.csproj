@@ -8,8 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="V1\**" />
+    <Content Remove="V1\**" />
+    <EmbeddedResource Remove="V1\**" />
+    <None Remove="V1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="index.md" />
+    <None Remove="Models.7z" />
     <None Remove="toc.yml" />
+    <None Remove="Views.7z" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,5 +29,7 @@
     <PackageReference Include="DVDpro.StarUML.FileFormat" Version="0.2.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
 
 </Project>
