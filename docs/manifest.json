@@ -1,162 +1,18 @@
 {
   "homepages": [],
-  "source_base_path": "G:/Documents/GitHub/SRSP-Race-Manager/Race Manager",
+  "source_base_path": "C:/Users/Sky/Documents/GitHub/LCSC/SRSP-Race-Manager/Race Manager",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RaceManager.Pages.ErrorModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RaceManager.Pages.ErrorModel.html",
-          "hash": "1nvjD8SYpVmZDtqgbgZPMB8iKg3SuxweM6AdEFmWohk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RaceManager.Pages.IndexModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RaceManager.Pages.IndexModel.html",
-          "hash": "IS+QCF3cUMeZgOPMT6d9Y5E8ysRUF6UUjXFlUNo8v5s="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RaceManager.Pages.PrivacyModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RaceManager.Pages.PrivacyModel.html",
-          "hash": "DcWDFSYkuyEx3UiWMrxx28SjtfJXLMbWO1QYy8XJGnw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RaceManager.Pages.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RaceManager.Pages.html",
-          "hash": "75rH0+AEZNEl1+U15DIfVlPacxx9xwmvO5SsXM6tsAo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.Communication.AsyncServer.Client.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.Communication.AsyncServer.Client.html",
-          "hash": "rjcfDm7qsIq+ftYVARx0/6UFRp2xJvXizQNiCc7wlr4="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.Communication.AsyncServer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.Communication.AsyncServer.html",
-          "hash": "xe906pyvG4A30zI5BZ92Bt+6/OudGf2AdZfMAmGDKSc="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.Communication.IMessageType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.Communication.IMessageType.html",
-          "hash": "+bYOjnu87sM9mbmLn41hK0t2JWGoDtRQKSQVDAaBFvM="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.Communication.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.Communication.html",
-          "hash": "NWLdI9OaU87VVJrw0dFph+IpW1qimCamS7tORfla4fY="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.JsonManage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.JsonManage.html",
-          "hash": "+c05osPvBAS2KJPDaNhbLXDfdsDxHM1aj2g5b1lWQ3o="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.JsonParse.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.JsonParse.html",
-          "hash": "EajoJlF3pfX7K/TjhA8RdRhbd7oifwUK+GsQZnr8OAM="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.html",
-          "hash": "rFN1ZtS/+9XH4rheeF8bzKsQshsoDjN85Y8Hwxy0dx4="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "api/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "Y/gnRr3LS2ZwCvG9iJkqJuDOvFGxt8iahdLhHesLuAk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
-      "source_relative_path": "articles/index.md",
+      "source_relative_path": "api/index.md",
       "output": {
         ".html": {
-          "relative_path": "articles/index.html",
-          "hash": "jfnxt95MYPSjbEmPM782zw1RIejpm6pjR7vXraKFBpc="
+          "relative_path": "api/index.html",
+          "hash": "ac2Rn2iKc1/gygam9woxI+hyLwmdJeJU9Xa30F9BU/M="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -165,22 +21,43 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "1poyl8MUd8OhMDwigw+9hmtLCs9GTPxd1tquOVPAHCA="
+          "hash": "J6xPGjqQ5OMBR2GomAE6KztqUiY6y00yo95JKX0M4WY="
         }
       },
       "is_incremental": true,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "articles/toc.yml",
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "GkqRvUX4aHPK8en2VX+VPlhYLGzWD9Ajmsj5Pj1q6Hc="
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "INYfS7Le4GHBbRPZiMBQooR+skDlviDkKrFStk6cMvU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "4TEgJl9AhuPIoP9weFbgLuRejAX7WRouRdNP0UiX0nY="
         }
       },
       "is_incremental": false,
@@ -199,14 +76,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 2,
-          "skipped_file_count": 1
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 11,
-          "skipped_file_count": 8
+          "total_file_count": 3,
+          "skipped_file_count": 3
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
