@@ -4,11 +4,11 @@ using System.Diagnostics;
 
 namespace Race_Manager.Controllers
 {
-    public class HomeController : Controller
+    public class RaceManagerController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<RaceManagerController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public RaceManagerController(ILogger<RaceManagerController> logger)
         {
             _logger = logger;
         }
@@ -18,7 +18,7 @@ namespace Race_Manager.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Config()
         {
             return View();
         }
