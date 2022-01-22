@@ -5,7 +5,7 @@
     <TargetFramework>net6.0-windows7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>ProgrammeServer</StartupObject>
+    <StartupObject>consoleTests.Launcher_NMEA_001</StartupObject>
     <BaseOutputPath>bin</BaseOutputPath>
   </PropertyGroup>
 

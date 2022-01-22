@@ -1,5 +1,6 @@
 ﻿using Race_Manager.Communication;
 using Race_Manager.DataProcessing;
+using Race_Manager.DataProcessing.Json;
 
 // See https://aka.ms/new-console-template for more information
 
@@ -24,7 +25,7 @@ class ProgrammeServer
 
         string[] str = new string[] { "a", "b" };
 
-        AsyncServer.StartListening(65432);
+        //AsyncServer.StartListening(65432);
 
 
         Console.WriteLine();

@@ -1,6 +1,6 @@
 ﻿using Race_Manager.DataProcessing;
 
-namespace Race_Manager.DataProcessing
+namespace Race_Manager.DataProcessing.Json
 {
     public class JsonManage
     {
