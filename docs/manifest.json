@@ -1,162 +1,18 @@
 {
   "homepages": [],
-  "source_base_path": "G:/Documents/GitHub/SRSP-Race-Manager/Race Manager",
+  "source_base_path": "C:/Users/MOUSSAOUI/Documents/DoxygenC/SRSP-Race-Manager/Race Manager",
   "xrefmap": "xrefmap.yml",
   "files": [
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.Communication.AsyncServer.Client.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.Communication.AsyncServer.Client.html",
-          "hash": "rjcfDm7qsIq+ftYVARx0/6UFRp2xJvXizQNiCc7wlr4="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.Communication.AsyncServer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.Communication.AsyncServer.html",
-          "hash": "xe906pyvG4A30zI5BZ92Bt+6/OudGf2AdZfMAmGDKSc="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.Communication.IMessageType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.Communication.IMessageType.html",
-          "hash": "+bYOjnu87sM9mbmLn41hK0t2JWGoDtRQKSQVDAaBFvM="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.Communication.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.Communication.html",
-          "hash": "NWLdI9OaU87VVJrw0dFph+IpW1qimCamS7tORfla4fY="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.Controllers.RaceManagerController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.Controllers.RaceManagerController.html",
-          "hash": "OgmDLPDsGoQU7bsz6eZfZMNLjm5IvfeBKXMxTy+I3cg="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.Controllers.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.Controllers.html",
-          "hash": "CcojIZK1AVVFJtbMbw3MSvqyS9r7tgGy7xK0vVmEnhM="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.JsonManage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.JsonManage.html",
-          "hash": "+c05osPvBAS2KJPDaNhbLXDfdsDxHM1aj2g5b1lWQ3o="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.JsonParse.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.JsonParse.html",
-          "hash": "EajoJlF3pfX7K/TjhA8RdRhbd7oifwUK+GsQZnr8OAM="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.html",
-          "hash": "rFN1ZtS/+9XH4rheeF8bzKsQshsoDjN85Y8Hwxy0dx4="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.Models.ErrorViewModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.Models.ErrorViewModel.html",
-          "hash": "fEpjo3sLxP/fP2NWIhNs5f7FGHfr4SrjsmHRb7TTtpI="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.Models.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.Models.html",
-          "hash": "KMBzX0iviuMV700cm3/H267FZL/5S6bAZKv0c4Ny+60="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
     {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "3yK6g7SLDI2O+bsBEkLp4onW5P5S7Zrp0gYdXu9GYlM="
+          "hash": "2vz3gxuuGfvY7SSiaqJBffJLuGPHJXXhj75VjGf5rYw="
         }
       },
       "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "api/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "Wwulvt47ZxzuXXEdeUpHczAK8zr6+zxy/GCHc1MLwUs="
-        }
-      },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -165,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "1poyl8MUd8OhMDwigw+9hmtLCs9GTPxd1tquOVPAHCA="
+          "hash": "J16tPljbCW5UQZHXkCSKEgj/ndCORtU7lIyC3KiEN9I="
         }
       },
       "is_incremental": true,
@@ -189,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "Z3b7pvAJ581UT9PzOHbeKMUM58uHib8SLL92L0N+MLk="
+          "hash": "71UpMZJug9QybLQYimi63CvRXELuAw6EFW73qUKtaok="
         }
       },
       "is_incremental": true,
@@ -201,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "WSuRrYiGwKKMbtdG9z8W9fXmLoCyTnGg9AxbPKLXm2Y="
+          "hash": "4TEgJl9AhuPIoP9weFbgLuRejAX7WRouRdNP0UiX0nY="
         }
       },
       "is_incremental": false,
@@ -222,12 +78,6 @@
           "incrementalPhase": "build",
           "total_file_count": 3,
           "skipped_file_count": 3
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 11,
-          "skipped_file_count": 11
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
