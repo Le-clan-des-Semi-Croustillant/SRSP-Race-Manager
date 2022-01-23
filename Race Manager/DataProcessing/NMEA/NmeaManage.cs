@@ -1,5 +1,6 @@
 ﻿using System.Globalization;
-using Race_Manager.DataProcessing.NMEA;
+using System.Reflection;
+using Race_Manager.DataProcessing.NMEA.NmeaType;
 
 namespace Race_Manager.DataProcessing.NMEA
 {
@@ -8,11 +9,11 @@ namespace Race_Manager.DataProcessing.NMEA
     //    public string NmeaType = "$GPGGA,064036.289,4836.5375,N,00740.9373,E,1,04,3.2,200.2,M,,,,0000*0E";
 
     //}
-
     public class NmeaParse
     {
         public static void Parse(string NmeaFrame)
         {
+
             if (string.IsNullOrEmpty(NmeaFrame))
             {
                 Console.WriteLine("Invalid NMEA message : Message empty" + NmeaFrame + ".");
@@ -64,7 +65,7 @@ namespace Race_Manager.DataProcessing.NMEA
             }
 
             string[] NmeaFrameSplit = NmeaFrame.Split(",");
-            string NmeaIdTalker = NmeaFrameSplit[0].Substring(1,2);
+            string NmeaIdTalker = NmeaFrameSplit[0].Substring(1, 2);
             string NmeaIdFrame = NmeaFrameSplit[0].Substring(3);
             string[] NmeaMessage = NmeaFrameSplit.Skip(1).ToArray();
 
@@ -79,8 +80,58 @@ namespace Race_Manager.DataProcessing.NMEA
                 return;
             }
 
-            
+            //if (NmeaIdFrame.Equals("GGA"))
+            //{
+            //    var NmeaInformation = new GGA(NmeaIdTalker, NmeaMessage);
+            //}
 
+            //Console.WriteLine(messageTypes.ContainsKey(NmeaIdFrame));
+            //if (messageTypes.ContainsKey(NmeaIdFrame))
+            //{
+            //    _ = (NmeaParse)messageTypes[NmeaIdFrame].Invoke(new object[] { NmeaIdTalker, NmeaMessage });
+
+            //}
+
+
+
+            //Type type = typeof(GLL);
+            //MethodInfo method = type.GetMethod(NmeaIdFrame);
+            //method.Invoke(null, new object[] { NmeaIdTalker, NmeaMessage });
+
+            //GLL connard = new GLL(NmeaIdTalker, NmeaMessage);
+            //string result = (string)method.Invoke(connard, null);
+            //Console.WriteLine(result);
+
+            //ListNmeaType.IdFrame[NmeaIdFrame].Invoke(new object[] { NmeaIdTalker, NmeaMessage });
+
+            //var NmeaInformation = new[NmeaIdFrame];
+
+            //var NmeaInformation = new NmeaConstruct(NmeaIdTalker, NmeaIdFrame)
+            //{
+            //    TypeInformation = new GLL(NmeaIdTalker, NmeaMessage)
+            //};
+            //Console.WriteLine(NmeaInformation);
         }
+        //public class MyReflectionClass
+        //{
+        //    public string GGA()
+        //    {
+        //        return DateTime.Now.ToString();
+        //    }
+        //}
+
     }
+    //public class NmeaConstruct
+    //{
+    //    public NmeaConstruct(string NmeaIdTalker, string NmeaIdFrame)
+    //    {
+    //        IdTalker = NmeaIdTalker;
+    //        IdFrame = NmeaIdFrame;
+    //    }
+
+    //    public string IdTalker { get; }
+    //    public string IdFrame { get; }
+
+    //    public dynamic TypeInformation { get; set; }
+    //}
 }
