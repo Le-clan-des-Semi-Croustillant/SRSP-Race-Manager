@@ -1,0 +1,822 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Gns
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Gns
+   ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns">
+  
+  
+  <h1 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns" class="text-break">Class Gns
+  </h1>
+  <div class="markdown level0 summary"><p>Fixes data for single or combined (GPS, GLONASS, possible future satellite systems, and systems combining these) satellite navigation systems</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.NmeaMessage.html">NmeaMessage</a></div>
+    <div class="level2"><span class="xref">Gns</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.NmeaMessage.html">NmeaMessage</a>&gt;</div>
+    <div><a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.ITimestampedMessage.html">ITimestampedMessage</a></div>
+    <div><a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.IGeographicLocation.html">IGeographicLocation</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.NmeaMessage.html#Race_Manager_DataProcessing_NMEA_NmeaRead_NmeaMessage_RegisterAssembly_System_Reflection_Assembly_System_Boolean_">NmeaMessage.RegisterAssembly(Assembly, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.NmeaMessage.html#Race_Manager_DataProcessing_NMEA_NmeaRead_NmeaMessage_RegisterNmeaMessage_System_Reflection_TypeInfo_System_String_System_Boolean_">NmeaMessage.RegisterNmeaMessage(TypeInfo, String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.NmeaMessage.html#Race_Manager_DataProcessing_NMEA_NmeaRead_NmeaMessage_Parse_System_String_Race_Manager_DataProcessing_NMEA_NmeaRead_IMultiSentenceMessage_System_Boolean_">NmeaMessage.Parse(String, IMultiSentenceMessage, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.NmeaMessage.html#Race_Manager_DataProcessing_NMEA_NmeaRead_NmeaMessage_MessageParts">NmeaMessage.MessageParts</a>
+    </div>
+    <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.NmeaMessage.html#Race_Manager_DataProcessing_NMEA_NmeaRead_NmeaMessage_MessageType">NmeaMessage.MessageType</a>
+    </div>
+    <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.NmeaMessage.html#Race_Manager_DataProcessing_NMEA_NmeaRead_NmeaMessage_TalkerId">NmeaMessage.TalkerId</a>
+    </div>
+    <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.NmeaMessage.html#Race_Manager_DataProcessing_NMEA_NmeaRead_NmeaMessage_IsProprietary">NmeaMessage.IsProprietary</a>
+    </div>
+    <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.NmeaMessage.html#Race_Manager_DataProcessing_NMEA_NmeaRead_NmeaMessage_ToString">NmeaMessage.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.NmeaMessage.html#Race_Manager_DataProcessing_NMEA_NmeaRead_NmeaMessage_Checksum">NmeaMessage.Checksum</a>
+    </div>
+    <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.NmeaMessage.html#Race_Manager_DataProcessing_NMEA_NmeaRead_NmeaMessage_Equals_Race_Manager_DataProcessing_NMEA_NmeaRead_NmeaMessage_">NmeaMessage.Equals(NmeaMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.NmeaMessage.html#Race_Manager_DataProcessing_NMEA_NmeaRead_NmeaMessage_Timestamp">NmeaMessage.Timestamp</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaType.html">Race_Manager.DataProcessing.NMEA.NmeaType</a></h6>
+  <h6><strong>Assembly</strong>: RaceManager.dll</h6>
+  <h5 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NmeaMessageType(&quot;--GNS&quot;)]
+public class Gns : NmeaMessage, IEquatable&lt;NmeaMessage&gt;, ITimestampedMessage, IGeographicLocation</code></pre>
+  </div>
+  <h5 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This sentence provides fix data for GPS, GLONASS, BDS, QZSS, NavIC (IRNSS) and possible future satellite systems, and systems combining these.
+This sentence could be used with the talker identification of <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.Talker.html#Race_Manager_DataProcessing_NMEA_NmeaRead_Talker_GlobalPositioningSystem">GlobalPositioningSystem</a> for GPS, <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.Talker.html#Race_Manager_DataProcessing_NMEA_NmeaRead_Talker_GlonassReceiver">GlonassReceiver</a> for GLONASS,
+<a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.Talker.html#Race_Manager_DataProcessing_NMEA_NmeaRead_Talker_GalileoPositioningSystem">GalileoPositioningSystem</a> for Galileo, <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.Talker.html#Race_Manager_DataProcessing_NMEA_NmeaRead_Talker_BeiDouNavigationSatelliteSystem">BeiDouNavigationSatelliteSystem</a> for BDS, <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.Talker.html#Race_Manager_DataProcessing_NMEA_NmeaRead_Talker_QuasiZenithSatelliteSystem">QuasiZenithSatelliteSystem</a> for QZSS,
+<a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.Talker.html#Race_Manager_DataProcessing_NMEA_NmeaRead_Talker_IndianRegionalNavigationSatelliteSystem">IndianRegionalNavigationSatelliteSystem</a> for NavIC (IRNSS), and <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.Talker.html#Race_Manager_DataProcessing_NMEA_NmeaRead_Talker_GlobalNavigationSatelliteSystem">GlobalNavigationSatelliteSystem</a> for GNSS combined systems, as well as future identifiers.
+</p>
+<p>
+If a GNSS receiver is capable simultanously of producing a position using combined satellite systems, as well as a position using only one of the satellite systems, then separate GNS sentences
+with different <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.NmeaMessage.html#Race_Manager_DataProcessing_NMEA_NmeaRead_NmeaMessage_TalkerId">TalkerId</a> may be used to report the data calculated from the individual systems.
+</p>
+<p>
+If a GNSS receiver is set up to use more than one satellite system, but for some reason one or more of the systems are not available, then it may continue to report the positions
+using <code>GNGNS</code>, and use the <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.html#Race_Manager_DataProcessing_NMEA_NmeaType_Gns_GpsModeIndicator">GpsModeIndicator</a> to show which satellit esystems are being used.
+</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns__ctor_" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.#ctor*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns__ctor_System_String_System_String___" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.#ctor(System.String,System.String[])">Gns(String, String[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.html">Gns</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Gns(string type, string[] message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The message type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The NMEA message values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_BDSModeIndicator_" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.BDSModeIndicator*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_BDSModeIndicator" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.BDSModeIndicator">BDSModeIndicator</h4>
+  <div class="markdown level1 summary"><p>Mode indicator for Beidou (BDS)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Gns.Mode BDSModeIndicator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.Mode.html">Gns.Mode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_DgpsStationId_" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.DgpsStationId*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_DgpsStationId" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.DgpsStationId">DgpsStationId</h4>
+  <div class="markdown level1 summary"><p>eference station ID1, range 0000-4095 - Null if talker ID is GN, additional GNS messages follow with GP and/or GL Reference station ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DgpsStationId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_FixTime_" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.FixTime*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_FixTime" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.FixTime">FixTime</h4>
+  <div class="markdown level1 summary"><p>Time of day fix was taken</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan FixTime { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_GalileoModeIndicator_" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.GalileoModeIndicator*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_GalileoModeIndicator" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.GalileoModeIndicator">GalileoModeIndicator</h4>
+  <div class="markdown level1 summary"><p>Mode indicator for Galileo</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Gns.Mode GalileoModeIndicator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.Mode.html">Gns.Mode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_GeoidalSeparation_" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.GeoidalSeparation*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_GeoidalSeparation" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.GeoidalSeparation">GeoidalSeparation</h4>
+  <div class="markdown level1 summary"><p>Geoidal separation in meters - the difference between the earth ellipsoid surface and mean-sea-level (geoid) surface defined by the reference datum used in the position solution<br>
+'-' = mean-sea-level surface below ellipsoid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GeoidalSeparation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_GlonassModeIndicator_" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.GlonassModeIndicator*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_GlonassModeIndicator" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.GlonassModeIndicator">GlonassModeIndicator</h4>
+  <div class="markdown level1 summary"><p>Mode indicator for GLONASS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Gns.Mode GlonassModeIndicator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.Mode.html">Gns.Mode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_GpsModeIndicator_" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.GpsModeIndicator*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_GpsModeIndicator" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.GpsModeIndicator">GpsModeIndicator</h4>
+  <div class="markdown level1 summary"><p>Mode indicator for GPS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Gns.Mode GpsModeIndicator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.Mode.html">Gns.Mode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_Hdop_" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.Hdop*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_Hdop" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.Hdop">Hdop</h4>
+  <div class="markdown level1 summary"><p>Horizontal Dilution of Precision (HDOP), calculated using all the satellites (GPS, GLONASS, and any future satellites) used in computing the solution reported in each GNS sentence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Hdop { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_Latitude_" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.Latitude*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_Latitude" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.Latitude">Latitude</h4>
+  <div class="markdown level1 summary"><p>Latitude</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Latitude { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_LatitudeCard_" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.LatitudeCard*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_LatitudeCard" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.LatitudeCard">LatitudeCard</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LatitudeCard { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_LatitudeVal_" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.LatitudeVal*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_LatitudeVal" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.LatitudeVal">LatitudeVal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LatitudeVal { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_Longitude_" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.Longitude*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_Longitude" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.Longitude">Longitude</h4>
+  <div class="markdown level1 summary"><p>Longitude</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Longitude { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_LongitudeCard_" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.LongitudeCard*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_LongitudeCard" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.LongitudeCard">LongitudeCard</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LongitudeCard { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_LongitudeVal_" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.LongitudeVal*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_LongitudeVal" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.LongitudeVal">LongitudeVal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LongitudeVal { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_ModeIndicators_" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.ModeIndicators*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_ModeIndicators" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.ModeIndicators">ModeIndicators</h4>
+  <div class="markdown level1 summary"><p>Mode indicator for future constallations</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Gns.Mode[] ModeIndicators { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.Mode.html">Gns.Mode</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_NavICModeIndicator_" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.NavICModeIndicator*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_NavICModeIndicator" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.NavICModeIndicator">NavICModeIndicator</h4>
+  <div class="markdown level1 summary"><p>Mode indicator for NavIC (IRNSS)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Gns.Mode NavICModeIndicator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.Mode.html">Gns.Mode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_NumberOfSatellites_" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.NumberOfSatellites*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_NumberOfSatellites" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.NumberOfSatellites">NumberOfSatellites</h4>
+  <div class="markdown level1 summary"><p>Number of satellites (SVs) in use</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumberOfSatellites { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_OrthometricHeight_" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.OrthometricHeight*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_OrthometricHeight" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.OrthometricHeight">OrthometricHeight</h4>
+  <div class="markdown level1 summary"><p>Orthometric height in meters (MSL reference)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double OrthometricHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_QZSSModeIndicator_" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.QZSSModeIndicator*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_QZSSModeIndicator" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.QZSSModeIndicator">QZSSModeIndicator</h4>
+  <div class="markdown level1 summary"><p>Mode indicator for QZSS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Gns.Mode QZSSModeIndicator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.Mode.html">Gns.Mode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_Status_" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.Status*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_Status" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.Status">Status</h4>
+  <div class="markdown level1 summary"><p>Navigational status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Gns.NavigationalStatus Status { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.NavigationalStatus.html">Gns.NavigationalStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_TimeSinceLastDgpsUpdate_" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.TimeSinceLastDgpsUpdate*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_TimeSinceLastDgpsUpdate" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.TimeSinceLastDgpsUpdate">TimeSinceLastDgpsUpdate</h4>
+  <div class="markdown level1 summary"><p>Age of differential data - <span class="xref">System.TimeSpan.MaxValue</span> if talker ID is GN, additional GNS messages follow with GP and/or GL Age of differential data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan? TimeSinceLastDgpsUpdate { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_Race_Manager_DataProcessing_NMEA_NmeaRead_ITimestampedMessage_Timestamp_" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.Race_Manager#DataProcessing#NMEA#NmeaRead#ITimestampedMessage#Timestamp*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_NmeaType_Gns_Race_Manager_DataProcessing_NMEA_NmeaRead_ITimestampedMessage_Timestamp" data-uid="Race_Manager.DataProcessing.NMEA.NmeaType.Gns.Race_Manager#DataProcessing#NMEA#NmeaRead#ITimestampedMessage#Timestamp">ITimestampedMessage.Timestamp</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TimeSpan ITimestampedMessage.Timestamp { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.ITimestampedMessage.html">ITimestampedMessage</a>
+  </div>
+  <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaRead.IGeographicLocation.html">IGeographicLocation</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
