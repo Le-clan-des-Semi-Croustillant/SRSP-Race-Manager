@@ -552,221 +552,6 @@ references:
   isSpec: "True"
   fullName: Race_Manager.DataProcessing.NMEA.Dtm.ReferenceDatumCode
   nameWithType: Dtm.ReferenceDatumCode
-- uid: Race_Manager.DataProcessing.NMEA.Garmin
-  name: Race_Manager.DataProcessing.NMEA.Garmin
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.html
-  commentId: N:Race_Manager.DataProcessing.NMEA.Garmin
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin
-  nameWithType: Race_Manager.DataProcessing.NMEA.Garmin
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme
-  name: Pgrme
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.html
-  commentId: T:Race_Manager.DataProcessing.NMEA.Garmin.Pgrme
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme
-  nameWithType: Pgrme
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.#ctor(System.String,System.String[])
-  name: Pgrme(String, String[])
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrme__ctor_System_String_System_String___
-  commentId: M:Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.#ctor(System.String,System.String[])
-  name.vb: Pgrme(String, String())
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.Pgrme(System.String, System.String[])
-  fullName.vb: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.Pgrme(System.String, System.String())
-  nameWithType: Pgrme.Pgrme(String, String[])
-  nameWithType.vb: Pgrme.Pgrme(String, String())
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.#ctor*
-  name: Pgrme
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrme__ctor_
-  commentId: Overload:Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.#ctor
-  isSpec: "True"
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.Pgrme
-  nameWithType: Pgrme.Pgrme
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.HorizontalError
-  name: HorizontalError
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrme_HorizontalError
-  commentId: P:Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.HorizontalError
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.HorizontalError
-  nameWithType: Pgrme.HorizontalError
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.HorizontalError*
-  name: HorizontalError
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrme_HorizontalError_
-  commentId: Overload:Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.HorizontalError
-  isSpec: "True"
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.HorizontalError
-  nameWithType: Pgrme.HorizontalError
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.HorizontalErrorUnits
-  name: HorizontalErrorUnits
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrme_HorizontalErrorUnits
-  commentId: P:Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.HorizontalErrorUnits
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.HorizontalErrorUnits
-  nameWithType: Pgrme.HorizontalErrorUnits
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.HorizontalErrorUnits*
-  name: HorizontalErrorUnits
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrme_HorizontalErrorUnits_
-  commentId: Overload:Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.HorizontalErrorUnits
-  isSpec: "True"
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.HorizontalErrorUnits
-  nameWithType: Pgrme.HorizontalErrorUnits
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.SphericalError
-  name: SphericalError
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrme_SphericalError
-  commentId: P:Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.SphericalError
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.SphericalError
-  nameWithType: Pgrme.SphericalError
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.SphericalError*
-  name: SphericalError
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrme_SphericalError_
-  commentId: Overload:Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.SphericalError
-  isSpec: "True"
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.SphericalError
-  nameWithType: Pgrme.SphericalError
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.SphericalErrorUnits
-  name: SphericalErrorUnits
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrme_SphericalErrorUnits
-  commentId: P:Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.SphericalErrorUnits
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.SphericalErrorUnits
-  nameWithType: Pgrme.SphericalErrorUnits
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.SphericalErrorUnits*
-  name: SphericalErrorUnits
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrme_SphericalErrorUnits_
-  commentId: Overload:Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.SphericalErrorUnits
-  isSpec: "True"
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.SphericalErrorUnits
-  nameWithType: Pgrme.SphericalErrorUnits
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.VerticalError
-  name: VerticalError
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrme_VerticalError
-  commentId: P:Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.VerticalError
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.VerticalError
-  nameWithType: Pgrme.VerticalError
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.VerticalError*
-  name: VerticalError
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrme_VerticalError_
-  commentId: Overload:Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.VerticalError
-  isSpec: "True"
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.VerticalError
-  nameWithType: Pgrme.VerticalError
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.VerticalErrorUnits
-  name: VerticalErrorUnits
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrme_VerticalErrorUnits
-  commentId: P:Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.VerticalErrorUnits
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.VerticalErrorUnits
-  nameWithType: Pgrme.VerticalErrorUnits
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.VerticalErrorUnits*
-  name: VerticalErrorUnits
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrme_VerticalErrorUnits_
-  commentId: Overload:Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.VerticalErrorUnits
-  isSpec: "True"
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrme.VerticalErrorUnits
-  nameWithType: Pgrme.VerticalErrorUnits
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz
-  name: Pgrmz
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.html
-  commentId: T:Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz
-  nameWithType: Pgrmz
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.#ctor(System.String,System.String[])
-  name: Pgrmz(String, String[])
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrmz__ctor_System_String_System_String___
-  commentId: M:Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.#ctor(System.String,System.String[])
-  name.vb: Pgrmz(String, String())
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.Pgrmz(System.String, System.String[])
-  fullName.vb: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.Pgrmz(System.String, System.String())
-  nameWithType: Pgrmz.Pgrmz(String, String[])
-  nameWithType.vb: Pgrmz.Pgrmz(String, String())
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.#ctor*
-  name: Pgrmz
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrmz__ctor_
-  commentId: Overload:Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.#ctor
-  isSpec: "True"
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.Pgrmz
-  nameWithType: Pgrmz.Pgrmz
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.Altitude
-  name: Altitude
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrmz_Altitude
-  commentId: P:Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.Altitude
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.Altitude
-  nameWithType: Pgrmz.Altitude
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.Altitude*
-  name: Altitude
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrmz_Altitude_
-  commentId: Overload:Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.Altitude
-  isSpec: "True"
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.Altitude
-  nameWithType: Pgrmz.Altitude
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.AltitudeUnit
-  name: Pgrmz.AltitudeUnit
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.AltitudeUnit.html
-  commentId: T:Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.AltitudeUnit
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.AltitudeUnit
-  nameWithType: Pgrmz.AltitudeUnit
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.AltitudeUnit.Feet
-  name: Feet
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.AltitudeUnit.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrmz_AltitudeUnit_Feet
-  commentId: F:Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.AltitudeUnit.Feet
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.AltitudeUnit.Feet
-  nameWithType: Pgrmz.AltitudeUnit.Feet
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.AltitudeUnit.Unknown
-  name: Unknown
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.AltitudeUnit.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrmz_AltitudeUnit_Unknown
-  commentId: F:Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.AltitudeUnit.Unknown
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.AltitudeUnit.Unknown
-  nameWithType: Pgrmz.AltitudeUnit.Unknown
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.FixType
-  name: FixType
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrmz_FixType
-  commentId: P:Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.FixType
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.FixType
-  nameWithType: Pgrmz.FixType
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.FixType*
-  name: FixType
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrmz_FixType_
-  commentId: Overload:Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.FixType
-  isSpec: "True"
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.FixType
-  nameWithType: Pgrmz.FixType
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.PositionFixType
-  name: Pgrmz.PositionFixType
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.PositionFixType.html
-  commentId: T:Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.PositionFixType
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.PositionFixType
-  nameWithType: Pgrmz.PositionFixType
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.PositionFixType.Fix2D
-  name: Fix2D
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.PositionFixType.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrmz_PositionFixType_Fix2D
-  commentId: F:Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.PositionFixType.Fix2D
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.PositionFixType.Fix2D
-  nameWithType: Pgrmz.PositionFixType.Fix2D
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.PositionFixType.Fix3D
-  name: Fix3D
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.PositionFixType.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrmz_PositionFixType_Fix3D
-  commentId: F:Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.PositionFixType.Fix3D
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.PositionFixType.Fix3D
-  nameWithType: Pgrmz.PositionFixType.Fix3D
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.PositionFixType.NoFix
-  name: NoFix
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.PositionFixType.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrmz_PositionFixType_NoFix
-  commentId: F:Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.PositionFixType.NoFix
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.PositionFixType.NoFix
-  nameWithType: Pgrmz.PositionFixType.NoFix
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.PositionFixType.Unknown
-  name: Unknown
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.PositionFixType.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrmz_PositionFixType_Unknown
-  commentId: F:Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.PositionFixType.Unknown
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.PositionFixType.Unknown
-  nameWithType: Pgrmz.PositionFixType.Unknown
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.Unit
-  name: Unit
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrmz_Unit
-  commentId: P:Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.Unit
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.Unit
-  nameWithType: Pgrmz.Unit
-- uid: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.Unit*
-  name: Unit
-  href: api/Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.html#Race_Manager_DataProcessing_NMEA_Garmin_Pgrmz_Unit_
-  commentId: Overload:Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.Unit
-  isSpec: "True"
-  fullName: Race_Manager.DataProcessing.NMEA.Garmin.Pgrmz.Unit
-  nameWithType: Pgrmz.Unit
 - uid: Race_Manager.DataProcessing.NMEA.Gbs
   name: Gbs
   href: api/Race_Manager.DataProcessing.NMEA.Gbs.html
@@ -2643,34 +2428,6 @@ references:
   isSpec: "True"
   fullName: Race_Manager.DataProcessing.NMEA.LaserRangeMessage.VerticalAngleUnits
   nameWithType: LaserRangeMessage.VerticalAngleUnits
-- uid: Race_Manager.DataProcessing.NMEA.LaserTech
-  name: Race_Manager.DataProcessing.NMEA.LaserTech
-  href: api/Race_Manager.DataProcessing.NMEA.LaserTech.html
-  commentId: N:Race_Manager.DataProcessing.NMEA.LaserTech
-  fullName: Race_Manager.DataProcessing.NMEA.LaserTech
-  nameWithType: Race_Manager.DataProcessing.NMEA.LaserTech
-- uid: Race_Manager.DataProcessing.NMEA.LaserTech.Pltit
-  name: Pltit
-  href: api/Race_Manager.DataProcessing.NMEA.LaserTech.Pltit.html
-  commentId: T:Race_Manager.DataProcessing.NMEA.LaserTech.Pltit
-  fullName: Race_Manager.DataProcessing.NMEA.LaserTech.Pltit
-  nameWithType: Pltit
-- uid: Race_Manager.DataProcessing.NMEA.LaserTech.Pltit.#ctor(System.String,System.String[])
-  name: Pltit(String, String[])
-  href: api/Race_Manager.DataProcessing.NMEA.LaserTech.Pltit.html#Race_Manager_DataProcessing_NMEA_LaserTech_Pltit__ctor_System_String_System_String___
-  commentId: M:Race_Manager.DataProcessing.NMEA.LaserTech.Pltit.#ctor(System.String,System.String[])
-  name.vb: Pltit(String, String())
-  fullName: Race_Manager.DataProcessing.NMEA.LaserTech.Pltit.Pltit(System.String, System.String[])
-  fullName.vb: Race_Manager.DataProcessing.NMEA.LaserTech.Pltit.Pltit(System.String, System.String())
-  nameWithType: Pltit.Pltit(String, String[])
-  nameWithType.vb: Pltit.Pltit(String, String())
-- uid: Race_Manager.DataProcessing.NMEA.LaserTech.Pltit.#ctor*
-  name: Pltit
-  href: api/Race_Manager.DataProcessing.NMEA.LaserTech.Pltit.html#Race_Manager_DataProcessing_NMEA_LaserTech_Pltit__ctor_
-  commentId: Overload:Race_Manager.DataProcessing.NMEA.LaserTech.Pltit.#ctor
-  isSpec: "True"
-  fullName: Race_Manager.DataProcessing.NMEA.LaserTech.Pltit.Pltit
-  nameWithType: Pltit.Pltit
 - uid: Race_Manager.DataProcessing.NMEA.ListNmeaType
   name: ListNmeaType
   href: api/Race_Manager.DataProcessing.NMEA.ListNmeaType.html
@@ -3097,6 +2854,359 @@ references:
   isSpec: "True"
   fullName: Race_Manager.DataProcessing.NMEA.NmeaType.GGA.Longitude
   nameWithType: GGA.Longitude
+- uid: Race_Manager.DataProcessing.NMEA.Pgrme
+  name: Pgrme
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrme.html
+  commentId: T:Race_Manager.DataProcessing.NMEA.Pgrme
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrme
+  nameWithType: Pgrme
+- uid: Race_Manager.DataProcessing.NMEA.Pgrme.#ctor(System.String,System.String[])
+  name: Pgrme(String, String[])
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrme.html#Race_Manager_DataProcessing_NMEA_Pgrme__ctor_System_String_System_String___
+  commentId: M:Race_Manager.DataProcessing.NMEA.Pgrme.#ctor(System.String,System.String[])
+  name.vb: Pgrme(String, String())
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrme.Pgrme(System.String, System.String[])
+  fullName.vb: Race_Manager.DataProcessing.NMEA.Pgrme.Pgrme(System.String, System.String())
+  nameWithType: Pgrme.Pgrme(String, String[])
+  nameWithType.vb: Pgrme.Pgrme(String, String())
+- uid: Race_Manager.DataProcessing.NMEA.Pgrme.#ctor*
+  name: Pgrme
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrme.html#Race_Manager_DataProcessing_NMEA_Pgrme__ctor_
+  commentId: Overload:Race_Manager.DataProcessing.NMEA.Pgrme.#ctor
+  isSpec: "True"
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrme.Pgrme
+  nameWithType: Pgrme.Pgrme
+- uid: Race_Manager.DataProcessing.NMEA.Pgrme.HorizontalError
+  name: HorizontalError
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrme.html#Race_Manager_DataProcessing_NMEA_Pgrme_HorizontalError
+  commentId: P:Race_Manager.DataProcessing.NMEA.Pgrme.HorizontalError
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrme.HorizontalError
+  nameWithType: Pgrme.HorizontalError
+- uid: Race_Manager.DataProcessing.NMEA.Pgrme.HorizontalError*
+  name: HorizontalError
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrme.html#Race_Manager_DataProcessing_NMEA_Pgrme_HorizontalError_
+  commentId: Overload:Race_Manager.DataProcessing.NMEA.Pgrme.HorizontalError
+  isSpec: "True"
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrme.HorizontalError
+  nameWithType: Pgrme.HorizontalError
+- uid: Race_Manager.DataProcessing.NMEA.Pgrme.HorizontalErrorUnits
+  name: HorizontalErrorUnits
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrme.html#Race_Manager_DataProcessing_NMEA_Pgrme_HorizontalErrorUnits
+  commentId: P:Race_Manager.DataProcessing.NMEA.Pgrme.HorizontalErrorUnits
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrme.HorizontalErrorUnits
+  nameWithType: Pgrme.HorizontalErrorUnits
+- uid: Race_Manager.DataProcessing.NMEA.Pgrme.HorizontalErrorUnits*
+  name: HorizontalErrorUnits
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrme.html#Race_Manager_DataProcessing_NMEA_Pgrme_HorizontalErrorUnits_
+  commentId: Overload:Race_Manager.DataProcessing.NMEA.Pgrme.HorizontalErrorUnits
+  isSpec: "True"
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrme.HorizontalErrorUnits
+  nameWithType: Pgrme.HorizontalErrorUnits
+- uid: Race_Manager.DataProcessing.NMEA.Pgrme.SphericalError
+  name: SphericalError
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrme.html#Race_Manager_DataProcessing_NMEA_Pgrme_SphericalError
+  commentId: P:Race_Manager.DataProcessing.NMEA.Pgrme.SphericalError
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrme.SphericalError
+  nameWithType: Pgrme.SphericalError
+- uid: Race_Manager.DataProcessing.NMEA.Pgrme.SphericalError*
+  name: SphericalError
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrme.html#Race_Manager_DataProcessing_NMEA_Pgrme_SphericalError_
+  commentId: Overload:Race_Manager.DataProcessing.NMEA.Pgrme.SphericalError
+  isSpec: "True"
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrme.SphericalError
+  nameWithType: Pgrme.SphericalError
+- uid: Race_Manager.DataProcessing.NMEA.Pgrme.SphericalErrorUnits
+  name: SphericalErrorUnits
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrme.html#Race_Manager_DataProcessing_NMEA_Pgrme_SphericalErrorUnits
+  commentId: P:Race_Manager.DataProcessing.NMEA.Pgrme.SphericalErrorUnits
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrme.SphericalErrorUnits
+  nameWithType: Pgrme.SphericalErrorUnits
+- uid: Race_Manager.DataProcessing.NMEA.Pgrme.SphericalErrorUnits*
+  name: SphericalErrorUnits
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrme.html#Race_Manager_DataProcessing_NMEA_Pgrme_SphericalErrorUnits_
+  commentId: Overload:Race_Manager.DataProcessing.NMEA.Pgrme.SphericalErrorUnits
+  isSpec: "True"
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrme.SphericalErrorUnits
+  nameWithType: Pgrme.SphericalErrorUnits
+- uid: Race_Manager.DataProcessing.NMEA.Pgrme.VerticalError
+  name: VerticalError
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrme.html#Race_Manager_DataProcessing_NMEA_Pgrme_VerticalError
+  commentId: P:Race_Manager.DataProcessing.NMEA.Pgrme.VerticalError
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrme.VerticalError
+  nameWithType: Pgrme.VerticalError
+- uid: Race_Manager.DataProcessing.NMEA.Pgrme.VerticalError*
+  name: VerticalError
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrme.html#Race_Manager_DataProcessing_NMEA_Pgrme_VerticalError_
+  commentId: Overload:Race_Manager.DataProcessing.NMEA.Pgrme.VerticalError
+  isSpec: "True"
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrme.VerticalError
+  nameWithType: Pgrme.VerticalError
+- uid: Race_Manager.DataProcessing.NMEA.Pgrme.VerticalErrorUnits
+  name: VerticalErrorUnits
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrme.html#Race_Manager_DataProcessing_NMEA_Pgrme_VerticalErrorUnits
+  commentId: P:Race_Manager.DataProcessing.NMEA.Pgrme.VerticalErrorUnits
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrme.VerticalErrorUnits
+  nameWithType: Pgrme.VerticalErrorUnits
+- uid: Race_Manager.DataProcessing.NMEA.Pgrme.VerticalErrorUnits*
+  name: VerticalErrorUnits
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrme.html#Race_Manager_DataProcessing_NMEA_Pgrme_VerticalErrorUnits_
+  commentId: Overload:Race_Manager.DataProcessing.NMEA.Pgrme.VerticalErrorUnits
+  isSpec: "True"
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrme.VerticalErrorUnits
+  nameWithType: Pgrme.VerticalErrorUnits
+- uid: Race_Manager.DataProcessing.NMEA.Pgrmz
+  name: Pgrmz
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrmz.html
+  commentId: T:Race_Manager.DataProcessing.NMEA.Pgrmz
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrmz
+  nameWithType: Pgrmz
+- uid: Race_Manager.DataProcessing.NMEA.Pgrmz.#ctor(System.String,System.String[])
+  name: Pgrmz(String, String[])
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrmz.html#Race_Manager_DataProcessing_NMEA_Pgrmz__ctor_System_String_System_String___
+  commentId: M:Race_Manager.DataProcessing.NMEA.Pgrmz.#ctor(System.String,System.String[])
+  name.vb: Pgrmz(String, String())
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrmz.Pgrmz(System.String, System.String[])
+  fullName.vb: Race_Manager.DataProcessing.NMEA.Pgrmz.Pgrmz(System.String, System.String())
+  nameWithType: Pgrmz.Pgrmz(String, String[])
+  nameWithType.vb: Pgrmz.Pgrmz(String, String())
+- uid: Race_Manager.DataProcessing.NMEA.Pgrmz.#ctor*
+  name: Pgrmz
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrmz.html#Race_Manager_DataProcessing_NMEA_Pgrmz__ctor_
+  commentId: Overload:Race_Manager.DataProcessing.NMEA.Pgrmz.#ctor
+  isSpec: "True"
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrmz.Pgrmz
+  nameWithType: Pgrmz.Pgrmz
+- uid: Race_Manager.DataProcessing.NMEA.Pgrmz.Altitude
+  name: Altitude
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrmz.html#Race_Manager_DataProcessing_NMEA_Pgrmz_Altitude
+  commentId: P:Race_Manager.DataProcessing.NMEA.Pgrmz.Altitude
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrmz.Altitude
+  nameWithType: Pgrmz.Altitude
+- uid: Race_Manager.DataProcessing.NMEA.Pgrmz.Altitude*
+  name: Altitude
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrmz.html#Race_Manager_DataProcessing_NMEA_Pgrmz_Altitude_
+  commentId: Overload:Race_Manager.DataProcessing.NMEA.Pgrmz.Altitude
+  isSpec: "True"
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrmz.Altitude
+  nameWithType: Pgrmz.Altitude
+- uid: Race_Manager.DataProcessing.NMEA.Pgrmz.AltitudeUnit
+  name: Pgrmz.AltitudeUnit
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrmz.AltitudeUnit.html
+  commentId: T:Race_Manager.DataProcessing.NMEA.Pgrmz.AltitudeUnit
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrmz.AltitudeUnit
+  nameWithType: Pgrmz.AltitudeUnit
+- uid: Race_Manager.DataProcessing.NMEA.Pgrmz.AltitudeUnit.Feet
+  name: Feet
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrmz.AltitudeUnit.html#Race_Manager_DataProcessing_NMEA_Pgrmz_AltitudeUnit_Feet
+  commentId: F:Race_Manager.DataProcessing.NMEA.Pgrmz.AltitudeUnit.Feet
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrmz.AltitudeUnit.Feet
+  nameWithType: Pgrmz.AltitudeUnit.Feet
+- uid: Race_Manager.DataProcessing.NMEA.Pgrmz.AltitudeUnit.Unknown
+  name: Unknown
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrmz.AltitudeUnit.html#Race_Manager_DataProcessing_NMEA_Pgrmz_AltitudeUnit_Unknown
+  commentId: F:Race_Manager.DataProcessing.NMEA.Pgrmz.AltitudeUnit.Unknown
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrmz.AltitudeUnit.Unknown
+  nameWithType: Pgrmz.AltitudeUnit.Unknown
+- uid: Race_Manager.DataProcessing.NMEA.Pgrmz.FixType
+  name: FixType
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrmz.html#Race_Manager_DataProcessing_NMEA_Pgrmz_FixType
+  commentId: P:Race_Manager.DataProcessing.NMEA.Pgrmz.FixType
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrmz.FixType
+  nameWithType: Pgrmz.FixType
+- uid: Race_Manager.DataProcessing.NMEA.Pgrmz.FixType*
+  name: FixType
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrmz.html#Race_Manager_DataProcessing_NMEA_Pgrmz_FixType_
+  commentId: Overload:Race_Manager.DataProcessing.NMEA.Pgrmz.FixType
+  isSpec: "True"
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrmz.FixType
+  nameWithType: Pgrmz.FixType
+- uid: Race_Manager.DataProcessing.NMEA.Pgrmz.PositionFixType
+  name: Pgrmz.PositionFixType
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrmz.PositionFixType.html
+  commentId: T:Race_Manager.DataProcessing.NMEA.Pgrmz.PositionFixType
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrmz.PositionFixType
+  nameWithType: Pgrmz.PositionFixType
+- uid: Race_Manager.DataProcessing.NMEA.Pgrmz.PositionFixType.Fix2D
+  name: Fix2D
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrmz.PositionFixType.html#Race_Manager_DataProcessing_NMEA_Pgrmz_PositionFixType_Fix2D
+  commentId: F:Race_Manager.DataProcessing.NMEA.Pgrmz.PositionFixType.Fix2D
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrmz.PositionFixType.Fix2D
+  nameWithType: Pgrmz.PositionFixType.Fix2D
+- uid: Race_Manager.DataProcessing.NMEA.Pgrmz.PositionFixType.Fix3D
+  name: Fix3D
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrmz.PositionFixType.html#Race_Manager_DataProcessing_NMEA_Pgrmz_PositionFixType_Fix3D
+  commentId: F:Race_Manager.DataProcessing.NMEA.Pgrmz.PositionFixType.Fix3D
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrmz.PositionFixType.Fix3D
+  nameWithType: Pgrmz.PositionFixType.Fix3D
+- uid: Race_Manager.DataProcessing.NMEA.Pgrmz.PositionFixType.NoFix
+  name: NoFix
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrmz.PositionFixType.html#Race_Manager_DataProcessing_NMEA_Pgrmz_PositionFixType_NoFix
+  commentId: F:Race_Manager.DataProcessing.NMEA.Pgrmz.PositionFixType.NoFix
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrmz.PositionFixType.NoFix
+  nameWithType: Pgrmz.PositionFixType.NoFix
+- uid: Race_Manager.DataProcessing.NMEA.Pgrmz.PositionFixType.Unknown
+  name: Unknown
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrmz.PositionFixType.html#Race_Manager_DataProcessing_NMEA_Pgrmz_PositionFixType_Unknown
+  commentId: F:Race_Manager.DataProcessing.NMEA.Pgrmz.PositionFixType.Unknown
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrmz.PositionFixType.Unknown
+  nameWithType: Pgrmz.PositionFixType.Unknown
+- uid: Race_Manager.DataProcessing.NMEA.Pgrmz.Unit
+  name: Unit
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrmz.html#Race_Manager_DataProcessing_NMEA_Pgrmz_Unit
+  commentId: P:Race_Manager.DataProcessing.NMEA.Pgrmz.Unit
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrmz.Unit
+  nameWithType: Pgrmz.Unit
+- uid: Race_Manager.DataProcessing.NMEA.Pgrmz.Unit*
+  name: Unit
+  href: api/Race_Manager.DataProcessing.NMEA.Pgrmz.html#Race_Manager_DataProcessing_NMEA_Pgrmz_Unit_
+  commentId: Overload:Race_Manager.DataProcessing.NMEA.Pgrmz.Unit
+  isSpec: "True"
+  fullName: Race_Manager.DataProcessing.NMEA.Pgrmz.Unit
+  nameWithType: Pgrmz.Unit
+- uid: Race_Manager.DataProcessing.NMEA.Pltit
+  name: Pltit
+  href: api/Race_Manager.DataProcessing.NMEA.Pltit.html
+  commentId: T:Race_Manager.DataProcessing.NMEA.Pltit
+  fullName: Race_Manager.DataProcessing.NMEA.Pltit
+  nameWithType: Pltit
+- uid: Race_Manager.DataProcessing.NMEA.Pltit.#ctor(System.String,System.String[])
+  name: Pltit(String, String[])
+  href: api/Race_Manager.DataProcessing.NMEA.Pltit.html#Race_Manager_DataProcessing_NMEA_Pltit__ctor_System_String_System_String___
+  commentId: M:Race_Manager.DataProcessing.NMEA.Pltit.#ctor(System.String,System.String[])
+  name.vb: Pltit(String, String())
+  fullName: Race_Manager.DataProcessing.NMEA.Pltit.Pltit(System.String, System.String[])
+  fullName.vb: Race_Manager.DataProcessing.NMEA.Pltit.Pltit(System.String, System.String())
+  nameWithType: Pltit.Pltit(String, String[])
+  nameWithType.vb: Pltit.Pltit(String, String())
+- uid: Race_Manager.DataProcessing.NMEA.Pltit.#ctor*
+  name: Pltit
+  href: api/Race_Manager.DataProcessing.NMEA.Pltit.html#Race_Manager_DataProcessing_NMEA_Pltit__ctor_
+  commentId: Overload:Race_Manager.DataProcessing.NMEA.Pltit.#ctor
+  isSpec: "True"
+  fullName: Race_Manager.DataProcessing.NMEA.Pltit.Pltit
+  nameWithType: Pltit.Pltit
+- uid: Race_Manager.DataProcessing.NMEA.Ptnla
+  name: Ptnla
+  href: api/Race_Manager.DataProcessing.NMEA.Ptnla.html
+  commentId: T:Race_Manager.DataProcessing.NMEA.Ptnla
+  fullName: Race_Manager.DataProcessing.NMEA.Ptnla
+  nameWithType: Ptnla
+- uid: Race_Manager.DataProcessing.NMEA.Ptnla.#ctor(System.String,System.String[])
+  name: Ptnla(String, String[])
+  href: api/Race_Manager.DataProcessing.NMEA.Ptnla.html#Race_Manager_DataProcessing_NMEA_Ptnla__ctor_System_String_System_String___
+  commentId: M:Race_Manager.DataProcessing.NMEA.Ptnla.#ctor(System.String,System.String[])
+  name.vb: Ptnla(String, String())
+  fullName: Race_Manager.DataProcessing.NMEA.Ptnla.Ptnla(System.String, System.String[])
+  fullName.vb: Race_Manager.DataProcessing.NMEA.Ptnla.Ptnla(System.String, System.String())
+  nameWithType: Ptnla.Ptnla(String, String[])
+  nameWithType.vb: Ptnla.Ptnla(String, String())
+- uid: Race_Manager.DataProcessing.NMEA.Ptnla.#ctor*
+  name: Ptnla
+  href: api/Race_Manager.DataProcessing.NMEA.Ptnla.html#Race_Manager_DataProcessing_NMEA_Ptnla__ctor_
+  commentId: Overload:Race_Manager.DataProcessing.NMEA.Ptnla.#ctor
+  isSpec: "True"
+  fullName: Race_Manager.DataProcessing.NMEA.Ptnla.Ptnla
+  nameWithType: Ptnla.Ptnla
+- uid: Race_Manager.DataProcessing.NMEA.Ptnlb
+  name: Ptnlb
+  href: api/Race_Manager.DataProcessing.NMEA.Ptnlb.html
+  commentId: T:Race_Manager.DataProcessing.NMEA.Ptnlb
+  fullName: Race_Manager.DataProcessing.NMEA.Ptnlb
+  nameWithType: Ptnlb
+- uid: Race_Manager.DataProcessing.NMEA.Ptnlb.#ctor(System.String,System.String[])
+  name: Ptnlb(String, String[])
+  href: api/Race_Manager.DataProcessing.NMEA.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Ptnlb__ctor_System_String_System_String___
+  commentId: M:Race_Manager.DataProcessing.NMEA.Ptnlb.#ctor(System.String,System.String[])
+  name.vb: Ptnlb(String, String())
+  fullName: Race_Manager.DataProcessing.NMEA.Ptnlb.Ptnlb(System.String, System.String[])
+  fullName.vb: Race_Manager.DataProcessing.NMEA.Ptnlb.Ptnlb(System.String, System.String())
+  nameWithType: Ptnlb.Ptnlb(String, String[])
+  nameWithType.vb: Ptnlb.Ptnlb(String, String())
+- uid: Race_Manager.DataProcessing.NMEA.Ptnlb.#ctor*
+  name: Ptnlb
+  href: api/Race_Manager.DataProcessing.NMEA.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Ptnlb__ctor_
+  commentId: Overload:Race_Manager.DataProcessing.NMEA.Ptnlb.#ctor
+  isSpec: "True"
+  fullName: Race_Manager.DataProcessing.NMEA.Ptnlb.Ptnlb
+  nameWithType: Ptnlb.Ptnlb
+- uid: Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeDiameter
+  name: MeasuredTreeDiameter
+  href: api/Race_Manager.DataProcessing.NMEA.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Ptnlb_MeasuredTreeDiameter
+  commentId: P:Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeDiameter
+  fullName: Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeDiameter
+  nameWithType: Ptnlb.MeasuredTreeDiameter
+- uid: Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeDiameter*
+  name: MeasuredTreeDiameter
+  href: api/Race_Manager.DataProcessing.NMEA.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Ptnlb_MeasuredTreeDiameter_
+  commentId: Overload:Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeDiameter
+  isSpec: "True"
+  fullName: Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeDiameter
+  nameWithType: Ptnlb.MeasuredTreeDiameter
+- uid: Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeDiameterUnits
+  name: MeasuredTreeDiameterUnits
+  href: api/Race_Manager.DataProcessing.NMEA.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Ptnlb_MeasuredTreeDiameterUnits
+  commentId: P:Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeDiameterUnits
+  fullName: Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeDiameterUnits
+  nameWithType: Ptnlb.MeasuredTreeDiameterUnits
+- uid: Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeDiameterUnits*
+  name: MeasuredTreeDiameterUnits
+  href: api/Race_Manager.DataProcessing.NMEA.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Ptnlb_MeasuredTreeDiameterUnits_
+  commentId: Overload:Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeDiameterUnits
+  isSpec: "True"
+  fullName: Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeDiameterUnits
+  nameWithType: Ptnlb.MeasuredTreeDiameterUnits
+- uid: Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeHeight
+  name: MeasuredTreeHeight
+  href: api/Race_Manager.DataProcessing.NMEA.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Ptnlb_MeasuredTreeHeight
+  commentId: P:Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeHeight
+  fullName: Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeHeight
+  nameWithType: Ptnlb.MeasuredTreeHeight
+- uid: Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeHeight*
+  name: MeasuredTreeHeight
+  href: api/Race_Manager.DataProcessing.NMEA.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Ptnlb_MeasuredTreeHeight_
+  commentId: Overload:Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeHeight
+  isSpec: "True"
+  fullName: Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeHeight
+  nameWithType: Ptnlb.MeasuredTreeHeight
+- uid: Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeHeightUnits
+  name: MeasuredTreeHeightUnits
+  href: api/Race_Manager.DataProcessing.NMEA.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Ptnlb_MeasuredTreeHeightUnits
+  commentId: P:Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeHeightUnits
+  fullName: Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeHeightUnits
+  nameWithType: Ptnlb.MeasuredTreeHeightUnits
+- uid: Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeHeightUnits*
+  name: MeasuredTreeHeightUnits
+  href: api/Race_Manager.DataProcessing.NMEA.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Ptnlb_MeasuredTreeHeightUnits_
+  commentId: Overload:Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeHeightUnits
+  isSpec: "True"
+  fullName: Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeHeightUnits
+  nameWithType: Ptnlb.MeasuredTreeHeightUnits
+- uid: Race_Manager.DataProcessing.NMEA.Ptnlb.TreeDiameter
+  name: TreeDiameter
+  href: api/Race_Manager.DataProcessing.NMEA.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Ptnlb_TreeDiameter
+  commentId: P:Race_Manager.DataProcessing.NMEA.Ptnlb.TreeDiameter
+  fullName: Race_Manager.DataProcessing.NMEA.Ptnlb.TreeDiameter
+  nameWithType: Ptnlb.TreeDiameter
+- uid: Race_Manager.DataProcessing.NMEA.Ptnlb.TreeDiameter*
+  name: TreeDiameter
+  href: api/Race_Manager.DataProcessing.NMEA.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Ptnlb_TreeDiameter_
+  commentId: Overload:Race_Manager.DataProcessing.NMEA.Ptnlb.TreeDiameter
+  isSpec: "True"
+  fullName: Race_Manager.DataProcessing.NMEA.Ptnlb.TreeDiameter
+  nameWithType: Ptnlb.TreeDiameter
+- uid: Race_Manager.DataProcessing.NMEA.Ptnlb.TreeHeight
+  name: TreeHeight
+  href: api/Race_Manager.DataProcessing.NMEA.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Ptnlb_TreeHeight
+  commentId: P:Race_Manager.DataProcessing.NMEA.Ptnlb.TreeHeight
+  fullName: Race_Manager.DataProcessing.NMEA.Ptnlb.TreeHeight
+  nameWithType: Ptnlb.TreeHeight
+- uid: Race_Manager.DataProcessing.NMEA.Ptnlb.TreeHeight*
+  name: TreeHeight
+  href: api/Race_Manager.DataProcessing.NMEA.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Ptnlb_TreeHeight_
+  commentId: Overload:Race_Manager.DataProcessing.NMEA.Ptnlb.TreeHeight
+  isSpec: "True"
+  fullName: Race_Manager.DataProcessing.NMEA.Ptnlb.TreeHeight
+  nameWithType: Ptnlb.TreeHeight
 - uid: Race_Manager.DataProcessing.NMEA.Rma
   name: Rma
   href: api/Race_Manager.DataProcessing.NMEA.Rma.html
@@ -4507,134 +4617,6 @@ references:
   commentId: F:Race_Manager.DataProcessing.NMEA.Talker.WeatherInstruments
   fullName: Race_Manager.DataProcessing.NMEA.Talker.WeatherInstruments
   nameWithType: Talker.WeatherInstruments
-- uid: Race_Manager.DataProcessing.NMEA.Trimble
-  name: Race_Manager.DataProcessing.NMEA.Trimble
-  href: api/Race_Manager.DataProcessing.NMEA.Trimble.html
-  commentId: N:Race_Manager.DataProcessing.NMEA.Trimble
-  fullName: Race_Manager.DataProcessing.NMEA.Trimble
-  nameWithType: Race_Manager.DataProcessing.NMEA.Trimble
-- uid: Race_Manager.DataProcessing.NMEA.Trimble.Ptnla
-  name: Ptnla
-  href: api/Race_Manager.DataProcessing.NMEA.Trimble.Ptnla.html
-  commentId: T:Race_Manager.DataProcessing.NMEA.Trimble.Ptnla
-  fullName: Race_Manager.DataProcessing.NMEA.Trimble.Ptnla
-  nameWithType: Ptnla
-- uid: Race_Manager.DataProcessing.NMEA.Trimble.Ptnla.#ctor(System.String,System.String[])
-  name: Ptnla(String, String[])
-  href: api/Race_Manager.DataProcessing.NMEA.Trimble.Ptnla.html#Race_Manager_DataProcessing_NMEA_Trimble_Ptnla__ctor_System_String_System_String___
-  commentId: M:Race_Manager.DataProcessing.NMEA.Trimble.Ptnla.#ctor(System.String,System.String[])
-  name.vb: Ptnla(String, String())
-  fullName: Race_Manager.DataProcessing.NMEA.Trimble.Ptnla.Ptnla(System.String, System.String[])
-  fullName.vb: Race_Manager.DataProcessing.NMEA.Trimble.Ptnla.Ptnla(System.String, System.String())
-  nameWithType: Ptnla.Ptnla(String, String[])
-  nameWithType.vb: Ptnla.Ptnla(String, String())
-- uid: Race_Manager.DataProcessing.NMEA.Trimble.Ptnla.#ctor*
-  name: Ptnla
-  href: api/Race_Manager.DataProcessing.NMEA.Trimble.Ptnla.html#Race_Manager_DataProcessing_NMEA_Trimble_Ptnla__ctor_
-  commentId: Overload:Race_Manager.DataProcessing.NMEA.Trimble.Ptnla.#ctor
-  isSpec: "True"
-  fullName: Race_Manager.DataProcessing.NMEA.Trimble.Ptnla.Ptnla
-  nameWithType: Ptnla.Ptnla
-- uid: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb
-  name: Ptnlb
-  href: api/Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.html
-  commentId: T:Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb
-  fullName: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb
-  nameWithType: Ptnlb
-- uid: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.#ctor(System.String,System.String[])
-  name: Ptnlb(String, String[])
-  href: api/Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Trimble_Ptnlb__ctor_System_String_System_String___
-  commentId: M:Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.#ctor(System.String,System.String[])
-  name.vb: Ptnlb(String, String())
-  fullName: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.Ptnlb(System.String, System.String[])
-  fullName.vb: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.Ptnlb(System.String, System.String())
-  nameWithType: Ptnlb.Ptnlb(String, String[])
-  nameWithType.vb: Ptnlb.Ptnlb(String, String())
-- uid: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.#ctor*
-  name: Ptnlb
-  href: api/Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Trimble_Ptnlb__ctor_
-  commentId: Overload:Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.#ctor
-  isSpec: "True"
-  fullName: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.Ptnlb
-  nameWithType: Ptnlb.Ptnlb
-- uid: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeDiameter
-  name: MeasuredTreeDiameter
-  href: api/Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Trimble_Ptnlb_MeasuredTreeDiameter
-  commentId: P:Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeDiameter
-  fullName: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeDiameter
-  nameWithType: Ptnlb.MeasuredTreeDiameter
-- uid: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeDiameter*
-  name: MeasuredTreeDiameter
-  href: api/Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Trimble_Ptnlb_MeasuredTreeDiameter_
-  commentId: Overload:Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeDiameter
-  isSpec: "True"
-  fullName: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeDiameter
-  nameWithType: Ptnlb.MeasuredTreeDiameter
-- uid: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeDiameterUnits
-  name: MeasuredTreeDiameterUnits
-  href: api/Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Trimble_Ptnlb_MeasuredTreeDiameterUnits
-  commentId: P:Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeDiameterUnits
-  fullName: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeDiameterUnits
-  nameWithType: Ptnlb.MeasuredTreeDiameterUnits
-- uid: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeDiameterUnits*
-  name: MeasuredTreeDiameterUnits
-  href: api/Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Trimble_Ptnlb_MeasuredTreeDiameterUnits_
-  commentId: Overload:Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeDiameterUnits
-  isSpec: "True"
-  fullName: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeDiameterUnits
-  nameWithType: Ptnlb.MeasuredTreeDiameterUnits
-- uid: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeHeight
-  name: MeasuredTreeHeight
-  href: api/Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Trimble_Ptnlb_MeasuredTreeHeight
-  commentId: P:Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeHeight
-  fullName: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeHeight
-  nameWithType: Ptnlb.MeasuredTreeHeight
-- uid: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeHeight*
-  name: MeasuredTreeHeight
-  href: api/Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Trimble_Ptnlb_MeasuredTreeHeight_
-  commentId: Overload:Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeHeight
-  isSpec: "True"
-  fullName: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeHeight
-  nameWithType: Ptnlb.MeasuredTreeHeight
-- uid: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeHeightUnits
-  name: MeasuredTreeHeightUnits
-  href: api/Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Trimble_Ptnlb_MeasuredTreeHeightUnits
-  commentId: P:Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeHeightUnits
-  fullName: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeHeightUnits
-  nameWithType: Ptnlb.MeasuredTreeHeightUnits
-- uid: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeHeightUnits*
-  name: MeasuredTreeHeightUnits
-  href: api/Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Trimble_Ptnlb_MeasuredTreeHeightUnits_
-  commentId: Overload:Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeHeightUnits
-  isSpec: "True"
-  fullName: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.MeasuredTreeHeightUnits
-  nameWithType: Ptnlb.MeasuredTreeHeightUnits
-- uid: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.TreeDiameter
-  name: TreeDiameter
-  href: api/Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Trimble_Ptnlb_TreeDiameter
-  commentId: P:Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.TreeDiameter
-  fullName: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.TreeDiameter
-  nameWithType: Ptnlb.TreeDiameter
-- uid: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.TreeDiameter*
-  name: TreeDiameter
-  href: api/Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Trimble_Ptnlb_TreeDiameter_
-  commentId: Overload:Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.TreeDiameter
-  isSpec: "True"
-  fullName: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.TreeDiameter
-  nameWithType: Ptnlb.TreeDiameter
-- uid: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.TreeHeight
-  name: TreeHeight
-  href: api/Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Trimble_Ptnlb_TreeHeight
-  commentId: P:Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.TreeHeight
-  fullName: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.TreeHeight
-  nameWithType: Ptnlb.TreeHeight
-- uid: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.TreeHeight*
-  name: TreeHeight
-  href: api/Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Trimble_Ptnlb_TreeHeight_
-  commentId: Overload:Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.TreeHeight
-  isSpec: "True"
-  fullName: Race_Manager.DataProcessing.NMEA.Trimble.Ptnlb.TreeHeight
-  nameWithType: Ptnlb.TreeHeight
 - uid: Race_Manager.DataProcessing.NMEA.UnknownMessage
   name: UnknownMessage
   href: api/Race_Manager.DataProcessing.NMEA.UnknownMessage.html

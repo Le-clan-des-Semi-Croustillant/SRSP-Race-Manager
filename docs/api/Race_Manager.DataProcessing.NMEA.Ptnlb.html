@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class LaserRangeMessage
+    <title>Class Ptnlb
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class LaserRangeMessage
+    <meta name="title" content="Class Ptnlb
    ">
     <meta name="generator" content="docfx 2.58.9.0">
     
@@ -68,21 +68,19 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Race_Manager.DataProcessing.NMEA.LaserRangeMessage">
+            <article class="content wrap" id="_content" data-uid="Race_Manager.DataProcessing.NMEA.Ptnlb">
   
   
-  <h1 id="Race_Manager_DataProcessing_NMEA_LaserRangeMessage" data-uid="Race_Manager.DataProcessing.NMEA.LaserRangeMessage" class="text-break">Class LaserRangeMessage
+  <h1 id="Race_Manager_DataProcessing_NMEA_Ptnlb" data-uid="Race_Manager.DataProcessing.NMEA.Ptnlb" class="text-break">Class Ptnlb
   </h1>
-  <div class="markdown level0 summary"><p>Laser Range Measurement</p>
+  <div class="markdown level0 summary"><p>Laser Range Tree Measurement</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaMessage.html">NmeaMessage</a></div>
-    <div class="level2"><span class="xref">LaserRangeMessage</span></div>
-      <div class="level3"><a class="xref" href="Race_Manager.DataProcessing.NMEA.Pltit.html">Pltit</a></div>
-      <div class="level3"><a class="xref" href="Race_Manager.DataProcessing.NMEA.Ptnla.html">Ptnla</a></div>
+    <div class="level2"><span class="xref">Ptnlb</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -144,22 +142,23 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Race_Manager.DataProcessing.NMEA.html">Race_Manager.DataProcessing.NMEA</a></h6>
   <h6><strong>Assembly</strong>: RaceManager.dll</h6>
-  <h5 id="Race_Manager_DataProcessing_NMEA_LaserRangeMessage_syntax">Syntax</h5>
+  <h5 id="Race_Manager_DataProcessing_NMEA_Ptnlb_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class LaserRangeMessage : NmeaMessage, IEquatable&lt;NmeaMessage&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">[NmeaMessageType(&quot;PTNLB&quot;)]
+public class Ptnlb : NmeaMessage, IEquatable&lt;NmeaMessage&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="Race_Manager_DataProcessing_NMEA_LaserRangeMessage__ctor_" data-uid="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.#ctor*"></a>
-  <h4 id="Race_Manager_DataProcessing_NMEA_LaserRangeMessage__ctor_System_String_System_String___" data-uid="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.#ctor(System.String,System.String[])">LaserRangeMessage(String, String[])</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.html">LaserRangeMessage</a> class.</p>
+  <a id="Race_Manager_DataProcessing_NMEA_Ptnlb__ctor_" data-uid="Race_Manager.DataProcessing.NMEA.Ptnlb.#ctor*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_Ptnlb__ctor_System_String_System_String___" data-uid="Race_Manager.DataProcessing.NMEA.Ptnlb.#ctor(System.String,System.String[])">Ptnlb(String, String[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Race_Manager.DataProcessing.NMEA.Ptnlb.html">Ptnlb</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected LaserRangeMessage(string type, string[] message)</code></pre>
+    <pre><code class="lang-csharp hljs">public Ptnlb(string type, string[] message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -189,14 +188,14 @@
   </h3>
   
   
-  <a id="Race_Manager_DataProcessing_NMEA_LaserRangeMessage_HorizontalAngle_" data-uid="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.HorizontalAngle*"></a>
-  <h4 id="Race_Manager_DataProcessing_NMEA_LaserRangeMessage_HorizontalAngle" data-uid="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.HorizontalAngle">HorizontalAngle</h4>
-  <div class="markdown level1 summary"><p>Gets the horizontal angle.</p>
+  <a id="Race_Manager_DataProcessing_NMEA_Ptnlb_MeasuredTreeDiameter_" data-uid="Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeDiameter*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_Ptnlb_MeasuredTreeDiameter" data-uid="Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeDiameter">MeasuredTreeDiameter</h4>
+  <div class="markdown level1 summary"><p>Gets the measured tree diameter.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double HorizontalAngle { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public double MeasuredTreeDiameter { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -215,14 +214,14 @@
   </table>
   
   
-  <a id="Race_Manager_DataProcessing_NMEA_LaserRangeMessage_HorizontalAngleUnits_" data-uid="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.HorizontalAngleUnits*"></a>
-  <h4 id="Race_Manager_DataProcessing_NMEA_LaserRangeMessage_HorizontalAngleUnits" data-uid="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.HorizontalAngleUnits">HorizontalAngleUnits</h4>
-  <div class="markdown level1 summary"><p>Gets the units of the <a class="xref" href="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.html#Race_Manager_DataProcessing_NMEA_LaserRangeMessage_HorizontalAngle">HorizontalAngle</a> value.</p>
+  <a id="Race_Manager_DataProcessing_NMEA_Ptnlb_MeasuredTreeDiameterUnits_" data-uid="Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeDiameterUnits*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_Ptnlb_MeasuredTreeDiameterUnits" data-uid="Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeDiameterUnits">MeasuredTreeDiameterUnits</h4>
+  <div class="markdown level1 summary"><p>Gets the units of the <a class="xref" href="Race_Manager.DataProcessing.NMEA.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Ptnlb_MeasuredTreeDiameter">MeasuredTreeDiameter</a> value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public char HorizontalAngleUnits { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public char MeasuredTreeDiameterUnits { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -241,14 +240,14 @@
   </table>
   
   
-  <a id="Race_Manager_DataProcessing_NMEA_LaserRangeMessage_HorizontalDistance_" data-uid="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.HorizontalDistance*"></a>
-  <h4 id="Race_Manager_DataProcessing_NMEA_LaserRangeMessage_HorizontalDistance" data-uid="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.HorizontalDistance">HorizontalDistance</h4>
-  <div class="markdown level1 summary"><p>Gets the horizontal distance.</p>
+  <a id="Race_Manager_DataProcessing_NMEA_Ptnlb_MeasuredTreeHeight_" data-uid="Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeHeight*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_Ptnlb_MeasuredTreeHeight" data-uid="Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeHeight">MeasuredTreeHeight</h4>
+  <div class="markdown level1 summary"><p>Gets the message height of the tree.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double HorizontalDistance { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public double MeasuredTreeHeight { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -267,14 +266,14 @@
   </table>
   
   
-  <a id="Race_Manager_DataProcessing_NMEA_LaserRangeMessage_HorizontalDistanceUnits_" data-uid="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.HorizontalDistanceUnits*"></a>
-  <h4 id="Race_Manager_DataProcessing_NMEA_LaserRangeMessage_HorizontalDistanceUnits" data-uid="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.HorizontalDistanceUnits">HorizontalDistanceUnits</h4>
-  <div class="markdown level1 summary"><p>Gets the units of the <a class="xref" href="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.html#Race_Manager_DataProcessing_NMEA_LaserRangeMessage_HorizontalDistance">HorizontalDistance</a> value.</p>
+  <a id="Race_Manager_DataProcessing_NMEA_Ptnlb_MeasuredTreeHeightUnits_" data-uid="Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeHeightUnits*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_Ptnlb_MeasuredTreeHeightUnits" data-uid="Race_Manager.DataProcessing.NMEA.Ptnlb.MeasuredTreeHeightUnits">MeasuredTreeHeightUnits</h4>
+  <div class="markdown level1 summary"><p>Gets the units of the <a class="xref" href="Race_Manager.DataProcessing.NMEA.Ptnlb.html#Race_Manager_DataProcessing_NMEA_Ptnlb_MeasuredTreeHeight">MeasuredTreeHeight</a> value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public char HorizontalDistanceUnits { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public char MeasuredTreeHeightUnits { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -293,14 +292,14 @@
   </table>
   
   
-  <a id="Race_Manager_DataProcessing_NMEA_LaserRangeMessage_HorizontalVector_" data-uid="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.HorizontalVector*"></a>
-  <h4 id="Race_Manager_DataProcessing_NMEA_LaserRangeMessage_HorizontalVector" data-uid="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.HorizontalVector">HorizontalVector</h4>
-  <div class="markdown level1 summary"><p>Gets the horizontal vector.</p>
+  <a id="Race_Manager_DataProcessing_NMEA_Ptnlb_TreeDiameter_" data-uid="Race_Manager.DataProcessing.NMEA.Ptnlb.TreeDiameter*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_Ptnlb_TreeDiameter" data-uid="Race_Manager.DataProcessing.NMEA.Ptnlb.TreeDiameter">TreeDiameter</h4>
+  <div class="markdown level1 summary"><p>Gets the tree diameter.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string HorizontalVector { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string TreeDiameter { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -319,14 +318,14 @@
   </table>
   
   
-  <a id="Race_Manager_DataProcessing_NMEA_LaserRangeMessage_SlopeDistance_" data-uid="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.SlopeDistance*"></a>
-  <h4 id="Race_Manager_DataProcessing_NMEA_LaserRangeMessage_SlopeDistance" data-uid="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.SlopeDistance">SlopeDistance</h4>
-  <div class="markdown level1 summary"><p>Gets the slope distance.</p>
+  <a id="Race_Manager_DataProcessing_NMEA_Ptnlb_TreeHeight_" data-uid="Race_Manager.DataProcessing.NMEA.Ptnlb.TreeHeight*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_Ptnlb_TreeHeight" data-uid="Race_Manager.DataProcessing.NMEA.Ptnlb.TreeHeight">TreeHeight</h4>
+  <div class="markdown level1 summary"><p>Gets the height of the tree.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double SlopeDistance { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string TreeHeight { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -338,85 +337,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Race_Manager_DataProcessing_NMEA_LaserRangeMessage_SlopeDistanceUnits_" data-uid="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.SlopeDistanceUnits*"></a>
-  <h4 id="Race_Manager_DataProcessing_NMEA_LaserRangeMessage_SlopeDistanceUnits" data-uid="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.SlopeDistanceUnits">SlopeDistanceUnits</h4>
-  <div class="markdown level1 summary"><p>Gets the units of the <a class="xref" href="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.html#Race_Manager_DataProcessing_NMEA_LaserRangeMessage_SlopeDistance">SlopeDistance</a> value.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public char SlopeDistanceUnits { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Char</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Race_Manager_DataProcessing_NMEA_LaserRangeMessage_VerticalAngle_" data-uid="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.VerticalAngle*"></a>
-  <h4 id="Race_Manager_DataProcessing_NMEA_LaserRangeMessage_VerticalAngle" data-uid="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.VerticalAngle">VerticalAngle</h4>
-  <div class="markdown level1 summary"><p>Gets the vertical angle.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double VerticalAngle { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Race_Manager_DataProcessing_NMEA_LaserRangeMessage_VerticalAngleUnits_" data-uid="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.VerticalAngleUnits*"></a>
-  <h4 id="Race_Manager_DataProcessing_NMEA_LaserRangeMessage_VerticalAngleUnits" data-uid="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.VerticalAngleUnits">VerticalAngleUnits</h4>
-  <div class="markdown level1 summary"><p>Gets the units of the <a class="xref" href="Race_Manager.DataProcessing.NMEA.LaserRangeMessage.html#Race_Manager_DataProcessing_NMEA_LaserRangeMessage_VerticalAngle">VerticalAngle</a> value.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public char VerticalAngleUnits { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Char</span></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
