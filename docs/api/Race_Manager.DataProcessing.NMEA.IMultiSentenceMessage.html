@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Enum IMessageType
+    <title>Interface IMultiSentenceMessage
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Enum IMessageType
+    <meta name="title" content="Interface IMultiSentenceMessage
    ">
     <meta name="generator" content="docfx 2.58.9.0">
     
@@ -68,47 +68,102 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Race_Manager.Communication.IMessageType">
+            <article class="content wrap" id="_content" data-uid="Race_Manager.DataProcessing.NMEA.IMultiSentenceMessage">
   
   
-  <h1 id="Race_Manager_Communication_IMessageType" data-uid="Race_Manager.Communication.IMessageType" class="text-break">Enum IMessageType
+  <h1 id="Race_Manager_DataProcessing_NMEA_IMultiSentenceMessage" data-uid="Race_Manager.DataProcessing.NMEA.IMultiSentenceMessage" class="text-break">Interface IMultiSentenceMessage
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Interface used for NMEA messages that span multiple sentences</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Race_Manager.Communication.html">Race_Manager.Communication</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Race_Manager.DataProcessing.NMEA.html">Race_Manager.DataProcessing.NMEA</a></h6>
   <h6><strong>Assembly</strong>: RaceManager.dll</h6>
-  <h5 id="Race_Manager_Communication_IMessageType_syntax">Syntax</h5>
+  <h5 id="Race_Manager_DataProcessing_NMEA_IMultiSentenceMessage_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum IMessageType</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IMultiSentenceMessage</code></pre>
   </div>
-  <h3 id="fields">Fields
+  <h3 id="properties">Properties
   </h3>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_IMultiSentenceMessage_IsComplete_" data-uid="Race_Manager.DataProcessing.NMEA.IMultiSentenceMessage.IsComplete*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_IMultiSentenceMessage_IsComplete" data-uid="Race_Manager.DataProcessing.NMEA.IMultiSentenceMessage.IsComplete">IsComplete</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this message is fully loaded from all its sentences</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsComplete { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Name</th>
+        <th>Type</th>
         <th>Description</th>
       </tr>
-    <thead>
+    </thead>
     <tbody>
       <tr>
-        <td id="Race_Manager_Communication_IMessageType_BOATSELECT">BOATSELECT</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="Race_Manager_Communication_IMessageType_CONNECTION">CONNECTION</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="Race_Manager_Communication_IMessageType_DISCONNECTION">DISCONNECTION</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="Race_Manager_Communication_IMessageType_INFO">INFO</td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
-  </thead></thead></table>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_IMultiSentenceMessage_TryAppend_" data-uid="Race_Manager.DataProcessing.NMEA.IMultiSentenceMessage.TryAppend*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_IMultiSentenceMessage_TryAppend_System_String_System_String___" data-uid="Race_Manager.DataProcessing.NMEA.IMultiSentenceMessage.TryAppend(System.String,System.String[])">TryAppend(String, String[])</h4>
+  <div class="markdown level1 summary"><p>Attempts to append one message to an existing one</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryAppend(string messageType, string[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">messageType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>True</code> is the message was successfully appended, <code>False</code> is the message couldn't be appended.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Race_Manager_DataProcessing_NMEA_IMultiSentenceMessage_TryAppend_System_String_System_String____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method should return false if the message being appended isn't the next message in line, and various indicators show this is a different message than the previous one. It should also return false if you append to a message that didn't start with the first message.</p>
+</div>
 </article>
           </div>
           

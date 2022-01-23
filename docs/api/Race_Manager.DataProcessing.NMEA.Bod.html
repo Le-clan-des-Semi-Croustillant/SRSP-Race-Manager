@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class AsyncServer.Client
+    <title>Class Bod
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class AsyncServer.Client
+    <meta name="title" content="Class Bod
    ">
     <meta name="generator" content="docfx 2.58.9.0">
     
@@ -68,20 +68,59 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Race_Manager.Communication.AsyncServer.Client">
+            <article class="content wrap" id="_content" data-uid="Race_Manager.DataProcessing.NMEA.Bod">
   
   
-  <h1 id="Race_Manager_Communication_AsyncServer_Client" data-uid="Race_Manager.Communication.AsyncServer.Client" class="text-break">Class AsyncServer.Client
+  <h1 id="Race_Manager_DataProcessing_NMEA_Bod" data-uid="Race_Manager.DataProcessing.NMEA.Bod" class="text-break">Class Bod
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Bearing - Origin to Destination</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">AsyncServer.Client</span></div>
+    <div class="level1"><a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaMessage.html">NmeaMessage</a></div>
+    <div class="level2"><span class="xref">Bod</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaMessage.html">NmeaMessage</a>&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaMessage.html#Race_Manager_DataProcessing_NMEA_NmeaMessage_RegisterAssembly_System_Reflection_Assembly_System_Boolean_">NmeaMessage.RegisterAssembly(Assembly, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaMessage.html#Race_Manager_DataProcessing_NMEA_NmeaMessage_RegisterNmeaMessage_System_Reflection_TypeInfo_System_String_System_Boolean_">NmeaMessage.RegisterNmeaMessage(TypeInfo, String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaMessage.html#Race_Manager_DataProcessing_NMEA_NmeaMessage_Parse_System_String_Race_Manager_DataProcessing_NMEA_IMultiSentenceMessage_System_Boolean_">NmeaMessage.Parse(String, IMultiSentenceMessage, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaMessage.html#Race_Manager_DataProcessing_NMEA_NmeaMessage_MessageParts">NmeaMessage.MessageParts</a>
+    </div>
+    <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaMessage.html#Race_Manager_DataProcessing_NMEA_NmeaMessage_MessageType">NmeaMessage.MessageType</a>
+    </div>
+    <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaMessage.html#Race_Manager_DataProcessing_NMEA_NmeaMessage_TalkerId">NmeaMessage.TalkerId</a>
+    </div>
+    <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaMessage.html#Race_Manager_DataProcessing_NMEA_NmeaMessage_IsProprietary">NmeaMessage.IsProprietary</a>
+    </div>
+    <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaMessage.html#Race_Manager_DataProcessing_NMEA_NmeaMessage_ToString">NmeaMessage.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaMessage.html#Race_Manager_DataProcessing_NMEA_NmeaMessage_Checksum">NmeaMessage.Checksum</a>
+    </div>
+    <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaMessage.html#Race_Manager_DataProcessing_NMEA_NmeaMessage_Equals_Race_Manager_DataProcessing_NMEA_NmeaMessage_">NmeaMessage.Equals(NmeaMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="Race_Manager.DataProcessing.NMEA.NmeaMessage.html#Race_Manager_DataProcessing_NMEA_NmeaMessage_Timestamp">NmeaMessage.Timestamp</a>
+    </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
@@ -100,99 +139,52 @@
     <div>
       <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Race_Manager.Communication.html">Race_Manager.Communication</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Race_Manager.DataProcessing.NMEA.html">Race_Manager.DataProcessing.NMEA</a></h6>
   <h6><strong>Assembly</strong>: RaceManager.dll</h6>
-  <h5 id="Race_Manager_Communication_AsyncServer_Client_syntax">Syntax</h5>
+  <h5 id="Race_Manager_DataProcessing_NMEA_Bod_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Client</code></pre>
+    <pre><code class="lang-csharp hljs">[NmeaMessageType(&quot;--BOD&quot;)]
+public class Bod : NmeaMessage, IEquatable&lt;NmeaMessage&gt;</code></pre>
   </div>
+  <h5 id="Race_Manager_DataProcessing_NMEA_Bod_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Bearing angle of the line, calculated at the origin waypoint, extending to the destination waypoint from
+the origin waypoint for the active navigation leg of the journey</p>
+</div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="Race_Manager_Communication_AsyncServer_Client__ctor_" data-uid="Race_Manager.Communication.AsyncServer.Client.#ctor*"></a>
-  <h4 id="Race_Manager_Communication_AsyncServer_Client__ctor" data-uid="Race_Manager.Communication.AsyncServer.Client.#ctor">Client()</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Race_Manager_DataProcessing_NMEA_Bod__ctor_" data-uid="Race_Manager.DataProcessing.NMEA.Bod.#ctor*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_Bod__ctor_System_String_System_String___" data-uid="Race_Manager.DataProcessing.NMEA.Bod.#ctor(System.String,System.String[])">Bod(String, String[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Race_Manager.DataProcessing.NMEA.Bod.html">Bod</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Client()</code></pre>
+    <pre><code class="lang-csharp hljs">public Bod(string type, string[] message)</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  
-  
-  <h4 id="Race_Manager_Communication_AsyncServer_Client_buffer" data-uid="Race_Manager.Communication.AsyncServer.Client.buffer">buffer</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public byte[] buffer</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Byte</span>[]</td>
-        <td></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The message type</p>
+</td>
       </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Race_Manager_Communication_AsyncServer_Client_BufferSize" data-uid="Race_Manager.Communication.AsyncServer.Client.BufferSize">BufferSize</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int BufferSize = 1024</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Race_Manager_Communication_AsyncServer_Client_sb" data-uid="Race_Manager.Communication.AsyncServer.Client.sb">sb</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public StringBuilder sb</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Text.StringBuilder</span></td>
-        <td></td>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The NMEA message values.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -200,88 +192,14 @@
   </h3>
   
   
-  <a id="Race_Manager_Communication_AsyncServer_Client_Handler_" data-uid="Race_Manager.Communication.AsyncServer.Client.Handler*"></a>
-  <h4 id="Race_Manager_Communication_AsyncServer_Client_Handler" data-uid="Race_Manager.Communication.AsyncServer.Client.Handler">Handler</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Race_Manager_DataProcessing_NMEA_Bod_DestinationId_" data-uid="Race_Manager.DataProcessing.NMEA.Bod.DestinationId*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_Bod_DestinationId" data-uid="Race_Manager.DataProcessing.NMEA.Bod.DestinationId">DestinationId</h4>
+  <div class="markdown level1 summary"><p>Name of destination waypoint ID</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Socket Handler { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Net.Sockets.Socket</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Race_Manager_Communication_AsyncServer_Client_IpAddress_" data-uid="Race_Manager.Communication.AsyncServer.Client.IpAddress*"></a>
-  <h4 id="Race_Manager_Communication_AsyncServer_Client_IpAddress" data-uid="Race_Manager.Communication.AsyncServer.Client.IpAddress">IpAddress</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IPAddress IpAddress { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Net.IPAddress</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Race_Manager_Communication_AsyncServer_Client_Listener_" data-uid="Race_Manager.Communication.AsyncServer.Client.Listener*"></a>
-  <h4 id="Race_Manager_Communication_AsyncServer_Client_Listener" data-uid="Race_Manager.Communication.AsyncServer.Client.Listener">Listener</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Socket Listener { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Net.Sockets.Socket</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Race_Manager_Communication_AsyncServer_Client_Nickname_" data-uid="Race_Manager.Communication.AsyncServer.Client.Nickname*"></a>
-  <h4 id="Race_Manager_Communication_AsyncServer_Client_Nickname" data-uid="Race_Manager.Communication.AsyncServer.Client.Nickname">Nickname</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Nickname { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string DestinationId { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -300,13 +218,14 @@
   </table>
   
   
-  <a id="Race_Manager_Communication_AsyncServer_Client_Port_" data-uid="Race_Manager.Communication.AsyncServer.Client.Port*"></a>
-  <h4 id="Race_Manager_Communication_AsyncServer_Client_Port" data-uid="Race_Manager.Communication.AsyncServer.Client.Port">Port</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Race_Manager_DataProcessing_NMEA_Bod_MagneticBearing_" data-uid="Race_Manager.DataProcessing.NMEA.Bod.MagneticBearing*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_Bod_MagneticBearing" data-uid="Race_Manager.DataProcessing.NMEA.Bod.MagneticBearing">MagneticBearing</h4>
+  <div class="markdown level1 summary"><p>Magnetic Bearing in degrees from start to destination</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Port { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public double MagneticBearing { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -318,11 +237,67 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.Double</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_Bod_OriginId_" data-uid="Race_Manager.DataProcessing.NMEA.Bod.OriginId*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_Bod_OriginId" data-uid="Race_Manager.DataProcessing.NMEA.Bod.OriginId">OriginId</h4>
+  <div class="markdown level1 summary"><p>Name of origin waypoint ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OriginId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_NMEA_Bod_TrueBearing_" data-uid="Race_Manager.DataProcessing.NMEA.Bod.TrueBearing*"></a>
+  <h4 id="Race_Manager_DataProcessing_NMEA_Bod_TrueBearing" data-uid="Race_Manager.DataProcessing.NMEA.Bod.TrueBearing">TrueBearing</h4>
+  <div class="markdown level1 summary"><p>True Bearing in degrees from start to destination</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double TrueBearing { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
 </article>
           </div>
           

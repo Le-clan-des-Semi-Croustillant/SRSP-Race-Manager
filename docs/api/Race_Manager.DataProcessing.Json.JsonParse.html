@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class AsyncServer.Client
+    <title>Class JsonParse
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class AsyncServer.Client
+    <meta name="title" content="Class JsonParse
    ">
     <meta name="generator" content="docfx 2.58.9.0">
     
@@ -68,17 +68,17 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Race_Manager.Communication.AsyncServer.Client">
+            <article class="content wrap" id="_content" data-uid="Race_Manager.DataProcessing.Json.JsonParse">
   
   
-  <h1 id="Race_Manager_Communication_AsyncServer_Client" data-uid="Race_Manager.Communication.AsyncServer.Client" class="text-break">Class AsyncServer.Client
+  <h1 id="Race_Manager_DataProcessing_Json_JsonParse" data-uid="Race_Manager.DataProcessing.Json.JsonParse" class="text-break">Class JsonParse
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">AsyncServer.Client</span></div>
+    <div class="level1"><span class="xref">JsonParse</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -104,36 +104,42 @@
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Race_Manager.Communication.html">Race_Manager.Communication</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Race_Manager.DataProcessing.Json.html">Race_Manager.DataProcessing.Json</a></h6>
   <h6><strong>Assembly</strong>: RaceManager.dll</h6>
-  <h5 id="Race_Manager_Communication_AsyncServer_Client_syntax">Syntax</h5>
+  <h5 id="Race_Manager_DataProcessing_Json_JsonParse_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Client</code></pre>
+    <pre><code class="lang-csharp hljs">public class JsonParse</code></pre>
   </div>
-  <h3 id="constructors">Constructors
+  <h3 id="methods">Methods
   </h3>
   
   
-  <a id="Race_Manager_Communication_AsyncServer_Client__ctor_" data-uid="Race_Manager.Communication.AsyncServer.Client.#ctor*"></a>
-  <h4 id="Race_Manager_Communication_AsyncServer_Client__ctor" data-uid="Race_Manager.Communication.AsyncServer.Client.#ctor">Client()</h4>
+  <a id="Race_Manager_DataProcessing_Json_JsonParse_JsonDeserialize_" data-uid="Race_Manager.DataProcessing.Json.JsonParse.JsonDeserialize*"></a>
+  <h4 id="Race_Manager_DataProcessing_Json_JsonParse_JsonDeserialize_System_String_" data-uid="Race_Manager.DataProcessing.Json.JsonParse.JsonDeserialize(System.String)">JsonDeserialize(String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Client()</code></pre>
+    <pre><code class="lang-csharp hljs">public static dynamic JsonDeserialize(string data)</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  
-  
-  <h4 id="Race_Manager_Communication_AsyncServer_Client_buffer" data-uid="Race_Manager.Communication.AsyncServer.Client.buffer">buffer</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public byte[] buffer</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -143,147 +149,39 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="xref">System.Object</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="Race_Manager_Communication_AsyncServer_Client_BufferSize" data-uid="Race_Manager.Communication.AsyncServer.Client.BufferSize">BufferSize</h4>
+  <a id="Race_Manager_DataProcessing_Json_JsonParse_JsonSerialiseBoatSelect_" data-uid="Race_Manager.DataProcessing.Json.JsonParse.JsonSerialiseBoatSelect*"></a>
+  <h4 id="Race_Manager_DataProcessing_Json_JsonParse_JsonSerialiseBoatSelect_Race_Manager_Communication_IMessageType_" data-uid="Race_Manager.DataProcessing.Json.JsonParse.JsonSerialiseBoatSelect(Race_Manager.Communication.IMessageType)">JsonSerialiseBoatSelect(IMessageType)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int BufferSize = 1024</code></pre>
+    <pre><code class="lang-csharp hljs">public static string JsonSerialiseBoatSelect(IMessageType TypeMessage)</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="Race_Manager.Communication.IMessageType.html">IMessageType</a></td>
+        <td><span class="parametername">TypeMessage</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <h4 id="Race_Manager_Communication_AsyncServer_Client_sb" data-uid="Race_Manager.Communication.AsyncServer.Client.sb">sb</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public StringBuilder sb</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Text.StringBuilder</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
-  
-  
-  <a id="Race_Manager_Communication_AsyncServer_Client_Handler_" data-uid="Race_Manager.Communication.AsyncServer.Client.Handler*"></a>
-  <h4 id="Race_Manager_Communication_AsyncServer_Client_Handler" data-uid="Race_Manager.Communication.AsyncServer.Client.Handler">Handler</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Socket Handler { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Net.Sockets.Socket</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Race_Manager_Communication_AsyncServer_Client_IpAddress_" data-uid="Race_Manager.Communication.AsyncServer.Client.IpAddress*"></a>
-  <h4 id="Race_Manager_Communication_AsyncServer_Client_IpAddress" data-uid="Race_Manager.Communication.AsyncServer.Client.IpAddress">IpAddress</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IPAddress IpAddress { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Net.IPAddress</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Race_Manager_Communication_AsyncServer_Client_Listener_" data-uid="Race_Manager.Communication.AsyncServer.Client.Listener*"></a>
-  <h4 id="Race_Manager_Communication_AsyncServer_Client_Listener" data-uid="Race_Manager.Communication.AsyncServer.Client.Listener">Listener</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Socket Listener { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Net.Sockets.Socket</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Race_Manager_Communication_AsyncServer_Client_Nickname_" data-uid="Race_Manager.Communication.AsyncServer.Client.Nickname*"></a>
-  <h4 id="Race_Manager_Communication_AsyncServer_Client_Nickname" data-uid="Race_Manager.Communication.AsyncServer.Client.Nickname">Nickname</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Nickname { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -300,15 +198,62 @@
   </table>
   
   
-  <a id="Race_Manager_Communication_AsyncServer_Client_Port_" data-uid="Race_Manager.Communication.AsyncServer.Client.Port*"></a>
-  <h4 id="Race_Manager_Communication_AsyncServer_Client_Port" data-uid="Race_Manager.Communication.AsyncServer.Client.Port">Port</h4>
+  <a id="Race_Manager_DataProcessing_Json_JsonParse_JsonSerialiseConnection_" data-uid="Race_Manager.DataProcessing.Json.JsonParse.JsonSerialiseConnection*"></a>
+  <h4 id="Race_Manager_DataProcessing_Json_JsonParse_JsonSerialiseConnection_Race_Manager_Communication_IMessageType_System_Int64_System_Int64_System_String_System_Int64_System_Int32_System_String_" data-uid="Race_Manager.DataProcessing.Json.JsonParse.JsonSerialiseConnection(Race_Manager.Communication.IMessageType,System.Int64,System.Int64,System.String,System.Int64,System.Int32,System.String)">JsonSerialiseConnection(IMessageType, Int64, Int64, String, Int64, Int32, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Port { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static string JsonSerialiseConnection(IMessageType TypeMessage, long Id, long IdGame, string NMEA, long Boat, int IdPlayer, string NamePlayer)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Race_Manager.Communication.IMessageType.html">IMessageType</a></td>
+        <td><span class="parametername">TypeMessage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">Id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">IdGame</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">NMEA</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">Boat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">IdPlayer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">NamePlayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -318,7 +263,91 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_Json_JsonParse_JsonSerialiseDisconnection_" data-uid="Race_Manager.DataProcessing.Json.JsonParse.JsonSerialiseDisconnection*"></a>
+  <h4 id="Race_Manager_DataProcessing_Json_JsonParse_JsonSerialiseDisconnection_Race_Manager_Communication_IMessageType_" data-uid="Race_Manager.DataProcessing.Json.JsonParse.JsonSerialiseDisconnection(Race_Manager.Communication.IMessageType)">JsonSerialiseDisconnection(IMessageType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string JsonSerialiseDisconnection(IMessageType TypeMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Race_Manager.Communication.IMessageType.html">IMessageType</a></td>
+        <td><span class="parametername">TypeMessage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Race_Manager_DataProcessing_Json_JsonParse_JsonSerialiseInfo_" data-uid="Race_Manager.DataProcessing.Json.JsonParse.JsonSerialiseInfo*"></a>
+  <h4 id="Race_Manager_DataProcessing_Json_JsonParse_JsonSerialiseInfo_Race_Manager_Communication_IMessageType_" data-uid="Race_Manager.DataProcessing.Json.JsonParse.JsonSerialiseInfo(Race_Manager.Communication.IMessageType)">JsonSerialiseInfo(IMessageType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string JsonSerialiseInfo(IMessageType TypeMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Race_Manager.Communication.IMessageType.html">IMessageType</a></td>
+        <td><span class="parametername">TypeMessage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>

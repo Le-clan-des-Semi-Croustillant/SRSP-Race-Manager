@@ -6,7 +6,7 @@
           "files": [
             "**.csproj"
           ],
-          "src": "G:\\Documents\\GitHub\\SRSP-Race-Manager\\Race Manager"
+          "src": "."
         }
       ],
       "dest": "api",
