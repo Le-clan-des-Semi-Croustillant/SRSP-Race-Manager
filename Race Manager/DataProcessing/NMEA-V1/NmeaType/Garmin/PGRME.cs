@@ -14,9 +14,10 @@
 //  *   limitations under the License.
 //  ******************************************************************************
 
+using Race_Manager.DataProcessing.NMEA.NmeaRead;
 using System;
 
-namespace Race_Manager.DataProcessing.NMEA
+namespace Race_Manager.DataProcessing.NMEA.NmeaType
 {
     /// <summary>
     ///  Recommended Minimum

@@ -14,9 +14,11 @@
 //  *   limitations under the License.
 //  ******************************************************************************
 
+using Race_Manager.DataProcessing.NMEA.NmeaRead;
 using System.Collections.Generic;
+using Race_Manager.DataProcessing.NMEA.NmeaRead;
 
-namespace Race_Manager.DataProcessing.NMEA
+namespace Race_Manager.DataProcessing.NMEA.NmeaType
 {
     /// <summary>
     /// Represents an unknown message type

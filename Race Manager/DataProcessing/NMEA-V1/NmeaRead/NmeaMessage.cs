@@ -19,8 +19,9 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Reflection;
+using Race_Manager.DataProcessing.NMEA.NmeaType;
 
-namespace Race_Manager.DataProcessing.NMEA
+namespace Race_Manager.DataProcessing.NMEA.NmeaRead
 {
     /// <summary>
     /// Nmea message attribute type used on concrete <see cref="NmeaMessage"/> implementations.

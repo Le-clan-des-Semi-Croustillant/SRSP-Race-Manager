@@ -14,7 +14,9 @@
 //  *   limitations under the License.
 //  ******************************************************************************
 
-namespace Race_Manager.DataProcessing.NMEA
+using Race_Manager.DataProcessing.NMEA.NmeaRead;
+
+namespace Race_Manager.DataProcessing.NMEA.NmeaType
 {
     /// <summary>
     /// Laser Range 

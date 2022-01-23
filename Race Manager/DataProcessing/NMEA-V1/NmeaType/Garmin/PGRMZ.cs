@@ -14,10 +14,11 @@
 //  *   limitations under the License.
 //  ******************************************************************************
 
+using Race_Manager.DataProcessing.NMEA.NmeaRead;
 using System;
 using System.Globalization;
 
-namespace Race_Manager.DataProcessing.NMEA
+namespace Race_Manager.DataProcessing.NMEA.NmeaType
 {
     /// <summary>
     /// Altitude Information

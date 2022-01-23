@@ -17,7 +17,7 @@
 using System;
 using System.Globalization;
 
-namespace Race_Manager.DataProcessing.NMEA
+namespace Race_Manager.DataProcessing.NMEA.NmeaRead
 {
     /// <summary>
     /// Laser Range Measurement

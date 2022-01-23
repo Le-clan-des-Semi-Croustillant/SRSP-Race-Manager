@@ -125,11 +125,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Bod.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaRead.IGeographicLocation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Bod.html",
-          "hash": "Ms/pVkCBWSlRhu5q951j581hIKEbFQCoDdJ6147cE6g="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaRead.IGeographicLocation.html",
+          "hash": "m5mEaoPx8PSnmHRrMLE+kJ6W9mrsh9ytu98SrGorsfQ="
         }
       },
       "is_incremental": false,
@@ -137,11 +137,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Dtm.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaRead.IMultiSentenceMessage.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Dtm.html",
-          "hash": "fJf/v62giOlipVE8M8QRWR76dITTK0qUef+R6IzMpdQ="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaRead.IMultiSentenceMessage.html",
+          "hash": "gClKwCFbS9UezqEs+9uhp4pySX4ilMnhcjmsr7HkS18="
         }
       },
       "is_incremental": false,
@@ -149,11 +149,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.GLL_1.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaRead.ITimestampedMessage.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.GLL_1.html",
-          "hash": "IOJANcEaFOrP7tsM/LfasM4E7vCzwajj3DBRURZKUlM="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaRead.ITimestampedMessage.html",
+          "hash": "u6xPM2qDJhyvEz6Y5HhYiA1bqK0CewOIS3KQRbLnYnk="
         }
       },
       "is_incremental": false,
@@ -161,11 +161,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Gbs.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaRead.LaserRangeMessage.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Gbs.html",
-          "hash": "yfwQZ+4+K91yhpd2rxuBHJqUHLNQrXhGOHS5VxG76Rs="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaRead.LaserRangeMessage.html",
+          "hash": "IrnGLL2XqFhBSvEsYZ6z/bRcrpevJhCxzRWTgGCW65I="
         }
       },
       "is_incremental": false,
@@ -173,11 +173,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Gga.FixQuality.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaRead.NmeaMessage.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Gga.FixQuality.html",
-          "hash": "FH2pB3giTPMYcwhybsGYZH2di5qFgZf6Mv1QoYyk3mQ="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaRead.NmeaMessage.html",
+          "hash": "3lr4Y2PeyTyQnqkMNoCzYFWcuck25F3oW7MoBzA1F7A="
         }
       },
       "is_incremental": false,
@@ -185,11 +185,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Gga.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaRead.NmeaMessageTypeAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Gga.html",
-          "hash": "/MLFZLY84aQJPhcTaeF90DjDxF0zTh1jC8Dn2x/LIH0="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaRead.NmeaMessageTypeAttribute.html",
+          "hash": "QWW7Dhj4TBXbzaacveb5VvKjPkfOW4d3dQVPhaw5+20="
         }
       },
       "is_incremental": false,
@@ -197,11 +197,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Gll.Mode.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaRead.NmeaMultiSentenceMessage.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Gll.Mode.html",
-          "hash": "wiY6L7G+InvYv4pPQnnMYNl7eWmEbaltdPuPtOorGYw="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaRead.NmeaMultiSentenceMessage.html",
+          "hash": "2zAbE7s5fFCsCVgVDxhEkc+IMyFsOZNlZRsKPpbUPpE="
         }
       },
       "is_incremental": false,
@@ -209,11 +209,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Gll.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaRead.Talker.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Gll.html",
-          "hash": "5hpZrEO4C/6uCVLqy/w75chl0FQdBD3XYmpHn4TLSgk="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaRead.Talker.html",
+          "hash": "GxES1D1fPlcXe8jhtHNd4nb1Ko0Hvpva6jj9QPVcK3w="
         }
       },
       "is_incremental": false,
@@ -221,11 +221,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Gns.Mode.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaRead.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Gns.Mode.html",
-          "hash": "4/Knbrw5sTor/kAw0dLPK9HiDhGXd9mJwUf7Ip/k+po="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaRead.html",
+          "hash": "LvAzsF/ZZEDOEEsgDg9PDhiY1tG/fzsv10+iwXHQNzo="
         }
       },
       "is_incremental": false,
@@ -233,11 +233,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Gns.NavigationalStatus.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Bod.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Gns.NavigationalStatus.html",
-          "hash": "eQkWlhunnjBkiTpL3Sg4Tf5RqVrLA1wE3vAWuJxVJd8="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Bod.html",
+          "hash": "jhmqrlO38gqm6bfvsdjDr2qM2jSSQtzgGgSRDCNZZ1U="
         }
       },
       "is_incremental": false,
@@ -245,11 +245,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Gns.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Dtm.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Gns.html",
-          "hash": "m0ZGb2wuYnXX4VfxUZ3R+yeHKSRvl290w3N4PdPdlXk="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Dtm.html",
+          "hash": "XbfqjlglfUdHAXpoVyQFCy0VuBzewnrcKrW62i5tuZo="
         }
       },
       "is_incremental": false,
@@ -257,11 +257,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Grs.GrsMode.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gbs.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Grs.GrsMode.html",
-          "hash": "Tk6yuuTwSeWnER31Tl9WqqVLC3nEP1ZWwvs5YXeIq5k="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gbs.html",
+          "hash": "0S5IGxbt+4lJrvZWkUPqiivKVKMReNGX57/Iocrk2RE="
         }
       },
       "is_incremental": false,
@@ -269,11 +269,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Grs.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gga.FixQuality.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Grs.html",
-          "hash": "Zu2CDJBIdaPHvv3LkH62WogCZle5k9uaIFIXiFvzlzw="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gga.FixQuality.html",
+          "hash": "vT50qBfSLybaWYLKwnlaP63yNLbtvN4XHLLiQwvP+/I="
         }
       },
       "is_incremental": false,
@@ -281,11 +281,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Gsa.FixType.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gga.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Gsa.FixType.html",
-          "hash": "QKm86RvgFlWRYnTiMNSx4725s4mXEiCVgTP8DmX+qT4="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gga.html",
+          "hash": "o+vCGL9zF274YUq5b6KSuqzDOlq/hYT1f2Ka+9msy4E="
         }
       },
       "is_incremental": false,
@@ -293,11 +293,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Gsa.ModeSelection.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gll.Mode.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Gsa.ModeSelection.html",
-          "hash": "oqqlnhhrFVu6OinLQmUVk+u1AGBSVIrbVufr2pIwjWw="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gll.Mode.html",
+          "hash": "viS5JlF2ZYJIUmzXRaBWycASqTZyyNO8twltNjQes/o="
         }
       },
       "is_incremental": false,
@@ -305,11 +305,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Gsa.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gll.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Gsa.html",
-          "hash": "0hzAxEsNIHlzdhcyGdGCdfmcmi903Ko4dTYCWpl6+S4="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gll.html",
+          "hash": "wDnB2zBvVkaJlp9XE/5ZdngQUwUQAHtKUWO+/GAtADw="
         }
       },
       "is_incremental": false,
@@ -317,11 +317,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Gst.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gns.Mode.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Gst.html",
-          "hash": "Ib9K64nm+dRTrIr09HJKlxkLWlp8KeAIwNozl3RTLRI="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gns.Mode.html",
+          "hash": "e78jIxIg2B/HmHu3NY55JNalFoaKTx/IETFkw6dqkWQ="
         }
       },
       "is_incremental": false,
@@ -329,11 +329,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Gsv.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gns.NavigationalStatus.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Gsv.html",
-          "hash": "ARSlL5MFAE43OtlE6gtPlWMBKsDGozHStEG82cjngZ8="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gns.NavigationalStatus.html",
+          "hash": "D2LjpLdBYuc490fZkaUegaAyIKEQVALCpqhBrFXULq8="
         }
       },
       "is_incremental": false,
@@ -341,11 +341,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.IGeographicLocation.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gns.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.IGeographicLocation.html",
-          "hash": "9OSgfY7DqcjMU/POEexncUKbEJO1UxAuqzvEKV4uig8="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gns.html",
+          "hash": "P2EhGg7ydVcLifi5QrXqVQsl1oD96WcVLgmd3v0cFtg="
         }
       },
       "is_incremental": false,
@@ -353,11 +353,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.IMultiSentenceMessage.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Grs.GrsMode.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.IMultiSentenceMessage.html",
-          "hash": "6HjRqSrID9lT3TobP2Wu5aGgxrV9gnKEuPQYGH4q8yk="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Grs.GrsMode.html",
+          "hash": "RH0xhnxHCvoT4qJtxi+pBFlIMv2E7fEniaA2+GxVrg0="
         }
       },
       "is_incremental": false,
@@ -365,11 +365,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.ITimestampedMessage.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Grs.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.ITimestampedMessage.html",
-          "hash": "bJo6/vp2cg50DhiG4ISnAnI1fQeL804m1l9le87GSgg="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Grs.html",
+          "hash": "1HOI3R2CpmtCbgBmhYgOInV1CD+2gjB3Vmfu4LGsCfI="
         }
       },
       "is_incremental": false,
@@ -377,11 +377,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.LaserRangeMessage.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gsa.FixType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.LaserRangeMessage.html",
-          "hash": "Ct/jFqpLPAuMZd3Tz727FbvViMVnNNtn/sYRwoh+G9Q="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gsa.FixType.html",
+          "hash": "jZ0vv6YulS/mC8vPGZPT7OISWPpSku5ZTYhKCBtyo0E="
         }
       },
       "is_incremental": false,
@@ -389,11 +389,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.ListNmeaType.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gsa.ModeSelection.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.ListNmeaType.html",
-          "hash": "QbaUdgD4YqosfBTgiJhF3KPZosLh5DdTMoDBAmfjnXo="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gsa.ModeSelection.html",
+          "hash": "HGUF+l6sUVwZ7LbyTcglmA1FgkalQ5BZM7waCHYdbXU="
         }
       },
       "is_incremental": false,
@@ -401,11 +401,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaMessage.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gsa.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaMessage.html",
-          "hash": "TtWZrM081qDCujSK4+ncUMtQKow7xKaBec6jfjsruJ8="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gsa.html",
+          "hash": "4ahrExdwfnm4W+nPkpdZFN7zyZt+kKVOe8Kuh0gqtrc="
         }
       },
       "is_incremental": false,
@@ -413,11 +413,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaMessageTypeAttribute.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gst.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaMessageTypeAttribute.html",
-          "hash": "1dqcKwWr+H3MbM/9UM/NSmknT5c0yqdRM0lspFyjOKo="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gst.html",
+          "hash": "rtvB6ZHANI3nWxXIe0nyWUcCUWjBfAPZDgRBU464dGk="
         }
       },
       "is_incremental": false,
@@ -425,11 +425,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaMultiSentenceMessage.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gsv.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaMultiSentenceMessage.html",
-          "hash": "7lQU8rrKnvSlEjooAFC1RUgTpObk8cFzxs6SJoUvAmM="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Gsv.html",
+          "hash": "IwoWrBK22I62QSwsitCbpqu68sVT6vMfTFjc9gXVMmE="
         }
       },
       "is_incremental": false,
@@ -437,11 +437,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaParse.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Pgrme.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaParse.html",
-          "hash": "7SUKbLby+R0uWNsVVI2dsg8rgxT+wiyk9WcuidloNhA="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Pgrme.html",
+          "hash": "j34zkjPPOWG+9Dt4e2QCAQ6k3dPAxD0MBKF0KjtmwiU="
         }
       },
       "is_incremental": false,
@@ -449,11 +449,239 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.GGA.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Pgrmz.AltitudeUnit.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.GGA.html",
-          "hash": "nBzyx1ugnaaHh112NF84Me+s17crV6X+jTyPA61Bti8="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Pgrmz.AltitudeUnit.html",
+          "hash": "qMLjUXCagxiHaOMMa8V0HgmLbnsRJUQsyIvBlRWV0mo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Pgrmz.PositionFixType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Pgrmz.PositionFixType.html",
+          "hash": "wZZ9u/pHFv7kixVAk5YtGm939xlzyBI5VVsWIKhHrHU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Pgrmz.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Pgrmz.html",
+          "hash": "sRKdz7R26S2BU5tE4GfYnUA5E9jFhCNWvDBXFSQxWQg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Pltit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Pltit.html",
+          "hash": "9cKkAF06FyyC/+MYpZlMHjbXUTFp+F7o/0MPPyrQ9Qs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Ptnla.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Ptnla.html",
+          "hash": "JEYUX9Bq3dccxp8VEGcrI+KwDLnZVZgHdzemOeKUopM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Ptnlb.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Ptnlb.html",
+          "hash": "qWUHNEnd/IWMQcIa4D+4yed+s9xavmTkWkFQgEGEI8A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Rma.PositioningMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Rma.PositioningMode.html",
+          "hash": "uKmBXxGkshIyRZd+//e2rwbi2np2GPQoyhu0w6vHVf8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Rma.PositioningStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Rma.PositioningStatus.html",
+          "hash": "5ijpLWG2lO3jRs88A5halyCcEonyjYpllxVt6ev59iE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Rma.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Rma.html",
+          "hash": "cFsVXkt8+DKcY4lBMC/5D9UfrGGC4hVySBS/E41HG+Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Rmb.DataStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Rmb.DataStatus.html",
+          "hash": "EtaiNueT2VP9HHTpIBBeYNEiAx+3TvoJHvqxRs4gFGE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Rmb.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Rmb.html",
+          "hash": "l5caLtSqNJ6Cq7x0+MSx0gQ2zR8K2gXAnqDK5gHDtJ4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Rmc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Rmc.html",
+          "hash": "rJuvTvb271Ds+H1sVq1eOJJjBRV78xSNBWQFQcTXGrk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Rte.WaypointListType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Rte.WaypointListType.html",
+          "hash": "XRbgwrlkZEm5jGKI2Mh16hLh4Zd2crjLDM3OydllOss="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Rte.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Rte.html",
+          "hash": "/OKkOny303GB2r/a4AGjpDeYb0bS3O43s78tJEg8Qrg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.SatelliteSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.SatelliteSystem.html",
+          "hash": "ds8QtooQ2IsoPAv9IxEsTarxzHzUek/JeSGxtRYQN70="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.SatelliteVehicle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.SatelliteVehicle.html",
+          "hash": "OlUi5YO2LAEOKhEqSfoTBaS0VVp3HUOEKaFjBN4s6hI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.UnknownMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.UnknownMessage.html",
+          "hash": "CYz91ojLPqzT2hpIbU5kNyPCetMvhNQDYBpWSRxM5Ks="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Vlw.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Vlw.html",
+          "hash": "7A6pyzzdEGj4VItplbcNZH+p2KMewf2hBZw8tRv7lOo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Vtg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Vtg.html",
+          "hash": "9Em4uRcgs8KF20XN1UHHT5JYhBf2g57l+r8/5/4beTs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Zda.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.Zda.html",
+          "hash": "ZxDxzwe52zZVjBtyJYKDkgazB9H3b0hhfBpGlSOH4sk="
         }
       },
       "is_incremental": false,
@@ -465,7 +693,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.html",
-          "hash": "Q7oghBHcxhAdU/qSLkP8KNVZ3WTOY8adu+er+hPssGU="
+          "hash": "atp6KccXoxQVZUbVpCcHnb/c6IT0Cw9SxLRZ0eYpJxE="
         }
       },
       "is_incremental": false,
@@ -473,11 +701,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Pgrme.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEAV0.GLL.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Pgrme.html",
-          "hash": "jt0YSbLLc7Yj6nz/IxYo91D0yce3zuv2a+/uDKqpcKc="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEAV0.GLL.html",
+          "hash": "lxe5RCsBZXDTry3e5omK40Wxbv5zCJ6dwbYWibjDkVI="
         }
       },
       "is_incremental": false,
@@ -485,11 +713,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Pgrmz.AltitudeUnit.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEAV0.ListNmeaType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Pgrmz.AltitudeUnit.html",
-          "hash": "xHtB48BDeR9o21Tja1EQLWaUPCzezJU/aJdM1Bhtygo="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEAV0.ListNmeaType.html",
+          "hash": "cJKWogl/pBTTij86MaUGe9VLt20xpp9gbmnGIEGQttU="
         }
       },
       "is_incremental": false,
@@ -497,11 +725,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Pgrmz.PositionFixType.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEAV0.NmeaParse.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Pgrmz.PositionFixType.html",
-          "hash": "g/gCUyPS2mnu/b+VLI+bgvim01l5PGbgvv8H39CF4jY="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEAV0.NmeaParse.html",
+          "hash": "FKw4p8J8fYj56Y+WNOdaEu+qEDM3NtmHJivcWrmjV4Q="
         }
       },
       "is_incremental": false,
@@ -509,11 +737,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Pgrmz.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEAV0.NmeaType.GGA.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Pgrmz.html",
-          "hash": "ESfAhLpnlJa9YM9uUNbtNJ31MdqlHbR2X6Q25Gwkuwk="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEAV0.NmeaType.GGA.html",
+          "hash": "LDBvmyLyNCDxUek9GAjZr31OadlqstytFXpK9yv0IS0="
         }
       },
       "is_incremental": false,
@@ -521,11 +749,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Pltit.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEAV0.NmeaType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Pltit.html",
-          "hash": "zvIB9VMdO1Bq1eAt7fEZVQLJ4FnoIRv0XmJp6A/XXKc="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEAV0.NmeaType.html",
+          "hash": "gTVxzZQIv87HGkIQWxISTNXht/SBASJu/++JDScGwVo="
         }
       },
       "is_incremental": false,
@@ -533,215 +761,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Ptnla.yml",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEAV0.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Ptnla.html",
-          "hash": "hAZDVVcS1n8rtOLmLprV44r0YHAznwiMC4tDhQoN+bg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Ptnlb.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Ptnlb.html",
-          "hash": "n95fHrbrFtOE80+cVL4n96p+WgUz6bU8kra5nRgrIqQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Rma.PositioningMode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Rma.PositioningMode.html",
-          "hash": "lWbAvFLwWGPM/Am1gNuPg6KYT/reviQa28evy77wFww="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Rma.PositioningStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Rma.PositioningStatus.html",
-          "hash": "bGU0BhHcDu5IACYDTCY3Fr8oMau7JEiyy7LYNg3VIdE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Rma.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Rma.html",
-          "hash": "8jiUleYAC09Y4V9Kmhwh7bWDSGkI3hb6wOUxvPYlcNI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Rmb.DataStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Rmb.DataStatus.html",
-          "hash": "H/sEf0Roz9MxfSm6AdvgH3JOj9rZBiL2pLRB33i0CLQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Rmb.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Rmb.html",
-          "hash": "bV7SN/HBNXauCjTynwhPho9/YUARqKFNS5fx6CyU5co="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Rmc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Rmc.html",
-          "hash": "ARPu8d9kOe+dkBwpIgcCoxzr48SbOPAIFJZ7wMBC/xk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Rte.WaypointListType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Rte.WaypointListType.html",
-          "hash": "TQpF1Jl1fHxHj36iIW6I4pn8m4fUT9WmwsrbQD7gngg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Rte.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Rte.html",
-          "hash": "3Tjlaz9pkOUExkuCbPOjTRmjvaYLvAEzQ3WzDtgjiCM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.SatelliteSystem.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.SatelliteSystem.html",
-          "hash": "Ish7xAcrVYjrM3sPPCdqX/PVjWloOk+/naVAa3ov8k8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.SatelliteVehicle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.SatelliteVehicle.html",
-          "hash": "9+XUzAlju9C+vA37DNdVb1i3IZwbGrjlC491ut8/uYQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Talker.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Talker.html",
-          "hash": "00mmT1HgyNRFmpG5iJ/aCV909/77jDWoJVj5UC2JuuM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.UnknownMessage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.UnknownMessage.html",
-          "hash": "jJV4hNZ04+LHDU2phfp6sdwO2nNw5VR6xrlAmBLjnxI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Vlw.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Vlw.html",
-          "hash": "E9gpHz+IFl07uZNOUgPRAl/NutKzfq45Fn+en4Xzkww="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Vtg.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Vtg.html",
-          "hash": "9mlchUFZIvhael0XJfQKAK1pu93yShj9FI8e5P9wLP8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.Zda.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.Zda.html",
-          "hash": "/KaYDPBVj4i4J398xJY/zvaMnYjSu6aTEPtYvQBsRC0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race_Manager.DataProcessing.NMEA.html",
-          "hash": "SuLmoDe5ToH04KwOde01aKPlB3YRrgNBOvxYo6cr9bU="
+          "relative_path": "api/Race_Manager.DataProcessing.NMEAV0.html",
+          "hash": "7UEa80xsr/AMXJACIQwSZ+pETZIKCvyMpOBC1r6Fur8="
         }
       },
       "is_incremental": false,
@@ -789,7 +813,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "vif2Oz0sWs5QgEDOHSGoM2IIinXH24KugTuEAPaM4rs="
+          "hash": "fsDysuUwQsF0m780v6BFJsVq5ojXGJPqCB1ImWMRtts="
         }
       },
       "is_incremental": false,
@@ -864,7 +888,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 64,
+          "total_file_count": 66,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

@@ -16,7 +16,7 @@
 
 using System.Collections.Generic;
 
-namespace Race_Manager.DataProcessing.NMEA
+namespace Race_Manager.DataProcessing.NMEA.NmeaRead
 {
     internal static class TalkerHelper
     {

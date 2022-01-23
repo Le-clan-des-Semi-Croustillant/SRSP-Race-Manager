@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Race_Manager.DataProcessing.NMEA;
+using Race_Manager.DataProcessing.NMEA.NmeaRead;
+using Race_Manager.DataProcessing.NMEA.NmeaType;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Reflection;
 
@@ -83,7 +85,7 @@ namespace consoleTests
 
             //string[] test = NmeaParse.Parsing(NmeaType);
             //Console.WriteLine(test[0]);
-            NmeaParse.Parse(NmeaType);
+            //NmeaParse.Parse(NmeaType);
             //Console.WriteLine(string.Join("\n", test));
             //string IdTalker = NmeaParse.ParsingIdTalker(test[0]);
             //string IdFrame = NmeaParse.ParsingIdFrame(test[0]);

@@ -15,8 +15,9 @@
 //  ******************************************************************************
 
 using System;
+using Race_Manager.DataProcessing.NMEA.NmeaRead;
 
-namespace Race_Manager.DataProcessing.NMEA
+namespace Race_Manager.DataProcessing.NMEA.NmeaType
 {
     /// <summary>
     /// Local geodetic datum and datum offsets from a reference datum.

@@ -16,8 +16,9 @@
 
 using System;
 using System.Globalization;
+using Race_Manager.DataProcessing.NMEA.NmeaRead;
 
-namespace Race_Manager.DataProcessing.NMEA
+namespace Race_Manager.DataProcessing.NMEA.NmeaType
 {
     /// <summary>
     /// Bearing - Origin to Destination
