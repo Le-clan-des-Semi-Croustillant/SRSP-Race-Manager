@@ -27,7 +27,7 @@ namespace Race_Manager.Communication
         private static List<Client> clients = new List<Client>();
 
         private static Thread thread;
-        private static int Port {get;set;}
+        private static int Port { get; set; } = 45879;
 
         // Semaphore
         public static ManualResetEvent allDone = new ManualResetEvent(false);
@@ -36,13 +36,15 @@ namespace Race_Manager.Communication
         {
         }
 
-        public static void Run(int port)
+        public static void Run()
         {
-            Port = port;
             thread = new Thread(new ThreadStart(StartListening));
         }
 
-
+        public static void Stop()
+        {
+            thread.Interrupt();
+        }
 
 
         private static void StartListening()
@@ -118,8 +120,8 @@ namespace Race_Manager.Communication
                 new AsyncCallback(ReadCallback), client);
         }
 
-        
-        
+
+
 
 
     }

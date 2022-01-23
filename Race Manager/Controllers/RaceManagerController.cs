@@ -18,6 +18,16 @@ namespace Race_Manager.Controllers
             return View();
         }
 
+        public IActionResult Gpx()
+        {
+            return View();
+        }
+
+        public IActionResult Grid()
+        {
+            return View();
+        }
+
         public IActionResult Config()
         {
             return View();

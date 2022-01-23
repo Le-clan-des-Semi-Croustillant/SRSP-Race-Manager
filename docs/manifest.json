@@ -1,18 +1,258 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Users/MOUSSAOUI/Documents/DoxygenC/SRSP-Race-Manager/Race Manager",
+  "source_base_path": "G:/Documents/GitHub/SRSP-Race-Manager/Race Manager",
   "xrefmap": "xrefmap.yml",
   "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.Communication.AsyncServer.Client.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.Communication.AsyncServer.Client.html",
+          "hash": "rjcfDm7qsIq+ftYVARx0/6UFRp2xJvXizQNiCc7wlr4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.Communication.AsyncServer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.Communication.AsyncServer.html",
+          "hash": "xe906pyvG4A30zI5BZ92Bt+6/OudGf2AdZfMAmGDKSc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.Communication.Config.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.Communication.Config.html",
+          "hash": "my1JmZY7ngve32XesmSYxW1L+UiR0WUCNlf8sgN+KFQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.Communication.IMessageType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.Communication.IMessageType.html",
+          "hash": "+bYOjnu87sM9mbmLn41hK0t2JWGoDtRQKSQVDAaBFvM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.Communication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.Communication.html",
+          "hash": "AIbkV+rPrXHVa5LnHk0mT0/SZEVTHs6SlSwQ0BIppms="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.Controllers.RaceManagerController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.Controllers.RaceManagerController.html",
+          "hash": "5OjOL3yWlX9RytP6pvVlrewLP95XHVXWDtIV7ta+41Y="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.Controllers.html",
+          "hash": "CcojIZK1AVVFJtbMbw3MSvqyS9r7tgGy7xK0vVmEnhM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.Json.JsonManage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.Json.JsonManage.html",
+          "hash": "2lV3peGfGw6V8ZpJm/7AdEBLr98LR08B+hldK2pDRgI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.Json.JsonParse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.Json.JsonParse.html",
+          "hash": "luL41ITnCd2tt7EU9IFrQt2eTdjrUsDbk721XFHdDIQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.Json.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.Json.html",
+          "hash": "FwkiaOXXx4C35UTj6U85FBVD4CexSU1r+VRWXyiL204="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.ListNmeaType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.ListNmeaType.html",
+          "hash": "e81pYY8OL6fDTyyI1HkeGTvtWs80FvOYqFgxfol1gi0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaParse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaParse.html",
+          "hash": "qq4q+0CorSoK3peq8g34tpFIAjztOEZfYSp6ZI6S1C0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.GGA.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.GGA.html",
+          "hash": "1YDaj4YtxtvjHIv5iQS5AeHf6wKznYsulrkbtmnITiw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.NmeaType.html",
+          "hash": "Q7oghBHcxhAdU/qSLkP8KNVZ3WTOY8adu+er+hPssGU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.DataProcessing.NMEA.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.DataProcessing.NMEA.html",
+          "hash": "sAoUFlt14bENuwigr9H2A0FaGv7fgalXdgywS0yY5kw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.Models.ErrorViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.Models.ErrorViewModel.html",
+          "hash": "fEpjo3sLxP/fP2NWIhNs5f7FGHfr4SrjsmHRb7TTtpI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.Models.html",
+          "hash": "KMBzX0iviuMV700cm3/H267FZL/5S6bAZKv0c4Ny+60="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.locales.text.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.locales.text.html",
+          "hash": "kYIaDFCiplyyFEqcDuauSraVtfXiGiwI+46VklvHL5s="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Race_Manager.locales.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Race_Manager.locales.html",
+          "hash": "O2eEv9IM6oZ6wBrYrI9DXIt/Z0mMQu3X1g3nQ0lc0E4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
     {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "2vz3gxuuGfvY7SSiaqJBffJLuGPHJXXhj75VjGf5rYw="
+          "hash": "3yK6g7SLDI2O+bsBEkLp4onW5P5S7Zrp0gYdXu9GYlM="
         }
       },
       "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "CjZgDEb+nbMMR8xPRBpJQMxF7ctFR2CJtWdfC/HSu1k="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -21,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "J16tPljbCW5UQZHXkCSKEgj/ndCORtU7lIyC3KiEN9I="
+          "hash": "AEOap43CVKY/dsP0PEsDnseN4M8SBYFAYSN3y1yF7nI="
         }
       },
       "is_incremental": true,
@@ -45,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "71UpMZJug9QybLQYimi63CvRXELuAw6EFW73qUKtaok="
+          "hash": "tMydaB+SV5sxG/12cWylP6SSYs7wS982qC6802W4UPU="
         }
       },
       "is_incremental": true,
@@ -57,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "4TEgJl9AhuPIoP9weFbgLuRejAX7WRouRdNP0UiX0nY="
+          "hash": "WSuRrYiGwKKMbtdG9z8W9fXmLoCyTnGg9AxbPKLXm2Y="
         }
       },
       "is_incremental": false,
@@ -78,6 +318,12 @@
           "incrementalPhase": "build",
           "total_file_count": 3,
           "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 19,
+          "skipped_file_count": 19
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
