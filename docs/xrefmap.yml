@@ -4703,6 +4703,31 @@ references:
   fullName: Race_Manager.DataProcessing.NMEA.NmeaType.Zda.Race_Manager.DataProcessing.NMEA.NmeaRead.ITimestampedMessage.Timestamp
   nameWithType: Zda.ITimestampedMessage.Timestamp
   nameWithType.vb: Zda.Race_Manager.DataProcessing.NMEA.NmeaRead.ITimestampedMessage.Timestamp
+- uid: Race_Manager.DataProcessing.NMEA.NmeaWrite
+  name: Race_Manager.DataProcessing.NMEA.NmeaWrite
+  href: api/Race_Manager.DataProcessing.NMEA.NmeaWrite.html
+  commentId: N:Race_Manager.DataProcessing.NMEA.NmeaWrite
+  fullName: Race_Manager.DataProcessing.NMEA.NmeaWrite
+  nameWithType: Race_Manager.DataProcessing.NMEA.NmeaWrite
+- uid: Race_Manager.DataProcessing.NMEA.NmeaWrite.NmeaMessageWriter
+  name: NmeaMessageWriter
+  href: api/Race_Manager.DataProcessing.NMEA.NmeaWrite.NmeaMessageWriter.html
+  commentId: T:Race_Manager.DataProcessing.NMEA.NmeaWrite.NmeaMessageWriter
+  fullName: Race_Manager.DataProcessing.NMEA.NmeaWrite.NmeaMessageWriter
+  nameWithType: NmeaMessageWriter
+- uid: Race_Manager.DataProcessing.NMEA.NmeaWrite.NmeaMessageWriter.Checksum(System.String)
+  name: Checksum(String)
+  href: api/Race_Manager.DataProcessing.NMEA.NmeaWrite.NmeaMessageWriter.html#Race_Manager_DataProcessing_NMEA_NmeaWrite_NmeaMessageWriter_Checksum_System_String_
+  commentId: M:Race_Manager.DataProcessing.NMEA.NmeaWrite.NmeaMessageWriter.Checksum(System.String)
+  fullName: Race_Manager.DataProcessing.NMEA.NmeaWrite.NmeaMessageWriter.Checksum(System.String)
+  nameWithType: NmeaMessageWriter.Checksum(String)
+- uid: Race_Manager.DataProcessing.NMEA.NmeaWrite.NmeaMessageWriter.Checksum*
+  name: Checksum
+  href: api/Race_Manager.DataProcessing.NMEA.NmeaWrite.NmeaMessageWriter.html#Race_Manager_DataProcessing_NMEA_NmeaWrite_NmeaMessageWriter_Checksum_
+  commentId: Overload:Race_Manager.DataProcessing.NMEA.NmeaWrite.NmeaMessageWriter.Checksum
+  isSpec: "True"
+  fullName: Race_Manager.DataProcessing.NMEA.NmeaWrite.NmeaMessageWriter.Checksum
+  nameWithType: NmeaMessageWriter.Checksum
 - uid: Race_Manager.DataProcessing.NMEAV0
   name: Race_Manager.DataProcessing.NMEAV0
   href: api/Race_Manager.DataProcessing.NMEAV0.html

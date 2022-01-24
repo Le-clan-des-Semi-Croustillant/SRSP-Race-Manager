@@ -27,6 +27,7 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
+<<<<<<< Updated upstream
   <ItemGroup>
     <Compile Update="locales\text.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -45,4 +46,6 @@
     </EmbeddedResource>
   </ItemGroup>
 
+=======
+>>>>>>> Stashed changes
 </Project>
