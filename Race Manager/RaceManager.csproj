@@ -28,20 +28,20 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="locales\text.Designer.cs">
+    <Compile Update="locales\locale.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>text.resx</DependentUpon>
+      <DependentUpon>locale.resx</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="locales\text.fr.resx">
+    <EmbeddedResource Update="locales\locale.fr.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="locales\text.resx">
+    <EmbeddedResource Update="locales\locale.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>text.Designer.cs</LastGenOutput>
+      <LastGenOutput>locale.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 

@@ -30,8 +30,8 @@ app.MapControllerRoute(
     pattern: "{controller=RaceManager}/{action=Index}/{id?}");
 
 Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en-US");
-Console.WriteLine(text.Hello);
+Console.WriteLine(locale.Hello);
 Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("fr-FR");
-Console.WriteLine(text.Hello);
+Console.WriteLine(locale.Hello);
 
 app.Run();

@@ -117,7 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="GpxFile" xml:space="preserve">
+    <value>Fichier .gpx </value>
+  </data>
+  <data name="GridFile" xml:space="preserve">
+    <value>Fichier .grid</value>
+  </data>
   <data name="Hello" xml:space="preserve">
     <value>Bonjour</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Aide</value>
+  </data>
+  <data name="IPV4support" xml:space="preserve">
+    <value>Support d'IPV4 par le serveur: </value>
+  </data>
+  <data name="IPV6support" xml:space="preserve">
+    <value>Support d'IPV6 par le serveur: </value>
+  </data>
+  <data name="PortUnavailable" xml:space="preserve">
+    <value>Le port {0} est indisponible</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Configuration</value>
   </data>
 </root>

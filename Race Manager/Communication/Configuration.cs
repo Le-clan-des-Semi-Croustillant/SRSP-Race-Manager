@@ -23,7 +23,7 @@ namespace Race_Manager.Communication
                 if (tcpi.LocalEndPoint.Port == port)
                 {
                     portDisponible = false;
-                    Console.WriteLine(text.PortUnavailable, port);
+                    Console.WriteLine(locale.PortUnavailable, port);
                     break;
                 }
             }
@@ -63,8 +63,8 @@ namespace Race_Manager.Communication
             try
             {
                 // Affiche les flgas qui indiquent si le serveur prend en charge les schémas d'adresse IPv4 ou IPv6.
-                sb.AppendLine(text.IPV4support + Socket.SupportsIPv4);
-                sb.AppendLine(text.IPV6support + Socket.SupportsIPv6);
+                sb.AppendLine(locale.IPV4support + Socket.SupportsIPv4);
+                sb.AppendLine(locale.IPV6support + Socket.SupportsIPv6);
                 Console.WriteLine(sb);
             }
 

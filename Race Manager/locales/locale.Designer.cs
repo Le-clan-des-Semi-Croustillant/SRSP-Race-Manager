@@ -22,14 +22,14 @@ namespace Race_Manager.locales {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class text {
+    public class locale {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal text() {
+        internal locale() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Race_Manager.locales {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Race_Manager.locales.text", typeof(text).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Race_Manager.locales.locale", typeof(locale).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,11 +61,38 @@ namespace Race_Manager.locales {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à .gpx file.
+        /// </summary>
+        public static string GpxFile {
+            get {
+                return ResourceManager.GetString("GpxFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à .grid file.
+        /// </summary>
+        public static string GridFile {
+            get {
+                return ResourceManager.GetString("GridFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Hello.
         /// </summary>
         public static string Hello {
             get {
                 return ResourceManager.GetString("Hello", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Help.
+        /// </summary>
+        public static string Help {
+            get {
+                return ResourceManager.GetString("Help", resourceCulture);
             }
         }
         
@@ -93,6 +120,15 @@ namespace Race_Manager.locales {
         public static string PortUnavailable {
             get {
                 return ResourceManager.GetString("PortUnavailable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Settings.
+        /// </summary>
+        public static string Settings {
+            get {
+                return ResourceManager.GetString("Settings", resourceCulture);
             }
         }
     }
