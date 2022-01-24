@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Race_Manager.DataProcessing.NMEA;
 using Race_Manager.DataProcessing.NMEA.NmeaRead;
 using Race_Manager.DataProcessing.NMEA.NmeaType;
+using Race_Manager.DataProcessing.NMEA.NmeaWrite;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Reflection;
 
@@ -24,6 +25,9 @@ namespace consoleTests
             //string input3 = "$GPVHW,35.0000,T,,M,5.0000,N,,K*72";
             //msg213 = NmeaMessage.Parse(input3);
             //Console.WriteLine(msg213);
+            string trame = "$GPGGA,123519,4807.038,N,01131.324,E,1,08,0.9,545.4,M,46.9,M,,";
+            Console.WriteLine(NmeaMessageWriter.Checksum(trame));
+            
 
             string info = "$VBRMC,170423,A,4643.8214,N,00124.5556,W,5.4000,45.0000,081120,0.0,W,A*2F";
             var msginfo = NmeaMessage.Parse(info);
