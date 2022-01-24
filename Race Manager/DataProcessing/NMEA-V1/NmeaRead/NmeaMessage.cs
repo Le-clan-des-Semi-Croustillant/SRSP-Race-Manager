@@ -198,19 +198,23 @@ namespace Race_Manager.DataProcessing.NMEA.NmeaRead
             {
                 if (previousSentence.TryAppend(MessageType, MessageParts))
                 {
+                    Console.WriteLine("Ici - 1");
                     return pmsg;
                 }
             }
             if (messageTypes.ContainsKey(MessageType))
             {
+                Console.WriteLine("Ici - 2");
                 return (NmeaMessage)messageTypes[MessageType].Invoke(new object[] { MessageType, MessageParts });
             }
             else if (messageTypes.ContainsKey("--" + MessageType.Substring(2)))
             {
+                Console.WriteLine("Ici - 3");
                 return (NmeaMessage)messageTypes["--" + MessageType.Substring(2)].Invoke(new object[] { MessageType, MessageParts });
             }
             else
             {
+                Console.WriteLine("Ici - 4");
                 return new UnknownMessage(MessageType, MessageParts);
             }
         }
