@@ -35,6 +35,7 @@ Console.WriteLine(locale.Hello);
 //Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("fr-FR");
 Console.WriteLine(locale.Hello);
 AsyncServer.Port = 45678;
-AsyncServer.Run();
+//AsyncServer.Run();
+AsyncServer.StartListening();
 
 app.Run();

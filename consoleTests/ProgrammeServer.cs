@@ -10,22 +10,23 @@ class ProgrammeServer
     {
         Console.WriteLine("Hello, World!");
 
-        IMessageType TypeMessage = 0;
-        long Id = 4242;
-        long IdGame = 01;
-        string NMEA = "YOLO";
-        long Boat = 0;
-        int IdPlayer = 123;
-        string NamePlayer = "Sky";
+        //IMessageType TypeMessage = 0;
+        //long Id = 4242;
+        //long IdGame = 01;
+        //string NMEA = "YOLO";
+        //long Boat = 0;
+        //int IdPlayer = 123;
+        //string NamePlayer = "Sky";
 
-        string test = JsonParse.JsonSerialiseConnection(TypeMessage, Id, IdGame, NMEA, Boat, IdPlayer, NamePlayer);
-        Console.WriteLine("test" + test);
+        //string test = JsonParse.JsonSerialiseConnection(TypeMessage, Id, IdGame, NMEA, Boat, IdPlayer, NamePlayer);
+        //Console.WriteLine("test" + test);
 
-        JsonManage.JsonType(test);
+        //JsonManage.JsonType(test);
 
         string[] str = new string[] { "a", "b" };
 
-        //AsyncServer.StartListening(65432);
+        AsyncServer.Port = 45678;
+        AsyncServer.Run();
 
 
         Console.WriteLine();

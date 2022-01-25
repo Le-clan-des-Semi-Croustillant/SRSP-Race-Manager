@@ -5,7 +5,7 @@
     <TargetFramework>net6.0-windows7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>consoleTests.Launcher_NMEA_001</StartupObject>
+    <StartupObject>consoleTests.AsynchronousClient</StartupObject>
     <BaseOutputPath>bin</BaseOutputPath>
   </PropertyGroup>
 

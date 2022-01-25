@@ -186,6 +186,19 @@ references:
   isSpec: "True"
   fullName: RaceManager.Communication.AsyncServer.Run
   nameWithType: AsyncServer.Run
+- uid: RaceManager.Communication.AsyncServer.StartListening
+  name: StartListening()
+  href: api/RaceManager.Communication.AsyncServer.html#RaceManager_Communication_AsyncServer_StartListening
+  commentId: M:RaceManager.Communication.AsyncServer.StartListening
+  fullName: RaceManager.Communication.AsyncServer.StartListening()
+  nameWithType: AsyncServer.StartListening()
+- uid: RaceManager.Communication.AsyncServer.StartListening*
+  name: StartListening
+  href: api/RaceManager.Communication.AsyncServer.html#RaceManager_Communication_AsyncServer_StartListening_
+  commentId: Overload:RaceManager.Communication.AsyncServer.StartListening
+  isSpec: "True"
+  fullName: RaceManager.Communication.AsyncServer.StartListening
+  nameWithType: AsyncServer.StartListening
 - uid: RaceManager.Communication.AsyncServer.Stop
   name: Stop()
   href: api/RaceManager.Communication.AsyncServer.html#RaceManager_Communication_AsyncServer_Stop

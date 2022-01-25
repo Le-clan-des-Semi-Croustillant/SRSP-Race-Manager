@@ -70,7 +70,7 @@ namespace consoleTests
                 string NamePlayer = "Sky";
 
                 string test = JsonParse.JsonSerialiseConnection(TypeMessage, Id, IdGame, NMEA, Boat, IdPlayer, NamePlayer);
-                Console.WriteLine("test" + test);
+                Console.WriteLine(test);
                 Send(client, test);
                 //Send(client, "This is a test<EOF>");
                 sendDone.WaitOne();
@@ -204,7 +204,7 @@ namespace consoleTests
 
         public static int Main(String[] args)
         {
-            StartClient(65432);
+            StartClient(45678);
             return 0;
         }
     }

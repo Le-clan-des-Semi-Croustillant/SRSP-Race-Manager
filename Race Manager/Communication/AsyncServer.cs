@@ -48,7 +48,7 @@ namespace RaceManager.Communication
         }
 
 
-        private static void StartListening()
+        public static void StartListening()
         {
             // Data buffer for incoming data.
             byte[] bytes = new byte[1024];
