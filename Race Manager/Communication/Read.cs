@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RaceManager.DataProcessing.Json;
+using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -48,6 +49,20 @@ namespace RaceManager.Communication
                     //      clients.addOnce(client)
                     // 
                     // case IMessageType.INFO :
+                    dynamic serialisation = JsonParse.JsonDeserialize(content);
+                    switch (serialisation.TypeMessage)
+                    {
+                        case IMessageType.CONNECTION:
+                            Console.WriteLine("CONNECT");
+                            break;
+
+                        case IMessageType.DISCONNECTION:
+                            Console.WriteLine("DISCONNECT");
+                            break;
+
+                        default:
+                            break;
+                    }
 
 
                     // Echo the data back to the client.

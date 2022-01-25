@@ -6,6 +6,5 @@
         DISCONNECTION,
         INFO,
         BOATSELECT,
-
     }
 }
