@@ -120,6 +120,9 @@
   <data name="GpxFile" xml:space="preserve">
     <value>Fichier .gpx </value>
   </data>
+  <data name="GridDest" xml:space="preserve">
+    <value>Cette page vous permettra d'importer vos fichier grid et de les modifier si besoin est.</value>
+  </data>
   <data name="GridFile" xml:space="preserve">
     <value>Fichier .grid</value>
   </data>
