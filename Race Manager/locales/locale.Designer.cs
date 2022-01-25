@@ -70,6 +70,15 @@ namespace Race_Manager.locales {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à This page will allow you to import your grid files and modify them if necessary..
+        /// </summary>
+        public static string GridDest {
+            get {
+                return ResourceManager.GetString("GridDest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à .grid file.
         /// </summary>
         public static string GridFile {
