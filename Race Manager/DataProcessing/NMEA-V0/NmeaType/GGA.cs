@@ -1,4 +1,4 @@
-﻿namespace Race_Manager.DataProcessing.NMEAV0.NmeaType
+﻿namespace RaceManager.DataProcessing.NMEAV0.NmeaType
 {
     public class GGA
     {

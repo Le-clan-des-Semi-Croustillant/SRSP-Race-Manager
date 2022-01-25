@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Race_Manager.Models;
 using System.Diagnostics;
+using RaceManager.Models;
 
-namespace Race_Manager.Controllers
+namespace RaceManager.Controllers
 {
     public class RaceManagerController : Controller
     {

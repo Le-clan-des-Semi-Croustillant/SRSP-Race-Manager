@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
-using Race_Manager.Communication;
+using RaceManager.Communication;
 
-namespace Race_Manager.DataProcessing.Json
+namespace RaceManager.DataProcessing.Json
 {
     public class JsonParse
     {

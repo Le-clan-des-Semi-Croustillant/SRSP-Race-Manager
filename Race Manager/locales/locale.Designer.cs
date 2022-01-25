@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Race_Manager.locales {
+namespace RaceManager.locales {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Race_Manager.locales {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Race_Manager.locales.locale", typeof(locale).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RaceManager.locales.locale", typeof(locale).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

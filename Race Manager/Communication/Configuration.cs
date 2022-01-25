@@ -6,9 +6,9 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Text.RegularExpressions;
-using Race_Manager.locales;
+using RaceManager.locales;
 
-namespace Race_Manager.Communication
+namespace RaceManager.Communication
 {
     public class Configuration
     {

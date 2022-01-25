@@ -1,4 +1,4 @@
-﻿namespace Race_Manager.DataProcessing.NMEA.NmeaWrite
+﻿namespace RaceManager.DataProcessing.NMEA.NmeaWrite
 {
     public class NmeaMessageWriter
     {

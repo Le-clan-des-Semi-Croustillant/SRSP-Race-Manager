@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Race_Manager.Models;
+using RaceManager.Models;
 
-namespace Race_Manager.Controllers
+namespace RaceManager.Controllers
 {
     public class ConfigController : Controller
     {

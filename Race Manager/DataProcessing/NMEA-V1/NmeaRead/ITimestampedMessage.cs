@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Race_Manager.DataProcessing.NMEA.NmeaRead
+namespace RaceManager.DataProcessing.NMEA.NmeaRead
 {
     /// <summary>
     /// Indicates this message has a time stamp

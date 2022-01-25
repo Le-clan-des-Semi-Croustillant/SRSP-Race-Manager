@@ -13,9 +13,10 @@
 //  *   See the License for the specific language governing permissions and
 //  *   limitations under the License.
 //  ******************************************************************************
-using Race_Manager.DataProcessing.NMEA.NmeaRead;
 
-namespace Race_Manager.DataProcessing.NMEA.NmeaType
+using RaceManager.DataProcessing.NMEA.NmeaRead;
+
+namespace RaceManager.DataProcessing.NMEA.NmeaType
 {
     /// <summary>
     /// Laser Range Burden finder

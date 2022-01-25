@@ -1,4 +1,4 @@
-namespace Race_Manager.Models
+namespace RaceManager.Models
 {
     public class ErrorViewModel
     {

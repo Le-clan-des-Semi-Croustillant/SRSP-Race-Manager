@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using Microsoft.AspNetCore.SignalR;
 
-namespace Race_Manager.Communication
+namespace RaceManager.Communication
 {
     // https://docs.microsoft.com/en-us/dotnet/framework/network-programming/asynchronous-server-socket-example?redirectedfrom=MSDN
     // State object for reading client data asynchronously
@@ -27,7 +27,7 @@ namespace Race_Manager.Communication
         private static List<Client> clients = new List<Client>();
 
         private static Thread thread;
-        private static int Port { get; set; } = 45879;
+        public static int Port { get; set; } = 45879;
 
         // Semaphore
         public static ManualResetEvent allDone = new ManualResetEvent(false);

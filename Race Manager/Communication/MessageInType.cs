@@ -1,4 +1,4 @@
-﻿namespace Race_Manager.Communication
+﻿namespace RaceManager.Communication
 {
     public enum IMessageType
     {

@@ -18,7 +18,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 
-namespace Race_Manager.DataProcessing.NMEA.NmeaRead
+namespace RaceManager.DataProcessing.NMEA.NmeaRead
 {
     /// <summary>
     /// Base class for easily creating message that are spread across multiple sentences

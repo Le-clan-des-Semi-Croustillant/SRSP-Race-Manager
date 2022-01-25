@@ -4,8 +4,8 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using Race_Manager.Communication;
-using Race_Manager.locales;
+using RaceManager.Communication;
+using RaceManager.locales;
 
 namespace consoleTests
 {

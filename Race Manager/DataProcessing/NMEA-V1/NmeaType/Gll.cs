@@ -15,9 +15,9 @@
 //  ******************************************************************************
 
 using System;
-using Race_Manager.DataProcessing.NMEA.NmeaRead;
+using RaceManager.DataProcessing.NMEA.NmeaRead;
 
-namespace Race_Manager.DataProcessing.NMEA.NmeaType
+namespace RaceManager.DataProcessing.NMEA.NmeaType
 {
     /// <summary>
     /// Geographic position, latitude / longitude.

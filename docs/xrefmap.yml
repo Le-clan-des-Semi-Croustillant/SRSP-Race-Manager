@@ -147,6 +147,19 @@ references:
   commentId: F:Race_Manager.Communication.AsyncServer.Client.sb
   fullName: Race_Manager.Communication.AsyncServer.Client.sb
   nameWithType: AsyncServer.Client.sb
+- uid: Race_Manager.Communication.AsyncServer.Port
+  name: Port
+  href: api/Race_Manager.Communication.AsyncServer.html#Race_Manager_Communication_AsyncServer_Port
+  commentId: P:Race_Manager.Communication.AsyncServer.Port
+  fullName: Race_Manager.Communication.AsyncServer.Port
+  nameWithType: AsyncServer.Port
+- uid: Race_Manager.Communication.AsyncServer.Port*
+  name: Port
+  href: api/Race_Manager.Communication.AsyncServer.html#Race_Manager_Communication_AsyncServer_Port_
+  commentId: Overload:Race_Manager.Communication.AsyncServer.Port
+  isSpec: "True"
+  fullName: Race_Manager.Communication.AsyncServer.Port
+  nameWithType: AsyncServer.Port
 - uid: Race_Manager.Communication.AsyncServer.ReadCallback(System.IAsyncResult)
   name: ReadCallback(IAsyncResult)
   href: api/Race_Manager.Communication.AsyncServer.html#Race_Manager_Communication_AsyncServer_ReadCallback_System_IAsyncResult_

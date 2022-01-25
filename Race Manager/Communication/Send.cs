@@ -4,7 +4,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 
-namespace Race_Manager.Communication
+namespace RaceManager.Communication
 {
     public partial class AsyncServer
     {

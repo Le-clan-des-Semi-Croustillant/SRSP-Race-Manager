@@ -1,8 +1,8 @@
 ﻿using System.Globalization;
 using System.Reflection;
-using Race_Manager.DataProcessing.NMEAV0.NmeaType;
+using RaceManager.DataProcessing.NMEAV0.NmeaType;
 
-namespace Race_Manager.DataProcessing.NMEAV0
+namespace RaceManager.DataProcessing.NMEAV0
 {
     //public class NmeaManage
     //{

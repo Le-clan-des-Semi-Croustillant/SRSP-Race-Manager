@@ -1,4 +1,4 @@
-﻿namespace Race_Manager.DataProcessing.NMEAV0
+﻿namespace RaceManager.DataProcessing.NMEAV0
 {
     //[NmeaMessageType("GLL")]
     public class GLL

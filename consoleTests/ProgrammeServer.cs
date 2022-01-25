@@ -1,6 +1,6 @@
-﻿using Race_Manager.Communication;
-using Race_Manager.DataProcessing;
-using Race_Manager.DataProcessing.Json;
+﻿using RaceManager.Communication;
+using RaceManager.DataProcessing;
+using RaceManager.DataProcessing.Json;
 
 // See https://aka.ms/new-console-template for more information
 

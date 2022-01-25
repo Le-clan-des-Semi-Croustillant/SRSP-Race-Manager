@@ -1,6 +1,7 @@
 using System.Globalization;
 using System.Threading;
-using Race_Manager.locales;
+using RaceManager.Communication;
+using RaceManager.locales;
 
 //using System.Pro;
 var builder = WebApplication.CreateBuilder(args);
@@ -33,5 +34,7 @@ Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en-US");
 Console.WriteLine(locale.Hello);
 Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("fr-FR");
 Console.WriteLine(locale.Hello);
+AsyncServer.Port = 45678;
+AsyncServer.Run();
 
 app.Run();

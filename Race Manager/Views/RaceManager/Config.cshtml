@@ -1,3 +1,9 @@
+@using RaceManager.locales
+@{
+    ViewData["Title"] = locale.Settings;
+}
+
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -8,11 +14,11 @@
     *@
 </head>
 <body>
-@using (Html.BeginForm("action","yourcontrollername"))
+@*@using (Html.BeginForm("action","yourcontrollername"))
 {
 
     <input type="submit" value="Create" />
 
-}  
+}  *@
 </body>
 </html>

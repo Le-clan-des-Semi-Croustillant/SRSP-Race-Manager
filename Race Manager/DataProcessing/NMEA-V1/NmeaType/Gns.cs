@@ -17,9 +17,9 @@
 using System;
 using System.Globalization;
 using System.Linq;
-using Race_Manager.DataProcessing.NMEA.NmeaRead;
+using RaceManager.DataProcessing.NMEA.NmeaRead;
 
-namespace Race_Manager.DataProcessing.NMEA.NmeaType
+namespace RaceManager.DataProcessing.NMEA.NmeaType
 {
     /// <summary>
     /// Fixes data for single or combined (GPS, GLONASS, possible future satellite systems, and systems combining these) satellite navigation systems
