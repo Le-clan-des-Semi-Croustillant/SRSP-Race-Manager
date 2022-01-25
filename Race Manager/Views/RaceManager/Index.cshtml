@@ -1,4 +1,5 @@
-@using Race_Manager.locales
+@using RaceManager.locales
+@Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en-US");
 
 <!DOCTYPE HTML>
 <html>
@@ -18,8 +19,8 @@
             </div>
             <div class="content">
                 <div>
-                    <h3>Fichier Grid</h3>
-                    <p>@locale.GridDest</p>
+                    <h3>@locale.GridFile</h3>
+                    <p>@locale.GridDesc</p>
                     @*<a href="Pages/grid.cshtml">Voir plus</a>*@
                     <a class="nav-link" asp-area="" asp-controller="RaceManager" asp-action="Grid">Voir plus</a>
                 </div>

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Race_Manager.DataProcessing.NMEA;
-using Race_Manager.DataProcessing.NMEA.NmeaRead;
-using Race_Manager.DataProcessing.NMEA.NmeaType;
-using Race_Manager.DataProcessing.NMEA.NmeaWrite;
+using RaceManager.DataProcessing.NMEA;
+using RaceManager.DataProcessing.NMEA.NmeaRead;
+using RaceManager.DataProcessing.NMEA.NmeaType;
+using RaceManager.DataProcessing.NMEA.NmeaWrite;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Reflection;
 

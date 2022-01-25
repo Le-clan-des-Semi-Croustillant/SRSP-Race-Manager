@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Globalization;
+using RaceManager.locales;
 using RaceManager.Models;
 
 namespace RaceManager.Controllers
@@ -15,6 +17,9 @@ namespace RaceManager.Controllers
 
         public IActionResult Index()
         {
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en-US");
+            Console.WriteLine(locale.GridDesc);
+
             return View();
         }
 

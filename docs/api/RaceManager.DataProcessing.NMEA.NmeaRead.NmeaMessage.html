@@ -1,0 +1,688 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NmeaMessage
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NmeaMessage
+   ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage">
+  
+  
+  <h1 id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage" class="text-break">Class NmeaMessage
+  </h1>
+  <div class="markdown level0 summary"><p>NMEA Message base class.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">NmeaMessage</span></div>
+      <div class="level2"><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaRead.LaserRangeMessage.html">LaserRangeMessage</a></div>
+      <div class="level2"><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMultiSentenceMessage.html">NmeaMultiSentenceMessage</a></div>
+      <div class="level2"><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaType.Bod.html">Bod</a></div>
+      <div class="level2"><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaType.Dtm.html">Dtm</a></div>
+      <div class="level2"><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaType.Gbs.html">Gbs</a></div>
+      <div class="level2"><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaType.Gga.html">Gga</a></div>
+      <div class="level2"><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaType.Gll.html">Gll</a></div>
+      <div class="level2"><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaType.Gns.html">Gns</a></div>
+      <div class="level2"><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaType.Grs.html">Grs</a></div>
+      <div class="level2"><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaType.Gsa.html">Gsa</a></div>
+      <div class="level2"><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaType.Gst.html">Gst</a></div>
+      <div class="level2"><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaType.Pgrme.html">Pgrme</a></div>
+      <div class="level2"><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaType.Pgrmz.html">Pgrmz</a></div>
+      <div class="level2"><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaType.Ptnlb.html">Ptnlb</a></div>
+      <div class="level2"><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaType.Rma.html">Rma</a></div>
+      <div class="level2"><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaType.Rmb.html">Rmb</a></div>
+      <div class="level2"><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaType.Rmc.html">Rmc</a></div>
+      <div class="level2"><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaType.UnknownMessage.html">UnknownMessage</a></div>
+      <div class="level2"><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaType.Vlw.html">Vlw</a></div>
+      <div class="level2"><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaType.Vtg.html">Vtg</a></div>
+      <div class="level2"><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaType.Zda.html">Zda</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.html">NmeaMessage</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaRead.html">RaceManager.DataProcessing.NMEA.NmeaRead</a></h6>
+  <h6><strong>Assembly</strong>: RaceManager.dll</h6>
+  <h5 id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class NmeaMessage : IEquatable&lt;NmeaMessage&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/new/main/apiSpec/new?filename=RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage__ctor_System_String_System_String___.md&amp;value=---%0Auid%3A%20RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.%23ctor(System.String%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/blob/main/Race Manager/DataProcessing/NMEA-V1/NmeaRead/NmeaMessage.cs/#L67">View Source</a>
+  </span>
+  <a id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage__ctor_" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.#ctor*"></a>
+  <h4 id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage__ctor_System_String_System_String___" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.#ctor(System.String,System.String[])">NmeaMessage(String, String[])</h4>
+  <div class="markdown level1 summary"><p>Initializes an instance of the NMEA message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected NmeaMessage(string messageType, string[] messageParts)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">messageType</span></td>
+        <td><p>Type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">messageParts</span></td>
+        <td><p>Message values</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/new/main/apiSpec/new?filename=RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_Checksum.md&amp;value=---%0Auid%3A%20RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.Checksum%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/blob/main/Race Manager/DataProcessing/NMEA-V1/NmeaRead/NmeaMessage.cs/#L255">View Source</a>
+  </span>
+  <a id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_Checksum_" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.Checksum*"></a>
+  <h4 id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_Checksum" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.Checksum">Checksum</h4>
+  <div class="markdown level1 summary"><p>Gets the checksum value of the message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte Checksum { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/new/main/apiSpec/new?filename=RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_IsProprietary.md&amp;value=---%0Auid%3A%20RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.IsProprietary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/blob/main/Race Manager/DataProcessing/NMEA-V1/NmeaRead/NmeaMessage.cs/#L241">View Source</a>
+  </span>
+  <a id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_IsProprietary_" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.IsProprietary*"></a>
+  <h4 id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_IsProprietary" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.IsProprietary">IsProprietary</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this message type is proprietary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsProprietary { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/new/main/apiSpec/new?filename=RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_MessageParts.md&amp;value=---%0Auid%3A%20RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.MessageParts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/blob/main/Race Manager/DataProcessing/NMEA-V1/NmeaRead/NmeaMessage.cs/#L225">View Source</a>
+  </span>
+  <a id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_MessageParts_" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.MessageParts*"></a>
+  <h4 id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_MessageParts" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.MessageParts">MessageParts</h4>
+  <div class="markdown level1 summary"><p>Gets the NMEA message parts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IReadOnlyList&lt;string&gt; MessageParts { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/new/main/apiSpec/new?filename=RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_MessageType.md&amp;value=---%0Auid%3A%20RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.MessageType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/blob/main/Race Manager/DataProcessing/NMEA-V1/NmeaRead/NmeaMessage.cs/#L231">View Source</a>
+  </span>
+  <a id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_MessageType_" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.MessageType*"></a>
+  <h4 id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_MessageType" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.MessageType">MessageType</h4>
+  <div class="markdown level1 summary"><p>Gets the NMEA type id for the message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string MessageType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The 5 character string that identifies the message type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/new/main/apiSpec/new?filename=RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_TalkerId.md&amp;value=---%0Auid%3A%20RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.TalkerId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/blob/main/Race Manager/DataProcessing/NMEA-V1/NmeaRead/NmeaMessage.cs/#L236">View Source</a>
+  </span>
+  <a id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_TalkerId_" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.TalkerId*"></a>
+  <h4 id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_TalkerId" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.TalkerId">TalkerId</h4>
+  <div class="markdown level1 summary"><p>Gets the talker ID for this message (</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Talker TalkerId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaRead.Talker.html">Talker</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/new/main/apiSpec/new?filename=RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_Timestamp.md&amp;value=---%0Auid%3A%20RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.Timestamp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/blob/main/Race Manager/DataProcessing/NMEA-V1/NmeaRead/NmeaMessage.cs/#L340">View Source</a>
+  </span>
+  <a id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_Timestamp_" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.Timestamp*"></a>
+  <h4 id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_Timestamp" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.Timestamp">Timestamp</h4>
+  <div class="markdown level1 summary"><p>Gets a relative timestamp in milliseconds indicating the time the message was created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Timestamp { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_Timestamp_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value is deduced from <code>System.Diagnostics.Stopwatch.GetTimestamp() * 1000d / System.Diagnostics.Stopwatch.Frequency</code>.
+You can use it to calculate the age of the message in milliseconds by calculating the difference between the timestamp and the above expression</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/new/main/apiSpec/new?filename=RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_Equals_RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_.md&amp;value=---%0Auid%3A%20RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.Equals(RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/blob/main/Race Manager/DataProcessing/NMEA-V1/NmeaRead/NmeaMessage.cs/#L319">View Source</a>
+  </span>
+  <a id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_Equals_" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.Equals*"></a>
+  <h4 id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_Equals_RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.Equals(RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage)">Equals(NmeaMessage)</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(NmeaMessage other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.html">NmeaMessage</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>An object to compare with this object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the current object is equal to the other parameter; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/new/main/apiSpec/new?filename=RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_Parse_System_String_RaceManager_DataProcessing_NMEA_NmeaRead_IMultiSentenceMessage_System_Boolean_.md&amp;value=---%0Auid%3A%20RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.Parse(System.String%2CRaceManager.DataProcessing.NMEA.NmeaRead.IMultiSentenceMessage%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/blob/main/Race Manager/DataProcessing/NMEA-V1/NmeaRead/NmeaMessage.cs/#L150">View Source</a>
+  </span>
+  <a id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_Parse_" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.Parse*"></a>
+  <h4 id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_Parse_System_String_RaceManager_DataProcessing_NMEA_NmeaRead_IMultiSentenceMessage_System_Boolean_" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.Parse(System.String,RaceManager.DataProcessing.NMEA.NmeaRead.IMultiSentenceMessage,System.Boolean)">Parse(String, IMultiSentenceMessage, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Parses the specified NMEA message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NmeaMessage Parse(string message, IMultiSentenceMessage previousSentence = null, bool ignoreChecksum = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The NMEA message string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaRead.IMultiSentenceMessage.html">IMultiSentenceMessage</a></td>
+        <td><span class="parametername">previousSentence</span></td>
+        <td><p>The previously received message (only used if parsing multi-sentence messages)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ignoreChecksum</span></td>
+        <td><p>If <code>true</code> ignores the checksum completely, if <code>false</code> validates the checksum if present.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.html">NmeaMessage</a></td>
+        <td><p>The nmea message that was parsed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Invalid nmea message: Missing starting character '$'
+or checksum failure</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/new/main/apiSpec/new?filename=RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_RegisterAssembly_System_Reflection_Assembly_System_Boolean_.md&amp;value=---%0Auid%3A%20RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.RegisterAssembly(System.Reflection.Assembly%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/blob/main/Race Manager/DataProcessing/NMEA-V1/NmeaRead/NmeaMessage.cs/#L91">View Source</a>
+  </span>
+  <a id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_RegisterAssembly_" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.RegisterAssembly*"></a>
+  <h4 id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_RegisterAssembly_System_Reflection_Assembly_System_Boolean_" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.RegisterAssembly(System.Reflection.Assembly,System.Boolean)">RegisterAssembly(Assembly, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Registers messages from a different assembly</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RegisterAssembly(Assembly assembly, bool replace = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Reflection.Assembly</span></td>
+        <td><span class="parametername">assembly</span></td>
+        <td><p>The assembly to load custom message types from</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">replace</span></td>
+        <td><p>Set to <code>true</code> if you want to replace already registered type. Otherwise this method will throw.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Number of message types found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_RegisterAssembly_System_Reflection_Assembly_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The custom message MUST have a constructor taking a <code>string</code> as first parameter (message type name) and a <code>string[]</code> (message parts) as the second.
+In addition the class must have the <a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessageTypeAttribute.html">NmeaMessageTypeAttribute</a> defind on the class.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/new/main/apiSpec/new?filename=RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_RegisterNmeaMessage_System_Reflection_TypeInfo_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.RegisterNmeaMessage(System.Reflection.TypeInfo%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/blob/main/Race Manager/DataProcessing/NMEA-V1/NmeaRead/NmeaMessage.cs/#L112">View Source</a>
+  </span>
+  <a id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_RegisterNmeaMessage_" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.RegisterNmeaMessage*"></a>
+  <h4 id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_RegisterNmeaMessage_System_Reflection_TypeInfo_System_String_System_Boolean_" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.RegisterNmeaMessage(System.Reflection.TypeInfo,System.String,System.Boolean)">RegisterNmeaMessage(TypeInfo, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Registers a specific NMEA Message type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterNmeaMessage(TypeInfo typeInfo, string nmeaType = &quot;&quot;, bool replace = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Reflection.TypeInfo</span></td>
+        <td><span class="parametername">typeInfo</span></td>
+        <td><p>TypeInfo for the class being registered</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">nmeaType</span></td>
+        <td><p>The 5-character NMEA Type name (eg <code>GPGLL</code>). If <code>null</code>, it'll expect the <a class="xref" href="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessageTypeAttribute.html">NmeaMessageTypeAttribute</a> to be declared on the class.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">replace</span></td>
+        <td><p>Set to <code>true</code> if you want to replace already registered type. Otherwise this method will throw.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/new/main/apiSpec/new?filename=RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_ToString.md&amp;value=---%0Auid%3A%20RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/blob/main/Race Manager/DataProcessing/NMEA-V1/NmeaRead/NmeaMessage.cs/#L247">View Source</a>
+  </span>
+  <a id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_ToString_" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.ToString*"></a>
+  <h4 id="RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage_ToString" data-uid="RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns the original NMEA string that represents this message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>An original NMEA string that represents this message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/new/main/apiSpec/new?filename=RaceManager_DataProcessing_NMEA_NmeaRead_NmeaMessage.md&amp;value=---%0Auid%3A%20RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/blob/main/Race Manager/DataProcessing/NMEA-V1/NmeaRead/NmeaMessage.cs/#L58" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

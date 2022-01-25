@@ -72,9 +72,9 @@ namespace RaceManager.locales {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à This page will allow you to import your grid files and modify them if necessary..
         /// </summary>
-        public static string GridDest {
+        public static string GridDesc {
             get {
-                return ResourceManager.GetString("GridDest", resourceCulture);
+                return ResourceManager.GetString("GridDesc", resourceCulture);
             }
         }
         
