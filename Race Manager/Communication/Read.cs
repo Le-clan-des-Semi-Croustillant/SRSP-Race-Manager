@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RaceManager.DataProcessing.Json;
+using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -30,7 +31,8 @@ namespace RaceManager.Communication
                 // Check for end-of-file tag. If it is not there, read 
                 // more data.
                 content = client.sb.ToString();
-                if (content.IndexOf("<EOF>") > -1)
+                //if (content.IndexOf("<EOF>") > -1)
+                if (true)
                 {
                     // All the data has been read from the 
                     // client. Display it on the console.
@@ -48,6 +50,37 @@ namespace RaceManager.Communication
                     //      clients.addOnce(client)
                     // 
                     // case IMessageType.INFO :
+                    dynamic serialisation = JsonParse.JsonDeserialize(content);
+                    Console.WriteLine(serialisation.TypeMessage.GetType());
+                    Console.WriteLine(serialisation.TypeMessage);
+                    Console.WriteLine(serialisation.Id);
+                    Console.WriteLine(serialisation.IdGame);
+                    Console.WriteLine(serialisation.NMEA);
+                    Console.WriteLine(serialisation.Boat);
+                    Console.WriteLine(serialisation.EnvironmentInfos.IdPlayer);
+                    Console.WriteLine(serialisation.EnvironmentInfos.NamePlayer);
+                    switch ((IMessageType)serialisation.TypeMessage)
+                    {
+                        case IMessageType.CONNECTION:
+                            Console.WriteLine("CONNECTION");
+                            break;
+
+                        case IMessageType.DISCONNECTION:
+                            Console.WriteLine("DISCONNECTION");
+                            break;
+
+                        case IMessageType.INFO:
+                            Console.WriteLine("INFO");
+                            break;
+
+                        case IMessageType.BOATSELECT:
+                            Console.WriteLine("BOATSELECT");
+                            break;
+
+                        default:
+                            Console.WriteLine("Default");
+                            break;
+                    }
 
 
                     // Echo the data back to the client.

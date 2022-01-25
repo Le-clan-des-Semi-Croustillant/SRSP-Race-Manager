@@ -2,10 +2,9 @@
 {
     public enum IMessageType
     {
-        CONNECTION,
-        DISCONNECTION,
-        INFO,
-        BOATSELECT,
-
+        CONNECTION = 0,
+        DISCONNECTION = 1,
+        INFO = 2,
+        BOATSELECT = 3,
     }
 }

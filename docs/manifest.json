@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "G:/Documents/GitHub/SRSP-Race-Manager/Race Manager",
+  "source_base_path": "C:/Users/Sky/Documents/GitHub/LCSC-dev/SRSP-Race-Manager/Race Manager",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RaceManager.Communication.AsyncServer.html",
-          "hash": "gCWiKDJYM5853uV/oxZLiGiGK6yXlzwsF8sENZPwOok="
+          "hash": "tx/b5LKjc+Y6VPsdMYiI7G0+gU1eolX1qdPeTpimMBE="
         }
       },
       "is_incremental": true,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RaceManager.Controllers.RaceManagerController.html",
-          "hash": "XhMpQxcKQVkC5nC9N9hy1R3EfR2C9mPBNu7WsSUWYiw="
+          "hash": "d0z6gFoF1q/ar/xrgVUZ5VBWS5g+CiIx72KW2kkWKTY="
         }
       },
       "is_incremental": true,
@@ -837,7 +837,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RaceManager.locales.locale.html",
-          "hash": "5VP181DUhm9v/oiaH8nLWni/pU1vFISsYUVTzijsyW4="
+          "hash": "gBTZG8xAdzySKudpZfNzY8ba7KsaLafffQBE46CH6Xw="
         }
       },
       "is_incremental": true,

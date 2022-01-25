@@ -1,16 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Net;
+using System.Net.Sockets;
+using System.Threading;
 using System.Text;
+using RaceManager.Communication;
+using RaceManager.DataProcessing.Json;
 
 
 namespace consoleTests
 {
-    using System;
-    using System.Net;
-    using System.Net.Sockets;
-    using System.Threading;
-    using System.Text;
+    
 
     // State object for receiving data from remote device.  
     public class StateObject
@@ -61,8 +60,19 @@ namespace consoleTests
                     new AsyncCallback(ConnectCallback), client);
                 connectDone.WaitOne();
 
-                // Send test data to the remote device.  
-                Send(client, "This is a test<EOF>");
+                // Send test data to the remote device.
+                IMessageType TypeMessage = 0;
+                long Id = 4242;
+                long IdGame = 01;
+                string NMEA = "YOLO";
+                long Boat = 0;
+                int IdPlayer = 123;
+                string NamePlayer = "Sky";
+
+                string test = JsonParse.JsonSerialiseConnection(TypeMessage, Id, IdGame, NMEA, Boat, IdPlayer, NamePlayer);
+                Console.WriteLine(test);
+                Send(client, test);
+                //Send(client, "This is a test<EOF>");
                 sendDone.WaitOne();
 
                 // Receive the response from the remote device.  
@@ -194,7 +204,8 @@ namespace consoleTests
 
         public static int Main(String[] args)
         {
-            StartClient(65432);
+            StartClient(45678);
+            Thread.Sleep(1000);
             return 0;
         }
     }

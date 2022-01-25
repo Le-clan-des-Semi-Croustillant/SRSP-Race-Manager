@@ -5034,19 +5034,19 @@ references:
   isSpec: "True"
   fullName: RaceManager.locales.locale.GpxFile
   nameWithType: locale.GpxFile
-- uid: RaceManager.locales.locale.GridDesc
-  name: GridDesc
-  href: api/RaceManager.locales.locale.html#RaceManager_locales_locale_GridDesc
-  commentId: P:RaceManager.locales.locale.GridDesc
-  fullName: RaceManager.locales.locale.GridDesc
-  nameWithType: locale.GridDesc
-- uid: RaceManager.locales.locale.GridDesc*
-  name: GridDesc
-  href: api/RaceManager.locales.locale.html#RaceManager_locales_locale_GridDesc_
-  commentId: Overload:RaceManager.locales.locale.GridDesc
+- uid: RaceManager.locales.locale.GridDest
+  name: GridDest
+  href: api/RaceManager.locales.locale.html#RaceManager_locales_locale_GridDest
+  commentId: P:RaceManager.locales.locale.GridDest
+  fullName: RaceManager.locales.locale.GridDest
+  nameWithType: locale.GridDest
+- uid: RaceManager.locales.locale.GridDest*
+  name: GridDest
+  href: api/RaceManager.locales.locale.html#RaceManager_locales_locale_GridDest_
+  commentId: Overload:RaceManager.locales.locale.GridDest
   isSpec: "True"
-  fullName: RaceManager.locales.locale.GridDesc
-  nameWithType: locale.GridDesc
+  fullName: RaceManager.locales.locale.GridDest
+  nameWithType: locale.GridDest
 - uid: RaceManager.locales.locale.GridFile
   name: GridFile
   href: api/RaceManager.locales.locale.html#RaceManager_locales_locale_GridFile
