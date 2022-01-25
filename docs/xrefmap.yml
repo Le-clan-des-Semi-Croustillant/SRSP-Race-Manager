@@ -5008,6 +5008,19 @@ references:
   isSpec: "True"
   fullName: Race_Manager.locales.locale.GpxFile
   nameWithType: locale.GpxFile
+- uid: Race_Manager.locales.locale.GridDest
+  name: GridDest
+  href: api/Race_Manager.locales.locale.html#Race_Manager_locales_locale_GridDest
+  commentId: P:Race_Manager.locales.locale.GridDest
+  fullName: Race_Manager.locales.locale.GridDest
+  nameWithType: locale.GridDest
+- uid: Race_Manager.locales.locale.GridDest*
+  name: GridDest
+  href: api/Race_Manager.locales.locale.html#Race_Manager_locales_locale_GridDest_
+  commentId: Overload:Race_Manager.locales.locale.GridDest
+  isSpec: "True"
+  fullName: Race_Manager.locales.locale.GridDest
+  nameWithType: locale.GridDest
 - uid: Race_Manager.locales.locale.GridFile
   name: GridFile
   href: api/Race_Manager.locales.locale.html#Race_Manager_locales_locale_GridFile

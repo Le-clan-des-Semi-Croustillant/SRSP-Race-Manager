@@ -34,6 +34,7 @@ namespace Race_Manager.Communication
 
         public AsyncServer()
         {
+
         }
 
         public static void Run()

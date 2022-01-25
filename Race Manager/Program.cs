@@ -31,7 +31,7 @@ app.MapControllerRoute(
 
 Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en-US");
 Console.WriteLine(locale.Hello);
-Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("fr-FR");
+//Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("fr-FR");
 Console.WriteLine(locale.Hello);
 
 app.Run();
