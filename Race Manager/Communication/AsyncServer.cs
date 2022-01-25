@@ -26,7 +26,7 @@ namespace RaceManager.Communication
 
         private static List<Client> clients = new List<Client>();
 
-        private static Thread thread;
+        private static Thread thread = new Thread(new ThreadStart(StartListening));
         public static int Port { get; set; } = 45879;
 
         // Semaphore
@@ -39,7 +39,7 @@ namespace RaceManager.Communication
 
         public static void Run()
         {
-            thread = new Thread(new ThreadStart(StartListening));
+            thread.Start();
         }
 
         public static void Stop()

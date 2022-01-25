@@ -205,6 +205,7 @@ namespace consoleTests
         public static int Main(String[] args)
         {
             StartClient(45678);
+            Thread.Sleep(1000);
             return 0;
         }
     }
