@@ -8,12 +8,22 @@ namespace RaceManager.Controllers
     {
         private readonly ILogger<ConfigController> _logger;
 
-        //public ConfigController(ILogger<RaceManagerController> logger)
-        //{
-        //    _logger = logger;
-        //}
+        public ConfigController(ILogger<ConfigController> logger)
+        {
+            _logger = logger;
+        }
 
-     
+        public IActionResult form1(int txtId, string txtName, string chkAddon)
+        {
+            ViewBag.Id = txtId;
+            ViewBag.Name = txtName;
+            if (chkAddon != null)
+                ViewBag.Addon = "Selected";
+            else
+                ViewBag.Addon = "Not Selected";
+
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

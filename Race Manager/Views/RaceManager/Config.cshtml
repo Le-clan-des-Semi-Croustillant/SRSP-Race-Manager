@@ -14,11 +14,59 @@
     *@
 </head>
 <body>
-@*@using (Html.BeginForm("action","yourcontrollername"))
-{
+    <div class="container" align="center" >
+@*
+        <hr />
+        <h3><b style="color:white">Forms: Weakly Typed</b></h3>*@
 
-    <input type="submit" value="Create" />
+        <form action="form1" method="post" style="color:white">
+            <table>
+                <td> ID is @ViewBag.ID</td>
+                <tr>
+                    <td>Enter ID: </td>
+                    <td><input type="text" name="txtId" /></td>
+                </tr>
+                <td>Name is @ViewBag.Name</td>
+                <tr>
+                    <td>Enter Name: </td>
+                    <td><input type="text" name="txtName" /></td>
 
-}  *@
+                </tr>
+                <td>Addon is @ViewBag.Addon</td>
+                <tr>
+                    <td>Addon: </td>
+                    <td><input type="checkbox" name="chkAddon" /></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit Form" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+
+    @*@using (Html.BeginForm("action","yourcontrollername"))
+        {
+        <form action="form1" method="post" style="color:white">
+        <table>
+        <tr>
+        <td>ID is @ViewBag.ID</td>
+        <td><input type="text" name="txtId" /></td>
+        </tr>
+        <tr>
+        <td><input type="text" name="txtName" /></td>
+        </tr>
+        <tr>
+        <td>Addon is @ViewBag.Addon</td>
+        <td><input type="checkbox" name="chkAddon" /></td>
+        </tr>
+        <tr>
+        <td><input type="submit" value="Submit Form" /></td>
+        </tr>
+        </table>
+        </form>
+        <input type="submit" value="Create" />
+
+        }  *@
 </body>
 </html>

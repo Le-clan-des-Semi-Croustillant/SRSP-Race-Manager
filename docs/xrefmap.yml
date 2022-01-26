@@ -299,6 +299,22 @@ references:
   commentId: T:RaceManager.Controllers.ConfigController
   fullName: RaceManager.Controllers.ConfigController
   nameWithType: ConfigController
+- uid: RaceManager.Controllers.ConfigController.#ctor(ILogger{RaceManager.Controllers.ConfigController})
+  name: ConfigController(ILogger<ConfigController>)
+  href: api/RaceManager.Controllers.ConfigController.html#RaceManager_Controllers_ConfigController__ctor_ILogger_RaceManager_Controllers_ConfigController__
+  commentId: M:RaceManager.Controllers.ConfigController.#ctor(ILogger{RaceManager.Controllers.ConfigController})
+  name.vb: ConfigController(ILogger(Of ConfigController))
+  fullName: RaceManager.Controllers.ConfigController.ConfigController(ILogger<RaceManager.Controllers.ConfigController>)
+  fullName.vb: RaceManager.Controllers.ConfigController.ConfigController(ILogger(Of RaceManager.Controllers.ConfigController))
+  nameWithType: ConfigController.ConfigController(ILogger<ConfigController>)
+  nameWithType.vb: ConfigController.ConfigController(ILogger(Of ConfigController))
+- uid: RaceManager.Controllers.ConfigController.#ctor*
+  name: ConfigController
+  href: api/RaceManager.Controllers.ConfigController.html#RaceManager_Controllers_ConfigController__ctor_
+  commentId: Overload:RaceManager.Controllers.ConfigController.#ctor
+  isSpec: "True"
+  fullName: RaceManager.Controllers.ConfigController.ConfigController
+  nameWithType: ConfigController.ConfigController
 - uid: RaceManager.Controllers.ConfigController.Error
   name: Error()
   href: api/RaceManager.Controllers.ConfigController.html#RaceManager_Controllers_ConfigController_Error
@@ -312,6 +328,19 @@ references:
   isSpec: "True"
   fullName: RaceManager.Controllers.ConfigController.Error
   nameWithType: ConfigController.Error
+- uid: RaceManager.Controllers.ConfigController.form1(System.Int32,System.String,System.String)
+  name: form1(Int32, String, String)
+  href: api/RaceManager.Controllers.ConfigController.html#RaceManager_Controllers_ConfigController_form1_System_Int32_System_String_System_String_
+  commentId: M:RaceManager.Controllers.ConfigController.form1(System.Int32,System.String,System.String)
+  fullName: RaceManager.Controllers.ConfigController.form1(System.Int32, System.String, System.String)
+  nameWithType: ConfigController.form1(Int32, String, String)
+- uid: RaceManager.Controllers.ConfigController.form1*
+  name: form1
+  href: api/RaceManager.Controllers.ConfigController.html#RaceManager_Controllers_ConfigController_form1_
+  commentId: Overload:RaceManager.Controllers.ConfigController.form1
+  isSpec: "True"
+  fullName: RaceManager.Controllers.ConfigController.form1
+  nameWithType: ConfigController.form1
 - uid: RaceManager.Controllers.RaceManagerController
   name: RaceManagerController
   href: api/RaceManager.Controllers.RaceManagerController.html
@@ -5034,19 +5063,19 @@ references:
   isSpec: "True"
   fullName: RaceManager.locales.locale.GpxFile
   nameWithType: locale.GpxFile
-- uid: RaceManager.locales.locale.GridDest
-  name: GridDest
-  href: api/RaceManager.locales.locale.html#RaceManager_locales_locale_GridDest
-  commentId: P:RaceManager.locales.locale.GridDest
-  fullName: RaceManager.locales.locale.GridDest
-  nameWithType: locale.GridDest
-- uid: RaceManager.locales.locale.GridDest*
-  name: GridDest
-  href: api/RaceManager.locales.locale.html#RaceManager_locales_locale_GridDest_
-  commentId: Overload:RaceManager.locales.locale.GridDest
+- uid: RaceManager.locales.locale.GridDesc
+  name: GridDesc
+  href: api/RaceManager.locales.locale.html#RaceManager_locales_locale_GridDesc
+  commentId: P:RaceManager.locales.locale.GridDesc
+  fullName: RaceManager.locales.locale.GridDesc
+  nameWithType: locale.GridDesc
+- uid: RaceManager.locales.locale.GridDesc*
+  name: GridDesc
+  href: api/RaceManager.locales.locale.html#RaceManager_locales_locale_GridDesc_
+  commentId: Overload:RaceManager.locales.locale.GridDesc
   isSpec: "True"
-  fullName: RaceManager.locales.locale.GridDest
-  nameWithType: locale.GridDest
+  fullName: RaceManager.locales.locale.GridDesc
+  nameWithType: locale.GridDesc
 - uid: RaceManager.locales.locale.GridFile
   name: GridFile
   href: api/RaceManager.locales.locale.html#RaceManager_locales_locale_GridFile
