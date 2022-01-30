@@ -6,7 +6,7 @@ using RaceManager.Models;
 
 namespace RaceManager.Controllers
 {
-    public class RaceManagerController : Controller
+    public class RaceManagerController : CulturedController
     {
         private readonly ILogger<RaceManagerController> _logger;
 
@@ -17,7 +17,7 @@ namespace RaceManager.Controllers
 
         public IActionResult Index()
         {
-            Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en-US");
+            //Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en-US");
             Console.WriteLine(locale.GridDesc);
 
             return View();

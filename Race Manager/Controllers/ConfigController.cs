@@ -4,7 +4,7 @@ using RaceManager.Models;
 
 namespace RaceManager.Controllers
 {
-    public class ConfigController : Controller
+    public class ConfigController : CulturedController
     {
         private readonly ILogger<ConfigController> _logger;
 
@@ -13,6 +13,7 @@ namespace RaceManager.Controllers
             _logger = logger;
         }
 
+        [HttpPost]
         public IActionResult form1(int txtId, string txtName, string chkAddon)
         {
             ViewBag.Id = txtId;
@@ -22,7 +23,21 @@ namespace RaceManager.Controllers
             else
                 ViewBag.Addon = "Not Selected";
 
-            return View();
+            return View("Config");
+
+        }
+
+        [HttpPost]
+        public ActionResult Form2(Models.StudentModel sm)
+        {
+            ViewBag.Id = sm.Id;
+            ViewBag.Name = sm.Name;
+            if (sm.Addon == true)
+                ViewBag.Addon = "Selected";
+            else
+                ViewBag.Addon = "Not Selected";
+
+            return View("Config");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
