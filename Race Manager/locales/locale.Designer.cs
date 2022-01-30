@@ -273,6 +273,11 @@ namespace RaceManager.locales {
         public static string IdReq {
             get {
                 return ResourceManager.GetString("IdReq", resourceCulture);
+        ///   Recherche une chaîne localisée semblable à See documentations and tutorials.
+        /// </summary>
+        public static string HelpDesc {
+            get {
+                return ResourceManager.GetString("HelpDesc", resourceCulture);
             }
         }
         
@@ -363,6 +368,11 @@ namespace RaceManager.locales {
         public static string SwapTo {
             get {
                 return ResourceManager.GetString("SwapTo", resourceCulture);
+        ///   Recherche une chaîne localisée semblable à Configure the server and web application settings..
+        /// </summary>
+        public static string SettingsDesc {
+            get {
+                return ResourceManager.GetString("SettingsDesc", resourceCulture);
             }
         }
     }

@@ -1,6 +1,4 @@
 @using RaceManager.locales
-@*@Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en-US");*@
-@*@Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("fr-FR");*@
 
 <!DOCTYPE HTML>
 <html>
@@ -22,7 +20,6 @@
                 <div>
                     <h3>@locale.GridFile2</h3>
                     <p>@locale.GridDesc</p>
-                    @*<a href="Pages/grid.cshtml">Voir plus</a>*@
                     <a class="nav-link" asp-area="" asp-controller="RaceManager" asp-action="Grid">@locale.SeeMore</a>
                 </div>
             </div>
@@ -66,7 +63,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </body>
 </html>

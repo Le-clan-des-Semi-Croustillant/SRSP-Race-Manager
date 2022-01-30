@@ -169,7 +169,7 @@
     <value>Importer fichier gpx</value>
   </data>
   <data name="GridDesc" xml:space="preserve">
-    <value>Cette page vous permettra d'importer vos fichier grid et de les modifier si besoin est.</value>
+    <value>Cette page vous permettra d'importer vos fichiers .grid et de les modifier.</value>
   </data>
   <data name="GridFile" xml:space="preserve">
     <value>Fichier .grid</value>
@@ -188,6 +188,8 @@
   </data>
   <data name="IdReq" xml:space="preserve">
     <value>ID de la demande :</value>
+  <data name="HelpDesc" xml:space="preserve">
+    <value>Voir les documentations et tutoriels</value>
   </data>
   <data name="IPV4support" xml:space="preserve">
     <value>Support d'IPV4 par le serveur: </value>
