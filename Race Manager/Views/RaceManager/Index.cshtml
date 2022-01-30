@@ -1,5 +1,4 @@
 @using RaceManager.locales
-@Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en-US");
 
 <!DOCTYPE HTML>
 <html>
@@ -7,65 +6,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-widthn initial-scale=1.0">
     <title>Race Manager</title>
-    @*<link rel="stylesheet" type="text/css" href="style.css">*@
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
 
 </head>
 <body>
     <div class="container">
         <div class="card">
-            <div class="imgBx" data-text="Fichier Grid">
+            <div class="imgBx" data-text="@locale.GridFile">
                 <img class="image" src="Images-Decor/chef.png">
             </div>
             <div class="content">
                 <div>
                     <h3>@locale.GridFile</h3>
                     <p>@locale.GridDesc</p>
-                    @*<a href="Pages/grid.cshtml">Voir plus</a>*@
-                    <a class="nav-link" asp-area="" asp-controller="RaceManager" asp-action="Grid">Voir plus</a>
+                    <a class="nav-link" asp-area="" asp-controller="RaceManager" asp-action="Grid">@locale.SeeMore</a>
                 </div>
             </div>
         </div>
         <div class="card">
-            <div class="imgBx" data-text="Fichier Gpx">
+            <div class="imgBx" data-text="@locale.GpxFile">
                 <img class="image" src="Images-Decor/Maliana.png">
             </div>
             <div class="content">
                 <div>
-                    <h3>Fichier Gpx</h3>
-                    <p>Cet page vous permettra d'importer vos fichier gpx et de les modifier si besoin est.</p>
-                    @*<a href="Pages/gpx.cshtml">Voir plus</a>*@
-                    <a class="nav-link" asp-area="" asp-controller="RaceManager" asp-action="Gpx">Voir plus</a>
+                    <h3>@locale.GpxFile</h3>
+                    <p>@locale.GpxDesc</p>
+                    <a class="nav-link" asp-area="" asp-controller="RaceManager" asp-action="Gpx">@locale.SeeMore</a>
                 </div>
             </div>
         </div>
         <div class="card">
-            <div class="imgBx" data-text="Configuration Serveur">
+            <div class="imgBx" data-text="@locale.Settings">
                 <img class="image" src="Images-Decor/mode.png">
             </div>
             <div class="content">
                 <div>
-                    <h3>Configuration</h3>
-                    <p>Cette partie dédatille la configuration du serveur, à savoir l'adresse ip et les ports utilisés.</p>
-                    @*<a href="@Url.Page("Pages/Config")">Voir plus</a>*@
-                    <a class="nav-link" asp-area="" asp-controller="RaceManager" asp-action="Config">Voir plus</a>
-
+                    <h3>@locale.Settings</h3>
+                    <p>@locale.SettingsDesc</p> 
+                    <a class="nav-link" asp-area="" asp-controller="RaceManager" asp-action="Config">@locale.SeeMore</a>
                 </div>
             </div>
         </div>
         <div class="card">
-            <div class="imgBx" data-text="Aide">
+            <div class="imgBx" data-text="@locale.Help">
                 <img class="image" src="Images-Decor/conclu.png">
             </div>
             <div class="content">
                 <div>
-                    <h3>Paramètre</h3>
-                    <p>Cette partie détaille les différents paramètres de l'interface Race Manager.</p>
-                    <a href="https://le-clan-des-semi-croustillant.github.io/SRSP-Race-Manager/" target="_blank">Voir plus</a>
+                    <h3>@locale.Help</h3>
+                    <p>@locale.HelpDesc</p>
+                    <a href="https://le-clan-des-semi-croustillant.github.io/SRSP-Race-Manager/" target="_blank">@locale.SeeMore</a>
                 </div>
             </div>
         </div>
-
     </div>
 </body>
 </html>

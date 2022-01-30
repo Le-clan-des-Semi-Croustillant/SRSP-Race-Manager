@@ -117,11 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="GpxDesc" xml:space="preserve">
+    <value>Cette page vous permettra d'importer vos fichiers .gpx et de les modifier.</value>
+  </data>
   <data name="GpxFile" xml:space="preserve">
     <value>Fichier .gpx </value>
   </data>
   <data name="GridDesc" xml:space="preserve">
-    <value>Cette page vous permettra d'importer vos fichier grid et de les modifier si besoin est.</value>
+    <value>Cette page vous permettra d'importer vos fichiers .grid et de les modifier.</value>
   </data>
   <data name="GridFile" xml:space="preserve">
     <value>Fichier .grid</value>
@@ -132,6 +135,9 @@
   <data name="Help" xml:space="preserve">
     <value>Aide</value>
   </data>
+  <data name="HelpDesc" xml:space="preserve">
+    <value>Voir les documentations et tutoriels</value>
+  </data>
   <data name="IPV4support" xml:space="preserve">
     <value>Support d'IPV4 par le serveur: </value>
   </data>
@@ -141,7 +147,13 @@
   <data name="PortUnavailable" xml:space="preserve">
     <value>Le port {0} est indisponible</value>
   </data>
+  <data name="SeeMore" xml:space="preserve">
+    <value>Voir plus</value>
+  </data>
   <data name="Settings" xml:space="preserve">
     <value>Configuration</value>
+  </data>
+  <data name="SettingsDesc" xml:space="preserve">
+    <value>Configurez les paramètres du serveur et de l'application web.</value>
   </data>
 </root>

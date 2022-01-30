@@ -61,6 +61,15 @@ namespace RaceManager.locales {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à This page will allow you to import your .gpx files and to modify them..
+        /// </summary>
+        public static string GpxDesc {
+            get {
+                return ResourceManager.GetString("GpxDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à .gpx file.
         /// </summary>
         public static string GpxFile {
@@ -70,7 +79,7 @@ namespace RaceManager.locales {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à This page will allow you to import your grid files and modify them if necessary..
+        ///   Recherche une chaîne localisée semblable à This page will allow you to import your .grid files and to modify them..
         /// </summary>
         public static string GridDesc {
             get {
@@ -106,6 +115,15 @@ namespace RaceManager.locales {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à See documentations and tutorials.
+        /// </summary>
+        public static string HelpDesc {
+            get {
+                return ResourceManager.GetString("HelpDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Server support for IPv4 addresses: .
         /// </summary>
         public static string IPV4support {
@@ -133,11 +151,29 @@ namespace RaceManager.locales {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à See more.
+        /// </summary>
+        public static string SeeMore {
+            get {
+                return ResourceManager.GetString("SeeMore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Settings.
         /// </summary>
         public static string Settings {
             get {
                 return ResourceManager.GetString("Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Configure the server and web application settings..
+        /// </summary>
+        public static string SettingsDesc {
+            get {
+                return ResourceManager.GetString("SettingsDesc", resourceCulture);
             }
         }
     }
