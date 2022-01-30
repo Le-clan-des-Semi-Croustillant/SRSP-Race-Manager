@@ -117,12 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Conf" xml:space="preserve">
-    <value>Configuration</value>
-  </data>
-  <data name="ConfDesc" xml:space="preserve">
-    <value>Cette partie détaille la configuration du serveur, à savoir l'adresse ip et les ports utilisés.</value>
-  </data>
   <data name="Dev" xml:space="preserve">
     <value>Développement</value>
   </data>
@@ -188,6 +182,7 @@
   </data>
   <data name="IdReq" xml:space="preserve">
     <value>ID de la demande :</value>
+  </data>
   <data name="HelpDesc" xml:space="preserve">
     <value>Voir les documentations et tutoriels</value>
   </data>
@@ -220,5 +215,8 @@
   </data>
   <data name="SwapTo" xml:space="preserve">
     <value>Passage à</value>
+  </data>
+  <data name="SettingsDesc" xml:space="preserve">
+    <value>Paramêtre de l'application web et du serveur.</value>
   </data>
 </root>

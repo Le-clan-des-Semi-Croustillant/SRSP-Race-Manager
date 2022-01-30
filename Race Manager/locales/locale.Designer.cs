@@ -61,24 +61,6 @@ namespace RaceManager.locales {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Configuration.
-        /// </summary>
-        public static string Conf {
-            get {
-                return ResourceManager.GetString("Conf", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à This part details the server configuration, i.e. the IP address and the ports used..
-        /// </summary>
-        public static string ConfDesc {
-            get {
-                return ResourceManager.GetString("ConfDesc", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Recherche une chaîne localisée semblable à Development.
         /// </summary>
         public static string Dev {
@@ -214,7 +196,7 @@ namespace RaceManager.locales {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à This page will allow you to import your grid files and modify them if necessary..
+        ///   Recherche une chaîne localisée semblable à This page will allow you to import your .grid files and to modify them..
         /// </summary>
         public static string GridDesc {
             get {
@@ -268,16 +250,20 @@ namespace RaceManager.locales {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Request ID:.
-        /// </summary>
-        public static string IdReq {
-            get {
-                return ResourceManager.GetString("IdReq", resourceCulture);
         ///   Recherche une chaîne localisée semblable à See documentations and tutorials.
         /// </summary>
         public static string HelpDesc {
             get {
                 return ResourceManager.GetString("HelpDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Request ID:.
+        /// </summary>
+        public static string IdReq {
+            get {
+                return ResourceManager.GetString("IdReq", resourceCulture);
             }
         }
         
@@ -363,16 +349,20 @@ namespace RaceManager.locales {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Web application and server settings..
+        /// </summary>
+        public static string SettingsDesc {
+            get {
+                return ResourceManager.GetString("SettingsDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Swapping to.
         /// </summary>
         public static string SwapTo {
             get {
                 return ResourceManager.GetString("SwapTo", resourceCulture);
-        ///   Recherche une chaîne localisée semblable à Configure the server and web application settings..
-        /// </summary>
-        public static string SettingsDesc {
-            get {
-                return ResourceManager.GetString("SettingsDesc", resourceCulture);
             }
         }
     }

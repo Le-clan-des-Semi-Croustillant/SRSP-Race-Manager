@@ -117,11 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Conf" xml:space="preserve">
-    <value>Configuration</value>
-  </data>
-  <data name="ConfDesc" xml:space="preserve">
-    <value>This part details the server configuration, i.e. the IP address and the ports used.</value>
+  <data name="SettingsDesc" xml:space="preserve">
+    <value>Web application and server settings.</value>
   </data>
   <data name="Dev" xml:space="preserve">
     <value>Development</value>
