@@ -61,11 +61,155 @@ namespace RaceManager.locales {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Configuration.
+        /// </summary>
+        public static string Conf {
+            get {
+                return ResourceManager.GetString("Conf", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à This part details the server configuration, i.e. the IP address and the ports used..
+        /// </summary>
+        public static string ConfDesc {
+            get {
+                return ResourceManager.GetString("ConfDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Development.
+        /// </summary>
+        public static string Dev {
+            get {
+                return ResourceManager.GetString("Dev", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à environment will display more detailed information about the error that occurred..
+        /// </summary>
+        public static string DevDesc {
+            get {
+                return ResourceManager.GetString("DevDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Development Mode.
+        /// </summary>
+        public static string DevMod {
+            get {
+                return ResourceManager.GetString("DevMod", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The Development environment shouldn&apos;t be enabled for deployed applications..
+        /// </summary>
+        public static string DevModDesc1 {
+            get {
+                return ResourceManager.GetString("DevModDesc1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à It can result in displaying sensitive information from exceptions to end users..
+        /// </summary>
+        public static string DevModDesc2 {
+            get {
+                return ResourceManager.GetString("DevModDesc2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à For local debugging, enable the.
+        /// </summary>
+        public static string DevModDesc3 {
+            get {
+                return ResourceManager.GetString("DevModDesc3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à environment by setting the.
+        /// </summary>
+        public static string DevModDesc4 {
+            get {
+                return ResourceManager.GetString("DevModDesc4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à environment variable to.
+        /// </summary>
+        public static string DevModDesc5 {
+            get {
+                return ResourceManager.GetString("DevModDesc5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à and restarting the app..
+        /// </summary>
+        public static string DevModDesc6 {
+            get {
+                return ResourceManager.GetString("DevModDesc6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Error.
+        /// </summary>
+        public static string Error {
+            get {
+                return ResourceManager.GetString("Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à An error occurred while processing your request..
+        /// </summary>
+        public static string ErrorDesc {
+            get {
+                return ResourceManager.GetString("ErrorDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à This page will allow you to import your gpx files and to modify them if necessary..
+        /// </summary>
+        public static string GpxDesc {
+            get {
+                return ResourceManager.GetString("GpxDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à .gpx file.
         /// </summary>
         public static string GpxFile {
             get {
                 return ResourceManager.GetString("GpxFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Gpx File.
+        /// </summary>
+        public static string GpxFile2 {
+            get {
+                return ResourceManager.GetString("GpxFile2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Import gpx file.
+        /// </summary>
+        public static string GpxFileIm {
+            get {
+                return ResourceManager.GetString("GpxFileIm", resourceCulture);
             }
         }
         
@@ -88,6 +232,24 @@ namespace RaceManager.locales {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Grid File.
+        /// </summary>
+        public static string GridFile2 {
+            get {
+                return ResourceManager.GetString("GridFile2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Import Grid file.
+        /// </summary>
+        public static string GridFileIm {
+            get {
+                return ResourceManager.GetString("GridFileIm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Hello.
         /// </summary>
         public static string Hello {
@@ -102,6 +264,15 @@ namespace RaceManager.locales {
         public static string Help {
             get {
                 return ResourceManager.GetString("Help", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Request ID:.
+        /// </summary>
+        public static string IdReq {
+            get {
+                return ResourceManager.GetString("IdReq", resourceCulture);
             }
         }
         
@@ -124,6 +295,24 @@ namespace RaceManager.locales {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Parameter.
+        /// </summary>
+        public static string Param {
+            get {
+                return ResourceManager.GetString("Param", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à This section details the various parameters of the Race Manager interface..
+        /// </summary>
+        public static string ParamDesc {
+            get {
+                return ResourceManager.GetString("ParamDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Port {0} is unavailable.
         /// </summary>
         public static string PortUnavailable {
@@ -133,11 +322,47 @@ namespace RaceManager.locales {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Race Manager.
+        /// </summary>
+        public static string RaceManager {
+            get {
+                return ResourceManager.GetString("RaceManager", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à See more.
+        /// </summary>
+        public static string SeeMore {
+            get {
+                return ResourceManager.GetString("SeeMore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Server Configuration.
+        /// </summary>
+        public static string ServConf {
+            get {
+                return ResourceManager.GetString("ServConf", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Settings.
         /// </summary>
         public static string Settings {
             get {
                 return ResourceManager.GetString("Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Swapping to.
+        /// </summary>
+        public static string SwapTo {
+            get {
+                return ResourceManager.GetString("SwapTo", resourceCulture);
             }
         }
     }

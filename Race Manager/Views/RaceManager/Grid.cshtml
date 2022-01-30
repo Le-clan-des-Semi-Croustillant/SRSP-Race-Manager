@@ -1,4 +1,5 @@
 @using RaceManager.locales
+
 @{
     ViewData["Title"] = locale.GridFile;
 }
@@ -8,7 +9,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-widthn initial-scale=1.0">
-		<title>Fichier Grid</title>
+		<title>@locale.GridFile2</title>
 		<link rel="stylesheet" type="text/css" href="CSS/grid.css">
 	</head>
 	<body>
@@ -16,7 +17,7 @@
 				<br /><br /><br /><br />
 		<form method="post" enctype="multipart/form-data">
 			 <div>
-			   <label for="file">Importer fichier Grid  </label>
+			   <label for="file">@locale.GridFileIm </label>
 			   <input type="file" id="file" name="file" multiple>
 			 </div>			
 			</form>
@@ -27,7 +28,7 @@
 			<span></span>
 			<span></span>
 			<span></span>
-			<h2><a href="grid.html">Fichier Grid</a></h2>
+			<h2><a href="grid.html">@locale.GridFile2</a></h2>
 		</div>
 	</body>
 </html>

@@ -30,14 +30,14 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=RaceManager}/{action=Index}/{id?}");
 
-Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en-US");
+//Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en-US");
+Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("fr-FR");
 Console.WriteLine(locale.Hello);
 //Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("fr-FR");
 Console.WriteLine(locale.Hello);
 AsyncServer.Port = 45678;
 AsyncServer.Run();
-Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("fr-FR");
-Console.WriteLine(locale.Hello);
+//Console.WriteLine(locale.Hello);
 //AsyncServer.StartListening();
 
 app.Run();
