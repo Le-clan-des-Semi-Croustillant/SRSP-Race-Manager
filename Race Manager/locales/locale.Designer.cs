@@ -313,15 +313,6 @@ namespace RaceManager.locales {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Race Manager.
-        /// </summary>
-        public static string RaceManager {
-            get {
-                return ResourceManager.GetString("RaceManager", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Recherche une chaîne localisée semblable à See more.
         /// </summary>
         public static string SeeMore {

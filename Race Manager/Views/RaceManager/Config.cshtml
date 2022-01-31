@@ -2,7 +2,7 @@
 @{
     ViewData["Title"] = locale.Settings;
 }
-@model RaceManager.Models.StudentModel;
+@model RaceManager.Models.SettingsModel;
 
 <!DOCTYPE HTML>
 <html>
@@ -43,25 +43,24 @@
             </table>
             </form>*@
 
-        @using (Html.BeginForm("Form2", "Config", FormMethod.Post))
+        @using (Html.BeginForm("SettingsUpdated", "RaceManager", FormMethod.Post))
         {
-            <table>
-                <tr>
-                    <td>Enter ID: </td>
-                    <td>@Html.TextBoxFor(m => m.Id)</td>
-                </tr>
-                <tr>
-                    <td>Enter Name: </td>
-                    <td>@Html.TextBoxFor(m => m.Name)</td>
-                </tr>
-                <tr>
-                    <td>Addon: </td>
-                    <td>@Html.CheckBoxFor(m => m.Addon)</td>
-                </tr>
-                <tr>
-                    <td colspan="2"><input type="submit" value="Submit Form" /></td>
-                </tr>
-            </table>
+            <fieldset style="color: white">
+                <legend>Fields</legend>
+
+                <p>
+                    <label> Actual port is @ViewBag.Port</label> <br>
+                    <label>Enter new port : </label> 
+                    @Html.TextBoxFor(m => m.Port)
+                </p>
+                <p>
+                    <label>Language </label>
+                    @Html.TextBoxFor(m => m.Language)
+                </p>
+                <p>
+                    <label colspan="2"><input type="submit" value="Save settings" /></label>
+                </p>
+            </fieldset>
         }
 
     </div>

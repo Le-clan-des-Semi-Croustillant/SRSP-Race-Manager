@@ -204,9 +204,6 @@
   <data name="PortUnavailable" xml:space="preserve">
     <value>Port {0} is unavailable</value>
   </data>
-  <data name="RaceManager" xml:space="preserve">
-    <value>Race Manager</value>
-  </data>
   <data name="SeeMore" xml:space="preserve">
     <value>See more</value>
   </data>

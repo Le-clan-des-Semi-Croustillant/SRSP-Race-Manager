@@ -13,32 +13,20 @@ namespace RaceManager.Controllers
             _logger = logger;
         }
 
-        [HttpPost]
-        public IActionResult form1(int txtId, string txtName, string chkAddon)
-        {
-            ViewBag.Id = txtId;
-            ViewBag.Name = txtName;
-            if (chkAddon != null)
-                ViewBag.Addon = "Selected";
-            else
-                ViewBag.Addon = "Not Selected";
+        //[HttpPost]
+        //public IActionResult form1(int txtId, string txtName, string chkAddon)
+        //{
+        //    ViewBag.Id = txtId;
+        //    ViewBag.Name = txtName;
+        //    if (chkAddon != null)
+        //        ViewBag.Addon = "Selected";
+        //    else
+        //        ViewBag.Addon = "Not Selected";
 
-            return View("Config");
+        //    return View("Config");
 
-        }
+        //}
 
-        [HttpPost]
-        public ActionResult Form2(Models.StudentModel sm)
-        {
-            ViewBag.Id = sm.Id;
-            ViewBag.Name = sm.Name;
-            if (sm.Addon == true)
-                ViewBag.Addon = "Selected";
-            else
-                ViewBag.Addon = "Not Selected";
-
-            return View("Config");
-        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
