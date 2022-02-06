@@ -6,7 +6,7 @@
     <TargetFramework>net6.0-windows7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>consoleTests.AsynchronousClient</StartupObject>
+    <StartupObject>ProgrammeServer</StartupObject>
     <BaseOutputPath>bin</BaseOutputPath>
   </PropertyGroup>
 

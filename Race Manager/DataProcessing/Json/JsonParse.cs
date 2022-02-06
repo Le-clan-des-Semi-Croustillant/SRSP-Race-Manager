@@ -16,8 +16,8 @@ namespace RaceManager.DataProcessing.Json
                 TypeMessage = TypeMessage,
                 Id = Id,
                 IdGame = IdGame,
-                NMEA = NMEA,
-                Boat = Boat,
+                //NMEA = NMEA,
+                //Boat = Boat,
                 EnvironmentInfos = new EnvironmentInfo
                 {
                     IdPlayer = IdPlayer,
@@ -63,24 +63,33 @@ namespace RaceManager.DataProcessing.Json
         public IMessageType TypeMessage { get; set; }
         public long Id { get; set; }
         public long IdGame { get; set; }
-        public string? NMEA { get; set; }
-        public long Boat { get; set; }
         public EnvironmentInfo? EnvironmentInfos { get; set; }
     }
 
     class JsonInformationDisconnection
     {
         public IMessageType TypeMessage { get; set; }
+        public long Id { get; set; }
+        public long IdGame { get; set; }
+        public EnvironmentInfo? EnvironmentInfos { get; set; }
     }
 
     class JsonInformationInfo
     {
         public IMessageType TypeMessage { get; set; }
+        public long Id { get; set; }
+        public long IdGame { get; set; }
+        public string? NMEA { get; set; }
+        public EnvironmentInfo? EnvironmentInfos { get; set; }
     }
 
     class JsonInformationBoatSelect
     {
         public IMessageType TypeMessage { get; set; }
+        public long Id { get; set; }
+        public long IdGame { get; set; }
+        public long Boat { get; set; }
+        public EnvironmentInfo? EnvironmentInfos { get; set; }
     }
 
     class EnvironmentInfo
