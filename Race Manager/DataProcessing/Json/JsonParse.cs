@@ -9,28 +9,63 @@ namespace RaceManager.DataProcessing.Json
         {
             return JsonConvert.DeserializeObject(data);
         }
-        public static string JsonSerialiseConnection(IMessageType TypeMessage, long Id, long IdGame, string NMEA, long Boat, int IdPlayer, string NamePlayer)
+        public static string JsonSerialiseConnection(IMessageType TypeMessage, long Id, long IdGame, string NMEA, string Boat, int IdPlayer, string NamePlayer)
         {
-            var serialiseJsonInfo = new JsonInformationConnection
+            var serialiseJsonInfo = new JsonTest
             {
                 TypeMessage = TypeMessage,
                 Id = Id,
                 IdGame = IdGame,
-                //NMEA = NMEA,
-                //Boat = Boat,
+                NMEA = NMEA,
+                Boat = Boat,
                 EnvironmentInfos = new EnvironmentInfo
                 {
                     IdPlayer = IdPlayer,
                     NamePlayer = NamePlayer
                 }
-
             };
             return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
         }
 
-        public static string JsonSerialiseDisconnection(IMessageType TypeMessage)
+        public static string JsonSerialiseIConnection(IMessageType TypeMessage)
         {
-            var serialiseJsonInfo = new JsonInformationDisconnection
+            var serialiseJsonInfo = new JsonIConnection
+            {
+                TypeMessage = TypeMessage,
+
+            };
+            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+        }
+        public static string JsonSerialiseIDisconnection(IMessageType TypeMessage)
+        {
+            var serialiseJsonInfo = new JsonIDisconnection
+            {
+                TypeMessage = TypeMessage,
+
+            };
+            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+        }
+        public static string JsonSerialiseIPlayerInfo(IMessageType TypeMessage)
+        {
+            var serialiseJsonInfo = new JsonIPlayerInfo
+            {
+                TypeMessage = TypeMessage,
+
+            };
+            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+        }
+        public static string JsonSerialiseIBoatSelect(IMessageType TypeMessage)
+        {
+            var serialiseJsonInfo = new JsonIBoatSelect
+            {
+                TypeMessage = TypeMessage,
+
+            };
+            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+        }
+        public static string JsonSerialiseIEndRace(IMessageType TypeMessage)
+        {
+            var serialiseJsonInfo = new JsonIEndRace
             {
                 TypeMessage = TypeMessage,
 
@@ -38,18 +73,60 @@ namespace RaceManager.DataProcessing.Json
             return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
         }
 
-        public static string JsonSerialiseInfo(IMessageType TypeMessage)
+        public static string JsonSerialiseOConnection(OMessageType TypeMessage)
         {
-            var serialiseJsonInfo = new JsonInformationInfo
+            var serialiseJsonInfo = new JsonOConnection
             {
                 TypeMessage = TypeMessage,
 
             };
             return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
         }
-        public static string JsonSerialiseBoatSelect(IMessageType TypeMessage)
+        public static string JsonSerialiseODisconnection(OMessageType TypeMessage)
         {
-            var serialiseJsonInfo = new JsonInformationBoatSelect
+            var serialiseJsonInfo = new JsonODisconnection
+            {
+                TypeMessage = TypeMessage,
+
+            };
+            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+        }
+        public static string JsonSerialiseOInitRace(IMessageType TypeMessage)
+        {
+            var serialiseJsonInfo = new JsonOInitRace
+            {
+                TypeMessage = TypeMessage,
+
+            };
+            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+        }
+
+        public static string JsonSerialiseOEnvironmentInfo(IMessageType TypeMessage)
+        {
+            var serialiseJsonInfo = new JsonOEnvironmentInfo
+            {
+                TypeMessage = TypeMessage,
+
+            };
+            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+        }
+
+        public static string JsonSerialiseOBoatList()
+        {
+            OMessageType TypeMessage = OMessageType.BOATLIST;
+            //Retourner liste des bateaux
+            var serialiseJsonInfo = new JsonOBoatList
+            {
+                TypeMessage = TypeMessage,
+                //Retourner liste des bateaux
+
+            };
+            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+        }
+
+        public static string JsonSerialiseOEndRace(IMessageType TypeMessage)
+        {
+            var serialiseJsonInfo = new JsonOEndRace
             {
                 TypeMessage = TypeMessage,
 
@@ -58,23 +135,27 @@ namespace RaceManager.DataProcessing.Json
         }
     }
 
-    class JsonInformationConnection
+    class JsonTest
     {
         public IMessageType TypeMessage { get; set; }
         public long Id { get; set; }
         public long IdGame { get; set; }
+        public string? NMEA { get; set; }
+        public string? Boat { get; set; }
         public EnvironmentInfo? EnvironmentInfos { get; set; }
     }
 
-    class JsonInformationDisconnection
+    class JsonIConnection
     {
         public IMessageType TypeMessage { get; set; }
-        public long Id { get; set; }
-        public long IdGame { get; set; }
         public EnvironmentInfo? EnvironmentInfos { get; set; }
     }
-
-    class JsonInformationInfo
+    class JsonIDisconnection
+    {
+        public IMessageType TypeMessage { get; set; }
+        public EnvironmentInfo? EnvironmentInfos { get; set; }
+    }
+    class JsonIPlayerInfo
     {
         public IMessageType TypeMessage { get; set; }
         public long Id { get; set; }
@@ -82,13 +163,58 @@ namespace RaceManager.DataProcessing.Json
         public string? NMEA { get; set; }
         public EnvironmentInfo? EnvironmentInfos { get; set; }
     }
+    class JsonIBoatSelect
+    {
+        public IMessageType TypeMessage { get; set; }
+        //public BoatType Boat { get; set; }
+    }
 
-    class JsonInformationBoatSelect
+    class JsonIBoatListSelect
+    {
+        public IMessageType TypeMessage { get; set; }
+        //public BoatType Boat { get; set; }
+    }
+
+    class JsonIEndRace
     {
         public IMessageType TypeMessage { get; set; }
         public long Id { get; set; }
         public long IdGame { get; set; }
-        public long Boat { get; set; }
+        public EnvironmentInfo? EnvironmentInfos { get; set; }
+    }
+
+    class JsonOConnection
+    {
+        public OMessageType TypeMessage { get; set; }
+        public EnvironmentInfo? EnvironmentInfos { get; set; }
+    }
+    class JsonODisconnection
+    {
+        public OMessageType TypeMessage { get; set; }
+        public EnvironmentInfo? EnvironmentInfos { get; set; }
+    }
+    class JsonOInitRace
+    {
+        public IMessageType TypeMessage { get; set; }
+        public long Id { get; set; }
+        public long IdGame { get; set; }
+    }
+    class JsonOEnvironmentInfo
+    {
+        public IMessageType TypeMessage { get; set; }
+        public long Id { get; set; }
+        public long IdGame { get; set; }
+    }
+    class JsonOBoatList
+    {
+        public OMessageType TypeMessage { get; set; }
+        //Retourner liste des bateaux
+    }
+    class JsonOEndRace
+    {
+        public IMessageType TypeMessage { get; set; }
+        public long Id { get; set; }
+        public long IdGame { get; set; }
         public EnvironmentInfo? EnvironmentInfos { get; set; }
     }
 

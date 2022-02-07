@@ -1,4 +1,5 @@
 ﻿using RaceManager.DataProcessing;
+using RaceManager.Communication;
 
 namespace RaceManager.DataProcessing.Json
 {
@@ -18,7 +19,7 @@ namespace RaceManager.DataProcessing.Json
 
             }
 
-            switch (informationJson.TypeMessage)
+            switch (informationJson.IMessageType)
             {
                 case 0:
 
@@ -27,6 +28,13 @@ namespace RaceManager.DataProcessing.Json
                 case 2:
 
                 case 3:
+
+                case 4: //Retourner une liste de bateau
+                    string OutMessage = JsonParse.JsonSerialiseOBoatList();
+                    //Envoyer à la personne qui m'as envoyé ma demande
+                    break;
+
+                case 5:
 
                 default:
                     break;

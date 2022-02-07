@@ -5,19 +5,27 @@
     /// </summary>
     public enum IMessageType
     {
-        CONNECTION = 0,
-        DISCONNECTION = 1,
-        PLAYERINFO = 2,
-        BOATSELECT = 3,
-        ENDRACE = 4
+        /// <summary>
+        /// Type message input (recive) <see cref="IMessageType"/>
+        /// </summary>
+        CONNECTION,
+        DISCONNECTION ,
+        PLAYERINFO,
+        BOATSELECT,
+        BOATLISTREQUEST,
+        ENDRACE
     }
 
     public enum OMessageType
     {
-        CONNECTION = 0,
-        DISCONNECTION = 1,
-        INITRACE = 2,
-        ENVIRONMENTINFO = 3,
-        ENDRACE = 4
+        /// <summary>
+        /// Type message output (send) <see cref="OMessageType"/>
+        /// </summary>
+        CONNECTION,
+        DISCONNECTION,
+        INITRACE,
+        ENVIRONMENTINFO,    
+        BOATLIST,
+        ENDRACE
     }
 }
