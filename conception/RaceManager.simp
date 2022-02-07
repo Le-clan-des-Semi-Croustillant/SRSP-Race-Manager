@@ -2,7 +2,7 @@
 <sim-project version="13.05" multi-file="no" uid="simp5c961c7f14bc4007b745841aa1736f27">
   <meta>
     <name>RaceManager</name>
-    <authors>Jérémie Rodez</authors>
+    <authors> </authors>
     <description />
   </meta>
   <counters models="14">
@@ -14,11 +14,11 @@
       </counter>
       <counter>
         <item-type type-id="containment" type="Containment" />
-        <value>13</value>
+        <value>16</value>
       </counter>
       <counter>
         <item-type type-id="group" type="Group" />
-        <value>6</value>
+        <value>21</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -35,10 +35,21 @@
   </counters>
   <alias-groups />
   <management uid="md-c193d9fc3b774021864521ba87d85e59" name="" task-id-sequence="0">
+    <working-schedule uid="ws-277818ca52874ac9b93eb63d79384626" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
     <persons>
       <person id="">
         <first-name>Jérémie</first-name>
         <last-name>Rodez</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+        <working-schedule uid="ws-f00456c8261e407bb84b8ff9c6452f57" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+      </person>
+      <person id="">
+        <first-name />
+        <last-name />
         <role />
         <e-mail />
         <phone-number />
@@ -58,7 +69,65 @@
     <type-sets>
       <type-set file="UmlTypes.xml" />
     </type-sets>
-    <custom-types />
+    <custom-types>
+      <type id="IAsyncResult" tid="" name="IAsyncResult" description="" />
+      <type id="List&lt;Client&gt;" tid="" name="List&lt;Client&gt;" description="" />
+      <type id="Thread" tid="" name="Thread" description="" />
+      <type id="int" tid="" name="int" description="" />
+      <type id="ManualResetEvent" tid="" name="ManualResetEvent" description="" />
+      <type id="IPAddress" tid="" name="IPAddress" description="" />
+      <type id="string" tid="" name="string" description="" />
+      <type id="Socket" tid="" name="Socket" description="" />
+      <type id="byte[]" tid="" name="byte[]" description="" />
+      <type id="StringBuilder" tid="" name="StringBuilder" description="" />
+      <type id="bool" tid="" name="bool" description="" />
+      <type id="IPAddress[]" tid="" name="IPAddress[]" description="" />
+      <type id="dynamic" tid="" name="dynamic" description="" />
+      <type id="IMessageType" tid="" name="IMessageType" description="" />
+      <type id="long" tid="" name="long" description="" />
+      <type id="string?" tid="" name="string?" description="" />
+      <type id="EnvironmentInfo?" tid="" name="EnvironmentInfo?" description="" />
+      <type id="string[]" tid="" name="string[]" description="" />
+      <type id="double" tid="" name="double" description="" />
+      <type id="Dictionary&lt;string, string&gt;" tid="" name="Dictionary&lt;string, string&gt;" description="" />
+      <type id="TimeSpan" tid="" name="TimeSpan" description="" />
+      <type id="char" tid="" name="char" description="" />
+      <type id="Assembly" tid="" name="Assembly" description="" />
+      <type id="TypeInfo" tid="" name="TypeInfo" description="" />
+      <type id="NmeaMessage" tid="Class:34bb3b1932a44024bc1471fe00b4700b" name="NmeaMessage" description="" class-ref="34bb3b1932a44024bc1471fe00b4700b" />
+      <type id="IMultiSentenceMessage?" tid="" name="IMultiSentenceMessage?" description="" />
+      <type id="byte" tid="" name="byte" description="" />
+      <type id="IReadOnlyList&lt;string&gt;" tid="" name="IReadOnlyList&lt;string&gt;" description="" />
+      <type id="Dictionary&lt;string, ConstructorInfo&gt;" tid="" name="Dictionary&lt;string, ConstructorInfo&gt;" description="" />
+      <type id="Talker" tid="" name="Talker" description="" />
+      <type id="List&lt;string[]&gt;" tid="" name="List&lt;string[]&gt;" description="" />
+      <type id="Dictionary&lt;string, Talker&gt;" tid="" name="Dictionary&lt;string, Talker&gt;" description="" />
+      <type id="AltitudeUnit" tid="" name="AltitudeUnit" description="" />
+      <type id="PositionFixType" tid="" name="PositionFixType" description="" />
+      <type id="char?" tid="" name="char?" description="" />
+      <type id="int?" tid="" name="int?" description="" />
+      <type id="Gga.FixQuality" tid="" name="Gga.FixQuality" description="" />
+      <type id="TimeSpan?" tid="" name="TimeSpan?" description="" />
+      <type id="Mode" tid="" name="Mode" description="" />
+      <type id="Mode[]" tid="" name="Mode[]" description="" />
+      <type id="NavigationalStatus" tid="" name="NavigationalStatus" description="" />
+      <type id="GrsMode" tid="" name="GrsMode" description="" />
+      <type id="double[]" tid="" name="double[]" description="" />
+      <type id="ModeSelection" tid="" name="ModeSelection" description="" />
+      <type id="FixType" tid="" name="FixType" description="" />
+      <type id="int[]" tid="" name="int[]" description="" />
+      <type id="IEnumerator&lt;SatelliteVehicle&gt;" tid="" name="IEnumerator&lt;SatelliteVehicle&gt;" description="" />
+      <type id="System.Collections.IEnumerator" tid="" name="System.Collections.IEnumerator" description="" />
+      <type id="List&lt;SatelliteVehicle&gt;" tid="" name="List&lt;SatelliteVehicle&gt;" description="" />
+      <type id="IReadOnlyList&lt;SatelliteVehicle&gt;" tid="" name="IReadOnlyList&lt;SatelliteVehicle&gt;" description="" />
+      <type id="SatelliteSystem" tid="" name="SatelliteSystem" description="" />
+      <type id="PositioningStatus" tid="" name="PositioningStatus" description="" />
+      <type id="PositioningMode" tid="" name="PositioningMode" description="" />
+      <type id="DataStatus" tid="" name="DataStatus" description="" />
+      <type id="DateTimeOffset" tid="" name="DateTimeOffset" description="" />
+      <type id="List&lt;string&gt;" tid="" name="List&lt;string&gt;" description="" />
+      <type id="WaypointListType" tid="" name="WaypointListType" description="" />
+    </custom-types>
   </types>
   <items />
   <models>
@@ -74,96 +143,97 @@
         <version />
       </meta>
       <abstract-items>
-        <item id="e137ce4593354ec6a35b25ab103d84e1" cid="PKG001" type="package" name="RaceManager" style-class="" creator="" creation-date="02/07/2022 01:16:41">
+        <item id="e137ce4593354ec6a35b25ab103d84e1" cid="PKG001" type="package" name="RaceManager" style-class="" creator="" creation-date="02/07/2022 01:16:41" visibility="undefined">
           <tagged-values>
             <tagged-value id="tva8397ef82f39427f8dd10b3542c9790a" name="namespace" type="text" multiple="false" hidden="false" value="RaceManager" />
             <tagged-value id="tv812e5e9c93414a5fb142c5694bf1a0bf" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="RaceManager" />
           </tagged-values>
         </item>
-        <item id="cdfdf4f966d54d32aa8768d8f6271622" cid="PKG002" type="package" name="Communication" style-class="" creator="" creation-date="02/07/2022 01:16:41">
+        <item id="cdfdf4f966d54d32aa8768d8f6271622" cid="PKG002" type="package" name="Communication" style-class="" creator="" creation-date="02/07/2022 01:16:41" visibility="undefined">
           <tagged-values>
             <tagged-value id="tv16f0da0e4c754c8faa27774081b691bb" name="namespace" type="text" multiple="false" hidden="false" value="RaceManager.Communication" />
             <tagged-value id="tv3a75fc3d58af4f61a22728ae3689ab12" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Communication" />
           </tagged-values>
         </item>
         <item id="24fd701eeef248979d4776d0d83c1caf" cid="CNT001" type="containment" name="" style-class="" creator="" creation-date="02/07/2022 01:16:41" from="cdfdf4f966d54d32aa8768d8f6271622" to="e137ce4593354ec6a35b25ab103d84e1" />
-        <item id="04f2dd6bc8d44d9994ecb880b3f5f50c" cid="PKG003" type="package" name="DataProcessing" style-class="" creator="" creation-date="02/07/2022 01:16:41">
+        <item id="04f2dd6bc8d44d9994ecb880b3f5f50c" cid="PKG003" type="package" name="DataProcessing" style-class="" creator="" creation-date="02/07/2022 01:16:41" visibility="undefined">
           <tagged-values>
             <tagged-value id="tvbdd75e6745834a8192e2366f80f35628" name="namespace" type="text" multiple="false" hidden="false" value="RaceManager.DataProcessing" />
             <tagged-value id="tv349603b2a218428bae834727df41bcc1" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="DataProcessing" />
           </tagged-values>
         </item>
         <item id="22fc841c3582415cbbe7585cc4982b39" cid="CNT002" type="containment" name="" style-class="" creator="" creation-date="02/07/2022 01:16:41" from="04f2dd6bc8d44d9994ecb880b3f5f50c" to="e137ce4593354ec6a35b25ab103d84e1" />
-        <item id="5ba696ef2cbd4d078b201b88b4eefd70" cid="PKG004" type="package" name="Json" style-class="" creator="" creation-date="02/07/2022 01:16:41">
+        <item id="5ba696ef2cbd4d078b201b88b4eefd70" cid="PKG004" type="package" name="Json" style-class="" creator="" creation-date="02/07/2022 01:16:41" visibility="undefined">
           <tagged-values>
             <tagged-value id="tvcecf6cf17b4f48e7a92adec9a1beaee0" name="namespace" type="text" multiple="false" hidden="false" value="RaceManager.DataProcessing.Json" />
             <tagged-value id="tv776bc1ab8cf04b70aa1f9cfae3b20a32" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Json" />
           </tagged-values>
         </item>
         <item id="efabd7bb0558418c8fa1b3d9aed2301c" cid="CNT003" type="containment" name="" style-class="" creator="" creation-date="02/07/2022 01:16:41" from="5ba696ef2cbd4d078b201b88b4eefd70" to="04f2dd6bc8d44d9994ecb880b3f5f50c" />
-        <item id="7b8180a9ff874de68c2e8ac2534f4d9b" cid="PKG005" type="package" name="NMEAV0" style-class="" creator="" creation-date="02/07/2022 01:16:41">
+        <item id="7b8180a9ff874de68c2e8ac2534f4d9b" cid="PKG005" type="package" name="NMEAV0" style-class="" creator="" creation-date="02/07/2022 01:16:41" visibility="undefined">
           <tagged-values>
             <tagged-value id="tvbd83fba8d7b14a23ae10325fb2de913d" name="namespace" type="text" multiple="false" hidden="false" value="RaceManager.DataProcessing.NMEAV0" />
             <tagged-value id="tv385e3f9f968a4cf8a89a6c1a4abaebe9" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="NMEAV0" />
           </tagged-values>
         </item>
         <item id="3e91c2411315437ba7243e44eea3ec72" cid="CNT004" type="containment" name="" style-class="" creator="" creation-date="02/07/2022 01:16:41" from="7b8180a9ff874de68c2e8ac2534f4d9b" to="04f2dd6bc8d44d9994ecb880b3f5f50c" />
-        <item id="3ca27b5be2954a6e929f6416ac49f265" cid="PKG006" type="package" name="NmeaType" style-class="" creator="" creation-date="02/07/2022 01:16:41">
+        <item id="3ca27b5be2954a6e929f6416ac49f265" cid="PKG006" type="package" name="NmeaType" style-class="" creator="" creation-date="02/07/2022 01:16:41" visibility="undefined">
           <tagged-values>
             <tagged-value id="tv1f60fe71d4a7415288e27b75cf215f01" name="namespace" type="text" multiple="false" hidden="false" value="RaceManager.DataProcessing.NMEAV0.NmeaType" />
             <tagged-value id="tvbb9ebcd3f216428faae619bd688034c9" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="NmeaType" />
           </tagged-values>
         </item>
         <item id="15a03be50cc949d79a1824aa90bb884d" cid="CNT005" type="containment" name="" style-class="" creator="" creation-date="02/07/2022 01:16:41" from="3ca27b5be2954a6e929f6416ac49f265" to="7b8180a9ff874de68c2e8ac2534f4d9b" />
-        <item id="cd0c5a14907b4eb8bfe54cd8347e82bb" cid="PKG007" type="package" name="NMEA" style-class="" creator="" creation-date="02/07/2022 01:16:41">
+        <item id="cd0c5a14907b4eb8bfe54cd8347e82bb" cid="PKG007" type="package" name="NMEA" style-class="" creator="" creation-date="02/07/2022 01:16:41" visibility="undefined">
           <tagged-values>
             <tagged-value id="tvbf1cdbe49a234adab738ea14ded54c90" name="namespace" type="text" multiple="false" hidden="false" value="RaceManager.DataProcessing.NMEA" />
             <tagged-value id="tveb352a9f71ef46949302375a4ec56b73" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="NMEA" />
           </tagged-values>
         </item>
         <item id="a816713e3786476ebf7ee70cf4b7712e" cid="CNT006" type="containment" name="" style-class="" creator="" creation-date="02/07/2022 01:16:41" from="cd0c5a14907b4eb8bfe54cd8347e82bb" to="04f2dd6bc8d44d9994ecb880b3f5f50c" />
-        <item id="cf481c3db8a349f7b1d07bef6ed4d7bb" cid="PKG008" type="package" name="NmeaRead" style-class="" creator="" creation-date="02/07/2022 01:16:41">
+        <item id="cf481c3db8a349f7b1d07bef6ed4d7bb" cid="PKG008" type="package" name="NmeaRead" style-class="" creator="" creation-date="02/07/2022 01:16:41" visibility="undefined">
           <tagged-values>
             <tagged-value id="tv98ca235192b64dbb854cc6f90eb0a369" name="namespace" type="text" multiple="false" hidden="false" value="RaceManager.DataProcessing.NMEA.NmeaRead" />
             <tagged-value id="tvd4c3e90f1ffa4fbbaf38b9a669fd8478" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="NmeaRead" />
           </tagged-values>
         </item>
         <item id="37c4b984cbf240a396ba660069986b9e" cid="CNT007" type="containment" name="" style-class="" creator="" creation-date="02/07/2022 01:16:41" from="cf481c3db8a349f7b1d07bef6ed4d7bb" to="cd0c5a14907b4eb8bfe54cd8347e82bb" />
-        <item id="0de6fc7b1d6d4072a60fc53553ec8d28" cid="PKG009" type="package" name="NmeaType" style-class="" creator="" creation-date="02/07/2022 01:16:41">
+        <item id="0de6fc7b1d6d4072a60fc53553ec8d28" cid="PKG009" type="package" name="NmeaType" style-class="" creator="" creation-date="02/07/2022 01:16:41" visibility="undefined">
           <tagged-values>
             <tagged-value id="tv0c15e8ac2ee14bdb8f3fa3c2cb8fe5b1" name="namespace" type="text" multiple="false" hidden="false" value="RaceManager.DataProcessing.NMEA.NmeaType" />
             <tagged-value id="tvfc633903b8c64452972e8cedfcc68f88" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="NmeaType" />
           </tagged-values>
         </item>
         <item id="1da250b729ee4a0ba0f96e2fd15e887e" cid="CNT008" type="containment" name="" style-class="" creator="" creation-date="02/07/2022 01:16:41" from="0de6fc7b1d6d4072a60fc53553ec8d28" to="cd0c5a14907b4eb8bfe54cd8347e82bb" />
-        <item id="c0a413545ad54fd49ee053afa597d693" cid="PKG010" type="package" name="NmeaWrite" style-class="" creator="" creation-date="02/07/2022 01:16:41">
+        <item id="c0a413545ad54fd49ee053afa597d693" cid="PKG010" type="package" name="NmeaWrite" style-class="" creator="" creation-date="02/07/2022 01:16:41" visibility="undefined">
           <tagged-values>
             <tagged-value id="tv89bc29a96caf47c8b079b5dab30f2bc1" name="namespace" type="text" multiple="false" hidden="false" value="RaceManager.DataProcessing.NMEA.NmeaWrite" />
             <tagged-value id="tv74683a4d7a724308a0ed7758109af630" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="NmeaWrite" />
           </tagged-values>
         </item>
         <item id="ffa2a332bb43457eba5a7a43273a2315" cid="CNT009" type="containment" name="" style-class="" creator="" creation-date="02/07/2022 01:16:41" from="c0a413545ad54fd49ee053afa597d693" to="cd0c5a14907b4eb8bfe54cd8347e82bb" />
-        <item id="8bdb908bb8734f9bad158498a7138d6c" cid="PKG011" type="package" name="Lecture" style-class="" creator="" creation-date="02/07/2022 01:16:41">
+        <item id="8bdb908bb8734f9bad158498a7138d6c" cid="PKG011" type="package" name="Lecture" style-class="" creator="" creation-date="02/07/2022 01:16:41" visibility="undefined">
           <tagged-values>
             <tagged-value id="tv0acb4dcd6cc6495986651fbcf5c51e04" name="namespace" type="text" multiple="false" hidden="false" value="RaceManager.Lecture" />
             <tagged-value id="tv2d39e93cbd8b41c39fb87389cd471be0" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Lecture" />
           </tagged-values>
         </item>
         <item id="08ef8a8862714f35b5463470f5e17256" cid="CNT010" type="containment" name="" style-class="" creator="" creation-date="02/07/2022 01:16:41" from="8bdb908bb8734f9bad158498a7138d6c" to="e137ce4593354ec6a35b25ab103d84e1" />
-        <item id="93ab50317c194f13926feb14481baf8d" cid="PKG012" type="package" name="XMLReadAndParse" style-class="" creator="" creation-date="02/07/2022 01:16:41">
+        <item id="93ab50317c194f13926feb14481baf8d" cid="PKG012" type="package" name="XMLReadAndParse" style-class="" creator="" creation-date="02/07/2022 01:16:41" visibility="undefined">
           <tagged-values>
             <tagged-value id="tv2feae97b58774f2eb263ddc9fa1c7ca4" name="namespace" type="text" multiple="false" hidden="false" value="RaceManager.Lecture.XMLReadAndParse" />
             <tagged-value id="tv3a3693d72cbb4b9f8c59ff9c4d4e80ca" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="XMLReadAndParse" />
           </tagged-values>
         </item>
         <item id="4ba0e79ce08541ef95069ca883270486" cid="CNT011" type="containment" name="" style-class="" creator="" creation-date="02/07/2022 01:16:41" from="93ab50317c194f13926feb14481baf8d" to="8bdb908bb8734f9bad158498a7138d6c" />
-        <item id="34482abd5ebd45d7996f07988ecfc54a" cid="PKG013" type="package" name="Models" style-class="" creator="" creation-date="02/07/2022 01:16:41">
+        <item id="34482abd5ebd45d7996f07988ecfc54a" cid="PKG013" type="package" name="Models" style-class="" creator="" creation-date="02/07/2022 01:16:41" visibility="undefined">
           <tagged-values>
             <tagged-value id="tv539c234660284facad136ae98a941b5e" name="namespace" type="text" multiple="false" hidden="false" value="RaceManager.Models" />
             <tagged-value id="tv76e1fa40003246b6937726fad3388357" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Models" />
           </tagged-values>
         </item>
         <item id="aa2d086fddcc4125b370395e11104f41" cid="CNT012" type="containment" name="" style-class="" creator="" creation-date="02/07/2022 01:16:41" from="34482abd5ebd45d7996f07988ecfc54a" to="e137ce4593354ec6a35b25ab103d84e1" />
+        <item id="40f55d1b1ddb4038a8e056282f662dab" cid="CNT015" type="containment" name="" style-class="" creator="" creation-date="02/07/2022 13:54:51" from="cdfdf4f966d54d32aa8768d8f6271622" to="e137ce4593354ec6a35b25ab103d84e1" />
       </abstract-items>
       <sub-models>
         <model id="p412c281ea23c45f6b28f32b201d9f4f4_438761090" name="RaceManager" namespace="RaceManager" order-index="2" expanded="true">
@@ -182,7 +252,7 @@
           </tagged-values>
           <abstract-items />
           <sub-models>
-            <model id="p2c5bc268f15a4b5cba74da7056b4c210_528501106" name="Communication" namespace="RaceManager.Communication" order-index="1">
+            <model id="p2c5bc268f15a4b5cba74da7056b4c210_528501106" name="Communication" namespace="RaceManager.Communication" order-index="1" expanded="true">
               <meta>
                 <authors>
                   <author>Jérémie Rodez</author>
@@ -214,22 +284,13 @@
                       <styles />
                       <content>
                         <paragraph>
-                          <style />
+                          <style numbering-type="None">
+                            <numbering name="" multi-level="false">
+                              <numbering-level type="None" level="0" format="{0}." />
+                            </numbering>
+                          </style>
                           <p>
-                            <t> https://docs.microsoft.com/en-us/dotnet/framework/network-programming/asynchronous-server-socket-example?redirectedfrom=MSDN
- State object for reading client data asynchronously
-public class StateObject
-{
-    // Client  socket.
-    public Socket workSocket = null;
-    // Size of receive buffer.
-    public const int BufferSize = 1024;
-    // Receive buffer.
-    public byte[] buffer = new byte[BufferSize];
-    // Received data string. 
-    public StringBuilder sb = new StringBuilder();
-}
- Semaphore
+                            <t> https://docs.microsoft.com/en-us/dotnet/framework/network-programming/asynchronous-server-socket-example?redirectedfrom=MSDN State object for reading client data asynchronouslypublic class StateObject{    // Client  socket.    public Socket workSocket = null;    // Size of receive buffer.    public const int BufferSize = 1024;    // Receive buffer.    public byte[] buffer = new byte[BufferSize];    // Received data string.     public StringBuilder sb = new StringBuilder();} Semaphore
 </t>
                           </p>
                         </paragraph>
@@ -281,24 +342,13 @@ public class StateObject
                           <styles />
                           <content>
                             <paragraph>
-                              <style />
+                              <style numbering-type="None">
+                                <numbering name="" multi-level="false">
+                                  <numbering-level type="None" level="0" format="{0}." />
+                                </numbering>
+                              </style>
                               <p>
-                                <t> Bind the socket to the local endpoint and listen for incoming connections.
- Set the event to nonsignaled state.
- Start an asynchronous socket to listen for connections.
- Wait until a connection is made before continuing.
- &lt;summary&gt;
- Here we treat if the new client already exists or not, 
- then create a new one or update the existing one
- &lt;/summary&gt;
- &lt;param name="ar"&gt;&lt;/param&gt;
- Signal the main thread to continue.
- Get the socket that handles the client request.
- read
-clients.Add(client);
- Create the state object.
-StateObject state = new StateObject();
-state.workSocket = handler;
+                                <t> Bind the socket to the local endpoint and listen for incoming connections. Set the event to nonsignaled state. Start an asynchronous socket to listen for connections. Wait until a connection is made before continuing. &lt;summary&gt; Here we treat if the new client already exists or not,  then create a new one or update the existing one &lt;/summary&gt; &lt;param name="ar"&gt;&lt;/param&gt; Signal the main thread to continue. Get the socket that handles the client request. readclients.Add(client); Create the state object.StateObject state = new StateObject();state.workSocket = handler;
 </t>
                               </p>
                             </paragraph>
@@ -405,7 +455,11 @@ state.workSocket = handler;
                       <styles />
                       <content>
                         <paragraph>
-                          <style />
+                          <style numbering-type="None">
+                            <numbering name="" multi-level="false">
+                              <numbering-level type="None" level="0" format="{0}." />
+                            </numbering>
+                          </style>
                           <p>
                             <t> Data buffer for incoming data.
 </t>
@@ -434,7 +488,11 @@ state.workSocket = handler;
                       <styles />
                       <content>
                         <paragraph>
-                          <style />
+                          <style numbering-type="None">
+                            <numbering name="" multi-level="false">
+                              <numbering-level type="None" level="0" format="{0}." />
+                            </numbering>
+                          </style>
                           <p>
                             <t> Réservation du port d'écoute selon l'ip du serveur.
 </t>
@@ -481,10 +539,13 @@ state.workSocket = handler;
                       <styles />
                       <content>
                         <paragraph>
-                          <style />
+                          <style numbering-type="None">
+                            <numbering name="" multi-level="false">
+                              <numbering-level type="None" level="0" format="{0}." />
+                            </numbering>
+                          </style>
                           <p>
-                            <t> : IObservable&lt;Client&gt;
-public List&lt;IObserver&lt;Client&gt;&gt; Observers = new List&lt;System.IObserver&lt;Client&gt;&gt;();
+                            <t> : IObservable&lt;Client&gt;public List&lt;IObserver&lt;Client&gt;&gt; Observers = new List&lt;System.IObserver&lt;Client&gt;&gt;();
 </t>
                           </p>
                         </paragraph>
@@ -528,21 +589,13 @@ public List&lt;IObserver&lt;Client&gt;&gt; Observers = new List&lt;System.IObser
                           <styles />
                           <content>
                             <paragraph>
-                              <style />
+                              <style numbering-type="None">
+                                <numbering name="" multi-level="false">
+                                  <numbering-level type="None" level="0" format="{0}." />
+                                </numbering>
+                              </style>
                               <p>
-                                <t>void startDialog()
-{
-    socket.BeginReceive(buffer, 0, BufferSize, 0,
-       new AsyncCallback(ReadCallback), state);
-}
-private void Subscribe(IObserver&lt;Client&gt; observer)
-{
-}
-IDisposable IObservable&lt;Client&gt;.Subscribe(IObserver&lt;Client&gt; observer)
-{
-    observers.Add(observer);
-    throw new NotImplementedException();
-}
+                                <t>void startDialog(){    socket.BeginReceive(buffer, 0, BufferSize, 0,       new AsyncCallback(ReadCallback), state);}private void Subscribe(IObserver&lt;Client&gt; observer){}IDisposable IObservable&lt;Client&gt;.Subscribe(IObserver&lt;Client&gt; observer){    observers.Add(observer);    throw new NotImplementedException();}
 </t>
                               </p>
                             </paragraph>
@@ -617,7 +670,11 @@ IDisposable IObservable&lt;Client&gt;.Subscribe(IObserver&lt;Client&gt; observer
                       <styles />
                       <content>
                         <paragraph>
-                          <style />
+                          <style numbering-type="None">
+                            <numbering name="" multi-level="false">
+                              <numbering-level type="None" level="0" format="{0}." />
+                            </numbering>
+                          </style>
                           <p>
                             <t> Receive buffer.
 </t>
@@ -649,7 +706,11 @@ IDisposable IObservable&lt;Client&gt;.Subscribe(IObserver&lt;Client&gt; observer
                       <styles />
                       <content>
                         <paragraph>
-                          <style />
+                          <style numbering-type="None">
+                            <numbering name="" multi-level="false">
+                              <numbering-level type="None" level="0" format="{0}." />
+                            </numbering>
+                          </style>
                           <p>
                             <t> Received data string. 
 </t>
@@ -686,13 +747,13 @@ IDisposable IObservable&lt;Client&gt;.Subscribe(IObserver&lt;Client&gt; observer
                       <styles />
                       <content>
                         <paragraph>
-                          <style />
+                          <style numbering-type="None">
+                            <numbering name="" multi-level="false">
+                              <numbering-level type="None" level="0" format="{0}." />
+                            </numbering>
+                          </style>
                           <p>
-                            <t>this.Listener  = (Socket)ar.AsyncState;
-this.Handler = Listener.EndAccept(ar);
-this.Nickname = "TODO";
-this.Port = ((IPEndPoint)Listener.RemoteEndPoint).Port;
-this.IpAddress = ((IPEndPoint)Listener.RemoteEndPoint).Address;
+                            <t>this.Listener  = (Socket)ar.AsyncState;this.Handler = Listener.EndAccept(ar);this.Nickname = "TODO";this.Port = ((IPEndPoint)Listener.RemoteEndPoint).Port;this.IpAddress = ((IPEndPoint)Listener.RemoteEndPoint).Address;
 </t>
                           </p>
                         </paragraph>
@@ -748,12 +809,13 @@ this.IpAddress = ((IPEndPoint)Listener.RemoteEndPoint).Address;
                           <styles />
                           <content>
                             <paragraph>
-                              <style />
+                              <style numbering-type="None">
+                                <numbering name="" multi-level="false">
+                                  <numbering-level type="None" level="0" format="{0}." />
+                                </numbering>
+                              </style>
                               <p>
-                                <t>StringBuilder sb = new StringBuilder();
- Permet d'obtenir des informations relatives au serveur.
-Console.WriteLine("\r\n");
-IPAddressAdditionalInfo affiche des informations supplémentaires sur l'adresse du serveur.
+                                <t>StringBuilder sb = new StringBuilder(); Permet d'obtenir des informations relatives au serveur.Console.WriteLine("\r\n");IPAddressAdditionalInfo affiche des informations supplémentaires sur l'adresse du serveur.
 </t>
                               </p>
                             </paragraph>
@@ -799,7 +861,11 @@ IPAddressAdditionalInfo affiche des informations supplémentaires sur l'adresse 
                           <styles />
                           <content>
                             <paragraph>
-                              <style />
+                              <style numbering-type="None">
+                                <numbering name="" multi-level="false">
+                                  <numbering-level type="None" level="0" format="{0}." />
+                                </numbering>
+                              </style>
                               <p>
                                 <t> Affiche les flgas qui indiquent si le serveur prend en charge les schémas d'adresse IPv4 ou IPv6.
 </t>
@@ -831,7 +897,7 @@ IPAddressAdditionalInfo affiche des informations supplémentaires sur l'adresse 
                     </operation>
                   </operations>
                 </item>
-                <item id="3e9f7331455145d4836e76b0fbd113cb" cid="E001" type="enumeration" name="IMessageType" style-class="" creation-date="02/07/2022 01:16:41" visibility="public">
+                <item id="3e9f7331455145d4836e76b0fbd113cb" cid="E001" type="enumeration" name="IMessageType" style-class="" change-tracking-state="changed" creation-date="02/07/2022 01:16:41" visibility="public">
                   <tagged-values>
                     <tagged-value id="tv19f44b038e644844977fc36b91f56f08" name="namespace" type="text" multiple="false" hidden="false" value="RaceManager.Communication" />
                     <tagged-value id="tv79e729fa8baf4bfe8ad4160dca8bd028" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="IMessageType" />
@@ -839,8 +905,9 @@ IPAddressAdditionalInfo affiche des informations supplémentaires sur l'adresse 
                   <enumeration-items>
                     <enumeration-item id="ab696cbc22e9d4451ba4c9ea97519eef6892" cid="ENI001" name="CONNECTION" creation-date="02/07/2022 01:16:41" value="0" />
                     <enumeration-item id="af781a5dc9b6b4a4c8b376f7362afb514892" cid="ENI002" name="DISCONNECTION" creation-date="02/07/2022 01:16:41" value="1" />
-                    <enumeration-item id="abe3f679850a843c7a528cd5f88b93a18892" cid="ENI003" name="INFO" creation-date="02/07/2022 01:16:41" value="2" />
                     <enumeration-item id="ae22ee025ac38402785e8717a36e21d80892" cid="ENI004" name="BOATSELECT" creation-date="02/07/2022 01:16:41" value="3" />
+                    <enumeration-item id="abeb29054b3504a14ba646373f67b94bf614" cid="ENI003" name="PLAYERINFO" creation-date="02/07/2022 13:54:51" value="2" />
+                    <enumeration-item id="aac5b8193ed5146729fef4cad6ce0f83f614" cid="ENI005" name="ENDRACE" creation-date="02/07/2022 13:54:51" value="4&#xD;&#xA;    " />
                   </enumeration-items>
                 </item>
                 <item id="3bdfcdb231f443b3bfcccf71e7d361f6" cid="C005" type="class" name="AsyncServer" style-class="" creation-date="02/07/2022 01:16:41" visibility="public">
@@ -865,31 +932,13 @@ IPAddressAdditionalInfo affiche des informations supplémentaires sur l'adresse 
                           <styles />
                           <content>
                             <paragraph>
-                              <style />
+                              <style numbering-type="None">
+                                <numbering name="" multi-level="false">
+                                  <numbering-level type="None" level="0" format="{0}." />
+                                </numbering>
+                              </style>
                               <p>
-                                <t> Retrieve the state object and the handler socket
- from the asynchronous state object.
- Read data from the client socket. 
- Serialisation
- There  might be more data, so store the data received so far.
- Check for end-of-file tag. If it is not there, read 
- more data.
-if (content.IndexOf("&lt;EOF&gt;") &gt; -1)
- All the data has been read from the 
- client. Display it on the console.
- SERIALISATION PSEUDOCODE
- ...
- serialisation = new Serialisation(content)
- switch (serialisation.MessageType){
- case IMessageType.CONNECT :
-      client.infos(serialisation.content)
-      clients.addOnce(client)
- case IMessageType.DISCONNECT :
-      clients.addOnce(client)
- 
- case IMessageType.INFO :
- Echo the data back to the client.
- Not all data received. Get more.
+                                <t> Retrieve the state object and the handler socket from the asynchronous state object. Read data from the client socket.  Serialisation There  might be more data, so store the data received so far. Check for end-of-file tag. If it is not there, read  more data.if (content.IndexOf("&lt;EOF&gt;") &gt; -1) All the data has been read from the  client. Display it on the console. SERIALISATION PSEUDOCODE ... serialisation = new Serialisation(content) switch (serialisation.MessageType){ case IMessageType.CONNECT :      client.infos(serialisation.content)      clients.addOnce(client) case IMessageType.DISCONNECT :      clients.addOnce(client)  case IMessageType.INFO : Echo the data back to the client. Not all data received. Get more.
 </t>
                               </p>
                             </paragraph>
@@ -995,7 +1044,7 @@ if (content.IndexOf("&lt;EOF&gt;") &gt; -1)
                     <operation id="od59d5e61ef3947dd8bac0b452b802387893" cid="OP011" name="Send" creation-date="02/07/2022 01:16:41" type="" type-id="" visibility="private" static="true">
                       <parameters>
                         <parameter id="p5927d661e1444deab4c4375610a6e5e8" name="handler" type="Socket" type-id="Socket" />
-                        <parameter id="p61520a43e62549f19b49ea1c6a2467c9" name="data" type="String" type-id="String" />
+                        <parameter id="p61520a43e62549f19b49ea1c6a2467c9" name="data" type="String" type-id="Uml.String" />
                       </parameters>
                       <documentation>
                         <text>
@@ -1009,10 +1058,13 @@ if (content.IndexOf("&lt;EOF&gt;") &gt; -1)
                           <styles />
                           <content>
                             <paragraph>
-                              <style />
+                              <style numbering-type="None">
+                                <numbering name="" multi-level="false">
+                                  <numbering-level type="None" level="0" format="{0}." />
+                                </numbering>
+                              </style>
                               <p>
-                                <t> Convert the string data to byte data using ASCII encoding.
- Begin sending the data to the remote device.
+                                <t> Convert the string data to byte data using ASCII encoding. Begin sending the data to the remote device.
 </t>
                               </p>
                             </paragraph>
@@ -1048,10 +1100,13 @@ if (content.IndexOf("&lt;EOF&gt;") &gt; -1)
                           <styles />
                           <content>
                             <paragraph>
-                              <style />
+                              <style numbering-type="None">
+                                <numbering name="" multi-level="false">
+                                  <numbering-level type="None" level="0" format="{0}." />
+                                </numbering>
+                              </style>
                               <p>
-                                <t> Retrieve the socket from the state object.
- Complete sending the data to the remote device.
+                                <t> Retrieve the socket from the state object. Complete sending the data to the remote device.
 </t>
                               </p>
                             </paragraph>
@@ -1082,9 +1137,22 @@ if (content.IndexOf("&lt;EOF&gt;") &gt; -1)
                     </operation>
                   </operations>
                 </item>
+                <item id="af3edfde54654e439e4031a9d0710c67" cid="E002" type="enumeration" name="OMessageType" style-class="" creation-date="02/07/2022 13:54:51" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tv78582832757a4781a94ccce5786ce562" name="namespace" type="text" multiple="false" hidden="false" value="RaceManager.Communication" />
+                    <tagged-value id="tv1ee7f39029d74a45a14f6cf50a26ae46" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="OMessageType" />
+                  </tagged-values>
+                  <enumeration-items>
+                    <enumeration-item id="aa0ab762136ea466cb344f85385dbe8cf614" cid="ENI006" name="CONNECTION" creation-date="02/07/2022 13:54:51" value="0" />
+                    <enumeration-item id="a3740130323414b59b325fa2de7e416b9614" cid="ENI007" name="DISCONNECTION" creation-date="02/07/2022 13:54:51" value="1" />
+                    <enumeration-item id="ae3e3f658956c44569909c23dab3b5c1c614" cid="ENI008" name="INITRACE" creation-date="02/07/2022 13:54:51" value="2" />
+                    <enumeration-item id="a7a54b1d9bb684b89b4d08e451634ec4b614" cid="ENI009" name="ENVIRONMENTINFO" creation-date="02/07/2022 13:54:51" value="3" />
+                    <enumeration-item id="afa146191325e44acb81dc74acd72274e614" cid="ENI010" name="ENDRACE" creation-date="02/07/2022 13:54:51" value="4&#xD;&#xA;    " />
+                  </enumeration-items>
+                </item>
               </abstract-items>
               <sub-models />
-              <diagram type="uml-class" id="pf6743bb03d2b4c19be069b823b12af79_137647222" name="Communication" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" namespace="RaceManager.Communication" view-location="0,-119">
+              <diagram type="uml-class" id="pf6743bb03d2b4c19be069b823b12af79_137647222" name="Communication" order-index="1" expanded="true" overview-order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" namespace="RaceManager.Communication" view-location="-100,-108">
                 <style>
                   <background-color index="1" color="#FFFFFFFF" />
                   <background-color index="2" color="#FFFFFFFF" />
@@ -1126,7 +1194,7 @@ if (content.IndexOf("&lt;EOF&gt;") &gt; -1)
                     <class />
                   </item>
                   <item id="3e9f7331455145d4836e76b0fbd113cb" iid="6065a644c06948b5b6b0b723023033c8" creation-date="02/07/2022 01:16:42" order-index="4" type="entity">
-                    <layout ax="268.5" ay="268" awidth="148" aheight="123" x="268.5" y="268" width="148" height="123" />
+                    <layout ax="1017.5" ay="255.5" awidth="148" aheight="123" x="1017.5" y="255.5" width="148" height="123" />
                     <enumeration />
                   </item>
                   <item id="3bdfcdb231f443b3bfcccf71e7d361f6" iid="3c2c2177f6ac4de192f265da71f69dbe" creation-date="02/07/2022 01:16:42" order-index="5" type="entity">
@@ -1149,6 +1217,10 @@ if (content.IndexOf("&lt;EOF&gt;") &gt; -1)
                       </points>
                     </layout>
                     <relation from="18f317103145466eb21e86cee5edad9d" from-iid="c5c48d683c844902bee623465297c5ad" to="f3d4499502154eb0ae22abaabb1ef3a5" to-iid="d9b6ef3baebb43449519b983228c9244" />
+                  </item>
+                  <item id="af3edfde54654e439e4031a9d0710c67" iid="a95313795c514a7bb20e5f93f24fd07e" creation-date="02/07/2022 13:54:51" order-index="0" type="entity">
+                    <layout ax="826" ay="252" awidth="167" aheight="126.5" x="826" y="252" width="167" height="126.5" rotation-center="0,16.25" />
+                    <enumeration />
                   </item>
                 </layer>
               </diagram>
@@ -1604,7 +1676,11 @@ if (content.IndexOf("&lt;EOF&gt;") &gt; -1)
                           <styles />
                           <content>
                             <paragraph>
-                              <style />
+                              <style numbering-type="None">
+                                <numbering name="" multi-level="false">
+                                  <numbering-level type="None" level="0" format="{0}." />
+                                </numbering>
+                              </style>
                               <p>
                                 <t>[NmeaMessageType("GLL")]
 </t>
@@ -1689,12 +1765,13 @@ if (content.IndexOf("&lt;EOF&gt;") &gt; -1)
                           <styles />
                           <content>
                             <paragraph>
-                              <style />
+                              <style numbering-type="None">
+                                <numbering name="" multi-level="false">
+                                  <numbering-level type="None" level="0" format="{0}." />
+                                </numbering>
+                              </style>
                               <p>
-                                <t>public class NmeaManage
-{
-    public string NmeaType = "$GPGGA,064036.289,4836.5375,N,00740.9373,E,1,04,3.2,200.2,M,,,,0000*0E";
-}
+                                <t>public class NmeaManage{    public string NmeaType = "$GPGGA,064036.289,4836.5375,N,00740.9373,E,1,04,3.2,200.2,M,,,,0000*0E";}
 </t>
                               </p>
                             </paragraph>
@@ -1718,48 +1795,13 @@ if (content.IndexOf("&lt;EOF&gt;") &gt; -1)
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
-                                    <t>if (NmeaIdFrame.Equals("GGA"))
-{
-    var NmeaInformation = new GGA(NmeaIdTalker, NmeaMessage);
-}
-Console.WriteLine(messageTypes.ContainsKey(NmeaIdFrame));
-if (messageTypes.ContainsKey(NmeaIdFrame))
-{
-    _ = (NmeaParse)messageTypes[NmeaIdFrame].Invoke(new object[] { NmeaIdTalker, NmeaMessage });
-}
-Type type = typeof(GLL);
-MethodInfo method = type.GetMethod(NmeaIdFrame);
-method.Invoke(null, new object[] { NmeaIdTalker, NmeaMessage });
-GLL connard = new GLL(NmeaIdTalker, NmeaMessage);
-string result = (string)method.Invoke(connard, null);
-Console.WriteLine(result);
-ListNmeaType.IdFrame[NmeaIdFrame].Invoke(new object[] { NmeaIdTalker, NmeaMessage });
-var NmeaInformation = new[NmeaIdFrame];
-var NmeaInformation = new NmeaConstruct(NmeaIdTalker, NmeaIdFrame)
-{
-    TypeInformation = new GLL(NmeaIdTalker, NmeaMessage)
-};
-Console.WriteLine(NmeaInformation);
-public class MyReflectionClass
-{
-    public string GGA()
-    {
-        return DateTime.Now.ToString();
-    }
-}
-public class NmeaConstruct
-{
-    public NmeaConstruct(string NmeaIdTalker, string NmeaIdFrame)
-    {
-        IdTalker = NmeaIdTalker;
-        IdFrame = NmeaIdFrame;
-    }
-    public string IdTalker { get; }
-    public string IdFrame { get; }
-    public dynamic TypeInformation { get; set; }
-}
+                                    <t>if (NmeaIdFrame.Equals("GGA")){    var NmeaInformation = new GGA(NmeaIdTalker, NmeaMessage);}Console.WriteLine(messageTypes.ContainsKey(NmeaIdFrame));if (messageTypes.ContainsKey(NmeaIdFrame)){    _ = (NmeaParse)messageTypes[NmeaIdFrame].Invoke(new object[] { NmeaIdTalker, NmeaMessage });}Type type = typeof(GLL);MethodInfo method = type.GetMethod(NmeaIdFrame);method.Invoke(null, new object[] { NmeaIdTalker, NmeaMessage });GLL connard = new GLL(NmeaIdTalker, NmeaMessage);string result = (string)method.Invoke(connard, null);Console.WriteLine(result);ListNmeaType.IdFrame[NmeaIdFrame].Invoke(new object[] { NmeaIdTalker, NmeaMessage });var NmeaInformation = new[NmeaIdFrame];var NmeaInformation = new NmeaConstruct(NmeaIdTalker, NmeaIdFrame){    TypeInformation = new GLL(NmeaIdTalker, NmeaMessage)};Console.WriteLine(NmeaInformation);public class MyReflectionClass{    public string GGA()    {        return DateTime.Now.ToString();    }}public class NmeaConstruct{    public NmeaConstruct(string NmeaIdTalker, string NmeaIdFrame)    {        IdTalker = NmeaIdTalker;        IdFrame = NmeaIdFrame;    }    public string IdTalker { get; }    public string IdFrame { get; }    public dynamic TypeInformation { get; set; }}
 </t>
                                   </p>
                                 </paragraph>
@@ -2070,14 +2112,13 @@ public class NmeaConstruct
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
-                                    <t> &lt;summary&gt;
- Indicates a message that contains a latitude and longitude value
- &lt;/summary&gt;
- &lt;summary&gt;
- Gets the latitude component of the location
- &lt;/summary&gt;
+                                    <t> &lt;summary&gt; Indicates a message that contains a latitude and longitude value &lt;/summary&gt; &lt;summary&gt; Gets the latitude component of the location &lt;/summary&gt;
 </t>
                                   </p>
                                 </paragraph>
@@ -2120,11 +2161,13 @@ public class NmeaConstruct
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
-                                    <t> &lt;summary&gt;
- Gets the longitude component of the location
- &lt;/summary&gt;
+                                    <t> &lt;summary&gt; Gets the longitude component of the location &lt;/summary&gt;
 </t>
                                   </p>
                                 </paragraph>
@@ -2250,14 +2293,13 @@ public class NmeaConstruct
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
-                                    <t> &lt;summary&gt;
- Indicates this message has a time stamp
- &lt;/summary&gt;
- &lt;summary&gt;
- Gets the time of day for the message
- &lt;/summary&gt;
+                                    <t> &lt;summary&gt; Indicates this message has a time stamp &lt;/summary&gt; &lt;summary&gt; Gets the time of day for the message &lt;/summary&gt;
 </t>
                                   </p>
                                 </paragraph>
@@ -2333,35 +2375,13 @@ public class NmeaConstruct
                                   <styles />
                                   <content>
                                     <paragraph>
-                                      <style />
+                                      <style numbering-type="None">
+                                        <numbering name="" multi-level="false">
+                                          <numbering-level type="None" level="0" format="{0}." />
+                                        </numbering>
+                                      </style>
                                       <p>
-                                        <t> &lt;summary&gt;
- Gets the horizontal vector.
- &lt;/summary&gt;
- &lt;summary&gt;
- Gets the horizontal distance.
- &lt;/summary&gt;
- &lt;summary&gt;
- Gets the units of the &lt;see cref="HorizontalDistance"/&gt; value.
- &lt;/summary&gt;
- &lt;summary&gt;
- Gets the horizontal angle.
- &lt;/summary&gt;
- &lt;summary&gt;
- Gets the units of the &lt;see cref="HorizontalAngle"/&gt; value.
- &lt;/summary&gt;
- &lt;summary&gt;
- Gets the vertical angle.
- &lt;/summary&gt;
- &lt;summary&gt;
- Gets the units of the &lt;see cref="VerticalAngle"/&gt; value.
- &lt;/summary&gt;
- &lt;summary&gt;
- Gets the slope distance.
- &lt;/summary&gt;
- &lt;summary&gt;
- Gets the units of the &lt;see cref="SlopeDistance"/&gt; value.
- &lt;/summary&gt;
+                                        <t> &lt;summary&gt; Gets the horizontal vector. &lt;/summary&gt; &lt;summary&gt; Gets the horizontal distance. &lt;/summary&gt; &lt;summary&gt; Gets the units of the &lt;see cref="HorizontalDistance"/&gt; value. &lt;/summary&gt; &lt;summary&gt; Gets the horizontal angle. &lt;/summary&gt; &lt;summary&gt; Gets the units of the &lt;see cref="HorizontalAngle"/&gt; value. &lt;/summary&gt; &lt;summary&gt; Gets the vertical angle. &lt;/summary&gt; &lt;summary&gt; Gets the units of the &lt;see cref="VerticalAngle"/&gt; value. &lt;/summary&gt; &lt;summary&gt; Gets the slope distance. &lt;/summary&gt; &lt;summary&gt; Gets the units of the &lt;see cref="SlopeDistance"/&gt; value. &lt;/summary&gt;
 </t>
                                       </p>
                                     </paragraph>
@@ -2508,14 +2528,13 @@ public class NmeaConstruct
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
-                                    <t> &lt;summary&gt;
- Registers a specific NMEA Message type
- &lt;/summary&gt;
- &lt;param name="typeInfo"&gt;TypeInfo for the class being registered&lt;/param&gt;
- &lt;param name="nmeaType"&gt;The 5-character NMEA Type name (eg &lt;c&gt;GPGLL&lt;/c&gt;). If &lt;c&gt;null&lt;/c&gt;, it'll expect the &lt;see cref="NmeaMessageTypeAttribute" /&gt; to be declared on the class. &lt;/param&gt;
- &lt;param name="replace"&gt;Set to &lt;c&gt;true&lt;/c&gt; if you want to replace already registered type. Otherwise this method will throw.&lt;/param&gt;
+                                    <t> &lt;summary&gt; Registers a specific NMEA Message type &lt;/summary&gt; &lt;param name="typeInfo"&gt;TypeInfo for the class being registered&lt;/param&gt; &lt;param name="nmeaType"&gt;The 5-character NMEA Type name (eg &lt;c&gt;GPGLL&lt;/c&gt;). If &lt;c&gt;null&lt;/c&gt;, it'll expect the &lt;see cref="NmeaMessageTypeAttribute" /&gt; to be declared on the class. &lt;/param&gt; &lt;param name="replace"&gt;Set to &lt;c&gt;true&lt;/c&gt; if you want to replace already registered type. Otherwise this method will throw.&lt;/param&gt;
 </t>
                                   </p>
                                 </paragraph>
@@ -2582,19 +2601,13 @@ public class NmeaConstruct
                                   <styles />
                                   <content>
                                     <paragraph>
-                                      <style />
+                                      <style numbering-type="None">
+                                        <numbering name="" multi-level="false">
+                                          <numbering-level type="None" level="0" format="{0}." />
+                                        </numbering>
+                                      </style>
                                       <p>
-                                        <t> &lt;summary&gt;
- Parses the specified NMEA message.
- &lt;/summary&gt;
- &lt;param name="message"&gt;The NMEA message string.&lt;/param&gt;
- &lt;param name="previousSentence"&gt;The previously received message (only used if parsing multi-sentence messages)&lt;/param&gt;
- &lt;param name="ignoreChecksum"&gt;If &lt;c&gt;true&lt;/c&gt; ignores the checksum completely, if &lt;c&gt;false&lt;/c&gt; validates the checksum if present.&lt;/param&gt;
- &lt;returns&gt;The nmea message that was parsed.&lt;/returns&gt;
- &lt;exception cref="System.ArgumentException"&gt;
- Invalid nmea message: Missing starting character '$'
- or checksum failure
- &lt;/exception&gt;
+                                        <t> &lt;summary&gt; Parses the specified NMEA message. &lt;/summary&gt; &lt;param name="message"&gt;The NMEA message string.&lt;/param&gt; &lt;param name="previousSentence"&gt;The previously received message (only used if parsing multi-sentence messages)&lt;/param&gt; &lt;param name="ignoreChecksum"&gt;If &lt;c&gt;true&lt;/c&gt; ignores the checksum completely, if &lt;c&gt;false&lt;/c&gt; validates the checksum if present.&lt;/param&gt; &lt;returns&gt;The nmea message that was parsed.&lt;/returns&gt; &lt;exception cref="System.ArgumentException"&gt; Invalid nmea message: Missing starting character '$' or checksum failure &lt;/exception&gt;
 </t>
                                       </p>
                                     </paragraph>
@@ -2651,7 +2664,7 @@ public class NmeaConstruct
         </source-code>
                               </source-codes>
                             </operation>
-                            <operation id="odefecae9fdb8409881d8076707279b37896" cid="OP029" name="Parse" creation-date="02/07/2022 01:16:41" type="NmeaMessage" type-id="Class:34bb3b1932a44024bc1471fe00b4700b" visibility="public" static="true">
+                            <operation id="odefecae9fdb8409881d8076707279b37896" cid="OP029" name="Parse" creation-date="02/07/2022 01:16:41" type="NmeaMessage" type-id="NmeaMessage" visibility="public" static="true">
                               <parameters>
                                 <parameter id="pa25400579f4f4a54a5fcfb52f5912521" name="message" type="string" type-id="string" />
                                 <parameter id="pa8fa41e6579e4083b0851cb68f60bf98" name="previousSentence" type="IMultiSentenceMessage?" type-id="IMultiSentenceMessage?" default-value="null" />
@@ -2669,35 +2682,13 @@ public class NmeaConstruct
                                   <styles />
                                   <content>
                                     <paragraph>
-                                      <style />
+                                      <style numbering-type="None">
+                                        <numbering name="" multi-level="false">
+                                          <numbering-level type="None" level="0" format="{0}." />
+                                        </numbering>
+                                      </style>
                                       <p>
-                                        <t> &lt;summary&gt;
- Gets the NMEA message parts.
- &lt;/summary&gt;
- &lt;summary&gt;
- Gets the NMEA type id for the message.
- &lt;/summary&gt;
- &lt;value&gt;The 5 character string that identifies the message type&lt;/value&gt;
- &lt;summary&gt;
- Gets the talker ID for this message (
- &lt;/summary&gt;
- &lt;summary&gt;
- Gets a value indicating whether this message type is proprietary
- &lt;/summary&gt;
-Appendix B
- &lt;summary&gt;
- Returns the original NMEA string that represents this message.
- &lt;/summary&gt;
- &lt;returns&gt;An original NMEA string that represents this message.&lt;/returns&gt;
- &lt;summary&gt;
- Gets the checksum value of the message.
- &lt;/summary&gt;
-Comma separator
- &lt;summary&gt;
- Indicates whether the current object is equal to another object of the same type.
- &lt;/summary&gt;
- &lt;param name="other"&gt;An object to compare with this object.&lt;/param&gt;
- &lt;returns&gt;&lt;c&gt;true&lt;/c&gt; if the current object is equal to the other parameter; otherwise, &lt;c&gt;false&lt;/c&gt;.&lt;/returns&gt;
+                                        <t> &lt;summary&gt; Gets the NMEA message parts. &lt;/summary&gt; &lt;summary&gt; Gets the NMEA type id for the message. &lt;/summary&gt; &lt;value&gt;The 5 character string that identifies the message type&lt;/value&gt; &lt;summary&gt; Gets the talker ID for this message ( &lt;/summary&gt; &lt;summary&gt; Gets a value indicating whether this message type is proprietary &lt;/summary&gt;Appendix B &lt;summary&gt; Returns the original NMEA string that represents this message. &lt;/summary&gt; &lt;returns&gt;An original NMEA string that represents this message.&lt;/returns&gt; &lt;summary&gt; Gets the checksum value of the message. &lt;/summary&gt;Comma separator &lt;summary&gt; Indicates whether the current object is equal to another object of the same type. &lt;/summary&gt; &lt;param name="other"&gt;An object to compare with this object.&lt;/param&gt; &lt;returns&gt;&lt;c&gt;true&lt;/c&gt; if the current object is equal to the other parameter; otherwise, &lt;c&gt;false&lt;/c&gt;.&lt;/returns&gt;
 </t>
                                       </p>
                                     </paragraph>
@@ -2915,15 +2906,13 @@ Comma separator
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
-                                    <t> &lt;summary&gt;
- Gets a relative timestamp in milliseconds indicating the time the message was created.
- &lt;/summary&gt;
- &lt;remarks&gt;
- This value is deduced from &lt;c&gt;System.Diagnostics.Stopwatch.GetTimestamp() * 1000d / System.Diagnostics.Stopwatch.Frequency&lt;/c&gt;.
- You can use it to calculate the age of the message in milliseconds by calculating the difference between the timestamp and the above expression
- &lt;/remarks&gt;
+                                    <t> &lt;summary&gt; Gets a relative timestamp in milliseconds indicating the time the message was created. &lt;/summary&gt; &lt;remarks&gt; This value is deduced from &lt;c&gt;System.Diagnostics.Stopwatch.GetTimestamp() * 1000d / System.Diagnostics.Stopwatch.Frequency&lt;/c&gt;. You can use it to calculate the age of the message in milliseconds by calculating the difference between the timestamp and the above expression &lt;/remarks&gt;
 </t>
                                   </p>
                                 </paragraph>
@@ -2992,11 +2981,13 @@ Comma separator
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
-                                    <t> &lt;summary&gt;
- Gets the index in the &lt;see cref="NmeaMessage.MessageParts"/&gt; where the total count of messages is listed.
- &lt;/summary&gt;
+                                    <t> &lt;summary&gt; Gets the index in the &lt;see cref="NmeaMessage.MessageParts"/&gt; where the total count of messages is listed. &lt;/summary&gt;
 </t>
                                   </p>
                                 </paragraph>
@@ -3046,7 +3037,11 @@ Comma separator
                                   <styles />
                                   <content>
                                     <paragraph>
-                                      <style />
+                                      <style numbering-type="None">
+                                        <numbering name="" multi-level="false">
+                                          <numbering-level type="None" level="0" format="{0}." />
+                                        </numbering>
+                                      </style>
                                       <p>
                                         <t> &lt;inheritdoc /&gt;
 </t>
@@ -3069,15 +3064,13 @@ Comma separator
                                   <styles />
                                   <content>
                                     <paragraph>
-                                      <style />
+                                      <style numbering-type="None">
+                                        <numbering name="" multi-level="false">
+                                          <numbering-level type="None" level="0" format="{0}." />
+                                        </numbering>
+                                      </style>
                                       <p>
-                                        <t> &lt;summary&gt;
- Parses the messages or any message being appended. False should be returned if it's a message being appended doesn't appear to match what has already been loded.
- &lt;/summary&gt;
- &lt;param name="talkerType"&gt;&lt;/param&gt;
- &lt;param name="message"&gt;&lt;/param&gt;
- &lt;returns&gt;True if the message could succesfully be appended.&lt;/returns&gt;
- &lt;inheritdoc /&gt;
+                                        <t> &lt;summary&gt; Parses the messages or any message being appended. False should be returned if it's a message being appended doesn't appear to match what has already been loded. &lt;/summary&gt; &lt;param name="talkerType"&gt;&lt;/param&gt; &lt;param name="message"&gt;&lt;/param&gt; &lt;returns&gt;True if the message could succesfully be appended.&lt;/returns&gt; &lt;inheritdoc /&gt;
 </t>
                                       </p>
                                     </paragraph>
@@ -3164,11 +3157,13 @@ Comma separator
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
-                                    <t> &lt;summary&gt;
- Gets the index in the &lt;see cref="NmeaMessage.MessageParts"/&gt; where the message number is listed.
- &lt;/summary&gt;
+                                    <t> &lt;summary&gt; Gets the index in the &lt;see cref="NmeaMessage.MessageParts"/&gt; where the message number is listed. &lt;/summary&gt;
 </t>
                                   </p>
                                 </paragraph>
@@ -3219,7 +3214,11 @@ Comma separator
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
                                     <t>We can only append to message who has message number 1
 </t>
@@ -3251,7 +3250,11 @@ Comma separator
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
                                     <t> Messages do not match
 </t>
@@ -3335,48 +3338,13 @@ Comma separator
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
-                                    <t> &lt;summary&gt;
- Talker Identifier
- &lt;/summary&gt;
- &lt;summary&gt;
- Multiple talker IDs sometimes seen in &lt;see cref="IMultiSentenceMessage"/&gt;
- &lt;/summary&gt;
- &lt;summary&gt;
- Unrecognized Talker ID
- &lt;/summary&gt;
- &lt;summary&gt;Independent AIS Base Station&lt;/summary&gt;
- = AB
- &lt;summary&gt;Dependent AIS Base Station&lt;/summary&gt;
- = AD 
- &lt;summary&gt;Heading Track Controller (Autopilot) - General&lt;/summary&gt;
- = AG
- &lt;summary&gt;Heading Track Controller (Autopilot) - Magnetic&lt;/summary&gt;
- = AP
- &lt;summary&gt;Mobile Class A or B AIS Station&lt;/summary&gt;
- = AI
- &lt;summary&gt;AIS Aids to Navigation Station &lt;/summary&gt;
- = AN
- &lt;summary&gt;AIS Receiving Station&lt;/summary&gt;
- = AR
- &lt;summary&gt;AIS Station (ITU_R M1371,  (“Limited Base Station’)&lt;/summary&gt;
- = AS
- &lt;summary&gt;AIS Transmitting Station&lt;/summary&gt;
- = AT
- &lt;summary&gt;AIS Simplex Repeater Station&lt;/summary&gt;
- = AX
- &lt;summary&gt;BeiDou Navigation Satellite System&lt;/summary&gt;
- == GB
- &lt;summary&gt;Bilge Systems&lt;/summary&gt;
- = BI
- &lt;summary&gt;&lt;/summary&gt;
- = CD
- &lt;summary&gt;&lt;/summary&gt;
- = CR
- &lt;summary&gt;&lt;/summary&gt;
- = CS
- &lt;summary&gt;&lt;/summary&gt;
+                                    <t> &lt;summary&gt; Talker Identifier &lt;/summary&gt; &lt;summary&gt; Multiple talker IDs sometimes seen in &lt;see cref="IMultiSentenceMessage"/&gt; &lt;/summary&gt; &lt;summary&gt; Unrecognized Talker ID &lt;/summary&gt; &lt;summary&gt;Independent AIS Base Station&lt;/summary&gt; = AB &lt;summary&gt;Dependent AIS Base Station&lt;/summary&gt; = AD  &lt;summary&gt;Heading Track Controller (Autopilot) - General&lt;/summary&gt; = AG &lt;summary&gt;Heading Track Controller (Autopilot) - Magnetic&lt;/summary&gt; = AP &lt;summary&gt;Mobile Class A or B AIS Station&lt;/summary&gt; = AI &lt;summary&gt;AIS Aids to Navigation Station &lt;/summary&gt; = AN &lt;summary&gt;AIS Receiving Station&lt;/summary&gt; = AR &lt;summary&gt;AIS Station (ITU_R M1371,  (“Limited Base Station’)&lt;/summary&gt; = AS &lt;summary&gt;AIS Transmitting Station&lt;/summary&gt; = AT &lt;summary&gt;AIS Simplex Repeater Station&lt;/summary&gt; = AX &lt;summary&gt;BeiDou Navigation Satellite System&lt;/summary&gt; == GB &lt;summary&gt;Bilge Systems&lt;/summary&gt; = BI &lt;summary&gt;&lt;/summary&gt; = CD &lt;summary&gt;&lt;/summary&gt; = CR &lt;summary&gt;&lt;/summary&gt; = CS &lt;summary&gt;&lt;/summary&gt;
 </t>
                                   </p>
                                 </paragraph>
@@ -3473,17 +3441,17 @@ Comma separator
                             <enumeration-item id="a44d0d21c708245ea8ab6e125af189667897" cid="ENI082" name="RadioUpdate" creation-date="02/07/2022 01:16:41" />
                           </enumeration-items>
                         </item>
-                        <item id="0e173df6551e490699322f8946938936" cid="GNR001" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="12c3d57c8ecb415f8623bab5d8437e0d" to="34bb3b1932a44024bc1471fe00b4700b">
+                        <item id="0e173df6551e490699322f8946938936" cid="GNR001" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="12c3d57c8ecb415f8623bab5d8437e0d" to="34bb3b1932a44024bc1471fe00b4700b" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv978f8752747f4512ae410c4acceec59e" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="bc061c7bb42944f3a17c54a1bbcd9548" cid="GNR002" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="c1dcf760b9254edd803d05602199db0b" to="34bb3b1932a44024bc1471fe00b4700b">
+                        <item id="bc061c7bb42944f3a17c54a1bbcd9548" cid="GNR002" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="c1dcf760b9254edd803d05602199db0b" to="34bb3b1932a44024bc1471fe00b4700b" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv21c4fefadcaf4eb296b9f2154a00c42c" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="c27983e97ef94df8909f0eb1a4056a5b" cid="REA001" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="c1dcf760b9254edd803d05602199db0b" to="715c8135fbea4512aa0a7a1dd4591069">
+                        <item id="c27983e97ef94df8909f0eb1a4056a5b" cid="REA001" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="c1dcf760b9254edd803d05602199db0b" to="715c8135fbea4512aa0a7a1dd4591069" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv8943d97c32ba4fe5a1a375bd0747a46b" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
@@ -3493,8 +3461,8 @@ Comma separator
                             <tagged-value id="tv7d3e0148bfba465aa73e3c3475503610" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                           <relation from="34bb3b1932a44024bc1471fe00b4700b" to="34bb3b1932a44024bc1471fe00b4700b" derived="false">
-                            <start-role id="umlar-6f60b4e0-8387-411f-becd-5ff062e71c65" name="" navigability="" association-type="aggregation" visibility="private" />
-                            <end-role id="umlar-75d73fae-d26c-487a-9022-abf63ed6c339" name="" navigability="" association-type="association" visibility="private" />
+                            <start-role id="umlar-e09d4f21-2b82-4667-b273-1db615af6eef" name="" navigability="" association-type="aggregation" visibility="private" />
+                            <end-role id="umlar-279723eb-2afd-4923-8de5-7d4e8175bae3" name="" navigability="" association-type="association" visibility="private" />
                           </relation>
                         </item>
                       </abstract-items>
@@ -3644,10 +3612,13 @@ Comma separator
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
-                                    <t> &lt;/summary&gt;
- &lt;remarks&gt;Range: 0.0 to 999.9 meters&lt;/remarks&gt;
+                                    <t> &lt;/summary&gt; &lt;remarks&gt;Range: 0.0 to 999.9 meters&lt;/remarks&gt;
 </t>
                                   </p>
                                 </paragraph>
@@ -3691,18 +3662,13 @@ Comma separator
                                   <styles />
                                   <content>
                                     <paragraph>
-                                      <style />
+                                      <style numbering-type="None">
+                                        <numbering name="" multi-level="false">
+                                          <numbering-level type="None" level="0" format="{0}." />
+                                        </numbering>
+                                      </style>
                                       <p>
-                                        <t> &lt;summary&gt;
- Vertical Error unit ('M' for Meters)
- &lt;/summary&gt;
- &lt;summary&gt;
- Overall spherical equivalent position error (EPE)
- &lt;/summary&gt;
- &lt;remarks&gt;Range: 0.0 to 999.9 meters&lt;/remarks&gt;
- &lt;summary&gt;
- Spherical Error unit ('M' for Meters)
- &lt;/summary&gt;
+                                        <t> &lt;summary&gt; Vertical Error unit ('M' for Meters) &lt;/summary&gt; &lt;summary&gt; Overall spherical equivalent position error (EPE) &lt;/summary&gt; &lt;remarks&gt;Range: 0.0 to 999.9 meters&lt;/remarks&gt; &lt;summary&gt; Spherical Error unit ('M' for Meters) &lt;/summary&gt;
 </t>
                                       </p>
                                     </paragraph>
@@ -3952,18 +3918,13 @@ Comma separator
                                   <styles />
                                   <content>
                                     <paragraph>
-                                      <style />
+                                      <style numbering-type="None">
+                                        <numbering name="" multi-level="false">
+                                          <numbering-level type="None" level="0" format="{0}." />
+                                        </numbering>
+                                      </style>
                                       <p>
-                                        <t> &lt;summary&gt;
- Gets the tree diameter.
- &lt;/summary&gt;
- &lt;summary&gt;
- Gets the measured tree diameter.
- &lt;/summary&gt;
- &lt;summary&gt;
- Gets the units of the &lt;see cref="MeasuredTreeDiameter"/&gt; value.
- &lt;/summary&gt;
-more to do...
+                                        <t> &lt;summary&gt; Gets the tree diameter. &lt;/summary&gt; &lt;summary&gt; Gets the measured tree diameter. &lt;/summary&gt; &lt;summary&gt; Gets the units of the &lt;see cref="MeasuredTreeDiameter"/&gt; value. &lt;/summary&gt;more to do...
 </t>
                                       </p>
                                     </paragraph>
@@ -4056,10 +4017,13 @@ more to do...
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
-                                    <t> Name of origin waypoint ID
- &lt;/summary&gt;
+                                    <t> Name of origin waypoint ID &lt;/summary&gt;
 </t>
                                   </p>
                                 </paragraph>
@@ -4099,11 +4063,13 @@ more to do...
                                   <styles />
                                   <content>
                                     <paragraph>
-                                      <style />
+                                      <style numbering-type="None">
+                                        <numbering name="" multi-level="false">
+                                          <numbering-level type="None" level="0" format="{0}." />
+                                        </numbering>
+                                      </style>
                                       <p>
-                                        <t> &lt;summary&gt;
- Name of destination waypoint ID
- &lt;/summary&gt;
+                                        <t> &lt;summary&gt; Name of destination waypoint ID &lt;/summary&gt;
 </t>
                                       </p>
                                     </paragraph>
@@ -4174,12 +4140,13 @@ more to do...
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
-                                    <t>     &lt;th&gt;Datum&lt;/th&gt;
-   &lt;/tr&gt;
-   &lt;tr&gt;&lt;td&gt;&lt;c&gt;W84&lt;/c&gt;&lt;/td&gt;&lt;td&gt;WGS 84&lt;/td&gt;&lt;/tr&gt;
-   &lt;tr&gt;&lt;td&gt;&lt;c&gt;W72&lt;/c&gt;&lt;/td&gt;&lt;td&gt;WGS 72&lt;/td&gt;&lt;/tr&gt;
+                                    <t>     &lt;th&gt;Datum&lt;/th&gt;   &lt;/tr&gt;   &lt;tr&gt;&lt;td&gt;&lt;c&gt;W84&lt;/c&gt;&lt;/td&gt;&lt;td&gt;WGS 84&lt;/td&gt;&lt;/tr&gt;   &lt;tr&gt;&lt;td&gt;&lt;c&gt;W72&lt;/c&gt;&lt;/td&gt;&lt;td&gt;WGS 72&lt;/td&gt;&lt;/tr&gt;
 </t>
                                   </p>
                                 </paragraph>
@@ -4223,13 +4190,13 @@ more to do...
                                   <styles />
                                   <content>
                                     <paragraph>
-                                      <style />
+                                      <style numbering-type="None">
+                                        <numbering name="" multi-level="false">
+                                          <numbering-level type="None" level="0" format="{0}." />
+                                        </numbering>
+                                      </style>
                                       <p>
-                                        <t>   &lt;tr&gt;&lt;td&gt;&lt;c&gt;S85&lt;/c&gt;&lt;/td&gt;&lt;td&gt;SGS 85&lt;/td&gt;&lt;/tr&gt;
-   &lt;tr&gt;&lt;td&gt;&lt;c&gt;P90&lt;/c&gt;&lt;/td&gt;&lt;td&gt;PE 90&lt;/td&gt;&lt;/tr&gt;
- &lt;/table&gt;
- &lt;/para&gt;
- &lt;/remarks&gt;
+                                        <t>   &lt;tr&gt;&lt;td&gt;&lt;c&gt;S85&lt;/c&gt;&lt;/td&gt;&lt;td&gt;SGS 85&lt;/td&gt;&lt;/tr&gt;   &lt;tr&gt;&lt;td&gt;&lt;c&gt;P90&lt;/c&gt;&lt;/td&gt;&lt;td&gt;PE 90&lt;/td&gt;&lt;/tr&gt; &lt;/table&gt; &lt;/para&gt; &lt;/remarks&gt;
 </t>
                                       </p>
                                     </paragraph>
@@ -4504,50 +4471,13 @@ more to do...
                                   <styles />
                                   <content>
                                     <paragraph>
-                                      <style />
+                                      <style numbering-type="None">
+                                        <numbering name="" multi-level="false">
+                                          <numbering-level type="None" level="0" format="{0}." />
+                                        </numbering>
+                                      </style>
                                       <p>
-                                        <t> &lt;summary&gt;
- Time of day fix was taken
- &lt;/summary&gt;
- &lt;summary&gt;
- Latitude
- &lt;/summary&gt;
-public Gga.LatitudeLongitude LatitudeTrue { get; set; }
- &lt;summary&gt;
- Longitude
- &lt;/summary&gt;
-public Gga.LatitudeLongitude LongitudeTrue { get; set; }
- &lt;summary&gt;
- Fix Quality
- &lt;/summary&gt;
- &lt;summary&gt;
- Number of satellites being tracked
- &lt;/summary&gt;
- &lt;summary&gt;
- Horizontal Dilution of Precision
- &lt;/summary&gt;
- &lt;summary&gt;
- Altitude
- &lt;/summary&gt;
- &lt;summary&gt;
- Altitude units ('M' for Meters)
- &lt;/summary&gt;
- &lt;summary&gt;
- Geoidal separation: the difference between the WGS-84 earth ellipsoid surface and mean-sea-level (geoid) surface.
- &lt;/summary&gt;
- &lt;remarks&gt;
- A negative value means mean-sea-level surface is below the WGS-84 ellipsoid surface.
- &lt;/remarks&gt;
- &lt;seealso cref="GeoidalSeparationUnits"/&gt;
- &lt;summary&gt;
- Altitude units ('M' for Meters)
- &lt;/summary&gt;
- &lt;summary&gt;
- Time since last DGPS update (ie age of the differential GPS data)
- &lt;/summary&gt;
- &lt;summary&gt;
- Differential Reference Station ID
- &lt;/summary&gt;
+                                        <t> &lt;summary&gt; Time of day fix was taken &lt;/summary&gt; &lt;summary&gt; Latitude &lt;/summary&gt;public Gga.LatitudeLongitude LatitudeTrue { get; set; } &lt;summary&gt; Longitude &lt;/summary&gt;public Gga.LatitudeLongitude LongitudeTrue { get; set; } &lt;summary&gt; Fix Quality &lt;/summary&gt; &lt;summary&gt; Number of satellites being tracked &lt;/summary&gt; &lt;summary&gt; Horizontal Dilution of Precision &lt;/summary&gt; &lt;summary&gt; Altitude &lt;/summary&gt; &lt;summary&gt; Altitude units ('M' for Meters) &lt;/summary&gt; &lt;summary&gt; Geoidal separation: the difference between the WGS-84 earth ellipsoid surface and mean-sea-level (geoid) surface. &lt;/summary&gt; &lt;remarks&gt; A negative value means mean-sea-level surface is below the WGS-84 ellipsoid surface. &lt;/remarks&gt; &lt;seealso cref="GeoidalSeparationUnits"/&gt; &lt;summary&gt; Altitude units ('M' for Meters) &lt;/summary&gt; &lt;summary&gt; Time since last DGPS update (ie age of the differential GPS data) &lt;/summary&gt; &lt;summary&gt; Differential Reference Station ID &lt;/summary&gt;
 </t>
                                       </p>
                                     </paragraph>
@@ -4573,12 +4503,13 @@ public Gga.LatitudeLongitude LongitudeTrue { get; set; }
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
-                                    <t> &lt;summary&gt;
- Fix quality indicater
- &lt;/summary&gt;
- &lt;summary&gt;Fix not available or invalid&lt;/summary&gt;
+                                    <t> &lt;summary&gt; Fix quality indicater &lt;/summary&gt; &lt;summary&gt;Fix not available or invalid&lt;/summary&gt;
 </t>
                                   </p>
                                 </paragraph>
@@ -4608,10 +4539,13 @@ public Gga.LatitudeLongitude LongitudeTrue { get; set; }
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
-                                    <t> &lt;summary&gt;GPS SPS Mode, fix valid&lt;/summary&gt;
- &lt;summary&gt;Differential GPS, SPS Mode, or Satellite Based Augmentation System (SBAS), fix valid&lt;/summary&gt;
+                                    <t> &lt;summary&gt;GPS SPS Mode, fix valid&lt;/summary&gt; &lt;summary&gt;Differential GPS, SPS Mode, or Satellite Based Augmentation System (SBAS), fix valid&lt;/summary&gt;
 </t>
                                   </p>
                                 </paragraph>
@@ -4663,7 +4597,11 @@ public Gga.LatitudeLongitude LongitudeTrue { get; set; }
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
                                     <t> &lt;summary&gt;GPS PPS (Precise Positioning Service) mode, fix valid&lt;/summary&gt;
 </t>
@@ -4706,7 +4644,11 @@ public Gga.LatitudeLongitude LongitudeTrue { get; set; }
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
                                     <t> &lt;summary&gt;Real Time Kinematic (Fixed). System used in RTK mode with fixed integers&lt;/summary&gt;
 </t>
@@ -4738,7 +4680,11 @@ public Gga.LatitudeLongitude LongitudeTrue { get; set; }
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
                                     <t> &lt;summary&gt;Real Time Kinematic (Floating). Satellite system used in RTK mode, floating integers&lt;/summary&gt;
 </t>
@@ -4931,48 +4877,13 @@ public Gga.LatitudeLongitude LongitudeTrue { get; set; }
                                   <styles />
                                   <content>
                                     <paragraph>
-                                      <style />
+                                      <style numbering-type="None">
+                                        <numbering name="" multi-level="false">
+                                          <numbering-level type="None" level="0" format="{0}." />
+                                        </numbering>
+                                      </style>
                                       <p>
-                                        <t> &lt;summary&gt;
- Latitude
- &lt;/summary&gt;
- &lt;summary&gt;
- Longitude
- &lt;/summary&gt;
- &lt;summary&gt;
- Time since last DGPS update
- &lt;/summary&gt;
- &lt;summary&gt;
- Gets a value indicating whether data is active.
- &lt;/summary&gt;
- &lt;value&gt;
-   &lt;c&gt;true&lt;/c&gt; if data is active; otherwise, &lt;c&gt;false&lt;/c&gt;.
- &lt;/value&gt;
- &lt;summary&gt;
- Positioning system Mode Indicator
- &lt;/summary&gt;
- &lt;summary&gt;
- Positioning system Mode Indicator
- &lt;/summary&gt;
- &lt;seealso cref="Gll.ModeIndicator"/&gt;
- &lt;summary&gt;
- Autonomous mode
- &lt;/summary&gt;
- &lt;summary&gt;
-  Differential mode
- &lt;/summary&gt;
- &lt;summary&gt;
-  Estimated (dead reckoning) mode
- &lt;/summary&gt;
- &lt;summary&gt;
- Manual input mode
- &lt;/summary&gt;
- &lt;summary&gt;
- Simulator mode
- &lt;/summary&gt;
- &lt;summary&gt;
- Data not valid
- &lt;/summary&gt;
+                                        <t> &lt;summary&gt; Latitude &lt;/summary&gt; &lt;summary&gt; Longitude &lt;/summary&gt; &lt;summary&gt; Time since last DGPS update &lt;/summary&gt; &lt;summary&gt; Gets a value indicating whether data is active. &lt;/summary&gt; &lt;value&gt;   &lt;c&gt;true&lt;/c&gt; if data is active; otherwise, &lt;c&gt;false&lt;/c&gt;. &lt;/value&gt; &lt;summary&gt; Positioning system Mode Indicator &lt;/summary&gt; &lt;summary&gt; Positioning system Mode Indicator &lt;/summary&gt; &lt;seealso cref="Gll.ModeIndicator"/&gt; &lt;summary&gt; Autonomous mode &lt;/summary&gt; &lt;summary&gt;  Differential mode &lt;/summary&gt; &lt;summary&gt;  Estimated (dead reckoning) mode &lt;/summary&gt; &lt;summary&gt; Manual input mode &lt;/summary&gt; &lt;summary&gt; Simulator mode &lt;/summary&gt; &lt;summary&gt; Data not valid &lt;/summary&gt;
 </t>
                                       </p>
                                     </paragraph>
@@ -5585,41 +5496,13 @@ public Gga.LatitudeLongitude LongitudeTrue { get; set; }
                                   <styles />
                                   <content>
                                     <paragraph>
-                                      <style />
+                                      <style numbering-type="None">
+                                        <numbering name="" multi-level="false">
+                                          <numbering-level type="None" level="0" format="{0}." />
+                                        </numbering>
+                                      </style>
                                       <p>
-                                        <t> &lt;summary&gt;
- Mode
- &lt;/summary&gt;
- &lt;summary&gt;
- Mode
- &lt;/summary&gt;
- &lt;summary&gt;
- ID numbers of satellite vehicles used in the solution.
- &lt;/summary&gt;
- &lt;remarks&gt;
- - GPS satellites are identified by their PRN numbers, which range from 1 to 32.
- - The numbers 33-64 are reserved for SBAS satellites. The SBAS system PRN numbers are 120-138. The offset from NMEA SBAS SB ID to SBAS PRN number is 87.
- A SBAS PRN number of 120 minus 87 yields the SV ID of 33. The addition of87 to the SVID yields the SBAS PRN number.
- - The numbers 65-96 are reserved for GLONASS satellites. GLONASS satellites are identified by 64+satellite slot number.
- &lt;/remarks&gt;
- &lt;summary&gt;
- Dilution of precision
- &lt;/summary&gt;
- &lt;summary&gt;
- Horizontal dilution of precision
- &lt;/summary&gt;
- &lt;summary&gt;
- Vertical dilution of precision
- &lt;/summary&gt;
- &lt;summary&gt;
- Mode selection
- &lt;/summary&gt;
- &lt;summary&gt;
- Automatic, allowed to automatically switch 2D/3D
- &lt;/summary&gt;
- &lt;summary&gt;
- Manual mode
- &lt;/summary&gt;
+                                        <t> &lt;summary&gt; Mode &lt;/summary&gt; &lt;summary&gt; Mode &lt;/summary&gt; &lt;summary&gt; ID numbers of satellite vehicles used in the solution. &lt;/summary&gt; &lt;remarks&gt; - GPS satellites are identified by their PRN numbers, which range from 1 to 32. - The numbers 33-64 are reserved for SBAS satellites. The SBAS system PRN numbers are 120-138. The offset from NMEA SBAS SB ID to SBAS PRN number is 87. A SBAS PRN number of 120 minus 87 yields the SV ID of 33. The addition of87 to the SVID yields the SBAS PRN number. - The numbers 65-96 are reserved for GLONASS satellites. GLONASS satellites are identified by 64+satellite slot number. &lt;/remarks&gt; &lt;summary&gt; Dilution of precision &lt;/summary&gt; &lt;summary&gt; Horizontal dilution of precision &lt;/summary&gt; &lt;summary&gt; Vertical dilution of precision &lt;/summary&gt; &lt;summary&gt; Mode selection &lt;/summary&gt; &lt;summary&gt; Automatic, allowed to automatically switch 2D/3D &lt;/summary&gt; &lt;summary&gt; Manual mode &lt;/summary&gt;
 </t>
                                       </p>
                                     </paragraph>
@@ -5645,11 +5528,13 @@ public Gga.LatitudeLongitude LongitudeTrue { get; set; }
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
-                                    <t> &lt;summary&gt;
- Fix Mode
- &lt;/summary&gt;
+                                    <t> &lt;summary&gt; Fix Mode &lt;/summary&gt;
 </t>
                                   </p>
                                 </paragraph>
@@ -5690,17 +5575,13 @@ public Gga.LatitudeLongitude LongitudeTrue { get; set; }
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
-                                    <t> &lt;summary&gt;
- Not available
- &lt;/summary&gt;
- &lt;summary&gt;
- 2D Fix
- &lt;/summary&gt;
- &lt;summary&gt;
- 3D Fix
- &lt;/summary&gt;
+                                    <t> &lt;summary&gt; Not available &lt;/summary&gt; &lt;summary&gt; 2D Fix &lt;/summary&gt; &lt;summary&gt; 3D Fix &lt;/summary&gt;
 </t>
                                   </p>
                                 </paragraph>
@@ -5810,10 +5691,13 @@ public Gga.LatitudeLongitude LongitudeTrue { get; set; }
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
-                                    <t> UTC of position fix
- &lt;/summary&gt;
+                                    <t> UTC of position fix &lt;/summary&gt;
 </t>
                                   </p>
                                 </paragraph>
@@ -5863,29 +5747,13 @@ public Gga.LatitudeLongitude LongitudeTrue { get; set; }
                                   <styles />
                                   <content>
                                     <paragraph>
-                                      <style />
+                                      <style numbering-type="None">
+                                        <numbering name="" multi-level="false">
+                                          <numbering-level type="None" level="0" format="{0}." />
+                                        </numbering>
+                                      </style>
                                       <p>
-                                        <t> &lt;summary&gt;
- RMS value of the standard deviation of the range inputs in the navigation process. Range inputs include pseudoranges and DGNSS corrections.
- &lt;/summary&gt;
- &lt;summary&gt;
- Standard deviation of semi-major axis of error ellipse in meters.
- &lt;/summary&gt;
- &lt;summary&gt;
- Standard deviation of semi-minor axis of error ellipse in meters.
- &lt;/summary&gt;
- &lt;summary&gt;
- Orientation of semi-major axis of error ellipse (degrees from true north).
- &lt;/summary&gt;
- &lt;summary&gt;
- Standard deviation of latitude error in meters.
- &lt;/summary&gt;
- &lt;summary&gt;
- Standard deviation of longitude error in meters.
- &lt;/summary&gt;
- &lt;summary&gt;
- Standard deviation of altitude error in meters.
- &lt;/summary&gt;
+                                        <t> &lt;summary&gt; RMS value of the standard deviation of the range inputs in the navigation process. Range inputs include pseudoranges and DGNSS corrections. &lt;/summary&gt; &lt;summary&gt; Standard deviation of semi-major axis of error ellipse in meters. &lt;/summary&gt; &lt;summary&gt; Standard deviation of semi-minor axis of error ellipse in meters. &lt;/summary&gt; &lt;summary&gt; Orientation of semi-major axis of error ellipse (degrees from true north). &lt;/summary&gt; &lt;summary&gt; Standard deviation of latitude error in meters. &lt;/summary&gt; &lt;summary&gt; Standard deviation of longitude error in meters. &lt;/summary&gt; &lt;summary&gt; Standard deviation of altitude error in meters. &lt;/summary&gt;
 </t>
                                       </p>
                                     </paragraph>
@@ -6032,15 +5900,13 @@ public Gga.LatitudeLongitude LongitudeTrue { get; set; }
                                   <styles />
                                   <content>
                                     <paragraph>
-                                      <style />
+                                      <style numbering-type="None">
+                                        <numbering name="" multi-level="false">
+                                          <numbering-level type="None" level="0" format="{0}." />
+                                        </numbering>
+                                      </style>
                                       <p>
-                                        <t> &lt;summary&gt;
- Total number of satellite vehicles (SV) in view
- &lt;/summary&gt;
- &lt;seealso cref="SVs"/&gt;
- &lt;summary&gt;
- Satellite vehicles in this message part.
- &lt;/summary&gt;
+                                        <t> &lt;summary&gt; Total number of satellite vehicles (SV) in view &lt;/summary&gt; &lt;seealso cref="SVs"/&gt; &lt;summary&gt; Satellite vehicles in this message part. &lt;/summary&gt;
 </t>
                                       </p>
                                     </paragraph>
@@ -6065,76 +5931,13 @@ public Gga.LatitudeLongitude LongitudeTrue { get; set; }
                                   <styles />
                                   <content>
                                     <paragraph>
-                                      <style />
+                                      <style numbering-type="None">
+                                        <numbering name="" multi-level="false">
+                                          <numbering-level type="None" level="0" format="{0}." />
+                                        </numbering>
+                                      </style>
                                       <p>
-                                        <t>    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;L2 P(Y)&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;L2C-M&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;L2C-L&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;L5-I&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;L5-Q&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;9-F&lt;/td&gt;&lt;td&gt;Reserved&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;GLONASS&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;All signals&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;G1 C/A&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;G1 P&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;G2 C/A&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;GLONASS (M) G2 P&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;5-F&lt;/td&gt;&lt;td&gt;Reserved&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;GALILEO&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;All signals&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;E5a&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;E5b&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;E5 a+b&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;E6-A&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;E6-BC&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;L1-A&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;L1-BC&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;8-F&lt;/td&gt;&lt;td&gt;Reserved&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;BeiDou System&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;All signals&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;B1I&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;B1Q&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;B1C&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;B1A&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;B2-a&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;B2-b&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;B2 a+b&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;B3I&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;B3Q&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;A&lt;/td&gt;&lt;td&gt;B3A&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;B&lt;/td&gt;&lt;td&gt;B2I&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;C&lt;/td&gt;&lt;td&gt;B2Q&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;D-F&lt;/td&gt;&lt;td&gt;Reserved&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;QZSS&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;All signals&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;L1 C/A&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;L1C (D)&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;L1C (P)&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;LIS&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;L2C-M&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;L2C-L&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;L5-I&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;L5-Q&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;L6D&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;A&lt;/td&gt;&lt;td&gt;L6E&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;B-F&lt;/td&gt;&lt;td&gt;Reserved&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;NavIC (IRNSS)&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;All signals&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;L5-SPS&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;S-SPS&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;L5-RS&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;S-RS&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;L1-SPS&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;6-F&lt;/td&gt;&lt;td&gt;Reserved&lt;/td&gt;&lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
- &lt;/remarks&gt;
- &lt;summary&gt;
- Returns an enumerator that iterates through the collection.
- &lt;/summary&gt;
- &lt;returns&gt; A System.Collections.Generic.IEnumerator{SatelliteVehicle} that can be used to iterate through the collection.&lt;/returns&gt;
- &lt;summary&gt;
- Returns an enumerator that iterates through a collection.
- &lt;/summary&gt;
- &lt;returns&gt; An System.Collections.IEnumerator object that can be used to iterate through the collection.&lt;/returns&gt;
- &lt;summary&gt;
- Satellite vehicle
- &lt;/summary&gt;
+                                        <t>    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;L2 P(Y)&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;L2C-M&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;L2C-L&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;L5-I&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;L5-Q&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;9-F&lt;/td&gt;&lt;td&gt;Reserved&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;GLONASS&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;All signals&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;G1 C/A&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;G1 P&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;G2 C/A&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;GLONASS (M) G2 P&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;5-F&lt;/td&gt;&lt;td&gt;Reserved&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;GALILEO&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;All signals&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;E5a&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;E5b&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;E5 a+b&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;E6-A&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;E6-BC&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;L1-A&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;L1-BC&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;8-F&lt;/td&gt;&lt;td&gt;Reserved&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;BeiDou System&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;All signals&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;B1I&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;B1Q&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;B1C&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;B1A&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;B2-a&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;B2-b&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;B2 a+b&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;B3I&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;B3Q&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;A&lt;/td&gt;&lt;td&gt;B3A&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;B&lt;/td&gt;&lt;td&gt;B2I&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;C&lt;/td&gt;&lt;td&gt;B2Q&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;D-F&lt;/td&gt;&lt;td&gt;Reserved&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;QZSS&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;All signals&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;L1 C/A&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;L1C (D)&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;L1C (P)&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;LIS&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;L2C-M&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;L2C-L&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;L5-I&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;L5-Q&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;L6D&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;A&lt;/td&gt;&lt;td&gt;L6E&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;B-F&lt;/td&gt;&lt;td&gt;Reserved&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;NavIC (IRNSS)&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;All signals&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;L5-SPS&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;S-SPS&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;L5-RS&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;S-RS&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;L1-SPS&lt;/td&gt;&lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;6-F&lt;/td&gt;&lt;td&gt;Reserved&lt;/td&gt;&lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt; &lt;/remarks&gt; &lt;summary&gt; Returns an enumerator that iterates through the collection. &lt;/summary&gt; &lt;returns&gt; A System.Collections.Generic.IEnumerator{SatelliteVehicle} that can be used to iterate through the collection.&lt;/returns&gt; &lt;summary&gt; Returns an enumerator that iterates through a collection. &lt;/summary&gt; &lt;returns&gt; An System.Collections.IEnumerator object that can be used to iterate through the collection.&lt;/returns&gt; &lt;summary&gt; Satellite vehicle &lt;/summary&gt;
 </t>
                                       </p>
                                     </paragraph>
@@ -6229,52 +6032,13 @@ public Gga.LatitudeLongitude LongitudeTrue { get; set; }
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
-                                    <t> &lt;summary&gt;
- Gets the talker ID for this vehicle
- &lt;/summary&gt;
- &lt;summary&gt;
- Gets the GNSS Signal ID.
- &lt;/summary&gt;
- &lt;seealso cref="Gsv.GnssSignalId"/&gt;
- &lt;summary&gt;
- Satellite ID number
- &lt;/summary&gt;
- &lt;summary&gt;
- Elevation in degrees, 90 maximum
- &lt;/summary&gt;
- &lt;summary&gt;
- Azimuth, degrees from true north, 000 to 359
- &lt;/summary&gt;
- &lt;summary&gt;
- Signal-to-Noise ratio, 0-99 dB (-1 when not tracking) 
- &lt;/summary&gt;
- &lt;summary&gt;
- Satellite system
- &lt;/summary&gt;
- &lt;summary&gt;
- Returns a string that represents the satellite vehicle.
- &lt;/summary&gt;
- &lt;returns&gt;A string that represents the satellite vehicle.&lt;/returns&gt;
- &lt;summary&gt;
- Satellite system
- &lt;/summary&gt;
- &lt;summary&gt;
- Unknown
- &lt;/summary&gt;
- &lt;summary&gt;
- GPS - Global Positioning System (NAVSTAR)
- &lt;/summary&gt;
- &lt;summary&gt;
- WAAS - Wide Area Augmentation System
- &lt;/summary&gt;
- &lt;summary&gt;
- GLONASS - Globalnaya navigatsionnaya sputnikovaya sistema
- &lt;/summary&gt;
- &lt;summary&gt;
- Galileo
- &lt;/summary&gt;
+                                    <t> &lt;summary&gt; Gets the talker ID for this vehicle &lt;/summary&gt; &lt;summary&gt; Gets the GNSS Signal ID. &lt;/summary&gt; &lt;seealso cref="Gsv.GnssSignalId"/&gt; &lt;summary&gt; Satellite ID number &lt;/summary&gt; &lt;summary&gt; Elevation in degrees, 90 maximum &lt;/summary&gt; &lt;summary&gt; Azimuth, degrees from true north, 000 to 359 &lt;/summary&gt; &lt;summary&gt; Signal-to-Noise ratio, 0-99 dB (-1 when not tracking)  &lt;/summary&gt; &lt;summary&gt; Satellite system &lt;/summary&gt; &lt;summary&gt; Returns a string that represents the satellite vehicle. &lt;/summary&gt; &lt;returns&gt;A string that represents the satellite vehicle.&lt;/returns&gt; &lt;summary&gt; Satellite system &lt;/summary&gt; &lt;summary&gt; Unknown &lt;/summary&gt; &lt;summary&gt; GPS - Global Positioning System (NAVSTAR) &lt;/summary&gt; &lt;summary&gt; WAAS - Wide Area Augmentation System &lt;/summary&gt; &lt;summary&gt; GLONASS - Globalnaya navigatsionnaya sputnikovaya sistema &lt;/summary&gt; &lt;summary&gt; Galileo &lt;/summary&gt;
 </t>
                                   </p>
                                 </paragraph>
@@ -6512,35 +6276,13 @@ public Gga.LatitudeLongitude LongitudeTrue { get; set; }
                                   <styles />
                                   <content>
                                     <paragraph>
-                                      <style />
+                                      <style numbering-type="None">
+                                        <numbering name="" multi-level="false">
+                                          <numbering-level type="None" level="0" format="{0}." />
+                                        </numbering>
+                                      </style>
                                       <p>
-                                        <t> &lt;summary&gt;
- Positioning system status
- &lt;/summary&gt;
- &lt;summary&gt;
- Latitude
- &lt;/summary&gt;
- &lt;summary&gt;
- Longitude
- &lt;/summary&gt;
- &lt;summary&gt;
- Time difference A
- &lt;/summary&gt;
- &lt;summary&gt;
- Time difference B
- &lt;/summary&gt;
- &lt;summary&gt;
- Speed over ground in knots.
- &lt;/summary&gt;
- &lt;summary&gt;
- Course over ground in degrees from true north
- &lt;/summary&gt;
- &lt;summary&gt;
- Magnetic variation in degrees.
- &lt;/summary&gt;
- &lt;summary&gt;
- Positioning system mode indicator
- &lt;/summary&gt;
+                                        <t> &lt;summary&gt; Positioning system status &lt;/summary&gt; &lt;summary&gt; Latitude &lt;/summary&gt; &lt;summary&gt; Longitude &lt;/summary&gt; &lt;summary&gt; Time difference A &lt;/summary&gt; &lt;summary&gt; Time difference B &lt;/summary&gt; &lt;summary&gt; Speed over ground in knots. &lt;/summary&gt; &lt;summary&gt; Course over ground in degrees from true north &lt;/summary&gt; &lt;summary&gt; Magnetic variation in degrees. &lt;/summary&gt; &lt;summary&gt; Positioning system mode indicator &lt;/summary&gt;
 </t>
                                       </p>
                                     </paragraph>
@@ -6786,38 +6528,13 @@ public Gga.LatitudeLongitude LongitudeTrue { get; set; }
                                   <styles />
                                   <content>
                                     <paragraph>
-                                      <style />
+                                      <style numbering-type="None">
+                                        <numbering name="" multi-level="false">
+                                          <numbering-level type="None" level="0" format="{0}." />
+                                        </numbering>
+                                      </style>
                                       <p>
-                                        <t> &lt;summary&gt;
- Data Status
- &lt;/summary&gt;
- &lt;summary&gt;
- Cross-track error (steer left when negative, right when positive)
- &lt;/summary&gt;
- &lt;summary&gt;
- Origin waypoint ID
- &lt;/summary&gt;
- &lt;summary&gt;
- Destination waypoint ID
- &lt;/summary&gt;
- &lt;summary&gt;
- Destination Latitude
- &lt;/summary&gt;
- &lt;summary&gt;
- Destination Longitude
- &lt;/summary&gt;
- &lt;summary&gt;
- Range to destination in nautical miles
- &lt;/summary&gt;
- &lt;summary&gt;
- True bearing to destination
- &lt;/summary&gt;
- &lt;summary&gt;
- Velocity towards destination in knots
- &lt;/summary&gt;
- &lt;summary&gt;
- Arrived (&lt;c&gt;true&lt;/c&gt; if arrived)
- &lt;/summary&gt;
+                                        <t> &lt;summary&gt; Data Status &lt;/summary&gt; &lt;summary&gt; Cross-track error (steer left when negative, right when positive) &lt;/summary&gt; &lt;summary&gt; Origin waypoint ID &lt;/summary&gt; &lt;summary&gt; Destination waypoint ID &lt;/summary&gt; &lt;summary&gt; Destination Latitude &lt;/summary&gt; &lt;summary&gt; Destination Longitude &lt;/summary&gt; &lt;summary&gt; Range to destination in nautical miles &lt;/summary&gt; &lt;summary&gt; True bearing to destination &lt;/summary&gt; &lt;summary&gt; Velocity towards destination in knots &lt;/summary&gt; &lt;summary&gt; Arrived (&lt;c&gt;true&lt;/c&gt; if arrived) &lt;/summary&gt;
 </t>
                                       </p>
                                     </paragraph>
@@ -7050,29 +6767,13 @@ public Gga.LatitudeLongitude LongitudeTrue { get; set; }
                                   <styles />
                                   <content>
                                     <paragraph>
-                                      <style />
+                                      <style numbering-type="None">
+                                        <numbering name="" multi-level="false">
+                                          <numbering-level type="None" level="0" format="{0}." />
+                                        </numbering>
+                                      </style>
                                       <p>
-                                        <t> &lt;summary&gt;
- Fix Time
- &lt;/summary&gt;
- &lt;summary&gt;
- Gets a value whether the device is active
- &lt;/summary&gt;
- &lt;summary&gt;
- Latitude
- &lt;/summary&gt;
- &lt;summary&gt;
- Longitude
- &lt;/summary&gt;
- &lt;summary&gt;
- Speed over the ground in knots
- &lt;/summary&gt;
- &lt;summary&gt;
- Track angle in degrees True
- &lt;/summary&gt;
- &lt;summary&gt;
- Magnetic Variation
- &lt;/summary&gt;
+                                        <t> &lt;summary&gt; Fix Time &lt;/summary&gt; &lt;summary&gt; Gets a value whether the device is active &lt;/summary&gt; &lt;summary&gt; Latitude &lt;/summary&gt; &lt;summary&gt; Longitude &lt;/summary&gt; &lt;summary&gt; Speed over the ground in knots &lt;/summary&gt; &lt;summary&gt; Track angle in degrees True &lt;/summary&gt; &lt;summary&gt; Magnetic Variation &lt;/summary&gt;
 </t>
                                       </p>
                                     </paragraph>
@@ -7228,11 +6929,13 @@ public Gga.LatitudeLongitude LongitudeTrue { get; set; }
                               <styles />
                               <content>
                                 <paragraph>
-                                  <style />
+                                  <style numbering-type="None">
+                                    <numbering name="" multi-level="false">
+                                      <numbering-level type="None" level="0" format="{0}." />
+                                    </numbering>
+                                  </style>
                                   <p>
-                                    <t> Returns an enumerator that iterates through the collection.
- &lt;/summary&gt;
- &lt;returns&gt; A System.Collections.Generic.IEnumerator{T} that can be used to iterate through the collection.&lt;/returns&gt;
+                                    <t> Returns an enumerator that iterates through the collection. &lt;/summary&gt; &lt;returns&gt; A System.Collections.Generic.IEnumerator{T} that can be used to iterate through the collection.&lt;/returns&gt;
 </t>
                                   </p>
                                 </paragraph>
@@ -7563,14 +7266,13 @@ public Gga.LatitudeLongitude LongitudeTrue { get; set; }
                                   <styles />
                                   <content>
                                     <paragraph>
-                                      <style />
+                                      <style numbering-type="None">
+                                        <numbering name="" multi-level="false">
+                                          <numbering-level type="None" level="0" format="{0}." />
+                                        </numbering>
+                                      </style>
                                       <p>
-                                        <t> Index 4 and 5 is used to specify a local time zone.
- However I haven't come across any receiver that actually
- specify this, so we're just ignoring it.
- &lt;summary&gt;
- Gets the time of fix
- &lt;/summary&gt;
+                                        <t> Index 4 and 5 is used to specify a local time zone. However I haven't come across any receiver that actually specify this, so we're just ignoring it. &lt;summary&gt; Gets the time of fix &lt;/summary&gt;
 </t>
                                       </p>
                                     </paragraph>
@@ -7599,182 +7301,182 @@ public Gga.LatitudeLongitude LongitudeTrue { get; set; }
                           <structural-feature type="TimeSpan" type-id="TimeSpan" />
                           <property default-value="&gt; FixDateTime.TimeOfDay" />
                         </item>
-                        <item id="8555be87c5384be7a24d1a7370d66383" cid="GNR003" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="6c98699ff35743919532970a7ffde369" to="34bb3b1932a44024bc1471fe00b4700b">
+                        <item id="8555be87c5384be7a24d1a7370d66383" cid="GNR003" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="6c98699ff35743919532970a7ffde369" to="34bb3b1932a44024bc1471fe00b4700b" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv97577292a19c406b97f5e4fd639ea615" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="608e5c8c589749b6b7ec8853604c9e69" cid="GNR004" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="8ca9cd647ae543e08ff5a77ef9d9ecbd" to="34bb3b1932a44024bc1471fe00b4700b">
+                        <item id="608e5c8c589749b6b7ec8853604c9e69" cid="GNR004" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="8ca9cd647ae543e08ff5a77ef9d9ecbd" to="34bb3b1932a44024bc1471fe00b4700b" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv12af1e28ac25455baeb6a5d184279101" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="8af195683fbc4063a447daf82602bd8b" cid="GNR005" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="223909c4be5d465490510665f39a0e7a" to="12c3d57c8ecb415f8623bab5d8437e0d">
+                        <item id="8af195683fbc4063a447daf82602bd8b" cid="GNR005" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="223909c4be5d465490510665f39a0e7a" to="12c3d57c8ecb415f8623bab5d8437e0d" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv147df1edd3bf482fb4cbee33d65eb14f" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="5d9be69b79ec49aaaef0cd3b114b8ddf" cid="GNR006" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="1eeb0ca283654cc582751ef91b821ea2" to="12c3d57c8ecb415f8623bab5d8437e0d">
+                        <item id="5d9be69b79ec49aaaef0cd3b114b8ddf" cid="GNR006" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="1eeb0ca283654cc582751ef91b821ea2" to="12c3d57c8ecb415f8623bab5d8437e0d" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv7bdf7c987258491f8a957c57efec87c6" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="1f6539330b4645dfb931aea222563d9c" cid="GNR007" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="08c8eaad6c3f4893a18e9694da6d25ec" to="34bb3b1932a44024bc1471fe00b4700b">
+                        <item id="1f6539330b4645dfb931aea222563d9c" cid="GNR007" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="08c8eaad6c3f4893a18e9694da6d25ec" to="34bb3b1932a44024bc1471fe00b4700b" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv2b1ae0a959e04cc2b3d19b2d915a8dff" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="811fcd934dc0484d898b7fbeb7c7f187" cid="GNR008" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="5d1ecddf18844599b345d27f917e26d1" to="34bb3b1932a44024bc1471fe00b4700b">
+                        <item id="811fcd934dc0484d898b7fbeb7c7f187" cid="GNR008" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="5d1ecddf18844599b345d27f917e26d1" to="34bb3b1932a44024bc1471fe00b4700b" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tvb33b55248e6340189aa59b7d371d89d4" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="3da6d705d4f345d1a337eb01cabac15c" cid="GNR009" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="2475af2d65f649a6a7cf59fa69216b37" to="34bb3b1932a44024bc1471fe00b4700b">
+                        <item id="3da6d705d4f345d1a337eb01cabac15c" cid="GNR009" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="2475af2d65f649a6a7cf59fa69216b37" to="34bb3b1932a44024bc1471fe00b4700b" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv6df03e0801854d8fb93a73ea2edb6f04" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="eb959495096e4c89a6a25b61edca73b5" cid="GNR010" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="e130d540aa8f41d7861130e56c2d4f28" to="34bb3b1932a44024bc1471fe00b4700b">
+                        <item id="eb959495096e4c89a6a25b61edca73b5" cid="GNR010" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="e130d540aa8f41d7861130e56c2d4f28" to="34bb3b1932a44024bc1471fe00b4700b" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv23d98ede9ded446e93501fefa5147d10" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="29781fec6e714b05a3853d98393e284f" cid="REA002" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="e130d540aa8f41d7861130e56c2d4f28" to="1608db4880844afa8af03bfbdada0b99">
+                        <item id="29781fec6e714b05a3853d98393e284f" cid="REA002" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="e130d540aa8f41d7861130e56c2d4f28" to="1608db4880844afa8af03bfbdada0b99" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tvfa1bcf16e9124636a30c3e6f1b673c0e" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="33536c8d4cf048a29da3f2be19fdf5ad" cid="GNR011" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="8cf74d582d2945c0bd4c04afb187c104" to="34bb3b1932a44024bc1471fe00b4700b">
+                        <item id="33536c8d4cf048a29da3f2be19fdf5ad" cid="GNR011" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="8cf74d582d2945c0bd4c04afb187c104" to="34bb3b1932a44024bc1471fe00b4700b" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tvc1702fe0a12741f8b44fe149f9fd7cf2" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="c60296b05c7d451f835990e827bc8616" cid="REA003" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="8cf74d582d2945c0bd4c04afb187c104" to="1608db4880844afa8af03bfbdada0b99">
+                        <item id="c60296b05c7d451f835990e827bc8616" cid="REA003" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="8cf74d582d2945c0bd4c04afb187c104" to="1608db4880844afa8af03bfbdada0b99" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv995e92fe86b540ff892261ce48d95666" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="037d3920f3444f0b8659339e28171795" cid="REA004" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="8cf74d582d2945c0bd4c04afb187c104" to="48c12cd26a4e481eb5a9ccb86cd64f59">
+                        <item id="037d3920f3444f0b8659339e28171795" cid="REA004" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="8cf74d582d2945c0bd4c04afb187c104" to="48c12cd26a4e481eb5a9ccb86cd64f59" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv240601a2718148e3bfd262f112f05bde" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="86af2fcdf94f411f8f70f8fc6a477e9e" cid="GNR012" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="835bec9dfd674459bcc82746635d8dc5" to="34bb3b1932a44024bc1471fe00b4700b">
+                        <item id="86af2fcdf94f411f8f70f8fc6a477e9e" cid="GNR012" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="835bec9dfd674459bcc82746635d8dc5" to="34bb3b1932a44024bc1471fe00b4700b" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv98d319770d88478daa9b5ca8eaa210b2" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="f1e3976fd82a4962bfbbc67e895d037f" cid="REA005" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="835bec9dfd674459bcc82746635d8dc5" to="1608db4880844afa8af03bfbdada0b99">
+                        <item id="f1e3976fd82a4962bfbbc67e895d037f" cid="REA005" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="835bec9dfd674459bcc82746635d8dc5" to="1608db4880844afa8af03bfbdada0b99" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv5cd302fea77d42ebb27bc91af5cdf7b8" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="320b6ecd53714c28b45353de5a013011" cid="REA006" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="835bec9dfd674459bcc82746635d8dc5" to="48c12cd26a4e481eb5a9ccb86cd64f59">
+                        <item id="320b6ecd53714c28b45353de5a013011" cid="REA006" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="835bec9dfd674459bcc82746635d8dc5" to="48c12cd26a4e481eb5a9ccb86cd64f59" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tvcef435cb0d614819b3f2763f98fbbb20" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="642bfca248554a3aba42e7b3841e508a" cid="GNR013" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="7a6be765961949d38778d5a777d7bde2" to="34bb3b1932a44024bc1471fe00b4700b">
+                        <item id="642bfca248554a3aba42e7b3841e508a" cid="GNR013" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="7a6be765961949d38778d5a777d7bde2" to="34bb3b1932a44024bc1471fe00b4700b" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tvcc63cc132d2649e89793e23545a1e9c3" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="f72892e78e3942f3b0f34573a29b82e8" cid="REA007" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="7a6be765961949d38778d5a777d7bde2" to="1608db4880844afa8af03bfbdada0b99">
+                        <item id="f72892e78e3942f3b0f34573a29b82e8" cid="REA007" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="7a6be765961949d38778d5a777d7bde2" to="1608db4880844afa8af03bfbdada0b99" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tvca4f9dfc1ccb400888d2dd964f325fd4" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="a25b789547934e6196516b2ce3b197f7" cid="REA008" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="7a6be765961949d38778d5a777d7bde2" to="48c12cd26a4e481eb5a9ccb86cd64f59">
+                        <item id="a25b789547934e6196516b2ce3b197f7" cid="REA008" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="7a6be765961949d38778d5a777d7bde2" to="48c12cd26a4e481eb5a9ccb86cd64f59" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tvbcbd43f5e76b48658f450b8850257b76" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="2c2d72169b61496f81a2a7a8542d0f2a" cid="GNR014" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="5c862370338143829b8e24f1ceaef45f" to="34bb3b1932a44024bc1471fe00b4700b">
+                        <item id="2c2d72169b61496f81a2a7a8542d0f2a" cid="GNR014" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="5c862370338143829b8e24f1ceaef45f" to="34bb3b1932a44024bc1471fe00b4700b" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tveb227c38dd3b4db9862b16701db87637" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="b5e4322938404b77ba03e0d8a7723472" cid="REA009" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="5c862370338143829b8e24f1ceaef45f" to="1608db4880844afa8af03bfbdada0b99">
+                        <item id="b5e4322938404b77ba03e0d8a7723472" cid="REA009" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="5c862370338143829b8e24f1ceaef45f" to="1608db4880844afa8af03bfbdada0b99" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tvf06b817474614d5d8d0a0b2796034606" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="2751ecf57188433b97168d1299bfd76d" cid="GNR015" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="0e9f476d20d249b69bbf43d326d5842a" to="34bb3b1932a44024bc1471fe00b4700b">
+                        <item id="2751ecf57188433b97168d1299bfd76d" cid="GNR015" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="0e9f476d20d249b69bbf43d326d5842a" to="34bb3b1932a44024bc1471fe00b4700b" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv1db5f038d5b34e3f877f8de5c3a2f9c3" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="222bf9a97b1d43b5915ac8baa1e790b7" cid="GNR016" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="a45409964c7c4b079cdc113a200a9fee" to="34bb3b1932a44024bc1471fe00b4700b">
+                        <item id="222bf9a97b1d43b5915ac8baa1e790b7" cid="GNR016" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="a45409964c7c4b079cdc113a200a9fee" to="34bb3b1932a44024bc1471fe00b4700b" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tvb2e0cc4a2c7f4f50818890255591d78f" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="735d097c58664f25b954daad964d1100" cid="REA010" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="a45409964c7c4b079cdc113a200a9fee" to="1608db4880844afa8af03bfbdada0b99">
+                        <item id="735d097c58664f25b954daad964d1100" cid="REA010" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="a45409964c7c4b079cdc113a200a9fee" to="1608db4880844afa8af03bfbdada0b99" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv6573fd1466c1498bba6eaef1d40fb6b7" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="da70d1bade394d1b9fe6762eca9c5c52" cid="GNR017" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="31587249d8234d1098ed8ab5ec509624" to="c1dcf760b9254edd803d05602199db0b">
+                        <item id="da70d1bade394d1b9fe6762eca9c5c52" cid="GNR017" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="31587249d8234d1098ed8ab5ec509624" to="c1dcf760b9254edd803d05602199db0b" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv4cebf0003c3f44ba94d5a1b50deabbf8" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="f29324de3aa04fc395844fcbfb234921" cid="GNR018" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="9e74c857b7b04bf0a109f847125c7149" to="34bb3b1932a44024bc1471fe00b4700b">
+                        <item id="f29324de3aa04fc395844fcbfb234921" cid="GNR018" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="9e74c857b7b04bf0a109f847125c7149" to="34bb3b1932a44024bc1471fe00b4700b" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv4fc3d8164ee34a2c80fceadf2a6bf519" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="dab320500fff4657a07ee21f9ab3f873" cid="REA011" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="9e74c857b7b04bf0a109f847125c7149" to="48c12cd26a4e481eb5a9ccb86cd64f59">
+                        <item id="dab320500fff4657a07ee21f9ab3f873" cid="REA011" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="9e74c857b7b04bf0a109f847125c7149" to="48c12cd26a4e481eb5a9ccb86cd64f59" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv24f08a7f468847188c053c4bf99fddce" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="a51890a9db4f4f698c35817aced9ad56" cid="GNR019" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="889f6a4357a44a03a9c94a46464900a5" to="34bb3b1932a44024bc1471fe00b4700b">
+                        <item id="a51890a9db4f4f698c35817aced9ad56" cid="GNR019" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="889f6a4357a44a03a9c94a46464900a5" to="34bb3b1932a44024bc1471fe00b4700b" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv53c9cd34ddfa475e9b43181b5940ce34" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="848d155b328246f0be4125f371b39450" cid="GNR020" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="f7455fe8add44c8b9f408ff14e97faf9" to="34bb3b1932a44024bc1471fe00b4700b">
+                        <item id="848d155b328246f0be4125f371b39450" cid="GNR020" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="f7455fe8add44c8b9f408ff14e97faf9" to="34bb3b1932a44024bc1471fe00b4700b" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv09de187200f244d79041d39b510be3fd" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="d47ab49330474ccbbb018e7313b2fdef" cid="REA012" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="f7455fe8add44c8b9f408ff14e97faf9" to="1608db4880844afa8af03bfbdada0b99">
+                        <item id="d47ab49330474ccbbb018e7313b2fdef" cid="REA012" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="f7455fe8add44c8b9f408ff14e97faf9" to="1608db4880844afa8af03bfbdada0b99" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv8bf0093ec2df476a88c5fe2eeddcdda0" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="657b82d2c9634679bada73bfccf1e7a1" cid="REA013" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="f7455fe8add44c8b9f408ff14e97faf9" to="48c12cd26a4e481eb5a9ccb86cd64f59">
+                        <item id="657b82d2c9634679bada73bfccf1e7a1" cid="REA013" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="f7455fe8add44c8b9f408ff14e97faf9" to="48c12cd26a4e481eb5a9ccb86cd64f59" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tvfb513245c9e84c71b57d44d3bb4e9bde" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="123a696a8c384f9f9d5d7e2c01d21aa2" cid="GNR021" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="fd60e0390e6b4899a49fecca368696b3" to="c1dcf760b9254edd803d05602199db0b">
+                        <item id="123a696a8c384f9f9d5d7e2c01d21aa2" cid="GNR021" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="fd60e0390e6b4899a49fecca368696b3" to="c1dcf760b9254edd803d05602199db0b" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv19a7cd9222814af5a6b542919c0a571a" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="129cc28ff1e7404981e9b928f9847917" cid="GNR022" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="5bb44213c1cc4cdebe76f4b9d217ced8" to="34bb3b1932a44024bc1471fe00b4700b">
+                        <item id="129cc28ff1e7404981e9b928f9847917" cid="GNR022" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="5bb44213c1cc4cdebe76f4b9d217ced8" to="34bb3b1932a44024bc1471fe00b4700b" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv2c0febe3ac6d449fbac8367470a779b7" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="a46873edfc014e5b90c95db01abba890" cid="GNR023" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="cfb7c9bb6ee94700ab93cecc3197e694" to="34bb3b1932a44024bc1471fe00b4700b">
+                        <item id="a46873edfc014e5b90c95db01abba890" cid="GNR023" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="cfb7c9bb6ee94700ab93cecc3197e694" to="34bb3b1932a44024bc1471fe00b4700b" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv65cb29dc9d7e4660afa25a928273daae" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="8a879b8f35c748f0a3687cad03e46134" cid="GNR024" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="43e32c89c8974f76b77e016d1dd8462c" to="34bb3b1932a44024bc1471fe00b4700b">
+                        <item id="8a879b8f35c748f0a3687cad03e46134" cid="GNR024" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="43e32c89c8974f76b77e016d1dd8462c" to="34bb3b1932a44024bc1471fe00b4700b" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv7099e6ce98744480a4dabcaaeb72dbdb" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="79839f5f7daa473db442dd4fb2b199d3" cid="GNR025" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="eef1b97398404777924a90141d3221ae" to="34bb3b1932a44024bc1471fe00b4700b">
+                        <item id="79839f5f7daa473db442dd4fb2b199d3" cid="GNR025" type="generalization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="eef1b97398404777924a90141d3221ae" to="34bb3b1932a44024bc1471fe00b4700b" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tv35aa9240c517496cafe1f10fa638b80e" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                         </item>
-                        <item id="8be41e3070234fda94e07103452eb350" cid="REA014" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="eef1b97398404777924a90141d3221ae" to="1608db4880844afa8af03bfbdada0b99">
+                        <item id="8be41e3070234fda94e07103452eb350" cid="REA014" type="realization" name="" style-class="" creation-date="02/07/2022 01:16:41" from="eef1b97398404777924a90141d3221ae" to="1608db4880844afa8af03bfbdada0b99" visibility="undefined">
                           <tagged-values>
                             <tagged-value id="tvc49af4c58f31454f90133346c0d8e8a0" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
@@ -8636,6 +8338,17 @@ public Gga.LatitudeLongitude LongitudeTrue { get; set; }
               </points>
             </layout>
             <relation from="34482abd5ebd45d7996f07988ecfc54a" from-iid="c37caaf63711489684b34fe0c452092a" to="e137ce4593354ec6a35b25ab103d84e1" to-iid="5975de15e08f48af863ad48b7999caba" />
+          </item>
+          <item id="40f55d1b1ddb4038a8e056282f662dab" iid="9b21e29487ee49f4b4465ea4a18b80a6" creation-date="02/07/2022 13:54:51" order-index="0" type="relation">
+            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="100" y1="156" x2="244" y2="56" start-border-pos="0.166666666666667" end-border-pos="0.666353383458647" start-local-pos="100" end-local-pos="44.5" name-position="0,20">
+              <points>
+                <point x="100" y="156" />
+                <point x="100" y="106" />
+                <point x="244" y="106" />
+                <point x="244" y="56" />
+              </points>
+            </layout>
+            <relation from="cdfdf4f966d54d32aa8768d8f6271622" from-iid="9b10eebb371646e1bc904c228ef5f99c" to="e137ce4593354ec6a35b25ab103d84e1" to-iid="5975de15e08f48af863ad48b7999caba" />
           </item>
         </layer>
       </diagram>

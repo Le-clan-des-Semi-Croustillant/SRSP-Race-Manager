@@ -138,3 +138,4 @@ consoleTests/obj/project.nuget.cache
 docs/manifest.json
 **/log.txt
 Race Manager/api/**
+*.bak
