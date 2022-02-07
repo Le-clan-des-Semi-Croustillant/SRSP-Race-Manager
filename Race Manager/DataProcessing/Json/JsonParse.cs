@@ -73,8 +73,9 @@ namespace RaceManager.DataProcessing.Json
             return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
         }
 
-        public static string JsonSerialiseOConnection(OMessageType TypeMessage)
+        public static string JsonSerialiseOConnection()
         {
+            OMessageType TypeMessage = OMessageType.CONNECTION;
             var serialiseJsonInfo = new JsonOConnection
             {
                 TypeMessage = TypeMessage,
@@ -82,8 +83,9 @@ namespace RaceManager.DataProcessing.Json
             };
             return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
         }
-        public static string JsonSerialiseODisconnection(OMessageType TypeMessage)
+        public static string JsonSerialiseODisconnection()
         {
+            OMessageType TypeMessage = OMessageType.DISCONNECTION;
             var serialiseJsonInfo = new JsonODisconnection
             {
                 TypeMessage = TypeMessage,
@@ -91,7 +93,7 @@ namespace RaceManager.DataProcessing.Json
             };
             return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
         }
-        public static string JsonSerialiseOInitRace(IMessageType TypeMessage)
+        public static string JsonSerialiseOInitRace(OMessageType TypeMessage)
         {
             var serialiseJsonInfo = new JsonOInitRace
             {
@@ -101,7 +103,7 @@ namespace RaceManager.DataProcessing.Json
             return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
         }
 
-        public static string JsonSerialiseOEnvironmentInfo(IMessageType TypeMessage)
+        public static string JsonSerialiseOEnvironmentInfo(OMessageType TypeMessage)
         {
             var serialiseJsonInfo = new JsonOEnvironmentInfo
             {
@@ -124,8 +126,9 @@ namespace RaceManager.DataProcessing.Json
             return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
         }
 
-        public static string JsonSerialiseOEndRace(IMessageType TypeMessage)
+        public static string JsonSerialiseOEndRace()
         {
+            OMessageType TypeMessage = OMessageType.ENDRACE;
             var serialiseJsonInfo = new JsonOEndRace
             {
                 TypeMessage = TypeMessage,
@@ -195,13 +198,13 @@ namespace RaceManager.DataProcessing.Json
     }
     class JsonOInitRace
     {
-        public IMessageType TypeMessage { get; set; }
+        public OMessageType TypeMessage { get; set; }
         public long Id { get; set; }
         public long IdGame { get; set; }
     }
     class JsonOEnvironmentInfo
     {
-        public IMessageType TypeMessage { get; set; }
+        public OMessageType TypeMessage { get; set; }
         public long Id { get; set; }
         public long IdGame { get; set; }
     }
@@ -212,7 +215,7 @@ namespace RaceManager.DataProcessing.Json
     }
     class JsonOEndRace
     {
-        public IMessageType TypeMessage { get; set; }
+        public OMessageType TypeMessage { get; set; }
         public long Id { get; set; }
         public long IdGame { get; set; }
         public EnvironmentInfo? EnvironmentInfos { get; set; }

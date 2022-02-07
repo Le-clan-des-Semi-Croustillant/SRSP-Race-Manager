@@ -5,9 +5,6 @@
     /// </summary>
     public enum IMessageType
     {
-        /// <summary>
-        /// Type message input (recive) <see cref="IMessageType"/>
-        /// </summary>
         CONNECTION,
         DISCONNECTION ,
         PLAYERINFO,
@@ -18,9 +15,6 @@
 
     public enum OMessageType
     {
-        /// <summary>
-        /// Type message output (send) <see cref="OMessageType"/>
-        /// </summary>
         CONNECTION,
         DISCONNECTION,
         INITRACE,

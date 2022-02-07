@@ -2,7 +2,7 @@
 <sim-project version="13.05" multi-file="no" uid="simp5c961c7f14bc4007b745841aa1736f27">
   <meta>
     <name>RaceManager</name>
-    <authors>Jérémie Rodez</authors>
+    <authors> </authors>
     <description />
   </meta>
   <counters models="14">
@@ -14,11 +14,11 @@
       </counter>
       <counter>
         <item-type type-id="containment" type="Containment" />
-        <value>16</value>
+        <value>17</value>
       </counter>
       <counter>
         <item-type type-id="group" type="Group" />
-        <value>64</value>
+        <value>106</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -65,6 +65,7 @@
         <phone-number />
         <description />
         <color>#00000000</color>
+        <working-schedule uid="ws-ef1b3b2ac65f4b1b826e5579fd0b44ee" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
       </person>
     </persons>
     <teams />
@@ -244,6 +245,7 @@
         </item>
         <item id="aa2d086fddcc4125b370395e11104f41" cid="CNT012" type="containment" name="" style-class="" creator="" creation-date="02/07/2022 01:16:41" from="34482abd5ebd45d7996f07988ecfc54a" to="e137ce4593354ec6a35b25ab103d84e1" />
         <item id="40f55d1b1ddb4038a8e056282f662dab" cid="CNT015" type="containment" name="" style-class="" creator="" creation-date="02/07/2022 13:54:51" from="cdfdf4f966d54d32aa8768d8f6271622" to="e137ce4593354ec6a35b25ab103d84e1" />
+        <item id="f51ee307056b4c40879b573aaabbec60" cid="CNT016" type="containment" name="" style-class="" creation-date="02/07/2022 17:03:39" from="cdfdf4f966d54d32aa8768d8f6271622" to="e137ce4593354ec6a35b25ab103d84e1" />
       </abstract-items>
       <sub-models>
         <model id="p412c281ea23c45f6b28f32b201d9f4f4_438761090" name="RaceManager" namespace="RaceManager" order-index="2" expanded="true">
@@ -907,23 +909,24 @@
                     </operation>
                   </operations>
                 </item>
-                <item id="3e9f7331455145d4836e76b0fbd113cb" cid="E001" type="enumeration" name="IMessageType" style-class="" change-tracking-state="changed" creation-date="02/07/2022 01:16:41" visibility="">
+                <item id="164d70c0707d4d258d51abb114dca26d" cid="E002" type="enumeration" name="OMessageType" style-class="" creation-date="02/07/2022 17:03:39" visibility="">
                   <stereotypes>
                     <stereotype name="enum" />
                   </stereotypes>
                   <tagged-values>
-                    <tagged-value id="tv19f44b038e644844977fc36b91f56f08" name="namespace" type="text" multiple="false" hidden="false" value="RaceManager.Communication" />
-                    <tagged-value id="tv79e729fa8baf4bfe8ad4160dca8bd028" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="IMessageType" />
+                    <tagged-value id="tvc4dc0fe996354d53a95481b910bad68f" name="namespace" type="text" multiple="false" hidden="false" value="RaceManager.Communication" />
+                    <tagged-value id="tv38cf5980575a46638538ae9a9739cf39" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="OMessageType" />
                   </tagged-values>
                   <stereotype-instances>
-                    <stereotype id="3e9f7331455145d4836e76b0fbd113cb_enum_c" type="enum" ref="" />
+                    <stereotype id="164d70c0707d4d258d51abb114dca26d_enum_c" type="enum" ref="" />
                   </stereotype-instances>
                   <enumeration-items>
-                    <enumeration-item id="ab696cbc22e9d4451ba4c9ea97519eef6892" cid="ENI001" name="CONNECTION" creation-date="02/07/2022 01:16:41" value="0" />
-                    <enumeration-item id="af781a5dc9b6b4a4c8b376f7362afb514892" cid="ENI002" name="DISCONNECTION" creation-date="02/07/2022 01:16:41" value="1" />
-                    <enumeration-item id="ae22ee025ac38402785e8717a36e21d80892" cid="ENI004" name="BOATSELECT" creation-date="02/07/2022 01:16:41" value="3" />
-                    <enumeration-item id="abeb29054b3504a14ba646373f67b94bf614" cid="ENI003" name="PLAYERINFO" creation-date="02/07/2022 13:54:51" value="2" />
-                    <enumeration-item id="aac5b8193ed5146729fef4cad6ce0f83f614" cid="ENI005" name="ENDRACE" creation-date="02/07/2022 13:54:51" value="4&#xD;&#xA;    " />
+                    <enumeration-item id="add50e9ca7e704a1c8a63bfe8c5c7756d348" cid="ENI007" name="CONNECTION" creation-date="02/07/2022 17:03:39" />
+                    <enumeration-item id="af48347293c5d4f6d8a005de01bb692b6348" cid="ENI008" name="DISCONNECTION" creation-date="02/07/2022 17:03:39" />
+                    <enumeration-item id="ae9564bbd3f874ece80c8b428507cd489348" cid="ENI009" name="INITRACE" creation-date="02/07/2022 17:03:39" />
+                    <enumeration-item id="a7f40306b1ebf408386c7f9edad33e1c1348" cid="ENI010" name="ENVIRONMENTINFO" creation-date="02/07/2022 17:03:39" />
+                    <enumeration-item id="a433f00b33a714b7790cc0b8e135f592f348" cid="ENI011" name="BOATLIST" creation-date="02/07/2022 17:03:39" />
+                    <enumeration-item id="a322156c7b1604d1ca8ff90b3cbe8d9a0348" cid="ENI012" name="ENDRACE" creation-date="02/07/2022 17:03:39" />
                   </enumeration-items>
                 </item>
                 <item id="3bdfcdb231f443b3bfcccf71e7d361f6" cid="C005" type="class" name="AsyncServer" style-class="" creation-date="02/07/2022 01:16:41" visibility="public">
@@ -1153,23 +1156,24 @@
                     </operation>
                   </operations>
                 </item>
-                <item id="af3edfde54654e439e4031a9d0710c67" cid="E002" type="enumeration" name="OMessageType" style-class="" creation-date="02/07/2022 13:54:51" visibility="">
+                <item id="a595c1bf16cb47b1800cd805c2d781fe" cid="E001" type="enumeration" name="IMessageType" style-class="" creation-date="02/07/2022 17:03:39" visibility="public">
                   <stereotypes>
                     <stereotype name="enum" />
                   </stereotypes>
                   <tagged-values>
-                    <tagged-value id="tv78582832757a4781a94ccce5786ce562" name="namespace" type="text" multiple="false" hidden="false" value="RaceManager.Communication" />
-                    <tagged-value id="tv1ee7f39029d74a45a14f6cf50a26ae46" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="OMessageType" />
+                    <tagged-value id="tv3903693bb52d4337b3a114b306045328" name="namespace" type="text" multiple="false" hidden="false" value="RaceManager.Communication" />
+                    <tagged-value id="tv2645c7fbcdeb48e092580ec1ca9280fd" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="IMessageType" />
                   </tagged-values>
                   <stereotype-instances>
-                    <stereotype id="af3edfde54654e439e4031a9d0710c67_enum_c" type="enum" ref="" />
+                    <stereotype id="a595c1bf16cb47b1800cd805c2d781fe_enum_c" type="enum" ref="" />
                   </stereotype-instances>
                   <enumeration-items>
-                    <enumeration-item id="aa0ab762136ea466cb344f85385dbe8cf614" cid="ENI006" name="CONNECTION" creation-date="02/07/2022 13:54:51" value="0" />
-                    <enumeration-item id="a3740130323414b59b325fa2de7e416b9614" cid="ENI007" name="DISCONNECTION" creation-date="02/07/2022 13:54:51" value="1" />
-                    <enumeration-item id="ae3e3f658956c44569909c23dab3b5c1c614" cid="ENI008" name="INITRACE" creation-date="02/07/2022 13:54:51" value="2" />
-                    <enumeration-item id="a7a54b1d9bb684b89b4d08e451634ec4b614" cid="ENI009" name="ENVIRONMENTINFO" creation-date="02/07/2022 13:54:51" value="3" />
-                    <enumeration-item id="afa146191325e44acb81dc74acd72274e614" cid="ENI010" name="ENDRACE" creation-date="02/07/2022 13:54:51" value="4&#xD;&#xA;    " />
+                    <enumeration-item id="acafa25f5df6b4026abf8f9715a65ffb5348" cid="ENI001" name="CONNECTION" creation-date="02/07/2022 17:03:39" />
+                    <enumeration-item id="aca084d13f9764786b7ec069f3dcfde2b348" cid="ENI002" name="DISCONNECTION" creation-date="02/07/2022 17:03:39" />
+                    <enumeration-item id="a27b11c3d5fd2491ebc4f04d4157c60a9348" cid="ENI003" name="PLAYERINFO" creation-date="02/07/2022 17:03:39" />
+                    <enumeration-item id="a7d7b76749e3c4e608aebca6e46a9dacd348" cid="ENI004" name="BOATSELECT" creation-date="02/07/2022 17:03:39" />
+                    <enumeration-item id="a0da0ff6e7c6d422a9d489c0887d98c09348" cid="ENI005" name="BOATLISTREQUEST" creation-date="02/07/2022 17:03:39" />
+                    <enumeration-item id="ade008bd32cc9493d82bac18c79de31c6348" cid="ENI006" name="ENDRACE" creation-date="02/07/2022 17:03:39" />
                   </enumeration-items>
                 </item>
               </abstract-items>
@@ -1186,7 +1190,7 @@
                   </authors>
                   <description />
                   <creation-date>02/07/2022 01:16:42</creation-date>
-                  <change-date>02/07/2022 01:16:42</change-date>
+                  <change-date>02/07/2022 17:03:27</change-date>
                   <revision-count>0</revision-count>
                   <version />
                 </meta>
@@ -1215,10 +1219,6 @@
                     <classifier />
                     <class />
                   </item>
-                  <item id="3e9f7331455145d4836e76b0fbd113cb" iid="6065a644c06948b5b6b0b723023033c8" creation-date="02/07/2022 01:16:42" order-index="4" type="entity">
-                    <layout ax="1017.5" ay="255.5" awidth="148" aheight="212" x="1017.5" y="255.5" width="148" height="212" rotation-center="0,-44.5" />
-                    <enumeration />
-                  </item>
                   <item id="3bdfcdb231f443b3bfcccf71e7d361f6" iid="3c2c2177f6ac4de192f265da71f69dbe" creation-date="02/07/2022 01:16:42" order-index="5" type="entity">
                     <layout ax="624.5" ay="99" awidth="209" aheight="60" x="624.5" y="99" width="209" height="60" />
                     <classifier />
@@ -1240,8 +1240,12 @@
                     </layout>
                     <relation from="18f317103145466eb21e86cee5edad9d" from-iid="c5c48d683c844902bee623465297c5ad" to="f3d4499502154eb0ae22abaabb1ef3a5" to-iid="d9b6ef3baebb43449519b983228c9244" />
                   </item>
-                  <item id="af3edfde54654e439e4031a9d0710c67" iid="a95313795c514a7bb20e5f93f24fd07e" show-stereotypes="true" show-fields="true" creation-date="02/07/2022 13:54:51" order-index="0" type="entity">
-                    <layout ax="791" ay="255.5" awidth="209" aheight="263" x="791" y="255.5" width="209" height="263" rotation-center="-21,-35.75" />
+                  <item id="a595c1bf16cb47b1800cd805c2d781fe" iid="e88998da73c245b3bdaf18e4d1d9b2c8" creation-date="02/07/2022 17:03:39" order-index="0" type="entity">
+                    <layout ax="801" ay="236.5" awidth="133" aheight="161" x="801" y="236.5" width="133" height="161" />
+                    <enumeration />
+                  </item>
+                  <item id="164d70c0707d4d258d51abb114dca26d" iid="a74c003be5254cd6ad6319e1b8378815" creation-date="02/07/2022 17:03:39" order-index="1" type="entity">
+                    <layout ax="968.5" ay="236.5" awidth="144" aheight="161" x="968.5" y="236.5" width="144" height="161" />
                     <enumeration />
                   </item>
                 </layer>
@@ -3483,8 +3487,8 @@
                             <tagged-value id="tv7d3e0148bfba465aa73e3c3475503610" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
                           </tagged-values>
                           <relation from="34bb3b1932a44024bc1471fe00b4700b" to="34bb3b1932a44024bc1471fe00b4700b" derived="false">
-                            <start-role id="umlar-9720f183-f12b-4182-91d5-7eee64fe9b52" name="" navigability="" association-type="aggregation" visibility="private" />
-                            <end-role id="umlar-6fde2c14-22d2-4c7f-9a2e-ceca5755d14f" name="" navigability="" association-type="association" visibility="private" />
+                            <start-role id="umlar-2ed30067-96d6-47ab-8ae9-7adbe1100c51" name="" navigability="" association-type="aggregation" visibility="private" />
+                            <end-role id="umlar-9c33d7ef-65ce-48eb-94f4-e9cc4ed6c86d" name="" navigability="" association-type="association" visibility="private" />
                           </relation>
                         </item>
                       </abstract-items>
@@ -8368,6 +8372,17 @@
                 <point x="100" y="106" />
                 <point x="244" y="106" />
                 <point x="244" y="56" />
+              </points>
+            </layout>
+            <relation from="cdfdf4f966d54d32aa8768d8f6271622" from-iid="9b10eebb371646e1bc904c228ef5f99c" to="e137ce4593354ec6a35b25ab103d84e1" to-iid="5975de15e08f48af863ad48b7999caba" />
+          </item>
+          <item id="f51ee307056b4c40879b573aaabbec60" iid="83b954e6ba624a2b8932433945081a06" creation-date="02/07/2022 17:03:39" order-index="0" type="relation">
+            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="112" y1="156" x2="256" y2="56" start-border-pos="0.186666666666667" end-border-pos="0.643796992481203" start-local-pos="112" end-local-pos="56.5" name-position="0,20">
+              <points>
+                <point x="112" y="156" />
+                <point x="112" y="106" />
+                <point x="256" y="106" />
+                <point x="256" y="56" />
               </points>
             </layout>
             <relation from="cdfdf4f966d54d32aa8768d8f6271622" from-iid="9b10eebb371646e1bc904c228ef5f99c" to="e137ce4593354ec6a35b25ab103d84e1" to-iid="5975de15e08f48af863ad48b7999caba" />
