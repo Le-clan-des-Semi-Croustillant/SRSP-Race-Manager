@@ -30,6 +30,7 @@ namespace RaceManager.DataProcessing.Json
                 case 3:
 
                 case 4: //Retourner une liste de bateau
+                    Console.WriteLine(informationJson.IMessageType + "BOATLISTREQUEST");
                     string OutMessage = JsonParse.JsonSerialiseOBoatList();
                     //Envoyer à la personne qui m'as envoyé ma demande
                     break;

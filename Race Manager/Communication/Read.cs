@@ -69,13 +69,22 @@ namespace RaceManager.Communication
                             Console.WriteLine("DISCONNECTION");
                             break;
 
-                        case IMessageType.INFO:
+                        case IMessageType.PLAYERINFO:
                             Console.WriteLine("INFO");
                             break;
 
                         case IMessageType.BOATSELECT:
                             Console.WriteLine("BOATSELECT");
                             break;
+
+                        case IMessageType.BOATLISTREQUEST:
+                            Console.WriteLine("BOATLISTREQUEST");
+                            break;
+
+                        case IMessageType.ENDRACE:
+                            Console.WriteLine("ENDRACE");
+                            break;
+
 
                         default:
                             Console.WriteLine("Default");
