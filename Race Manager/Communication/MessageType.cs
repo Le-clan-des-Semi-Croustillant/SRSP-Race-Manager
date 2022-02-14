@@ -21,7 +21,6 @@
         INITRACE,
         ENVIRONMENTINFO,  
         BOATSELECTED,
-        ENVIRONMENTINFO,
         BOATLIST,
         ENDRACE,
         RACELISTSEND
