@@ -6,11 +6,12 @@
     public enum IMessageType
     {
         CONNECTION,
-        DISCONNECTION ,
+        DISCONNECTION,
         PLAYERINFO,
         BOATSELECT,
         BOATLISTREQUEST,
-        ENDRACE
+        ENDRACE,
+        RACELISTUPDATE // donner la liste des courses et aussi avec les liens avec les bateaux
     }
 
     public enum OMessageType
@@ -20,7 +21,9 @@
         INITRACE,
         ENVIRONMENTINFO,  
         BOATSELECTED,
+        ENVIRONMENTINFO,
         BOATLIST,
-        ENDRACE
+        ENDRACE,
+        RACELISTSEND
     }
 }
