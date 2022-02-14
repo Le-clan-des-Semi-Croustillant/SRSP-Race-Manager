@@ -63,6 +63,16 @@ namespace RaceManager.DataProcessing.Json
             };
             return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
         }
+
+        public static string JsonSerialiseIBoatListRequest(IMessageType TypeMessage)
+        {
+            var serialiseJsonInfo = new JsonIBoatListSelect
+            {
+                TypeMessage = TypeMessage,
+
+            };
+            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+        }
         public static string JsonSerialiseIEndRace(IMessageType TypeMessage)
         {
             var serialiseJsonInfo = new JsonIEndRace
@@ -189,7 +199,7 @@ namespace RaceManager.DataProcessing.Json
     class JsonOConnection
     {
         public OMessageType TypeMessage { get; set; }
-        public EnvironmentInfo? EnvironmentInfos { get; set; }
+        //public EnvironmentInfo? EnvironmentInfos { get; set; }
     }
     class JsonODisconnection
     {

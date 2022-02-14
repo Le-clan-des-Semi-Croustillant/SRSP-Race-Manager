@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RaceManager.Communication.IMessageType.html",
-          "hash": "Jv6c3av+iV1hX5N/cL5Gjq1uSc/DP5YB1S56m+7ivWQ="
+          "hash": "VG6/7rxrgnXTUfG4XSJ/DT/hdx0xHIVBZmmEmR/u/h0="
         }
       },
       "is_incremental": true,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RaceManager.Communication.OMessageType.html",
-          "hash": "Zs/sn+LVDoZjxKOCNC4DOPiZ7hW7VfPC0t4z2L5k/yI="
+          "hash": "i7FrCFbSyL1hUa/rjCbHLVYQlsOmIP3WYEJgqRyhzOY="
         }
       },
       "is_incremental": true,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RaceManager.DataProcessing.Json.JsonManage.html",
-          "hash": "9+DAZ+x+24rNFjpcGQuMzX5bYou927qveCxDko9EV9s="
+          "hash": "+2hiR3NYCAqJQHLLDfulQKwwXcE3ZlaMfH9wO7UacqI="
         }
       },
       "is_incremental": true,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RaceManager.DataProcessing.Json.JsonParse.html",
-          "hash": "ZBcKE09S3RGKC+oTHAZmgIyRgFSxA0i2e1wls+d8QoY="
+          "hash": "lqBDqYGEsmERyPVTCgez+hq04UN1DOSA0UFrwBt1dHA="
         }
       },
       "is_incremental": true,
@@ -833,6 +833,78 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/RaceManager.Lecture.Course.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RaceManager.Lecture.Course.html",
+          "hash": "pDrlT8hjLEEi44i9uSVa2luL0v8OhLD5y8P1BPIWrm8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RaceManager.Lecture.FichierBateauAutoriseCourse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RaceManager.Lecture.FichierBateauAutoriseCourse.html",
+          "hash": "p3HX58kcIp0xPj7wq2+QDk22DH0S5Gy4U6iPiaqkK6M="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RaceManager.Lecture.FichierGpx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RaceManager.Lecture.FichierGpx.html",
+          "hash": "Q6maTQb3caKlIdWfWYlX4/bG/RVoeH3ZHJvfyU2KykQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RaceManager.Lecture.FichierPol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RaceManager.Lecture.FichierPol.html",
+          "hash": "chxJ5pcXsbpIYihdZnJBB30NKeJbxzeznDN9TlRF0g0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RaceManager.Lecture.Polaire.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RaceManager.Lecture.Polaire.html",
+          "hash": "fOWFc8Uzadb/C+gefGyjjJewssh4MbPBmJSRLf5fd6c="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RaceManager.Lecture.TypeBateau.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RaceManager.Lecture.TypeBateau.html",
+          "hash": "snVVzVDgM8vg243B0KzIup7vRUpfivipeciV6Aw+atQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/RaceManager.Lecture.XMLReadAndParse.GPXLoader.yml",
       "output": {
         ".html": {
@@ -850,6 +922,18 @@
         ".html": {
           "relative_path": "api/RaceManager.Lecture.XMLReadAndParse.html",
           "hash": "/cAjQAOxYrmqUT0OVIzbK0WRkRW6bzkaZv6tgDf62ms="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RaceManager.Lecture.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RaceManager.Lecture.html",
+          "hash": "tSubiSDhihmLZeLkIKNdhIXAqMNc1plKSA9CsS2eXSc="
         }
       },
       "is_incremental": true,
@@ -933,7 +1017,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "g/7+n4Gg6YVj46WmpAW8tXoI8VY26j+L1TDIVornT98="
+          "hash": "AgIpTVn/tlC3pQus9sy2lmVH5mxaaIjcAg/vYx7pHEQ="
         }
       },
       "is_incremental": false,
@@ -1006,8 +1090,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 76,
-          "skipped_file_count": 76
+          "total_file_count": 83,
+          "skipped_file_count": 83
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

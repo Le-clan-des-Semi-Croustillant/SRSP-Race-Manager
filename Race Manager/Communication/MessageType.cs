@@ -18,7 +18,8 @@
         CONNECTION,
         DISCONNECTION,
         INITRACE,
-        ENVIRONMENTINFO,    
+        ENVIRONMENTINFO,  
+        BOATSELECTED,
         BOATLIST,
         ENDRACE
     }

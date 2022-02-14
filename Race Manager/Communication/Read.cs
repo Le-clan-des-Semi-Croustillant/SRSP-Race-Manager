@@ -36,7 +36,7 @@ namespace RaceManager.Communication
                 {
                     // All the data has been read from the 
                     // client. Display it on the console.
-                    Console.WriteLine("Read {0} bytes from socket. \n Data : {1}",
+                    Console.WriteLine("\nRead {0} bytes from socket. \nData : {1}",
                         content.Length, content);
 
                     // SERIALISATION PSEUDOCODE
@@ -50,50 +50,54 @@ namespace RaceManager.Communication
                     //      clients.addOnce(client)
                     // 
                     // case IMessageType.INFO :
-                    dynamic serialisation = JsonParse.JsonDeserialize(content);
-                    Console.WriteLine(serialisation.TypeMessage.GetType());
-                    Console.WriteLine(serialisation.TypeMessage);
-                    Console.WriteLine(serialisation.Id);
-                    Console.WriteLine(serialisation.IdGame);
-                    Console.WriteLine(serialisation.NMEA);
-                    Console.WriteLine(serialisation.Boat);
-                    Console.WriteLine(serialisation.EnvironmentInfos.IdPlayer);
-                    Console.WriteLine(serialisation.EnvironmentInfos.NamePlayer);
-                    switch ((IMessageType)serialisation.TypeMessage)
-                    {
-                        case IMessageType.CONNECTION:
-                            Console.WriteLine("CONNECTION");
-                            break;
+                    //dynamic serialisation = JsonParse.JsonDeserialize(content);
+                    string SendAtt = JsonManage.JsonType(content);
+                    Console.WriteLine("Send att" + SendAtt);
+                    //Console.WriteLine(serialisation.TypeMessage.GetType());
+                    //Console.WriteLine(serialisation.TypeMessage);
+                    //Console.WriteLine(serialisation.Id);
+                    //Console.WriteLine(serialisation.IdGame);
+                    //Console.WriteLine(serialisation.NMEA);
+                    //Console.WriteLine(serialisation.Boat);
+                    //Console.WriteLine(serialisation.EnvironmentInfos.IdPlayer);
+                    //Console.WriteLine(serialisation.EnvironmentInfos.NamePlayer);
+                    //switch ((IMessageType)serialisation.TypeMessage)
+                    //{
+                    //    case IMessageType.CONNECTION:
+                    //        Console.WriteLine("CONNECTION");
+                    //        break;
 
-                        case IMessageType.DISCONNECTION:
-                            Console.WriteLine("DISCONNECTION");
-                            break;
+                    //    case IMessageType.DISCONNECTION:
+                    //        Console.WriteLine("DISCONNECTION");
+                    //        break;
 
-                        case IMessageType.PLAYERINFO:
-                            Console.WriteLine("INFO");
-                            break;
+                    //    case IMessageType.PLAYERINFO:
+                    //        Console.WriteLine("INFO");
+                    //        break;
 
-                        case IMessageType.BOATSELECT:
-                            Console.WriteLine("BOATSELECT");
-                            break;
+                    //    case IMessageType.BOATSELECT:
+                    //        Console.WriteLine("BOATSELECT");
+                    //        break;
 
-                        case IMessageType.BOATLISTREQUEST:
-                            Console.WriteLine("BOATLISTREQUEST");
-                            break;
+                    //    case IMessageType.BOATLISTREQUEST:
+                    //        Console.WriteLine("BOATLISTREQUEST");
+                    //        break;
 
-                        case IMessageType.ENDRACE:
-                            Console.WriteLine("ENDRACE");
-                            break;
+                    //    case IMessageType.ENDRACE:
+                    //        Console.WriteLine("ENDRACE");
+                    //        break;
 
 
-                        default:
-                            Console.WriteLine("Default");
-                            break;
-                    }
+                    //    default:
+                    //        Console.WriteLine("Default");
+                    //        break;
+                    //}
 
 
                     // Echo the data back to the client.
-                    Send(handler, content);
+                    Console.WriteLine("\nSend to client");
+                    Send(handler, SendAtt);
+                    Console.WriteLine("\n");
                 }
                 else
                 {

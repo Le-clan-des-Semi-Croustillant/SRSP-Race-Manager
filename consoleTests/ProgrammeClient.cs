@@ -9,7 +9,7 @@ using RaceManager.DataProcessing.Json;
 
 namespace consoleTests
 {
-    
+
 
     // State object for receiving data from remote device.  
     public class StateObject
@@ -39,7 +39,7 @@ namespace consoleTests
         // The response from the remote device.  
         private static String response = String.Empty;
 
-        private static void StartClient(int port)
+        private static void StartClient(int port, int num)
         {
             // Connect to a remote device.  
             try
@@ -61,17 +61,49 @@ namespace consoleTests
                 connectDone.WaitOne();
 
                 // Send test data to the remote device.
-                IMessageType TypeMessage = 0;
-                long Id = 4242;
-                long IdGame = 01;
-                string NMEA = "YOLO";
-                long Boat = 0;
-                int IdPlayer = 123;
-                string NamePlayer = "Sky";
+                IMessageType TypeMessage;
+                string SendMessage;
+                if (num == 0)
+                {
+                    TypeMessage = IMessageType.CONNECTION;
+                    SendMessage = JsonParse.JsonSerialiseIConnection(TypeMessage);
 
-                string test = JsonParse.JsonSerialiseConnection(TypeMessage, Id, IdGame, NMEA, Boat, IdPlayer, NamePlayer);
-                Console.WriteLine(test);
-                Send(client, test);
+                }
+                else if (num == 1)
+                {
+                    TypeMessage = IMessageType.DISCONNECTION;
+                    SendMessage = JsonParse.JsonSerialiseIDisconnection(TypeMessage);
+                }
+                else if (num == 2)
+                {
+                    TypeMessage = IMessageType.PLAYERINFO;
+                    SendMessage = JsonParse.JsonSerialiseIPlayerInfo(TypeMessage);
+                }
+                else if (num == 3)
+                {
+                    TypeMessage = IMessageType.BOATSELECT;
+                    SendMessage = JsonParse.JsonSerialiseIBoatSelect(TypeMessage);
+                }
+                else if (num == 4)
+                {
+                    TypeMessage = IMessageType.BOATLISTREQUEST;
+                    SendMessage = JsonParse.JsonSerialiseIBoatListRequest(TypeMessage);
+                }
+                else /*if (num == 5)*/
+                {
+                    TypeMessage = IMessageType.ENDRACE;
+                    SendMessage = JsonParse.JsonSerialiseIEndRace(TypeMessage);
+                }
+                //long Id = 4242;
+                //long IdGame = 01;
+                //string NMEA = "NMEA";
+                //string Boat = "0";
+                //int IdPlayer = 123;
+                //string NamePlayer = "Sky";
+
+                //string test = JsonParse.JsonSerialiseConnection(TypeMessage, Id, IdGame, NMEA, Boat, IdPlayer, NamePlayer);
+                Console.WriteLine("Message send : " + SendMessage);
+                Send(client, SendMessage);
                 //Send(client, "This is a test<EOF>");
                 sendDone.WaitOne();
 
@@ -80,12 +112,14 @@ namespace consoleTests
                 receiveDone.WaitOne();
 
                 // Write the response to the console.  
-                Console.WriteLine("Response received : {0}", response);
+                Console.WriteLine("Response received : {0}\n", response);
 
                 // Release the socket.  
+                Console.WriteLine("Je suis là");
                 client.Shutdown(SocketShutdown.Both);
+                Console.WriteLine("Je Passe");
                 client.Close();
-
+                Console.WriteLine("Je fini");
             }
             catch (Exception e)
             {
@@ -204,8 +238,12 @@ namespace consoleTests
 
         public static int Main(String[] args)
         {
-            StartClient(45678);
-            Thread.Sleep(1000);
+            for (int i = 0; i < 6; i++)
+            {
+                StartClient(45678, i);
+                Thread.Sleep(3000);
+            }
+            Thread.Sleep(10000);
             return 0;
         }
     }

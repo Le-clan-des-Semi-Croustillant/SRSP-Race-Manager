@@ -10,42 +10,42 @@ namespace RaceManager.DataProcessing.Json
         {
             dynamic informationJson = JsonParse.JsonDeserialize(data);
             Console.WriteLine(informationJson);
-            try
-            {
+            //try
+            //{
 
-            }
-            catch (Exception ex)
-            {
+            //}
+            //catch (Exception ex)
+            //{
 
-            }
+            //}
             string OutMessage;
-            switch ((IMessageType)informationJson.IMessageType)
+            Console.WriteLine((IMessageType)informationJson.TypeMessage);
+            switch ((IMessageType)informationJson.TypeMessage)
             {
                
                 case IMessageType.CONNECTION:
-                    Console.WriteLine(informationJson.IMessageType + "CONNECTION");
+                    Console.WriteLine(informationJson.TypeMessage + " Connection");
                     OutMessage = JsonParse.JsonSerialiseOConnection();
                     break;
                 case IMessageType.DISCONNECTION:
-                    Console.WriteLine(informationJson.IMessageType + "DISCONNECTION");
+                    Console.WriteLine(informationJson.TypeMessage + " Disconnection");
                     OutMessage = JsonParse.JsonSerialiseODisconnection();
                     break;
                 case IMessageType.PLAYERINFO:
-                    Console.WriteLine(informationJson.PLAYERINFO + "PLAYERINFO");
-                    OutMessage = "PLAYERINFO";
+                    Console.WriteLine(informationJson.TypeMessage + " Player Info");
+                    OutMessage = "Player Info";
                     break;
                 case IMessageType.BOATSELECT:
-                    Console.WriteLine(informationJson.PLAYERINFO + "BOATSELECT");
-                    OutMessage = "BOATSELECT";
+                    Console.WriteLine(informationJson.TypeMessage + " Boat Select");
+                    OutMessage = "Boat Select";
                     break;
                 case IMessageType.BOATLISTREQUEST: //Retourner une liste de bateau
-                    Console.WriteLine(informationJson.IMessageType + "BOATLISTREQUEST");
+                    Console.WriteLine(informationJson.TypeMessage + " Boast List Request");
                     OutMessage = JsonParse.JsonSerialiseOBoatList();
                     //Envoyer à la personne qui m'as envoyé ma demande
                     break;
-
                 case IMessageType.ENDRACE:
-                    Console.WriteLine(informationJson.PLAYERINFO + "ENDRACE");
+                    Console.WriteLine(informationJson.TypeMessage + " End Race");
                     OutMessage = JsonParse.JsonSerialiseOEndRace();
                     break;
 
