@@ -1,13 +1,13 @@
 ### YamlMime:TableOfContent
-- uid: BlazorApp1.Data
-  name: BlazorApp1.Data
+- uid: RaceManager.Data
+  name: RaceManager.Data
   items:
-  - uid: BlazorApp1.Data.WeatherForecast
+  - uid: RaceManager.Data.WeatherForecast
     name: WeatherForecast
-  - uid: BlazorApp1.Data.WeatherForecastService
+  - uid: RaceManager.Data.WeatherForecastService
     name: WeatherForecastService
-- uid: BlazorApp1.Pages
-  name: BlazorApp1.Pages
+- uid: RaceManager.Pages
+  name: RaceManager.Pages
   items:
-  - uid: BlazorApp1.Pages.ErrorModel
+  - uid: RaceManager.Pages.ErrorModel
     name: ErrorModel

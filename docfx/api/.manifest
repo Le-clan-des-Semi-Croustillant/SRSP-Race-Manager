@@ -1,0 +1,16 @@
+{
+  "RaceManager.Data": "RaceManager.Data.yml",
+  "RaceManager.Data.WeatherForecast": "RaceManager.Data.WeatherForecast.yml",
+  "RaceManager.Data.WeatherForecast.Date": "RaceManager.Data.WeatherForecast.yml",
+  "RaceManager.Data.WeatherForecast.Summary": "RaceManager.Data.WeatherForecast.yml",
+  "RaceManager.Data.WeatherForecast.TemperatureC": "RaceManager.Data.WeatherForecast.yml",
+  "RaceManager.Data.WeatherForecast.TemperatureF": "RaceManager.Data.WeatherForecast.yml",
+  "RaceManager.Data.WeatherForecastService": "RaceManager.Data.WeatherForecastService.yml",
+  "RaceManager.Data.WeatherForecastService.GetForecastAsync(DateTime)": "RaceManager.Data.WeatherForecastService.yml",
+  "RaceManager.Pages": "RaceManager.Pages.yml",
+  "RaceManager.Pages.ErrorModel": "RaceManager.Pages.ErrorModel.yml",
+  "RaceManager.Pages.ErrorModel.#ctor(ILogger{RaceManager.Pages.ErrorModel})": "RaceManager.Pages.ErrorModel.yml",
+  "RaceManager.Pages.ErrorModel.OnGet": "RaceManager.Pages.ErrorModel.yml",
+  "RaceManager.Pages.ErrorModel.RequestId": "RaceManager.Pages.ErrorModel.yml",
+  "RaceManager.Pages.ErrorModel.ShowRequestId": "RaceManager.Pages.ErrorModel.yml"
+}

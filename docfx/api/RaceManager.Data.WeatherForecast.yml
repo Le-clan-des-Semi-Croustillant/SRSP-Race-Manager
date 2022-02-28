@@ -1,0 +1,505 @@
+### YamlMime:ManagedReference
+items:
+- uid: RaceManager.Data.WeatherForecast
+  commentId: T:RaceManager.Data.WeatherForecast
+  id: WeatherForecast
+  parent: RaceManager.Data
+  children:
+  - RaceManager.Data.WeatherForecast.Date
+  - RaceManager.Data.WeatherForecast.Summary
+  - RaceManager.Data.WeatherForecast.TemperatureC
+  - RaceManager.Data.WeatherForecast.TemperatureF
+  langs:
+  - csharp
+  - vb
+  name: WeatherForecast
+  nameWithType: WeatherForecast
+  fullName: RaceManager.Data.WeatherForecast
+  type: Class
+  source:
+    id: WeatherForecast
+    path: C:\Users\green\Desktop\SRSP-Race-Manager\RaceManager\Data\WeatherForecast.cs
+    startLine: 2
+  assemblies:
+  - RaceManager
+  namespace: RaceManager.Data
+  syntax:
+    content: public class WeatherForecast
+    content.vb: Public Class WeatherForecast
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: RaceManager.Data.WeatherForecast.Date
+  commentId: P:RaceManager.Data.WeatherForecast.Date
+  id: Date
+  parent: RaceManager.Data.WeatherForecast
+  langs:
+  - csharp
+  - vb
+  name: Date
+  nameWithType: WeatherForecast.Date
+  fullName: RaceManager.Data.WeatherForecast.Date
+  type: Property
+  source:
+    id: Date
+    path: C:\Users\green\Desktop\SRSP-Race-Manager\RaceManager\Data\WeatherForecast.cs
+    startLine: 4
+  assemblies:
+  - RaceManager
+  namespace: RaceManager.Data
+  syntax:
+    content: public DateTime Date { get; set; }
+    parameters: []
+    return:
+      type: DateTime
+    content.vb: Public Property Date As DateTime
+  overload: RaceManager.Data.WeatherForecast.Date*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: RaceManager.Data.WeatherForecast.TemperatureC
+  commentId: P:RaceManager.Data.WeatherForecast.TemperatureC
+  id: TemperatureC
+  parent: RaceManager.Data.WeatherForecast
+  langs:
+  - csharp
+  - vb
+  name: TemperatureC
+  nameWithType: WeatherForecast.TemperatureC
+  fullName: RaceManager.Data.WeatherForecast.TemperatureC
+  type: Property
+  source:
+    id: TemperatureC
+    path: C:\Users\green\Desktop\SRSP-Race-Manager\RaceManager\Data\WeatherForecast.cs
+    startLine: 6
+  assemblies:
+  - RaceManager
+  namespace: RaceManager.Data
+  syntax:
+    content: public int TemperatureC { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TemperatureC As Integer
+  overload: RaceManager.Data.WeatherForecast.TemperatureC*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: RaceManager.Data.WeatherForecast.TemperatureF
+  commentId: P:RaceManager.Data.WeatherForecast.TemperatureF
+  id: TemperatureF
+  parent: RaceManager.Data.WeatherForecast
+  langs:
+  - csharp
+  - vb
+  name: TemperatureF
+  nameWithType: WeatherForecast.TemperatureF
+  fullName: RaceManager.Data.WeatherForecast.TemperatureF
+  type: Property
+  source:
+    id: TemperatureF
+    path: C:\Users\green\Desktop\SRSP-Race-Manager\RaceManager\Data\WeatherForecast.cs
+    startLine: 8
+  assemblies:
+  - RaceManager
+  namespace: RaceManager.Data
+  syntax:
+    content: public int TemperatureF { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property TemperatureF As Integer
+  overload: RaceManager.Data.WeatherForecast.TemperatureF*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: RaceManager.Data.WeatherForecast.Summary
+  commentId: P:RaceManager.Data.WeatherForecast.Summary
+  id: Summary
+  parent: RaceManager.Data.WeatherForecast
+  langs:
+  - csharp
+  - vb
+  name: Summary
+  nameWithType: WeatherForecast.Summary
+  fullName: RaceManager.Data.WeatherForecast.Summary
+  type: Property
+  source:
+    id: Summary
+    path: C:\Users\green\Desktop\SRSP-Race-Manager\RaceManager\Data\WeatherForecast.cs
+    startLine: 10
+  assemblies:
+  - RaceManager
+  namespace: RaceManager.Data
+  syntax:
+    content: public string Summary { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Summary As String
+  overload: RaceManager.Data.WeatherForecast.Summary*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: RaceManager.Data
+  commentId: N:RaceManager.Data
+  name: RaceManager.Data
+  nameWithType: RaceManager.Data
+  fullName: RaceManager.Data
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: RaceManager.Data.WeatherForecast.Date*
+  commentId: Overload:RaceManager.Data.WeatherForecast.Date
+  name: Date
+  nameWithType: WeatherForecast.Date
+  fullName: RaceManager.Data.WeatherForecast.Date
+- uid: DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: DateTime
+- uid: RaceManager.Data.WeatherForecast.TemperatureC*
+  commentId: Overload:RaceManager.Data.WeatherForecast.TemperatureC
+  name: TemperatureC
+  nameWithType: WeatherForecast.TemperatureC
+  fullName: RaceManager.Data.WeatherForecast.TemperatureC
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: RaceManager.Data.WeatherForecast.TemperatureF*
+  commentId: Overload:RaceManager.Data.WeatherForecast.TemperatureF
+  name: TemperatureF
+  nameWithType: WeatherForecast.TemperatureF
+  fullName: RaceManager.Data.WeatherForecast.TemperatureF
+- uid: RaceManager.Data.WeatherForecast.Summary*
+  commentId: Overload:RaceManager.Data.WeatherForecast.Summary
+  name: Summary
+  nameWithType: WeatherForecast.Summary
+  fullName: RaceManager.Data.WeatherForecast.Summary
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
