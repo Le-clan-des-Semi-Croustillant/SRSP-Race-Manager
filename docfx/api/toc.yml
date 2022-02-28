@@ -1,0 +1,13 @@
+### YamlMime:TableOfContent
+- uid: BlazorApp1.Data
+  name: BlazorApp1.Data
+  items:
+  - uid: BlazorApp1.Data.WeatherForecast
+    name: WeatherForecast
+  - uid: BlazorApp1.Data.WeatherForecastService
+    name: WeatherForecastService
+- uid: BlazorApp1.Pages
+  name: BlazorApp1.Pages
+  items:
+  - uid: BlazorApp1.Pages.ErrorModel
+    name: ErrorModel
