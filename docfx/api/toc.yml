@@ -1,11 +1,181 @@
 ### YamlMime:TableOfContent
+- uid: RaceManager.Communication
+  name: RaceManager.Communication
+  items:
+  - uid: RaceManager.Communication.AsyncServer
+    name: AsyncServer
+  - uid: RaceManager.Communication.AsyncServer.Client
+    name: AsyncServer.Client
+  - uid: RaceManager.Communication.Configuration
+    name: Configuration
+  - uid: RaceManager.Communication.IMessageType
+    name: IMessageType
+  - uid: RaceManager.Communication.OMessageType
+    name: OMessageType
 - uid: RaceManager.Data
   name: RaceManager.Data
   items:
+  - uid: RaceManager.Data.ChatHub
+    name: ChatHub
+  - uid: RaceManager.Data.count
+    name: count
+  - uid: RaceManager.Data.Data
+    name: Data
   - uid: RaceManager.Data.WeatherForecast
     name: WeatherForecast
   - uid: RaceManager.Data.WeatherForecastService
     name: WeatherForecastService
+- uid: RaceManager.DataProcessing.Json
+  name: RaceManager.DataProcessing.Json
+  items:
+  - uid: RaceManager.DataProcessing.Json.JsonManage
+    name: JsonManage
+  - uid: RaceManager.DataProcessing.Json.JsonParse
+    name: JsonParse
+- uid: RaceManager.DataProcessing.NMEA.NmeaRead
+  name: RaceManager.DataProcessing.NMEA.NmeaRead
+  items:
+  - uid: RaceManager.DataProcessing.NMEA.NmeaRead.IGeographicLocation
+    name: IGeographicLocation
+  - uid: RaceManager.DataProcessing.NMEA.NmeaRead.IMultiSentenceMessage
+    name: IMultiSentenceMessage
+  - uid: RaceManager.DataProcessing.NMEA.NmeaRead.ITimestampedMessage
+    name: ITimestampedMessage
+  - uid: RaceManager.DataProcessing.NMEA.NmeaRead.LaserRangeMessage
+    name: LaserRangeMessage
+  - uid: RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessage
+    name: NmeaMessage
+  - uid: RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMessageTypeAttribute
+    name: NmeaMessageTypeAttribute
+  - uid: RaceManager.DataProcessing.NMEA.NmeaRead.NmeaMultiSentenceMessage
+    name: NmeaMultiSentenceMessage
+  - uid: RaceManager.DataProcessing.NMEA.NmeaRead.Talker
+    name: Talker
+- uid: RaceManager.DataProcessing.NMEA.NmeaType
+  name: RaceManager.DataProcessing.NMEA.NmeaType
+  items:
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Bod
+    name: Bod
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Dtm
+    name: Dtm
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Gbs
+    name: Gbs
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Gga
+    name: Gga
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Gga.FixQuality
+    name: Gga.FixQuality
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Gll
+    name: Gll
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Gll.Mode
+    name: Gll.Mode
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Gns
+    name: Gns
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Gns.Mode
+    name: Gns.Mode
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Gns.NavigationalStatus
+    name: Gns.NavigationalStatus
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Grs
+    name: Grs
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Grs.GrsMode
+    name: Grs.GrsMode
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Gsa
+    name: Gsa
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Gsa.FixType
+    name: Gsa.FixType
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Gsa.ModeSelection
+    name: Gsa.ModeSelection
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Gst
+    name: Gst
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Gsv
+    name: Gsv
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Pgrme
+    name: Pgrme
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Pgrmz
+    name: Pgrmz
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Pgrmz.AltitudeUnit
+    name: Pgrmz.AltitudeUnit
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Pgrmz.PositionFixType
+    name: Pgrmz.PositionFixType
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Pltit
+    name: Pltit
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Ptnla
+    name: Ptnla
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Ptnlb
+    name: Ptnlb
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Rma
+    name: Rma
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Rma.PositioningMode
+    name: Rma.PositioningMode
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Rma.PositioningStatus
+    name: Rma.PositioningStatus
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Rmb
+    name: Rmb
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Rmb.DataStatus
+    name: Rmb.DataStatus
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Rmc
+    name: Rmc
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Rte
+    name: Rte
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Rte.WaypointListType
+    name: Rte.WaypointListType
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.SatelliteSystem
+    name: SatelliteSystem
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.SatelliteVehicle
+    name: SatelliteVehicle
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.UnknownMessage
+    name: UnknownMessage
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Vlw
+    name: Vlw
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Vtg
+    name: Vtg
+  - uid: RaceManager.DataProcessing.NMEA.NmeaType.Zda
+    name: Zda
+- uid: RaceManager.DataProcessing.NMEA.NmeaWrite
+  name: RaceManager.DataProcessing.NMEA.NmeaWrite
+  items:
+  - uid: RaceManager.DataProcessing.NMEA.NmeaWrite.NmeaMessageWriter
+    name: NmeaMessageWriter
+- uid: RaceManager.DataProcessing.NMEAV0
+  name: RaceManager.DataProcessing.NMEAV0
+  items:
+  - uid: RaceManager.DataProcessing.NMEAV0.GLL
+    name: GLL
+  - uid: RaceManager.DataProcessing.NMEAV0.ListNmeaType
+    name: ListNmeaType
+  - uid: RaceManager.DataProcessing.NMEAV0.NmeaParse
+    name: NmeaParse
+- uid: RaceManager.DataProcessing.NMEAV0.NmeaType
+  name: RaceManager.DataProcessing.NMEAV0.NmeaType
+  items:
+  - uid: RaceManager.DataProcessing.NMEAV0.NmeaType.GGA
+    name: GGA
+- uid: RaceManager.Language
+  name: RaceManager.Language
+  items:
+  - uid: RaceManager.Language.LocaleManager
+    name: LocaleManager
+  - uid: RaceManager.Language.Locales
+    name: Locales
+- uid: RaceManager.Lecture
+  name: RaceManager.Lecture
+  items:
+  - uid: RaceManager.Lecture.Course
+    name: Course
+  - uid: RaceManager.Lecture.FichierBateauAutoriseCourse
+    name: FichierBateauAutoriseCourse
+  - uid: RaceManager.Lecture.FichierGpx
+    name: FichierGpx
+  - uid: RaceManager.Lecture.FichierPol
+    name: FichierPol
+  - uid: RaceManager.Lecture.Polaire
+    name: Polaire
+  - uid: RaceManager.Lecture.TypeBateau
+    name: TypeBateau
+- uid: RaceManager.Lecture.XMLReadAndParse
+  name: RaceManager.Lecture.XMLReadAndParse
+  items:
+  - uid: RaceManager.Lecture.XMLReadAndParse.GPXLoader
+    name: GPXLoader
 - uid: RaceManager.Pages
   name: RaceManager.Pages
   items:
