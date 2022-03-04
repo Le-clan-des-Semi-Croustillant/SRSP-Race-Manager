@@ -1,4 +1,5 @@
 ﻿@page "/counter"
+@using RaceManager.Language
 
 <PageTitle>Counter</PageTitle>
 
@@ -8,6 +9,19 @@
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
+<p role="status">@Locales.Settings</p>
+<button class="btn btn-primary" @onclick="lanSwitch">Switch Language</button>
+
+<div class="FixedHeightContainer">
+    <h2>Title</h2>
+    <div class="Content">
+        @for (int i = 0; i < currentCount; i++)
+        {
+            <button class="btn btn-primary" @onclick="lanSwitch">bouton @i </button>
+        }
+    </div>
+</div>
+
 @code {
     private int currentCount = 0;
 
@@ -15,4 +29,14 @@
     {
         currentCount++;
     }
+
+    private bool state = false;
+
+    private void lanSwitch()
+    {
+        state = !state;
+        LocaleManager.CurrentCulture = state ? "fr" : "en";
+        LocaleManager.UpdateCulture();
+    }
+
 }

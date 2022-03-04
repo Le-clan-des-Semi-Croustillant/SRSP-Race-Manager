@@ -10,4 +10,9 @@ namespace RaceManager.Data
 
         public string? Summary { get; set; }
     }
+
+    public class count
+    {
+        public int Counter = 0;
+    }
 }

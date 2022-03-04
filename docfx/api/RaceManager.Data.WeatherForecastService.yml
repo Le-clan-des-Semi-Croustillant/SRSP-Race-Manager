@@ -14,8 +14,12 @@ items:
   fullName: RaceManager.Data.WeatherForecastService
   type: Class
   source:
+    remote:
+      path: RaceManager/Data/WeatherForecastService.cs
+      branch: main
+      repo: https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager.git
     id: WeatherForecastService
-    path: C:\Users\green\Desktop\SRSP-Race-Manager\RaceManager\Data\WeatherForecastService.cs
+    path: ../RaceManager/Data/WeatherForecastService.cs
     startLine: 2
   assemblies:
   - RaceManager
@@ -51,8 +55,12 @@ items:
   fullName: RaceManager.Data.WeatherForecastService.GetForecastAsync(DateTime)
   type: Method
   source:
+    remote:
+      path: RaceManager/Data/WeatherForecastService.cs
+      branch: main
+      repo: https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager.git
     id: GetForecastAsync
-    path: C:\Users\green\Desktop\SRSP-Race-Manager\RaceManager\Data\WeatherForecastService.cs
+    path: ../RaceManager/Data/WeatherForecastService.cs
     startLine: 9
   assemblies:
   - RaceManager

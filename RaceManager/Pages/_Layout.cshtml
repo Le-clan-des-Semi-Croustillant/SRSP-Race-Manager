@@ -1,6 +1,11 @@
 ﻿@using Microsoft.AspNetCore.Components.Web
+@using RaceManager.Language
 @namespace RaceManager.Pages
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    LocaleManager.UpdateCulture();
+}
 
 <!DOCTYPE html>
 <html lang="en">

@@ -17,8 +17,12 @@ items:
   fullName: RaceManager.Data.WeatherForecast
   type: Class
   source:
+    remote:
+      path: RaceManager/Data/WeatherForecast.cs
+      branch: main
+      repo: https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager.git
     id: WeatherForecast
-    path: C:\Users\green\Desktop\SRSP-Race-Manager\RaceManager\Data\WeatherForecast.cs
+    path: ../RaceManager/Data/WeatherForecast.cs
     startLine: 2
   assemblies:
   - RaceManager
@@ -54,8 +58,12 @@ items:
   fullName: RaceManager.Data.WeatherForecast.Date
   type: Property
   source:
+    remote:
+      path: RaceManager/Data/WeatherForecast.cs
+      branch: main
+      repo: https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager.git
     id: Date
-    path: C:\Users\green\Desktop\SRSP-Race-Manager\RaceManager\Data\WeatherForecast.cs
+    path: ../RaceManager/Data/WeatherForecast.cs
     startLine: 4
   assemblies:
   - RaceManager
@@ -85,8 +93,12 @@ items:
   fullName: RaceManager.Data.WeatherForecast.TemperatureC
   type: Property
   source:
+    remote:
+      path: RaceManager/Data/WeatherForecast.cs
+      branch: main
+      repo: https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager.git
     id: TemperatureC
-    path: C:\Users\green\Desktop\SRSP-Race-Manager\RaceManager\Data\WeatherForecast.cs
+    path: ../RaceManager/Data/WeatherForecast.cs
     startLine: 6
   assemblies:
   - RaceManager
@@ -116,8 +128,12 @@ items:
   fullName: RaceManager.Data.WeatherForecast.TemperatureF
   type: Property
   source:
+    remote:
+      path: RaceManager/Data/WeatherForecast.cs
+      branch: main
+      repo: https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager.git
     id: TemperatureF
-    path: C:\Users\green\Desktop\SRSP-Race-Manager\RaceManager\Data\WeatherForecast.cs
+    path: ../RaceManager/Data/WeatherForecast.cs
     startLine: 8
   assemblies:
   - RaceManager
@@ -147,8 +163,12 @@ items:
   fullName: RaceManager.Data.WeatherForecast.Summary
   type: Property
   source:
+    remote:
+      path: RaceManager/Data/WeatherForecast.cs
+      branch: main
+      repo: https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager.git
     id: Summary
-    path: C:\Users\green\Desktop\SRSP-Race-Manager\RaceManager\Data\WeatherForecast.cs
+    path: ../RaceManager/Data/WeatherForecast.cs
     startLine: 10
   assemblies:
   - RaceManager

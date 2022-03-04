@@ -59,6 +59,20 @@ a, .btn-link {
     color: white;
 }
 
-    .blazor-error-boundary::after {
-        content: "An error has occurred."
-    }
+.blazor-error-boundary::after {
+    content: "An error has occurred."
+}
+
+.FixedHeightContainer {
+    float: right;
+    height: 250px;
+    width: 250px;
+    padding: 3px;
+    background: #f00;
+}
+
+.Content {
+    height: 224px;
+    overflow: auto;
+    background: #fff;
+}
