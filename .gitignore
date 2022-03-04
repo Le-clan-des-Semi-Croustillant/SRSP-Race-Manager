@@ -137,5 +137,7 @@ consoleTests/obj/project.nuget.cache
 *.cache
 docs/manifest.json
 **/log.txt
-Race Manager/api/**
+docfx/api/
+!docfx/api/index.md
+!docfx/api/toc.yml
 *.bak
