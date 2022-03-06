@@ -148,6 +148,54 @@ namespace RaceManager.DataProcessing.Json
         }
     }
 
+    class JsonData
+    {
+        public JsonDataNumber? Data { get; set; }
+        public JsonDataBoat? Boat { get; set; }
+        public JsonDataPol? Pol { get; set; }
+        public JsonDataRace? Race { get; set; }
+    }
+
+    class JsonDataNumber
+    {
+        public int NumberBoat { get; set; }
+        public int NumberPol { get; set; }
+        public int NumberRace { get; set; }
+    }
+    class JsonDataBoat
+    {
+        public string Information { get; set; }
+        public List<JsonDataBoatList> ListBoat { get; set; }
+    }
+    class JsonDataBoatList
+    {
+        public string BoatName { get; set; }
+        public int BoatId { get; set; }
+        public string BoatPath { get; set; }
+    }
+    class JsonDataPol
+    {
+        public string Information { get; set; }
+        public List<JsonDataPolList> ListPol{ get; set; }
+    }
+    class JsonDataPolList
+    {
+        public string PolName { get; set; }
+        public int PolId { get; set; }
+        public string PolPath { get; set; }
+    }
+    class JsonDataRace
+    {
+        public string Information { get; set; }
+        public List<JsonDataRaceList> ListRace { get; set; }
+    }
+    class JsonDataRaceList
+    {
+        public string RaceName { get; set; }
+        public int RaceId { get; set; }
+        public string RacePath { get; set; }
+    }
+
     class JsonTest
     {
         public IMessageType TypeMessage { get; set; }

@@ -25,6 +25,11 @@
     name: WeatherForecast
   - uid: RaceManager.Data.WeatherForecastService
     name: WeatherForecastService
+- uid: RaceManager.DataProcessing.Files
+  name: RaceManager.DataProcessing.Files
+  items:
+  - uid: RaceManager.DataProcessing.Files.FileManage
+    name: FileManage
 - uid: RaceManager.DataProcessing.Json
   name: RaceManager.DataProcessing.Json
   items:

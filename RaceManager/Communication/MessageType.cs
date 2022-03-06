@@ -23,6 +23,6 @@
         BOATSELECTED,
         BOATLIST,
         ENDRACE,
-        RACELISTSEND
+        RACELIST
     }
 }

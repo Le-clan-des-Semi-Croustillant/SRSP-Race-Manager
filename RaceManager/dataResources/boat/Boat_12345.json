@@ -1,0 +1,15 @@
+{
+  "NomDuBateau": "NomDuBateau",
+  "LongueurCoque": 10.2,
+  "LongueurHorsTout": 10.2,
+  "LargeurCoque": 10.2,
+  "LargeurHorsTout": 10.2,
+  "TirantEeau": 10.2,
+  "TirantAir": 10.2,
+  "Poids": 10.2
+
+  //private GPXLoader caracteristiqueLecture = new GPXLoader();
+  //private string[] elementsDeBateau = new string[8];
+  //public Course course = new Course();
+  //public Polaire polaire = new Polaire();
+}

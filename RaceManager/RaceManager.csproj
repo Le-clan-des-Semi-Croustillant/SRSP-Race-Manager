@@ -11,4 +11,9 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="dataResources\pol\" />
+    <Folder Include="dataResources\race\" />
+  </ItemGroup>
+
 </Project>

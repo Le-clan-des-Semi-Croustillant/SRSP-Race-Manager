@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.ResponseCompression;
 using RaceManager.Data;
 using RaceManager.Language;
 using RaceManager.Pages;
+using RaceManager.DataProcessing.Files;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -47,8 +48,11 @@ LocaleManager.UpdateCulture();
 
 Console.WriteLine(Locales.Hello);
 
+FileManage.CheckFilesFolderData();
 
 app.Run();
+
+
 
 
 // void Application_Start(object sender, EventArgs e)

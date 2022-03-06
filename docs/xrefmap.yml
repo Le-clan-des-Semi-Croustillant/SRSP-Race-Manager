@@ -353,12 +353,12 @@ references:
   commentId: F:RaceManager.Communication.OMessageType.INITRACE
   fullName: RaceManager.Communication.OMessageType.INITRACE
   nameWithType: OMessageType.INITRACE
-- uid: RaceManager.Communication.OMessageType.RACELISTSEND
-  name: RACELISTSEND
-  href: api/RaceManager.Communication.OMessageType.html#RaceManager_Communication_OMessageType_RACELISTSEND
-  commentId: F:RaceManager.Communication.OMessageType.RACELISTSEND
-  fullName: RaceManager.Communication.OMessageType.RACELISTSEND
-  nameWithType: OMessageType.RACELISTSEND
+- uid: RaceManager.Communication.OMessageType.RACELIST
+  name: RACELIST
+  href: api/RaceManager.Communication.OMessageType.html#RaceManager_Communication_OMessageType_RACELIST
+  commentId: F:RaceManager.Communication.OMessageType.RACELIST
+  fullName: RaceManager.Communication.OMessageType.RACELIST
+  nameWithType: OMessageType.RACELIST
 - uid: RaceManager.Data
   name: RaceManager.Data
   href: api/RaceManager.Data.html
@@ -497,6 +497,106 @@ references:
   isSpec: "True"
   fullName: RaceManager.Data.WeatherForecastService.GetForecastAsync
   nameWithType: WeatherForecastService.GetForecastAsync
+- uid: RaceManager.DataProcessing.Files
+  name: RaceManager.DataProcessing.Files
+  href: api/RaceManager.DataProcessing.Files.html
+  commentId: N:RaceManager.DataProcessing.Files
+  fullName: RaceManager.DataProcessing.Files
+  nameWithType: RaceManager.DataProcessing.Files
+- uid: RaceManager.DataProcessing.Files.FileManage
+  name: FileManage
+  href: api/RaceManager.DataProcessing.Files.FileManage.html
+  commentId: T:RaceManager.DataProcessing.Files.FileManage
+  fullName: RaceManager.DataProcessing.Files.FileManage
+  nameWithType: FileManage
+- uid: RaceManager.DataProcessing.Files.FileManage.CheckDirectory(System.String)
+  name: CheckDirectory(String)
+  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_CheckDirectory_System_String_
+  commentId: M:RaceManager.DataProcessing.Files.FileManage.CheckDirectory(System.String)
+  fullName: RaceManager.DataProcessing.Files.FileManage.CheckDirectory(System.String)
+  nameWithType: FileManage.CheckDirectory(String)
+- uid: RaceManager.DataProcessing.Files.FileManage.CheckDirectory*
+  name: CheckDirectory
+  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_CheckDirectory_
+  commentId: Overload:RaceManager.DataProcessing.Files.FileManage.CheckDirectory
+  isSpec: "True"
+  fullName: RaceManager.DataProcessing.Files.FileManage.CheckDirectory
+  nameWithType: FileManage.CheckDirectory
+- uid: RaceManager.DataProcessing.Files.FileManage.CheckFilesFolderData
+  name: CheckFilesFolderData()
+  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_CheckFilesFolderData
+  commentId: M:RaceManager.DataProcessing.Files.FileManage.CheckFilesFolderData
+  fullName: RaceManager.DataProcessing.Files.FileManage.CheckFilesFolderData()
+  nameWithType: FileManage.CheckFilesFolderData()
+- uid: RaceManager.DataProcessing.Files.FileManage.CheckFilesFolderData*
+  name: CheckFilesFolderData
+  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_CheckFilesFolderData_
+  commentId: Overload:RaceManager.DataProcessing.Files.FileManage.CheckFilesFolderData
+  isSpec: "True"
+  fullName: RaceManager.DataProcessing.Files.FileManage.CheckFilesFolderData
+  nameWithType: FileManage.CheckFilesFolderData
+- uid: RaceManager.DataProcessing.Files.FileManage.CreateDirectory(System.String)
+  name: CreateDirectory(String)
+  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_CreateDirectory_System_String_
+  commentId: M:RaceManager.DataProcessing.Files.FileManage.CreateDirectory(System.String)
+  fullName: RaceManager.DataProcessing.Files.FileManage.CreateDirectory(System.String)
+  nameWithType: FileManage.CreateDirectory(String)
+- uid: RaceManager.DataProcessing.Files.FileManage.CreateDirectory*
+  name: CreateDirectory
+  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_CreateDirectory_
+  commentId: Overload:RaceManager.DataProcessing.Files.FileManage.CreateDirectory
+  isSpec: "True"
+  fullName: RaceManager.DataProcessing.Files.FileManage.CreateDirectory
+  nameWithType: FileManage.CreateDirectory
+- uid: RaceManager.DataProcessing.Files.FileManage.currentDirectory
+  name: currentDirectory
+  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_currentDirectory
+  commentId: F:RaceManager.DataProcessing.Files.FileManage.currentDirectory
+  fullName: RaceManager.DataProcessing.Files.FileManage.currentDirectory
+  nameWithType: FileManage.currentDirectory
+- uid: RaceManager.DataProcessing.Files.FileManage.pathData
+  name: pathData
+  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_pathData
+  commentId: F:RaceManager.DataProcessing.Files.FileManage.pathData
+  fullName: RaceManager.DataProcessing.Files.FileManage.pathData
+  nameWithType: FileManage.pathData
+- uid: RaceManager.DataProcessing.Files.FileManage.pathDataBoat
+  name: pathDataBoat
+  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_pathDataBoat
+  commentId: F:RaceManager.DataProcessing.Files.FileManage.pathDataBoat
+  fullName: RaceManager.DataProcessing.Files.FileManage.pathDataBoat
+  nameWithType: FileManage.pathDataBoat
+- uid: RaceManager.DataProcessing.Files.FileManage.pathDataPol
+  name: pathDataPol
+  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_pathDataPol
+  commentId: F:RaceManager.DataProcessing.Files.FileManage.pathDataPol
+  fullName: RaceManager.DataProcessing.Files.FileManage.pathDataPol
+  nameWithType: FileManage.pathDataPol
+- uid: RaceManager.DataProcessing.Files.FileManage.pathDataRace
+  name: pathDataRace
+  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_pathDataRace
+  commentId: F:RaceManager.DataProcessing.Files.FileManage.pathDataRace
+  fullName: RaceManager.DataProcessing.Files.FileManage.pathDataRace
+  nameWithType: FileManage.pathDataRace
+- uid: RaceManager.DataProcessing.Files.FileManage.pathJsonData
+  name: pathJsonData
+  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_pathJsonData
+  commentId: F:RaceManager.DataProcessing.Files.FileManage.pathJsonData
+  fullName: RaceManager.DataProcessing.Files.FileManage.pathJsonData
+  nameWithType: FileManage.pathJsonData
+- uid: RaceManager.DataProcessing.Files.FileManage.UpdateJsonData
+  name: UpdateJsonData()
+  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_UpdateJsonData
+  commentId: M:RaceManager.DataProcessing.Files.FileManage.UpdateJsonData
+  fullName: RaceManager.DataProcessing.Files.FileManage.UpdateJsonData()
+  nameWithType: FileManage.UpdateJsonData()
+- uid: RaceManager.DataProcessing.Files.FileManage.UpdateJsonData*
+  name: UpdateJsonData
+  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_UpdateJsonData_
+  commentId: Overload:RaceManager.DataProcessing.Files.FileManage.UpdateJsonData
+  isSpec: "True"
+  fullName: RaceManager.DataProcessing.Files.FileManage.UpdateJsonData
+  nameWithType: FileManage.UpdateJsonData
 - uid: RaceManager.DataProcessing.Json
   name: RaceManager.DataProcessing.Json
   href: api/RaceManager.DataProcessing.Json.html

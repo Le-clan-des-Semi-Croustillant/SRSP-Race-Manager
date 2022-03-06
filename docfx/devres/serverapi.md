@@ -8,8 +8,8 @@
 
 | MessageType Entrée | description | Json reçu | MessageType Sortie | description |
 | -----------     | ----------- | ----------- |  ----------- | ----------- | 
-| BOATLISTREQUEST | Reçoit une demande pour la liste des bateaux et des polaires existants |  `{ "TypeMessage" : "BOATLISTREQUEST" }` | BOATLIST | Envoie du fichier data.json et des fichier contenu dans boat et pol |
-| RACELISTUPDATE | Reçoit une demande pour la liste des courses | `{ "TypeMessage" : "RACELISTUPDATE" }` | RACELIST | Envoie du fichier data.json et des fichiers contenus dans race |
+| BOATLISTREQUEST | Reçois une demande pour la liste des bateaux et des polaires existants |  `{ "TypeMessage" : "BOATLISTREQUEST" }` | BOATLIST | Envoie du fichier data.json et des fichiers contenus dans boat et pol |
+| RACELISTUPDATE | Reçois une demande pour la liste des courses | `{ "TypeMessage" : "RACELISTUPDATE" }` | RACELIST | Envoie du fichier data.json et des fichiers contenus dans race |
 
 <!-- | MessageType Entrée |  Json reçu |  MessageType Sortie |
 | ----------- | ----------- | ----------- |
