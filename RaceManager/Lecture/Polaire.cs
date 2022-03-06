@@ -2,7 +2,11 @@
 {
     public class Polaire
     {
-        public FichierPol lienFichierPolaire = new FichierPol();
+        public int IdPolaire { get; set; }
         public string NomPolaire { get; set; }
+
+
+        public List<FichierPol> ListLiensFichierPolaire = new List<FichierPol>();
+
     }
 }
