@@ -29,6 +29,8 @@ body {
   -webkit-text-size-adjust: 100%;
   word-wrap: break-word;
   background-color: var(--color-background);
+  margin-left: 7%;
+
 }
 
 .btn.focus, .btn:focus, .btn:hover {
