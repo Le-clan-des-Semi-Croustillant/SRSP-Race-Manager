@@ -1,12 +1,20 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.ResponseCompression;
+using RaceManager;
 using RaceManager.Data;
 using RaceManager.Language;
 using RaceManager.Pages;
 using RaceManager.DataProcessing.Files;
+using RaceManager.Lecture;
+
+Logger.LogLevel = LoggingLevel.DEBUG;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//BoatType.BoatList.Add(new BoatType() { BoatName = "Bateau 1", IDTypeBateau = 5412, LargeurCoque = 4, LargeurHorsTout = 1, Poids = 4, TirantAir = 1, TirantEeau = 2, LongueurCoque = 5, LongueurHorsTout = 1, polaire = null });
+
+
 
 // Add services to the container.
 builder.Services.AddRazorPages();
@@ -17,6 +25,8 @@ builder.Services.AddResponseCompression(opts =>
     opts.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(
         new[] { "application/octet-stream" });
 });
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
 
 var app = builder.Build();
 
@@ -41,14 +51,20 @@ app.MapHub<ChatHub>("/chathub");
 count c = new count();
 
 //Application["Counter"] = 0; = 999;
-LocaleManager.UpdateCulture();
-Console.WriteLine(Locales.Hello);
+//LocaleManager.UpdateCulture();
+//Console.WriteLine(Locales.Hello);
 LocaleManager.CurrentCulture = "fr";
 LocaleManager.UpdateCulture();
 
-Console.WriteLine(Locales.Hello);
+Logger.log(LoggingLevel.DEBUG, "Initialisation", Locales.Hello);
+Logger.log(LoggingLevel.ERROR, "Initialisation", "RANDOM ERROR");
+Logger.log(LoggingLevel.INFO, "Initialisation", "Simple information");
+
 
 FileManage.CheckFilesFolderData();
+
+
+
 
 app.Run();
 
