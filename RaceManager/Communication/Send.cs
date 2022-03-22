@@ -20,6 +20,19 @@ namespace RaceManager.Communication
                 new AsyncCallback(SendCallback), handler);
         }
 
+        private static void SendFile(Socket handler)
+        {
+            // Convert the string data to byte data using ASCII encoding.
+
+
+            //byte[] byteData = Encoding.ASCII.GetBytes(data);
+            string data = @"C:\Users\Sky\Documents\GitHub\LCSC-dev\SRSP-Race-Manager\RaceManager\dataResources\data.json";
+            // Begin sending the data to the remote device.
+            //handler.SendFileAsync(data, 0, data.Length, 0,
+            //    new AsyncCallback(SendCallback), handler);
+            handler.SendFile(data);
+        }
+
         private static void SendCallback(IAsyncResult ar)
         {
             try

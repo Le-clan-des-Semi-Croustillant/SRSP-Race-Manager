@@ -1,5 +1,7 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using RaceManager.DataProcessing.Json;
+using RaceManager.Reading;
 
 namespace RaceManager.DataProcessing.Files
 {
@@ -31,11 +33,33 @@ namespace RaceManager.DataProcessing.Files
             string[] filesRace = Directory.GetFiles(pathDataRace);
 
             List<JsonDataBoatList> listBoat = new List<JsonDataBoatList>();
-            List<JsonDataPolList> listPol= new List<JsonDataPolList>();
+            List<JsonDataPolList> listPol = new List<JsonDataPolList>();
             List<JsonDataRaceList> listRace = new List<JsonDataRaceList>();
 
             for (int i = 0; i < filesBoat.Length; i++)
             {
+                //string dataFile = File.ReadAllText(filesBoat[i]);
+                //if (!string.IsNullOrWhiteSpace(dataFile))
+                //{
+                //    dataFile = dataFile.Trim();
+                //    if ((dataFile.StartsWith("{ ") && dataFile.EndsWith("}")) || (dataFile.StartsWith("[") && dataFile.EndsWith("]")))
+                //    {
+                //        try
+                //        {
+                //            var obj = JToken.Parse(dataFile);
+                //        }
+                //        catch (JsonReaderException jex)
+                //        {
+                //            //Exception in parsing json
+                //            Console.WriteLine(jex.Message);
+                //        }
+                //        catch (Exception ex) //some other exception
+                //        {
+                //            Console.WriteLine(ex.ToString());
+                //        }
+                //    }
+                //}
+               
                 string file = Path.GetFileNameWithoutExtension(filesBoat[i]);
                 string fileExt = Path.GetFileName(filesBoat[i]);
                 string[] nameFile = file.Split("_");
@@ -93,6 +117,44 @@ namespace RaceManager.DataProcessing.Files
             string jsonString = System.Text.Json.JsonSerializer.Serialize(dataConstruction);
             WriteInFile.WriteFilePath(pathJsonData, jsonString);
 
+        }
+
+        public static void CreateBoatJson(int ID, string Name,
+            float HullLength, float OverallLength, float HullWidth,
+            float OverallWidth, float Draft, float AirDraft, float Weight, Polaire polaire)
+        {
+            var DataBoat = new TypeBoat
+            {
+                ID = ID,
+                Name = Name,
+                HullLength = HullLength,
+                OverallLength = OverallLength,
+                HullWidth = HullWidth,
+                OverallWidth = OverallWidth,
+                Draft = Draft,
+                AirDraft = AirDraft,
+                Weight = Weight,
+                polaire = polaire
+            };
+            string pathFile = pathDataBoat + Name + "_" + ID + ".json";
+            string jsonString = System.Text.Json.JsonSerializer.Serialize(DataBoat);
+            File.Create(pathFile).Close();
+            WriteInFile.WriteFilePath(pathFile, jsonString);
+            UpdateJsonData();
+        }
+
+        public static void CreateFilePolaire(string Name, int ID, string data)
+        {
+            string pathFile = pathDataPol + Name + "_" + ID + ".pol";
+            File.Create(pathFile).Close();
+            WriteInFile.WriteFilePath(pathFile, data);
+            UpdateJsonData();
+        }
+
+        public static void DeleteFile(string path)
+        {
+            File.Delete(path);
+            UpdateJsonData();
         }
 
         class WriteInFile
