@@ -12,6 +12,7 @@ namespace RaceManager.Lecture
 {
     public class BoatType
     {
+
         public static List<BoatType> BoatTypesList = new();
         public int IDTypeBateau { get; set; }
         public string Name { get; set; }
