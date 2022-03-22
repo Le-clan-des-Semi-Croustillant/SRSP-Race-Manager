@@ -6,7 +6,9 @@
         public string NomPolaire { get; set; }
 
 
-        public FichierPol polaireAssocie = new FichierPol();
+        public PolFile polaireAssocie = new PolFile();
+
+
 
     }
 }

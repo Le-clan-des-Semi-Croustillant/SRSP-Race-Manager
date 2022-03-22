@@ -24,7 +24,7 @@ namespace RaceManager.Lecture
         public float TirantAir { get; set; }
         public float Poids { get; set; }
 
-        public Polaire polaire = new Polaire();
+        public List<Polaire> ListLiensFichierPolaire = new List<Polaire>();
 
     }
 
