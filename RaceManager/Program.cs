@@ -7,18 +7,32 @@ using RaceManager.Language;
 using RaceManager.Pages;
 using RaceManager.DataProcessing.Files;
 using RaceManager.Lecture;
+using Microsoft.AspNetCore.ResponseCompression;
 
 Logger.LogLevel = LoggingLevel.DEBUG;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//BoatType.BoatList.Add(new BoatType() { BoatName = "Bateau 1", IDTypeBateau = 5412, LargeurCoque = 4, LargeurHorsTout = 1, Poids = 4, TirantAir = 1, TirantEeau = 2, LongueurCoque = 5, LongueurHorsTout = 1, polaire = null });
+BoatType.BoatTypesList.Add(new BoatType()
+{
+    Name = "Bateau 1",
+    IDTypeBateau = 5412,
+    LargeurCoque = 4,
+    LargeurHorsTout = 1,
+    Poids = 4,
+    TirantAir = 1,
+    TirantEeau = 2,
+    LongueurCoque = 5,
+    LongueurHorsTout = 1,
+    polaire = null
+});
 
 
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+builder.Services.AddSignalR();
 builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddResponseCompression(opts =>
 {
@@ -46,7 +60,7 @@ app.UseRouting();
 
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
-app.MapHub<ChatHub>("/chathub");
+app.MapHub<BoatTypesListHub>("/boattypeshub");
 
 count c = new count();
 
@@ -56,12 +70,10 @@ count c = new count();
 LocaleManager.CurrentCulture = "fr";
 LocaleManager.UpdateCulture();
 
-Logger.log(LoggingLevel.DEBUG, "Initialisation", Locales.Hello);
-Logger.log(LoggingLevel.ERROR, "Initialisation", "RANDOM ERROR");
-Logger.log(LoggingLevel.INFO, "Initialisation", "Simple information");
-
-
 FileManage.CheckFilesFolderData();
+
+
+Logger.log(LoggingLevel.INFO, "Initialisation", "This software is currently in " + Locales.CurrentLanguage + ".");
 
 
 

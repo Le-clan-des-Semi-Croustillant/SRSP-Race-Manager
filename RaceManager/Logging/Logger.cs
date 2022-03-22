@@ -3,24 +3,29 @@ namespace RaceManager
 {
     public class Logger
     {
+        private static Mutex mut = new Mutex();
+
         public static LoggingLevel LogLevel = LoggingLevel.OFF;
         public static void log(LoggingLevel level, string caller, string message)
         {
+            mut.WaitOne();
+
             if (level <= LogLevel && level != LoggingLevel.OFF)
             {
                 Console.Write(String.Format("{0,-16} | ", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")));
                 WriteLevel(level);
                 WriteCaller(caller);
                 Console.Write(": ");
-                Console.Write(String.Format("{1}\n", caller, message));
+                Console.WriteLine(String.Format("{1}", caller, message));
 
             }
+            mut.ReleaseMutex();
         }
 
         private static void WriteCaller(string caller)
         {
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
-            Console.Write(String.Format("[{0,-10}] ", caller));
+            Console.Write(String.Format("[{0,-20}] ", caller));
             Console.ResetColor();
         }
 

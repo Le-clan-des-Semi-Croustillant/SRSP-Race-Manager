@@ -1,0 +1,86 @@
+﻿@page "/boattypes"
+@using RaceManager.Language
+@using Microsoft.AspNetCore.SignalR.Client
+@using RaceManager.Lecture
+@using System.Diagnostics.Eventing.Reader
+@inject NavigationManager NavigationManager
+
+<PageTitle>Boat types management</PageTitle>
+
+
+
+
+<div class="FixedHeightContainer">
+    <div class="Content">
+        @for (int i = 0; i < currentCount; i++)
+        {
+            <p> <button disabled="@(!IsConnected)"> bouton @i </button> </p>
+        }
+    </div>
+</div>
+
+<button class="btn btn-primary" @onclick="AddNewBoatType">Add a new boat type @if(boatTypesList is not null) @(boatTypesList[0].IDTypeBateau) </button>
+
+@code {
+    private HubConnection? hubConnection;
+    private int currentCount = 0;
+    private List<BoatType> boatTypesList = BoatType.BoatTypesList;
+
+    //BoatTypesManagement.razor
+
+
+    private void AddNewBoatType()
+    {
+        currentCount++;
+        Logger.log(LoggingLevel.DEBUG, "BoatTypes.razor", "User clicked on NewBoat");
+        Send();
+    }
+
+    private bool state = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        hubConnection = new HubConnectionBuilder().WithUrl(NavigationManager.ToAbsoluteUri("/boattypeshub" ) ).Build();
+
+        hubConnection.On<List<BoatType>>("ReceiveMessage", btl =>
+        {
+            Logger.log(LoggingLevel.DEBUG, "BoatTypes.razor", $"Server sent {btl[0].IDTypeBateau}");
+            boatTypesList = btl;
+            StateHasChanged();
+        });
+
+        await hubConnection.StartAsync();
+        //boatTypesList.Add(new BoatType()
+        //{
+        //    Name = "Bateau 7",
+        //    IDTypeBateau = 22,
+        //    LargeurCoque = 4,
+        //    LargeurHorsTout = 1,
+        //    Poids = 4,
+        //    TirantAir = 1,
+        //    TirantEeau = 233,
+        //    LongueurCoque = 5,
+        //    LongueurHorsTout = 1,
+        //    polaire = null
+        //});
+    }
+
+    private async Task Send()
+    {
+        if (hubConnection is not null)
+        {
+            await hubConnection.SendAsync("SendMessage", boatTypesList);
+        }
+    }
+
+    public bool IsConnected =>
+        hubConnection?.State == HubConnectionState.Connected;
+
+    public async ValueTask DisposeAsync()
+    {
+        if (hubConnection is not null)
+        {
+            await hubConnection.DisposeAsync();
+        }
+    }
+}

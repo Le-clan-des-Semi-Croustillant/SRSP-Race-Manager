@@ -216,4 +216,7 @@
   <data name="SettingsDesc" xml:space="preserve">
     <value>Paramêtre de l'application web et du serveur.</value>
   </data>
+  <data name="CurrentLanguage" xml:space="preserve">
+    <value>Français</value>
+  </data>
 </root>

@@ -216,4 +216,7 @@
   <data name="SwapTo" xml:space="preserve">
     <value>Swapping to</value>
   </data>
+  <data name="CurrentLanguage" xml:space="preserve">
+    <value>English</value>
+  </data>
 </root>
