@@ -98,6 +98,10 @@ namespace RaceManager.Communication
                     Console.WriteLine("\nSend to client");
                     Send(handler, SendAtt);
                     Console.WriteLine("\n");
+                    SendFile(handler);
+
+
+
                 }
                 else
                 {

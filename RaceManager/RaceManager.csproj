@@ -14,8 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Communication\SendFile\" />
+    <Folder Include="dataResources\gpx\" />
     <Folder Include="dataResources\pol\" />
-    <Folder Include="dataResources\race\" />
   </ItemGroup>
 
 </Project>
