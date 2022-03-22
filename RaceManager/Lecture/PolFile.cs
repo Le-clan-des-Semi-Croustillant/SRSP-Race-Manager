@@ -2,6 +2,6 @@
 {
     public class PolFile
     {
-        public string poalFile { get; set; }
+        public string pathFile { get; set; }
     }
 }
