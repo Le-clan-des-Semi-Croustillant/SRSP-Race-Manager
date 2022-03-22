@@ -6,7 +6,7 @@
         public string NomPolaire { get; set; }
 
 
-        public List<FichierPol> ListLiensFichierPolaire = new List<FichierPol>();
+        public FichierPol polaireAssocie = new FichierPol();
 
     }
 }

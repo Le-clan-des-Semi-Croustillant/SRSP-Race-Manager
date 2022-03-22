@@ -10,7 +10,7 @@ namespace RaceManager.Lecture
 {
     public class TypeBateau
     {
-
+        public List<TypeBateau> ListeDeTypeDeBateau = new List<TypeBateau>();
         public int IDTypeBateau { get; set; }
         public string NomDuBateau { get; set; }
         public float LongueurCoque { get; set; }
@@ -21,7 +21,7 @@ namespace RaceManager.Lecture
         public float TirantAir { get; set; }
         public float Poids { get; set; }
 
-        public Polaire polaire = new Polaire();
+        public List<Polaire> ListLiensFichierPolaire = new List<Polaire>();
 
 
 
