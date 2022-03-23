@@ -13,7 +13,7 @@ Logger.LogLevel = LoggingLevel.DEBUG;
 
 var builder = WebApplication.CreateBuilder(args);
 
-BoatType.BoatTypesList.Add(new BoatType()
+BoatType.BoatTypesList.Add(new BoatType("A boat")
 {
     Name = "Bateau 1",
     IDTypeBateau = 5412,

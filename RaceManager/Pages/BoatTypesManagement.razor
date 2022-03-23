@@ -8,39 +8,86 @@
 <PageTitle>Boat types management</PageTitle>
 
 
+<div class="parent">
+    <div class="BoatTypeListContainer">
+        <div class="Content">
+            @foreach (BoatType bt in boatTypesList)
+            {
+                <p> <button data-id=@bt.IDTypeBateau @onclick="() => Select(bt)"> @bt.Name </button> </p>
+            }
+        </div>
+        <button class="btn btn-primary" @onclick="AddNewBoatType">
+            Add a new boat type
 
 
-<div class="FixedHeightContainer">
-    <div class="Content">
-        @for (int i = 0; i < currentCount; i++)
-        {
-            <p> <button disabled="@(!IsConnected)"> bouton @i </button> </p>
-        }
+        </button>
     </div>
+    @*</td>*@
+
+    <div class="BoatTypeListContainer ">
+        <div class="float-left-child" style="margin-right: 30px;">
+            <p> <label> Name </label> <input type="text" @bind-value="Name" disabled="@(Selected is null)" > </p>
+            <p> <label> Poids </label> <input type="text"disabled="@(Selected is null)"> </p>
+            <p> <label> TirantEau </label> <input type="text"disabled="@(Selected is null)"> </p>
+            <p> <label> TirantAir </label> <input type="text"disabled="@(Selected is null)"> </p>
+        </div>
+
+        <div class="float-left-child">
+            <p> <label> LongueurCoque </label> <input type="text"disabled="@(Selected is null)"> </p>
+            <p> <label> LargeurCoque </label> <input type="text"disabled="@(Selected is null)"> </p>
+            <p> <label> LongueurHorsTout </label> <input type="text"disabled="@(Selected is null)"> </p>
+            <p> <label> LargeurHorsTout </label> <input type="text"disabled="@(Selected is null)"> </p>
+        </div>
+    </div>
+
 </div>
 
-<button class="btn btn-primary" @onclick="AddNewBoatType">Add a new boat type @if(boatTypesList is not null) @(boatTypesList[0].IDTypeBateau) </button>
+@*</tr>*@
+
+    //BoatTypesManagement.razor
 
 @code {
     private HubConnection? hubConnection;
     private int currentCount = 0;
     private List<BoatType> boatTypesList = BoatType.BoatTypesList;
+    private BoatType Selected = null;
 
-    //BoatTypesManagement.razor
+    private int IDTypeBateau;
+    private string Name;
+    private float LongueurCoque ;
+    private float LongueurHorsTout ;
+    private float LargeurCoque ;
+    private float LargeurHorsTout ;
+    private float TirantEeau ;
+    private float TirantAir ;
+    public float Poids ;
+
+
+
+
 
 
     private void AddNewBoatType()
     {
-        currentCount++;
         Logger.log(LoggingLevel.DEBUG, "BoatTypes.razor", "User clicked on NewBoat");
-        Send();
+        boatTypesList.Add(new BoatType($"Boat {boatTypesList.Count + 1}"));
+        //Send();
     }
 
+    private void Select(BoatType bt)
+    {
+        Logger.log(LoggingLevel.DEBUG, "BoatTypes.razor", $"User select {bt.Name}");
+        Selected = bt;
+
+        StateHasChanged();
+    }
+
+    
     private bool state = false;
 
     protected override async Task OnInitializedAsync()
     {
-        hubConnection = new HubConnectionBuilder().WithUrl(NavigationManager.ToAbsoluteUri("/boattypeshub" ) ).Build();
+        hubConnection = new HubConnectionBuilder().WithUrl(NavigationManager.ToAbsoluteUri("/boattypeshub")).Build();
 
         hubConnection.On<List<BoatType>>("ReceiveMessage", btl =>
         {
@@ -50,19 +97,6 @@
         });
 
         await hubConnection.StartAsync();
-        //boatTypesList.Add(new BoatType()
-        //{
-        //    Name = "Bateau 7",
-        //    IDTypeBateau = 22,
-        //    LargeurCoque = 4,
-        //    LargeurHorsTout = 1,
-        //    Poids = 4,
-        //    TirantAir = 1,
-        //    TirantEeau = 233,
-        //    LongueurCoque = 5,
-        //    LongueurHorsTout = 1,
-        //    polaire = null
-        //});
     }
 
     private async Task Send()
@@ -83,4 +117,5 @@
             await hubConnection.DisposeAsync();
         }
     }
+
 }

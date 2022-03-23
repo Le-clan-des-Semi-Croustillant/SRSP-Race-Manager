@@ -16,13 +16,10 @@ a, .btn-link {
     color: #fff;
     background-color: #1b6ec2;
     border-color: #1861ac;
-   
-   
 }
 
 .content {
     padding-top: 1.1rem;
-  
 }
 
 .valid.modified:not([type=checkbox]) {
@@ -62,31 +59,55 @@ a, .btn-link {
     color: white;
 }
 
-.blazor-error-boundary::after {
-    content: "An error has occurred."
+    .blazor-error-boundary::after {
+        content: "An error has occurred."
+    }
+
+.parent {
+    padding: 1rem;
 }
 
-.FixedHeightContainer {
-    position: relative;
-    top: 5em;
-    float: center;
-    height: 230px;
-    width: 150px;
-    padding: 3px;
-    background: #DCDCDC;
-    
-    /*  position: relative;
-    right: 75%;*/
-    /*  float: right;
-    height: 250px;
-    width: 250px;
-    padding: 3px;
-    background: #f00;
-    position: relative;    
-    right: 80%;*/
+
+.BoatTypeListContainer {
+    /*height: 230px;*/
+    padding: 1rem;
+    min-width: 200px;
+    margin: 5%;
+    margin-inline: 5%;
+    border: 3px solid #743b78;
+    border-radius: 8px;
+    offset-anchor: left;
+    flex: 1;
+    float: left;
 }
+
+.float-left-child {
+    margin: 3%;
+    float: left;
+}
+
+.float-right-child {
+    float: right;
+}
+.separator {
+    margin: 10px;
+    width: 20px;
+    float: left;
+    background: #743b78;
+}
+.float-d-child {
+    float: outside;
+}
+/*.BoatCaracteristicsContainer {*/
+/*height: 230px;*/
+/*min-width: 150px;
+    margin: 10%;
+    border: 6px ridge #9e83b4;
+}*/
 
 .Content {
+    margin: 3%;
+    margin-inline: 5%;
     height: 224px;
     overflow: auto;
     background: #fff;

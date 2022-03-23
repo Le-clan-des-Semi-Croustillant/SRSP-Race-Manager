@@ -7,6 +7,7 @@ using System.Xml;
 using Microsoft.AspNetCore.ResponseCompression;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR;
+using RaceManager.Pages;
 
 namespace RaceManager.Lecture
 {
@@ -25,6 +26,12 @@ namespace RaceManager.Lecture
         public float Poids { get; set; }
 
         public Polaire polaire = new Polaire();
+
+        public BoatType(string name)
+        {
+            Name = name;
+        }
+
 
     }
 
