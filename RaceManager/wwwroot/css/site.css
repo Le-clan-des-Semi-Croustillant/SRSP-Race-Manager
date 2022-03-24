@@ -104,11 +104,15 @@ a, .btn-link {
     margin: 10%;
     border: 6px ridge #9e83b4;
 }*/
-
+.boat-button {
+    min-height: 100%;
+    min-width: 100%;
+}
 .Content {
     margin: 3%;
     margin-inline: 5%;
     height: 224px;
     overflow: auto;
     background: #fff;
+
 }
