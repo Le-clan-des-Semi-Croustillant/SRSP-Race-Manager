@@ -32,7 +32,19 @@ namespace RaceManager.Lecture
             Name = name;
         }
 
+        public void RemoveFromList()
+        {
+            BoatType.BoatTypesList.Remove(this);
+        }
 
+        public override bool Equals(Object o)
+        {
+            if (o.GetType() == this.GetType())
+                //return ((BoatType)o).IDTypeBateau.Equals(IDTypeBateau);
+                return ((BoatType)o).Name.Equals(Name);
+
+            return false;
+        }
     }
 
     public class BoatTypesListHub : Hub
@@ -40,7 +52,7 @@ namespace RaceManager.Lecture
         public async Task SendMessage(List<BoatType> btl)
         {
             Logger.log(LoggingLevel.DEBUG, "BoatTypesListHub", $"Server received {btl[0].IDTypeBateau} old was {BoatType.BoatTypesList[0].IDTypeBateau}");
-            BoatType.BoatTypesList[0].IDTypeBateau = btl[0].IDTypeBateau -10;
+            BoatType.BoatTypesList[0].IDTypeBateau = btl[0].IDTypeBateau - 10;
             btl[0].IDTypeBateau++;
             // Call the broadcastMessage method to update clients.
             await Clients.All.SendAsync("ReceiveMessage", btl);

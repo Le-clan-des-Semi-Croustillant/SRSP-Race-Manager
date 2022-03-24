@@ -11,34 +11,40 @@
 <div class="parent">
     <div class="BoatTypeListContainer">
         <div class="Content">
-            @foreach (BoatType bt in boatTypesList)
-            {
-                <p> <button data-id=@bt.IDTypeBateau @onclick="() => Select(bt)"> @bt.Name </button> </p>
-            }
+            <div style="margin-right: 8%">
+                @foreach (BoatType bt in boatTypesList)
+                {
+                    <p> <button class="boat-button" data-id=@bt.IDTypeBateau @onclick="() => Select(bt)"> @bt.Name </button> </p>
+                }
+            </div>
         </div>
-        <button class="btn btn-primary" @onclick="AddNewBoatType">
-            Add a new boat type
 
-
-        </button>
+        <button class="btn btn-primary" @onclick="AddNewBoatType"> Add a new boat type </button>
     </div>
-    @*</td>*@
 
-    <div class="BoatTypeListContainer ">
-        <div class="float-left-child" style="margin-right: 30px;">
-            <p> <label> Name </label> <input type="text" @bind-value="fields["name"].FieldContent" disabled="@(Selected is null)"> </p>
-            <p> <label> Poids </label> <input type="text" disabled="@(Selected is null)"> </p>
-            <p> <label> TirantEau </label> <input type="text" disabled="@(Selected is null)"> </p>
-            <p> <label> TirantAir </label> <input type="text" disabled="@(Selected is null)"> </p>
-        </div>
+    @if (fields.Count > 0)
+    {
+        <div class="BoatTypeListContainer ">
+            <div class="float-left-child" style="margin-right: 30px; min-width : 100% ">
+                <p> <label> Name </label> <input type="text" @bind-value="@(fields["name"].FieldContent)" disabled="@(Selected is null)"> </p>
+                <p> <label> Poids </label> <input type="text" @bind-value="@(fields["weight"].FieldContent)" disabled="@(Selected is null)"> </p>
+                <p> <label> TirantEau </label> <input type="text" @bind-value="@(fields["waterdraught"].FieldContent)" disabled="@(Selected is null)"> </p>
+                <p> <label> TirantAir </label> <input type="text" @bind-value="@(fields["airdraught"].FieldContent)" disabled="@(Selected is null)"> </p>
+                @*</div>*@
 
-        <div class="float-left-child">
-            <p> <label> LongueurCoque </label> <input type="text" disabled="@(Selected is null)"> </p>
-            <p> <label> LargeurCoque </label> <input type="text" disabled="@(Selected is null)"> </p>
-            <p> <label> LongueurHorsTout </label> <input type="text" disabled="@(Selected is null)"> </p>
-            <p> <label> LargeurHorsTout </label> <input type="text" disabled="@(Selected is null)"> </p>
+                @*<div class="float-left-child">*@
+                <p> <label> LongueurCoque </label> <input type="text" @bind-value="@(fields["hulllength"].FieldContent)" disabled="@(Selected is null)"> </p>
+                <p> <label> LargeurCoque </label> <input type="text" @bind-value="@(fields["hullwidth"].FieldContent)" disabled="@(Selected is null)"> </p>
+                <p> <label> LongueurHorsTout </label> <input type="text" @bind-value="@(fields["overalllength"].FieldContent)" disabled="@(Selected is null)"></p>
+                <p> <label> LargeurHorsTout </label> <input type="text" @bind-value="@(fields["overallwidth"].FieldContent)" disabled="@(Selected is null)"></p>
+                <p>
+                    <button class="btn btn-primary" @onclick="Save" disabled="@(Selected is null)"> Save </button>
+                    <button class="btn btn-primary" style="background: red"@onclick="() => Remove(Selected)" disabled="@(Selected is null)"> Remove </button>
+                </p>
+
+            </div>
         </div>
-    </div>
+    }
 
 </div>
 
@@ -70,28 +76,29 @@
     {
         public bool isValid = true;
         public abstract void StoreValue();
+        public string FieldContent;
 
     }
     private class Field<T> : AField
     {
-        public string FieldContent;
         public T Value;
-       
+
         public override void StoreValue()
         {
             try
             {
                 Value = (T)Convert.ChangeType(FieldContent, typeof(T));
                 isValid = true;
+                Logger.log(LoggingLevel.DEBUG, "BoatTypes.razor", $"{FieldContent} is valid.");
+
             }
-            catch (InvalidCastException)
+            catch (Exception e)
             {
                 Value = default(T);
                 isValid = false;
-                Logger.log(LoggingLevel.ERROR, "BoatTypes.razor", $"Error when trying to cast {FieldContent}");
+                Logger.log(LoggingLevel.ERROR, "BoatTypes.razor", $"Error when trying to cast {FieldContent} with {e}");
             }
         }
-
     }
 
     private void Save()
@@ -100,10 +107,46 @@
         foreach (KeyValuePair<string, AField> keyValuePair in fields)
         {
             AField afield = keyValuePair.Value;
-            afield.StoreValue()
+            afield.StoreValue();
             if (afield.isValid == false)
-                IsFormValid = false
+                IsFormValid = false;
         }
+
+        if (IsFormValid)
+        {
+            Selected.Name = ((Field<string>)fields["name"]).Value;
+            Selected.LongueurCoque = ((Field<float>)fields["hulllength"]).Value;
+            Selected.LongueurHorsTout = ((Field<float>)fields["overalllength"]).Value;
+            Selected.LargeurCoque = ((Field<float>)fields["hullwidth"]).Value;
+            Selected.LargeurHorsTout = ((Field<float>)fields["overallwidth"]).Value;
+            Selected.TirantAir = ((Field<float>)fields["airdraught"]).Value;
+            Selected.TirantEeau = ((Field<float>)fields["waterdraught"]).Value;
+            Selected.Poids = ((Field<float>)fields["weight"]).Value;
+        }
+    }
+
+    private void Remove(BoatType bt)
+    {
+        Logger.log(LoggingLevel.DEBUG, "BoatTypes.razor", $"Removing {boatTypesList.Find(x => x.Equals(bt)).Name} is valid.");
+        boatTypesList.Remove(bt);
+        Selected = null;
+    }
+
+
+    private void Select(BoatType bt)
+    {
+        Logger.log(LoggingLevel.DEBUG, "BoatTypes.razor", $"User select {bt.Name}");
+        Selected = bt;
+        fields["name"].FieldContent = Selected.Name;
+        fields["hulllength"].FieldContent = Selected.LongueurCoque.ToString();
+        fields["overalllength"].FieldContent = Selected.LongueurHorsTout.ToString();
+        fields["hullwidth"].FieldContent = Selected.LargeurCoque.ToString();
+        fields["overallwidth"].FieldContent = Selected.LargeurHorsTout.ToString();
+        fields["airdraught"].FieldContent = Selected.TirantAir.ToString();
+        fields["waterdraught"].FieldContent = Selected.TirantEeau.ToString();
+        fields["weight"].FieldContent = Selected.Poids.ToString();
+
+        StateHasChanged();
     }
 
 
@@ -113,16 +156,6 @@
         boatTypesList.Add(new BoatType($"Boat {boatTypesList.Count + 1}"));
         //Send();
     }
-
-    private void Select(BoatType bt)
-    {
-        Logger.log(LoggingLevel.DEBUG, "BoatTypes.razor", $"User select {bt.Name}");
-        Selected = bt;
-
-        StateHasChanged();
-    }
-
-
     private bool state = false;
 
     protected override async Task OnInitializedAsync()
@@ -138,7 +171,6 @@
 
         await hubConnection.StartAsync();
 
-        fields.Add("id", new Field<int>());
         fields.Add("name", new Field<string>());
         fields.Add("hulllength", new Field<float>());
         fields.Add("overalllength", new Field<float>());
