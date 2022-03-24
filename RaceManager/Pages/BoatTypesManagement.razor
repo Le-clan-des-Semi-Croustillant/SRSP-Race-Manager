@@ -26,17 +26,17 @@
 
     <div class="BoatTypeListContainer ">
         <div class="float-left-child" style="margin-right: 30px;">
-            <p> <label> Name </label> <input type="text" @bind-value="Name" disabled="@(Selected is null)" > </p>
-            <p> <label> Poids </label> <input type="text"disabled="@(Selected is null)"> </p>
-            <p> <label> TirantEau </label> <input type="text"disabled="@(Selected is null)"> </p>
-            <p> <label> TirantAir </label> <input type="text"disabled="@(Selected is null)"> </p>
+            <p> <label> Name </label> <input type="text" @bind-value="fields["name"].FieldContent" disabled="@(Selected is null)"> </p>
+            <p> <label> Poids </label> <input type="text" disabled="@(Selected is null)"> </p>
+            <p> <label> TirantEau </label> <input type="text" disabled="@(Selected is null)"> </p>
+            <p> <label> TirantAir </label> <input type="text" disabled="@(Selected is null)"> </p>
         </div>
 
         <div class="float-left-child">
-            <p> <label> LongueurCoque </label> <input type="text"disabled="@(Selected is null)"> </p>
-            <p> <label> LargeurCoque </label> <input type="text"disabled="@(Selected is null)"> </p>
-            <p> <label> LongueurHorsTout </label> <input type="text"disabled="@(Selected is null)"> </p>
-            <p> <label> LargeurHorsTout </label> <input type="text"disabled="@(Selected is null)"> </p>
+            <p> <label> LongueurCoque </label> <input type="text" disabled="@(Selected is null)"> </p>
+            <p> <label> LargeurCoque </label> <input type="text" disabled="@(Selected is null)"> </p>
+            <p> <label> LongueurHorsTout </label> <input type="text" disabled="@(Selected is null)"> </p>
+            <p> <label> LargeurHorsTout </label> <input type="text" disabled="@(Selected is null)"> </p>
         </div>
     </div>
 
@@ -44,7 +44,7 @@
 
 @*</tr>*@
 
-    //BoatTypesManagement.razor
+@*//BoatTypesManagement.razor*@
 
 @code {
     private HubConnection? hubConnection;
@@ -52,19 +52,59 @@
     private List<BoatType> boatTypesList = BoatType.BoatTypesList;
     private BoatType Selected = null;
 
-    private int IDTypeBateau;
-    private string Name;
-    private float LongueurCoque ;
-    private float LongueurHorsTout ;
-    private float LargeurCoque ;
-    private float LargeurHorsTout ;
-    private float TirantEeau ;
-    private float TirantAir ;
-    public float Poids ;
+    //private Field<int> idField;
+    //private Field<string> nameField;
+    //private Field<float> HullLengthField;
+    //private Field<float> OverallLengthField;
+    //private Field<float> HullWidthField;
+    //private Field<float> OverallWidthField;
+    //private Field<float> WaterDraughtField;
+    //private Field<float> AirDraughtField;
+    //private Field<float> WeigthField;
+    private Dictionary<string, AField> fields = new();
+    private bool IsFormValid = true;
 
 
 
+    private abstract class AField
+    {
+        public bool isValid = true;
+        public abstract void StoreValue();
 
+    }
+    private class Field<T> : AField
+    {
+        public string FieldContent;
+        public T Value;
+       
+        public override void StoreValue()
+        {
+            try
+            {
+                Value = (T)Convert.ChangeType(FieldContent, typeof(T));
+                isValid = true;
+            }
+            catch (InvalidCastException)
+            {
+                Value = default(T);
+                isValid = false;
+                Logger.log(LoggingLevel.ERROR, "BoatTypes.razor", $"Error when trying to cast {FieldContent}");
+            }
+        }
+
+    }
+
+    private void Save()
+    {
+        IsFormValid = true;
+        foreach (KeyValuePair<string, AField> keyValuePair in fields)
+        {
+            AField afield = keyValuePair.Value;
+            afield.StoreValue()
+            if (afield.isValid == false)
+                IsFormValid = false
+        }
+    }
 
 
     private void AddNewBoatType()
@@ -82,7 +122,7 @@
         StateHasChanged();
     }
 
-    
+
     private bool state = false;
 
     protected override async Task OnInitializedAsync()
@@ -97,6 +137,16 @@
         });
 
         await hubConnection.StartAsync();
+
+        fields.Add("id", new Field<int>());
+        fields.Add("name", new Field<string>());
+        fields.Add("hulllength", new Field<float>());
+        fields.Add("overalllength", new Field<float>());
+        fields.Add("hullwidth", new Field<float>());
+        fields.Add("overallwidth", new Field<float>());
+        fields.Add("waterdraught", new Field<float>());
+        fields.Add("airdraught", new Field<float>());
+        fields.Add("weight", new Field<float>());
     }
 
     private async Task Send()
@@ -108,7 +158,7 @@
     }
 
     public bool IsConnected =>
-        hubConnection?.State == HubConnectionState.Connected;
+    hubConnection?.State == HubConnectionState.Connected;
 
     public async ValueTask DisposeAsync()
     {
