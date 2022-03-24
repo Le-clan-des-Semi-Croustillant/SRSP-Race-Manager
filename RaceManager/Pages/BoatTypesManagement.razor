@@ -69,14 +69,15 @@
     private abstract class AField
     {
         public bool isValid = true;
-        public void StoreValue();
+        public abstract void StoreValue();
 
     }
     private class Field<T> : AField
     {
         public string FieldContent;
         public T Value;
-        public void StoreValue()
+       
+        public override void StoreValue()
         {
             try
             {
