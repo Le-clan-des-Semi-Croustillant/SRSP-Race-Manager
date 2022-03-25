@@ -1,8 +1,8 @@
 ﻿@page "/boattypes"
 @using RaceManager.Language
 @using Microsoft.AspNetCore.SignalR.Client
-@using RaceManager.Lecture
 @using System.Diagnostics.Eventing.Reader
+@using RaceManager.Reading
 @inject NavigationManager NavigationManager
 
 <PageTitle>Boat types management</PageTitle>
@@ -14,7 +14,7 @@
             <div style="margin-right: 8%">
                 @foreach (BoatType bt in boatTypesList)
                 {
-                    <p> <button class="boat-button" data-id=@bt.IDTypeBateau @onclick="() => Select(bt)"> @bt.Name </button> </p>
+                    <p> <button class="boat-button" data-id=@bt.ID @onclick="() => Select(bt)"> @bt.Name </button> </p>
                 }
             </div>
         </div>
@@ -22,84 +22,39 @@
         <button class="btn btn-primary" @onclick="AddNewBoatType"> Add a new boat type </button>
     </div>
 
-    @if (fields.Count > 0)
+    @if (Loaded)
     {
         <div class="BoatTypeListContainer ">
-            <div class="float-left-child" style="margin-right: 30px; min-width : 100% ">
-                <p> <label> Name </label> <input type="text" @bind-value="@(fields["name"].FieldContent)" disabled="@(Selected is null)"> </p>
-                <p> <label> Poids </label> <input type="text" @bind-value="@(fields["weight"].FieldContent)" disabled="@(Selected is null)"> </p>
-                <p> <label> TirantEau </label> <input type="text" @bind-value="@(fields["waterdraught"].FieldContent)" disabled="@(Selected is null)"> </p>
-                <p> <label> TirantAir </label> <input type="text" @bind-value="@(fields["airdraught"].FieldContent)" disabled="@(Selected is null)"> </p>
-                @*</div>*@
+            <div class="float-left-child" style="margin-right: 30px; min-width : 150% ">
+                <div style="margin-bottom: 5%">
+                    @foreach (KeyValuePair<string, AField> keyValuePair in fields)
+                    {
+                        <p> <label> @keyValuePair.Value.Label </label> <input type="text" @bind-value="@(keyValuePair.Value.FieldContent)" disabled="@(Selected is null)" style=" @keyValuePair.Value.Style "> </p>
+                    }
+                    <p> <Label> ID : @(Selected is not null ? Selected.ID : "") </Label> </p>
 
-                @*<div class="float-left-child">*@
-                <p> <label> LongueurCoque </label> <input type="text" @bind-value="@(fields["hulllength"].FieldContent)" disabled="@(Selected is null)"> </p>
-                <p> <label> LargeurCoque </label> <input type="text" @bind-value="@(fields["hullwidth"].FieldContent)" disabled="@(Selected is null)"> </p>
-                <p> <label> LongueurHorsTout </label> <input type="text" @bind-value="@(fields["overalllength"].FieldContent)" disabled="@(Selected is null)"></p>
-                <p> <label> LargeurHorsTout </label> <input type="text" @bind-value="@(fields["overallwidth"].FieldContent)" disabled="@(Selected is null)"></p>
+                </div>
                 <p>
                     <button class="btn btn-primary" @onclick="Save" disabled="@(Selected is null)"> Save </button>
-                    <button class="btn btn-primary" style="background: red"@onclick="() => Remove(Selected)" disabled="@(Selected is null)"> Remove </button>
+                    <button class="btn btn-primary" style="background: red" @onclick="() => Remove(Selected)" disabled="@(Selected is null)"> Remove </button>
                 </p>
-
             </div>
         </div>
     }
 
 </div>
-
-@*</tr>*@
-
-@*//BoatTypesManagement.razor*@
-
+ 
 @code {
+    private bool Loaded = false;
     private HubConnection? hubConnection;
     private int currentCount = 0;
     private List<BoatType> boatTypesList = BoatType.BoatTypesList;
     private BoatType Selected = null;
 
-    //private Field<int> idField;
-    //private Field<string> nameField;
-    //private Field<float> HullLengthField;
-    //private Field<float> OverallLengthField;
-    //private Field<float> HullWidthField;
-    //private Field<float> OverallWidthField;
-    //private Field<float> WaterDraughtField;
-    //private Field<float> AirDraughtField;
-    //private Field<float> WeigthField;
+
     private Dictionary<string, AField> fields = new();
     private bool IsFormValid = true;
 
-
-
-    private abstract class AField
-    {
-        public bool isValid = true;
-        public abstract void StoreValue();
-        public string FieldContent;
-
-    }
-    private class Field<T> : AField
-    {
-        public T Value;
-
-        public override void StoreValue()
-        {
-            try
-            {
-                Value = (T)Convert.ChangeType(FieldContent, typeof(T));
-                isValid = true;
-                Logger.log(LoggingLevel.DEBUG, "BoatTypes.razor", $"{FieldContent} is valid.");
-
-            }
-            catch (Exception e)
-            {
-                Value = default(T);
-                isValid = false;
-                Logger.log(LoggingLevel.ERROR, "BoatTypes.razor", $"Error when trying to cast {FieldContent} with {e}");
-            }
-        }
-    }
 
     private void Save()
     {
@@ -114,14 +69,14 @@
 
         if (IsFormValid)
         {
-            Selected.Name = ((Field<string>)fields["name"]).Value;
-            Selected.LongueurCoque = ((Field<float>)fields["hulllength"]).Value;
-            Selected.LongueurHorsTout = ((Field<float>)fields["overalllength"]).Value;
-            Selected.LargeurCoque = ((Field<float>)fields["hullwidth"]).Value;
-            Selected.LargeurHorsTout = ((Field<float>)fields["overallwidth"]).Value;
-            Selected.TirantAir = ((Field<float>)fields["airdraught"]).Value;
-            Selected.TirantEeau = ((Field<float>)fields["waterdraught"]).Value;
-            Selected.Poids = ((Field<float>)fields["weight"]).Value;
+            Selected.Name = ((BoatTypeField<string>)fields["name"]).Value;
+            Selected.HullLength = ((BoatTypeField<float>)fields["hulllength"]).Value;
+            Selected.OverallLength = ((BoatTypeField<float>)fields["overalllength"]).Value;
+            Selected.HullWidth = ((BoatTypeField<float>)fields["hullwidth"]).Value;
+            Selected.OverallWidth = ((BoatTypeField<float>)fields["overallwidth"]).Value;
+            Selected.AirDraft = ((BoatTypeField<float>)fields["airdraft"]).Value;
+            Selected.Draft = ((BoatTypeField<float>)fields["draft"]).Value;
+            Selected.Weight = ((BoatTypeField<float>)fields["weight"]).Value;
         }
     }
 
@@ -138,14 +93,20 @@
         Logger.log(LoggingLevel.DEBUG, "BoatTypes.razor", $"User select {bt.Name}");
         Selected = bt;
         fields["name"].FieldContent = Selected.Name;
-        fields["hulllength"].FieldContent = Selected.LongueurCoque.ToString();
-        fields["overalllength"].FieldContent = Selected.LongueurHorsTout.ToString();
-        fields["hullwidth"].FieldContent = Selected.LargeurCoque.ToString();
-        fields["overallwidth"].FieldContent = Selected.LargeurHorsTout.ToString();
-        fields["airdraught"].FieldContent = Selected.TirantAir.ToString();
-        fields["waterdraught"].FieldContent = Selected.TirantEeau.ToString();
-        fields["weight"].FieldContent = Selected.Poids.ToString();
-
+        fields["hulllength"].FieldContent = Selected.HullLength.ToString();
+        fields["overalllength"].FieldContent = Selected.OverallLength.ToString();
+        fields["hullwidth"].FieldContent = Selected.HullWidth.ToString();
+        fields["overallwidth"].FieldContent = Selected.OverallWidth.ToString();
+        fields["airdraft"].FieldContent = Selected.AirDraft.ToString();
+        fields["draft"].FieldContent = Selected.Draft.ToString();
+        fields["weight"].FieldContent = Selected.Weight.ToString();
+        
+        foreach (KeyValuePair<string, AField> keyValuePair in fields)
+        {
+            keyValuePair.Value.isValid = true;
+            keyValuePair.Value.Style = "";
+        }
+        
         StateHasChanged();
     }
 
@@ -153,36 +114,48 @@
     private void AddNewBoatType()
     {
         Logger.log(LoggingLevel.DEBUG, "BoatTypes.razor", "User clicked on NewBoat");
-        boatTypesList.Add(new BoatType($"Boat {boatTypesList.Count + 1}"));
-        //Send();
+        boatTypesList.Add(new BoatType());
     }
-    private bool state = false;
 
+    private bool state = false;
     protected override async Task OnInitializedAsync()
     {
+        /* <summary>
+         * Initialize the component
+         * </summary>
+         */
         hubConnection = new HubConnectionBuilder().WithUrl(NavigationManager.ToAbsoluteUri("/boattypeshub")).Build();
 
+        // <summary>
+        // Register the event handler
+        // </summary>
         hubConnection.On<List<BoatType>>("ReceiveMessage", btl =>
         {
-            Logger.log(LoggingLevel.DEBUG, "BoatTypes.razor", $"Server sent {btl[0].IDTypeBateau}");
+            Logger.log(LoggingLevel.DEBUG, "BoatTypes.razor", $"Server sent {btl[0].ID}");
             boatTypesList = btl;
             StateHasChanged();
         });
 
         await hubConnection.StartAsync();
 
-        fields.Add("name", new Field<string>());
-        fields.Add("hulllength", new Field<float>());
-        fields.Add("overalllength", new Field<float>());
-        fields.Add("hullwidth", new Field<float>());
-        fields.Add("overallwidth", new Field<float>());
-        fields.Add("waterdraught", new Field<float>());
-        fields.Add("airdraught", new Field<float>());
-        fields.Add("weight", new Field<float>());
+        
+        fields.Add("name", new BoatTypeField<string>() { Label = "Name" });
+        fields.Add("hulllength", new BoatTypeField<float>() { Label = "Hull Length" });
+        fields.Add("overalllength", new BoatTypeField<float>() { Label = "Overall Length" });
+        fields.Add("hullwidth", new BoatTypeField<float>() { Label = "Hull Width" });
+        fields.Add("overallwidth", new BoatTypeField<float>() { Label = "Overall Width" });
+        fields.Add("airdraft", new BoatTypeField<float>() { Label = "Air Draft" });
+        fields.Add("draft", new BoatTypeField<float>() { Label = "Draft" });
+        fields.Add("weight", new BoatTypeField<float>() { Label = "Weight" });
+        Loaded = true;
     }
-
+    
     private async Task Send()
     {
+        /* <summary>
+         * Send the message to the server
+         * </summary>
+         */
         if (hubConnection is not null)
         {
             await hubConnection.SendAsync("SendMessage", boatTypesList);
@@ -194,6 +167,12 @@
 
     public async ValueTask DisposeAsync()
     {
+        /* <summary>
+         * Dispose the component
+         * </summary>
+         */
+        
+        
         if (hubConnection is not null)
         {
             await hubConnection.DisposeAsync();

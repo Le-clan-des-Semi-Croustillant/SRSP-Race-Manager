@@ -6,25 +6,24 @@ using RaceManager.Data;
 using RaceManager.Language;
 using RaceManager.Pages;
 using RaceManager.DataProcessing.Files;
-using RaceManager.Lecture;
 using Microsoft.AspNetCore.ResponseCompression;
+using RaceManager.Reading;
 
 Logger.LogLevel = LoggingLevel.DEBUG;
 
 var builder = WebApplication.CreateBuilder(args);
 
-BoatType.BoatTypesList.Add(new BoatType("A boat")
+BoatType.BoatTypesList.Add(new BoatType()
 {
     Name = "Bateau 1",
-    IDTypeBateau = 5412,
-    LargeurCoque = 4,
-    LargeurHorsTout = 1,
-    Poids = 4,
-    TirantAir = 1,
-    TirantEeau = 2,
-    LongueurCoque = 5,
-    LongueurHorsTout = 1,
-    polaire = null
+    HullWidth = 4,
+    OverallWidth = 1,
+    Weight = 4,
+    AirDraft = 1,
+    Draft= 2,
+    HullLength = 5,
+    OverallLength = 1,
+    Polar = null
 });
 
 
