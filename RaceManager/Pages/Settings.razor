@@ -1,0 +1,82 @@
+﻿@page "/settings"
+@using RaceManager.Language
+@using Microsoft.AspNetCore.SignalR.Client
+@using System.Diagnostics.Eventing.Reader
+@using RaceManager.Reading
+@*@inject NavigationManager NavigationManager*@
+
+<PageTitle>Settings</PageTitle>
+<h3>Port</h3>
+
+
+<div class="BoatTypeListContainer ">
+    <div class="float-left-child" style="margin-right: 30px; min-width : 150% ">
+        <div style="margin-bottom: 5%">
+
+
+            <p> <label> port </label> <input type="text" @bind-value="@(portField.FieldContent)" style=" @portField.Style "> </p>
+
+
+
+        </div>
+        <p>
+            <button class="btn btn-primary" @onclick="Save"> Save </button>
+
+        </p>
+    </div>
+</div>
+
+
+@code {
+    private int port;
+    private RealField<int> portField = new() { FieldContent="00", Label="Port", Value=0};
+    
+    bool loaded = false;
+    private void Save()
+    {
+
+
+        if (portField.StoreValue())
+            port = portField.Value;
+        StateHasChanged();
+    }
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        
+        loaded = true;
+
+    }
+
+
+    private class RealField<T> : AField
+    {
+        // <summary>
+        // The boat type field.
+        // </summary>
+        public T Value;
+
+        public override bool StoreValue()
+        {
+            try
+            {
+                Value = (T)Convert.ChangeType(FieldContent, typeof(T));
+                isValid = true;
+                Style = "";
+                Logger.log(LoggingLevel.DEBUG, "BoatTypes.razor", $"{FieldContent} is valid.");
+
+            }
+            catch (Exception e)
+            {
+                //Value = default(T);
+                isValid = false;
+                Style = "color: red;border-color: red";
+                Logger.log(LoggingLevel.ERROR, "BoatTypes.razor", $"Error when trying to cast {FieldContent} with \"{e.Message}\"");
+            }
+            return isValid;
+        }
+    }
+
+}

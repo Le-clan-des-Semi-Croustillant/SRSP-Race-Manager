@@ -8,7 +8,7 @@ namespace RaceManager.Reading
         // </summary>
         public T Value;
 
-        public override void StoreValue()
+        public override bool StoreValue()
         {
             try
             {
@@ -25,6 +25,7 @@ namespace RaceManager.Reading
                 Style = "color: red;border-color: red";
                 Logger.log(LoggingLevel.ERROR, "BoatTypes.razor", $"Error when trying to cast {FieldContent} with \"{e.Message}\"");
             }
+            return isValid;
         }
     }
 }
