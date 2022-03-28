@@ -41,8 +41,8 @@ namespace RaceManager.Reading
         public override bool Equals(Object o)
         {
             if (o.GetType() == this.GetType())
-                //return ((BoatType)o).ID.Equals(ID);
-                return ((BoatType)o).Name.Equals(Name);
+                return ((BoatType)o).ID.Equals(ID);
+                //return ((BoatType)o).Name.Equals(Name);
 
             return false;
         }

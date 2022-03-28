@@ -24,6 +24,28 @@ namespace RaceManager.DataProcessing.Files
             UpdateJsonData();
         }
 
+        public static void UpdateBoatTypesList(string path)
+        {
+            string dataFile = File.ReadAllText(path);
+            Console.WriteLine(dataFile);
+            var infoFile = System.Text.Json.JsonSerializer.Deserialize<BoatType>(dataFile);
+            if (!BoatType.BoatTypesList.Contains(infoFile))
+            {
+                BoatType.BoatTypesList.Add(infoFile);
+                Logger.log(LoggingLevel.INFO, "FileManage.UpdateAllBoatTypesList", "New boat type added from file");
+            }
+        }
+
+        public static void UpdateAllBoatTypesList()
+        {
+            string[] filesBoat = Directory.GetFiles(pathDataBoat);
+            
+            for (int i = 0; i < filesBoat.Length; i++)
+            {
+                UpdateBoatTypesList(filesBoat[i]);
+            }
+        }
+
         public static void UpdateJsonData()
         {
             Console.WriteLine(pathJsonData);
@@ -59,7 +81,7 @@ namespace RaceManager.DataProcessing.Files
                 //        }
                 //    }
                 //}
-               
+
                 string file = Path.GetFileNameWithoutExtension(filesBoat[i]);
                 string fileExt = Path.GetFileName(filesBoat[i]);
                 string[] nameFile = file.Split("_");
@@ -119,23 +141,33 @@ namespace RaceManager.DataProcessing.Files
 
         }
 
-        public static void CreateBoatJson(int ID, string Name,
-            float HullLength, float OverallLength, float HullWidth,
-            float OverallWidth, float Draft, float AirDraft, float Weight, Polar polar)
+        public static void ReadBoatTypesList()
         {
-            var DataBoat = new BoatType()
+            foreach (var boatType in BoatType.BoatTypesList)
             {
-                Name = Name,
-                HullLength = HullLength,
-                OverallLength = OverallLength,
-                HullWidth = HullWidth,
-                OverallWidth = OverallWidth,
-                Draft = Draft,
-                AirDraft = AirDraft,
-                Weight = Weight,
-                Polar = polar
-            };
-            string pathFile = pathDataBoat + Name + "_" + ID + ".json";
+                CreateBoatJson(boatType);
+            }
+        }
+
+
+        //public static void CreateBoatJson(int ID, string Name,
+        //    float HullLength, float OverallLength, float HullWidth,
+        //    float OverallWidth, float Draft, float AirDraft, float Weight, Polar polar)
+        public static void CreateBoatJson(BoatType DataBoat)
+        {
+            //var DataBoat = new BoatType()
+            //{
+            //    Name = Name,
+            //    HullLength = HullLength,
+            //    OverallLength = OverallLength,
+            //    HullWidth = HullWidth,
+            //    OverallWidth = OverallWidth,
+            //    Draft = Draft,
+            //    AirDraft = AirDraft,
+            //    Weight = Weight,
+            //    Polar = polar
+            //};
+            string pathFile = pathDataBoat + DataBoat.Name + "_" + DataBoat.ID + ".json";
             string jsonString = System.Text.Json.JsonSerializer.Serialize(DataBoat);
             File.Create(pathFile).Close();
             WriteInFile.WriteFilePath(pathFile, jsonString);
@@ -166,6 +198,7 @@ namespace RaceManager.DataProcessing.Files
                     {
                         sw.WriteLine(message);
                         sw.Close();
+                        sw.Dispose();
                     }
                 }
                 catch (Exception e)

@@ -6,6 +6,7 @@
     public enum IMessageType
     {
         CONNECTION,
+        BOATLISTREQUEST,
         DISCONNECTION,
         PLAYERINFO,
         BOATSELECT,

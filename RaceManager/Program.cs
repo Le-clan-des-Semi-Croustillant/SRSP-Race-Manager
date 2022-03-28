@@ -8,6 +8,7 @@ using RaceManager.Pages;
 using RaceManager.DataProcessing.Files;
 using Microsoft.AspNetCore.ResponseCompression;
 using RaceManager.Reading;
+using RaceManager.Communication;
 
 Logger.LogLevel = LoggingLevel.DEBUG;
 
@@ -68,14 +69,12 @@ count c = new count();
 //Console.WriteLine(Locales.Hello);
 LocaleManager.CurrentCulture = "fr";
 LocaleManager.UpdateCulture();
-
-FileManage.CheckFilesFolderData();
-
-
 Logger.log(LoggingLevel.INFO, "Initialisation", "This software is currently in " + Locales.CurrentLanguage + ".");
 
+FileManage.CheckFilesFolderData();
+FileManage.UpdateAllBoatTypesList();
 
-
+AsyncServer.Run();
 
 app.Run();
 

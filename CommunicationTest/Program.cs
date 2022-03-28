@@ -255,11 +255,11 @@ namespace RaceManager.Communication
 
         public static int Main(String[] args)
         {
-            for (int i = 0; i < 6; i++)
-            {
-                StartClient(45678, i);
+            //for (int i = 0; i < 6; i++)
+            //{
+                StartClient(45879, 0);
                 Thread.Sleep(3000);
-            }
+            //}
             Thread.Sleep(10000);
             return 0;
         }

@@ -6,6 +6,10 @@ namespace RaceManager
         private static Mutex mut = new Mutex();
 
         public static LoggingLevel LogLevel = LoggingLevel.OFF;
+            /// <summary>
+            /// Logs a message to the console if the level is greater than or equal to the current log level.
+            /// </summary>
+            /// 
         public static void log(LoggingLevel level, string caller, string message)
         {
             mut.WaitOne();
