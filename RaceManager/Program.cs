@@ -71,8 +71,8 @@ LocaleManager.CurrentCulture = "fr";
 LocaleManager.UpdateCulture();
 Logger.log(LoggingLevel.INFO, "Initialisation", "This software is currently in " + Locales.CurrentLanguage + ".");
 
-FileManage.CheckFilesFolderData();
-FileManage.UpdateAllBoatTypesList();
+FileManageData.CheckFilesFolderData();
+FileManageData.UpdateAllBoatTypesList();
 
 AsyncServer.Run();
 

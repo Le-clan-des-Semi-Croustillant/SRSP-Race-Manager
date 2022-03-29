@@ -5,49 +5,14 @@ using RaceManager.Reading;
 
 namespace RaceManager.DataProcessing.Files
 {
-    public class FileManage
+    public partial class FileManageData
     {
-        public static string currentDirectory = Directory.GetCurrentDirectory();
-        public static string pathData = currentDirectory + "\\dataResources\\";
-        public static string pathDataBoat = pathData + "boat\\";
-        public static string pathDataPol = pathData + "pol\\";
-        public static string pathDataRace = pathData + "race\\";
-        public static string pathJsonData = pathData + "data.json";
-
-        public static void CheckFilesFolderData()
-        {
-            CheckDirectory(pathData);
-            CheckDirectory(pathDataBoat);
-            CheckDirectory(pathDataPol);
-            CheckDirectory(pathDataRace);
-
-            UpdateJsonData();
-        }
-
-        public static void UpdateBoatTypesList(string path)
-        {
-            string dataFile = File.ReadAllText(path);
-            Console.WriteLine(dataFile);
-            var infoFile = System.Text.Json.JsonSerializer.Deserialize<BoatType>(dataFile);
-            if (!BoatType.BoatTypesList.Contains(infoFile))
-            {
-                BoatType.BoatTypesList.Add(infoFile);
-                Logger.log(LoggingLevel.INFO, "FileManage.UpdateAllBoatTypesList", "New boat type added from file");
-            }
-        }
-
-        public static void UpdateAllBoatTypesList()
-        {
-            string[] filesBoat = Directory.GetFiles(pathDataBoat);
-            
-            for (int i = 0; i < filesBoat.Length; i++)
-            {
-                UpdateBoatTypesList(filesBoat[i]);
-            }
-        }
-
+        /// <summary>
+        /// Reads the data from all directory, creation of index listing all files of this directory
+        /// </summary>
         public static void UpdateJsonData()
         {
+            
             Console.WriteLine(pathJsonData);
             File.Create(pathJsonData).Close();
             string[] filesBoat = Directory.GetFiles(pathDataBoat);
@@ -138,87 +103,6 @@ namespace RaceManager.DataProcessing.Files
 
             string jsonString = System.Text.Json.JsonSerializer.Serialize(dataConstruction);
             WriteInFile.WriteFilePath(pathJsonData, jsonString);
-
-        }
-
-        public static void ReadBoatTypesList()
-        {
-            foreach (var boatType in BoatType.BoatTypesList)
-            {
-                CreateBoatJson(boatType);
-            }
-        }
-
-
-        //public static void CreateBoatJson(int ID, string Name,
-        //    float HullLength, float OverallLength, float HullWidth,
-        //    float OverallWidth, float Draft, float AirDraft, float Weight, Polar polar)
-        public static void CreateBoatJson(BoatType DataBoat)
-        {
-            //var DataBoat = new BoatType()
-            //{
-            //    Name = Name,
-            //    HullLength = HullLength,
-            //    OverallLength = OverallLength,
-            //    HullWidth = HullWidth,
-            //    OverallWidth = OverallWidth,
-            //    Draft = Draft,
-            //    AirDraft = AirDraft,
-            //    Weight = Weight,
-            //    Polar = polar
-            //};
-            string pathFile = pathDataBoat + DataBoat.Name + "_" + DataBoat.ID + ".json";
-            string jsonString = System.Text.Json.JsonSerializer.Serialize(DataBoat);
-            File.Create(pathFile).Close();
-            WriteInFile.WriteFilePath(pathFile, jsonString);
-            UpdateJsonData();
-        }
-
-        public static void CreateFilePolaire(string Name, int ID, string data)
-        {
-            string pathFile = pathDataPol + Name + "_" + ID + ".pol";
-            File.Create(pathFile).Close();
-            WriteInFile.WriteFilePath(pathFile, data);
-            UpdateJsonData();
-        }
-
-        public static void DeleteFile(string path)
-        {
-            File.Delete(path);
-            UpdateJsonData();
-        }
-
-        class WriteInFile
-        {
-            public static void WriteFilePath(string path, dynamic message)
-            {
-                try
-                {
-                    using (StreamWriter sw = File.AppendText(path))
-                    {
-                        sw.WriteLine(message);
-                        sw.Close();
-                        sw.Dispose();
-                    }
-                }
-                catch (Exception e)
-                {
-
-                }
-            }
-        }
-
-        public static void CheckDirectory(string path)
-        {
-            if (!Directory.Exists(path))
-            {
-                CreateDirectory(path);
-            }
-        }
-
-        public static void CreateDirectory(string path)
-        {
-            Directory.CreateDirectory(path);
-        }
+        }         
     }
 }
