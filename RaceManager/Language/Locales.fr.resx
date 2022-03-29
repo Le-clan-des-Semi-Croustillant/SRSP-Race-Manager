@@ -219,4 +219,52 @@
   <data name="CurrentLanguage" xml:space="preserve">
     <value>Français</value>
   </data>
+  <data name="AddNewBoatType" xml:space="preserve">
+    <value>Ajouter un nouveau type de bâteau</value>
+  </data>
+  <data name="AirDraft" xml:space="preserve">
+    <value>Tirant d'air</value>
+  </data>
+  <data name="Draft" xml:space="preserve">
+    <value>Tirant d'eau</value>
+  </data>
+  <data name="HullLength" xml:space="preserve">
+    <value>Longueur de coque</value>
+  </data>
+  <data name="HullWidth" xml:space="preserve">
+    <value>Largeur de coque</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="ManageBoatTypes" xml:space="preserve">
+    <value>Gérer les types de bâteaux</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="NewBoatType" xml:space="preserve">
+    <value>Nouveau type de bateau</value>
+  </data>
+  <data name="OverallLength" xml:space="preserve">
+    <value>Longueur totale</value>
+  </data>
+  <data name="OverallWidth" xml:space="preserve">
+    <value>Largeur totale</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Sauvegarder</value>
+  </data>
+  <data name="ServerNotRunning" xml:space="preserve">
+    <value>Le serveur est en arrêt</value>
+  </data>
+  <data name="ServerRunning" xml:space="preserve">
+    <value>Le serveur est en route</value>
+  </data>
+  <data name="Weight" xml:space="preserve">
+    <value>Poids</value>
+  </data>
 </root>

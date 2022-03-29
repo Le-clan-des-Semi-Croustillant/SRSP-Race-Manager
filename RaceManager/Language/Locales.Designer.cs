@@ -61,6 +61,24 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Add new boat type.
+        /// </summary>
+        public static string AddNewBoatType {
+            get {
+                return ResourceManager.GetString("AddNewBoatType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Air wraft.
+        /// </summary>
+        public static string AirDraft {
+            get {
+                return ResourceManager.GetString("AirDraft", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à English.
         /// </summary>
         public static string CurrentLanguage {
@@ -147,6 +165,15 @@ namespace RaceManager.Language {
         public static string DevModDesc6 {
             get {
                 return ResourceManager.GetString("DevModDesc6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Draft.
+        /// </summary>
+        public static string Draft {
+            get {
+                return ResourceManager.GetString("Draft", resourceCulture);
             }
         }
         
@@ -268,6 +295,33 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Hull length.
+        /// </summary>
+        public static string HullLength {
+            get {
+                return ResourceManager.GetString("HullLength", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Hull width.
+        /// </summary>
+        public static string HullWidth {
+            get {
+                return ResourceManager.GetString("HullWidth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à ID.
+        /// </summary>
+        public static string ID {
+            get {
+                return ResourceManager.GetString("ID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Request ID:.
         /// </summary>
         public static string IdReq {
@@ -291,6 +345,51 @@ namespace RaceManager.Language {
         public static string IPV6support {
             get {
                 return ResourceManager.GetString("IPV6support", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Manage boat types.
+        /// </summary>
+        public static string ManageBoatTypes {
+            get {
+                return ResourceManager.GetString("ManageBoatTypes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Name.
+        /// </summary>
+        public static string Name {
+            get {
+                return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à New boat type.
+        /// </summary>
+        public static string NewBoatType {
+            get {
+                return ResourceManager.GetString("NewBoatType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Overall length.
+        /// </summary>
+        public static string OverallLength {
+            get {
+                return ResourceManager.GetString("OverallLength", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Overall width.
+        /// </summary>
+        public static string OverallWidth {
+            get {
+                return ResourceManager.GetString("OverallWidth", resourceCulture);
             }
         }
         
@@ -322,6 +421,24 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Remove.
+        /// </summary>
+        public static string Remove {
+            get {
+                return ResourceManager.GetString("Remove", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Save.
+        /// </summary>
+        public static string Save {
+            get {
+                return ResourceManager.GetString("Save", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à See more.
         /// </summary>
         public static string SeeMore {
@@ -331,11 +448,29 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Server Configuration.
+        ///   Recherche une chaîne localisée semblable à Server configuration.
         /// </summary>
         public static string ServConf {
             get {
                 return ResourceManager.GetString("ServConf", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Server  not running.
+        /// </summary>
+        public static string ServerNotRunning {
+            get {
+                return ResourceManager.GetString("ServerNotRunning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Server running.
+        /// </summary>
+        public static string ServerRunning {
+            get {
+                return ResourceManager.GetString("ServerRunning", resourceCulture);
             }
         }
         
@@ -363,6 +498,15 @@ namespace RaceManager.Language {
         public static string SwapTo {
             get {
                 return ResourceManager.GetString("SwapTo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Weight.
+        /// </summary>
+        public static string Weight {
+            get {
+                return ResourceManager.GetString("Weight", resourceCulture);
             }
         }
     }

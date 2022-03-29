@@ -5,6 +5,7 @@ using System.Security.Cryptography;
 using System.Xml.Linq;
 using System.Text;
 using System.Xml;
+using RaceManager.Language;
 
 
 
@@ -34,7 +35,7 @@ namespace RaceManager.Reading
         public BoatType()
         {
             //Name = $"Boat {BoatTypesList.Count}";
-            Name = "Unnamed Boat";
+            Name = Locales.NewBoatType;
         }
 
 

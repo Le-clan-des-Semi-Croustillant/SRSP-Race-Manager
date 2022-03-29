@@ -22,7 +22,7 @@
             </div>
         </div>
 
-        <button class="btn btn-primary" @onclick="AddNewBoatType"> Add a new boat type </button>
+        <button class="btn btn-primary" @onclick="AddNewBoatType"> @Locales.AddNewBoatType </button>
     </div>
 
     @if (_loaded)
@@ -38,8 +38,8 @@
 
                 </div>
                 <p>
-                    <button class="btn btn-primary" @onclick="Save" disabled="@(_selected is null)"> Save </button>
-                    <button class="btn btn-primary" style="background: red" @onclick="() => Remove(_selected)" disabled="@(_selected is null)"> Remove </button>
+                    <button class="btn btn-primary" @onclick="Save" disabled="@(_selected is null)"> @Locales.Save </button>
+                    <button class="btn btn-primary" style="background: red" @onclick="() => Remove(_selected)" disabled="@(_selected is null)"> @Locales.Remove </button>
                 </p>
             </div>
         </div>
@@ -75,14 +75,14 @@
 
         if (IsFormValid && _selected is not null)
         {
-            _selected.Name = ((BoatTypeField<string>)fields["Name"]).Value;
-            _selected.HullLength = ((BoatTypeField<float>)fields["Hull Length"]).Value;
-            _selected.OverallLength = ((BoatTypeField<float>)fields["Overall Length"]).Value;
-            _selected.HullWidth = ((BoatTypeField<float>)fields["Hull Width"]).Value;
-            _selected.OverallWidth = ((BoatTypeField<float>)fields["Overall Width"]).Value;
-            _selected.AirDraft = ((BoatTypeField<float>)fields["Air Draft"]).Value;
-            _selected.Draft = ((BoatTypeField<float>)fields["Draft"]).Value;
-            _selected.Weight = ((BoatTypeField<float>)fields["Weight"]).Value;
+            _selected.Name = ((BoatTypeField<string>)fields[Locales.Name]).Value;
+            _selected.HullLength = ((BoatTypeField<float>)fields[Locales.HullLength]).Value;
+            _selected.OverallLength = ((BoatTypeField<float>)fields[Locales.OverallLength]).Value;
+            _selected.HullWidth = ((BoatTypeField<float>)fields[Locales.HullWidth]).Value;
+            _selected.OverallWidth = ((BoatTypeField<float>)fields[Locales.OverallWidth]).Value;
+            _selected.AirDraft = ((BoatTypeField<float>)fields[Locales.AirDraft]).Value;
+            _selected.Draft = ((BoatTypeField<float>)fields[Locales.Draft]).Value;
+            _selected.Weight = ((BoatTypeField<float>)fields[Locales.Weight]).Value;
             SendBoatTypesList(boatTypesList);
         }
     }
@@ -99,14 +99,14 @@
     {
         logger.log(LoggingLevel.DEBUG, "Select()", $"User select {bt.Name}");
         _selected = bt;
-        fields["Name"].FieldContent = _selected.Name;
-        fields["Hull Length"].FieldContent = _selected.HullLength.ToString();
-        fields["Overall Length"].FieldContent = _selected.OverallLength.ToString();
-        fields["Hull Width"].FieldContent = _selected.HullWidth.ToString();
-        fields["Overall Width"].FieldContent = _selected.OverallWidth.ToString();
-        fields["Air Draft"].FieldContent = _selected.AirDraft.ToString();
-        fields["Draft"].FieldContent = _selected.Draft.ToString();
-        fields["Weight"].FieldContent = _selected.Weight.ToString();
+        fields[Locales.Name].FieldContent = _selected.Name;
+        fields[Locales.HullLength].FieldContent = _selected.HullLength.ToString();
+        fields[Locales.OverallLength].FieldContent = _selected.OverallLength.ToString();
+        fields[Locales.HullWidth].FieldContent = _selected.HullWidth.ToString();
+        fields[Locales.OverallWidth].FieldContent = _selected.OverallWidth.ToString();
+        fields[Locales.AirDraft].FieldContent = _selected.AirDraft.ToString();
+        fields[Locales.Draft].FieldContent = _selected.Draft.ToString();
+        fields[Locales.Weight].FieldContent = _selected.Weight.ToString();
 
         foreach (KeyValuePair<string, AField> keyValuePair in fields)
         {
@@ -147,14 +147,14 @@
 
         await hubConnection.SendAsync("BoatTypesListRequest", boatTypesList);
 
-        fields.Add("Name", new BoatTypeField<string>());
-        fields.Add("Hull Length", new BoatTypeField<float>());
-        fields.Add("Overall Length", new BoatTypeField<float>());
-        fields.Add("Hull Width", new BoatTypeField<float>());
-        fields.Add("Overall Width", new BoatTypeField<float>());
-        fields.Add("Air Draft", new BoatTypeField<float>());
-        fields.Add("Draft", new BoatTypeField<float>());
-        fields.Add("Weight", new BoatTypeField<float>());
+        fields.Add(Locales.Name, new BoatTypeField<string>());
+        fields.Add(Locales.HullLength, new BoatTypeField<float>());
+        fields.Add(Locales.OverallLength, new BoatTypeField<float>());
+        fields.Add(Locales.HullWidth, new BoatTypeField<float>());
+        fields.Add(Locales.OverallWidth, new BoatTypeField<float>());
+        fields.Add(Locales.AirDraft, new BoatTypeField<float>());
+        fields.Add(Locales.Draft, new BoatTypeField<float>());
+        fields.Add(Locales.Weight, new BoatTypeField<float>());
         _loaded = true;
     }
 

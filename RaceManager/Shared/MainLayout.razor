@@ -1,6 +1,7 @@
 ﻿@using Microsoft.AspNetCore.SignalR.Client
 @using RaceManager.Communication
 @using RaceManager.Reading
+@using RaceManager.Language
 @inherits LayoutComponentBase
 @inject NavigationManager NavigationManager
 
@@ -17,11 +18,11 @@
             <div>
                 @if (IsServerRunning)
                 {
-                    <label style="color: #03ec00">Server is running</label>
+                    <label style="color: #03ec00"> @Locales.ServerRunning </label>
                 }
                 else
                 {
-                    <label style="color: red">Server is not running</label>
+                    <label style="color: red"> @Locales.ServerNotRunning</label>
                 }
             </div>
         </div>
