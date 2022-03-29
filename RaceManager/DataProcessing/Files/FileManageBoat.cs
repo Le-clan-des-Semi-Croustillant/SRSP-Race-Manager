@@ -37,7 +37,7 @@ namespace RaceManager.DataProcessing.Files
         }
 
         /// <summary>
-        /// Save all boat file of <see cref="BoatType"/>
+        /// Save all boat on file of <see cref="BoatType"/>
         /// </summary>
         public static void ReadBoatTypesList()
         {

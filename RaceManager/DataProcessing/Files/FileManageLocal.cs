@@ -8,7 +8,7 @@
     {
 
         public static string currentDirectory = Directory.GetCurrentDirectory();
-        public static string pathData = currentDirectory + Path.DirectorySeparatorChar + "dataResources" + Path.DirectorySeparatorChar;
+        public static string pathData = currentDirectory + Path.DirectorySeparatorChar + "index" + Path.DirectorySeparatorChar;
         public static string pathDataBoat = pathData + "boat" + Path.DirectorySeparatorChar;
         public static string pathDataPol = pathData + "pol" + Path.DirectorySeparatorChar;
         public static string pathDataRace = pathData + "race" + Path.DirectorySeparatorChar;
