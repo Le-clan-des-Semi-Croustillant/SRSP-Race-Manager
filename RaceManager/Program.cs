@@ -56,10 +56,16 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapHub<ServerHub>("/serverhub");
+    endpoints.MapHub<BoatTypesListHub>("/boattypeshub");
 
+});
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
-app.MapHub<BoatTypesListHub>("/boattypeshub");
+//app.MapHub<ServerHub>("/serverhub");
+//app.MapHub<BoatTypesListHub>("/boattypeshub");
 
 count c = new count();
 
@@ -75,8 +81,8 @@ FileManage.CheckFilesFolderData();
 logger.log(LoggingLevel.INFO, "Initialisation", "This software is currently in " + Locales.CurrentLanguage + ".");
 
 
-
-
+ServerHub serverHub = new ServerHub();
+serverHub.UpdateStatus();
 app.Run();
 
 
