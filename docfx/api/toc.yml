@@ -1,4 +1,11 @@
 ### YamlMime:TableOfContent
+- uid: RaceManager
+  name: RaceManager
+  items:
+  - uid: RaceManager.Logger
+    name: Logger
+  - uid: RaceManager.LoggingLevel
+    name: LoggingLevel
 - uid: RaceManager.Communication
   name: RaceManager.Communication
   items:
@@ -161,28 +168,24 @@
     name: LocaleManager
   - uid: RaceManager.Language.Locales
     name: Locales
-- uid: RaceManager.Lecture
-  name: RaceManager.Lecture
-  items:
-  - uid: RaceManager.Lecture.Course
-    name: Course
-  - uid: RaceManager.Lecture.FichierBateauAutoriseCourse
-    name: FichierBateauAutoriseCourse
-  - uid: RaceManager.Lecture.FichierGpx
-    name: FichierGpx
-  - uid: RaceManager.Lecture.FichierPol
-    name: FichierPol
-  - uid: RaceManager.Lecture.Polaire
-    name: Polaire
-  - uid: RaceManager.Lecture.TypeBateau
-    name: TypeBateau
-- uid: RaceManager.Lecture.XMLReadAndParse
-  name: RaceManager.Lecture.XMLReadAndParse
-  items:
-  - uid: RaceManager.Lecture.XMLReadAndParse.GPXLoader
-    name: GPXLoader
 - uid: RaceManager.Pages
   name: RaceManager.Pages
   items:
   - uid: RaceManager.Pages.ErrorModel
     name: ErrorModel
+- uid: RaceManager.Reading
+  name: RaceManager.Reading
+  items:
+  - uid: RaceManager.Reading.AField
+    name: AField
+  - uid: RaceManager.Reading.BoatType
+    name: BoatType
+  - uid: RaceManager.Reading.BoatTypeField`1
+    name: BoatTypeField<T>
+    name.vb: BoatTypeField(Of T)
+  - uid: RaceManager.Reading.BoatTypesListHub
+    name: BoatTypesListHub
+  - uid: RaceManager.Reading.Polar
+    name: Polar
+  - uid: RaceManager.Reading.PolFile
+    name: PolFile
