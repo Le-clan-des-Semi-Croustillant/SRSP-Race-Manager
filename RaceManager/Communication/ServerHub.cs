@@ -2,13 +2,14 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR;
 using RaceManager.Pages;
-
+using System;
+using System.Net.Sockets;
 
 namespace RaceManager.Communication
 {
     public class ServerHub : Hub
     {
-        RMLogger logger = new RMLogger(LoggingLevel.DEBUG, "ServerHub");
+        private static RMLogger logger = new RMLogger(LoggingLevel.DEBUG, "ServerHub");
 
         public static bool IsServerRunning { set; get; } = false;
 
@@ -46,6 +47,26 @@ namespace RaceManager.Communication
         {
             Console.WriteLine($"Disconnected {e?.Message} {Context.ConnectionId}");
             await base.OnDisconnectedAsync(e);
+        }
+
+        public static bool IsPortBusy(int port)
+        {
+            // Call with an int variable.
+            using (TcpClient tcpClient = new TcpClient())
+            {
+                try
+                {
+                    tcpClient.Connect("127.0.0.1", port);
+                    logger.log(LoggingLevel.DEBUG, "IsPortBusy()", $"Port available:  {port}");
+                    return true;
+                }
+                catch (Exception)
+                {
+                   
+                    logger.log(LoggingLevel.ERROR, "IsPortBusy()", $"Port busy:  {port}");
+                    return false;
+                }
+            }
         }
     }
 
