@@ -59,18 +59,16 @@ namespace RaceManager.Language {
                 resourceCulture = value;
             }
         }
-
+        
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Development.
+        ///   Recherche une chaîne localisée semblable à English.
         /// </summary>
-        public static string CurrentLanguage
-        {
-            get
-            {
+        public static string CurrentLanguage {
+            get {
                 return ResourceManager.GetString("CurrentLanguage", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Development.
         /// </summary>
