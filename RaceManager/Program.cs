@@ -3,6 +3,7 @@
 //using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.AspNetCore.ResponseCompression;
 using RaceManager;
+using RaceManager.Communication;
 using RaceManager.Data;
 using RaceManager.Language;
 using RaceManager.Pages;
