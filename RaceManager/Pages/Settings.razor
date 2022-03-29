@@ -3,6 +3,7 @@
 @using Microsoft.AspNetCore.SignalR.Client
 @using System.Diagnostics.Eventing.Reader
 @using RaceManager.Reading
+@using RaceManager.Communication
 @*@inject NavigationManager NavigationManager*@
 
 <PageTitle>Settings</PageTitle>
@@ -30,9 +31,9 @@
 @code {
     private int port;
     private RealField<int> portField = new() { FieldContent="00", Label="Port", Value=0};
- 
 
-     bool loaded = false;
+
+    bool loaded = false;
     private void Save()
     {
 
@@ -46,7 +47,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        
+
         loaded = true;
 
     }
@@ -57,21 +58,33 @@
         // <summary>
         // The boat type field.
         // </summary>
-        public T Value;
- 
+        public int Value;
+
+
         private RMLogger logger = new RMLogger(LoggingLevel.DEBUG , "Settings.RealField");
- 
+
 
         public override bool StoreValue()
         {
+            isValid = false;
             try
             {
-                Value = (T)Convert.ChangeType(FieldContent, typeof(T));
-                isValid = true;
-                Style = "";
- 
-                logger.log(LoggingLevel.DEBUG, "StoreValue()", $"{FieldContent} is valid.");
- 
+                Value = (int)Convert.ChangeType(FieldContent, typeof(int));
+
+                Style = "";                
+                if (Value>=0 && Value<=65535)
+                {
+                    if(ServerHub.IsPortBusy(Value)) //voir les ports ouverts avec netstat -ano | more
+                    {
+                        isValid = true;
+                        logger.log(LoggingLevel.DEBUG, "StoreValue()", $"{FieldContent} is valid.");                        
+                    }
+                    else 
+                        throw new Exception("Error, the selected port number is busy.");  
+                                   
+                }
+                else 
+                    throw new Exception("Error in the port range, you must use a port number between 0 and 65535 inclusive.");                   
             }
             catch (Exception e)
             {
