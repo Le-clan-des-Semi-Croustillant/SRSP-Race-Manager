@@ -30,7 +30,7 @@
   <ItemGroup>
     <EmbeddedResource Update="Language\Locales.fr.resx">
       <CustomToolNamespace>RaceManager.Language</CustomToolNamespace>
-      <Generator>PublicResXFileCodeGenerator</Generator>
+      <Generator></Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Language\Locales.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

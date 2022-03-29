@@ -8,6 +8,8 @@ namespace RaceManager.Communication
 {
     public class ServerHub : Hub
     {
+        RMLogger logger = new RMLogger(LoggingLevel.DEBUG, "ServerHub");
+
         public static bool IsServerRunning { set; get; } = false;
 
         public async Task UpdateStatus()
@@ -21,7 +23,8 @@ namespace RaceManager.Communication
                 if (Clients is not null && Clients.All is not null)
                 {
                     await Clients.All.SendAsync("ServerStatusUpdate", IsServerRunning);
-                    Logger.log(LoggingLevel.DEBUG, "ServerHub", $"Server send isServerRunning: {IsServerRunning}");
+                    //logger.log(LoggingLevel.DEBUG, "UpdateStatus()", $"Server send isServerRunning: {IsServerRunning}");
+
                 }
                 //Logger.log(LoggingLevel.DEBUG, "ServerHub", $"Server is {(isServerRunning? "" : "not ")}running");
 
