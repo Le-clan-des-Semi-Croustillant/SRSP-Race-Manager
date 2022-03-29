@@ -1,15 +1,15 @@
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
+//using Microsoft.AspNetCore.Components;
+//using Microsoft.AspNetCore.Components.Web;
+//using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.AspNetCore.ResponseCompression;
 using RaceManager;
 using RaceManager.Data;
 using RaceManager.Language;
 using RaceManager.Pages;
 using RaceManager.DataProcessing.Files;
-using Microsoft.AspNetCore.ResponseCompression;
 using RaceManager.Reading;
 
-Logger.LogLevel = LoggingLevel.DEBUG;
+RMLogger logger = new(LoggingLevel.INFO, "Program");
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -72,7 +72,7 @@ LocaleManager.UpdateCulture();
 FileManage.CheckFilesFolderData();
 
 
-Logger.log(LoggingLevel.INFO, "Initialisation", "This software is currently in " + Locales.CurrentLanguage + ".");
+logger.log(LoggingLevel.INFO, "Initialisation", "This software is currently in " + Locales.CurrentLanguage + ".");
 
 
 

@@ -30,7 +30,11 @@
 @code {
     private int port;
     private RealField<int> portField = new() { FieldContent="00", Label="Port", Value=0};
+<<<<<<< Updated upstream
     
+=======
+
+>>>>>>> Stashed changes
     bool loaded = false;
     private void Save()
     {
@@ -57,6 +61,10 @@
         // The boat type field.
         // </summary>
         public T Value;
+<<<<<<< Updated upstream
+=======
+        private RMLogger logger = new RMLogger(LoggingLevel.DEBUG , "Settings.RealField");
+>>>>>>> Stashed changes
 
         public override bool StoreValue()
         {
@@ -65,7 +73,11 @@
                 Value = (T)Convert.ChangeType(FieldContent, typeof(T));
                 isValid = true;
                 Style = "";
+<<<<<<< Updated upstream
                 Logger.log(LoggingLevel.DEBUG, "BoatTypes.razor", $"{FieldContent} is valid.");
+=======
+                logger.log(LoggingLevel.DEBUG, "StoreValue()", $"{FieldContent} is valid.");
+>>>>>>> Stashed changes
 
             }
             catch (Exception e)
@@ -73,7 +85,11 @@
                 //Value = default(T);
                 isValid = false;
                 Style = "color: red;border-color: red";
+<<<<<<< Updated upstream
                 Logger.log(LoggingLevel.ERROR, "BoatTypes.razor", $"Error when trying to cast {FieldContent} with \"{e.Message}\"");
+=======
+                logger.log(LoggingLevel.ERROR, "StoreValue()", $"Error when trying to cast {FieldContent} with \"{e.Message}\"");
+>>>>>>> Stashed changes
             }
             return isValid;
         }

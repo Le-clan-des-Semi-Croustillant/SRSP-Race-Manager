@@ -25,7 +25,7 @@ namespace RaceManager.Reading
         public float Draft { get; set; }
         public float AirDraft { get; set; }
         public float Weight { get; set; }
-        public Polar Polar = new Polar();
+        public Polar? Polar = new Polar();
         
 
         static private System.Random random = new System.Random(DateTime.Now.Millisecond);
@@ -38,13 +38,19 @@ namespace RaceManager.Reading
         }
 
 
-        public override bool Equals(Object o)
+        public override bool Equals(Object? o)
         {
-            if (o.GetType() == this.GetType())
-                //return ((BoatType)o).ID.Equals(ID);
-                return ((BoatType)o).Name.Equals(Name);
+            if ( o.GetType() == this.GetType())
+                return ((BoatType)o).ID.Equals(ID);
+            //return ((BoatType)o).Name.Equals(Name);
 
             return false;
         }
+
+        public override int GetHashCode()
+        {
+            return ID.GetHashCode();
+        }
+ 
     }
 }
