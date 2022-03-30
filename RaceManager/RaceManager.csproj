@@ -17,7 +17,15 @@
   <ItemGroup>
     <Folder Include="Communication\SendFile\" />
     <Folder Include="index\gpx\" />
-    <Folder Include="index\pol\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="index\pol\Pol_123456.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="index\pol\Pol_987654.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

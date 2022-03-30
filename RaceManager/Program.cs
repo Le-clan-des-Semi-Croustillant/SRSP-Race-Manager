@@ -9,6 +9,8 @@ using RaceManager.DataProcessing.Files;
 using Microsoft.AspNetCore.ResponseCompression;
 using RaceManager.Reading;
 using RaceManager.Communication;
+using RaceManager.DataProcessing.Files;
+using static RaceManager.DataProcessing.Files.FileManageData;
 
 Logger.LogLevel = LoggingLevel.DEBUG;
 
@@ -72,6 +74,7 @@ LocaleManager.UpdateCulture();
 Logger.log(LoggingLevel.INFO, "Initialisation", "This software is currently in " + Locales.CurrentLanguage + ".");
 
 FileManageData.CheckFilesFolderData();
+FileManageData.UpdateJsonData();
 FileManageData.UpdateAllBoatTypesList();
 
 AsyncServer.Run();

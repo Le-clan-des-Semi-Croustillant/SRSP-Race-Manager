@@ -1,4 +1,5 @@
-﻿using RaceManager.DataProcessing.Json;
+﻿using RaceManager.DataProcessing.Files;
+using RaceManager.DataProcessing.Json;
 using System;
 using System.Net;
 using System.Net.Sockets;
@@ -53,7 +54,8 @@ namespace RaceManager.Communication
                     dynamic serialisation = JsonParse.JsonDeserialize(content);
                     string SendAtt = JsonManage.JsonType(content);
                     Console.WriteLine("Send att" + SendAtt);
-
+                    //Send(handler, SendAtt);
+                    
                     switch ((IMessageType)serialisation.TypeMessage)
                     {
                         case IMessageType.CONNECTION:
@@ -74,6 +76,8 @@ namespace RaceManager.Communication
 
                         case IMessageType.BOATLISTREQUEST:
                             Console.WriteLine("BOATLISTREQUEST");
+                            SendAtt = FileManageData.ReadFilePath(FileManageData.pathJsonData);
+                            Console.WriteLine("Send att" + SendAtt);
                             break;
 
                         case IMessageType.ENDRACE:

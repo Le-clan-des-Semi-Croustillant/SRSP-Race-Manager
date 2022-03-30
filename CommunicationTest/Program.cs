@@ -127,11 +127,8 @@ namespace RaceManager.Communication
                 Console.WriteLine("Response received : {0}\n", response);
 
                 // Release the socket.  
-                Console.WriteLine("Je suis là");
                 client.Shutdown(SocketShutdown.Both);
-                Console.WriteLine("Je Passe");
                 client.Close();
-                Console.WriteLine("Je fini");
             }
             catch (Exception e)
             {
