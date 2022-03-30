@@ -24,7 +24,6 @@ BoatType.BoatTypesList.Add(new BoatType()
     Draft= 2,
     HullLength = 5,
     OverallLength = 1,
-    Polar = null
 });
 
 
@@ -44,11 +43,9 @@ builder.Logging.AddConsole();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -57,6 +54,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapHub<ServerHub>("/serverhub");
@@ -65,16 +63,11 @@ app.UseEndpoints(endpoints =>
 });
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
-//app.MapHub<ServerHub>("/serverhub");
-//app.MapHub<BoatTypesListHub>("/boattypeshub");
+
 
 count c = new count();
 
-//Application["Counter"] = 0; = 999;
-//LocaleManager.UpdateCulture();
-//Console.WriteLine(Locales.Hello);
-LocaleManager.CurrentCulture = "fr";
-LocaleManager.UpdateCulture();
+LocaleManager.UpdateCulture("en-US");
 
 FileManage.CheckFilesFolderData();
 
@@ -86,11 +79,3 @@ ServerHub serverHub = new ServerHub();
 serverHub.UpdateStatus();
 app.Run();
 
-
-
-
-// void Application_Start(object sender, EventArgs e)
-//{
-//    //this event is execute only once when application start and it stores the server memory until the worker process is restart  
-//    Application["user"] = 0;
-//}

@@ -10,7 +10,6 @@ namespace RaceManager.Communication
     public class ServerHub : Hub
     {
         private static RMLogger logger = new RMLogger(LoggingLevel.DEBUG, "ServerHub");
-
         public static bool IsServerRunning { set; get; } = false;
 
         public async Task UpdateStatus()
@@ -25,27 +24,22 @@ namespace RaceManager.Communication
                 {
                     await Clients.All.SendAsync("ServerStatusUpdate", IsServerRunning);
                     //logger.log(LoggingLevel.DEBUG, "UpdateStatus()", $"Server send isServerRunning: {IsServerRunning}");
-
                 }
                 //Logger.log(LoggingLevel.DEBUG, "ServerHub", $"Server is {(isServerRunning? "" : "not ")}running");
-
                 await Task.Delay(2000);
-                
             }
-            
         }
 
-
-        
         public override Task OnConnectedAsync()
         {
-            Console.WriteLine($"{Context.ConnectionId} connected");
+            logger.log(LoggingLevel.DEBUG, "OnConnectedAsync()", $"New connection {Context.ConnectionId}");
+
             return base.OnConnectedAsync();
         }
 
         public override async Task OnDisconnectedAsync(Exception e)
         {
-            Console.WriteLine($"Disconnected {e?.Message} {Context.ConnectionId}");
+            logger.log(LoggingLevel.DEBUG, "OnDisconnectedAsync()", $"New connection {Context.ConnectionId}");
             await base.OnDisconnectedAsync(e);
         }
 
@@ -57,13 +51,12 @@ namespace RaceManager.Communication
                 try
                 {
                     tcpClient.Connect("127.0.0.1", port);
-                    logger.log(LoggingLevel.DEBUG, "IsPortBusy()", $"Port available:  {port}");
+                    logger.log(LoggingLevel.DEBUG, "IsPortBusy()", $"Port available: {port}");
                     return true;
                 }
                 catch (Exception)
                 {
-                   
-                    logger.log(LoggingLevel.ERROR, "IsPortBusy()", $"Port busy:  {port}");
+                    logger.log(LoggingLevel.ERROR, "IsPortBusy()", $"Port busy: {port}");
                     return false;
                 }
             }

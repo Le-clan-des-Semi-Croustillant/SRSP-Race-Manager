@@ -1,36 +1,35 @@
 ﻿@page "/boattypes"
 @using RaceManager.Language
 @using Microsoft.AspNetCore.SignalR.Client
-@using System.Diagnostics.Eventing.Reader
 @using RaceManager.Reading
+@using RaceManager.Language
+
 @inject NavigationManager NavigationManager
 
 <PageTitle>Boat types management</PageTitle>
-
 
 <div class="parent">
     <div class="BoatTypeListContainer">
         <div class="Content">
             <div style="margin-right: 8%">
-                @if (boatTypesList is not null)
+                @if (_boatTypesList is not null)
                 {
-                    foreach (BoatType bt in boatTypesList)
+                    foreach (BoatType bt in _boatTypesList)
                     {
                         <p> <button class="boat-button" data-id=@bt.ID @onclick="() => Select(bt)"> @bt.Name </button> </p>
                     }
                 }
             </div>
         </div>
-
-        <button class="btn btn-primary" @onclick="AddNewBoatType"> @Locales.AddNewBoatType </button>
+        <button class="btn btn-primary" @onclick="AddNewBoatType" disabled="@(_boatTypesList is null)"> @Locales.AddNewBoatType </button>
     </div>
 
     @if (_loaded)
     {
         <div class="BoatTypeListContainer ">
-            <div class="float-left-child" style="margin-right: 30px; min-width : 150% ">
+            <div class="float-left-child" style="margin-right: 5%; min-width : 150% ">
                 <div style="margin-bottom: 5%">
-                    @foreach (KeyValuePair<string, AField> keyValuePair in fields)
+                    @foreach (KeyValuePair<string, AField> keyValuePair in _fields)
                     {
                         <p> <label> @keyValuePair.Key </label> <input type="text" @bind-value="@(keyValuePair.Value.FieldContent)" disabled="@(_selected is null)" style=" @keyValuePair.Value.Style "> </p>
                     }
@@ -43,149 +42,74 @@
                 </p>
             </div>
         </div>
+
     }
 
 </div>
 
 @code {
-    private RMLogger logger = new RMLogger(LoggingLevel.DEBUG, "BoatTypesManagement");
-
+    private static RMLogger _logger = new RMLogger(LoggingLevel.INFO, "BoatTypesManagement");
+    private HubConnection? _hubConnection;
 
     private bool _loaded = false;
-    private HubConnection? hubConnection;
-    private int currentCount = 0;
-    private List<BoatType> boatTypesList = new();//= BoatType.BoatTypesList;
+
+    private List<BoatType>? _boatTypesList;
     private BoatType? _selected;
 
+    private Dictionary<string, AField> _fields = new();
+    private bool _isFormValid = true;
 
-    private Dictionary<string, AField> fields = new();
-    private bool IsFormValid = true;
-
-
-    private void Save()
-    {
-        IsFormValid = true;
-        foreach (KeyValuePair<string, AField> keyValuePair in fields)
-        {
-            AField afield = keyValuePair.Value;
-            afield.StoreValue();
-            if (afield.isValid == false)
-                IsFormValid = false;
-        }
-
-        if (IsFormValid && _selected is not null)
-        {
-            _selected.Name = ((BoatTypeField<string>)fields[Locales.Name]).Value;
-            _selected.HullLength = ((BoatTypeField<float>)fields[Locales.HullLength]).Value;
-            _selected.OverallLength = ((BoatTypeField<float>)fields[Locales.OverallLength]).Value;
-            _selected.HullWidth = ((BoatTypeField<float>)fields[Locales.HullWidth]).Value;
-            _selected.OverallWidth = ((BoatTypeField<float>)fields[Locales.OverallWidth]).Value;
-            _selected.AirDraft = ((BoatTypeField<float>)fields[Locales.AirDraft]).Value;
-            _selected.Draft = ((BoatTypeField<float>)fields[Locales.Draft]).Value;
-            _selected.Weight = ((BoatTypeField<float>)fields[Locales.Weight]).Value;
-            SendBoatTypesList(boatTypesList);
-        }
-    }
-
-    private void Remove(BoatType bt)
-    {
-        logger.log(LoggingLevel.DEBUG, "Remove()", $"Removing {boatTypesList.Find(x => x.Equals(bt)).Name} is valid.");
-        boatTypesList.Remove(bt);
-        _selected = null;
-    }
-
-
+    /// <summary>
+    /// Add a new boat type
+    /// </summary>
     private void Select(BoatType bt)
     {
-        logger.log(LoggingLevel.DEBUG, "Select()", $"User select {bt.Name}");
+        _logger.log(LoggingLevel.DEBUG, "Select()", $"User select {bt.Name}");
         _selected = bt;
-        fields[Locales.Name].FieldContent = _selected.Name;
-        fields[Locales.HullLength].FieldContent = _selected.HullLength.ToString();
-        fields[Locales.OverallLength].FieldContent = _selected.OverallLength.ToString();
-        fields[Locales.HullWidth].FieldContent = _selected.HullWidth.ToString();
-        fields[Locales.OverallWidth].FieldContent = _selected.OverallWidth.ToString();
-        fields[Locales.AirDraft].FieldContent = _selected.AirDraft.ToString();
-        fields[Locales.Draft].FieldContent = _selected.Draft.ToString();
-        fields[Locales.Weight].FieldContent = _selected.Weight.ToString();
+        _fields[Locales.Name].FieldContent = _selected.Name;
+        _fields[Locales.HullLength].FieldContent = _selected.HullLength.ToString();
+        _fields[Locales.OverallLength].FieldContent = _selected.OverallLength.ToString();
+        _fields[Locales.HullWidth].FieldContent = _selected.HullWidth.ToString();
+        _fields[Locales.OverallWidth].FieldContent = _selected.OverallWidth.ToString();
+        _fields[Locales.AirDraft].FieldContent = _selected.AirDraft.ToString();
+        _fields[Locales.Draft].FieldContent = _selected.Draft.ToString();
+        _fields[Locales.Weight].FieldContent = _selected.Weight.ToString();
 
-        foreach (KeyValuePair<string, AField> keyValuePair in fields)
+        foreach (KeyValuePair<string, AField> keyValuePair in _fields)
         {
             keyValuePair.Value.isValid = true;
             keyValuePair.Value.Style = "";
         }
-
         StateHasChanged();
     }
 
-
-    private void AddNewBoatType()
+    /// <summary>
+    /// Save the boat type
+    /// </summary>
+    private void Save()
     {
-        logger.log(LoggingLevel.DEBUG, "AddNewBoatType()", "User clicked on NewBoat");
-        boatTypesList.Add(new BoatType());
-    }
-
-    private bool state = false;
-    protected override async Task OnInitializedAsync()
-    {
-        /* <summary>
-         * Initialize the component
-         * </summary>
-         */
-        hubConnection = new HubConnectionBuilder().WithUrl(NavigationManager.ToAbsoluteUri("/boattypeshub")).Build();
-        hubConnection.SendAsync("BoatTypesListSending", boatTypesList);
-        // <summary>
-        // Register the event handler
-        // </summary>
-        hubConnection.On<List<BoatType>>("BoatTypesListSending", btl =>
+        _isFormValid = true;
+        foreach (KeyValuePair<string, AField> keyValuePair in _fields)
         {
-            logger.log(LoggingLevel.DEBUG, "BoatTypesListSending()", $"Server sent a list of {btl.Count} boat types");
-            boatTypesList = btl;
-            StateHasChanged();
-        });
-
-        await hubConnection.StartAsync();
-
-        await hubConnection.SendAsync("BoatTypesListRequest", boatTypesList);
-
-        fields.Add(Locales.Name, new BoatTypeField<string>());
-        fields.Add(Locales.HullLength, new BoatTypeField<float>());
-        fields.Add(Locales.OverallLength, new BoatTypeField<float>());
-        fields.Add(Locales.HullWidth, new BoatTypeField<float>());
-        fields.Add(Locales.OverallWidth, new BoatTypeField<float>());
-        fields.Add(Locales.AirDraft, new BoatTypeField<float>());
-        fields.Add(Locales.Draft, new BoatTypeField<float>());
-        fields.Add(Locales.Weight, new BoatTypeField<float>());
-        _loaded = true;
-    }
-
-    private async Task SendBoatTypesList(List<BoatType> btl)
-    {
-
-        /* <summary>
-         * Send the message to the server
-         * </summary>
-         */
-        if (hubConnection is not null)
-        {
-            await hubConnection.SendAsync("BoatTypesListSending", boatTypesList);
+            AField afield = keyValuePair.Value;
+            afield.StoreValue();
+            if (afield.isValid == false)
+                _isFormValid = false;
         }
-    }
 
-    public bool IsConnected =>
-    hubConnection?.State == HubConnectionState.Connected;
-
-    public async ValueTask DisposeAsync()
-    {
-        /* <summary>
-         * Dispose the component
-         * </summary>
-         */
-
-
-        if (hubConnection is not null)
+        if (_isFormValid && _selected is not null)
         {
-            await hubConnection.DisposeAsync();
+            _selected.Name = ((BoatTypeField<string>)_fields[Locales.Name]).Value;
+            _selected.HullLength = ((BoatTypeField<float>)_fields[Locales.HullLength]).Value;
+            _selected.OverallLength = ((BoatTypeField<float>)_fields[Locales.OverallLength]).Value;
+            _selected.HullWidth = ((BoatTypeField<float>)_fields[Locales.HullWidth]).Value;
+            _selected.OverallWidth = ((BoatTypeField<float>)_fields[Locales.OverallWidth]).Value;
+            _selected.AirDraft = ((BoatTypeField<float>)_fields[Locales.AirDraft]).Value;
+            _selected.Draft = ((BoatTypeField<float>)_fields[Locales.Draft]).Value;
+            _selected.Weight = ((BoatTypeField<float>)_fields[Locales.Weight]).Value;
+            SendBoatTypesList(_boatTypesList);
         }
+        _boatTypesList.Sort();
+        StateHasChanged();
     }
-
 }

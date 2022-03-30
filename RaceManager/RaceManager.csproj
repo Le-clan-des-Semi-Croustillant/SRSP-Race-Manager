@@ -17,6 +17,7 @@
     <Folder Include="Communication\SendFile\" />
     <Folder Include="dataResources\gpx\" />
     <Folder Include="dataResources\pol\" />
+    <Folder Include="Pages\BoatTypesManagement\" />
   </ItemGroup>
 
   <ItemGroup>
