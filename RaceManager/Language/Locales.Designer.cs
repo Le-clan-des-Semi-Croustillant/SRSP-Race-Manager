@@ -178,6 +178,15 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à English.
+        /// </summary>
+        public static string English {
+            get {
+                return ResourceManager.GetString("English", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Error.
         /// </summary>
         public static string Error {
@@ -192,6 +201,15 @@ namespace RaceManager.Language {
         public static string ErrorDesc {
             get {
                 return ResourceManager.GetString("ErrorDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à French.
+        /// </summary>
+        public static string French {
+            get {
+                return ResourceManager.GetString("French", resourceCulture);
             }
         }
         
@@ -498,6 +516,24 @@ namespace RaceManager.Language {
         public static string SwapTo {
             get {
                 return ResourceManager.GetString("SwapTo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Turn off the server.
+        /// </summary>
+        public static string TurnOffTheServer {
+            get {
+                return ResourceManager.GetString("TurnOffTheServer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Turn on the server.
+        /// </summary>
+        public static string TurnOnTheServer {
+            get {
+                return ResourceManager.GetString("TurnOnTheServer", resourceCulture);
             }
         }
         

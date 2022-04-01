@@ -24,9 +24,23 @@
             <button class="btn btn-primary" @onclick="Save"> Save </button>
 
         </p>
+               
     </div>
+  
 </div>
 
+<div class="SettingsOnOff " >
+   <p>
+                    <button class="btn btn-settings"  style="background: Gray" > @Locales.TurnOnTheServer</button>
+                    <button class="btn btn-settings"  style="background: Gray" > @Locales.TurnOffTheServer  </button>
+   </p>
+</div>
+<div class="langue " >
+   <p>
+                    <button class="btn btn-settings"  style="background: #1b6ec2" > @Locales.French </button>
+                    <button class="btn btn-settings"  style="background: #1b6ec2" > @Locales.English </button>
+   </p>
+</div>
 
 @code {
     private int port;

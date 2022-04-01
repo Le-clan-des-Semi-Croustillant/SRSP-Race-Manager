@@ -267,4 +267,16 @@
   <data name="Weight" xml:space="preserve">
     <value>Poids</value>
   </data>
+  <data name="English" xml:space="preserve">
+    <value>Anglais</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>Français</value>
+  </data>
+  <data name="TurnOffTheServer" xml:space="preserve">
+    <value>Eteindre le serveur</value>
+  </data>
+  <data name="TurnOnTheServer" xml:space="preserve">
+    <value>Allumer le serveur</value>
+  </data>
 </root>
