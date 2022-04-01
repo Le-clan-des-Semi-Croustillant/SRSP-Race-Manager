@@ -15,7 +15,7 @@ namespace RaceManager.Pages
         {
             _logger.log(LoggingLevel.DEBUG, "Remove()", $"Removing {_boatTypesList.Find(x => x.Equals(bt)).Name} is valid.");
             _boatTypesList.Remove(bt);
-            _selected = null;
+            _btselected = null;
         }
 
         /// <summary>

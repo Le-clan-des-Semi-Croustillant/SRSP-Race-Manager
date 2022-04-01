@@ -16,7 +16,7 @@
                 {
                     foreach (BoatType bt in _boatTypesList)
                     {
-                        <p> <button class="boat-button" data-id=@bt.ID @onclick="() => Select(bt)"> @bt.Name </button> </p>
+                        <p> <button class="boat-button" data-id=@bt.ID @onclick="() => BoatTypeSelect(bt)"> @bt.Name </button> </p>
                     }
                 }
             </div>
@@ -26,23 +26,50 @@
 
     @if (_loaded)
     {
-        <div class="BoatTypeListContainer ">
-            <div class="float-left-child" style="margin-right: 5%; min-width : 150% ">
-                <div style="margin-bottom: 5%">
-                    @foreach (KeyValuePair<string, AField> keyValuePair in _fields)
-                    {
-                        <p> <label> @keyValuePair.Key </label> <input type="text" @bind-value="@(keyValuePair.Value.FieldContent)" disabled="@(_selected is null)" style=" @keyValuePair.Value.Style "> </p>
-                    }
-                    <p> <Label> ID : @(_selected is not null ? _selected.ID : "") </Label> </p>
+        <div>
+            <div class="BoatTypeListContainer ">
+                <div class="float-left-child" style="margin-right: 5%; min-width : 150% ">
+                    <div style="margin-bottom: 5%">
+                        @foreach (KeyValuePair<string, AField> keyValuePair in _fields)
+                        {
+                            <p> <label> @keyValuePair.Key </label> <input type="text" @bind-value="@(keyValuePair.Value.FieldContent)" disabled="@(_btselected is null)" style=" @keyValuePair.Value.Style "> </p>
+                        }
+                        <p> <Label> ID : @(_btselected is not null ? _btselected.ID : "") </Label> </p>
 
+                    </div>
+                    <p>
+                        <button class="btn btn-primary" @onclick="Save" disabled="@(_btselected is null)"> @Locales.Save </button>
+                        <button class="btn btn-primary" style="background: red" @onclick="() => Remove(_btselected)" disabled="@(_btselected is null)"> @Locales.Remove </button>
+                    </p>
                 </div>
-                <p>
-                    <button class="btn btn-primary" @onclick="Save" disabled="@(_selected is null)"> @Locales.Save </button>
-                    <button class="btn btn-primary" style="background: red" @onclick="() => Remove(_selected)" disabled="@(_selected is null)"> @Locales.Remove </button>
-                </p>
             </div>
-        </div>
 
+            <div class="BoatTypeListContainer">
+                <div class="float-left-child" style="margin-right: 5%; min-width: 80%">
+                    <div class="Content">
+                        <div style="margin-right: 8%">
+                            @if (_btselected is not null)
+                            {
+                                foreach (Polar p in _btselected.PolarFileList)
+                                {
+                                    _logger.log(LoggingLevel.DEBUG, "Remove()", $"Polar is {p.Name}");
+
+
+                                    <p>
+                                        <button class="boat-button" disabled="true"> @p.Name </button> <button class="boat-button" disabled="true"> @p.Name </button>
+                                        <button class="boat-button" style="background: red"> @p.Name </button> <button class="boat-button" disabled="true"> @p.Name </button>
+
+                                    </p>
+                                }
+                            }
+
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" @onclick="AddNewBoatType" disabled="@(_boatTypesList is null)"> Add new polar </button>
+                </div>
+            </div>
+
+        </div>
     }
 
 </div>
@@ -54,7 +81,8 @@
     private bool _loaded = false;
 
     private List<BoatType>? _boatTypesList;
-    private BoatType? _selected;
+    private BoatType? _btselected;
+    //private Polar? _btselected;
 
     private Dictionary<string, AField> _fields = new();
     private bool _isFormValid = true;
@@ -62,18 +90,18 @@
     /// <summary>
     /// Add a new boat type
     /// </summary>
-    private void Select(BoatType bt)
+    private void BoatTypeSelect(BoatType bt)
     {
-        _logger.log(LoggingLevel.DEBUG, "Select()", $"User select {bt.Name}");
-        _selected = bt;
-        _fields[Locales.Name].FieldContent = _selected.Name;
-        _fields[Locales.HullLength].FieldContent = _selected.HullLength.ToString();
-        _fields[Locales.OverallLength].FieldContent = _selected.OverallLength.ToString();
-        _fields[Locales.HullWidth].FieldContent = _selected.HullWidth.ToString();
-        _fields[Locales.OverallWidth].FieldContent = _selected.OverallWidth.ToString();
-        _fields[Locales.AirDraft].FieldContent = _selected.AirDraft.ToString();
-        _fields[Locales.Draft].FieldContent = _selected.Draft.ToString();
-        _fields[Locales.Weight].FieldContent = _selected.Weight.ToString();
+        _logger.log(LoggingLevel.DEBUG, "BoatTypeSelect()", $"User select {bt.Name}");
+        _btselected = bt;
+        _fields[Locales.Name].FieldContent = _btselected.Name;
+        _fields[Locales.HullLength].FieldContent = _btselected.HullLength.ToString();
+        _fields[Locales.OverallLength].FieldContent = _btselected.OverallLength.ToString();
+        _fields[Locales.HullWidth].FieldContent = _btselected.HullWidth.ToString();
+        _fields[Locales.OverallWidth].FieldContent = _btselected.OverallWidth.ToString();
+        _fields[Locales.AirDraft].FieldContent = _btselected.AirDraft.ToString();
+        _fields[Locales.Draft].FieldContent = _btselected.Draft.ToString();
+        _fields[Locales.Weight].FieldContent = _btselected.Weight.ToString();
 
         foreach (KeyValuePair<string, AField> keyValuePair in _fields)
         {
@@ -97,16 +125,16 @@
                 _isFormValid = false;
         }
 
-        if (_isFormValid && _selected is not null)
+        if (_isFormValid && _btselected is not null)
         {
-            _selected.Name = ((BoatTypeField<string>)_fields[Locales.Name]).Value;
-            _selected.HullLength = ((BoatTypeField<float>)_fields[Locales.HullLength]).Value;
-            _selected.OverallLength = ((BoatTypeField<float>)_fields[Locales.OverallLength]).Value;
-            _selected.HullWidth = ((BoatTypeField<float>)_fields[Locales.HullWidth]).Value;
-            _selected.OverallWidth = ((BoatTypeField<float>)_fields[Locales.OverallWidth]).Value;
-            _selected.AirDraft = ((BoatTypeField<float>)_fields[Locales.AirDraft]).Value;
-            _selected.Draft = ((BoatTypeField<float>)_fields[Locales.Draft]).Value;
-            _selected.Weight = ((BoatTypeField<float>)_fields[Locales.Weight]).Value;
+            _btselected.Name = ((BoatTypeField<string>)_fields[Locales.Name]).Value;
+            _btselected.HullLength = ((BoatTypeField<float>)_fields[Locales.HullLength]).Value;
+            _btselected.OverallLength = ((BoatTypeField<float>)_fields[Locales.OverallLength]).Value;
+            _btselected.HullWidth = ((BoatTypeField<float>)_fields[Locales.HullWidth]).Value;
+            _btselected.OverallWidth = ((BoatTypeField<float>)_fields[Locales.OverallWidth]).Value;
+            _btselected.AirDraft = ((BoatTypeField<float>)_fields[Locales.AirDraft]).Value;
+            _btselected.Draft = ((BoatTypeField<float>)_fields[Locales.Draft]).Value;
+            _btselected.Weight = ((BoatTypeField<float>)_fields[Locales.Weight]).Value;
             SendBoatTypesList(_boatTypesList);
         }
         _boatTypesList.Sort();
