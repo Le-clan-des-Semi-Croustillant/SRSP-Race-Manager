@@ -17,6 +17,27 @@
     <Folder Include="Communication\SendFile\" />
     <Folder Include="dataResources\gpx\" />
     <Folder Include="dataResources\pol\" />
+    <Folder Include="Pages\BoatTypesManagement\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Language\Locales.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Locales.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Language\Locales.fr.resx">
+      <CustomToolNamespace>RaceManager.Language</CustomToolNamespace>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Language\Locales.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Locales.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>RaceManager.Language</CustomToolNamespace>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

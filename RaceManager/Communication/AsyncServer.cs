@@ -23,10 +23,9 @@ namespace RaceManager.Communication
 
     public partial class AsyncServer
     {
-
         private static List<Client> clients = new List<Client>();
-
-        private static Thread thread = new Thread(new ThreadStart(StartListening));
+        private static RMLogger _logger = new RMLogger(LoggingLevel.DEBUG, "AsyncServer");
+        public static Thread thread = new Thread(new ThreadStart(StartListening));
         public static int Port { get; set; } = 45879;
 
         // Semaphore
@@ -39,14 +38,30 @@ namespace RaceManager.Communication
 
         public static void Run()
         {
-            thread.Start();
+            try
+            {
+                thread.Start();
+                _logger.log(LoggingLevel.INFO, "Run()", "Starting server");
+            }
+            catch (Exception e)
+            {
+                _logger.log(LoggingLevel.ERROR, "Run()", "Error while starting server: " + e.Message);
+            }
         }
 
         public static void Stop()
         {
-            thread.Interrupt();
-        }
+            try
+            {
+                thread.Interrupt();
+                _logger.log(LoggingLevel.INFO, "Stop()", "Stopping server");
+            }
 
+            catch (Exception e)
+            {
+                _logger.log(LoggingLevel.ERROR, "Stop()", "Error stopping server: " + e.Message);
+            }
+        }
 
         public static void StartListening()
         {
@@ -82,7 +97,6 @@ namespace RaceManager.Communication
                     // Wait until a connection is made before continuing.
                     allDone.WaitOne();
                 }
-
             }
             catch (Exception e)
             {
@@ -91,7 +105,6 @@ namespace RaceManager.Communication
 
             Console.WriteLine("\nPress ENTER to continue...");
             Console.Read();
-
         }
 
         /// <summary>
@@ -104,26 +117,15 @@ namespace RaceManager.Communication
             // Signal the main thread to continue.
             allDone.Set();
 
-
             // Get the socket that handles the client request.
             Socket listener = (Socket)ar.AsyncState;
             Socket handler = listener.EndAccept(ar);
 
-            // read
-
             Client client = new Client();
             client.Handler = handler;
-            //clients.Add(client);
-            // Create the state object.
-            //StateObject state = new StateObject();
-            //state.workSocket = handler;
+
             handler.BeginReceive(client.buffer, 0, Client.BufferSize, 0,
                 new AsyncCallback(ReadCallback), client);
         }
-
-
-
-
-
     }
 }

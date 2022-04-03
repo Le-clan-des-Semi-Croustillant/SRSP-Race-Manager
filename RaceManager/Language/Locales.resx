@@ -208,7 +208,7 @@
     <value>See more</value>
   </data>
   <data name="ServConf" xml:space="preserve">
-    <value>Server Configuration</value>
+    <value>Server configuration</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Settings</value>
@@ -218,5 +218,65 @@
   </data>
   <data name="CurrentLanguage" xml:space="preserve">
     <value>English</value>
+  </data>
+  <data name="AddNewBoatType" xml:space="preserve">
+    <value>Add new boat type</value>
+  </data>
+  <data name="AirDraft" xml:space="preserve">
+    <value>Air wraft</value>
+  </data>
+  <data name="Draft" xml:space="preserve">
+    <value>Draft</value>
+  </data>
+  <data name="HullLength" xml:space="preserve">
+    <value>Hull length</value>
+  </data>
+  <data name="HullWidth" xml:space="preserve">
+    <value>Hull width</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="ManageBoatTypes" xml:space="preserve">
+    <value>Manage boat types</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NewBoatType" xml:space="preserve">
+    <value>New boat type</value>
+  </data>
+  <data name="OverallLength" xml:space="preserve">
+    <value>Overall length</value>
+  </data>
+  <data name="OverallWidth" xml:space="preserve">
+    <value>Overall width</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="ServerNotRunning" xml:space="preserve">
+    <value>Server  not running</value>
+  </data>
+  <data name="ServerRunning" xml:space="preserve">
+    <value>Server running</value>
+  </data>
+  <data name="Weight" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>French</value>
+  </data>
+  <data name="TurnOffTheServer" xml:space="preserve">
+    <value>Turn off the server</value>
+  </data>
+  <data name="TurnOnTheServer" xml:space="preserve">
+    <value>Turn on the server</value>
   </data>
 </root>

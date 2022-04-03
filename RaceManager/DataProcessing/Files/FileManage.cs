@@ -121,7 +121,7 @@ namespace RaceManager.DataProcessing.Files
 
         public static void CreateBoatJson(int ID, string Name,
             float HullLength, float OverallLength, float HullWidth,
-            float OverallWidth, float Draft, float AirDraft, float Weight, Polar polar)
+            float OverallWidth, float Draft, float AirDraft, float Weight, List <Polar> PolarFileList)
         {
             var DataBoat = new BoatType()
             {
@@ -133,7 +133,7 @@ namespace RaceManager.DataProcessing.Files
                 Draft = Draft,
                 AirDraft = AirDraft,
                 Weight = Weight,
-                Polar = polar
+                PolarFileList = PolarFileList
             };
             string pathFile = pathDataBoat + Name + "_" + ID + ".json";
             string jsonString = System.Text.Json.JsonSerializer.Serialize(DataBoat);

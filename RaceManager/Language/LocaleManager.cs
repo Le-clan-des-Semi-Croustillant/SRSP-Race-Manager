@@ -1,15 +1,23 @@
 ﻿using System.Globalization;
-
 namespace RaceManager.Language
 {
     public class LocaleManager
     {
-        static public string CurrentCulture { get; set; } = "en-US";
+        private static RMLogger _logger = new (LoggingLevel.INFO,"LocaleManager");
+        public static string CurrentCulture { get; set; } = "en-US";
+
+        public static void UpdateCulture(string culture)
+        {
+            _logger.log(LoggingLevel.INFO, "UpdateCulture()", "Updating culture to " + culture);
+            CultureInfo.DefaultThreadCurrentCulture = CultureInfo.GetCultureInfo(culture);
+            CultureInfo.DefaultThreadCurrentUICulture = CultureInfo.GetCultureInfo(culture);
+            Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo(culture);
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(culture);
+        }
 
         public static void UpdateCulture()
         {
-            Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo(CurrentCulture);
-            Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(CurrentCulture);
+            UpdateCulture(CurrentCulture);
         }
 
     }
