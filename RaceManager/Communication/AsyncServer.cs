@@ -65,14 +65,12 @@ namespace RaceManager.Communication
 
         public static void StartListening()
         {
-            // Data buffer for incoming data.
             byte[] bytes = new byte[1024];
 
             // Réservation du port d'écoute selon l'ip du serveur.
             IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());
             IPAddress ipAddress = ipHostInfo.AddressList[0];
-            //Console.WriteLine("Adresse de l'hote : " + ipAddress);
-            Logger.log(LoggingLevel.INFO,"AsyncServer.StartListening()", $"Host address : {ipAddress}");
+            _logger.log(LoggingLevel.INFO,"StartListening()", $"Host address : {ipAddress}");
             
             IPEndPoint localEndPoint = new IPEndPoint(ipAddress, Port);
             Socket listener = new Socket(AddressFamily.InterNetworkV6,
@@ -91,8 +89,7 @@ namespace RaceManager.Communication
                     allDone.Reset();
 
                     // Start an asynchronous socket to listen for connections.
-                    Logger.log(LoggingLevel.DEBUG, "AsyncServer.StartListening()", $"Waiting for a connection... {Port}");
-                    //Console.WriteLine("Waiting for a connection...");
+                    _logger.log(LoggingLevel.DEBUG, "StartListening()", $"Waiting for a connection... {Port}");
                     listener.BeginAccept(
                         new AsyncCallback(AcceptCallback),
                         listener);
@@ -103,13 +100,11 @@ namespace RaceManager.Communication
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.ToString());
+                _logger.log(LoggingLevel.ERROR, "StartListening()", "Error while listening: " + e.Message);
             }
 
 
-            //Console.WriteLine("\nPress ENTER to continue...");
-            //Console.Read();
-            Logger.log(LoggingLevel.INFO, "AsyncServer.StartListening()", $"Listen is over.");
+            _logger.log(LoggingLevel.DEBUG, "AsyncServer.StartListening()", $"Listen is over.");
 
         }
 

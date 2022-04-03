@@ -5,11 +5,12 @@ namespace RaceManager.DataProcessing.Json
 {
     public class JsonManage
     {
-
+        private static RMLogger _logger = new(LoggingLevel.DEBUG, "JsonManage");
         public static string JsonType(string data)
         {
             dynamic informationJson = JsonParse.JsonDeserialize(data);
             Console.WriteLine(informationJson);
+            _logger.log(LoggingLevel.DEBUG, "JsonType", informationJson);
             //try
             //{
 
@@ -19,33 +20,32 @@ namespace RaceManager.DataProcessing.Json
 
             //}
             string OutMessage;
-            Console.WriteLine((IMessageType)informationJson.TypeMessage);
+            _logger.log(LoggingLevel.DEBUG, "JsonType", $"TypeMessage: {(IMessageType)informationJson.TypeMessage}");
             switch ((IMessageType)informationJson.TypeMessage)
             {
-               
                 case IMessageType.CONNECTION:
-                    Console.WriteLine(informationJson.TypeMessage + " Connection");
+                    _logger.log(LoggingLevel.DEBUG, "JsonType", informationJson.TypeMessage + " Connection");
                     OutMessage = JsonParse.JsonSerialiseOConnection();
                     break;
                 case IMessageType.DISCONNECTION:
-                    Console.WriteLine(informationJson.TypeMessage + " Disconnection");
+                    _logger.log(LoggingLevel.DEBUG, "JsonType", informationJson.TypeMessage + " Disconnection");
                     OutMessage = JsonParse.JsonSerialiseODisconnection();
                     break;
                 case IMessageType.PLAYERINFO:
-                    Console.WriteLine(informationJson.TypeMessage + " Player Info");
+                    _logger.log(LoggingLevel.DEBUG, "JsonType", informationJson.TypeMessage + " PlayerInfo");
                     OutMessage = "Player Info";
                     break;
                 case IMessageType.BOATSELECT:
-                    Console.WriteLine(informationJson.TypeMessage + " Boat Select");
+                    _logger.log(LoggingLevel.DEBUG, "JsonType", informationJson.TypeMessage + " BoatSelect");
                     OutMessage = "Boat Select";
                     break;
                 case IMessageType.BOATLISTREQUEST: //Retourner une liste de bateau
-                    Console.WriteLine(informationJson.TypeMessage + " Boast List Request");
+                    _logger.log(LoggingLevel.DEBUG, "JsonType", informationJson.TypeMessage + " BoatListRequest");
                     OutMessage = JsonParse.JsonSerialiseOBoatList();
                     //Envoyer à la personne qui m'as envoyé ma demande
                     break;
                 case IMessageType.ENDRACE:
-                    Console.WriteLine(informationJson.TypeMessage + " End Race");
+                    _logger.log(LoggingLevel.DEBUG, "JsonType", informationJson.TypeMessage + " EndRace");
                     OutMessage = JsonParse.JsonSerialiseOEndRace();
                     break;
 

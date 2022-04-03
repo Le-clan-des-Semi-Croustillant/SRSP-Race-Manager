@@ -12,7 +12,8 @@ namespace RaceManager.Communication
 {
     public class Configuration
     {
-        public static  bool portIsAvailable(int port)
+        private static RMLogger _logger = new(LoggingLevel.DEBUG, "Configuration");
+        public static bool portIsAvailable(int port)
         {
             bool portDisponible = true;
 
@@ -23,7 +24,8 @@ namespace RaceManager.Communication
                 if (tcpi.LocalEndPoint.Port == port)
                 {
                     portDisponible = false;
-                    Console.WriteLine(Locales.PortUnavailable, port);
+
+                    _logger.log(LoggingLevel.DEBUG, "portIsAvailable()", Locales.PortUnavailable + $": {port}");
                     break;
                 }
             }
@@ -43,13 +45,12 @@ namespace RaceManager.Communication
                 ips = heserver.AddressList;
                 foreach (IPAddress address in ips)
                 {
-                    Console.WriteLine("Address: " + address);
-                    //Console.WriteLine("\r\n");
+                    _logger.log(LoggingLevel.DEBUG, "IpAddresses()", $"IP: {address}");
                 }
             }
             catch (Exception e)
             {
-                Console.WriteLine("Server exception" + e);
+                _logger.log(LoggingLevel.ERROR, "IpAddresses()", $"Server exception: {e}");
             }
 
             return ips;
@@ -65,17 +66,17 @@ namespace RaceManager.Communication
                 // Affiche les flgas qui indiquent si le serveur prend en charge les schémas d'adresse IPv4 ou IPv6.
                 sb.AppendLine(Locales.IPV4support + Socket.SupportsIPv4);
                 sb.AppendLine(Locales.IPV6support + Socket.SupportsIPv6);
-                Console.WriteLine(sb);
+                _logger.log(LoggingLevel.DEBUG, "IpAddressAdditionalInfo()", sb.ToString());
             }
 
             catch (Exception e)
             {
-                Console.WriteLine("ERROR : Host not found exception: " + e);
+                _logger.log(LoggingLevel.ERROR, "IpAddressAdditionalInfo()", $"Host not found exception: {e}");
             }
 
             return sb.ToString();
         }
- 
+
 
     }
 }

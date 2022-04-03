@@ -32,6 +32,7 @@ namespace RaceManager.Communication
 
     public class AsynchronousClient
     {
+        private static RMLogger _logger = new RMLogger(LoggingLevel.DEBUG, "AsynchronousClient");
         // The port number for the remote device.  
 
         // ManualResetEvent instances signal completion.  
@@ -114,7 +115,7 @@ namespace RaceManager.Communication
                 };
                 string SendMessage = System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
 
-                Console.WriteLine("Message send : " + SendMessage);
+                _logger.log(LoggingLevel.DEBUG, "StartClient()", "SendMessage: " + SendMessage);
                 Send(client, SendMessage);
                 //Send(client, "This is a test<EOF>");
                 sendDone.WaitOne();
@@ -124,18 +125,18 @@ namespace RaceManager.Communication
                 receiveDone.WaitOne();
 
                 // Write the response to the console.  
-                Console.WriteLine("Response received : {0}\n", response);
+                _logger.log(LoggingLevel.DEBUG, "StartClient()", $"Response received : {response}");
 
                 // Release the socket.  
-                Console.WriteLine("Je suis là");
+                _logger.log(LoggingLevel.DEBUG, "StartClient()", "Je suis là");
                 client.Shutdown(SocketShutdown.Both);
-                Console.WriteLine("Je Passe");
+                _logger.log(LoggingLevel.DEBUG, "StartClient()", "Je Passe");
                 client.Close();
-                Console.WriteLine("Je fini");
+                _logger.log(LoggingLevel.DEBUG, "StartClient()", "Je fini");
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.ToString());
+                _logger.log(LoggingLevel.ERROR, "StartClient()", $"Exception: {e.Message}");
             }
         }
 
@@ -154,15 +155,14 @@ namespace RaceManager.Communication
                 // Complete the connection.  
                 client.EndConnect(ar);
 
-                Console.WriteLine("Socket connected to {0}",
-                    client.RemoteEndPoint.ToString());
+                _logger.log(LoggingLevel.DEBUG, "ConnectCallback()", $"Socket connected to {client.RemoteEndPoint.ToString()}");
 
                 // Signal that the connection has been made.  
                 connectDone.Set();
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.ToString());
+                _logger.log(LoggingLevel.ERROR, "ConnectCallback()", $"Exception: {e.Message}");
             }
         }
 
@@ -180,7 +180,7 @@ namespace RaceManager.Communication
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.ToString());
+                _logger.log(LoggingLevel.ERROR, "Receive()", $"Exception: {e.Message}");
             }
         }
 
@@ -211,7 +211,7 @@ namespace RaceManager.Communication
                     if (state.sb.Length > 1)
                     {
                         response = state.sb.ToString();
-                        Console.WriteLine(response);
+                        _logger.log(LoggingLevel.DEBUG, "ReceiveCallback()", $"Response received : {response}");
                     }
                     // Signal that all bytes have been received.  
                     receiveDone.Set();
@@ -219,7 +219,7 @@ namespace RaceManager.Communication
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.ToString());
+                _logger.log(LoggingLevel.ERROR, "ReceiveCallback()", $"Exception: {e.Message}");
             }
         }
 
@@ -242,17 +242,18 @@ namespace RaceManager.Communication
 
                 // Complete sending the data to the remote device.  
                 int bytesSent = client.EndSend(ar);
-                Console.WriteLine("Sent {0} bytes to server.", bytesSent);
+                _logger.log(LoggingLevel.DEBUG, "SendCallback()", $"Sent {bytesSent} bytes to server.");
 
                 // Signal that all bytes have been sent.  
                 sendDone.Set();
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.ToString());
+                _logger.log(LoggingLevel.ERROR, "SendCallback()", $"Exception: {e.Message}");
+                
             }
         }
-            
+
         public static int Main(String[] args)
         {
             for (int i = 0; i < 6; i++)
