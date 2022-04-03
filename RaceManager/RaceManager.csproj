@@ -4,6 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <StartupObject></StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,6 +19,7 @@
     <Folder Include="dataResources\gpx\" />
     <Folder Include="dataResources\pol\" />
     <Folder Include="Pages\BoatTypesManagement\" />
+    <Folder Include="index\gpx\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -38,6 +40,15 @@
       <LastGenOutput>Locales.Designer.cs</LastGenOutput>
       <CustomToolNamespace>RaceManager.Language</CustomToolNamespace>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="index\pol\Pol_123456.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="index\pol\Pol_987654.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

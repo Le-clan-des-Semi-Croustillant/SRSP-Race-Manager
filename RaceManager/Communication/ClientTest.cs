@@ -3,15 +3,21 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using System.Text;
-using RaceManager.Communication;
-using RaceManager.DataProcessing.Json;
 
-
-namespace consoleTests
+namespace RaceManager.Communication
 {
+    //public class ClientTest
+    //{
+    //    // Client socket.  
+    //    public Socket workSocket = null;
+    //    // Size of receive buffer.  
+    //    public const int BufferSize = 256;
+    //    // Receive buffer.  
+    //    public byte[] buffer = new byte[BufferSize];
+    //    // Received data string.  
+    //    public StringBuilder sb = new StringBuilder();
+    //}
 
-
-    // State object for receiving data from remote device.  
     public class StateObject
     {
         // Client socket.  
@@ -104,7 +110,7 @@ namespace consoleTests
                 //string test = JsonParse.JsonSerialiseConnection(TypeMessage, Id, IdGame, NMEA, Boat, IdPlayer, NamePlayer);
                 var serialiseJsonInfo = new JsonIConnection
                 {
-                    TypeMessage = "BOATLISTREQUEST",
+                    TypeMessage = IMessageType.BOATLISTREQUEST,
                 };
                 string SendMessage = System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
 
@@ -136,7 +142,6 @@ namespace consoleTests
         class JsonIConnection
         {
             public IMessageType TypeMessage { get; set; }
-            public EnvironmentInfo? EnvironmentInfos { get; set; }
         }
 
         private static void ConnectCallback(IAsyncResult ar)
@@ -247,7 +252,7 @@ namespace consoleTests
                 Console.WriteLine(e.ToString());
             }
         }
-
+            
         public static int Main(String[] args)
         {
             for (int i = 0; i < 6; i++)

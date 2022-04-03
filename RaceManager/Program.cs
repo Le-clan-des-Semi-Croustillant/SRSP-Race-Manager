@@ -8,6 +8,9 @@ using RaceManager.Language;
 using RaceManager.Pages;
 using RaceManager.DataProcessing.Files;
 using RaceManager.Reading;
+using RaceManager.Communication;
+using RaceManager.DataProcessing.Files;
+using static RaceManager.DataProcessing.Files.FileManageData;
 
 RMLogger logger = new(LoggingLevel.INFO, "Program");
 
@@ -63,16 +66,14 @@ app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
 
 
-
-LocaleManager.UpdateCulture("en-US");
-
-FileManage.CheckFilesFolderData();
-
+FileManageData.CheckFilesFolderData();
+FileManageData.UpdateJsonData();
+FileManageData.UpdateAllBoatTypesList();
 
 logger.log(LoggingLevel.INFO, "Initialisation", "This software is currently in " + Locales.CurrentLanguage + ".");
 
+AsyncServer.Run();
 
 ServerHub serverHub = new ServerHub();
-serverHub.UpdateStatus();
 app.Run();
 

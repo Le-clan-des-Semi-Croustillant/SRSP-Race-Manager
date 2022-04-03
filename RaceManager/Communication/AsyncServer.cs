@@ -71,7 +71,9 @@ namespace RaceManager.Communication
             // Réservation du port d'écoute selon l'ip du serveur.
             IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());
             IPAddress ipAddress = ipHostInfo.AddressList[0];
-            Console.WriteLine("Adresse de l'hote : " + ipAddress);
+            //Console.WriteLine("Adresse de l'hote : " + ipAddress);
+            Logger.log(LoggingLevel.INFO,"AsyncServer.StartListening()", $"Host address : {ipAddress}");
+            
             IPEndPoint localEndPoint = new IPEndPoint(ipAddress, Port);
             Socket listener = new Socket(AddressFamily.InterNetworkV6,
                 SocketType.Stream, ProtocolType.Tcp);
@@ -89,7 +91,8 @@ namespace RaceManager.Communication
                     allDone.Reset();
 
                     // Start an asynchronous socket to listen for connections.
-                    Console.WriteLine("Waiting for a connection...");
+                    Logger.log(LoggingLevel.DEBUG, "AsyncServer.StartListening()", $"Waiting for a connection... {Port}");
+                    //Console.WriteLine("Waiting for a connection...");
                     listener.BeginAccept(
                         new AsyncCallback(AcceptCallback),
                         listener);
@@ -103,8 +106,11 @@ namespace RaceManager.Communication
                 Console.WriteLine(e.ToString());
             }
 
-            Console.WriteLine("\nPress ENTER to continue...");
-            Console.Read();
+
+            //Console.WriteLine("\nPress ENTER to continue...");
+            //Console.Read();
+            Logger.log(LoggingLevel.INFO, "AsyncServer.StartListening()", $"Listen is over.");
+
         }
 
         /// <summary>
