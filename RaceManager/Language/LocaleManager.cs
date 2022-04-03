@@ -1,13 +1,14 @@
 ﻿using System.Globalization;
-
 namespace RaceManager.Language
 {
     public class LocaleManager
     {
+        private static RMLogger _logger = new (LoggingLevel.INFO,"LocaleManager");
         public static string CurrentCulture { get; set; } = "en-US";
 
         public static void UpdateCulture(string culture)
         {
+            _logger.log(LoggingLevel.INFO, "UpdateCulture()", "Updating culture to " + culture);
             CultureInfo.DefaultThreadCurrentCulture = CultureInfo.GetCultureInfo(culture);
             CultureInfo.DefaultThreadCurrentUICulture = CultureInfo.GetCultureInfo(culture);
             Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo(culture);

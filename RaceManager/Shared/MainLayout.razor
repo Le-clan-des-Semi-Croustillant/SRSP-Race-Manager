@@ -3,7 +3,6 @@
 @using RaceManager.Reading
 @using RaceManager.Language
 @inherits LayoutComponentBase
-@inject NavigationManager NavigationManager
 
 <PageTitle>Race Manager</PageTitle>
 
@@ -15,14 +14,19 @@
     <main>
         <div class="top-row px-4">
 
-            <div>
-                @if (IsServerRunning)
+            <div style="cursor: crosshair" @onclick="UpdateStatus">
+                @if (_loaded)
                 {
-                    <label style="color: #03ec00"> @Locales.ServerRunning </label>
-                }
-                else
-                {
-                    <label style="color: red"> @Locales.ServerNotRunning</label>
+                    @if (AsyncServer.thread.IsAlive)
+                    {
+                        <label style="color: #03ec00; margin-right: 5px"> @Locales.ServerRunning </label>
+                    }
+                    else
+                    {
+                        <label style="color: red; margin-right: 5px"> @Locales.ServerNotRunning</label>
+                    }
+
+                    <gg-icon class="gg-sync" style="float: right" ></gg-icon>
                 }
             </div>
         </div>
@@ -35,65 +39,18 @@
 
 @code
 {
-    private bool IsServerRunning;
-    private HubConnection? hubConnection;
-    private bool state = false;
+
+    private bool _loaded = false;
+
 
     protected override async Task OnInitializedAsync()
     {
-        /* <summary>
-             * Initialize the component
-             * </summary>
-             */
-        hubConnection = new HubConnectionBuilder().WithUrl(NavigationManager.ToAbsoluteUri("/serverhub")).Build();
-
-
-        
-        // <summary>
-        // Register the event handler
-        // </summary>
-        hubConnection.On<bool>("ServerStatusUpdate",  IsServerRunning =>
-        {
-            this.IsServerRunning = IsServerRunning;
-           //Logger.log(LoggingLevel.INFO,"MainLayout","Server status updated to " + IsServerRunning);
-            StateHasChanged();
-        });
-        
-        IsServerRunning = ServerHub.IsServerRunning;
-        IsServerRunning = true;
-        await hubConnection.StartAsync();
-        
-        await hubConnection.SendAsync("UpdateStatus");
-
-
+        _loaded = true;
     }
-    
-    //private async Task Send()
-    //{
-    ///* <summary>
-    //     * Send the message to the server
-    //     * </summary>
-    //     */
-    //    if (hubConnection is not null)
-    //    {
-    //        await hubConnection.SendAsync("SendMessage", boatTypesList);
-    //    }
-    //}
-    
-    public bool IsConnected =>
-        hubConnection?.State == HubConnectionState.Connected;
 
-    public async ValueTask DisposeAsync()
+    private async void UpdateStatus()
     {
-    /* <summary>
-         * Dispose the component
-         * </summary>
-         */
-        
-        
-        if (hubConnection is not null)
-        {
-            await hubConnection.DisposeAsync();
-        }
+        StateHasChanged();
     }
+
 }

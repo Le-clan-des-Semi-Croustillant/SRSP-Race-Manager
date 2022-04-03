@@ -4,7 +4,6 @@
 using Microsoft.AspNetCore.ResponseCompression;
 using RaceManager;
 using RaceManager.Communication;
-using RaceManager.Data;
 using RaceManager.Language;
 using RaceManager.Pages;
 using RaceManager.DataProcessing.Files;
@@ -32,7 +31,6 @@ BoatType.BoatTypesList.Add(new BoatType()
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSignalR();
-builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddResponseCompression(opts =>
 {
     opts.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(
@@ -65,7 +63,6 @@ app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
 
 
-count c = new count();
 
 LocaleManager.UpdateCulture("en-US");
 
