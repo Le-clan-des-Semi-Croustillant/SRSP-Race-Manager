@@ -32,10 +32,9 @@ namespace RaceManager.Pages
         /// </summary>
         protected override async Task OnInitializedAsync()
         {
-            LocaleManager.UpdateCulture();
             _logger.log(LoggingLevel.DEBUG, "OnInitializedAsync()", "Language is " + LocaleManager.CurrentCulture);
 
-            _hubConnection = new HubConnectionBuilder().WithUrl(NavigationManager.ToAbsoluteUri("/boattypeshub")).Build();
+            _hubConnection = new HubConnectionBuilder().WithUrl(navigationManager.ToAbsoluteUri("/boattypeshub")).Build();
 
             _boatTypesList = new(BoatType.BoatTypesList);
             _boatTypesList.Sort();
@@ -63,6 +62,8 @@ namespace RaceManager.Pages
             {
                 await _hubConnection.SendAsync("BoatTypesListSending", _boatTypesList);
             }
+            else _logger.log(LoggingLevel.WARN, "SendPort()", "hubConnection is null");
+
         }
 
         public bool IsConnected =>

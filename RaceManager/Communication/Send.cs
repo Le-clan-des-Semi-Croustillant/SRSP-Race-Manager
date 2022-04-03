@@ -42,7 +42,7 @@ namespace RaceManager.Communication
 
                 // Complete sending the data to the remote device.
                 int bytesSent = handler.EndSend(ar);
-                Console.WriteLine("Sent {0} bytes to client.", bytesSent);
+                _logger.log(LoggingLevel.INFO, "SendCallback()", $"Sent {bytesSent} bytes to client." );
 
                 handler.Shutdown(SocketShutdown.Both);
                 handler.Close();
@@ -50,7 +50,7 @@ namespace RaceManager.Communication
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.ToString());
+                _logger.log(LoggingLevel.ERROR, "SendCallback()", e.ToString());
             }
         }
     }

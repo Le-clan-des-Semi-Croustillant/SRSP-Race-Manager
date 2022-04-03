@@ -3,13 +3,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR;
 using RaceManager.Pages;
 using System;
+using System.Net;
+using System.Net.NetworkInformation;
 using System.Net.Sockets;
+using RaceManager.Language;
 
 namespace RaceManager.Communication
 {
     public class ServerHub : Hub
     {
-        private static RMLogger logger = new RMLogger(LoggingLevel.DEBUG, "ServerHub");
+        private static RMLogger _logger = new RMLogger(LoggingLevel.DEBUG, "ServerHub");
         public static bool IsServerRunning { set; get; } = false;
 
         public async Task UpdateStatus()
@@ -23,44 +26,81 @@ namespace RaceManager.Communication
                 if (Clients is not null && Clients.All is not null)
                 {
                     await Clients.All.SendAsync("ServerStatusUpdate", IsServerRunning);
-                    //logger.log(LoggingLevel.DEBUG, "UpdateStatus()", $"Server send isServerRunning: {IsServerRunning}");
+                    //_logger.log(LoggingLevel.DEBUG, "UpdateStatus()", $"Server send isServerRunning: {IsServerRunning}");
                 }
                 //Logger.log(LoggingLevel.DEBUG, "ServerHub", $"Server is {(isServerRunning? "" : "not ")}running");
                 await Task.Delay(2000);
             }
         }
 
+        public async Task SendPort(int port)
+        {
+            _logger.log(LoggingLevel.DEBUG, "SendPort()", $"Server changed port to : {port}");
+            AsyncServer.Port = port;
+        }
+
+        public async Task ChangeCulture(string culture)
+        {
+            _logger.log(LoggingLevel.DEBUG, "ChangeCulture()", $"Server changed culture to : {culture}");
+            LocaleManager.UpdateCulture(culture);
+        }
+
+        public async Task TurnOn()
+        {
+            _logger.log(LoggingLevel.INFO, "TurnOn()", $"Server turned on");
+            AsyncServer.Run();
+        }
+
+        public async Task TurnOff()
+        {
+            _logger.log(LoggingLevel.INFO, "TurnOff()", $"Server turned off");
+            AsyncServer.Stop();
+        }
+
         public override Task OnConnectedAsync()
         {
-            logger.log(LoggingLevel.DEBUG, "OnConnectedAsync()", $"New connection {Context.ConnectionId}");
+            _logger.log(LoggingLevel.DEBUG, "OnConnectedAsync()", $"New connection {Context.ConnectionId}");
 
             return base.OnConnectedAsync();
         }
 
         public override async Task OnDisconnectedAsync(Exception e)
         {
-            logger.log(LoggingLevel.DEBUG, "OnDisconnectedAsync()", $"New connection {Context.ConnectionId}");
+            _logger.log(LoggingLevel.DEBUG, "OnDisconnectedAsync()", $"New connection {Context.ConnectionId}");
             await base.OnDisconnectedAsync(e);
         }
 
         public static bool IsPortBusy(int port)
         {
-            // Call with an int variable.
-            using (TcpClient tcpClient = new TcpClient())
+            try
             {
-                try
+                IPGlobalProperties ipGlobalProperties = IPGlobalProperties.GetIPGlobalProperties();
+                TcpConnectionInformation[] tcpConnInfoArray = ipGlobalProperties.GetActiveTcpConnections();
+
+                foreach (TcpConnectionInformation tcpi in tcpConnInfoArray)
                 {
-                    tcpClient.Connect("127.0.0.1", port);
-                    logger.log(LoggingLevel.DEBUG, "IsPortBusy()", $"Port available: {port}");
-                    return true;
+                    if (tcpi.LocalEndPoint.Port == port)
+                    {
+                        return false;
+                    }
                 }
-                catch (Exception)
-                {
-                    logger.log(LoggingLevel.ERROR, "IsPortBusy()", $"Port busy: {port}");
-                    return false;
-                }
+
+                Socket listener = new Socket(AddressFamily.InterNetworkV6,
+                    SocketType.Stream, ProtocolType.Tcp);
+                listener.SetSocketOption(SocketOptionLevel.IPv6, SocketOptionName.IPv6Only, false);
+                IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());
+                IPAddress ipAddress = ipHostInfo.AddressList[0];
+                listener.Bind(new IPEndPoint(ipAddress, port));
+                listener.Close();
+                _logger.log(LoggingLevel.DEBUG, "IsPortBusy()", $"Port available: {port}");
             }
+            catch (Exception e)
+            {
+                _logger.log(LoggingLevel.DEBUG, "IsPortBusy()", $"Port busy: {port}: \"{e}\"");
+                return false;
+            }
+
+            return true;
         }
     }
-
 }

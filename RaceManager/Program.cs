@@ -4,11 +4,13 @@
 using Microsoft.AspNetCore.ResponseCompression;
 using RaceManager;
 using RaceManager.Communication;
-using RaceManager.Data;
 using RaceManager.Language;
 using RaceManager.Pages;
 using RaceManager.DataProcessing.Files;
 using RaceManager.Reading;
+using RaceManager.Communication;
+using RaceManager.DataProcessing.Files;
+using static RaceManager.DataProcessing.Files.FileManageData;
 
 RMLogger logger = new(LoggingLevel.INFO, "Program");
 
@@ -46,7 +48,6 @@ BoatType.BoatTypesList.Add(new BoatType()
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSignalR();
-builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddResponseCompression(opts =>
 {
     opts.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(
@@ -79,17 +80,14 @@ app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
 
 
-count c = new count();
-
-LocaleManager.UpdateCulture("en-US");
-
-FileManage.CheckFilesFolderData();
-
+FileManageData.CheckFilesFolderData();
+FileManageData.UpdateJsonData();
+FileManageData.UpdateAllBoatTypesList();
 
 logger.log(LoggingLevel.INFO, "Initialisation", "This software is currently in " + Locales.CurrentLanguage + ".");
 
+AsyncServer.Run();
 
 ServerHub serverHub = new ServerHub();
-serverHub.UpdateStatus();
 app.Run();
 

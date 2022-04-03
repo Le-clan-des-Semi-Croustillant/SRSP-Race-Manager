@@ -61,39 +61,39 @@ namespace consoleTests
                 connectDone.WaitOne();
 
                 // Send test data to the remote device.
-                IMessageType TypeMessage;
-                string SendMessage;
-                if (num == 0)
-                {
-                    TypeMessage = IMessageType.CONNECTION;
-                    SendMessage = JsonParse.JsonSerialiseIConnection(TypeMessage);
+                //IMessageType TypeMessage;
+                //string SendMessage;
+                //if (num == 0)
+                //{
+                //    TypeMessage = IMessageType.CONNECTION;
+                //    SendMessage = JsonParse.JsonSerialiseIConnection(TypeMessage);
 
-                }
-                else if (num == 1)
-                {
-                    TypeMessage = IMessageType.DISCONNECTION;
-                    SendMessage = JsonParse.JsonSerialiseIDisconnection(TypeMessage);
-                }
-                else if (num == 2)
-                {
-                    TypeMessage = IMessageType.PLAYERINFO;
-                    SendMessage = JsonParse.JsonSerialiseIPlayerInfo(TypeMessage);
-                }
-                else if (num == 3)
-                {
-                    TypeMessage = IMessageType.BOATSELECT;
-                    SendMessage = JsonParse.JsonSerialiseIBoatSelect(TypeMessage);
-                }
-                else if (num == 4)
-                {
-                    TypeMessage = IMessageType.BOATLISTREQUEST;
-                    SendMessage = JsonParse.JsonSerialiseIBoatListRequest(TypeMessage);
-                }
-                else /*if (num == 5)*/
-                {
-                    TypeMessage = IMessageType.ENDRACE;
-                    SendMessage = JsonParse.JsonSerialiseIEndRace(TypeMessage);
-                }
+                //}
+                //else if (num == 1)
+                //{
+                //    TypeMessage = IMessageType.DISCONNECTION;
+                //    SendMessage = JsonParse.JsonSerialiseIDisconnection(TypeMessage);
+                //}
+                //else if (num == 2)
+                //{
+                //    TypeMessage = IMessageType.PLAYERINFO;
+                //    SendMessage = JsonParse.JsonSerialiseIPlayerInfo(TypeMessage);
+                //}
+                //else if (num == 3)
+                //{
+                //    TypeMessage = IMessageType.BOATSELECT;
+                //    SendMessage = JsonParse.JsonSerialiseIBoatSelect(TypeMessage);
+                //}
+                //else if (num == 4)
+                //{
+                //    TypeMessage = IMessageType.BOATLISTREQUEST;
+                //    SendMessage = JsonParse.JsonSerialiseIBoatListRequest(TypeMessage);
+                //}
+                //else /*if (num == 5)*/
+                //{
+                //    TypeMessage = IMessageType.ENDRACE;
+                //    SendMessage = JsonParse.JsonSerialiseIEndRace(TypeMessage);
+                //}
                 //long Id = 4242;
                 //long IdGame = 01;
                 //string NMEA = "NMEA";
@@ -102,6 +102,12 @@ namespace consoleTests
                 //string NamePlayer = "Sky";
 
                 //string test = JsonParse.JsonSerialiseConnection(TypeMessage, Id, IdGame, NMEA, Boat, IdPlayer, NamePlayer);
+                var serialiseJsonInfo = new JsonIConnection
+                {
+                    TypeMessage = "BOATLISTREQUEST",
+                };
+                string SendMessage = System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+
                 Console.WriteLine("Message send : " + SendMessage);
                 Send(client, SendMessage);
                 //Send(client, "This is a test<EOF>");
@@ -125,6 +131,12 @@ namespace consoleTests
             {
                 Console.WriteLine(e.ToString());
             }
+        }
+
+        class JsonIConnection
+        {
+            public IMessageType TypeMessage { get; set; }
+            public EnvironmentInfo? EnvironmentInfos { get; set; }
         }
 
         private static void ConnectCallback(IAsyncResult ar)

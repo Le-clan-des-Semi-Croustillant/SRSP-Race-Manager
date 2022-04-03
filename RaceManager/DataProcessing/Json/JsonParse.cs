@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using RaceManager.Communication;
+using RaceManager.Reading;
 
 namespace RaceManager.DataProcessing.Json
 {
@@ -172,6 +173,7 @@ namespace RaceManager.DataProcessing.Json
         public string BoatName { get; set; }
         public int BoatId { get; set; }
         public string BoatPath { get; set; }
+        public BoatType BoatInformation { get; set; }
     }
     class JsonDataPol
     {
@@ -183,6 +185,7 @@ namespace RaceManager.DataProcessing.Json
         public string PolName { get; set; }
         public int PolId { get; set; }
         public string PolPath { get; set; }
+        public string PolInformation { get; set; }
     }
     class JsonDataRace
     {
