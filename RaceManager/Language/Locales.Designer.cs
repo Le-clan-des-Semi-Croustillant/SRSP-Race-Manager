@@ -214,6 +214,15 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager.
+        /// </summary>
+        public static string Github {
+            get {
+                return ResourceManager.GetString("Github", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à This page will allow you to import your gpx files and to modify them if necessary..
         /// </summary>
         public static string GpxDesc {
@@ -412,6 +421,15 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à https://le-clan-des-semi-croustillant.github.io/SRSP-Race-Manager/.
+        /// </summary>
+        public static string Page {
+            get {
+                return ResourceManager.GetString("Page", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Parameter.
         /// </summary>
         public static string Param {
@@ -462,6 +480,15 @@ namespace RaceManager.Language {
         public static string SeeMore {
             get {
                 return ResourceManager.GetString("SeeMore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à See this project on Github.
+        /// </summary>
+        public static string SeethisprojectonGithub {
+            get {
+                return ResourceManager.GetString("SeethisprojectonGithub", resourceCulture);
             }
         }
         
@@ -534,6 +561,15 @@ namespace RaceManager.Language {
         public static string TurnOnTheServer {
             get {
                 return ResourceManager.GetString("TurnOnTheServer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à View docs.
+        /// </summary>
+        public static string Viewdocs {
+            get {
+                return ResourceManager.GetString("Viewdocs", resourceCulture);
             }
         }
         

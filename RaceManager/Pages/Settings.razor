@@ -11,6 +11,7 @@
 <h3>Port</h3>
 
 
+
 <div class="BoatTypeListContainer ">
     <div class="float-left-child" style="margin-right: 30px; min-width : 150% ">
         <div style="margin-bottom: 5%">
@@ -42,7 +43,8 @@
 </div>
 
 @code {
-    private static RMLogger _logger = new RMLogger(LoggingLevel.DEBUG, "Settings");
+
+    private static RMLogger _logger = new RMLogger(LoggingLevel.INFO, "Settings");
     private HubConnection? hubConnection;
 
     private int port = AsyncServer.Port;
@@ -51,6 +53,9 @@
 
 
     bool loaded = false;
+    /// <summary>
+    /// When save button is clicked
+    /// </summary>
     private void Save()
     {
         if (portField.StoreValue())
@@ -61,17 +66,25 @@
 
         StateHasChanged();
     }
-
+    /// <summary>
+    /// Change the culture of the application
+    /// </summary>
+    /// <param name="culture"></param>
+    /// <returns></returns>
     private async Task ChangeCulture(string culture)
     {
         LocaleManager.UpdateCulture(culture);
         if (hubConnection != null)
         {
             await hubConnection.SendAsync("ChangeCulture", culture);
+            navigationManager.NavigateTo(navigationManager.Uri, forceLoad: true);
         }
         else _logger.log(LoggingLevel.WARN, "ChangeCulture()", "hubConnection is null");
     }
-
+    /// <summary>
+    /// Turn on the server
+    /// </summary>
+    /// <returns></returns>
     private async Task TurnOn()
     {
         if (hubConnection != null)
@@ -80,7 +93,10 @@
         }
         else _logger.log(LoggingLevel.WARN, "TurnOn()", "hubConnection is null");
     }
-
+    /// <summary>
+    /// Turn off the server
+    /// </summary>
+    /// <returns></returns>
     private async Task TurnOff()
     {
         if (hubConnection != null)
@@ -89,7 +105,12 @@
         }
         else _logger.log(LoggingLevel.WARN, "TurnOff()", "hubConnection is null");
     }
-
+    /// <summary>
+    ///  Send the port to the server throught signal R if the connection is established
+    ///  or log the errors  if the connection is not established
+    /// </summary>
+    /// <param name="port"></param>
+    /// <returns></returns>
     private async Task SendPort(int port)
     {
         if (hubConnection != null)
@@ -99,7 +120,10 @@
         }
         else _logger.log(LoggingLevel.WARN, "SendPort()", "hubConnection is null");
     }
-
+    /// <summary>
+    /// Connect to the signal R server
+    /// </summary>
+    /// <returns></returns>
     protected override async Task OnInitializedAsync()
     {
         hubConnection = new HubConnectionBuilder().WithUrl(navigationManager.ToAbsoluteUri("/serverhub")).Build();
@@ -121,7 +145,11 @@
 
         private RMLogger logger = new RMLogger(LoggingLevel.DEBUG, "Settings.RealField");
 
-
+        /// <summary>
+        /// This function checks if the port chosen by the user is open and not busy,
+        /// it also checks if the port is in the right range.
+        /// </summary>
+        /// <returns></returns>
         public override bool StoreValue()
         {
             isValid = false;
@@ -150,8 +178,10 @@
                 //Value = default(T);
                 isValid = false;
                 Style = "color: red;border-color: red";
+                logger.log(LoggingLevel.WARN, "StoreValue()", $"{FieldContent} is not valid : {e.Message}");
+               
 
-                logger.log(LoggingLevel.ERROR, "StoreValue()", $"Error when trying to store {FieldContent} with \"{e.Message}\"");
+               
             }
             return isValid;
         }

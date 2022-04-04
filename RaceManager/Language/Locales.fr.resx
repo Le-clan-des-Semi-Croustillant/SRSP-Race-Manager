@@ -279,4 +279,10 @@
   <data name="TurnOnTheServer" xml:space="preserve">
     <value>Allumer le serveur</value>
   </data>
+  <data name="SeethisprojectonGithub" xml:space="preserve">
+    <value>Voir ce projet sur la page Github</value>
+  </data>
+  <data name="Viewdocs" xml:space="preserve">
+    <value>Voir la documentation</value>
+  </data>
 </root>
