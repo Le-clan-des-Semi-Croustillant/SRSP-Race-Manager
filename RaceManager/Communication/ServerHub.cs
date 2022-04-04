@@ -32,31 +32,50 @@ namespace RaceManager.Communication
                 await Task.Delay(2000);
             }
         }
-
+        
+        /// <summary>
+        /// Send the list of all BoatTypes to the client
+        /// </summary>
+        /// <param name="port"></param>
+        /// <returns></returns>
         public async Task SendPort(int port)
         {
             _logger.log(LoggingLevel.DEBUG, "SendPort()", $"Server changed port to : {port}");
             AsyncServer.Port = port;
         }
-
+        
+        /// <summary>
+        /// Send the selected culture to the server
+        /// </summary>
+        /// <param name="culture"></param>
+        /// <returns></returns>
         public async Task ChangeCulture(string culture)
         {
             _logger.log(LoggingLevel.DEBUG, "ChangeCulture()", $"Server changed culture to : {culture}");
             LocaleManager.UpdateCulture(culture);
         }
 
+        /// <summary>
+        /// Ask the server to start the socket
+        /// </summary>
+        /// <returns></returns>
         public async Task TurnOn()
         {
             _logger.log(LoggingLevel.INFO, "TurnOn()", $"Server turned on");
             AsyncServer.Run();
         }
 
+        /// <summary>
+        /// Ask the server to turn off the socket
+        /// </summary>
+        /// <returns></returns>
         public async Task TurnOff()
         {
             _logger.log(LoggingLevel.INFO, "TurnOff()", $"Server turned off");
             AsyncServer.Stop();
         }
 
+       
         public override Task OnConnectedAsync()
         {
             _logger.log(LoggingLevel.DEBUG, "OnConnectedAsync()", $"New connection {Context.ConnectionId}");

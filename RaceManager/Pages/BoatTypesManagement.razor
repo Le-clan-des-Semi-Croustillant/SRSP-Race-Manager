@@ -46,7 +46,9 @@
 
 </div>
 
-@code {
+@code {  
+        
+       
     private static RMLogger _logger = new RMLogger(LoggingLevel.INFO, "BoatTypesManagement");
     private HubConnection? _hubConnection;
 
@@ -66,12 +68,12 @@
         _logger.log(LoggingLevel.DEBUG, "Select()", $"User select {bt.Name}");
         _selected = bt;
         _fields[Locales.Name].FieldContent = _selected.Name;
-        _fields[Locales.HullLength].FieldContent = _selected.HullLength.ToString();
+        _fields[Locales.HullLength].FieldContent = _selected.HullLength.ToString(); 
         _fields[Locales.OverallLength].FieldContent = _selected.OverallLength.ToString();
         _fields[Locales.HullWidth].FieldContent = _selected.HullWidth.ToString();
         _fields[Locales.OverallWidth].FieldContent = _selected.OverallWidth.ToString();
         _fields[Locales.AirDraft].FieldContent = _selected.AirDraft.ToString();
-        _fields[Locales.Draft].FieldContent = _selected.Draft.ToString();
+        _fields[Locales.Draft].FieldContent = _selected.Draft.ToString();// For example Locales.Draft allows to display the string according to the culture
         _fields[Locales.Weight].FieldContent = _selected.Weight.ToString();
 
         foreach (KeyValuePair<string, AField> keyValuePair in _fields)

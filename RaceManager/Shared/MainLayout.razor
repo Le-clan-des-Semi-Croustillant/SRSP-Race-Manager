@@ -12,9 +12,10 @@
     </div>
 
     <main>
+       
         <div class="top-row px-4">
-            <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager" target="_blank">See this project on Github</a> 
-            <a href="https://le-clan-des-semi-croustillant.github.io/SRSP-Race-Manager/" target="_blank">View docs</a>
+            <a href ="@Locales.Github" target="_blank">@Locales.SeethisprojectonGithub </a> 
+            <a class="ahref" href="@Locales.Page" target="_blank">@Locales.Viewdocs</a>
 
             <div style="cursor: crosshair" @onclick="UpdateStatus">
                 @if (_loaded)
@@ -32,7 +33,7 @@
                 }
             </div>
         </div>
-
+    
         <article class="content px-4">
             @Body
         </article>

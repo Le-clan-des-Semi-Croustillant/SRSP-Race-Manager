@@ -10,6 +10,7 @@ using RaceManager.Language;
 
 namespace RaceManager.Communication
 {
+   
     public class Configuration
     {
         private static RMLogger _logger = new(LoggingLevel.DEBUG, "Configuration");

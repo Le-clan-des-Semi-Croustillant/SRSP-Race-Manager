@@ -35,12 +35,14 @@ namespace RaceManager.Reading
 
         private static System.Random random = new System.Random(DateTime.Now.Millisecond);
 
+        /// <summary>
+        /// Initializes a new instance of the BoatType class.
+        /// </summary>
         public BoatType()
         {
             Name = Locales.NewBoatType;
         }
-
-
+        
         public bool Equals(BoatType? other)
         {
             if (other == null)
