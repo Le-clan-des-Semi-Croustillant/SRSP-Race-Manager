@@ -11,11 +11,11 @@ namespace RaceManager.Pages
         /// <summary>
         /// Remove the boat type
         /// </summary>
-        private void Remove(BoatType bt)
+        private void RemoveBoatType(BoatType bt)
         {
-            _logger.log(LoggingLevel.DEBUG, "Remove()", $"Removing {_boatTypesList.Find(x => x.Equals(bt)).Name} is valid.");
+            _logger.log(LoggingLevel.DEBUG, "RemoveBoatType()", $"Removing {_boatTypesList.Find(x => x.Equals(bt)).Name} is valid.");
             _boatTypesList.Remove(bt);
-            _btselected = null;
+            _btSelected = null;
         }
 
         /// <summary>
@@ -39,6 +39,7 @@ namespace RaceManager.Pages
             _boatTypesList = new(BoatType.BoatTypesList);
             _boatTypesList.Sort();
 
+            _polarfield.FieldContent = Locales.NewPolar;
             await _hubConnection.StartAsync();
 
             _fields.Add(Locales.Name, new BoatTypeField<string>());

@@ -291,4 +291,7 @@
   <data name="Viewdocs" xml:space="preserve">
     <value>View docs</value>
   </data>
+  <data name="NewPolar" xml:space="preserve">
+    <value>New polar</value>
+  </data>
 </root>

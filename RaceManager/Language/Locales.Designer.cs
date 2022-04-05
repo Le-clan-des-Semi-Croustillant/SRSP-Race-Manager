@@ -403,6 +403,15 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à New polar.
+        /// </summary>
+        public static string NewPolar {
+            get {
+                return ResourceManager.GetString("NewPolar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Overall length.
         /// </summary>
         public static string OverallLength {

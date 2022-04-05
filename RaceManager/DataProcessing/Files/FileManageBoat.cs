@@ -7,7 +7,7 @@ namespace RaceManager.DataProcessing.Files
     /// </summary>
     public partial class FileManageData
     {
-        private static RMLogger _logger = new(LoggingLevel.DEBUG, "FileManageData");
+        private static RMLogger _logger = new(LoggingLevel.INFO, "FileManageData");
         /// <summary>
         /// Add to BoatTypesList all boat already exist on local file
         /// </summary>

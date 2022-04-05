@@ -14,13 +14,14 @@ namespace RaceManager.Reading
 {
     public partial class BoatType : IEquatable<BoatType>, IComparable<BoatType>
     {
-        private static RMLogger logger = new();
+        private static RMLogger logger = new(LoggingLevel.INFO, "BoatType");
         public static List<BoatType> BoatTypesList = new();
+        public static System.Random RandomInt64 = new System.Random(DateTime.Now.Millisecond);
         
         /// <summary>
         /// Initializes a new instance of the BoatType class.
         /// </summary>
-        public Int64 ID { get; } = random.NextInt64();
+        public Int64 ID { get; } = RandomInt64.NextInt64();
         public string Name { get; set; }
         public float HullLength { get; set; }
         public float OverallLength { get; set; }
@@ -33,7 +34,6 @@ namespace RaceManager.Reading
 
         public List<Polar> PolarFileList = new ();
 
-        private static System.Random random = new System.Random(DateTime.Now.Millisecond);
 
         /// <summary>
         /// Initializes a new instance of the BoatType class.
@@ -46,7 +46,10 @@ namespace RaceManager.Reading
         public bool Equals(BoatType? other)
         {
             if (other == null)
+            {
+                logger.log(LoggingLevel.WARN, "Equals()", $"Comparaison between {Name}-{ID} and a null object");
                 return false;
+            }
             return ID.Equals(other.ID);
         }
 
@@ -54,7 +57,7 @@ namespace RaceManager.Reading
         {
             if (other == null)
             {
-                logger.log(LoggingLevel.WARN, "BoatType.CompareTo", $"Comparaison between {Name}-{ID} and a null object");
+                logger.log(LoggingLevel.WARN, "CompareTo()", $"Comparaison between {Name}-{ID} and a null object");
                 return 1;
             }
             
