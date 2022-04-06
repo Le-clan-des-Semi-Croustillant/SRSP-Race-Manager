@@ -9,7 +9,7 @@ using System.Xml;
 
 
 
-namespace RaceManager.Reading
+namespace Communication.DataProcessing.Json 
 {
     public partial class BoatType
     {
@@ -25,9 +25,8 @@ namespace RaceManager.Reading
         public float Draft { get; set; }
         public float AirDraft { get; set; }
         public float Weight { get; set; }
-        public List<Polar> Polar { get; set; }
         //public Polar Polar = new Polar();
-
+        public List<Polar> Polar { get; set; }
 
         static private System.Random random = new System.Random(DateTime.Now.Millisecond);
 
@@ -47,6 +46,5 @@ namespace RaceManager.Reading
 
             return false;
         }
-        
     }
 }

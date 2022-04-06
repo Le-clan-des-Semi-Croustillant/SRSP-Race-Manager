@@ -1,8 +1,6 @@
 ﻿using Newtonsoft.Json;
-using RaceManager.Communication;
-using RaceManager.Reading;
 
-namespace RaceManager.DataProcessing.Json
+namespace Communication.DataProcessing.Json
 {
     public class JsonParse
     {
@@ -44,7 +42,6 @@ namespace RaceManager.DataProcessing.Json
                 TypeMessage = TypeMessage,
 
             };
-            //return JsonConvert.SerializeObject(serialiseJsonInfo);
             return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
         }
         public static string JsonSerialiseIPlayerInfo(IMessageType TypeMessage)

@@ -1,5 +1,6 @@
 ﻿using RaceManager.DataProcessing.Files;
 using RaceManager.DataProcessing.Json;
+using RaceManager.Reading;
 using System;
 using System.Net;
 using System.Net.Sockets;
@@ -55,7 +56,7 @@ namespace RaceManager.Communication
                     string SendAtt = JsonManage.JsonType(content);
                     Console.WriteLine("Send att" + SendAtt);
                     //Send(handler, SendAtt);
-                    
+
                     switch ((IMessageType)serialisation.TypeMessage)
                     {
                         case IMessageType.CONNECTION:

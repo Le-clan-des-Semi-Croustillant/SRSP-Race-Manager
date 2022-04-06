@@ -7,6 +7,12 @@ namespace RaceManager.DataProcessing.Files
     /// </summary>
     public partial class FileManageData
     {
+
+        public static void ChargeBoatListInClass()
+        {
+            
+        }
+        
         /// <summary>
         /// Add to BoatTypesList all boat already exist on local file
         /// </summary>
