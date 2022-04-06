@@ -23,9 +23,23 @@ BoatType.BoatTypesList.Add(new BoatType()
     OverallWidth = 1,
     Weight = 4,
     AirDraft = 1,
-    Draft= 2,
+    Draft = 2,
     HullLength = 5,
     OverallLength = 1,
+    PolarFileList = new List<Polar>()
+    {
+        new Polar() {
+            Name = "Polar 1",
+        },
+        new Polar()
+        {
+            Name = "Polar 2",
+        },
+        new Polar()
+        {
+            Name = "Polar 3",
+        }
+    }
 });
 
 

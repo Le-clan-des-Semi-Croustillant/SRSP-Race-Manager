@@ -279,4 +279,19 @@
   <data name="TurnOnTheServer" xml:space="preserve">
     <value>Turn on the server</value>
   </data>
+  <data name="Github" xml:space="preserve">
+    <value>https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>https://le-clan-des-semi-croustillant.github.io/SRSP-Race-Manager/</value>
+  </data>
+  <data name="SeethisprojectonGithub" xml:space="preserve">
+    <value>See this project on Github</value>
+  </data>
+  <data name="Viewdocs" xml:space="preserve">
+    <value>View docs</value>
+  </data>
+  <data name="NewPolar" xml:space="preserve">
+    <value>New polar</value>
+  </data>
 </root>
