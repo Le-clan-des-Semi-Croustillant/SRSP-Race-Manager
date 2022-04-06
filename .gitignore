@@ -142,3 +142,4 @@ docfx/api/
 !docfx/api/toc.yml
 *.bak
 RaceManagerOld/**
+Releases/**

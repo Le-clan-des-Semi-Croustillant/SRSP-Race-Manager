@@ -7,6 +7,7 @@ namespace RaceManager.DataProcessing.Files
     /// </summary>
     public partial class FileManageData
     {
+        private static RMLogger _logger = new(LoggingLevel.DEBUG, "FileManageData");
 
         public static void ChargeBoatListInClass()
         {
@@ -33,12 +34,12 @@ namespace RaceManager.DataProcessing.Files
         public static void UpdateBoatTypesList(string path)
         {
             string dataFile = File.ReadAllText(path);
-            Console.WriteLine(dataFile);
+            _logger.log(LoggingLevel.DEBUG, "UpdateBoatTypesList()", $"Read file {path} : " + dataFile);
             var infoFile = System.Text.Json.JsonSerializer.Deserialize<BoatType>(dataFile);
             if (!BoatType.BoatTypesList.Contains(infoFile))
             {
                 BoatType.BoatTypesList.Add(infoFile);
-                Logger.log(LoggingLevel.INFO, "FileManage.UpdateAllBoatTypesList", "New boat type added from file");
+                _logger.log(LoggingLevel.INFO, "UpdateAllBoatTypesList", "New boat type added from file");
             }
         }
 

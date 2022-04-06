@@ -38,8 +38,8 @@ namespace RaceManager.Communication
                 {
                     // All the data has been read from the 
                     // client. Display it on the console.
-                    Console.WriteLine("\nRead {0} bytes from socket. \nData : {1}",
-                        content.Length, content);
+          
+                    _logger.log(LoggingLevel.INFO, "ReadCallback()",$"Read {content.Length} bytes from socket. \nData : {content}");
 
                     // SERIALISATION PSEUDOCODE
                     // ...
@@ -54,51 +54,51 @@ namespace RaceManager.Communication
                     // case IMessageType.INFO :
                     dynamic serialisation = JsonParse.JsonDeserialize(content);
                     string SendAtt = JsonManage.JsonType(content);
-                    Console.WriteLine("Send att" + SendAtt);
+                    _logger.log(LoggingLevel.DEBUG, "ReadCallback()", "Send att" + SendAtt);
                     //Send(handler, SendAtt);
 
                     switch ((IMessageType)serialisation.TypeMessage)
                     {
                         case IMessageType.CONNECTION:
-                            Console.WriteLine("CONNECTION");
+                            _logger.log(LoggingLevel.INFO, "ReadCallback()", "CONNECTION");
                             break;
 
                         case IMessageType.DISCONNECTION:
-                            Console.WriteLine("DISCONNECTION");
+                            _logger.log(LoggingLevel.INFO, "ReadCallback()", "DISCONNECTION");
                             break;
 
                         case IMessageType.PLAYERINFO:
-                            Console.WriteLine("INFO");
+                            _logger.log(LoggingLevel.INFO, "ReadCallback()", "PLAYERINFO");
                             break;
 
                         case IMessageType.BOATSELECT:
-                            Console.WriteLine("BOATSELECT");
+                            _logger.log(LoggingLevel.INFO, "ReadCallback()", "BOATSELECT");
                             break;
 
                         case IMessageType.BOATLISTREQUEST:
-                            Console.WriteLine("BOATLISTREQUEST");
+                            _logger.log(LoggingLevel.INFO, "ReadCallback()", "BOATLISTREQUEST");
                             SendAtt = FileManageData.ReadFilePath(FileManageData.pathJsonData);
-                            Console.WriteLine("Send att" + SendAtt);
+                            _logger.log(LoggingLevel.DEBUG, "ReadCallback()", "Send att" + SendAtt);
                             break;
 
                         case IMessageType.ENDRACE:
-                            Console.WriteLine("ENDRACE");
+                            _logger.log(LoggingLevel.INFO, "ReadCallback()", "ENDRACE");
                             break;
 
                         case IMessageType.RACELISTUPDATE:
-                            Console.WriteLine("RACELISTUPDATE");
+                            _logger.log(LoggingLevel.INFO, "ReadCallback()", "RACELISTUPDATE");
                             break;
 
                         default:
-                            Console.WriteLine("Default");
+                            _logger.log(LoggingLevel.WARN, "ReadCallback()", "Unknown message type");
                             break;
                     }
 
 
                     // Echo the data back to the client.
-                    Console.WriteLine("\nSend to client");
+                    _logger.log(LoggingLevel.DEBUG, "ReadCallback()", "Send to client");
                     Send(handler, SendAtt);
-                    Console.WriteLine("\n");
+ 
                     //SendFile(handler);
 
 

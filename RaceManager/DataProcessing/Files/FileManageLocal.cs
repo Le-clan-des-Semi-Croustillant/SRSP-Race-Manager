@@ -19,11 +19,11 @@
         /// </summary>
         public static void CheckFilesFolderData()
         {
-            Console.WriteLine(currentDirectory);
-            Console.WriteLine(pathData);
-            Console.WriteLine(pathDataBoat);
-            Console.WriteLine(pathDataPol);
-            Console.WriteLine(pathDataRace);
+            _logger.log(LoggingLevel.INFO, "Checking files and folders", currentDirectory);
+            _logger.log(LoggingLevel.INFO, "Checking files and folders", pathData);
+            _logger.log(LoggingLevel.INFO, "Checking files and folders", pathDataBoat);
+            _logger.log(LoggingLevel.INFO, "Checking files and folders", pathDataPol);
+            _logger.log(LoggingLevel.INFO, "Checking files and folders", pathDataRace);
             CheckDirectory(pathData);
             CheckDirectory(pathDataBoat);
             CheckDirectory(pathDataPol);

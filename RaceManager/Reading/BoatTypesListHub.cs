@@ -7,14 +7,18 @@ namespace RaceManager.Reading
 {
     public class BoatTypesListHub : Hub
     {
-        public async Task SendMessage(List<BoatType> btl)
+        private static RMLogger _logger = new RMLogger(LoggingLevel.DEBUG, "BoatTypesListHub");
+        
+        //public async Task BoatTypesListRequest()
+        //{
+        //    _logger.log(LoggingLevel.DEBUG, "BoatTypesListRequest()", $"Server received a BoatTypesListRequest from {Context.ConnectionId}");
+        //    await Clients.Caller.SendAsync("ReceiveBoatTypeList ",BoatType.BoatTypesList);
+        //}
+
+        public async Task BoatTypesListSending(List<BoatType> btl)
         {
-            Logger.log(LoggingLevel.DEBUG, "BoatTypesListHub", $"Server received {btl[0].ID} old was {BoatType.BoatTypesList[0].ID}");
-
-            // Call the broadcastMessage method to update clients.
-            await Clients.All.SendAsync("ReceiveMessage", btl);
-
+            _logger.log(LoggingLevel.INFO, "BoatTypesListSending()", $"Server received a list of {btl.Count} boat types from {Context.ConnectionId}");
+            BoatType.BoatTypesList = btl;
         }
-
     }
 }

@@ -1,4 +1,8 @@
-﻿@inherits LayoutComponentBase
+﻿@using Microsoft.AspNetCore.SignalR.Client
+@using RaceManager.Communication
+@using RaceManager.Reading
+@using RaceManager.Language
+@inherits LayoutComponentBase
 
 <PageTitle>Race Manager</PageTitle>
 
@@ -9,7 +13,24 @@
 
     <main>
         <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+            <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager" target="_blank">See this project on Github</a> 
+            <a href="https://le-clan-des-semi-croustillant.github.io/SRSP-Race-Manager/" target="_blank">View docs</a>
+
+            <div style="cursor: crosshair" @onclick="UpdateStatus">
+                @if (_loaded)
+                {
+                    @if (AsyncServer.thread.IsAlive)
+                    {
+                        <label style="color: #03ec00; margin-right: 5px"> @Locales.ServerRunning </label>
+                    }
+                    else
+                    {
+                        <label style="color: red; margin-right: 5px"> @Locales.ServerNotRunning</label>
+                    }
+
+                    <gg-icon class="gg-sync" style="float: right" ></gg-icon>
+                }
+            </div>
         </div>
 
         <article class="content px-4">
@@ -17,3 +38,21 @@
         </article>
     </main>
 </div>
+
+@code
+{
+
+    private bool _loaded = false;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        _loaded = true;
+    }
+
+    private async void UpdateStatus()
+    {
+        StateHasChanged();
+    }
+
+}

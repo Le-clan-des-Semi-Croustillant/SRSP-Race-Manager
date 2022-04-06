@@ -13,7 +13,7 @@ namespace RaceManager.DataProcessing.Files
         public static void UpdateJsonData()
         {
 
-            Console.WriteLine(pathJsonData);
+            _logger.log(LoggingLevel.DEBUG,"UploadJsonData()", pathJsonData);
             File.Create(pathJsonData).Close();
             string[] filesBoat = Directory.GetFiles(pathDataBoat);
             string[] filesPol = Directory.GetFiles(pathDataPol);

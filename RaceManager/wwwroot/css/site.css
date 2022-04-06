@@ -1,5 +1,6 @@
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
-
+@import url('https://css.gg/css');
+@import url('https://css.gg/sync.css');
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -72,7 +73,7 @@ a, .btn-link {
     /*height: 230px;*/
     padding: 1rem;
     min-width: 200px;
-    margin: 5%;
+    margin: 1%;
     margin-inline: 5%;
     border: 3px solid #743b78;
     border-radius: 8px;
@@ -124,5 +125,44 @@ a, .btn-link {
     background: #fff;
     margin-bottom: 8%;
 
+}
+
+.SettingsOnOff {
+    position: absolute;
+    /* En fixant la distance avec le bas à 0, on force le contenu à être aligné vers le bas */
+
+    float: left;
+    margin-top: 28%;
+    margin-left: 4.2%;
+}
+
+
+.btn-settings {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+    margin-right:50px;
+    width:120px;
+}
+
+.langue {
+    position: absolute;
+    /* En fixant la distance avec le bas à 0, on force le contenu à être aligné vers le bas */
+
+
+    padding: 1rem;
+    min-width: 200px;
+    margin: 1%;
+    margin-inline: 5%;
+    border: 3px solid #403b78;
+    border-radius: 8px;
+    offset-anchor: left;
+    /*flex: 1;*/
+    float: left;
+    min-height: 13vw;
+    overflow-x: paged-y;
+    float: left;
+    margin-top: 4%;
+    margin-left: 48%;
 }
 

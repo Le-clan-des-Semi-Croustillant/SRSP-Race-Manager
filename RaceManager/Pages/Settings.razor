@@ -1,0 +1,175 @@
+﻿@page "/settings"
+@using RaceManager.Language
+@using Microsoft.AspNetCore.SignalR.Client
+@using System.Diagnostics.Eventing.Reader
+@using System.Globalization
+@using RaceManager.Reading
+@using RaceManager.Communication
+@inject NavigationManager navigationManager
+
+<PageTitle>Settings</PageTitle>
+<h3>Port</h3>
+
+
+<div class="BoatTypeListContainer ">
+    <div class="float-left-child" style="margin-right: 30px; min-width : 150% ">
+        <div style="margin-bottom: 5%">
+
+            <p> <label> port </label> <input type="text" @bind-value="@(portField.FieldContent)" style="@portField.Style"> </p>
+
+        </div>
+
+        <p>
+            <button class="btn btn-primary" @onclick="Save">@Locales.Save</button>
+        </p>
+
+    </div>
+
+</div>
+    <div class="SettingsOnOff ">
+        <p>
+            <button class="btn btn-settings" style="background: Gray" @onclick="TurnOn"> @Locales.TurnOnTheServer </button>
+            <button class="btn btn-settings" style="background: Gray" @onclick="TurnOff"> @Locales.TurnOffTheServer  </button>
+        </p>
+    </div>
+<div class="langue ">
+    <p>
+        <button class="btn btn-settings" style="background: #1b6ec2" @onclick='() => ChangeCulture("fr")'> @Locales.French </button>
+    </p>
+    <p>
+        <button class="btn btn-settings" style="background: #1b6ec2" @onclick='() => ChangeCulture("en")'> @Locales.English </button>
+    </p>
+</div>
+
+@code {
+    private static RMLogger _logger = new RMLogger(LoggingLevel.DEBUG, "Settings");
+    private HubConnection? hubConnection;
+
+    private int port = AsyncServer.Port;
+
+    private RealField<int> portField = new() { FieldContent = AsyncServer.Port.ToString(), Label = "Port", Value = AsyncServer.Port };
+
+
+    bool loaded = false;
+    private void Save()
+    {
+        if (portField.StoreValue())
+        {
+            port = portField.Value;
+            SendPort(port);
+        }
+
+        StateHasChanged();
+    }
+
+    private async Task ChangeCulture(string culture)
+    {
+        LocaleManager.UpdateCulture(culture);
+        if (hubConnection != null)
+        {
+            await hubConnection.SendAsync("ChangeCulture", culture);
+        }
+        else _logger.log(LoggingLevel.WARN, "ChangeCulture()", "hubConnection is null");
+    }
+
+    private async Task TurnOn()
+    {
+        if (hubConnection != null)
+        {
+            await hubConnection.SendAsync("TurnOn");
+        }
+        else _logger.log(LoggingLevel.WARN, "TurnOn()", "hubConnection is null");
+    }
+
+    private async Task TurnOff()
+    {
+        if (hubConnection != null)
+        {
+            await hubConnection.SendAsync("TurnOff");
+        }
+        else _logger.log(LoggingLevel.WARN, "TurnOff()", "hubConnection is null");
+    }
+
+    private async Task SendPort(int port)
+    {
+        if (hubConnection != null)
+        {
+            _logger.log(LoggingLevel.DEBUG, "SendPort()", $"Sending port {port}");
+            await hubConnection.SendAsync("SendPort", port);
+        }
+        else _logger.log(LoggingLevel.WARN, "SendPort()", "hubConnection is null");
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        hubConnection = new HubConnectionBuilder().WithUrl(navigationManager.ToAbsoluteUri("/serverhub")).Build();
+        await hubConnection.StartAsync();
+
+        loaded = true;
+
+    }
+
+
+
+    private class RealField<T> : AField
+    {
+        // <summary>
+        // The boat type field.
+        // </summary>
+        public int Value;
+
+
+        private RMLogger logger = new RMLogger(LoggingLevel.DEBUG, "Settings.RealField");
+
+
+        public override bool StoreValue()
+        {
+            isValid = false;
+            try
+            {
+                Value = (int)Convert.ChangeType(FieldContent, typeof(int));
+
+                Style = "";
+                if (Value >= 0 && Value <= 65535)
+                {
+                    if (ServerHub.IsPortBusy(Value)) //voir les ports ouverts avec netstat -ano | more
+                    {
+                        isValid = true;
+                        logger.log(LoggingLevel.DEBUG, "StoreValue()", $"{FieldContent} is valid.");
+                    }
+                    else
+                        throw new Exception("Error, the selected port number is busy.");
+
+                }
+                else
+                    throw new Exception("Error in the port range, you must use a port number between 0 and 65535 inclusive.");
+            }
+            catch (Exception e)
+            {
+
+                //Value = default(T);
+                isValid = false;
+                Style = "color: red;border-color: red";
+
+                logger.log(LoggingLevel.ERROR, "StoreValue()", $"Error when trying to store {FieldContent} with \"{e.Message}\"");
+            }
+            return isValid;
+        }
+
+
+    }
+
+    public bool IsConnected =>
+        hubConnection?.State == HubConnectionState.Connected;
+
+    /// <summary>
+    ///  Dispose the component
+    /// </summary>
+    public async ValueTask DisposeAsync()
+    {
+        if (hubConnection is not null)
+        {
+            await hubConnection.DisposeAsync();
+        }
+    }
+}

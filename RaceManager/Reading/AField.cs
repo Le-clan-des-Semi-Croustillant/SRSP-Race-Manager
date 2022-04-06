@@ -7,7 +7,7 @@
         // </summary>
         public string Label;
         public bool isValid = true;
-        public abstract void StoreValue();
+        public abstract bool StoreValue();
         public string FieldContent;
         public string Style = "";
      }
