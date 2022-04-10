@@ -12,16 +12,29 @@ namespace RaceManager.Communication
     {
         public static void ReadCallback(IAsyncResult ar)
         {
-            String content = String.Empty;
+            int bytesRead;
+            Client client;
+            Socket handler;
+            String content;
+            try
+            {
+                 content = String.Empty;
 
-            // Retrieve the state object and the handler socket
-            // from the asynchronous state object.
-            Client client = (Client)ar.AsyncState;
-            Socket handler = client.Handler;
+                // Retrieve the state object and the handler socket
+                // from the asynchronous state object.
+                client = (Client)ar.AsyncState;
+                handler = client.Handler;
 
-            // Read data from the client socket. 
-            int bytesRead = handler.EndReceive(ar);
+                // Read data from the client socket. 
+                bytesRead = handler.EndReceive(ar);
+            }
+            catch (System.Threading.ThreadInterruptedException e)
+            {
+                _logger.log(LoggingLevel.WARN, "StartListening()", $"Server stopped");
+                //listener.Close();
+                return;
 
+            }
             // Serialisation
             if (bytesRead > 0)
             {
@@ -37,8 +50,8 @@ namespace RaceManager.Communication
                 {
                     // All the data has been read from the 
                     // client. Display it on the console.
-          
-                    _logger.log(LoggingLevel.INFO, "ReadCallback()",$"Read {content.Length} bytes from socket. \nData : {content}");
+
+                    _logger.log(LoggingLevel.INFO, "ReadCallback()", $"Read {content.Length} bytes from socket. \nData : {content}");
 
                     // SERIALISATION PSEUDOCODE
                     // ...
@@ -97,7 +110,7 @@ namespace RaceManager.Communication
                     // Echo the data back to the client.
                     _logger.log(LoggingLevel.DEBUG, "ReadCallback()", "Send to client");
                     Send(handler, SendAtt);
- 
+
                     //SendFile(handler);
 
 

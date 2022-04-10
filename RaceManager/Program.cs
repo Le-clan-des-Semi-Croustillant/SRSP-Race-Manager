@@ -18,7 +18,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 BoatType.BoatTypesList.Add(new BoatType()
 {
-    Name = "Bateau 1",
+    Name = "Bateau 2",
     HullWidth = 4,
     OverallWidth = 1,
     Weight = 4,

@@ -25,7 +25,7 @@ namespace RaceManager.Communication
     {
         private static List<Client> clients = new List<Client>();
         private static RMLogger _logger = new RMLogger(LoggingLevel.DEBUG, "AsyncServer");
-        public static Thread thread = new Thread(new ThreadStart(StartListening));
+        public static Thread? thread;
         public static int Port { get; set; } = 45879;
 
         // Semaphore
@@ -40,7 +40,11 @@ namespace RaceManager.Communication
         {
             try
             {
-                thread.Start();
+                if (thread is null)
+                    thread = new Thread(new ThreadStart(StartListening));
+                else
+                    _logger.log(LoggingLevel.ERROR, "Run()", "Thread already running");
+                //thread.Start();
                 _logger.log(LoggingLevel.INFO, "Run()", "Starting server");
             }
             catch (Exception e)
@@ -55,6 +59,7 @@ namespace RaceManager.Communication
             {
                 thread.Interrupt();
                 _logger.log(LoggingLevel.INFO, "Stop()", "Stopping server");
+                thread = null;
             }
 
             catch (Exception e)
@@ -70,8 +75,8 @@ namespace RaceManager.Communication
             // Réservation du port d'écoute selon l'ip du serveur.
             IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());
             IPAddress ipAddress = ipHostInfo.AddressList[0];
-            _logger.log(LoggingLevel.INFO,"StartListening()", $"Host address : {ipAddress}");
-            
+            _logger.log(LoggingLevel.INFO, "StartListening()", $"Host address : {ipAddress}");
+
             IPEndPoint localEndPoint = new IPEndPoint(ipAddress, Port);
             Socket listener = new Socket(AddressFamily.InterNetworkV6,
                 SocketType.Stream, ProtocolType.Tcp);
@@ -79,10 +84,18 @@ namespace RaceManager.Communication
             // Bind the socket to the local endpoint and listen for incoming connections.
             try
             {
-
                 listener.Bind(localEndPoint);
                 listener.Listen(100);
 
+            }
+            catch (Exception e)
+            {
+                _logger.log(LoggingLevel.ERROR, "StartListening()", "Error while binding socket: " + e.Message);
+                return;
+            }
+
+            try
+            {
                 while (true)
                 {
                     // Set the event to nonsignaled state.
@@ -90,23 +103,29 @@ namespace RaceManager.Communication
 
                     // Start an asynchronous socket to listen for connections.
                     _logger.log(LoggingLevel.DEBUG, "StartListening()", $"Waiting for a connection... {Port}");
+
                     listener.BeginAccept(
                         new AsyncCallback(AcceptCallback),
                         listener);
-
                     // Wait until a connection is made before continuing.
                     allDone.WaitOne();
                 }
             }
+            catch (System.Threading.ThreadInterruptedException e)
+            {
+                _logger.log(LoggingLevel.WARN, "StartListening()", $"Server stopped");
+                //listener.Close();
+                return;
+
+            }
             catch (Exception e)
             {
-                _logger.log(LoggingLevel.ERROR, "StartListening()", "Error while listening: " + e.Message);
+                _logger.log(LoggingLevel.ERROR, "StartListening()", $"Error while waiting for a connection: {e.Message}");
             }
-
-
-            _logger.log(LoggingLevel.DEBUG, "AsyncServer.StartListening()", $"Listen is over.");
-
         }
+
+
+
 
         /// <summary>
         /// Here we treat if the new client already exists or not, 
@@ -115,18 +134,32 @@ namespace RaceManager.Communication
         /// <param name="ar"></param>
         public static void AcceptCallback(IAsyncResult ar)
         {
-            // Signal the main thread to continue.
-            allDone.Set();
+            try
+            {
+                // Signal the main thread to continue.
+                allDone.Set();
 
-            // Get the socket that handles the client request.
-            Socket listener = (Socket)ar.AsyncState;
-            Socket handler = listener.EndAccept(ar);
+                // Get the socket that handles the client request.
+                Socket listener = (Socket)ar.AsyncState;
+                Socket handler = listener.EndAccept(ar);
 
-            Client client = new Client();
-            client.Handler = handler;
+                Client client = new Client();
+                client.Handler = handler;
 
-            handler.BeginReceive(client.buffer, 0, Client.BufferSize, 0,
-                new AsyncCallback(ReadCallback), client);
+                handler.BeginReceive(client.buffer, 0, Client.BufferSize, 0, new AsyncCallback(ReadCallback), client);
+            }
+            catch (System.Threading.ThreadInterruptedException e)
+            {
+                _logger.log(LoggingLevel.WARN, "StartListening()", $"Server stopped");
+                //listener.Close();
+                return;
+
+            }
+            catch (Exception e)
+            {
+                _logger.log(LoggingLevel.ERROR, "AcceptCallback()", "Error while accepting a connection: " + e.Message);
+            }
+
         }
     }
 }

@@ -13,6 +13,28 @@ references:
   commentId: N:RaceManager.Communication
   fullName: RaceManager.Communication
   nameWithType: RaceManager.Communication
+- uid: RaceManager.Communication.AsynchronousClient
+  name: AsynchronousClient
+  href: api/RaceManager.Communication.AsynchronousClient.html
+  commentId: T:RaceManager.Communication.AsynchronousClient
+  fullName: RaceManager.Communication.AsynchronousClient
+  nameWithType: AsynchronousClient
+- uid: RaceManager.Communication.AsynchronousClient.Main(System.String[])
+  name: Main(String[])
+  href: api/RaceManager.Communication.AsynchronousClient.html#RaceManager_Communication_AsynchronousClient_Main_System_String___
+  commentId: M:RaceManager.Communication.AsynchronousClient.Main(System.String[])
+  name.vb: Main(String())
+  fullName: RaceManager.Communication.AsynchronousClient.Main(System.String[])
+  fullName.vb: RaceManager.Communication.AsynchronousClient.Main(System.String())
+  nameWithType: AsynchronousClient.Main(String[])
+  nameWithType.vb: AsynchronousClient.Main(String())
+- uid: RaceManager.Communication.AsynchronousClient.Main*
+  name: Main
+  href: api/RaceManager.Communication.AsynchronousClient.html#RaceManager_Communication_AsynchronousClient_Main_
+  commentId: Overload:RaceManager.Communication.AsynchronousClient.Main
+  isSpec: "True"
+  fullName: RaceManager.Communication.AsynchronousClient.Main
+  nameWithType: AsynchronousClient.Main
 - uid: RaceManager.Communication.AsyncServer
   name: AsyncServer
   href: api/RaceManager.Communication.AsyncServer.html
@@ -218,6 +240,12 @@ references:
   isSpec: "True"
   fullName: RaceManager.Communication.AsyncServer.Stop
   nameWithType: AsyncServer.Stop
+- uid: RaceManager.Communication.AsyncServer.thread
+  name: thread
+  href: api/RaceManager.Communication.AsyncServer.html#RaceManager_Communication_AsyncServer_thread
+  commentId: F:RaceManager.Communication.AsyncServer.thread
+  fullName: RaceManager.Communication.AsyncServer.thread
+  nameWithType: AsyncServer.thread
 - uid: RaceManager.Communication.Configuration
   name: Configuration
   href: api/RaceManager.Communication.Configuration.html
@@ -365,283 +393,369 @@ references:
   commentId: F:RaceManager.Communication.OMessageType.RACELIST
   fullName: RaceManager.Communication.OMessageType.RACELIST
   nameWithType: OMessageType.RACELIST
-- uid: RaceManager.Data
-  name: RaceManager.Data
-  href: api/RaceManager.Data.html
-  commentId: N:RaceManager.Data
-  fullName: RaceManager.Data
-  nameWithType: RaceManager.Data
-- uid: RaceManager.Data.ChatHub
-  name: ChatHub
-  href: api/RaceManager.Data.ChatHub.html
-  commentId: T:RaceManager.Data.ChatHub
-  fullName: RaceManager.Data.ChatHub
-  nameWithType: ChatHub
-- uid: RaceManager.Data.ChatHub.SendMessage(RaceManager.Data.Data,RaceManager.Data.Data)
-  name: SendMessage(Data, Data)
-  href: api/RaceManager.Data.ChatHub.html#RaceManager_Data_ChatHub_SendMessage_RaceManager_Data_Data_RaceManager_Data_Data_
-  commentId: M:RaceManager.Data.ChatHub.SendMessage(RaceManager.Data.Data,RaceManager.Data.Data)
-  fullName: RaceManager.Data.ChatHub.SendMessage(RaceManager.Data.Data, RaceManager.Data.Data)
-  nameWithType: ChatHub.SendMessage(Data, Data)
-- uid: RaceManager.Data.ChatHub.SendMessage*
-  name: SendMessage
-  href: api/RaceManager.Data.ChatHub.html#RaceManager_Data_ChatHub_SendMessage_
-  commentId: Overload:RaceManager.Data.ChatHub.SendMessage
+- uid: RaceManager.Communication.ServerHub
+  name: ServerHub
+  href: api/RaceManager.Communication.ServerHub.html
+  commentId: T:RaceManager.Communication.ServerHub
+  fullName: RaceManager.Communication.ServerHub
+  nameWithType: ServerHub
+- uid: RaceManager.Communication.ServerHub.ChangeCulture(System.String)
+  name: ChangeCulture(String)
+  href: api/RaceManager.Communication.ServerHub.html#RaceManager_Communication_ServerHub_ChangeCulture_System_String_
+  commentId: M:RaceManager.Communication.ServerHub.ChangeCulture(System.String)
+  fullName: RaceManager.Communication.ServerHub.ChangeCulture(System.String)
+  nameWithType: ServerHub.ChangeCulture(String)
+- uid: RaceManager.Communication.ServerHub.ChangeCulture*
+  name: ChangeCulture
+  href: api/RaceManager.Communication.ServerHub.html#RaceManager_Communication_ServerHub_ChangeCulture_
+  commentId: Overload:RaceManager.Communication.ServerHub.ChangeCulture
   isSpec: "True"
-  fullName: RaceManager.Data.ChatHub.SendMessage
-  nameWithType: ChatHub.SendMessage
-- uid: RaceManager.Data.count
-  name: count
-  href: api/RaceManager.Data.count.html
-  commentId: T:RaceManager.Data.count
-  fullName: RaceManager.Data.count
-  nameWithType: count
-- uid: RaceManager.Data.count.Counter
-  name: Counter
-  href: api/RaceManager.Data.count.html#RaceManager_Data_count_Counter
-  commentId: F:RaceManager.Data.count.Counter
-  fullName: RaceManager.Data.count.Counter
-  nameWithType: count.Counter
-- uid: RaceManager.Data.Data
-  name: Data
-  href: api/RaceManager.Data.Data.html
-  commentId: T:RaceManager.Data.Data
-  fullName: RaceManager.Data.Data
-  nameWithType: Data
-- uid: RaceManager.Data.Data.Age
-  name: Age
-  href: api/RaceManager.Data.Data.html#RaceManager_Data_Data_Age
-  commentId: F:RaceManager.Data.Data.Age
-  fullName: RaceManager.Data.Data.Age
-  nameWithType: Data.Age
-- uid: RaceManager.Data.Data.List
-  name: List
-  href: api/RaceManager.Data.Data.html#RaceManager_Data_Data_List
-  commentId: F:RaceManager.Data.Data.List
-  fullName: RaceManager.Data.Data.List
-  nameWithType: Data.List
-- uid: RaceManager.Data.Data.N
-  name: N
-  href: api/RaceManager.Data.Data.html#RaceManager_Data_Data_N
-  commentId: F:RaceManager.Data.Data.N
-  fullName: RaceManager.Data.Data.N
-  nameWithType: Data.N
-- uid: RaceManager.Data.WeatherForecast
-  name: WeatherForecast
-  href: api/RaceManager.Data.WeatherForecast.html
-  commentId: T:RaceManager.Data.WeatherForecast
-  fullName: RaceManager.Data.WeatherForecast
-  nameWithType: WeatherForecast
-- uid: RaceManager.Data.WeatherForecast.Date
-  name: Date
-  href: api/RaceManager.Data.WeatherForecast.html#RaceManager_Data_WeatherForecast_Date
-  commentId: P:RaceManager.Data.WeatherForecast.Date
-  fullName: RaceManager.Data.WeatherForecast.Date
-  nameWithType: WeatherForecast.Date
-- uid: RaceManager.Data.WeatherForecast.Date*
-  name: Date
-  href: api/RaceManager.Data.WeatherForecast.html#RaceManager_Data_WeatherForecast_Date_
-  commentId: Overload:RaceManager.Data.WeatherForecast.Date
+  fullName: RaceManager.Communication.ServerHub.ChangeCulture
+  nameWithType: ServerHub.ChangeCulture
+- uid: RaceManager.Communication.ServerHub.IsPortBusy(System.Int32)
+  name: IsPortBusy(Int32)
+  href: api/RaceManager.Communication.ServerHub.html#RaceManager_Communication_ServerHub_IsPortBusy_System_Int32_
+  commentId: M:RaceManager.Communication.ServerHub.IsPortBusy(System.Int32)
+  fullName: RaceManager.Communication.ServerHub.IsPortBusy(System.Int32)
+  nameWithType: ServerHub.IsPortBusy(Int32)
+- uid: RaceManager.Communication.ServerHub.IsPortBusy*
+  name: IsPortBusy
+  href: api/RaceManager.Communication.ServerHub.html#RaceManager_Communication_ServerHub_IsPortBusy_
+  commentId: Overload:RaceManager.Communication.ServerHub.IsPortBusy
   isSpec: "True"
-  fullName: RaceManager.Data.WeatherForecast.Date
-  nameWithType: WeatherForecast.Date
-- uid: RaceManager.Data.WeatherForecast.Summary
-  name: Summary
-  href: api/RaceManager.Data.WeatherForecast.html#RaceManager_Data_WeatherForecast_Summary
-  commentId: P:RaceManager.Data.WeatherForecast.Summary
-  fullName: RaceManager.Data.WeatherForecast.Summary
-  nameWithType: WeatherForecast.Summary
-- uid: RaceManager.Data.WeatherForecast.Summary*
-  name: Summary
-  href: api/RaceManager.Data.WeatherForecast.html#RaceManager_Data_WeatherForecast_Summary_
-  commentId: Overload:RaceManager.Data.WeatherForecast.Summary
+  fullName: RaceManager.Communication.ServerHub.IsPortBusy
+  nameWithType: ServerHub.IsPortBusy
+- uid: RaceManager.Communication.ServerHub.IsServerRunning
+  name: IsServerRunning
+  href: api/RaceManager.Communication.ServerHub.html#RaceManager_Communication_ServerHub_IsServerRunning
+  commentId: P:RaceManager.Communication.ServerHub.IsServerRunning
+  fullName: RaceManager.Communication.ServerHub.IsServerRunning
+  nameWithType: ServerHub.IsServerRunning
+- uid: RaceManager.Communication.ServerHub.IsServerRunning*
+  name: IsServerRunning
+  href: api/RaceManager.Communication.ServerHub.html#RaceManager_Communication_ServerHub_IsServerRunning_
+  commentId: Overload:RaceManager.Communication.ServerHub.IsServerRunning
   isSpec: "True"
-  fullName: RaceManager.Data.WeatherForecast.Summary
-  nameWithType: WeatherForecast.Summary
-- uid: RaceManager.Data.WeatherForecast.TemperatureC
-  name: TemperatureC
-  href: api/RaceManager.Data.WeatherForecast.html#RaceManager_Data_WeatherForecast_TemperatureC
-  commentId: P:RaceManager.Data.WeatherForecast.TemperatureC
-  fullName: RaceManager.Data.WeatherForecast.TemperatureC
-  nameWithType: WeatherForecast.TemperatureC
-- uid: RaceManager.Data.WeatherForecast.TemperatureC*
-  name: TemperatureC
-  href: api/RaceManager.Data.WeatherForecast.html#RaceManager_Data_WeatherForecast_TemperatureC_
-  commentId: Overload:RaceManager.Data.WeatherForecast.TemperatureC
+  fullName: RaceManager.Communication.ServerHub.IsServerRunning
+  nameWithType: ServerHub.IsServerRunning
+- uid: RaceManager.Communication.ServerHub.OnConnectedAsync
+  name: OnConnectedAsync()
+  href: api/RaceManager.Communication.ServerHub.html#RaceManager_Communication_ServerHub_OnConnectedAsync
+  commentId: M:RaceManager.Communication.ServerHub.OnConnectedAsync
+  fullName: RaceManager.Communication.ServerHub.OnConnectedAsync()
+  nameWithType: ServerHub.OnConnectedAsync()
+- uid: RaceManager.Communication.ServerHub.OnConnectedAsync*
+  name: OnConnectedAsync
+  href: api/RaceManager.Communication.ServerHub.html#RaceManager_Communication_ServerHub_OnConnectedAsync_
+  commentId: Overload:RaceManager.Communication.ServerHub.OnConnectedAsync
   isSpec: "True"
-  fullName: RaceManager.Data.WeatherForecast.TemperatureC
-  nameWithType: WeatherForecast.TemperatureC
-- uid: RaceManager.Data.WeatherForecast.TemperatureF
-  name: TemperatureF
-  href: api/RaceManager.Data.WeatherForecast.html#RaceManager_Data_WeatherForecast_TemperatureF
-  commentId: P:RaceManager.Data.WeatherForecast.TemperatureF
-  fullName: RaceManager.Data.WeatherForecast.TemperatureF
-  nameWithType: WeatherForecast.TemperatureF
-- uid: RaceManager.Data.WeatherForecast.TemperatureF*
-  name: TemperatureF
-  href: api/RaceManager.Data.WeatherForecast.html#RaceManager_Data_WeatherForecast_TemperatureF_
-  commentId: Overload:RaceManager.Data.WeatherForecast.TemperatureF
+  fullName: RaceManager.Communication.ServerHub.OnConnectedAsync
+  nameWithType: ServerHub.OnConnectedAsync
+- uid: RaceManager.Communication.ServerHub.OnDisconnectedAsync(System.Exception)
+  name: OnDisconnectedAsync(Exception)
+  href: api/RaceManager.Communication.ServerHub.html#RaceManager_Communication_ServerHub_OnDisconnectedAsync_System_Exception_
+  commentId: M:RaceManager.Communication.ServerHub.OnDisconnectedAsync(System.Exception)
+  fullName: RaceManager.Communication.ServerHub.OnDisconnectedAsync(System.Exception)
+  nameWithType: ServerHub.OnDisconnectedAsync(Exception)
+- uid: RaceManager.Communication.ServerHub.OnDisconnectedAsync*
+  name: OnDisconnectedAsync
+  href: api/RaceManager.Communication.ServerHub.html#RaceManager_Communication_ServerHub_OnDisconnectedAsync_
+  commentId: Overload:RaceManager.Communication.ServerHub.OnDisconnectedAsync
   isSpec: "True"
-  fullName: RaceManager.Data.WeatherForecast.TemperatureF
-  nameWithType: WeatherForecast.TemperatureF
-- uid: RaceManager.Data.WeatherForecastService
-  name: WeatherForecastService
-  href: api/RaceManager.Data.WeatherForecastService.html
-  commentId: T:RaceManager.Data.WeatherForecastService
-  fullName: RaceManager.Data.WeatherForecastService
-  nameWithType: WeatherForecastService
-- uid: RaceManager.Data.WeatherForecastService.GetForecastAsync(DateTime)
-  name: GetForecastAsync(DateTime)
-  href: api/RaceManager.Data.WeatherForecastService.html#RaceManager_Data_WeatherForecastService_GetForecastAsync_DateTime_
-  commentId: M:RaceManager.Data.WeatherForecastService.GetForecastAsync(DateTime)
-  fullName: RaceManager.Data.WeatherForecastService.GetForecastAsync(DateTime)
-  nameWithType: WeatherForecastService.GetForecastAsync(DateTime)
-- uid: RaceManager.Data.WeatherForecastService.GetForecastAsync*
-  name: GetForecastAsync
-  href: api/RaceManager.Data.WeatherForecastService.html#RaceManager_Data_WeatherForecastService_GetForecastAsync_
-  commentId: Overload:RaceManager.Data.WeatherForecastService.GetForecastAsync
+  fullName: RaceManager.Communication.ServerHub.OnDisconnectedAsync
+  nameWithType: ServerHub.OnDisconnectedAsync
+- uid: RaceManager.Communication.ServerHub.SendPort(System.Int32)
+  name: SendPort(Int32)
+  href: api/RaceManager.Communication.ServerHub.html#RaceManager_Communication_ServerHub_SendPort_System_Int32_
+  commentId: M:RaceManager.Communication.ServerHub.SendPort(System.Int32)
+  fullName: RaceManager.Communication.ServerHub.SendPort(System.Int32)
+  nameWithType: ServerHub.SendPort(Int32)
+- uid: RaceManager.Communication.ServerHub.SendPort*
+  name: SendPort
+  href: api/RaceManager.Communication.ServerHub.html#RaceManager_Communication_ServerHub_SendPort_
+  commentId: Overload:RaceManager.Communication.ServerHub.SendPort
   isSpec: "True"
-  fullName: RaceManager.Data.WeatherForecastService.GetForecastAsync
-  nameWithType: WeatherForecastService.GetForecastAsync
+  fullName: RaceManager.Communication.ServerHub.SendPort
+  nameWithType: ServerHub.SendPort
+- uid: RaceManager.Communication.ServerHub.TurnOff
+  name: TurnOff()
+  href: api/RaceManager.Communication.ServerHub.html#RaceManager_Communication_ServerHub_TurnOff
+  commentId: M:RaceManager.Communication.ServerHub.TurnOff
+  fullName: RaceManager.Communication.ServerHub.TurnOff()
+  nameWithType: ServerHub.TurnOff()
+- uid: RaceManager.Communication.ServerHub.TurnOff*
+  name: TurnOff
+  href: api/RaceManager.Communication.ServerHub.html#RaceManager_Communication_ServerHub_TurnOff_
+  commentId: Overload:RaceManager.Communication.ServerHub.TurnOff
+  isSpec: "True"
+  fullName: RaceManager.Communication.ServerHub.TurnOff
+  nameWithType: ServerHub.TurnOff
+- uid: RaceManager.Communication.ServerHub.TurnOn
+  name: TurnOn()
+  href: api/RaceManager.Communication.ServerHub.html#RaceManager_Communication_ServerHub_TurnOn
+  commentId: M:RaceManager.Communication.ServerHub.TurnOn
+  fullName: RaceManager.Communication.ServerHub.TurnOn()
+  nameWithType: ServerHub.TurnOn()
+- uid: RaceManager.Communication.ServerHub.TurnOn*
+  name: TurnOn
+  href: api/RaceManager.Communication.ServerHub.html#RaceManager_Communication_ServerHub_TurnOn_
+  commentId: Overload:RaceManager.Communication.ServerHub.TurnOn
+  isSpec: "True"
+  fullName: RaceManager.Communication.ServerHub.TurnOn
+  nameWithType: ServerHub.TurnOn
+- uid: RaceManager.Communication.ServerHub.UpdateStatus
+  name: UpdateStatus()
+  href: api/RaceManager.Communication.ServerHub.html#RaceManager_Communication_ServerHub_UpdateStatus
+  commentId: M:RaceManager.Communication.ServerHub.UpdateStatus
+  fullName: RaceManager.Communication.ServerHub.UpdateStatus()
+  nameWithType: ServerHub.UpdateStatus()
+- uid: RaceManager.Communication.ServerHub.UpdateStatus*
+  name: UpdateStatus
+  href: api/RaceManager.Communication.ServerHub.html#RaceManager_Communication_ServerHub_UpdateStatus_
+  commentId: Overload:RaceManager.Communication.ServerHub.UpdateStatus
+  isSpec: "True"
+  fullName: RaceManager.Communication.ServerHub.UpdateStatus
+  nameWithType: ServerHub.UpdateStatus
+- uid: RaceManager.Communication.StateObject
+  name: StateObject
+  href: api/RaceManager.Communication.StateObject.html
+  commentId: T:RaceManager.Communication.StateObject
+  fullName: RaceManager.Communication.StateObject
+  nameWithType: StateObject
+- uid: RaceManager.Communication.StateObject.buffer
+  name: buffer
+  href: api/RaceManager.Communication.StateObject.html#RaceManager_Communication_StateObject_buffer
+  commentId: F:RaceManager.Communication.StateObject.buffer
+  fullName: RaceManager.Communication.StateObject.buffer
+  nameWithType: StateObject.buffer
+- uid: RaceManager.Communication.StateObject.BufferSize
+  name: BufferSize
+  href: api/RaceManager.Communication.StateObject.html#RaceManager_Communication_StateObject_BufferSize
+  commentId: F:RaceManager.Communication.StateObject.BufferSize
+  fullName: RaceManager.Communication.StateObject.BufferSize
+  nameWithType: StateObject.BufferSize
+- uid: RaceManager.Communication.StateObject.sb
+  name: sb
+  href: api/RaceManager.Communication.StateObject.html#RaceManager_Communication_StateObject_sb
+  commentId: F:RaceManager.Communication.StateObject.sb
+  fullName: RaceManager.Communication.StateObject.sb
+  nameWithType: StateObject.sb
+- uid: RaceManager.Communication.StateObject.workSocket
+  name: workSocket
+  href: api/RaceManager.Communication.StateObject.html#RaceManager_Communication_StateObject_workSocket
+  commentId: F:RaceManager.Communication.StateObject.workSocket
+  fullName: RaceManager.Communication.StateObject.workSocket
+  nameWithType: StateObject.workSocket
 - uid: RaceManager.DataProcessing.Files
   name: RaceManager.DataProcessing.Files
   href: api/RaceManager.DataProcessing.Files.html
   commentId: N:RaceManager.DataProcessing.Files
   fullName: RaceManager.DataProcessing.Files
   nameWithType: RaceManager.DataProcessing.Files
-- uid: RaceManager.DataProcessing.Files.FileManage
-  name: FileManage
-  href: api/RaceManager.DataProcessing.Files.FileManage.html
-  commentId: T:RaceManager.DataProcessing.Files.FileManage
-  fullName: RaceManager.DataProcessing.Files.FileManage
-  nameWithType: FileManage
-- uid: RaceManager.DataProcessing.Files.FileManage.CheckDirectory(System.String)
+- uid: RaceManager.DataProcessing.Files.FileManageData
+  name: FileManageData
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html
+  commentId: T:RaceManager.DataProcessing.Files.FileManageData
+  fullName: RaceManager.DataProcessing.Files.FileManageData
+  nameWithType: FileManageData
+- uid: RaceManager.DataProcessing.Files.FileManageData.CheckDirectory(System.String)
   name: CheckDirectory(String)
-  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_CheckDirectory_System_String_
-  commentId: M:RaceManager.DataProcessing.Files.FileManage.CheckDirectory(System.String)
-  fullName: RaceManager.DataProcessing.Files.FileManage.CheckDirectory(System.String)
-  nameWithType: FileManage.CheckDirectory(String)
-- uid: RaceManager.DataProcessing.Files.FileManage.CheckDirectory*
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_CheckDirectory_System_String_
+  commentId: M:RaceManager.DataProcessing.Files.FileManageData.CheckDirectory(System.String)
+  fullName: RaceManager.DataProcessing.Files.FileManageData.CheckDirectory(System.String)
+  nameWithType: FileManageData.CheckDirectory(String)
+- uid: RaceManager.DataProcessing.Files.FileManageData.CheckDirectory*
   name: CheckDirectory
-  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_CheckDirectory_
-  commentId: Overload:RaceManager.DataProcessing.Files.FileManage.CheckDirectory
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_CheckDirectory_
+  commentId: Overload:RaceManager.DataProcessing.Files.FileManageData.CheckDirectory
   isSpec: "True"
-  fullName: RaceManager.DataProcessing.Files.FileManage.CheckDirectory
-  nameWithType: FileManage.CheckDirectory
-- uid: RaceManager.DataProcessing.Files.FileManage.CheckFilesFolderData
+  fullName: RaceManager.DataProcessing.Files.FileManageData.CheckDirectory
+  nameWithType: FileManageData.CheckDirectory
+- uid: RaceManager.DataProcessing.Files.FileManageData.CheckFilesFolderData
   name: CheckFilesFolderData()
-  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_CheckFilesFolderData
-  commentId: M:RaceManager.DataProcessing.Files.FileManage.CheckFilesFolderData
-  fullName: RaceManager.DataProcessing.Files.FileManage.CheckFilesFolderData()
-  nameWithType: FileManage.CheckFilesFolderData()
-- uid: RaceManager.DataProcessing.Files.FileManage.CheckFilesFolderData*
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_CheckFilesFolderData
+  commentId: M:RaceManager.DataProcessing.Files.FileManageData.CheckFilesFolderData
+  fullName: RaceManager.DataProcessing.Files.FileManageData.CheckFilesFolderData()
+  nameWithType: FileManageData.CheckFilesFolderData()
+- uid: RaceManager.DataProcessing.Files.FileManageData.CheckFilesFolderData*
   name: CheckFilesFolderData
-  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_CheckFilesFolderData_
-  commentId: Overload:RaceManager.DataProcessing.Files.FileManage.CheckFilesFolderData
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_CheckFilesFolderData_
+  commentId: Overload:RaceManager.DataProcessing.Files.FileManageData.CheckFilesFolderData
   isSpec: "True"
-  fullName: RaceManager.DataProcessing.Files.FileManage.CheckFilesFolderData
-  nameWithType: FileManage.CheckFilesFolderData
-- uid: RaceManager.DataProcessing.Files.FileManage.CreateBoatJson(System.Int32,System.String,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,RaceManager.Reading.Polar)
-  name: CreateBoatJson(Int32, String, Single, Single, Single, Single, Single, Single, Single, Polar)
-  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_CreateBoatJson_System_Int32_System_String_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_RaceManager_Reading_Polar_
-  commentId: M:RaceManager.DataProcessing.Files.FileManage.CreateBoatJson(System.Int32,System.String,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,RaceManager.Reading.Polar)
-  fullName: RaceManager.DataProcessing.Files.FileManage.CreateBoatJson(System.Int32, System.String, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, System.Single, RaceManager.Reading.Polar)
-  nameWithType: FileManage.CreateBoatJson(Int32, String, Single, Single, Single, Single, Single, Single, Single, Polar)
-- uid: RaceManager.DataProcessing.Files.FileManage.CreateBoatJson*
+  fullName: RaceManager.DataProcessing.Files.FileManageData.CheckFilesFolderData
+  nameWithType: FileManageData.CheckFilesFolderData
+- uid: RaceManager.DataProcessing.Files.FileManageData.CreateBoatJson(RaceManager.Reading.BoatType)
+  name: CreateBoatJson(BoatType)
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_CreateBoatJson_RaceManager_Reading_BoatType_
+  commentId: M:RaceManager.DataProcessing.Files.FileManageData.CreateBoatJson(RaceManager.Reading.BoatType)
+  fullName: RaceManager.DataProcessing.Files.FileManageData.CreateBoatJson(RaceManager.Reading.BoatType)
+  nameWithType: FileManageData.CreateBoatJson(BoatType)
+- uid: RaceManager.DataProcessing.Files.FileManageData.CreateBoatJson*
   name: CreateBoatJson
-  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_CreateBoatJson_
-  commentId: Overload:RaceManager.DataProcessing.Files.FileManage.CreateBoatJson
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_CreateBoatJson_
+  commentId: Overload:RaceManager.DataProcessing.Files.FileManageData.CreateBoatJson
   isSpec: "True"
-  fullName: RaceManager.DataProcessing.Files.FileManage.CreateBoatJson
-  nameWithType: FileManage.CreateBoatJson
-- uid: RaceManager.DataProcessing.Files.FileManage.CreateDirectory(System.String)
+  fullName: RaceManager.DataProcessing.Files.FileManageData.CreateBoatJson
+  nameWithType: FileManageData.CreateBoatJson
+- uid: RaceManager.DataProcessing.Files.FileManageData.CreateDirectory(System.String)
   name: CreateDirectory(String)
-  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_CreateDirectory_System_String_
-  commentId: M:RaceManager.DataProcessing.Files.FileManage.CreateDirectory(System.String)
-  fullName: RaceManager.DataProcessing.Files.FileManage.CreateDirectory(System.String)
-  nameWithType: FileManage.CreateDirectory(String)
-- uid: RaceManager.DataProcessing.Files.FileManage.CreateDirectory*
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_CreateDirectory_System_String_
+  commentId: M:RaceManager.DataProcessing.Files.FileManageData.CreateDirectory(System.String)
+  fullName: RaceManager.DataProcessing.Files.FileManageData.CreateDirectory(System.String)
+  nameWithType: FileManageData.CreateDirectory(String)
+- uid: RaceManager.DataProcessing.Files.FileManageData.CreateDirectory*
   name: CreateDirectory
-  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_CreateDirectory_
-  commentId: Overload:RaceManager.DataProcessing.Files.FileManage.CreateDirectory
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_CreateDirectory_
+  commentId: Overload:RaceManager.DataProcessing.Files.FileManageData.CreateDirectory
   isSpec: "True"
-  fullName: RaceManager.DataProcessing.Files.FileManage.CreateDirectory
-  nameWithType: FileManage.CreateDirectory
-- uid: RaceManager.DataProcessing.Files.FileManage.CreateFilePolaire(System.String,System.Int32,System.String)
+  fullName: RaceManager.DataProcessing.Files.FileManageData.CreateDirectory
+  nameWithType: FileManageData.CreateDirectory
+- uid: RaceManager.DataProcessing.Files.FileManageData.CreateFilePolaire(System.String,System.Int32,System.String)
   name: CreateFilePolaire(String, Int32, String)
-  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_CreateFilePolaire_System_String_System_Int32_System_String_
-  commentId: M:RaceManager.DataProcessing.Files.FileManage.CreateFilePolaire(System.String,System.Int32,System.String)
-  fullName: RaceManager.DataProcessing.Files.FileManage.CreateFilePolaire(System.String, System.Int32, System.String)
-  nameWithType: FileManage.CreateFilePolaire(String, Int32, String)
-- uid: RaceManager.DataProcessing.Files.FileManage.CreateFilePolaire*
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_CreateFilePolaire_System_String_System_Int32_System_String_
+  commentId: M:RaceManager.DataProcessing.Files.FileManageData.CreateFilePolaire(System.String,System.Int32,System.String)
+  fullName: RaceManager.DataProcessing.Files.FileManageData.CreateFilePolaire(System.String, System.Int32, System.String)
+  nameWithType: FileManageData.CreateFilePolaire(String, Int32, String)
+- uid: RaceManager.DataProcessing.Files.FileManageData.CreateFilePolaire*
   name: CreateFilePolaire
-  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_CreateFilePolaire_
-  commentId: Overload:RaceManager.DataProcessing.Files.FileManage.CreateFilePolaire
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_CreateFilePolaire_
+  commentId: Overload:RaceManager.DataProcessing.Files.FileManageData.CreateFilePolaire
   isSpec: "True"
-  fullName: RaceManager.DataProcessing.Files.FileManage.CreateFilePolaire
-  nameWithType: FileManage.CreateFilePolaire
-- uid: RaceManager.DataProcessing.Files.FileManage.currentDirectory
+  fullName: RaceManager.DataProcessing.Files.FileManageData.CreateFilePolaire
+  nameWithType: FileManageData.CreateFilePolaire
+- uid: RaceManager.DataProcessing.Files.FileManageData.currentDirectory
   name: currentDirectory
-  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_currentDirectory
-  commentId: F:RaceManager.DataProcessing.Files.FileManage.currentDirectory
-  fullName: RaceManager.DataProcessing.Files.FileManage.currentDirectory
-  nameWithType: FileManage.currentDirectory
-- uid: RaceManager.DataProcessing.Files.FileManage.DeleteFile(System.String)
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_currentDirectory
+  commentId: F:RaceManager.DataProcessing.Files.FileManageData.currentDirectory
+  fullName: RaceManager.DataProcessing.Files.FileManageData.currentDirectory
+  nameWithType: FileManageData.currentDirectory
+- uid: RaceManager.DataProcessing.Files.FileManageData.DeleteFile(System.String)
   name: DeleteFile(String)
-  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_DeleteFile_System_String_
-  commentId: M:RaceManager.DataProcessing.Files.FileManage.DeleteFile(System.String)
-  fullName: RaceManager.DataProcessing.Files.FileManage.DeleteFile(System.String)
-  nameWithType: FileManage.DeleteFile(String)
-- uid: RaceManager.DataProcessing.Files.FileManage.DeleteFile*
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_DeleteFile_System_String_
+  commentId: M:RaceManager.DataProcessing.Files.FileManageData.DeleteFile(System.String)
+  fullName: RaceManager.DataProcessing.Files.FileManageData.DeleteFile(System.String)
+  nameWithType: FileManageData.DeleteFile(String)
+- uid: RaceManager.DataProcessing.Files.FileManageData.DeleteFile*
   name: DeleteFile
-  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_DeleteFile_
-  commentId: Overload:RaceManager.DataProcessing.Files.FileManage.DeleteFile
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_DeleteFile_
+  commentId: Overload:RaceManager.DataProcessing.Files.FileManageData.DeleteFile
   isSpec: "True"
-  fullName: RaceManager.DataProcessing.Files.FileManage.DeleteFile
-  nameWithType: FileManage.DeleteFile
-- uid: RaceManager.DataProcessing.Files.FileManage.pathData
+  fullName: RaceManager.DataProcessing.Files.FileManageData.DeleteFile
+  nameWithType: FileManageData.DeleteFile
+- uid: RaceManager.DataProcessing.Files.FileManageData.pathData
   name: pathData
-  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_pathData
-  commentId: F:RaceManager.DataProcessing.Files.FileManage.pathData
-  fullName: RaceManager.DataProcessing.Files.FileManage.pathData
-  nameWithType: FileManage.pathData
-- uid: RaceManager.DataProcessing.Files.FileManage.pathDataBoat
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_pathData
+  commentId: F:RaceManager.DataProcessing.Files.FileManageData.pathData
+  fullName: RaceManager.DataProcessing.Files.FileManageData.pathData
+  nameWithType: FileManageData.pathData
+- uid: RaceManager.DataProcessing.Files.FileManageData.pathDataBoat
   name: pathDataBoat
-  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_pathDataBoat
-  commentId: F:RaceManager.DataProcessing.Files.FileManage.pathDataBoat
-  fullName: RaceManager.DataProcessing.Files.FileManage.pathDataBoat
-  nameWithType: FileManage.pathDataBoat
-- uid: RaceManager.DataProcessing.Files.FileManage.pathDataPol
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_pathDataBoat
+  commentId: F:RaceManager.DataProcessing.Files.FileManageData.pathDataBoat
+  fullName: RaceManager.DataProcessing.Files.FileManageData.pathDataBoat
+  nameWithType: FileManageData.pathDataBoat
+- uid: RaceManager.DataProcessing.Files.FileManageData.pathDataPol
   name: pathDataPol
-  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_pathDataPol
-  commentId: F:RaceManager.DataProcessing.Files.FileManage.pathDataPol
-  fullName: RaceManager.DataProcessing.Files.FileManage.pathDataPol
-  nameWithType: FileManage.pathDataPol
-- uid: RaceManager.DataProcessing.Files.FileManage.pathDataRace
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_pathDataPol
+  commentId: F:RaceManager.DataProcessing.Files.FileManageData.pathDataPol
+  fullName: RaceManager.DataProcessing.Files.FileManageData.pathDataPol
+  nameWithType: FileManageData.pathDataPol
+- uid: RaceManager.DataProcessing.Files.FileManageData.pathDataRace
   name: pathDataRace
-  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_pathDataRace
-  commentId: F:RaceManager.DataProcessing.Files.FileManage.pathDataRace
-  fullName: RaceManager.DataProcessing.Files.FileManage.pathDataRace
-  nameWithType: FileManage.pathDataRace
-- uid: RaceManager.DataProcessing.Files.FileManage.pathJsonData
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_pathDataRace
+  commentId: F:RaceManager.DataProcessing.Files.FileManageData.pathDataRace
+  fullName: RaceManager.DataProcessing.Files.FileManageData.pathDataRace
+  nameWithType: FileManageData.pathDataRace
+- uid: RaceManager.DataProcessing.Files.FileManageData.pathJsonData
   name: pathJsonData
-  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_pathJsonData
-  commentId: F:RaceManager.DataProcessing.Files.FileManage.pathJsonData
-  fullName: RaceManager.DataProcessing.Files.FileManage.pathJsonData
-  nameWithType: FileManage.pathJsonData
-- uid: RaceManager.DataProcessing.Files.FileManage.UpdateJsonData
-  name: UpdateJsonData()
-  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_UpdateJsonData
-  commentId: M:RaceManager.DataProcessing.Files.FileManage.UpdateJsonData
-  fullName: RaceManager.DataProcessing.Files.FileManage.UpdateJsonData()
-  nameWithType: FileManage.UpdateJsonData()
-- uid: RaceManager.DataProcessing.Files.FileManage.UpdateJsonData*
-  name: UpdateJsonData
-  href: api/RaceManager.DataProcessing.Files.FileManage.html#RaceManager_DataProcessing_Files_FileManage_UpdateJsonData_
-  commentId: Overload:RaceManager.DataProcessing.Files.FileManage.UpdateJsonData
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_pathJsonData
+  commentId: F:RaceManager.DataProcessing.Files.FileManageData.pathJsonData
+  fullName: RaceManager.DataProcessing.Files.FileManageData.pathJsonData
+  nameWithType: FileManageData.pathJsonData
+- uid: RaceManager.DataProcessing.Files.FileManageData.ReadBoatTypesList
+  name: ReadBoatTypesList()
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_ReadBoatTypesList
+  commentId: M:RaceManager.DataProcessing.Files.FileManageData.ReadBoatTypesList
+  fullName: RaceManager.DataProcessing.Files.FileManageData.ReadBoatTypesList()
+  nameWithType: FileManageData.ReadBoatTypesList()
+- uid: RaceManager.DataProcessing.Files.FileManageData.ReadBoatTypesList*
+  name: ReadBoatTypesList
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_ReadBoatTypesList_
+  commentId: Overload:RaceManager.DataProcessing.Files.FileManageData.ReadBoatTypesList
   isSpec: "True"
-  fullName: RaceManager.DataProcessing.Files.FileManage.UpdateJsonData
-  nameWithType: FileManage.UpdateJsonData
+  fullName: RaceManager.DataProcessing.Files.FileManageData.ReadBoatTypesList
+  nameWithType: FileManageData.ReadBoatTypesList
+- uid: RaceManager.DataProcessing.Files.FileManageData.ReadFilePath(System.String)
+  name: ReadFilePath(String)
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_ReadFilePath_System_String_
+  commentId: M:RaceManager.DataProcessing.Files.FileManageData.ReadFilePath(System.String)
+  fullName: RaceManager.DataProcessing.Files.FileManageData.ReadFilePath(System.String)
+  nameWithType: FileManageData.ReadFilePath(String)
+- uid: RaceManager.DataProcessing.Files.FileManageData.ReadFilePath*
+  name: ReadFilePath
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_ReadFilePath_
+  commentId: Overload:RaceManager.DataProcessing.Files.FileManageData.ReadFilePath
+  isSpec: "True"
+  fullName: RaceManager.DataProcessing.Files.FileManageData.ReadFilePath
+  nameWithType: FileManageData.ReadFilePath
+- uid: RaceManager.DataProcessing.Files.FileManageData.UpdateAllBoatTypesList
+  name: UpdateAllBoatTypesList()
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_UpdateAllBoatTypesList
+  commentId: M:RaceManager.DataProcessing.Files.FileManageData.UpdateAllBoatTypesList
+  fullName: RaceManager.DataProcessing.Files.FileManageData.UpdateAllBoatTypesList()
+  nameWithType: FileManageData.UpdateAllBoatTypesList()
+- uid: RaceManager.DataProcessing.Files.FileManageData.UpdateAllBoatTypesList*
+  name: UpdateAllBoatTypesList
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_UpdateAllBoatTypesList_
+  commentId: Overload:RaceManager.DataProcessing.Files.FileManageData.UpdateAllBoatTypesList
+  isSpec: "True"
+  fullName: RaceManager.DataProcessing.Files.FileManageData.UpdateAllBoatTypesList
+  nameWithType: FileManageData.UpdateAllBoatTypesList
+- uid: RaceManager.DataProcessing.Files.FileManageData.UpdateBoatTypesList(System.String)
+  name: UpdateBoatTypesList(String)
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_UpdateBoatTypesList_System_String_
+  commentId: M:RaceManager.DataProcessing.Files.FileManageData.UpdateBoatTypesList(System.String)
+  fullName: RaceManager.DataProcessing.Files.FileManageData.UpdateBoatTypesList(System.String)
+  nameWithType: FileManageData.UpdateBoatTypesList(String)
+- uid: RaceManager.DataProcessing.Files.FileManageData.UpdateBoatTypesList*
+  name: UpdateBoatTypesList
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_UpdateBoatTypesList_
+  commentId: Overload:RaceManager.DataProcessing.Files.FileManageData.UpdateBoatTypesList
+  isSpec: "True"
+  fullName: RaceManager.DataProcessing.Files.FileManageData.UpdateBoatTypesList
+  nameWithType: FileManageData.UpdateBoatTypesList
+- uid: RaceManager.DataProcessing.Files.FileManageData.UpdateJsonData
+  name: UpdateJsonData()
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_UpdateJsonData
+  commentId: M:RaceManager.DataProcessing.Files.FileManageData.UpdateJsonData
+  fullName: RaceManager.DataProcessing.Files.FileManageData.UpdateJsonData()
+  nameWithType: FileManageData.UpdateJsonData()
+- uid: RaceManager.DataProcessing.Files.FileManageData.UpdateJsonData*
+  name: UpdateJsonData
+  href: api/RaceManager.DataProcessing.Files.FileManageData.html#RaceManager_DataProcessing_Files_FileManageData_UpdateJsonData_
+  commentId: Overload:RaceManager.DataProcessing.Files.FileManageData.UpdateJsonData
+  isSpec: "True"
+  fullName: RaceManager.DataProcessing.Files.FileManageData.UpdateJsonData
+  nameWithType: FileManageData.UpdateJsonData
+- uid: RaceManager.DataProcessing.Files.FileManageData.WriteInFile
+  name: FileManageData.WriteInFile
+  href: api/RaceManager.DataProcessing.Files.FileManageData.WriteInFile.html
+  commentId: T:RaceManager.DataProcessing.Files.FileManageData.WriteInFile
+  fullName: RaceManager.DataProcessing.Files.FileManageData.WriteInFile
+  nameWithType: FileManageData.WriteInFile
+- uid: RaceManager.DataProcessing.Files.FileManageData.WriteInFile.WriteFilePath(System.String,System.Object)
+  name: WriteFilePath(String, Object)
+  href: api/RaceManager.DataProcessing.Files.FileManageData.WriteInFile.html#RaceManager_DataProcessing_Files_FileManageData_WriteInFile_WriteFilePath_System_String_System_Object_
+  commentId: M:RaceManager.DataProcessing.Files.FileManageData.WriteInFile.WriteFilePath(System.String,System.Object)
+  fullName: RaceManager.DataProcessing.Files.FileManageData.WriteInFile.WriteFilePath(System.String, System.Object)
+  nameWithType: FileManageData.WriteInFile.WriteFilePath(String, Object)
+- uid: RaceManager.DataProcessing.Files.FileManageData.WriteInFile.WriteFilePath*
+  name: WriteFilePath
+  href: api/RaceManager.DataProcessing.Files.FileManageData.WriteInFile.html#RaceManager_DataProcessing_Files_FileManageData_WriteInFile_WriteFilePath_
+  commentId: Overload:RaceManager.DataProcessing.Files.FileManageData.WriteInFile.WriteFilePath
+  isSpec: "True"
+  fullName: RaceManager.DataProcessing.Files.FileManageData.WriteInFile.WriteFilePath
+  nameWithType: FileManageData.WriteInFile.WriteFilePath
 - uid: RaceManager.DataProcessing.Json
   name: RaceManager.DataProcessing.Json
   href: api/RaceManager.DataProcessing.Json.html
@@ -5387,6 +5501,12 @@ references:
   commentId: M:RaceManager.Language.LocaleManager.UpdateCulture
   fullName: RaceManager.Language.LocaleManager.UpdateCulture()
   nameWithType: LocaleManager.UpdateCulture()
+- uid: RaceManager.Language.LocaleManager.UpdateCulture(System.String)
+  name: UpdateCulture(String)
+  href: api/RaceManager.Language.LocaleManager.html#RaceManager_Language_LocaleManager_UpdateCulture_System_String_
+  commentId: M:RaceManager.Language.LocaleManager.UpdateCulture(System.String)
+  fullName: RaceManager.Language.LocaleManager.UpdateCulture(System.String)
+  nameWithType: LocaleManager.UpdateCulture(String)
 - uid: RaceManager.Language.LocaleManager.UpdateCulture*
   name: UpdateCulture
   href: api/RaceManager.Language.LocaleManager.html#RaceManager_Language_LocaleManager_UpdateCulture_
@@ -5400,6 +5520,32 @@ references:
   commentId: T:RaceManager.Language.Locales
   fullName: RaceManager.Language.Locales
   nameWithType: Locales
+- uid: RaceManager.Language.Locales.AddNewBoatType
+  name: AddNewBoatType
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_AddNewBoatType
+  commentId: P:RaceManager.Language.Locales.AddNewBoatType
+  fullName: RaceManager.Language.Locales.AddNewBoatType
+  nameWithType: Locales.AddNewBoatType
+- uid: RaceManager.Language.Locales.AddNewBoatType*
+  name: AddNewBoatType
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_AddNewBoatType_
+  commentId: Overload:RaceManager.Language.Locales.AddNewBoatType
+  isSpec: "True"
+  fullName: RaceManager.Language.Locales.AddNewBoatType
+  nameWithType: Locales.AddNewBoatType
+- uid: RaceManager.Language.Locales.AirDraft
+  name: AirDraft
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_AirDraft
+  commentId: P:RaceManager.Language.Locales.AirDraft
+  fullName: RaceManager.Language.Locales.AirDraft
+  nameWithType: Locales.AirDraft
+- uid: RaceManager.Language.Locales.AirDraft*
+  name: AirDraft
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_AirDraft_
+  commentId: Overload:RaceManager.Language.Locales.AirDraft
+  isSpec: "True"
+  fullName: RaceManager.Language.Locales.AirDraft
+  nameWithType: Locales.AirDraft
 - uid: RaceManager.Language.Locales.Culture
   name: Culture
   href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_Culture
@@ -5543,6 +5689,32 @@ references:
   isSpec: "True"
   fullName: RaceManager.Language.Locales.DevModDesc6
   nameWithType: Locales.DevModDesc6
+- uid: RaceManager.Language.Locales.Draft
+  name: Draft
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_Draft
+  commentId: P:RaceManager.Language.Locales.Draft
+  fullName: RaceManager.Language.Locales.Draft
+  nameWithType: Locales.Draft
+- uid: RaceManager.Language.Locales.Draft*
+  name: Draft
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_Draft_
+  commentId: Overload:RaceManager.Language.Locales.Draft
+  isSpec: "True"
+  fullName: RaceManager.Language.Locales.Draft
+  nameWithType: Locales.Draft
+- uid: RaceManager.Language.Locales.English
+  name: English
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_English
+  commentId: P:RaceManager.Language.Locales.English
+  fullName: RaceManager.Language.Locales.English
+  nameWithType: Locales.English
+- uid: RaceManager.Language.Locales.English*
+  name: English
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_English_
+  commentId: Overload:RaceManager.Language.Locales.English
+  isSpec: "True"
+  fullName: RaceManager.Language.Locales.English
+  nameWithType: Locales.English
 - uid: RaceManager.Language.Locales.Error
   name: Error
   href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_Error
@@ -5569,6 +5741,19 @@ references:
   isSpec: "True"
   fullName: RaceManager.Language.Locales.ErrorDesc
   nameWithType: Locales.ErrorDesc
+- uid: RaceManager.Language.Locales.French
+  name: French
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_French
+  commentId: P:RaceManager.Language.Locales.French
+  fullName: RaceManager.Language.Locales.French
+  nameWithType: Locales.French
+- uid: RaceManager.Language.Locales.French*
+  name: French
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_French_
+  commentId: Overload:RaceManager.Language.Locales.French
+  isSpec: "True"
+  fullName: RaceManager.Language.Locales.French
+  nameWithType: Locales.French
 - uid: RaceManager.Language.Locales.GpxDesc
   name: GpxDesc
   href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_GpxDesc
@@ -5712,6 +5897,45 @@ references:
   isSpec: "True"
   fullName: RaceManager.Language.Locales.HelpDesc
   nameWithType: Locales.HelpDesc
+- uid: RaceManager.Language.Locales.HullLength
+  name: HullLength
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_HullLength
+  commentId: P:RaceManager.Language.Locales.HullLength
+  fullName: RaceManager.Language.Locales.HullLength
+  nameWithType: Locales.HullLength
+- uid: RaceManager.Language.Locales.HullLength*
+  name: HullLength
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_HullLength_
+  commentId: Overload:RaceManager.Language.Locales.HullLength
+  isSpec: "True"
+  fullName: RaceManager.Language.Locales.HullLength
+  nameWithType: Locales.HullLength
+- uid: RaceManager.Language.Locales.HullWidth
+  name: HullWidth
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_HullWidth
+  commentId: P:RaceManager.Language.Locales.HullWidth
+  fullName: RaceManager.Language.Locales.HullWidth
+  nameWithType: Locales.HullWidth
+- uid: RaceManager.Language.Locales.HullWidth*
+  name: HullWidth
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_HullWidth_
+  commentId: Overload:RaceManager.Language.Locales.HullWidth
+  isSpec: "True"
+  fullName: RaceManager.Language.Locales.HullWidth
+  nameWithType: Locales.HullWidth
+- uid: RaceManager.Language.Locales.ID
+  name: ID
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_ID
+  commentId: P:RaceManager.Language.Locales.ID
+  fullName: RaceManager.Language.Locales.ID
+  nameWithType: Locales.ID
+- uid: RaceManager.Language.Locales.ID*
+  name: ID
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_ID_
+  commentId: Overload:RaceManager.Language.Locales.ID
+  isSpec: "True"
+  fullName: RaceManager.Language.Locales.ID
+  nameWithType: Locales.ID
 - uid: RaceManager.Language.Locales.IdReq
   name: IdReq
   href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_IdReq
@@ -5751,6 +5975,71 @@ references:
   isSpec: "True"
   fullName: RaceManager.Language.Locales.IPV6support
   nameWithType: Locales.IPV6support
+- uid: RaceManager.Language.Locales.ManageBoatTypes
+  name: ManageBoatTypes
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_ManageBoatTypes
+  commentId: P:RaceManager.Language.Locales.ManageBoatTypes
+  fullName: RaceManager.Language.Locales.ManageBoatTypes
+  nameWithType: Locales.ManageBoatTypes
+- uid: RaceManager.Language.Locales.ManageBoatTypes*
+  name: ManageBoatTypes
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_ManageBoatTypes_
+  commentId: Overload:RaceManager.Language.Locales.ManageBoatTypes
+  isSpec: "True"
+  fullName: RaceManager.Language.Locales.ManageBoatTypes
+  nameWithType: Locales.ManageBoatTypes
+- uid: RaceManager.Language.Locales.Name
+  name: Name
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_Name
+  commentId: P:RaceManager.Language.Locales.Name
+  fullName: RaceManager.Language.Locales.Name
+  nameWithType: Locales.Name
+- uid: RaceManager.Language.Locales.Name*
+  name: Name
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_Name_
+  commentId: Overload:RaceManager.Language.Locales.Name
+  isSpec: "True"
+  fullName: RaceManager.Language.Locales.Name
+  nameWithType: Locales.Name
+- uid: RaceManager.Language.Locales.NewBoatType
+  name: NewBoatType
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_NewBoatType
+  commentId: P:RaceManager.Language.Locales.NewBoatType
+  fullName: RaceManager.Language.Locales.NewBoatType
+  nameWithType: Locales.NewBoatType
+- uid: RaceManager.Language.Locales.NewBoatType*
+  name: NewBoatType
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_NewBoatType_
+  commentId: Overload:RaceManager.Language.Locales.NewBoatType
+  isSpec: "True"
+  fullName: RaceManager.Language.Locales.NewBoatType
+  nameWithType: Locales.NewBoatType
+- uid: RaceManager.Language.Locales.OverallLength
+  name: OverallLength
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_OverallLength
+  commentId: P:RaceManager.Language.Locales.OverallLength
+  fullName: RaceManager.Language.Locales.OverallLength
+  nameWithType: Locales.OverallLength
+- uid: RaceManager.Language.Locales.OverallLength*
+  name: OverallLength
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_OverallLength_
+  commentId: Overload:RaceManager.Language.Locales.OverallLength
+  isSpec: "True"
+  fullName: RaceManager.Language.Locales.OverallLength
+  nameWithType: Locales.OverallLength
+- uid: RaceManager.Language.Locales.OverallWidth
+  name: OverallWidth
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_OverallWidth
+  commentId: P:RaceManager.Language.Locales.OverallWidth
+  fullName: RaceManager.Language.Locales.OverallWidth
+  nameWithType: Locales.OverallWidth
+- uid: RaceManager.Language.Locales.OverallWidth*
+  name: OverallWidth
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_OverallWidth_
+  commentId: Overload:RaceManager.Language.Locales.OverallWidth
+  isSpec: "True"
+  fullName: RaceManager.Language.Locales.OverallWidth
+  nameWithType: Locales.OverallWidth
 - uid: RaceManager.Language.Locales.Param
   name: Param
   href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_Param
@@ -5790,6 +6079,19 @@ references:
   isSpec: "True"
   fullName: RaceManager.Language.Locales.PortUnavailable
   nameWithType: Locales.PortUnavailable
+- uid: RaceManager.Language.Locales.Remove
+  name: Remove
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_Remove
+  commentId: P:RaceManager.Language.Locales.Remove
+  fullName: RaceManager.Language.Locales.Remove
+  nameWithType: Locales.Remove
+- uid: RaceManager.Language.Locales.Remove*
+  name: Remove
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_Remove_
+  commentId: Overload:RaceManager.Language.Locales.Remove
+  isSpec: "True"
+  fullName: RaceManager.Language.Locales.Remove
+  nameWithType: Locales.Remove
 - uid: RaceManager.Language.Locales.ResourceManager
   name: ResourceManager
   href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_ResourceManager
@@ -5803,6 +6105,19 @@ references:
   isSpec: "True"
   fullName: RaceManager.Language.Locales.ResourceManager
   nameWithType: Locales.ResourceManager
+- uid: RaceManager.Language.Locales.Save
+  name: Save
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_Save
+  commentId: P:RaceManager.Language.Locales.Save
+  fullName: RaceManager.Language.Locales.Save
+  nameWithType: Locales.Save
+- uid: RaceManager.Language.Locales.Save*
+  name: Save
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_Save_
+  commentId: Overload:RaceManager.Language.Locales.Save
+  isSpec: "True"
+  fullName: RaceManager.Language.Locales.Save
+  nameWithType: Locales.Save
 - uid: RaceManager.Language.Locales.SeeMore
   name: SeeMore
   href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_SeeMore
@@ -5829,6 +6144,32 @@ references:
   isSpec: "True"
   fullName: RaceManager.Language.Locales.ServConf
   nameWithType: Locales.ServConf
+- uid: RaceManager.Language.Locales.ServerNotRunning
+  name: ServerNotRunning
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_ServerNotRunning
+  commentId: P:RaceManager.Language.Locales.ServerNotRunning
+  fullName: RaceManager.Language.Locales.ServerNotRunning
+  nameWithType: Locales.ServerNotRunning
+- uid: RaceManager.Language.Locales.ServerNotRunning*
+  name: ServerNotRunning
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_ServerNotRunning_
+  commentId: Overload:RaceManager.Language.Locales.ServerNotRunning
+  isSpec: "True"
+  fullName: RaceManager.Language.Locales.ServerNotRunning
+  nameWithType: Locales.ServerNotRunning
+- uid: RaceManager.Language.Locales.ServerRunning
+  name: ServerRunning
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_ServerRunning
+  commentId: P:RaceManager.Language.Locales.ServerRunning
+  fullName: RaceManager.Language.Locales.ServerRunning
+  nameWithType: Locales.ServerRunning
+- uid: RaceManager.Language.Locales.ServerRunning*
+  name: ServerRunning
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_ServerRunning_
+  commentId: Overload:RaceManager.Language.Locales.ServerRunning
+  isSpec: "True"
+  fullName: RaceManager.Language.Locales.ServerRunning
+  nameWithType: Locales.ServerRunning
 - uid: RaceManager.Language.Locales.Settings
   name: Settings
   href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_Settings
@@ -5868,31 +6209,45 @@ references:
   isSpec: "True"
   fullName: RaceManager.Language.Locales.SwapTo
   nameWithType: Locales.SwapTo
-- uid: RaceManager.Logger
-  name: Logger
-  href: api/RaceManager.Logger.html
-  commentId: T:RaceManager.Logger
-  fullName: RaceManager.Logger
-  nameWithType: Logger
-- uid: RaceManager.Logger.log(RaceManager.LoggingLevel,System.String,System.String)
-  name: log(LoggingLevel, String, String)
-  href: api/RaceManager.Logger.html#RaceManager_Logger_log_RaceManager_LoggingLevel_System_String_System_String_
-  commentId: M:RaceManager.Logger.log(RaceManager.LoggingLevel,System.String,System.String)
-  fullName: RaceManager.Logger.log(RaceManager.LoggingLevel, System.String, System.String)
-  nameWithType: Logger.log(LoggingLevel, String, String)
-- uid: RaceManager.Logger.log*
-  name: log
-  href: api/RaceManager.Logger.html#RaceManager_Logger_log_
-  commentId: Overload:RaceManager.Logger.log
+- uid: RaceManager.Language.Locales.TurnOffTheServer
+  name: TurnOffTheServer
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_TurnOffTheServer
+  commentId: P:RaceManager.Language.Locales.TurnOffTheServer
+  fullName: RaceManager.Language.Locales.TurnOffTheServer
+  nameWithType: Locales.TurnOffTheServer
+- uid: RaceManager.Language.Locales.TurnOffTheServer*
+  name: TurnOffTheServer
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_TurnOffTheServer_
+  commentId: Overload:RaceManager.Language.Locales.TurnOffTheServer
   isSpec: "True"
-  fullName: RaceManager.Logger.log
-  nameWithType: Logger.log
-- uid: RaceManager.Logger.LogLevel
-  name: LogLevel
-  href: api/RaceManager.Logger.html#RaceManager_Logger_LogLevel
-  commentId: F:RaceManager.Logger.LogLevel
-  fullName: RaceManager.Logger.LogLevel
-  nameWithType: Logger.LogLevel
+  fullName: RaceManager.Language.Locales.TurnOffTheServer
+  nameWithType: Locales.TurnOffTheServer
+- uid: RaceManager.Language.Locales.TurnOnTheServer
+  name: TurnOnTheServer
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_TurnOnTheServer
+  commentId: P:RaceManager.Language.Locales.TurnOnTheServer
+  fullName: RaceManager.Language.Locales.TurnOnTheServer
+  nameWithType: Locales.TurnOnTheServer
+- uid: RaceManager.Language.Locales.TurnOnTheServer*
+  name: TurnOnTheServer
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_TurnOnTheServer_
+  commentId: Overload:RaceManager.Language.Locales.TurnOnTheServer
+  isSpec: "True"
+  fullName: RaceManager.Language.Locales.TurnOnTheServer
+  nameWithType: Locales.TurnOnTheServer
+- uid: RaceManager.Language.Locales.Weight
+  name: Weight
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_Weight
+  commentId: P:RaceManager.Language.Locales.Weight
+  fullName: RaceManager.Language.Locales.Weight
+  nameWithType: Locales.Weight
+- uid: RaceManager.Language.Locales.Weight*
+  name: Weight
+  href: api/RaceManager.Language.Locales.html#RaceManager_Language_Locales_Weight_
+  commentId: Overload:RaceManager.Language.Locales.Weight
+  isSpec: "True"
+  fullName: RaceManager.Language.Locales.Weight
+  nameWithType: Locales.Weight
 - uid: RaceManager.LoggingLevel
   name: LoggingLevel
   href: api/RaceManager.LoggingLevel.html
@@ -5923,12 +6278,63 @@ references:
   commentId: F:RaceManager.LoggingLevel.OFF
   fullName: RaceManager.LoggingLevel.OFF
   nameWithType: LoggingLevel.OFF
+- uid: RaceManager.LoggingLevel.WARN
+  name: WARN
+  href: api/RaceManager.LoggingLevel.html#RaceManager_LoggingLevel_WARN
+  commentId: F:RaceManager.LoggingLevel.WARN
+  fullName: RaceManager.LoggingLevel.WARN
+  nameWithType: LoggingLevel.WARN
 - uid: RaceManager.Pages
   name: RaceManager.Pages
   href: api/RaceManager.Pages.html
   commentId: N:RaceManager.Pages
   fullName: RaceManager.Pages
   nameWithType: RaceManager.Pages
+- uid: RaceManager.Pages.BoatTypesManagement
+  name: BoatTypesManagement
+  href: api/RaceManager.Pages.BoatTypesManagement.html
+  commentId: T:RaceManager.Pages.BoatTypesManagement
+  fullName: RaceManager.Pages.BoatTypesManagement
+  nameWithType: BoatTypesManagement
+- uid: RaceManager.Pages.BoatTypesManagement.DisposeAsync
+  name: DisposeAsync()
+  href: api/RaceManager.Pages.BoatTypesManagement.html#RaceManager_Pages_BoatTypesManagement_DisposeAsync
+  commentId: M:RaceManager.Pages.BoatTypesManagement.DisposeAsync
+  fullName: RaceManager.Pages.BoatTypesManagement.DisposeAsync()
+  nameWithType: BoatTypesManagement.DisposeAsync()
+- uid: RaceManager.Pages.BoatTypesManagement.DisposeAsync*
+  name: DisposeAsync
+  href: api/RaceManager.Pages.BoatTypesManagement.html#RaceManager_Pages_BoatTypesManagement_DisposeAsync_
+  commentId: Overload:RaceManager.Pages.BoatTypesManagement.DisposeAsync
+  isSpec: "True"
+  fullName: RaceManager.Pages.BoatTypesManagement.DisposeAsync
+  nameWithType: BoatTypesManagement.DisposeAsync
+- uid: RaceManager.Pages.BoatTypesManagement.IsConnected
+  name: IsConnected
+  href: api/RaceManager.Pages.BoatTypesManagement.html#RaceManager_Pages_BoatTypesManagement_IsConnected
+  commentId: P:RaceManager.Pages.BoatTypesManagement.IsConnected
+  fullName: RaceManager.Pages.BoatTypesManagement.IsConnected
+  nameWithType: BoatTypesManagement.IsConnected
+- uid: RaceManager.Pages.BoatTypesManagement.IsConnected*
+  name: IsConnected
+  href: api/RaceManager.Pages.BoatTypesManagement.html#RaceManager_Pages_BoatTypesManagement_IsConnected_
+  commentId: Overload:RaceManager.Pages.BoatTypesManagement.IsConnected
+  isSpec: "True"
+  fullName: RaceManager.Pages.BoatTypesManagement.IsConnected
+  nameWithType: BoatTypesManagement.IsConnected
+- uid: RaceManager.Pages.BoatTypesManagement.OnInitializedAsync
+  name: OnInitializedAsync()
+  href: api/RaceManager.Pages.BoatTypesManagement.html#RaceManager_Pages_BoatTypesManagement_OnInitializedAsync
+  commentId: M:RaceManager.Pages.BoatTypesManagement.OnInitializedAsync
+  fullName: RaceManager.Pages.BoatTypesManagement.OnInitializedAsync()
+  nameWithType: BoatTypesManagement.OnInitializedAsync()
+- uid: RaceManager.Pages.BoatTypesManagement.OnInitializedAsync*
+  name: OnInitializedAsync
+  href: api/RaceManager.Pages.BoatTypesManagement.html#RaceManager_Pages_BoatTypesManagement_OnInitializedAsync_
+  commentId: Overload:RaceManager.Pages.BoatTypesManagement.OnInitializedAsync
+  isSpec: "True"
+  fullName: RaceManager.Pages.BoatTypesManagement.OnInitializedAsync
+  nameWithType: BoatTypesManagement.OnInitializedAsync
 - uid: RaceManager.Pages.ErrorModel
   name: ErrorModel
   href: api/RaceManager.Pages.ErrorModel.html
@@ -6077,6 +6483,19 @@ references:
   commentId: F:RaceManager.Reading.BoatType.BoatTypesList
   fullName: RaceManager.Reading.BoatType.BoatTypesList
   nameWithType: BoatType.BoatTypesList
+- uid: RaceManager.Reading.BoatType.CompareTo(RaceManager.Reading.BoatType)
+  name: CompareTo(BoatType)
+  href: api/RaceManager.Reading.BoatType.html#RaceManager_Reading_BoatType_CompareTo_RaceManager_Reading_BoatType_
+  commentId: M:RaceManager.Reading.BoatType.CompareTo(RaceManager.Reading.BoatType)
+  fullName: RaceManager.Reading.BoatType.CompareTo(RaceManager.Reading.BoatType)
+  nameWithType: BoatType.CompareTo(BoatType)
+- uid: RaceManager.Reading.BoatType.CompareTo*
+  name: CompareTo
+  href: api/RaceManager.Reading.BoatType.html#RaceManager_Reading_BoatType_CompareTo_
+  commentId: Overload:RaceManager.Reading.BoatType.CompareTo
+  isSpec: "True"
+  fullName: RaceManager.Reading.BoatType.CompareTo
+  nameWithType: BoatType.CompareTo
 - uid: RaceManager.Reading.BoatType.Draft
   name: Draft
   href: api/RaceManager.Reading.BoatType.html#RaceManager_Reading_BoatType_Draft
@@ -6090,12 +6509,12 @@ references:
   isSpec: "True"
   fullName: RaceManager.Reading.BoatType.Draft
   nameWithType: BoatType.Draft
-- uid: RaceManager.Reading.BoatType.Equals(System.Object)
-  name: Equals(Object)
-  href: api/RaceManager.Reading.BoatType.html#RaceManager_Reading_BoatType_Equals_System_Object_
-  commentId: M:RaceManager.Reading.BoatType.Equals(System.Object)
-  fullName: RaceManager.Reading.BoatType.Equals(System.Object)
-  nameWithType: BoatType.Equals(Object)
+- uid: RaceManager.Reading.BoatType.Equals(RaceManager.Reading.BoatType)
+  name: Equals(BoatType)
+  href: api/RaceManager.Reading.BoatType.html#RaceManager_Reading_BoatType_Equals_RaceManager_Reading_BoatType_
+  commentId: M:RaceManager.Reading.BoatType.Equals(RaceManager.Reading.BoatType)
+  fullName: RaceManager.Reading.BoatType.Equals(RaceManager.Reading.BoatType)
+  nameWithType: BoatType.Equals(BoatType)
 - uid: RaceManager.Reading.BoatType.Equals*
   name: Equals
   href: api/RaceManager.Reading.BoatType.html#RaceManager_Reading_BoatType_Equals_
@@ -6103,6 +6522,19 @@ references:
   isSpec: "True"
   fullName: RaceManager.Reading.BoatType.Equals
   nameWithType: BoatType.Equals
+- uid: RaceManager.Reading.BoatType.GetHashCode
+  name: GetHashCode()
+  href: api/RaceManager.Reading.BoatType.html#RaceManager_Reading_BoatType_GetHashCode
+  commentId: M:RaceManager.Reading.BoatType.GetHashCode
+  fullName: RaceManager.Reading.BoatType.GetHashCode()
+  nameWithType: BoatType.GetHashCode()
+- uid: RaceManager.Reading.BoatType.GetHashCode*
+  name: GetHashCode
+  href: api/RaceManager.Reading.BoatType.html#RaceManager_Reading_BoatType_GetHashCode_
+  commentId: Overload:RaceManager.Reading.BoatType.GetHashCode
+  isSpec: "True"
+  fullName: RaceManager.Reading.BoatType.GetHashCode
+  nameWithType: BoatType.GetHashCode
 - uid: RaceManager.Reading.BoatType.HullLength
   name: HullLength
   href: api/RaceManager.Reading.BoatType.html#RaceManager_Reading_BoatType_HullLength
@@ -6181,12 +6613,12 @@ references:
   isSpec: "True"
   fullName: RaceManager.Reading.BoatType.OverallWidth
   nameWithType: BoatType.OverallWidth
-- uid: RaceManager.Reading.BoatType.Polar
-  name: Polar
-  href: api/RaceManager.Reading.BoatType.html#RaceManager_Reading_BoatType_Polar
-  commentId: F:RaceManager.Reading.BoatType.Polar
-  fullName: RaceManager.Reading.BoatType.Polar
-  nameWithType: BoatType.Polar
+- uid: RaceManager.Reading.BoatType.PolarFileList
+  name: PolarFileList
+  href: api/RaceManager.Reading.BoatType.html#RaceManager_Reading_BoatType_PolarFileList
+  commentId: F:RaceManager.Reading.BoatType.PolarFileList
+  fullName: RaceManager.Reading.BoatType.PolarFileList
+  nameWithType: BoatType.PolarFileList
 - uid: RaceManager.Reading.BoatType.Weight
   name: Weight
   href: api/RaceManager.Reading.BoatType.html#RaceManager_Reading_BoatType_Weight
@@ -6240,41 +6672,28 @@ references:
   commentId: T:RaceManager.Reading.BoatTypesListHub
   fullName: RaceManager.Reading.BoatTypesListHub
   nameWithType: BoatTypesListHub
-- uid: RaceManager.Reading.BoatTypesListHub.SendMessage(List{RaceManager.Reading.BoatType})
-  name: SendMessage(List<BoatType>)
-  href: api/RaceManager.Reading.BoatTypesListHub.html#RaceManager_Reading_BoatTypesListHub_SendMessage_List_RaceManager_Reading_BoatType__
-  commentId: M:RaceManager.Reading.BoatTypesListHub.SendMessage(List{RaceManager.Reading.BoatType})
-  name.vb: SendMessage(List(Of BoatType))
-  fullName: RaceManager.Reading.BoatTypesListHub.SendMessage(List<RaceManager.Reading.BoatType>)
-  fullName.vb: RaceManager.Reading.BoatTypesListHub.SendMessage(List(Of RaceManager.Reading.BoatType))
-  nameWithType: BoatTypesListHub.SendMessage(List<BoatType>)
-  nameWithType.vb: BoatTypesListHub.SendMessage(List(Of BoatType))
-- uid: RaceManager.Reading.BoatTypesListHub.SendMessage*
-  name: SendMessage
-  href: api/RaceManager.Reading.BoatTypesListHub.html#RaceManager_Reading_BoatTypesListHub_SendMessage_
-  commentId: Overload:RaceManager.Reading.BoatTypesListHub.SendMessage
+- uid: RaceManager.Reading.BoatTypesListHub.BoatTypesListSending(List{RaceManager.Reading.BoatType})
+  name: BoatTypesListSending(List<BoatType>)
+  href: api/RaceManager.Reading.BoatTypesListHub.html#RaceManager_Reading_BoatTypesListHub_BoatTypesListSending_List_RaceManager_Reading_BoatType__
+  commentId: M:RaceManager.Reading.BoatTypesListHub.BoatTypesListSending(List{RaceManager.Reading.BoatType})
+  name.vb: BoatTypesListSending(List(Of BoatType))
+  fullName: RaceManager.Reading.BoatTypesListHub.BoatTypesListSending(List<RaceManager.Reading.BoatType>)
+  fullName.vb: RaceManager.Reading.BoatTypesListHub.BoatTypesListSending(List(Of RaceManager.Reading.BoatType))
+  nameWithType: BoatTypesListHub.BoatTypesListSending(List<BoatType>)
+  nameWithType.vb: BoatTypesListHub.BoatTypesListSending(List(Of BoatType))
+- uid: RaceManager.Reading.BoatTypesListHub.BoatTypesListSending*
+  name: BoatTypesListSending
+  href: api/RaceManager.Reading.BoatTypesListHub.html#RaceManager_Reading_BoatTypesListHub_BoatTypesListSending_
+  commentId: Overload:RaceManager.Reading.BoatTypesListHub.BoatTypesListSending
   isSpec: "True"
-  fullName: RaceManager.Reading.BoatTypesListHub.SendMessage
-  nameWithType: BoatTypesListHub.SendMessage
+  fullName: RaceManager.Reading.BoatTypesListHub.BoatTypesListSending
+  nameWithType: BoatTypesListHub.BoatTypesListSending
 - uid: RaceManager.Reading.Polar
   name: Polar
   href: api/RaceManager.Reading.Polar.html
   commentId: T:RaceManager.Reading.Polar
   fullName: RaceManager.Reading.Polar
   nameWithType: Polar
-- uid: RaceManager.Reading.Polar.ID
-  name: ID
-  href: api/RaceManager.Reading.Polar.html#RaceManager_Reading_Polar_ID
-  commentId: P:RaceManager.Reading.Polar.ID
-  fullName: RaceManager.Reading.Polar.ID
-  nameWithType: Polar.ID
-- uid: RaceManager.Reading.Polar.ID*
-  name: ID
-  href: api/RaceManager.Reading.Polar.html#RaceManager_Reading_Polar_ID_
-  commentId: Overload:RaceManager.Reading.Polar.ID
-  isSpec: "True"
-  fullName: RaceManager.Reading.Polar.ID
-  nameWithType: Polar.ID
 - uid: RaceManager.Reading.Polar.Name
   name: Name
   href: api/RaceManager.Reading.Polar.html#RaceManager_Reading_Polar_Name
@@ -6288,28 +6707,60 @@ references:
   isSpec: "True"
   fullName: RaceManager.Reading.Polar.Name
   nameWithType: Polar.Name
-- uid: RaceManager.Reading.Polar.PolarFileLinksList
-  name: PolarFileLinksList
-  href: api/RaceManager.Reading.Polar.html#RaceManager_Reading_Polar_PolarFileLinksList
-  commentId: F:RaceManager.Reading.Polar.PolarFileLinksList
-  fullName: RaceManager.Reading.Polar.PolarFileLinksList
-  nameWithType: Polar.PolarFileLinksList
-- uid: RaceManager.Reading.PolFile
-  name: PolFile
-  href: api/RaceManager.Reading.PolFile.html
-  commentId: T:RaceManager.Reading.PolFile
-  fullName: RaceManager.Reading.PolFile
-  nameWithType: PolFile
-- uid: RaceManager.Reading.PolFile.PolaireFile
-  name: PolaireFile
-  href: api/RaceManager.Reading.PolFile.html#RaceManager_Reading_PolFile_PolaireFile
-  commentId: P:RaceManager.Reading.PolFile.PolaireFile
-  fullName: RaceManager.Reading.PolFile.PolaireFile
-  nameWithType: PolFile.PolaireFile
-- uid: RaceManager.Reading.PolFile.PolaireFile*
-  name: PolaireFile
-  href: api/RaceManager.Reading.PolFile.html#RaceManager_Reading_PolFile_PolaireFile_
-  commentId: Overload:RaceManager.Reading.PolFile.PolaireFile
+- uid: RaceManager.Reading.Polar.PolarFile
+  name: PolarFile
+  href: api/RaceManager.Reading.Polar.html#RaceManager_Reading_Polar_PolarFile
+  commentId: P:RaceManager.Reading.Polar.PolarFile
+  fullName: RaceManager.Reading.Polar.PolarFile
+  nameWithType: Polar.PolarFile
+- uid: RaceManager.Reading.Polar.PolarFile*
+  name: PolarFile
+  href: api/RaceManager.Reading.Polar.html#RaceManager_Reading_Polar_PolarFile_
+  commentId: Overload:RaceManager.Reading.Polar.PolarFile
   isSpec: "True"
-  fullName: RaceManager.Reading.PolFile.PolaireFile
-  nameWithType: PolFile.PolaireFile
+  fullName: RaceManager.Reading.Polar.PolarFile
+  nameWithType: Polar.PolarFile
+- uid: RaceManager.RMLogger
+  name: RMLogger
+  href: api/RaceManager.RMLogger.html
+  commentId: T:RaceManager.RMLogger
+  fullName: RaceManager.RMLogger
+  nameWithType: RMLogger
+- uid: RaceManager.RMLogger.#ctor(RaceManager.LoggingLevel,System.String)
+  name: RMLogger(LoggingLevel, String)
+  href: api/RaceManager.RMLogger.html#RaceManager_RMLogger__ctor_RaceManager_LoggingLevel_System_String_
+  commentId: M:RaceManager.RMLogger.#ctor(RaceManager.LoggingLevel,System.String)
+  fullName: RaceManager.RMLogger.RMLogger(RaceManager.LoggingLevel, System.String)
+  nameWithType: RMLogger.RMLogger(LoggingLevel, String)
+- uid: RaceManager.RMLogger.#ctor*
+  name: RMLogger
+  href: api/RaceManager.RMLogger.html#RaceManager_RMLogger__ctor_
+  commentId: Overload:RaceManager.RMLogger.#ctor
+  isSpec: "True"
+  fullName: RaceManager.RMLogger.RMLogger
+  nameWithType: RMLogger.RMLogger
+- uid: RaceManager.RMLogger.contextPrefix
+  name: contextPrefix
+  href: api/RaceManager.RMLogger.html#RaceManager_RMLogger_contextPrefix
+  commentId: F:RaceManager.RMLogger.contextPrefix
+  fullName: RaceManager.RMLogger.contextPrefix
+  nameWithType: RMLogger.contextPrefix
+- uid: RaceManager.RMLogger.log(RaceManager.LoggingLevel,System.String,System.String)
+  name: log(LoggingLevel, String, String)
+  href: api/RaceManager.RMLogger.html#RaceManager_RMLogger_log_RaceManager_LoggingLevel_System_String_System_String_
+  commentId: M:RaceManager.RMLogger.log(RaceManager.LoggingLevel,System.String,System.String)
+  fullName: RaceManager.RMLogger.log(RaceManager.LoggingLevel, System.String, System.String)
+  nameWithType: RMLogger.log(LoggingLevel, String, String)
+- uid: RaceManager.RMLogger.log*
+  name: log
+  href: api/RaceManager.RMLogger.html#RaceManager_RMLogger_log_
+  commentId: Overload:RaceManager.RMLogger.log
+  isSpec: "True"
+  fullName: RaceManager.RMLogger.log
+  nameWithType: RMLogger.log
+- uid: RaceManager.RMLogger.LogLevel
+  name: LogLevel
+  href: api/RaceManager.RMLogger.html#RaceManager_RMLogger_LogLevel
+  commentId: F:RaceManager.RMLogger.LogLevel
+  fullName: RaceManager.RMLogger.LogLevel
+  nameWithType: RMLogger.LogLevel

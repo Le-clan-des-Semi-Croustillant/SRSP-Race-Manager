@@ -19,7 +19,7 @@
             <div style="cursor: crosshair" @onclick="UpdateStatus">
                 @if (_loaded)
                 {
-                    @if (AsyncServer.thread.IsAlive)
+                    @if (AsyncServer.thread is not null && AsyncServer.thread.IsAlive)
                     {
                         <label style="color: #03ec00; margin-right: 5px"> @Locales.ServerRunning </label>
                     }

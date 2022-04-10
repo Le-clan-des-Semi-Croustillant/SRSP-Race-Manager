@@ -1,11 +1,11 @@
 {
-  "ID": 456987,
-  "Name": "Yolo",
-  "HullLength": 10.2,
-  "OverallLength": 10.2,
-  "HullWidth": 10.2,
-  "OverallWidth": 10.2,
-  "Draft": 10.2,
-  "AirDraft": 10.2,
-  "Weight": 10.2
+  "ID": 456974387,
+  "Name": "Imoca",
+  "HullLength": 18.28,
+  "OverallLength": 20.12,
+  "HullWidth": 5.45,
+  "OverallWidth": 5.85,
+  "Draft": 4.5,
+  "AirDraft": 29,
+  "Weight": 8000
 }

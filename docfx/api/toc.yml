@@ -2,13 +2,15 @@
 - uid: RaceManager
   name: RaceManager
   items:
-  - uid: RaceManager.Logger
-    name: Logger
   - uid: RaceManager.LoggingLevel
     name: LoggingLevel
+  - uid: RaceManager.RMLogger
+    name: RMLogger
 - uid: RaceManager.Communication
   name: RaceManager.Communication
   items:
+  - uid: RaceManager.Communication.AsynchronousClient
+    name: AsynchronousClient
   - uid: RaceManager.Communication.AsyncServer
     name: AsyncServer
   - uid: RaceManager.Communication.AsyncServer.Client
@@ -19,24 +21,17 @@
     name: IMessageType
   - uid: RaceManager.Communication.OMessageType
     name: OMessageType
-- uid: RaceManager.Data
-  name: RaceManager.Data
-  items:
-  - uid: RaceManager.Data.ChatHub
-    name: ChatHub
-  - uid: RaceManager.Data.count
-    name: count
-  - uid: RaceManager.Data.Data
-    name: Data
-  - uid: RaceManager.Data.WeatherForecast
-    name: WeatherForecast
-  - uid: RaceManager.Data.WeatherForecastService
-    name: WeatherForecastService
+  - uid: RaceManager.Communication.ServerHub
+    name: ServerHub
+  - uid: RaceManager.Communication.StateObject
+    name: StateObject
 - uid: RaceManager.DataProcessing.Files
   name: RaceManager.DataProcessing.Files
   items:
-  - uid: RaceManager.DataProcessing.Files.FileManage
-    name: FileManage
+  - uid: RaceManager.DataProcessing.Files.FileManageData
+    name: FileManageData
+  - uid: RaceManager.DataProcessing.Files.FileManageData.WriteInFile
+    name: FileManageData.WriteInFile
 - uid: RaceManager.DataProcessing.Json
   name: RaceManager.DataProcessing.Json
   items:
@@ -171,6 +166,8 @@
 - uid: RaceManager.Pages
   name: RaceManager.Pages
   items:
+  - uid: RaceManager.Pages.BoatTypesManagement
+    name: BoatTypesManagement
   - uid: RaceManager.Pages.ErrorModel
     name: ErrorModel
 - uid: RaceManager.Reading
@@ -187,5 +184,3 @@
     name: BoatTypesListHub
   - uid: RaceManager.Reading.Polar
     name: Polar
-  - uid: RaceManager.Reading.PolFile
-    name: PolFile
