@@ -133,6 +133,34 @@ a, .btn-link {
 
 }
 
+.polar-button {
+    left: 1px;
+    position: relative;
+    height: 100%;
+    min-width: 90%;
+    white-space: nowrap;
+    text-align: center;
+    background: #bd74ff;
+    color: white;
+    display: inline-block;
+    right: 2px;
+    border: 1px solid #240b2b;
+    border-radius: 5px;
+}
+.del-button {
+    position: relative;
+    height: 100%;
+    max-width: 40px;
+    /*white-space: nowrap;*/
+    text-align: center;
+    background: white;
+    color: #ffffff;
+    display: inline-block;
+    right: 0px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
 .button-form {
     position: absolute;
     bottom: 10px;

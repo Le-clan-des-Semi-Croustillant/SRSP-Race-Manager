@@ -8,6 +8,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Communication\NewFolder\**" />
+    <Compile Remove="Communication\SendFile\**" />
+    <Compile Remove="index\gpx\**" />
+    <Content Remove="Communication\NewFolder\**" />
+    <Content Remove="Communication\SendFile\**" />
+    <Content Remove="index\gpx\**" />
+    <EmbeddedResource Remove="Communication\NewFolder\**" />
+    <EmbeddedResource Remove="Communication\SendFile\**" />
+    <EmbeddedResource Remove="index\gpx\**" />
+    <None Remove="Communication\NewFolder\**" />
+    <None Remove="Communication\SendFile\**" />
+    <None Remove="index\gpx\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Communication\AsyncServer\ClientTest.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="6.0.3" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="6.0.0" />
@@ -15,11 +34,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Communication\SendFile\" />
     <Folder Include="dataResources\gpx\" />
     <Folder Include="dataResources\pol\" />
-    <Folder Include="Pages\BoatTypesManagement\" />
-    <Folder Include="index\gpx\" />
   </ItemGroup>
 
   <ItemGroup>

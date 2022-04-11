@@ -12,7 +12,7 @@ namespace RaceManager.Communication
 {
     public class ServerHub : Hub
     {
-        private static RMLogger _logger = new RMLogger(LoggingLevel.DEBUG, "ServerHub");
+        private static RMLogger _logger = new RMLogger(LoggingLevel.INFO, "ServerHub");
         public static bool IsServerRunning { set; get; } = false;
 
         public async Task UpdateStatus()
@@ -40,8 +40,11 @@ namespace RaceManager.Communication
         /// <returns></returns>
         public async Task SendPort(int port)
         {
-            _logger.log(LoggingLevel.DEBUG, "SendPort()", $"Server changed port to : {port}");
+            _logger.log(LoggingLevel.INFO, "SendPort()", "A client ask to change the port");
+            AsyncServer.Stop();
             AsyncServer.Port = port;
+            _logger.log(LoggingLevel.INFO, "SendPort()", $"Server port changed to : {port}");
+            AsyncServer.Run();
         }
         
         /// <summary>
@@ -51,7 +54,7 @@ namespace RaceManager.Communication
         /// <returns></returns>
         public async Task ChangeCulture(string culture)
         {
-            _logger.log(LoggingLevel.DEBUG, "ChangeCulture()", $"Server changed culture to : {culture}");
+            _logger.log(LoggingLevel.INFO, "ChangeCulture()", $"A client ask to change the culture to : {culture}");
             LocaleManager.UpdateCulture(culture);
         }
 
@@ -61,7 +64,7 @@ namespace RaceManager.Communication
         /// <returns></returns>
         public async Task TurnOn()
         {
-            _logger.log(LoggingLevel.INFO, "TurnOn()", $"Server turned on");
+            _logger.log(LoggingLevel.INFO, "TurnOn()", $"A client ask to turn on the server");
             AsyncServer.Run();
         }
 
@@ -71,7 +74,7 @@ namespace RaceManager.Communication
         /// <returns></returns>
         public async Task TurnOff()
         {
-            _logger.log(LoggingLevel.INFO, "TurnOff()", $"Server turned off");
+            _logger.log(LoggingLevel.INFO, "TurnOff()", $"A client ask to turn off the server");
             AsyncServer.Stop();
         }
 
@@ -79,13 +82,12 @@ namespace RaceManager.Communication
         public override Task OnConnectedAsync()
         {
             _logger.log(LoggingLevel.DEBUG, "OnConnectedAsync()", $"New connection {Context.ConnectionId}");
-
             return base.OnConnectedAsync();
         }
 
         public override async Task OnDisconnectedAsync(Exception e)
         {
-            _logger.log(LoggingLevel.DEBUG, "OnDisconnectedAsync()", $"New connection {Context.ConnectionId}");
+            _logger.log(LoggingLevel.DEBUG, "OnDisconnectedAsync()", $"Disconnection of {Context.ConnectionId}");
             await base.OnDisconnectedAsync(e);
         }
 

@@ -11,7 +11,7 @@ namespace RaceManager.Communication
 {
     public partial class AsyncServer
     {
-        public static void ReadCallback(IAsyncResult ar)
+        private static void ReadCallback(IAsyncResult ar)
         {
             String content = String.Empty;
 

@@ -43,8 +43,8 @@
         </div>
 
         <div class="BoatTypeListContainer">
-            <div class="Content" style="height: 60%;">
-                <div style="margin-right: 8%">
+            <div  style="height: 60%;">
+                <div class="Content"style="position: absolute;left:10px;right:10px;max-width: 90%;height:53%">
                     @if (_btSelected is not null)
                     {
                         foreach (Polar p in _btSelected.PolarFileList)
@@ -54,9 +54,10 @@
 
                             <p>
 
-                                <button class="boat-button" style="background: red" @onclick="() => RemovePolar(p)"> @p.Name </button>
-
+                                <label class="polar-button"  > @p.Name </label>
+                                <button class="del-button"  @onclick="() => RemovePolar(p)"> &#10060; </button>
                             </p>
+
                         }
                     }
 

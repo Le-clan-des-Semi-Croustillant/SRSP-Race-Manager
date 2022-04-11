@@ -511,7 +511,7 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Server  not running.
+        ///   Recherche une chaîne localisée semblable à Server is not running.
         /// </summary>
         public static string ServerNotRunning {
             get {
@@ -520,7 +520,7 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Server running.
+        ///   Recherche une chaîne localisée semblable à Server is running.
         /// </summary>
         public static string ServerRunning {
             get {

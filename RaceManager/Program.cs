@@ -12,6 +12,7 @@ using RaceManager.Communication;
 using RaceManager.DataProcessing.Files;
 using static RaceManager.DataProcessing.Files.FileManageData;
 
+Console.WriteLine("");
 RMLogger logger = new(LoggingLevel.INFO, "Program");
 
 var builder = WebApplication.CreateBuilder(args);

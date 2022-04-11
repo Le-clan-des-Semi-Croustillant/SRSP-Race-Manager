@@ -259,10 +259,10 @@
     <value>Save</value>
   </data>
   <data name="ServerNotRunning" xml:space="preserve">
-    <value>Server  not running</value>
+    <value>Server is not running</value>
   </data>
   <data name="ServerRunning" xml:space="preserve">
-    <value>Server running</value>
+    <value>Server is running</value>
   </data>
   <data name="Weight" xml:space="preserve">
     <value>Weight</value>
