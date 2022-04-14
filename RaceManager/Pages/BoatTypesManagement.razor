@@ -3,7 +3,8 @@
 @using Microsoft.AspNetCore.SignalR.Client
 @using RaceManager.Reading
 @inject NavigationManager navigationManager
-@attribute [Authorize]
+@attribute [Authorize(Roles = "RaceManager")]
+
 
 <PageTitle>Boat types management</PageTitle>
 
