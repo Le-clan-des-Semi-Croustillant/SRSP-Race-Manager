@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR;
 using RaceManager.Pages;
+using RaceManager.DataProcessing.Files;
 
 namespace RaceManager.Reading
 {
@@ -19,6 +20,9 @@ namespace RaceManager.Reading
         {
             _logger.log(LoggingLevel.INFO, "BoatTypesListSending()", $"Server received a list of {btl.Count} boat types from {Context.ConnectionId}");
             BoatType.BoatTypesList = btl;
+            FileManageData.ReadBoatTypesList();
+            FileManageData.UpdateAllBoatTypesList();
+            FileManageData.UpdateJsonData();
         }
     }
 }

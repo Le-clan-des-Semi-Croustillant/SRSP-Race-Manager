@@ -8,9 +8,10 @@ namespace RaceManager.DataProcessing.Json
         private static RMLogger _logger = new(LoggingLevel.DEBUG, "JsonManage");
         public static string JsonType(string data)
         {
-            dynamic informationJson = JsonParse.JsonDeserialize(data);
+            var informationJson = JsonParse.JsonDeserialize(data);
+            _logger.log(LoggingLevel.DEBUG, "JsonType", informationJson.GetType().ToString());
             Console.WriteLine(informationJson);
-            _logger.log(LoggingLevel.DEBUG, "JsonType", informationJson);
+            //_logger.log(LoggingLevel.DEBUG, "JsonType", informationJson);
             //try
             //{
 

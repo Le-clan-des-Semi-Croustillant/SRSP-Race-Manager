@@ -19,7 +19,7 @@ namespace RaceManager
             this.contextPrefix = contextPrefix + ".";
         }
 
-        public void log(LoggingLevel level, string context, string message)
+        public void log(LoggingLevel level, string context, object message)
         {
             /// <summary>
             /// Logs a message.
