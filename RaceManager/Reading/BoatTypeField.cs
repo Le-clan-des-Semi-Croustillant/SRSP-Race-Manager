@@ -16,10 +16,10 @@ namespace RaceManager.Reading
             try
             {
                 Value = (T)Convert.ChangeType(FieldContent, typeof(T));
-                if ((typeof(T) == typeof(string)) && !Regex.IsMatch(Value.ToString(), @"^[a-zA-Z0-9_]+$"))
+                if ((typeof(T) == typeof(string)) && !Regex.IsMatch(Value.ToString(), @"^[a-zA-Z0-9_-]+$"))
                 {
-                    logger.log(LoggingLevel.DEBUG, "StoreValue()", $"Value stored: {Value} {(typeof(T) != typeof(string))} {Regex.IsMatch(Value.ToString(), @"^[a-zA-Z0-9_]+$")}");
-                    throw new Exception("{Value} does not match the regex ^[a-zA-Z0-9_]+$ (alphanum)");
+                    logger.log(LoggingLevel.DEBUG, "StoreValue()", $"Value stored: {Value} {(typeof(T) != typeof(string))} {Regex.IsMatch(Value.ToString(), @"^[a-zA-Z0-9_-]+$")}");
+                    throw new Exception("{Value} does not match the regex ^[a-zA-Z0-9_-]+$ (alphanum)");
                 }
 
                 isValid = true;
