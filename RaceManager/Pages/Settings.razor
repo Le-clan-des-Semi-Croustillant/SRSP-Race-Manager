@@ -9,38 +9,37 @@
 @attribute [Authorize]
 
 <PageTitle>Settings</PageTitle>
-<h3>Port</h3>
+<div class="parent">
 
 
 
-<div class="BoatTypeListContainer ">
-    <div class="float-left-child" style="margin-right: 30px; min-width : 150% ">
-        <div style="margin-bottom: 5%">
-
-            <p> <label> port </label> <input type="text" @bind-value="@(portField.FieldContent)" style="@portField.Style"> </p>
-
-        </div>
-
+    <div class="BoatTypeListContainer " style="padding:7%; margin:15%">
         <p>
+            <label> port </label> <input type="text" @bind-value="@(portField.FieldContent)" style="@portField.Style">
+        </p>
+        <p style="padding-top:5%">
             <button class="btn btn-primary" @onclick="Save">@Locales.Save</button>
         </p>
 
-    </div>
+        <div class="SettingsOnOff " style="position:center">
+            <p>
+                <button class="btn btn-settings" style="background: Gray" @onclick="TurnOn"> @Locales.TurnOnTheServer </button>
+                <button class="btn btn-settings" style="background: Gray" @onclick="TurnOff"> @Locales.TurnOffTheServer  </button>
+            </p>
+        </div>
 
-</div>
-    <div class="SettingsOnOff ">
+
+    </div>
+    <div class="BoatTypeListContainer " style="padding:7%; margin:15%">
+        <label style="padding:7%">@Locales.CurrentLanguage</label>
         <p>
-            <button class="btn btn-settings" style="background: Gray" @onclick="TurnOn"> @Locales.TurnOnTheServer </button>
-            <button class="btn btn-settings" style="background: Gray" @onclick="TurnOff"> @Locales.TurnOffTheServer  </button>
+            <button class="btn btn-settings" style="background: #1b6ec2" @onclick='() => ChangeCulture("fr")'> @Locales.French </button>
+        </p>
+        <p>
+            <button class="btn btn-settings" style="background: #1b6ec2" @onclick='() => ChangeCulture("en")'> @Locales.English </button>
         </p>
     </div>
-<div class="langue ">
-    <p>
-        <button class="btn btn-settings" style="background: #1b6ec2" @onclick='() => ChangeCulture("fr")'> @Locales.French </button>
-    </p>
-    <p>
-        <button class="btn btn-settings" style="background: #1b6ec2" @onclick='() => ChangeCulture("en")'> @Locales.English </button>
-    </p>
+
 </div>
 
 @code {
@@ -180,9 +179,9 @@
                 isValid = false;
                 Style = "color: red;border-color: red";
                 logger.log(LoggingLevel.WARN, "StoreValue()", $"{FieldContent} is not valid : {e.Message}");
-               
 
-               
+
+
             }
             return isValid;
         }
