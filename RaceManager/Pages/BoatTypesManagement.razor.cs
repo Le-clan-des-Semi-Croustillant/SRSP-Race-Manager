@@ -74,7 +74,6 @@ namespace RaceManager.Pages
                 await _hubConnection.SendAsync("BoatTypesListSending", _boatTypesList);
             }
             else _logger.log(LoggingLevel.WARN, "SendPort()", "hubConnection is null");
-
         }
 
         public bool IsConnected =>

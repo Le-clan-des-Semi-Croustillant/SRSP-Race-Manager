@@ -184,7 +184,7 @@ namespace RaceManager.DataProcessing.Json
     class JsonDataPolList
     {
         public string PolName { get; set; }
-        public int PolId { get; set; }
+        public Int64 PolId { get; set; }
         public string PolPath { get; set; }
         public string PolInformation { get; set; }
     }

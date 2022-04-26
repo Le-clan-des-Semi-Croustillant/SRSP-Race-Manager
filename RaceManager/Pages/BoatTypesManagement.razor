@@ -2,6 +2,7 @@
 @using RaceManager.Language
 @using Microsoft.AspNetCore.SignalR.Client
 @using RaceManager.Reading
+@using RaceManager.DataProcessing.Files
 @inject NavigationManager navigationManager
 
 <PageTitle>Boat types management</PageTitle>
@@ -43,16 +44,16 @@
         </div>
 
         <div class="BoatTypeListContainer">
-            <div  style="height: 60%;">
-                <div class="Content"style="position: absolute;left:10px;right:10px;max-width: 90%;height:53%">
+            <div style="height: 60%;">
+                <div class="Content" style="position: absolute;left:10px;right:10px;max-width: 90%;height:53%">
                     @if (_btSelected is not null)
                     {
                         foreach (Polar p in _btSelected.PolarFileList)
                         {
                             <p>
 
-                                <label class="polar-button"  > @p.Name </label>
-                                <button class="del-button"  @onclick="() => RemovePolar(p)"> &#10060; </button>
+                                <label class="polar-button"> @p.Name </label>
+                                <button class="del-button" @onclick="() => RemovePolar(p)"> &#10060; </button>
                             </p>
 
                         }
@@ -85,7 +86,7 @@
 
 @code {
     private List<IBrowserFile> loadedFiles = new();
-    private string? _pSelected = null;
+    private IBrowserFile? _pSelected = null;
 
     private static RMLogger _logger = new RMLogger(LoggingLevel.DEBUG, "BoatTypesManagement");
     private HubConnection? _hubConnection;
@@ -129,9 +130,10 @@
 
             if (file is not null)
             {
-                var sr = new StreamReader(file.OpenReadStream());
-                 _pSelected =  sr.ReadToEnd();;
-                
+                _pSelected = file;
+
+
+
                 StateHasChanged();
                 _errorMessage = "";
             }
@@ -148,7 +150,7 @@
 
 
 
-    private void AddPolarFile()
+    private async Task  AddPolarFile()
     {
         if (_polarfield.StoreValue())
         {
@@ -157,7 +159,16 @@
 
                 try
                 {
-                    _btSelected.PolarFileList.Add(new Polar() { File = _pSelected, Name = _polarfield.Value });
+                    Polar pol = new Polar() { Name = _polarfield.Value };
+                    //var sr = new StreamReader(_pSelected.OpenReadStream());
+                    MemoryStream ms = new MemoryStream();
+                    await _pSelected.OpenReadStream().CopyToAsync(ms);
+                  
+                    string content = System.Text.Encoding.UTF8.GetString(ms.ToArray());
+
+                      pol.File = FileManageData.CreateFilePolaire(pol.Name, pol.ID,content);
+                    
+                    _btSelected.PolarFileList.Add(pol);
                     _pSelected = null;
                     StateHasChanged();
                     _logger.log(LoggingLevel.DEBUG, "AddPolarFile()", $"Polar added");
@@ -179,7 +190,7 @@
     /// </summary>
     private void BoatTypeSelect(BoatType bt)
     {
-        _logger.log(LoggingLevel.DEBUG, "BoatTypeSelect()", $"User select {bt.Name}");
+        //_logger.log(LoggingLevel.DEBUG, "BoatTypeSelect()", $"User select {bt.Name}");
         _btSelected = bt;
         _fields[Locales.Name].FieldContent = _btSelected.Name;
         _fields[Locales.HullLength].FieldContent = _btSelected.HullLength.ToString();

@@ -69,7 +69,7 @@ namespace RaceManager.DataProcessing.Files
                 var polListConstruction = new JsonDataPolList
                 {
                     PolName = nameFile[0],
-                    PolId = Int32.Parse(nameFile[1]),
+                    PolId = Int64.Parse(nameFile[1]),
                     PolPath = "/data/pol/" + fileExt,
                     PolInformation = File.ReadAllText(filesPol[i])
                 };

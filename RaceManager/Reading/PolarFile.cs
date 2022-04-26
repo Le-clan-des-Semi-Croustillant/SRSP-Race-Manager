@@ -36,7 +36,7 @@
 
         public string ToString()
         {
-            return $"{Name}:{ID}";
+            return $"{Name}:{ID}:{File}";
         }
     }
 }
