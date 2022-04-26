@@ -31,14 +31,18 @@ BoatType.BoatTypesList.Add(new BoatType()
     {
         new Polar() {
             Name = "Polar 1",
+            File = "TEST POLAR CONTENT",
         },
         new Polar()
         {
             Name = "Polar 2",
+            File = "TEST POLAR CONTENT",
+
         },
         new Polar()
         {
             Name = "Polar 3",
+            File = "TEST POLAR CONTENT",
         }
     }
 });
