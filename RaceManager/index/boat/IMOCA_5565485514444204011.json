@@ -1,0 +1,19 @@
+{
+  "ID": 5565485514444204011,
+  "Name": "IMOCA",
+  "HullLength": 18.28,
+  "OverallLength": 5.85,
+  "HullWidth": 0,
+  "OverallWidth": 0,
+  "Draft": 29,
+  "AirDraft": 4.50,
+  "Weight": 8,
+  "Polar": [
+    {
+      "PolName": "Pol",
+      "PolPath": "/index_SimulateurSimple/pol/Pol_333333.pol",
+      "PolId": 333333
+      //"PolInformation": null
+    }
+  ] 
+}
