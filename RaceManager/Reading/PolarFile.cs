@@ -7,7 +7,7 @@
         public string Name { get; set; }
         public string File { get; set; }
 
-        public Int64 ID { get; } = BoatType.RandomInt64.NextInt64();
+        public Int64 ID { get; } = Math.Abs(BoatType.RandomInt64.NextInt64());
 
         public bool Equals(Polar? other)
         {

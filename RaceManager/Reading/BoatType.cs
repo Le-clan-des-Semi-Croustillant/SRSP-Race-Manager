@@ -21,7 +21,7 @@ namespace RaceManager.Reading
         /// <summary>
         /// Initializes a new instance of the BoatType class.
         /// </summary>
-        public Int64 ID { get; } = RandomInt64.NextInt64();
+        public Int64 ID { get; set; } =  Math.Abs(RandomInt64.NextInt64());
         public string Name { get; set; }
         public float HullLength { get; set; }
         public float OverallLength { get; set; }
