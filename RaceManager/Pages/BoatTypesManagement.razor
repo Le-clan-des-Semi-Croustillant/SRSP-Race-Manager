@@ -77,7 +77,7 @@
                         <a style="color: red;"> @_errorMessage </a>
                     </p>
                     <p>
-                        <button class="btn btn-primary button-form" style="bottom:5px; width:auto" @onclick="AddPolarFile" disabled="@(_msSelected is null || _btSelected is null || _polarfield.FieldContent == "")"> Add new polar </button>
+                        <button class="btn btn-primary button-form" style="bottom:5px; width:auto" @onclick="AddPolarFile" disabled="@(_pSelected is null || _btSelected is null || _polarfield.FieldContent == "")"> Add new polar </button>
                     </p>
                 </div>
             </div>
@@ -88,9 +88,9 @@
 
 @code {
     private List<IBrowserFile> loadedFiles = new();
-    private MemoryStream? _msSelected = null;
+    private string? _pSelected = null;
 
-    private static RMLogger _logger = new RMLogger(LoggingLevel.INFO, "BoatTypesManagement");
+    private static RMLogger _logger = new RMLogger(LoggingLevel.DEBUG, "BoatTypesManagement");
     private HubConnection? _hubConnection;
 
     private bool _loaded = false;
@@ -132,9 +132,9 @@
 
             if (file is not null)
             {
-                var ms = new MemoryStream();
-                _msSelected = new();
-                await file.OpenReadStream(1000000).CopyToAsync(_msSelected);
+                var sr = new StreamReader(file.OpenReadStream());
+                 _pSelected =  sr.ReadToEnd();;
+                
                 StateHasChanged();
                 _errorMessage = "";
             }
@@ -144,7 +144,7 @@
         catch (Exception ex)
         {
             _errorMessage = ex.Message;
-            _msSelected = null;
+            _pSelected = null;
             _logger.log(LoggingLevel.WARN, "LoadFiles()", $"Error while loading file : {ex.Message}");
         }
     }
@@ -155,13 +155,13 @@
     {
         if (_polarfield.StoreValue())
         {
-            if (_msSelected is not null && _btSelected is not null)
+            if (_pSelected is not null && _btSelected is not null)
             {
 
                 try
                 {
-                    _btSelected.PolarFileList.Add(new Polar() { File = _msSelected, Name = _polarfield.Value });
-                    _msSelected = null;
+                    _btSelected.PolarFileList.Add(new Polar() { File = _pSelected, Name = _polarfield.Value });
+                    _pSelected = null;
                     StateHasChanged();
                     _logger.log(LoggingLevel.DEBUG, "AddPolarFile()", $"Polar added");
                     _btSelected.PolarFileList.Sort();
@@ -193,7 +193,7 @@
         _fields[Locales.Draft].FieldContent = _btSelected.Draft.ToString();
         _fields[Locales.Weight].FieldContent = _btSelected.Weight.ToString();
 
-        _msSelected = null;
+        _pSelected = null;
         foreach (KeyValuePair<string, AField>
             keyValuePair in _fields)
         {

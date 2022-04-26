@@ -5,7 +5,7 @@
         private static RMLogger logger = new(LoggingLevel.INFO, "Polar");
 
         public string Name { get; set; }
-        public Stream File { get; set; }
+        public string File { get; set; }
 
         public Int64 ID { get; } = BoatType.RandomInt64.NextInt64();
 
@@ -32,6 +32,11 @@
         public override int GetHashCode()
         {
             return ID.GetHashCode();
+        }
+
+        public string ToString()
+        {
+            return $"{Name}:{ID}";
         }
     }
 }

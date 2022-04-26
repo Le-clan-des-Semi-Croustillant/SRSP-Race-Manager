@@ -38,7 +38,15 @@ namespace RaceManager.Pages
 
             _boatTypesList = new(BoatType.BoatTypesList);
             _boatTypesList.Sort();
+            if (_logger.LogLevel == LoggingLevel.DEBUG)
+            {
+                _logger.log(LoggingLevel.DEBUG, "OnInitializedAsync()", "BoatTypesList is ");
 
+                foreach (var bt in _boatTypesList)
+                {
+                    _logger.log(LoggingLevel.DEBUG, "OnInitializedAsync()", $"    {bt.ToString()}");
+                }
+            }
             _polarfield.FieldContent = Locales.NewPolar;
             await _hubConnection.StartAsync();
 

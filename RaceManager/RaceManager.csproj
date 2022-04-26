@@ -10,15 +10,19 @@
   <ItemGroup>
     <Compile Remove="Communication\NewFolder\**" />
     <Compile Remove="Communication\SendFile\**" />
+    <Compile Remove="dataResources\**" />
     <Compile Remove="index\gpx\**" />
     <Content Remove="Communication\NewFolder\**" />
     <Content Remove="Communication\SendFile\**" />
+    <Content Remove="dataResources\**" />
     <Content Remove="index\gpx\**" />
     <EmbeddedResource Remove="Communication\NewFolder\**" />
     <EmbeddedResource Remove="Communication\SendFile\**" />
+    <EmbeddedResource Remove="dataResources\**" />
     <EmbeddedResource Remove="index\gpx\**" />
     <None Remove="Communication\NewFolder\**" />
     <None Remove="Communication\SendFile\**" />
+    <None Remove="dataResources\**" />
     <None Remove="index\gpx\**" />
   </ItemGroup>
 
@@ -34,8 +38,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="dataResources\gpx\" />
-    <Folder Include="dataResources\pol\" />
     <Folder Include="Pages\BoatTypesManagement\" />
   </ItemGroup>
 

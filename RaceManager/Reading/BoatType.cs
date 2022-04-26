@@ -17,7 +17,7 @@ namespace RaceManager.Reading
         private static RMLogger logger = new(LoggingLevel.INFO, "BoatType");
         public static List<BoatType> BoatTypesList = new();
         public static System.Random RandomInt64 = new System.Random(DateTime.Now.Millisecond);
-        
+
         /// <summary>
         /// Initializes a new instance of the BoatType class.
         /// </summary>
@@ -32,7 +32,7 @@ namespace RaceManager.Reading
         public float Weight { get; set; }
         //public Polar? Polar = new Polar();
 
-        public List<Polar> PolarFileList = new ();
+        public List<Polar> PolarFileList = new();
 
 
         /// <summary>
@@ -42,7 +42,7 @@ namespace RaceManager.Reading
         {
             Name = Locales.NewBoatType;
         }
-        
+
         public bool Equals(BoatType? other)
         {
             if (other == null)
@@ -60,13 +60,25 @@ namespace RaceManager.Reading
                 logger.log(LoggingLevel.WARN, "CompareTo()", $"Comparaison between {Name}-{ID} and a null object");
                 return 1;
             }
-            
+
             return Name.CompareTo(other.Name);
         }
         public override int GetHashCode()
         {
             return ID.GetHashCode();
         }
- 
+
+        public string ToString()
+        {
+            StringBuilder stringBuilder = new StringBuilder($"{Name} {ID} {{");
+            foreach (Polar p in PolarFileList)
+            {
+                stringBuilder.Append(p.ToString() + ";");
+            }
+            stringBuilder.Append("}");
+            return stringBuilder.ToString();
+
+        }
+
     }
 }

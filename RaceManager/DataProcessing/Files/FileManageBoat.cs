@@ -11,9 +11,9 @@ namespace RaceManager.DataProcessing.Files
 
         public static void ChargeBoatListInClass()
         {
-            
+
         }
-        
+
         private static RMLogger _logger = new(LoggingLevel.INFO, "FileManageData");
         /// <summary>
         /// Add to BoatTypesList all boat already exist on local file
@@ -36,11 +36,20 @@ namespace RaceManager.DataProcessing.Files
         {
             string dataFile = File.ReadAllText(path);
             _logger.log(LoggingLevel.DEBUG, "UpdateBoatTypesList()", $"Read file {path} : " + dataFile);
-            var infoFile = System.Text.Json.JsonSerializer.Deserialize<BoatType>(dataFile);
-            if (!BoatType.BoatTypesList.Contains(infoFile))
+            try
             {
-                BoatType.BoatTypesList.Add(infoFile);
-                _logger.log(LoggingLevel.INFO, "UpdateAllBoatTypesList", "New boat type added from file");
+                var infoFile = System.Text.Json.JsonSerializer.Deserialize<BoatType>(dataFile);
+
+
+                if (!BoatType.BoatTypesList.Contains(infoFile))
+                {
+                    BoatType.BoatTypesList.Add(infoFile);
+                    _logger.log(LoggingLevel.INFO, "UpdateAllBoatTypesList", "New boat type added from file");
+                }
+            }
+            catch (System.Exception e)
+            {
+                _logger.log(LoggingLevel.ERROR, "UpdateAllBoatTypesList", $"Error during read file {path} : " + e.Message);
             }
         }
 
