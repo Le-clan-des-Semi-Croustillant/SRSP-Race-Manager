@@ -77,6 +77,7 @@ namespace RaceManager.Communication
 
                         case IMessageType.BOATLISTREQUEST:
                             _logger.log(LoggingLevel.INFO, "ReadCallback()", "BOATLISTREQUEST");
+                            FileManageData.UpdateJsonData();
                             SendAtt = FileManageData.ReadFilePath(FileManageData.pathJsonData);
                             _logger.log(LoggingLevel.DEBUG, "ReadCallback()", "Send att" + SendAtt);
                             break;

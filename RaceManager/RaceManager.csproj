@@ -62,8 +62,20 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="index\pol\Pol_111111.pol">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="index\pol\Pol_123456.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="index\pol\Pol_222222.pol">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="index\pol\Pol_333333.pol">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="index\pol\Pol_444444.pol">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="index\pol\Pol_987654.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

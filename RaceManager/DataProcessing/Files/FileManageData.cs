@@ -2,6 +2,7 @@
 using Newtonsoft.Json.Linq;
 using RaceManager.DataProcessing.Json;
 using RaceManager.Reading;
+using System.Text;
 
 namespace RaceManager.DataProcessing.Files
 {

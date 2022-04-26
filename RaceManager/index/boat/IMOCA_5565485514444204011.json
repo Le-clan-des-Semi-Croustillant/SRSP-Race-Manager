@@ -8,11 +8,11 @@
   "Draft": 29,
   "AirDraft": 4.50,
   "Weight": 8,
-  "Polar": [
+  "PolarFileList": [
     {
-      "PolName": "Pol",
-      "PolPath": "/index_SimulateurSimple/pol/Pol_333333.pol",
-      "PolId": 333333
+      "Name": "Pol",
+      "File": "/index/pol/Pol_333333.pol",
+      "ID": 333333
     }
-  ] 
+  ]
 }
