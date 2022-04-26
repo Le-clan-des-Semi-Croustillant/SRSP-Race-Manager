@@ -1,4 +1,5 @@
-﻿using RaceManager.Reading;
+﻿using Newtonsoft.Json;
+using RaceManager.Reading;
 
 namespace RaceManager.DataProcessing.Files
 {
@@ -38,7 +39,7 @@ namespace RaceManager.DataProcessing.Files
             _logger.log(LoggingLevel.DEBUG, "UpdateBoatTypesList()", $"Read file {path} : " + dataFile);
             try
             {
-                var infoFile = System.Text.Json.JsonSerializer.Deserialize<BoatType>(dataFile);
+                var infoFile = JsonConvert.DeserializeObject<BoatType>(dataFile);
 
 
                 if (!BoatType.BoatTypesList.Contains(infoFile))
@@ -86,7 +87,7 @@ namespace RaceManager.DataProcessing.Files
             //    Polar = polar
             //};
             string pathFile = pathDataBoat + DataBoat.Name + "_" + DataBoat.ID + ".json";
-            string jsonString = System.Text.Json.JsonSerializer.Serialize(DataBoat);
+            string jsonString = JsonConvert.SerializeObject(DataBoat);
             File.Create(pathFile).Close();
             WriteInFile.WriteFilePath(pathFile, jsonString);
             UpdateJsonData();

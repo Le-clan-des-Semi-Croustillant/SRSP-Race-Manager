@@ -14,7 +14,7 @@ namespace Communication.DataProcessing.Files
         public static void CreateBoatJson(BoatType DataBoat)
         {
             string pathFile = pathDataBoat + DataBoat.Name + "_" + DataBoat.ID + ".json";
-            string jsonString = System.Text.Json.JsonSerializer.Serialize(DataBoat);
+            string jsonString = JsonConvert.SerializeObject(DataBoat);
             File.Create(pathFile).Close();
             WriteInFile.WriteFilePath(pathFile, jsonString);
         }

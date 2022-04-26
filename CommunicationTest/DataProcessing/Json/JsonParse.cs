@@ -23,7 +23,7 @@ namespace Communication.DataProcessing.Json
                     NamePlayer = NamePlayer
                 }
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
 
         public static string JsonSerialiseIConnection(IMessageType TypeMessage)
@@ -33,7 +33,7 @@ namespace Communication.DataProcessing.Json
                 TypeMessage = TypeMessage,
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
         public static string JsonSerialiseIDisconnection(IMessageType TypeMessage)
         {
@@ -42,7 +42,7 @@ namespace Communication.DataProcessing.Json
                 TypeMessage = TypeMessage,
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
         public static string JsonSerialiseIPlayerInfo(IMessageType TypeMessage)
         {
@@ -51,7 +51,7 @@ namespace Communication.DataProcessing.Json
                 TypeMessage = TypeMessage,
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
         public static string JsonSerialiseIBoatSelect(IMessageType TypeMessage)
         {
@@ -60,7 +60,7 @@ namespace Communication.DataProcessing.Json
                 TypeMessage = TypeMessage,
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
 
         public static string JsonSerialiseIBoatListRequest(IMessageType TypeMessage)
@@ -70,7 +70,7 @@ namespace Communication.DataProcessing.Json
                 TypeMessage = TypeMessage,
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
         public static string JsonSerialiseIEndRace(IMessageType TypeMessage)
         {
@@ -79,7 +79,7 @@ namespace Communication.DataProcessing.Json
                 TypeMessage = TypeMessage,
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
 
         public static string JsonSerialiseOConnection()
@@ -90,7 +90,7 @@ namespace Communication.DataProcessing.Json
                 TypeMessage = TypeMessage,
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
         public static string JsonSerialiseODisconnection()
         {
@@ -100,7 +100,7 @@ namespace Communication.DataProcessing.Json
                 TypeMessage = TypeMessage,
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
         public static string JsonSerialiseOInitRace(OMessageType TypeMessage)
         {
@@ -109,7 +109,7 @@ namespace Communication.DataProcessing.Json
                 TypeMessage = TypeMessage,
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
 
         public static string JsonSerialiseOEnvironmentInfo(OMessageType TypeMessage)
@@ -119,7 +119,7 @@ namespace Communication.DataProcessing.Json
                 TypeMessage = TypeMessage,
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
 
         public static string JsonSerialiseOBoatList()
@@ -132,7 +132,7 @@ namespace Communication.DataProcessing.Json
                 //Retourner liste des bateaux
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
 
         public static string JsonSerialiseOEndRace()
@@ -143,7 +143,7 @@ namespace Communication.DataProcessing.Json
                 TypeMessage = TypeMessage,
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
     }
 

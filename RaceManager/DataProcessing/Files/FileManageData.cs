@@ -111,7 +111,7 @@ namespace RaceManager.DataProcessing.Files
                 }
             };
 
-            string jsonString = System.Text.Json.JsonSerializer.Serialize(dataConstruction);
+            string jsonString = JsonConvert.SerializeObject(dataConstruction);
             WriteInFile.WriteFilePath(pathJsonData, jsonString);
         }
     }

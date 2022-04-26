@@ -119,7 +119,7 @@ namespace Communication
                         TypeMessage = IMessageType.BOATLISTREQUEST,
                     };
                     
-                    string SendMessage = System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+                    string SendMessage = JsonConvert.SerializeObject(serialiseJsonInfo);
                     
                     Console.WriteLine("Message send : " + SendMessage);
                     Send(client, SendMessage);
