@@ -172,7 +172,7 @@ namespace RaceManager.DataProcessing.Json
     class JsonDataBoatList
     {
         public string BoatName { get; set; }
-        public int BoatId { get; set; }
+        public Int64 BoatId { get; set; }
         public string BoatPath { get; set; }
         public BoatType BoatInformation { get; set; }
     }

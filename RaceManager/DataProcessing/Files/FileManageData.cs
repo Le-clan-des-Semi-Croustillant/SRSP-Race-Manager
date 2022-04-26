@@ -51,13 +51,13 @@ namespace RaceManager.DataProcessing.Files
                 string file = Path.GetFileNameWithoutExtension(filesBoat[i]);
                 string fileExt = Path.GetFileName(filesBoat[i]);
                 string[] nameFile = file.Split("_");
+                dynamic forConstruction = JsonConvert.DeserializeObject<BoatType>(File.ReadAllText(filesBoat[i]));
                 var boatListConstruction = new JsonDataBoatList
                 {
-                    BoatName = nameFile[0],
-                    //BoatId = Int32.Parse(nameFile[1]),
-                    BoatId = (int)Int64.Parse(nameFile[1]),
+                    BoatName = forConstruction.Name,
+                    BoatId = forConstruction.ID,
                     BoatPath = "/data/boat/" + fileExt,
-                    BoatInformation = JsonConvert.DeserializeObject<BoatType>(File.ReadAllText(filesBoat[i]))
+                    BoatInformation = forConstruction
                 };
                 listBoat.Add(boatListConstruction);
             }

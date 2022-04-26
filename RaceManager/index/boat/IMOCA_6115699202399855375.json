@@ -1,18 +1,1 @@
-{
-  "ID": 6115699202399855375,
-  "Name": "IMOCA",
-  "HullLength": 18.28,
-  "OverallLength": 5.85,
-  "HullWidth": 0,
-  "OverallWidth": 0,
-  "Draft": 29,
-  "AirDraft": 4.50,
-  "Weight": 8,
-  "PolarFileList": [
-    {
-      "Name": "Pol",
-      "File": "/index/pol/Pol_111111.pol",
-      "ID": 111111
-    }
-  ]
-}
+{"ID":6115699202399855375,"Name":"IMOCA","HullLength":18.28,"OverallLength":5.85,"HullWidth":0,"OverallWidth":0,"Draft":29,"AirDraft":4.5,"Weight":9}
