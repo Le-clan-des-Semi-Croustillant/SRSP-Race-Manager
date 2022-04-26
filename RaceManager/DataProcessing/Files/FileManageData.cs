@@ -53,7 +53,8 @@ namespace RaceManager.DataProcessing.Files
                 var boatListConstruction = new JsonDataBoatList
                 {
                     BoatName = nameFile[0],
-                    BoatId = Int32.Parse(nameFile[1]),
+                    //BoatId = Int32.Parse(nameFile[1]),
+                    BoatId = (int)Int64.Parse(nameFile[1]),
                     BoatPath = "/data/boat/" + fileExt,
                     BoatInformation = JsonConvert.DeserializeObject<BoatType>(File.ReadAllText(filesBoat[i]))
                 };
