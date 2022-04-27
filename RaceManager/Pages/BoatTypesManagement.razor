@@ -88,7 +88,7 @@
     private List<IBrowserFile> loadedFiles = new();
     private IBrowserFile? _pSelected = null;
 
-    private static RMLogger _logger = new RMLogger(LoggingLevel.DEBUG, "BoatTypesManagement");
+    private static RMLogger _logger = new RMLogger(LoggingLevel.INFO, "BoatTypesManagement");
     private HubConnection? _hubConnection;
 
     private bool _loaded = false;
@@ -150,7 +150,7 @@
 
 
 
-    private async Task  AddPolarFile()
+    private async Task AddPolarFile()
     {
         if (_polarfield.StoreValue())
         {
@@ -163,11 +163,11 @@
                     //var sr = new StreamReader(_pSelected.OpenReadStream());
                     MemoryStream ms = new MemoryStream();
                     await _pSelected.OpenReadStream().CopyToAsync(ms);
-                  
+
                     string content = System.Text.Encoding.UTF8.GetString(ms.ToArray());
 
-                      pol.File = FileManageData.CreateFilePolaire(pol.Name, pol.ID,content);
-                    
+                    pol.File = FileManageData.CreateFilePolaire(pol.Name, pol.ID, content);
+
                     _btSelected.PolarFileList.Add(pol);
                     _pSelected = null;
                     StateHasChanged();
@@ -190,6 +190,7 @@
     /// </summary>
     private void BoatTypeSelect(BoatType bt)
     {
+ 
         //_logger.log(LoggingLevel.DEBUG, "BoatTypeSelect()", $"User select {bt.Name}");
         _btSelected = bt;
         _fields[Locales.Name].FieldContent = _btSelected.Name;

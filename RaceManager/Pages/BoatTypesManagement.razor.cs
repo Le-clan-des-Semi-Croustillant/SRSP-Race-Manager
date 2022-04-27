@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.SignalR.Client;
 using RaceManager.Language;
 using RaceManager.Reading;
-
+using Newtonsoft.Json;
 namespace RaceManager.Pages
 {
     public partial class BoatTypesManagement
@@ -36,7 +36,8 @@ namespace RaceManager.Pages
         {
             _logger.log(LoggingLevel.DEBUG, "OnInitializedAsync()", "Language is " + LocaleManager.CurrentCulture);
 
-            _hubConnection = new HubConnectionBuilder().WithUrl(navigationManager.ToAbsoluteUri("/boattypeshub")).Build();
+            _hubConnection = new HubConnectionBuilder().WithUrl(navigationManager.ToAbsoluteUri("/boattypeshub")).AddNewtonsoftJsonProtocol(opts =>
+       opts.PayloadSerializerSettings.TypeNameHandling = TypeNameHandling.Auto).Build();
 
             _boatTypesList = new(BoatType.BoatTypesList);
             _boatTypesList.Sort();
@@ -71,6 +72,9 @@ namespace RaceManager.Pages
         {
             if (_hubConnection is not null)
             {
+                _logger.log(LoggingLevel.DEBUG, "SendBoatTypesList()", "Sending BoatTypesList to server");
+                BoatType.logBoats(_logger, LoggingLevel.DEBUG);
+
                 await _hubConnection.SendAsync("BoatTypesListSending", _boatTypesList);
             }
             else _logger.log(LoggingLevel.WARN, "SendPort()", "hubConnection is null");

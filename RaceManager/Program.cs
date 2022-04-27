@@ -8,9 +8,12 @@ using RaceManager.Language;
 using RaceManager.Pages;
 using RaceManager.DataProcessing.Files;
 using RaceManager.Reading;
+using Newtonsoft.Json;
+
 //using RaceManager.Communication;
 //using RaceManager.DataProcessing.Files;
 //using static RaceManager.DataProcessing.Files.FileManageData;
+
 
 Console.WriteLine("");
 RMLogger logger = new(LoggingLevel.INFO, "Program");
@@ -56,7 +59,10 @@ BoatType.BoatTypesList.Add(new BoatType()
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddSignalR();
+//builder.Services.AddSignalR();
+builder.Services.AddSignalR().AddNewtonsoftJsonProtocol(opts =>
+opts.PayloadSerializerSettings.TypeNameHandling = TypeNameHandling.Auto); ;
+
 builder.Services.AddResponseCompression(opts =>
 {
     opts.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(
