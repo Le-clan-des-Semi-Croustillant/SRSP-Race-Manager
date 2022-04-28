@@ -1,9 +1,30 @@
 ﻿@page "/"
 @using RaceManager.Language
+@inject AuthenticationStateProvider AuthState
+@attribute [Authorize]
+<link rel="icon" type="image/png" href="~/favicon.ico" sizes="32x32">
 
-<PageTitle>Index</PageTitle>
+<PageTitle>Race Manager</PageTitle>
 
-<h1>@Locales.Hello, world!</h1>
+<h1>Welcome, @Username !</h1>
 
-Welcome to your new app.
+<img src="@Picture">
 
+@code { 
+  private string Username = "Anonymous User";
+  private string Picture = "";
+
+  protected override async Task OnInitializedAsync()
+  {
+    var state = await AuthState.GetAuthenticationStateAsync();
+
+    Username = state.User.Identity.Name?? string.Empty;
+
+    Picture = state.User.Claims
+                .Where(c => c.Type.Equals("picture"))
+                .Select(c => c.Value)
+                .FirstOrDefault() ?? string.Empty;
+
+    await base.OnInitializedAsync();
+  }
+}
