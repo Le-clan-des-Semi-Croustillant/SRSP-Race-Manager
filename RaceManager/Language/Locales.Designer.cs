@@ -394,7 +394,7 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à New boat type.
+        ///   Recherche une chaîne localisée semblable à New.
         /// </summary>
         public static string NewBoatType {
             get {
@@ -403,7 +403,7 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à New polar.
+        ///   Recherche une chaîne localisée semblable à New-polar.
         /// </summary>
         public static string NewPolar {
             get {

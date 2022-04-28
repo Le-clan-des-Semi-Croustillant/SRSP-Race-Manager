@@ -244,7 +244,7 @@
     <value>Name</value>
   </data>
   <data name="NewBoatType" xml:space="preserve">
-    <value>New boat type</value>
+    <value>New</value>
   </data>
   <data name="OverallLength" xml:space="preserve">
     <value>Overall length</value>
@@ -292,6 +292,6 @@
     <value>View docs</value>
   </data>
   <data name="NewPolar" xml:space="preserve">
-    <value>New polar</value>
+    <value>New-polar</value>
   </data>
 </root>

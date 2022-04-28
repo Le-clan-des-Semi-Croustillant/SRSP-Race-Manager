@@ -24,39 +24,39 @@ RMLogger logger = new(LoggingLevel.INFO, "Program");
 
 var builder = WebApplication.CreateBuilder(args);
 
-BoatType.BoatTypesList.Add(new BoatType()
-{
-    Name = "Bateau-1",
-    HullWidth = 4,
-    OverallWidth = 1,
-    Weight = 4,
-    AirDraft = 1,
-    Draft = 2,
-    HullLength = 5,
-    OverallLength = 1,
-    PolarFileList = new List<Polar>()
-    {
-        new Polar() {
-            ID = 1234567,
-            Name = "Polar 1",
-            File = "TEST POLAR CONTENT",
-        },
-        new Polar()
-        {
-            ID = 1234568,
+//BoatType.BoatTypesList.Add(new BoatType()
+//{
+//    Name = "Bateau-1",
+//    HullWidth = 4,
+//    OverallWidth = 1,
+//    Weight = 4,
+//    AirDraft = 1,
+//    Draft = 2,
+//    HullLength = 5,
+//    OverallLength = 1,
+//    PolarFileList = new List<Polar>()
+//    {
+//        new Polar() {
+//            ID = 1234567,
+//            Name = "Polar 1",
+//            File = "TEST POLAR CONTENT",
+//        },
+//        new Polar()
+//        {
+//            ID = 1234568,
 
-            Name = "Polar 2",
-            File = "TEST POLAR CONTENT",
+//            Name = "Polar 2",
+//            File = "TEST POLAR CONTENT",
 
-        },
-        new Polar()
-        {            ID = 1234569,
+//        },
+//        new Polar()
+//        {            ID = 1234569,
 
-            Name = "Polar 3",
-            File = "TEST POLAR CONTENT",
-        }
-    }
-});
+//            Name = "Polar 3",
+//            File = "TEST POLAR CONTENT",
+//        }
+//    }
+//});
 
 
 
@@ -111,8 +111,9 @@ app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
 
 FileManageData.CheckFilesFolderData();
-FileManageData.UpdateJsonData();
 FileManageData.UpdateAllBoatTypesList();
+FileManageData.ReadBoatTypesList();
+FileManageData.UpdateJsonData();
 
 logger.log(LoggingLevel.INFO, "Initialisation", "This software is currently in " + Locales.CurrentLanguage + ".");
 

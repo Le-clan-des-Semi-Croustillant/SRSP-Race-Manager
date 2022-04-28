@@ -36,11 +36,11 @@ namespace RaceManager.DataProcessing.Files
         public static void UpdateBoatTypesList(string path)
         {
             string dataFile = File.ReadAllText(path);
+            
             _logger.log(LoggingLevel.DEBUG, "UpdateBoatTypesList()", $"Read file {path} : " + dataFile);
             try
             {
                 var infoFile = JsonConvert.DeserializeObject<BoatType>(dataFile);
-
 
                 if (!BoatType.BoatTypesList.Contains(infoFile))
                 {
@@ -74,18 +74,7 @@ namespace RaceManager.DataProcessing.Files
         /// <param name="DataBoat"> all information of boat</param>
         public static void CreateBoatJson(BoatType DataBoat)
         {
-            //var DataBoat = new BoatType()
-            //{
-            //    Name = Name,
-            //    HullLength = HullLength,
-            //    OverallLength = OverallLength,
-            //    HullWidth = HullWidth,
-            //    OverallWidth = OverallWidth,
-            //    Draft = Draft,
-            //    AirDraft = AirDraft,
-            //    Weight = Weight,
-            //    Polar = polar
-            //};
+            //Si l'id existe déjà il faut remplacer le fichier
             string pathFile = pathDataBoat + DataBoat.Name + "_" + DataBoat.ID + ".json";
             string jsonString = JsonConvert.SerializeObject(DataBoat);
             File.Create(pathFile).Close();

@@ -8,7 +8,7 @@ namespace RaceManager.Reading
 {
     public class BoatTypesListHub : Hub
     {
-        private static RMLogger _logger = new RMLogger(LoggingLevel.INFO, "BoatTypesListHub");
+        private static RMLogger _logger = new RMLogger(LoggingLevel.DEBUG, "BoatTypesListHub");
         
         //public async Task BoatTypesListRequest()
         //{
@@ -21,8 +21,8 @@ namespace RaceManager.Reading
             _logger.log(LoggingLevel.INFO, "BoatTypesListSending()", $"Server received a list of {btl.Count} boat types from {Context.ConnectionId}");
             BoatType.BoatTypesList = btl;
             BoatType.logBoats(_logger, LoggingLevel.DEBUG);
-            FileManageData.ReadBoatTypesList();
             FileManageData.UpdateAllBoatTypesList();
+            FileManageData.ReadBoatTypesList();
             FileManageData.UpdateJsonData();
             _logger.log(LoggingLevel.WARN, "BoatTypesListSending()", "Reload files");
             BoatType.logBoats(_logger, LoggingLevel.DEBUG);
