@@ -4,6 +4,8 @@
 @using RaceManager.Reading
 @using RaceManager.DataProcessing.Files
 @inject NavigationManager navigationManager
+@attribute [Authorize(Roles = "RaceManager")]
+
 
 <PageTitle>Boat types management</PageTitle>
 
@@ -74,11 +76,10 @@
                     <p>
                         <a style="color: red;"> @_errorMessage </a>
                     </p>
-                    <p>
-                        <button class="btn btn-primary button-form" style="bottom:5px; width:auto" @onclick="AddPolarFile" disabled="@(_pSelected is null || _btSelected is null || _polarfield.FieldContent == "")"> Add new polar </button>
-                    </p>
                 </div>
+
             </div>
+            <button class="btn btn-primary button-form" style=" position: absolute;bottom:5px; width:auto" @onclick="AddPolarFile" disabled="@(_msSelected is null || _btSelected is null || _polarfield.FieldContent == "")"> Add new polar </button>
 
         </div>
     }
