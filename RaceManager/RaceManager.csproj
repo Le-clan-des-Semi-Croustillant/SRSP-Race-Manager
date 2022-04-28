@@ -5,7 +5,6 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <StartupObject></StartupObject>
-    <PackageIcon>whiteracemanager.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -32,8 +31,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Auth0.AspNetCore.Authentication" Version="1.0.1" />
-    <PackageReference Include="Auth0.AuthenticationApi" Version="7.15.0" />
     <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="6.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.NewtonsoftJson" Version="6.0.4" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
@@ -43,13 +40,6 @@
 
   <ItemGroup>
     <Folder Include="Pages\BoatTypesManagement\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="..\..\le-clan-des-semi-croustillant.github.io\resources\whiteracemanager.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
   </ItemGroup>
 
   <ItemGroup>

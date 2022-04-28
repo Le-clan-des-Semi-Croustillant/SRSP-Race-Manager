@@ -1,8 +1,6 @@
 //using Microsoft.AspNetCore.Components;
 //using Microsoft.AspNetCore.Components.Web;
 //using Microsoft.AspNetCore.ResponseCompression;
-//using RaceManager.Communication;
-//using RaceManager.DataProcessing.Files;
 using Microsoft.AspNetCore.ResponseCompression;
 using RaceManager;
 using RaceManager.Communication;
@@ -11,8 +9,6 @@ using RaceManager.Pages;
 using RaceManager.DataProcessing.Files;
 using RaceManager.Reading;
 using Newtonsoft.Json;
-using static RaceManager.DataProcessing.Files.FileManageData;
-using Auth0.AspNetCore.Authentication; 
 
 //using RaceManager.Communication;
 //using RaceManager.DataProcessing.Files;
@@ -74,19 +70,6 @@ builder.Services.AddResponseCompression(opts =>
 });
 builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
-builder.Services
-    .AddAuth0WebAppAuthentication(options => {
-        options.Domain = builder.Configuration["Auth0:Domain"];
-        options.ClientId = builder.Configuration["Auth0:ClientId"];
-        //options.
-    });
-//builder.Services.AddOidcAuthentication(options =>
-//{
-//    builder.Configuration.Bind("Auth0", options.ProviderOptions);
-//    options.ProviderOptions.ResponseType = "code";
-
-//}).AddAccountClaimsPrincipalFactory<
-//ArrayClaimsPrincipalFactory<RemoteUserAccount>>();
 
 var app = builder.Build();
 
@@ -97,10 +80,11 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
 app.UseStaticFiles();
+
 app.UseRouting();
-app.UseAuthentication();
-app.UseAuthorization();
+
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapHub<ServerHub>("/serverhub");
@@ -109,6 +93,7 @@ app.UseEndpoints(endpoints =>
 });
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
+
 
 FileManageData.CheckFilesFolderData();
 FileManageData.UpdateJsonData();
