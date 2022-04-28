@@ -15,11 +15,10 @@
     <main>
 
         <div class="top-row px-4">
-            
             <a href="@Locales.Github" target="_blank">@Locales.SeethisprojectonGithub </a>
             <a class="ahref" href="@Locales.Page" target="_blank">@Locales.Viewdocs</a>
 
-            <div style="cursor: pointer;padding:5px" @onclick="UpdateStatus">
+            <div style="cursor: pointer" @onclick="UpdateStatus">
                 @if (_loaded)
                 {
                     @if (AsyncServer.IsRunning())
@@ -33,8 +32,6 @@
                     <gg-icon class="gg-sync" style="float: right"></gg-icon>
                 }
             </div>
-
-            <AccessControl />
         </div>
 
         <article class="content px-4">
