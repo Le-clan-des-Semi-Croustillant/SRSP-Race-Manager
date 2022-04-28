@@ -143,5 +143,3 @@ docfx/api/
 *.bak
 RaceManagerOld/**
 Releases/**
-RaceManager/appsettings.Development.json
-RaceManager/appsettings.json
