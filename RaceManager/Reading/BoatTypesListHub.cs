@@ -32,7 +32,8 @@ namespace RaceManager.Reading
         public async Task BoatTypesListRemoved(BoatType bt)
         {
             _logger.log(LoggingLevel.WARN, "BoatTypesListRemoved()", $"Server received a removed boat type from {Context.ConnectionId}");
-            
+            string pathBoatDelete = FileManageData.pathDataBoat + bt.Name + "_" + bt.ID + ".json";
+            FileManageData.DeleteFile(pathBoatDelete);
         }
 
     }
