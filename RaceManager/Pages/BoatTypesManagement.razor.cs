@@ -15,6 +15,7 @@ namespace RaceManager.Pages
         {
             _logger.log(LoggingLevel.DEBUG, "RemoveBoatType()", $"Removing {_boatTypesList.Find(x => x.Equals(bt)).Name} is valid.");
             _boatTypesList.Remove(bt);
+            _hubConnection.SendAsync("BoatTypesListRemoved", bt);
             SendBoatTypesList(_boatTypesList);
 
             _btSelected = null;
