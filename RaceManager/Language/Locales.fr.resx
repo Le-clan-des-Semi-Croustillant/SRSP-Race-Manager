@@ -288,4 +288,43 @@
   <data name="NewPolar" xml:space="preserve">
     <value>Nouvelle-polaire</value>
   </data>
+  <data name="AuthorsGroupe" xml:space="preserve">
+    <value>Auteurs</value>
+  </data>
+  <data name="Currently" xml:space="preserve">
+    <value>Vous êtes actuellement connecté avec </value>
+  </data>
+  <data name="Error404" xml:space="preserve">
+    <value>Non trouvé</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Se connecter</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Déconnexion</value>
+  </data>
+  <data name="NotAuthorized" xml:space="preserve">
+    <value>Vous n'êtes pas autorisé à accéder à cette sans page . Vous devez vous connecter.</value>
+  </data>
+  <data name="Nothing" xml:space="preserve">
+    <value>Désolé, il n'y a rien à cette adresse.</value>
+  </data>
+  <data name="Pardon" xml:space="preserve">
+    <value>Désolé</value>
+  </data>
+  <data name="ProjectDocumentation" xml:space="preserve">
+    <value>Vous pouvez trouver ce projet et sa documentation par l'intermédiaire du site Web de la Commission européenne </value>
+  </data>
+  <data name="RMDevelopedUnder" xml:space="preserve">
+    <value>Ce projet fait partie de la plateforme de simulation de course à la voile et est activement développé dans le cadre de la stratégie de l'Union européenne.</value>
+  </data>
+  <data name="Trouble" xml:space="preserve">
+    <value>Si vous rencontrez des difficultés, veuillez consulter la page</value>
+  </data>
+  <data name="Waiting" xml:space="preserve">
+    <value>Détermination de l'état de la session, veuillez patienter...</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Bienvenue au SRSP-Race-Manager.</value>
+  </data>
 </root>

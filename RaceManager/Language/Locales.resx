@@ -294,4 +294,43 @@
   <data name="NewPolar" xml:space="preserve">
     <value>New-polar</value>
   </data>
+  <data name="AuthorsGroupe" xml:space="preserve">
+    <value>Authors :</value>
+  </data>
+  <data name="Currently" xml:space="preserve">
+    <value>You're currently logged with </value>
+  </data>
+  <data name="Error404" xml:space="preserve">
+    <value>Not found</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Log out</value>
+  </data>
+  <data name="NotAuthorized" xml:space="preserve">
+    <value>You're not authorized to reach this page. You need to log in.</value>
+  </data>
+  <data name="Nothing" xml:space="preserve">
+    <value>Sorry, there's nothing at this address.</value>
+  </data>
+  <data name="Pardon" xml:space="preserve">
+    <value>Sorry</value>
+  </data>
+  <data name="ProjectDocumentation" xml:space="preserve">
+    <value>You can find this project and its documentation through the</value>
+  </data>
+  <data name="RMDevelopedUnder" xml:space="preserve">
+    <value>This project is part of the Sailing Race Simulation Platform and is actively developed under</value>
+  </data>
+  <data name="Trouble" xml:space="preserve">
+    <value>If you have any trouble please check the</value>
+  </data>
+  <data name="Waiting" xml:space="preserve">
+    <value>Determining session state, please wait...</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome to the SRSP-Race-Manager.</value>
+  </data>
 </root>

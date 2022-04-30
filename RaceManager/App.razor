@@ -1,14 +1,15 @@
-﻿<CascadingAuthenticationState>
+﻿@using RaceManager.Language
+<CascadingAuthenticationState>
 
     <Router AppAssembly="@typeof(App).Assembly">
         <Found Context="routeData">
             <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)">
                 <Authorizing>
-                    <p>Determining session state, please wait...</p>
+                    <p>@Locales.Waiting</p>
                 </Authorizing>
                 <NotAuthorized>
-                    <h1>Sorry</h1>
-                    <p>You're not authorized to reach this page. You need to log in.</p>
+                    <h1>@Locales.Pardon</h1>
+                    <p>@Locales.NotAuthorized</p>
                 </NotAuthorized>
             </AuthorizeRouteView>
 
@@ -20,7 +21,7 @@
         <NotFound>
             <PageTitle>Not found</PageTitle>
             <LayoutView Layout="@typeof(MainLayout)">
-                <p role="alert">Sorry, there's nothing at this address.</p>
+                <p role="alert">@Locales.Nothing</p>
             </LayoutView>
         </NotFound>
     </Router>
