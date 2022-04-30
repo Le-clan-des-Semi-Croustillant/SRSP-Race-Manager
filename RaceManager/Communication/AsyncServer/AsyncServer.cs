@@ -6,6 +6,9 @@ using System.Threading;
 
 namespace RaceManager.Communication
 {
+    /// <summary>
+    /// This class manage an asynchronous server
+    /// </summary>
     public partial class AsyncServer
     {
         private static List<Client> clients = new List<Client>();
@@ -16,19 +19,21 @@ namespace RaceManager.Communication
         // Semaphore
         public static ManualResetEvent allDone = new ManualResetEvent(false);
 
+        /// <summary>
+        /// Check if the server is running
+        /// </summary>
+        /// <returns>True if server is running</returns>
         public static bool IsRunning()
         {
             if (thread == null)
                 return false;
-
             return thread.IsAlive;//|| thread != null;
         }
-
-
+        /// <summary>
+        /// Start the server
+        /// </summary>
         public static void Run()
         {
-
-
             try
             {
                 if (thread is not null)
@@ -51,7 +56,9 @@ namespace RaceManager.Communication
                 _logger.log(LoggingLevel.ERROR, "Run()", "Error while starting server: " + e.Message);
             }
         }
-
+        /// <summary>
+        /// Stop the server
+        /// </summary>
         public static void Stop()
         {
             try
@@ -61,8 +68,6 @@ namespace RaceManager.Communication
                     _logger.log(LoggingLevel.WARN, "Stop()", "Server is not running");
                     return;
                 }
-
-
                 _stop = true;
                 thread.Interrupt();
                 _logger.log(LoggingLevel.WARN, "Stop()", "Stopping server ...");
@@ -78,7 +83,11 @@ namespace RaceManager.Communication
                 _logger.log(LoggingLevel.ERROR, "Stop()", "Error stopping server: " + e.Message);
             }
         }
-
+        /// <summary>
+        /// If a closure request is made 
+        /// </summary>
+        /// <param name="s">Socket we whant closing</param>
+        /// <returns>True if closure request is made</returns>
         private static bool _StoppingIfRequested(Socket? s)
         {
             if (_stop)
@@ -89,11 +98,8 @@ namespace RaceManager.Communication
                     //s.Shutdown(SocketShutdown.Both);
                     s.Close();
                 }
-
             }
             return _stop;
         }
-
-
     }
 }

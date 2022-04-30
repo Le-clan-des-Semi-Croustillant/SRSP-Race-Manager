@@ -75,6 +75,8 @@ namespace RaceManager.DataProcessing.Files
                 };
                 listPol.Add(polListConstruction);
             }
+            
+            //Not use but implemented for futur race
             //for (int i = 0; i < filesRace.Length; i++)
             //{
             //    string file = Path.GetFileNameWithoutExtension(filesRace[i]);

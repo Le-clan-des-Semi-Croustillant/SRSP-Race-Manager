@@ -6,7 +6,9 @@ namespace RaceManager.Communication
 {
     public partial class AsyncServer
     {
-
+        /// <summary>
+        /// Launch a listening session 
+        /// </summary>
         private static void StartListening()
         {
             byte[] bytes = new byte[1024];

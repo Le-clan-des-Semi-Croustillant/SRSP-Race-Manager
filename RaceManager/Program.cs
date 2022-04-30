@@ -18,6 +18,9 @@ using Auth0.AspNetCore.Authentication;
 //using RaceManager.DataProcessing.Files;
 //using static RaceManager.DataProcessing.Files.FileManageData;
 
+/// <summary>
+/// Main
+/// </summary>
 
 Console.WriteLine("");
 RMLogger logger = new(LoggingLevel.INFO, "Program");

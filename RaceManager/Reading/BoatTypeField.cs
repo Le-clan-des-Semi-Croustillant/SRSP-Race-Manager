@@ -10,6 +10,10 @@ namespace RaceManager.Reading
         public T Value = default(T);
         RMLogger logger = new RMLogger(LoggingLevel.DEBUG, "BoatTypeField");
 
+        /// <summary>
+        /// For save value and chek its compliance
+        /// </summary>
+        /// <returns>True if value is valid</returns>
         public override bool StoreValue()
         {
             isValid = false;

@@ -14,7 +14,13 @@ namespace RaceManager.Communication
     {
         private static RMLogger _logger = new RMLogger(LoggingLevel.INFO, "ServerHub");
         public static bool IsServerRunning { set; get; } = false;
-
+        /// <summary>
+        /// Update status of the server
+        /// </summary>
+        /// <remarks>
+        /// IsServerRunning
+        /// </remarks>
+        /// <returns></returns>
         public async Task UpdateStatus()
         {
             //Logger.log(LoggingLevel.DEBUG, "BoatTypesListHub", $"Server send isServerRunning: {isServerRunning}");
@@ -36,7 +42,7 @@ namespace RaceManager.Communication
         /// <summary>
         /// Send the list of all BoatTypes to the client
         /// </summary>
-        /// <param name="port"></param>
+        /// <param name="port">port</param>
         /// <returns></returns>
         public async Task SendPort(int port)
         {
@@ -46,11 +52,11 @@ namespace RaceManager.Communication
             _logger.log(LoggingLevel.INFO, "SendPort()", $"Server port changed to : {port}");
             AsyncServer.Run();
         }
-        
+
         /// <summary>
         /// Send the selected culture to the server
         /// </summary>
-        /// <param name="culture"></param>
+        /// <param name="culture">selected language</param>
         /// <returns></returns>
         public async Task ChangeCulture(string culture)
         {
@@ -78,19 +84,31 @@ namespace RaceManager.Communication
             AsyncServer.Stop();
         }
 
-       
+        /// <summary>
+        /// Called when a new connection is established with the hub.
+        /// </summary>
+        /// <returns></returns>
         public override Task OnConnectedAsync()
         {
             _logger.log(LoggingLevel.DEBUG, "OnConnectedAsync()", $"New connection {Context.ConnectionId}");
             return base.OnConnectedAsync();
         }
-
+        /// <summary>
+        /// Called when a connection with the hub is terminated.
+        /// </summary>
+        /// <param name="e">exeption type</param>
+        /// <returns></returns>
         public override async Task OnDisconnectedAsync(Exception e)
         {
             _logger.log(LoggingLevel.DEBUG, "OnDisconnectedAsync()", $"Disconnection of {Context.ConnectionId}");
             await base.OnDisconnectedAsync(e);
         }
 
+        /// <summary>
+        /// Check the status of the port
+        /// </summary>
+        /// <param name="port"></param>
+        /// <returns>True if is busy</returns>
         public static bool IsPortBusy(int port)
         {
             try

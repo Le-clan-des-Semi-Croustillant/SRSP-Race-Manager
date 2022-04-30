@@ -9,13 +9,8 @@ namespace RaceManager.DataProcessing.Files
     public partial class FileManageData
     {
         //private static RMLogger _logger = new(LoggingLevel.DEBUG, "FileManageData");
-
-        public static void ChargeBoatListInClass()
-        {
-
-        }
-
         private static RMLogger _logger = new(LoggingLevel.INFO, "FileManageData");
+
         /// <summary>
         /// Add to BoatTypesList all boat already exist on local file
         /// </summary>
@@ -85,7 +80,7 @@ namespace RaceManager.DataProcessing.Files
             string jsonString = JsonConvert.SerializeObject(DataBoat);
             File.Create(pathFile).Close();
             WriteInFile.WriteFilePath(pathFile, jsonString);
-            UpdateJsonData();
+            //UpdateJsonData();
         }
     }
 }

@@ -6,6 +6,9 @@ namespace RaceManager.Communication
 {
     public partial class AsyncServer
     {
+        /// <summary>
+        /// This class is used to store the state of the connection of client
+        /// </summary>
         private class Client // : IObservable<Client>
         {
             //public List<IObserver<Client>> Observers = new List<System.IObserver<Client>>();

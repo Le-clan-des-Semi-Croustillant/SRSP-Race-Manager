@@ -6,20 +6,15 @@ namespace RaceManager.DataProcessing.Json
     public class JsonManage
     {
         private static RMLogger _logger = new(LoggingLevel.DEBUG, "JsonManage");
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
         public static string JsonType(string data)
         {
             var informationJson = JsonParse.JsonDeserialize(data);
             _logger.log(LoggingLevel.DEBUG, "JsonType", informationJson.GetType().ToString());
-            Console.WriteLine(informationJson);
-            //_logger.log(LoggingLevel.DEBUG, "JsonType", informationJson);
-            //try
-            //{
-
-            //}
-            //catch (Exception ex)
-            //{
-
-            //}
             string OutMessage;
             _logger.log(LoggingLevel.DEBUG, "JsonType", $"TypeMessage: {(IMessageType)informationJson.TypeMessage}");
             switch ((IMessageType)informationJson.TypeMessage)

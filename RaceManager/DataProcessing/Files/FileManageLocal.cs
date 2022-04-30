@@ -72,6 +72,11 @@
             //WriteFilePath(path, machin);
         }
 
+        /// <summary>
+        /// Read data on file
+        /// </summary>
+        /// <param name="path">Path of file</param>
+        /// <returns>Data of file contenf</returns>
         public static string ReadFilePath(string path)
         {
             string data = "";

@@ -12,6 +12,9 @@ using RaceManager.Language;
 
 namespace RaceManager.Reading
 {
+    /// <summary>
+    /// Class of boat information
+    /// </summary>
     public partial class BoatType : IEquatable<BoatType>, IComparable<BoatType>
     {
         private static RMLogger logger = new(LoggingLevel.INFO, "BoatType");
@@ -43,6 +46,11 @@ namespace RaceManager.Reading
             Name = Locales.NewBoatType;
         }
 
+        /// <summary>
+        /// Redefinition of equals
+        /// </summary>
+        /// <param name="other"></param>
+        /// <returns></returns>
         public bool Equals(BoatType? other)
         {
             if (other == null)
@@ -53,6 +61,11 @@ namespace RaceManager.Reading
             return ID.Equals(other.ID);
         }
 
+        /// <summary>
+        /// Redefinition of CompareTo
+        /// </summary>
+        /// <param name="other"></param>
+        /// <returns></returns>
         public int CompareTo(BoatType? other)
         {
             if (other == null)
@@ -63,11 +76,19 @@ namespace RaceManager.Reading
 
             return Name.CompareTo(other.Name);
         }
+        /// <summary>
+        /// Get hash code
+        /// </summary>
+        /// <returns>Hash code</returns>
         public override int GetHashCode()
         {
             return ID.GetHashCode();
         }
 
+        /// <summary>
+        /// Redefinition of ToString
+        /// </summary>
+        /// <returns></returns>
         public string ToString()
         {
             StringBuilder stringBuilder = new StringBuilder($"{Name} {ID} {{");
@@ -79,6 +100,11 @@ namespace RaceManager.Reading
             return stringBuilder.ToString();
 
         }
+        /// <summary>
+        /// Log of boats
+        /// </summary>
+        /// <param name="rmlogger"></param>
+        /// <param name="loggingLevel"></param>
         public static void logBoats(RMLogger rmlogger, LoggingLevel loggingLevel)
         {
             rmlogger.log(loggingLevel, "OnInitializedAsync()", "BoatTypesList is ");

@@ -1,6 +1,9 @@
 ﻿
 namespace RaceManager
 {
+    /// <summary>
+    /// Logger
+    /// </summary>
     public class RMLogger
     {
         private static Mutex mut = new Mutex();
@@ -8,22 +11,25 @@ namespace RaceManager
         public LoggingLevel LogLevel;
         public string contextPrefix;
 
-
-
+        /// <summary>
+        /// Initializes a new instance of the <see cref="RMLogger"/> class.
+        /// </summary>
+        /// <param name="logLevel"></param>
+        /// <param name="contextPrefix"></param>
         public RMLogger(LoggingLevel logLevel = LoggingLevel.DEBUG, string contextPrefix = "")
         {
-            /// <summary>
-            /// Initializes a new instance of the <see cref="RMLogger"/> class.
-            /// </summary>
             LogLevel = logLevel;
             this.contextPrefix = contextPrefix + ".";
         }
 
+        /// <summary>
+        /// Logs the specified message.
+        /// </summary>
+        /// <param name="level"></param>
+        /// <param name="context"></param>
+        /// <param name="message"></param>
         public void log(LoggingLevel level, string context, object message)
         {
-            /// <summary>
-            /// Logs a message.
-            /// </summary>
             if (level <= LogLevel && level != LoggingLevel.OFF)
             {
                 mut.WaitOne();
@@ -38,6 +44,10 @@ namespace RaceManager
             }
         }
 
+        /// <summary>
+        /// Formatting for writing in the console
+        /// </summary>
+        /// <param name="caller"></param>
         private static void WriteCaller(string caller)
         {
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
@@ -47,6 +57,11 @@ namespace RaceManager
             Console.ResetColor();
         }
 
+        /// <summary>
+        /// Formatting alignement for writing in the console
+        /// </summary>
+        /// <param name="text">Text to format</param>
+        /// <returns></returns>
         private static int Allign(string text)
         {
             if (text.Length <= 24)
@@ -61,10 +76,13 @@ namespace RaceManager
             {
                 return 45 - text.Length;
             }
-
             return 0;
         }
 
+        /// <summary>
+        /// Level formatting for writing in the console
+        /// </summary>
+        /// <param name="level"></param>
         private static void WriteLevel(LoggingLevel level)
         {
             switch (level)
@@ -91,6 +109,9 @@ namespace RaceManager
         }
     }
 
+    /// <summary>
+    /// Level of logging
+    /// </summary>
     public enum LoggingLevel
     {
         OFF = 0,

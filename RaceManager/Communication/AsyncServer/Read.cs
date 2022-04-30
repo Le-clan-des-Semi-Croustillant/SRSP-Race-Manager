@@ -11,6 +11,10 @@ namespace RaceManager.Communication
 {
     public partial class AsyncServer
     {
+        /// <summary>
+        /// Processing the information received by the client
+        /// </summary>
+        /// <param name="ar"></param>
         private static void ReadCallback(IAsyncResult ar)
         {
             String content = String.Empty;
@@ -33,30 +37,20 @@ namespace RaceManager.Communication
                 // Check for end-of-file tag. If it is not there, read 
                 // more data.
                 content = client.sb.ToString();
-                //if (content.IndexOf("<EOF>") > -1)
                 if (true)
                 {
                     // All the data has been read from the 
                     // client. Display it on the console.
           
                     _logger.log(LoggingLevel.INFO, "ReadCallback()",$"Read {content.Length} bytes from socket. \nData : {content}");
-
-                    // SERIALISATION PSEUDOCODE
-                    // ...
-                    // serialisation = new Serialisation(content)
-                    // switch (serialisation.MessageType){
-                    // case IMessageType.CONNECT :
-                    //      client.infos(serialisation.content)
-                    //      clients.addOnce(client)
-                    // case IMessageType.DISCONNECT :
-                    //      clients.addOnce(client)
-                    // 
-                    // case IMessageType.INFO :
                     dynamic serialisation = JsonParse.JsonDeserialize(content);
                     string SendAtt = JsonManage.JsonType(content);
                     _logger.log(LoggingLevel.DEBUG, "ReadCallback()", "Send att" + SendAtt);
                     //Send(handler, SendAtt);
 
+                    /// <remarks>
+                    /// Just when you recive a message BOATLISTREQUEST he update information of all boat in interface and local file of RM and send data.json to the client
+                    /// </remarks>
                     switch ((IMessageType)serialisation.TypeMessage)
                     {
                         case IMessageType.CONNECTION:
@@ -97,15 +91,9 @@ namespace RaceManager.Communication
                             break;
                     }
 
-
                     // Echo the data back to the client.
                     _logger.log(LoggingLevel.DEBUG, "ReadCallback()", "Send to client");
                     Send(handler, SendAtt);
- 
-                    //SendFile(handler);
-
-
-
                 }
                 else
                 {
