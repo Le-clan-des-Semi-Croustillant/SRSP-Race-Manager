@@ -11,7 +11,7 @@ namespace RaceManager.Reading
     /// </summary>
     public class BoatTypesListHub : Hub
     {
-        private static RMLogger _logger = new RMLogger(LoggingLevel.DEBUG, "BoatTypesListHub");
+        private static RMLogger _logger = new RMLogger("BoatTypesListHub");
         
         //public async Task BoatTypesListRequest()
         //{

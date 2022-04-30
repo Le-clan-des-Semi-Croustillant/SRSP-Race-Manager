@@ -3,7 +3,7 @@ namespace RaceManager.Language
 {
     public class LocaleManager
     {
-        private static RMLogger _logger = new (LoggingLevel.INFO,"LocaleManager");
+        private static RMLogger _logger = new ("LocaleManager");
         public static string CurrentCulture { get; set; } = "en-US";
 
         /// <summary>

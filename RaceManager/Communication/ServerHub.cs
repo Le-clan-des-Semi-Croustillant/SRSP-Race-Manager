@@ -12,7 +12,7 @@ namespace RaceManager.Communication
 {
     public class ServerHub : Hub
     {
-        private static RMLogger _logger = new RMLogger(LoggingLevel.INFO, "ServerHub");
+        private static RMLogger _logger = new RMLogger("ServerHub");
         public static bool IsServerRunning { set; get; } = false;
         /// <summary>
         /// Update status of the server

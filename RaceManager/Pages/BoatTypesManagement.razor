@@ -89,7 +89,7 @@
     private List<IBrowserFile> loadedFiles = new();
     private IBrowserFile? _pSelected = null;
 
-    private static RMLogger _logger = new RMLogger(LoggingLevel.INFO, "BoatTypesManagement");
+    private static RMLogger _logger = new RMLogger("BoatTypesManagement");
     private HubConnection? _hubConnection;
 
     private bool _loaded = false;

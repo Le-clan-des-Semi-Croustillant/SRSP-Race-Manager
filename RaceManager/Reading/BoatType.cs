@@ -17,7 +17,7 @@ namespace RaceManager.Reading
     /// </summary>
     public partial class BoatType : IEquatable<BoatType>, IComparable<BoatType>
     {
-        private static RMLogger logger = new(LoggingLevel.INFO, "BoatType");
+        private static RMLogger logger = new("BoatType");
         public static List<BoatType> BoatTypesList = new();
         public static System.Random RandomInt64 = new System.Random(DateTime.Now.Millisecond);
 

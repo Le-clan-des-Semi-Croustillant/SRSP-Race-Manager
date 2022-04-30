@@ -23,7 +23,7 @@ using Auth0.AspNetCore.Authentication;
 /// </summary>
 
 Console.WriteLine("");
-RMLogger logger = new(LoggingLevel.INFO, "Program");
+RMLogger logger = new("Program");
 
 var builder = WebApplication.CreateBuilder(args);
 

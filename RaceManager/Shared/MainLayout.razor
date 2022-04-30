@@ -19,19 +19,19 @@
             <a href="@Locales.Github" target="_blank">@Locales.SeethisprojectonGithub </a>
             <a class="ahref" href="@Locales.Page" target="_blank">@Locales.Viewdocs</a>
 
-            <div style="cursor: pointer;padding:5px" @onclick="UpdateStatus">
+            <div style="padding:5px" @onclick="UpdateStatus">
                 @if (_loaded)
                 {
                     @if (AsyncServer.IsRunning())
                     {
-                        <label style="color: #03ec00; margin-right: 5px;cursor: pointer"> @Locales.ServerRunning </label>
+                        <label style="color: #03ec00; margin-right: 5px"> @Locales.ServerRunning </label>
                     }
                     else
                     {
-                        <label style="color: red; margin-right: 5px;cursor: pointer"> @Locales.ServerNotRunning</label>
+                        <label style="color: red; margin-right: 5px"> @Locales.ServerNotRunning</label>
                     }
-                    <gg-icon class="gg-sync" style="float: right"></gg-icon>
-                }
+@*                    <gg-icon class="gg-sync" style="float: right"></gg-icon>
+*@                }
             </div>
 
             <AccessControl />

@@ -8,7 +8,7 @@ namespace RaceManager.Reading
         // The boat type field.
         // </summary>
         public T Value = default(T);
-        RMLogger logger = new RMLogger(LoggingLevel.DEBUG, "BoatTypeField");
+        RMLogger logger = new RMLogger("BoatTypeField");
 
         /// <summary>
         /// For save value and chek its compliance

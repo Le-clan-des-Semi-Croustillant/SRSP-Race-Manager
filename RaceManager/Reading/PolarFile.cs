@@ -5,7 +5,7 @@
     /// </summary>
     public class Polar : IEquatable<Polar>, IComparable<Polar>
     {
-        private static RMLogger logger = new(LoggingLevel.INFO, "Polar");
+        private static RMLogger logger = new("Polar");
 
         public string Name { get; set; }
         public string File { get; set; }

@@ -12,7 +12,7 @@ namespace RaceManager.Communication
     public partial class AsyncServer
     {
         private static List<Client> clients = new List<Client>();
-        private static RMLogger _logger = new RMLogger(LoggingLevel.DEBUG, "AsyncServer");
+        private static RMLogger _logger = new RMLogger( "AsyncServer");
         private static Thread? thread = null;
         public static int Port { get; set; } = 45879;
         private static bool _stop = false;

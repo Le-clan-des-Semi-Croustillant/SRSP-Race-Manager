@@ -44,7 +44,7 @@
 
 @code {
 
-    private static RMLogger _logger = new RMLogger(LoggingLevel.INFO, "Settings");
+    private static RMLogger _logger = new RMLogger("Settings");
     private HubConnection? hubConnection;
 
     private int port = AsyncServer.Port;
@@ -143,7 +143,7 @@
         public int Value;
 
 
-        private RMLogger logger = new RMLogger(LoggingLevel.DEBUG, "Settings.RealField");
+        private RMLogger logger = new RMLogger("RealField");
 
         /// <summary>
         /// This function checks if the port chosen by the user is open and not busy,

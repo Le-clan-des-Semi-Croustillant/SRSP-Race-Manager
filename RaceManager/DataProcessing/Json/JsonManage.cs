@@ -5,7 +5,7 @@ namespace RaceManager.DataProcessing.Json
 {
     public class JsonManage
     {
-        private static RMLogger _logger = new(LoggingLevel.DEBUG, "JsonManage");
+        private static RMLogger _logger = new("JsonManage");
         /// <summary>
         /// 
         /// </summary>
