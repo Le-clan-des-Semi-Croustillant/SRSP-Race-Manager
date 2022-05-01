@@ -56,7 +56,7 @@ namespace RaceManager.DataProcessing.Files
                 {
                     BoatName = forConstruction.Name,
                     BoatId = forConstruction.ID,
-                    BoatPath = "/data/boat/" + fileExt,
+                    BoatPath = "./index/boat/" + fileExt,
                     BoatInformation = forConstruction
                 };
                 listBoat.Add(boatListConstruction);
@@ -70,7 +70,7 @@ namespace RaceManager.DataProcessing.Files
                 {
                     PolName = nameFile[0],
                     PolId = Int64.Parse(nameFile[1]),
-                    PolPath = "/data/pol/" + fileExt,
+                    PolPath = "./index/pol/" + fileExt,
                     PolInformation = File.ReadAllText(filesPol[i])
                 };
                 listPol.Add(polListConstruction);
@@ -86,7 +86,7 @@ namespace RaceManager.DataProcessing.Files
             //    {
             //        RaceName = nameFile[0],
             //        RaceId = Int32.Parse(nameFile[1]),
-            //        RacePath = "/data/race/" + fileExt
+            //        RacePath = "./index/race/" + fileExt
             //    };
             //    listRace.Add(boatListConstruction);
             //}
