@@ -64,6 +64,7 @@ builder.Services
 
 var app = builder.Build();
 
+logger.log(LoggingLevel.WARN, "Initialisation", $"Current mode is {app.Environment.EnvironmentName}");
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
