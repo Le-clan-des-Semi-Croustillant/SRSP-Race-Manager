@@ -61,6 +61,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="Language\Locales.fr.resx">
       <CustomToolNamespace>RaceManager.Language</CustomToolNamespace>
       <Generator></Generator>
