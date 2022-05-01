@@ -27,40 +27,6 @@ RMLogger logger = new("Program");
 
 var builder = WebApplication.CreateBuilder(args);
 
-//BoatType.BoatTypesList.Add(new BoatType()
-//{
-//    Name = "Bateau-1",
-//    HullWidth = 4,
-//    OverallWidth = 1,
-//    Weight = 4,
-//    AirDraft = 1,
-//    Draft = 2,
-//    HullLength = 5,
-//    OverallLength = 1,
-//    PolarFileList = new List<Polar>()
-//    {
-//        new Polar() {
-//            ID = 1234567,
-//            Name = "Polar 1",
-//            File = "TEST POLAR CONTENT",
-//        },
-//        new Polar()
-//        {
-//            ID = 1234568,
-
-//            Name = "Polar 2",
-//            File = "TEST POLAR CONTENT",
-
-//        },
-//        new Polar()
-//        {            ID = 1234569,
-
-//            Name = "Polar 3",
-//            File = "TEST POLAR CONTENT",
-//        }
-//    }
-//});
-
 
 
 // Add services to the container.
@@ -77,6 +43,11 @@ builder.Services.AddResponseCompression(opts =>
 });
 builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
+
+logger.log(LoggingLevel.INFO, "Initialisation", $"Client ID = {builder.Configuration["Auth0:ClientId"]}");
+logger.log(LoggingLevel.INFO, "Initialisation", $"Domain = {builder.Configuration["Auth0:Domain"]}");
+logger.log(LoggingLevel.INFO, "Initialisation", $"{builder.Configuration.GetFileProvider().GetFileInfo("appsettings.json").PhysicalPath}");
+
 builder.Services
     .AddAuth0WebAppAuthentication(options => {
         options.Domain = builder.Configuration["Auth0:Domain"];
