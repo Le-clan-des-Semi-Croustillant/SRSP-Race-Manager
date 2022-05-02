@@ -15,7 +15,9 @@ namespace RaceManager.Communication
 
             // Reservation of the listening port according to the IP of the server.
             IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());
-            IPAddress ipAddress = ipHostInfo.AddressList[0];
+            //nimporte quelle ip
+            IPAddress ipAddress = IPAddress.Any;
+            //IPAddress ipAddress = ipHostInfo.AddressList[0];
             _logger.log(LoggingLevel.INFO, "StartListening()", $"Host address : {ipAddress}");
 
             IPEndPoint localEndPoint = new IPEndPoint(ipAddress, Port);
