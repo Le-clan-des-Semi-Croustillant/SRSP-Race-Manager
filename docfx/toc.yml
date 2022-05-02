@@ -2,8 +2,8 @@
   href: userdoc/
   homepage: userdoc/intro.md
 - name: Admin Documentation
-  href: devres/
-  homepage: devres/intro.md
-- name: Api Documentation
+  href: admindoc/
+  homepage: admindoc/intro.md
+- name: Developer Documentation
   href: api/
   homepage: api/index.md
