@@ -11,7 +11,6 @@ namespace RaceManager.Communication
         /// </summary>
         private class Client // : IObservable<Client>
         {
-            //public List<IObserver<Client>> Observers = new List<System.IObserver<Client>>();
             public IPAddress IpAddress { set; get; }
             public int Port { set; get; }
             public string Nickname { set; get; }

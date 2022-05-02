@@ -1,7 +1,7 @@
 ﻿namespace RaceManager.Communication
 {
     /// <summary>
-    /// Type of message recive for an exchange with the customer
+    /// Type of message recive for an exchange with the client
     /// </summary>
     public enum IMessageType
     {

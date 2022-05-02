@@ -16,6 +16,7 @@ namespace RaceManager.Communication
     public class Configuration
     {
         private static RMLogger _logger = new("Configuration");
+        
         /// <summary>
         /// Check if the port is available
         /// </summary>

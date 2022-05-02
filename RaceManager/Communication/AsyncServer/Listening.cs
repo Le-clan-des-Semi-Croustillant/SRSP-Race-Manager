@@ -13,7 +13,7 @@ namespace RaceManager.Communication
         {
             byte[] bytes = new byte[1024];
 
-            // Réservation du port d'écoute selon l'ip du serveur.
+            // Reservation of the listening port according to the IP of the server.
             IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());
             IPAddress ipAddress = ipHostInfo.AddressList[0];
             _logger.log(LoggingLevel.INFO, "StartListening()", $"Host address : {ipAddress}");

@@ -13,32 +13,29 @@ namespace RaceManager.Communication
     public class ServerHub : Hub
     {
         private static RMLogger _logger = new RMLogger("ServerHub");
+
+ 
         public static bool IsServerRunning { set; get; } = false;
+
         /// <summary>
         /// Update status of the server
         /// </summary>
-        /// <remarks>
-        /// IsServerRunning
-        /// </remarks>
         /// <returns></returns>
         public async Task UpdateStatus()
         {
-            //Logger.log(LoggingLevel.DEBUG, "BoatTypesListHub", $"Server send isServerRunning: {isServerRunning}");
-            //IsServerRunning = isServerRunning;
 
             while (true)
             {
-                //isServerRunning = !isServerRunning;
                 if (Clients is not null && Clients.All is not null)
                 {
                     await Clients.All.SendAsync("ServerStatusUpdate", IsServerRunning);
-                    //_logger.log(LoggingLevel.DEBUG, "UpdateStatus()", $"Server send isServerRunning: {IsServerRunning}");
+                    _logger.log(LoggingLevel.DEBUG, "BoatTypesListHub", $"Server send isServerRunning: {IsServerRunning}");
+
                 }
-                //Logger.log(LoggingLevel.DEBUG, "ServerHub", $"Server is {(isServerRunning? "" : "not ")}running");
                 await Task.Delay(2000);
             }
         }
-        
+
         /// <summary>
         /// Send the list of all BoatTypes to the client
         /// </summary>
