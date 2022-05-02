@@ -1,7 +1,6 @@
-![Alt text](~/images/config.png)
-À partir de l'onglet **Configuration**, vous pouvez changer le numéro du port sur lequel,vous vous connectez sur le serveur. Vous pouvez également changer la langue d'affichage du serveur, pour le moment seulement le Français et l'Anglais sont pris en charge.
+![Alt text](~/images/port1.png)
+From the **Configuration** tab, you can change the port number on which you want to connect to the server. You can also change the display language of the server, for the moment only English and French are supported.
 
-![Alt text](~/images/enroute.png)
+![Alt text](~/images/port2.png)
 
-Nous pouvons également voir depuis n'importe quelle page du Race Manager si le serveur est en route ou s'il est éteint depuis la **<span style="color: red"> partie 1</span>**. Nous pouvons également depuis l'onglet **Configuration** allumer ou éteindre le serveur à distance depuis la **<span style="color: green"> partie 2</span>**. Cela mettra à jour automatiquement le status du serveur.
-
+We can also see from any page of the Race Manager if the server is on or off from **<span style="color: red"> part 1</span>**. We can also from the tab **Configuration** turn on or turn off the server remotely from **<span style="color: green"> part 2</span>**. This will automatically update the server status.
