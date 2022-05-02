@@ -62,3 +62,37 @@ Check the [server data specification page](serverapi.md)
     He exist this tutorial for more information about the installation on linux and with Ngix/apache https://docs.microsoft.com/fr-fr/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-6.0
 
 ## [To install and run the application on a Windows server : ](https://docs.microsoft.com/fr-fr/aspnet/core/host-and-deploy/?view=aspnetcore-6.0)
+
+## Logger
+```appsetting.json``` on file off the root of the project
+```json
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Program": "Information",
+      "AsyncServer": "Information",
+      "Settings": "Information",
+      "ServerHub": "Warning",
+      "BoatTypesManagement": "Warning",
+      "JsonManage": null,
+      "LocaleManager": null,
+      "BoatType": null,
+      "Polar": null,
+      "RealField": null,
+      "BoatTypeField": null,
+      "FileManageData": null,
+      "BoatTypesListHub": null,
+      "RealFieldHub": null,
+      
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "Auth0": {
+    "Domain": "lcsc.eu.auth0.com",
+    "ClientId": "qGMgxqmeGn2OpbCD3OQGkJI4XDkUwDSv",
+    "Audience": "https://racemanager"
+
+  }
+}```
