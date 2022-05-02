@@ -1,0 +1,2 @@
+![Alt text](~/images/doc.png)
+On peut également accéder depuis les liens \textbf{Voir ce projet sur la page github} et \textbf{Voir la documentation} à respectivement le code source du projet qui est open source ainsi que la documentation développeur de celui-ci. 
