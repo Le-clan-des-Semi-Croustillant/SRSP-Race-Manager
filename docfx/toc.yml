@@ -1,7 +1,7 @@
 - name: User Documentation
   href: userdoc/
   homepage: userdoc/intro.md
-- name: Developer Resources
+- name: Admin Documentation
   href: devres/
   homepage: devres/intro.md
 - name: Api Documentation
