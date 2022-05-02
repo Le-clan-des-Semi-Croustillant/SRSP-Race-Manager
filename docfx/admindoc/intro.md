@@ -51,10 +51,10 @@
     ```sh
     sudo systemctl disable RaceManager.service #to disable the service
     ```
-   - To manually launch the Race Manager:
+   - To manually launch the Race Manager: 
      ```sh
-     /var/www/dotnet/RaceManager --urls "{host}:{port}"
-     #Remplacez {host} et le {port} par l'adresse que vous souhaitez (http://localhost:5000 ou http://example.com:5000) https à configuerer mais possible de le lancer en https
+     /var/www/dotnet/RaceManager --urls "{host}:{port}" #launch this commant to /var/www/dotnet/RaceManager
+     #Replace {host} and the {port} by the address you want (http://localhost:5000 or http://example.com:5000) https to configure but possible to launch it in https
      ```
     
     He exist this tutorial for more information about the installation on linux and with Ngix/apache https://docs.microsoft.com/fr-fr/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-6.0
