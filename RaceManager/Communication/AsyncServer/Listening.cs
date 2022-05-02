@@ -98,6 +98,7 @@ namespace RaceManager.Communication
 
                 handler.BeginReceive(client.buffer, 0, Client.BufferSize, 0,
                     new AsyncCallback(ReadCallback), client);
+                //Socket never close, system wait interruption kernel to close it
             }
             catch (Exception e)
             {

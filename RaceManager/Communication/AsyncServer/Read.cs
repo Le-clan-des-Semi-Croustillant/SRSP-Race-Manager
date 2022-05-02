@@ -26,6 +26,7 @@ namespace RaceManager.Communication
 
             // Read data from the client socket. 
             int bytesRead = handler.EndReceive(ar);
+            //while if dig data
 
             // Serialisation
             if (bytesRead > 0)
@@ -94,6 +95,9 @@ namespace RaceManager.Communication
                     // Echo the data back to the client.
                     _logger.log(LoggingLevel.DEBUG, "ReadCallback()", "Send to client");
                     Send(handler, SendAtt);
+                    //close handler socket
+                    //handler.Shutdown(SocketShutdown.Both);
+                    //handler.Close();
                 }
                 else
                 {
