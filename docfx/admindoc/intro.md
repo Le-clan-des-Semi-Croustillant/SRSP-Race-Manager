@@ -65,6 +65,8 @@ Check the [server data specification page](serverapi.md)
 
 ## Logger
 ```appsetting.json``` on file off the root of the project
+expliquer un logger 
+ 
 ```json
 {
   "Logging": {
@@ -75,15 +77,18 @@ Check the [server data specification page](serverapi.md)
       "Settings": "Information",
       "ServerHub": "Warning",
       "BoatTypesManagement": "Warning",
-      "JsonManage": null,
-      "LocaleManager": null,
-      "BoatType": null,
-      "Polar": null,
-      "RealField": null,
-      "BoatTypeField": null,
-      "FileManageData": null,
-      "BoatTypesListHub": null,
-      "RealFieldHub": null,
+      "Settings": "Information",
+      "ServerHub": "Warning",
+      "BoatTypesManagement": "Warning",
+      "JsonManage": "Warning",
+      "LocaleManager": "Warning",
+      "BoatType": "Warning",
+      "Polar": "Warning",
+      "RealField": "Warning",
+      "BoatTypeField": "Warning",
+      "FileManageData": "Warning",
+      "BoatTypesListHub": "Warning",
+      "RealFieldHub": "Warning",
       
       "Microsoft.AspNetCore": "Warning"
     }
