@@ -2,6 +2,7 @@
 @using RaceManager.Communication
 @using RaceManager.Reading
 @using RaceManager.Language
+@using System.Timers
 @inherits LayoutComponentBase
 
 <PageTitle>Race Manager</PageTitle>
@@ -12,14 +13,16 @@
     </div>
 
     <main>
-        <div class="top-row px-4">
-            <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager" target="_blank">See this project on Github</a> 
-            <a href="https://le-clan-des-semi-croustillant.github.io/SRSP-Race-Manager/" target="_blank">View docs</a>
 
-            <div style="cursor: crosshair" @onclick="UpdateStatus">
+        <div class="top-row px-4">
+            
+            <a href="@Locales.Github" target="_blank">@Locales.SeethisprojectonGithub </a>
+            <a class="ahref" href="@Locales.Page" target="_blank">@Locales.Viewdocs</a>
+
+            <div style="padding:5px" @onclick="UpdateStatus">
                 @if (_loaded)
                 {
-                    @if (AsyncServer.thread is not null && AsyncServer.thread.IsAlive)
+                    @if (AsyncServer.IsRunning())
                     {
                         <label style="color: #03ec00; margin-right: 5px"> @Locales.ServerRunning </label>
                     }
@@ -27,10 +30,11 @@
                     {
                         <label style="color: red; margin-right: 5px"> @Locales.ServerNotRunning</label>
                     }
-
-                    <gg-icon class="gg-sync" style="float: right" ></gg-icon>
-                }
+@*                    <gg-icon class="gg-sync" style="float: right"></gg-icon>
+*@                }
             </div>
+
+            <AccessControl />
         </div>
 
         <article class="content px-4">
@@ -41,18 +45,29 @@
 
 @code
 {
-
+    int i = 0;
     private bool _loaded = false;
+    private System.Timers.Timer aTimer = new System.Timers.Timer(3000);
 
 
     protected override async Task OnInitializedAsync()
     {
+        aTimer.Elapsed += TickUpdate;
+
+        aTimer.Start();
         _loaded = true;
     }
 
-    private async void UpdateStatus()
+    private void TickUpdate(Object source, ElapsedEventArgs e)
     {
-        StateHasChanged();
+        UpdateStatus();
+    }
+
+
+    private void UpdateStatus()
+    {
+        i++;
+        InvokeAsync(() => { StateHasChanged(); });
     }
 
 }

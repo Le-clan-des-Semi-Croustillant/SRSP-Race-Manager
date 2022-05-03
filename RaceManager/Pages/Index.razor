@@ -1,6 +1,45 @@
 ﻿@page "/"
 @using RaceManager.Language
+@inject AuthenticationStateProvider AuthState
+@attribute [Authorize]
+<link rel="icon" type="image/png" href="~/favicon.ico" sizes="32x32">
 
-<PageTitle>Index</PageTitle>
+<PageTitle>Race Manager</PageTitle>
 
-<h1>@Locales.Hello</h1>
+<h1 style="padding-bottom: 6%">@Locales.Welcome</h1>
+
+<h3 style="padding-bottom: 40px">
+    <img style="padding-right:20px" src="@Picture">
+    @Locales.Currently @Username .
+</h3>
+<p>
+    @Locales.RMDevelopedUnder <a href="https://github.com/Le-clan-des-Semi-Croustillant/">github</a>.
+</p>
+<p>
+    @Locales.ProjectDocumentation <a href="https://lcsc.tk">portal</a>.
+</p>
+<p>
+    @Locales.Trouble <a href="https://le-clan-des-semi-croustillant.github.io/SRSP-Race-Manager/">documentation</a>.
+</p>
+<p style="position:absolute;bottom: 1%">
+    @Locales.AuthorsGroupe : Jérémie Rodez, Karim Moussaoui, Dany Neang, Mikael Allanos, Fabien Perot
+</p>
+
+@code {
+    private string Username = "Anonymous User";
+    private string Picture = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        var state = await AuthState.GetAuthenticationStateAsync();
+
+        Username = state.User.Identity.Name ?? string.Empty;
+
+        Picture = state.User.Claims
+                    .Where(c => c.Type.Equals("picture"))
+                    .Select(c => c.Value)
+                    .FirstOrDefault() ?? string.Empty;
+
+        await base.OnInitializedAsync();
+    }
+}

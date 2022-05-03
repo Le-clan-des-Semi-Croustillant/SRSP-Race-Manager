@@ -1,0 +1,13 @@
+﻿@using RaceManager.Language
+<AuthorizeView>
+    <Authorized>        
+        <a href="logout">@Locales.Logout</a>
+    </Authorized>
+    <NotAuthorized>
+        <a href="login?redirectUri=/">@Locales.Login</a>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+
+}

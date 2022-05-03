@@ -25,7 +25,7 @@ namespace RaceManager.DataProcessing.Json
                     NamePlayer = NamePlayer
                 }
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
 
         public static string JsonSerialiseIConnection(IMessageType TypeMessage)
@@ -35,7 +35,7 @@ namespace RaceManager.DataProcessing.Json
                 TypeMessage = TypeMessage,
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
         public static string JsonSerialiseIDisconnection(IMessageType TypeMessage)
         {
@@ -44,7 +44,8 @@ namespace RaceManager.DataProcessing.Json
                 TypeMessage = TypeMessage,
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            //return JsonConvert.SerializeObject(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
         public static string JsonSerialiseIPlayerInfo(IMessageType TypeMessage)
         {
@@ -53,7 +54,7 @@ namespace RaceManager.DataProcessing.Json
                 TypeMessage = TypeMessage,
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
         public static string JsonSerialiseIBoatSelect(IMessageType TypeMessage)
         {
@@ -62,7 +63,7 @@ namespace RaceManager.DataProcessing.Json
                 TypeMessage = TypeMessage,
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
 
         public static string JsonSerialiseIBoatListRequest(IMessageType TypeMessage)
@@ -72,7 +73,7 @@ namespace RaceManager.DataProcessing.Json
                 TypeMessage = TypeMessage,
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
         public static string JsonSerialiseIEndRace(IMessageType TypeMessage)
         {
@@ -81,7 +82,7 @@ namespace RaceManager.DataProcessing.Json
                 TypeMessage = TypeMessage,
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
 
         public static string JsonSerialiseOConnection()
@@ -92,7 +93,7 @@ namespace RaceManager.DataProcessing.Json
                 TypeMessage = TypeMessage,
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
         public static string JsonSerialiseODisconnection()
         {
@@ -102,7 +103,7 @@ namespace RaceManager.DataProcessing.Json
                 TypeMessage = TypeMessage,
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
         public static string JsonSerialiseOInitRace(OMessageType TypeMessage)
         {
@@ -111,7 +112,7 @@ namespace RaceManager.DataProcessing.Json
                 TypeMessage = TypeMessage,
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
 
         public static string JsonSerialiseOEnvironmentInfo(OMessageType TypeMessage)
@@ -121,7 +122,7 @@ namespace RaceManager.DataProcessing.Json
                 TypeMessage = TypeMessage,
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
 
         public static string JsonSerialiseOBoatList()
@@ -134,7 +135,7 @@ namespace RaceManager.DataProcessing.Json
                 //Retourner liste des bateaux
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
 
         public static string JsonSerialiseOEndRace()
@@ -145,7 +146,7 @@ namespace RaceManager.DataProcessing.Json
                 TypeMessage = TypeMessage,
 
             };
-            return System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+            return JsonConvert.SerializeObject(serialiseJsonInfo);
         }
     }
 
@@ -171,7 +172,7 @@ namespace RaceManager.DataProcessing.Json
     class JsonDataBoatList
     {
         public string BoatName { get; set; }
-        public int BoatId { get; set; }
+        public Int64 BoatId { get; set; }
         public string BoatPath { get; set; }
         public BoatType BoatInformation { get; set; }
     }
@@ -183,7 +184,7 @@ namespace RaceManager.DataProcessing.Json
     class JsonDataPolList
     {
         public string PolName { get; set; }
-        public int PolId { get; set; }
+        public Int64 PolId { get; set; }
         public string PolPath { get; set; }
         public string PolInformation { get; set; }
     }

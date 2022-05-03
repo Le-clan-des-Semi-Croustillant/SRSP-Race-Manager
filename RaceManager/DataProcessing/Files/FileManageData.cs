@@ -2,6 +2,7 @@
 using Newtonsoft.Json.Linq;
 using RaceManager.DataProcessing.Json;
 using RaceManager.Reading;
+using System.Text;
 
 namespace RaceManager.DataProcessing.Files
 {
@@ -50,12 +51,13 @@ namespace RaceManager.DataProcessing.Files
                 string file = Path.GetFileNameWithoutExtension(filesBoat[i]);
                 string fileExt = Path.GetFileName(filesBoat[i]);
                 string[] nameFile = file.Split("_");
+                dynamic forConstruction = JsonConvert.DeserializeObject<BoatType>(File.ReadAllText(filesBoat[i]));
                 var boatListConstruction = new JsonDataBoatList
                 {
-                    BoatName = nameFile[0],
-                    BoatId = Int32.Parse(nameFile[1]),
-                    BoatPath = "/data/boat/" + fileExt,
-                    BoatInformation = JsonConvert.DeserializeObject<BoatType>(File.ReadAllText(filesBoat[i]))
+                    BoatName = forConstruction.Name,
+                    BoatId = forConstruction.ID,
+                    BoatPath = "./index/boat/" + fileExt,
+                    BoatInformation = forConstruction
                 };
                 listBoat.Add(boatListConstruction);
             }
@@ -67,12 +69,14 @@ namespace RaceManager.DataProcessing.Files
                 var polListConstruction = new JsonDataPolList
                 {
                     PolName = nameFile[0],
-                    PolId = Int32.Parse(nameFile[1]),
-                    PolPath = "/data/pol/" + fileExt,
+                    PolId = Int64.Parse(nameFile[1]),
+                    PolPath = "./index/pol/" + fileExt,
                     PolInformation = File.ReadAllText(filesPol[i])
                 };
                 listPol.Add(polListConstruction);
             }
+            
+            //Not use but implemented for futur race
             //for (int i = 0; i < filesRace.Length; i++)
             //{
             //    string file = Path.GetFileNameWithoutExtension(filesRace[i]);
@@ -82,7 +86,7 @@ namespace RaceManager.DataProcessing.Files
             //    {
             //        RaceName = nameFile[0],
             //        RaceId = Int32.Parse(nameFile[1]),
-            //        RacePath = "/data/race/" + fileExt
+            //        RacePath = "./index/race/" + fileExt
             //    };
             //    listRace.Add(boatListConstruction);
             //}
@@ -109,7 +113,7 @@ namespace RaceManager.DataProcessing.Files
                 }
             };
 
-            string jsonString = System.Text.Json.JsonSerializer.Serialize(dataConstruction);
+            string jsonString = JsonConvert.SerializeObject(dataConstruction);
             WriteInFile.WriteFilePath(pathJsonData, jsonString);
         }
     }

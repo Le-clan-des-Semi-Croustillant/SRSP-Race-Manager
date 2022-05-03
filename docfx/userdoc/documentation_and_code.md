@@ -1,0 +1,2 @@
+![Alt text](~/images/doci.png)
+One can also access from the links **See this project on the github page** and **See the documentation** to respectively the source code of the project which is open source as well as the developer documentation of this one. 

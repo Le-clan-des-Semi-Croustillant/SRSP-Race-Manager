@@ -220,7 +220,7 @@
     <value>Français</value>
   </data>
   <data name="AddNewBoatType" xml:space="preserve">
-    <value>Ajouter un nouveau type de bâteau</value>
+    <value>Ajouter un nouveau type de bateau</value>
   </data>
   <data name="AirDraft" xml:space="preserve">
     <value>Tirant d'air</value>
@@ -238,13 +238,13 @@
     <value>ID</value>
   </data>
   <data name="ManageBoatTypes" xml:space="preserve">
-    <value>Gérer les types de bâteaux</value>
+    <value>Gérer les types de bateaux</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Nom</value>
   </data>
   <data name="NewBoatType" xml:space="preserve">
-    <value>Nouveau type de bateau</value>
+    <value>Nouveau</value>
   </data>
   <data name="OverallLength" xml:space="preserve">
     <value>Longueur totale</value>
@@ -278,5 +278,53 @@
   </data>
   <data name="TurnOnTheServer" xml:space="preserve">
     <value>Allumer le serveur</value>
+  </data>
+  <data name="SeethisprojectonGithub" xml:space="preserve">
+    <value>Voir ce projet sur la page Github</value>
+  </data>
+  <data name="Viewdocs" xml:space="preserve">
+    <value>Voir la documentation</value>
+  </data>
+  <data name="NewPolar" xml:space="preserve">
+    <value>Nouvelle-polaire</value>
+  </data>
+  <data name="AuthorsGroupe" xml:space="preserve">
+    <value>Auteurs</value>
+  </data>
+  <data name="Currently" xml:space="preserve">
+    <value>Vous êtes actuellement connecté avec </value>
+  </data>
+  <data name="Error404" xml:space="preserve">
+    <value>Non trouvé</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Se connecter</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Déconnexion</value>
+  </data>
+  <data name="NotAuthorized" xml:space="preserve">
+    <value>Vous n'êtes pas autorisé à accéder à cette sans page . Vous devez vous connecter.</value>
+  </data>
+  <data name="Nothing" xml:space="preserve">
+    <value>Désolé, il n'y a rien à cette adresse.</value>
+  </data>
+  <data name="Pardon" xml:space="preserve">
+    <value>Désolé</value>
+  </data>
+  <data name="ProjectDocumentation" xml:space="preserve">
+    <value>Vous pouvez trouver ce projet et sa documentation à travers le</value>
+  </data>
+  <data name="RMDevelopedUnder" xml:space="preserve">
+    <value>Ce projet fait partie de la Sailing Race Simulation Platform et est activement développé sous</value>
+  </data>
+  <data name="Trouble" xml:space="preserve">
+    <value>Si vous rencontrez des difficultés, veuillez consulter la page</value>
+  </data>
+  <data name="Waiting" xml:space="preserve">
+    <value>Détermination de l'état de la session, veuillez patienter...</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Bienvenue au SRSP-Race-Manager.</value>
   </data>
 </root>

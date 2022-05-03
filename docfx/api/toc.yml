@@ -9,12 +9,8 @@
 - uid: RaceManager.Communication
   name: RaceManager.Communication
   items:
-  - uid: RaceManager.Communication.AsynchronousClient
-    name: AsynchronousClient
   - uid: RaceManager.Communication.AsyncServer
     name: AsyncServer
-  - uid: RaceManager.Communication.AsyncServer.Client
-    name: AsyncServer.Client
   - uid: RaceManager.Communication.Configuration
     name: Configuration
   - uid: RaceManager.Communication.IMessageType
@@ -23,8 +19,6 @@
     name: OMessageType
   - uid: RaceManager.Communication.ServerHub
     name: ServerHub
-  - uid: RaceManager.Communication.StateObject
-    name: StateObject
 - uid: RaceManager.DataProcessing.Files
   name: RaceManager.DataProcessing.Files
   items:
@@ -170,6 +164,10 @@
     name: BoatTypesManagement
   - uid: RaceManager.Pages.ErrorModel
     name: ErrorModel
+  - uid: RaceManager.Pages.LoginModel
+    name: LoginModel
+  - uid: RaceManager.Pages.LogoutModel
+    name: LogoutModel
 - uid: RaceManager.Reading
   name: RaceManager.Reading
   items:

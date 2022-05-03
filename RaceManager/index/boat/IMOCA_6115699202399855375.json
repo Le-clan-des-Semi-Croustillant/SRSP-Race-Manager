@@ -1,0 +1,18 @@
+{
+  "PolarFileList": [
+    {
+      "Name": "Pol",
+      "File": "./index/pol/Pol_222222.pol",
+      "ID": 222222
+    }
+  ],
+  "ID": 6115699202399855375,
+  "Name": "IMOCA",
+  "HullLength": 18.28,
+  "OverallLength": 5.85,
+  "HullWidth": 0.0,
+  "OverallWidth": 0.0,
+  "Draft": 29.0,
+  "AirDraft": 4.5,
+  "Weight": 42.0
+}

@@ -143,3 +143,5 @@ docfx/api/
 *.bak
 RaceManagerOld/**
 Releases/**
+RaceManager/index/data.json
+RaceManager/lcsc.pfx

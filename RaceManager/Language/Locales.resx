@@ -244,7 +244,7 @@
     <value>Name</value>
   </data>
   <data name="NewBoatType" xml:space="preserve">
-    <value>New boat type</value>
+    <value>New</value>
   </data>
   <data name="OverallLength" xml:space="preserve">
     <value>Overall length</value>
@@ -259,10 +259,10 @@
     <value>Save</value>
   </data>
   <data name="ServerNotRunning" xml:space="preserve">
-    <value>Server  not running</value>
+    <value>Server is not running</value>
   </data>
   <data name="ServerRunning" xml:space="preserve">
-    <value>Server running</value>
+    <value>Server is running</value>
   </data>
   <data name="Weight" xml:space="preserve">
     <value>Weight</value>
@@ -278,5 +278,59 @@
   </data>
   <data name="TurnOnTheServer" xml:space="preserve">
     <value>Turn on the server</value>
+  </data>
+  <data name="Github" xml:space="preserve">
+    <value>https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>https://le-clan-des-semi-croustillant.github.io/SRSP-Race-Manager/</value>
+  </data>
+  <data name="SeethisprojectonGithub" xml:space="preserve">
+    <value>See this project on Github</value>
+  </data>
+  <data name="Viewdocs" xml:space="preserve">
+    <value>View docs</value>
+  </data>
+  <data name="NewPolar" xml:space="preserve">
+    <value>New-polar</value>
+  </data>
+  <data name="AuthorsGroupe" xml:space="preserve">
+    <value>Authors :</value>
+  </data>
+  <data name="Currently" xml:space="preserve">
+    <value>You're currently logged with </value>
+  </data>
+  <data name="Error404" xml:space="preserve">
+    <value>Not found</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Log out</value>
+  </data>
+  <data name="NotAuthorized" xml:space="preserve">
+    <value>You're not authorized to reach this page. You need to log in.</value>
+  </data>
+  <data name="Nothing" xml:space="preserve">
+    <value>Sorry, there's nothing at this address.</value>
+  </data>
+  <data name="Pardon" xml:space="preserve">
+    <value>Sorry</value>
+  </data>
+  <data name="ProjectDocumentation" xml:space="preserve">
+    <value>You can find this project and its documentation through the</value>
+  </data>
+  <data name="RMDevelopedUnder" xml:space="preserve">
+    <value>This project is part of the Sailing Race Simulation Platform and is actively developed under</value>
+  </data>
+  <data name="Trouble" xml:space="preserve">
+    <value>If you have any trouble please check the</value>
+  </data>
+  <data name="Waiting" xml:space="preserve">
+    <value>Determining session state, please wait...</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome to the SRSP-Race-Manager.</value>
   </data>
 </root>

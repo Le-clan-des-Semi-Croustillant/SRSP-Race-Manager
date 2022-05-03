@@ -79,11 +79,29 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Authors :.
+        /// </summary>
+        public static string AuthorsGroupe {
+            get {
+                return ResourceManager.GetString("AuthorsGroupe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à English.
         /// </summary>
         public static string CurrentLanguage {
             get {
                 return ResourceManager.GetString("CurrentLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à You&apos;re currently logged with .
+        /// </summary>
+        public static string Currently {
+            get {
+                return ResourceManager.GetString("Currently", resourceCulture);
             }
         }
         
@@ -196,6 +214,15 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Not found.
+        /// </summary>
+        public static string Error404 {
+            get {
+                return ResourceManager.GetString("Error404", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à An error occurred while processing your request..
         /// </summary>
         public static string ErrorDesc {
@@ -210,6 +237,15 @@ namespace RaceManager.Language {
         public static string French {
             get {
                 return ResourceManager.GetString("French", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager.
+        /// </summary>
+        public static string Github {
+            get {
+                return ResourceManager.GetString("Github", resourceCulture);
             }
         }
         
@@ -367,6 +403,24 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Log in.
+        /// </summary>
+        public static string Login {
+            get {
+                return ResourceManager.GetString("Login", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Log out.
+        /// </summary>
+        public static string Logout {
+            get {
+                return ResourceManager.GetString("Logout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Manage boat types.
         /// </summary>
         public static string ManageBoatTypes {
@@ -385,11 +439,38 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à New boat type.
+        ///   Recherche une chaîne localisée semblable à New.
         /// </summary>
         public static string NewBoatType {
             get {
                 return ResourceManager.GetString("NewBoatType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à New-polar.
+        /// </summary>
+        public static string NewPolar {
+            get {
+                return ResourceManager.GetString("NewPolar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à You&apos;re not authorized to reach this page. You need to log in..
+        /// </summary>
+        public static string NotAuthorized {
+            get {
+                return ResourceManager.GetString("NotAuthorized", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Sorry, there&apos;s nothing at this address..
+        /// </summary>
+        public static string Nothing {
+            get {
+                return ResourceManager.GetString("Nothing", resourceCulture);
             }
         }
         
@@ -412,6 +493,15 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à https://le-clan-des-semi-croustillant.github.io/SRSP-Race-Manager/.
+        /// </summary>
+        public static string Page {
+            get {
+                return ResourceManager.GetString("Page", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Parameter.
         /// </summary>
         public static string Param {
@@ -430,6 +520,15 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Sorry.
+        /// </summary>
+        public static string Pardon {
+            get {
+                return ResourceManager.GetString("Pardon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Port {0} is unavailable.
         /// </summary>
         public static string PortUnavailable {
@@ -439,11 +538,29 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à You can find this project and its documentation through the.
+        /// </summary>
+        public static string ProjectDocumentation {
+            get {
+                return ResourceManager.GetString("ProjectDocumentation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Remove.
         /// </summary>
         public static string Remove {
             get {
                 return ResourceManager.GetString("Remove", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à This project is part of the Sailing Race Simulation Platform and is actively developed under.
+        /// </summary>
+        public static string RMDevelopedUnder {
+            get {
+                return ResourceManager.GetString("RMDevelopedUnder", resourceCulture);
             }
         }
         
@@ -466,6 +583,15 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à See this project on Github.
+        /// </summary>
+        public static string SeethisprojectonGithub {
+            get {
+                return ResourceManager.GetString("SeethisprojectonGithub", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Server configuration.
         /// </summary>
         public static string ServConf {
@@ -475,7 +601,7 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Server  not running.
+        ///   Recherche une chaîne localisée semblable à Server is not running.
         /// </summary>
         public static string ServerNotRunning {
             get {
@@ -484,7 +610,7 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Server running.
+        ///   Recherche une chaîne localisée semblable à Server is running.
         /// </summary>
         public static string ServerRunning {
             get {
@@ -520,6 +646,15 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à If you have any trouble please check the.
+        /// </summary>
+        public static string Trouble {
+            get {
+                return ResourceManager.GetString("Trouble", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Turn off the server.
         /// </summary>
         public static string TurnOffTheServer {
@@ -538,11 +673,38 @@ namespace RaceManager.Language {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à View docs.
+        /// </summary>
+        public static string Viewdocs {
+            get {
+                return ResourceManager.GetString("Viewdocs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Determining session state, please wait....
+        /// </summary>
+        public static string Waiting {
+            get {
+                return ResourceManager.GetString("Waiting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Weight.
         /// </summary>
         public static string Weight {
             get {
                 return ResourceManager.GetString("Weight", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Welcome to the SRSP-Race-Manager..
+        /// </summary>
+        public static string Welcome {
+            get {
+                return ResourceManager.GetString("Welcome", resourceCulture);
             }
         }
     }

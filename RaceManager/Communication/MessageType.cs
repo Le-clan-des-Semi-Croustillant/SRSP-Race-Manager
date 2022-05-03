@@ -1,7 +1,7 @@
 ﻿namespace RaceManager.Communication
 {
     /// <summary>
-    /// Type of message send and recive.
+    /// Type of message recive for an exchange with the client
     /// </summary>
     public enum IMessageType
     {
@@ -11,9 +11,12 @@
         BOATSELECT,
         BOATLISTREQUEST,
         ENDRACE,
-        RACELISTUPDATE // donner la liste des courses et aussi avec les liens avec les bateaux
+        RACELISTUPDATE
     }
 
+    /// <summary>
+    /// Not used here
+    /// </summary>
     public enum OMessageType
     {
         CONNECTION,

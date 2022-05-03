@@ -1,10 +1,10 @@
 ﻿namespace RaceManager.Reading
 {
+    /// <summary>
+    /// Field Abstract class
+    /// </summary>
     public abstract class AField
     {
-        // <summary>
-        // Abstract field
-        // </summary>
         public string Label;
         public bool isValid = true;
         public abstract bool StoreValue();

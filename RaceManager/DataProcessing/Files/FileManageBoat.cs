@@ -1,4 +1,5 @@
-﻿using RaceManager.Reading;
+﻿using Newtonsoft.Json;
+using RaceManager.Reading;
 
 namespace RaceManager.DataProcessing.Files
 {
@@ -7,7 +8,9 @@ namespace RaceManager.DataProcessing.Files
     /// </summary>
     public partial class FileManageData
     {
-        private static RMLogger _logger = new(LoggingLevel.DEBUG, "FileManageData");
+        //private static RMLogger _logger = new(LoggingLevel.DEBUG, "FileManageData");
+        private static RMLogger _logger = new("FileManageData");
+
         /// <summary>
         /// Add to BoatTypesList all boat already exist on local file
         /// </summary>
@@ -28,12 +31,21 @@ namespace RaceManager.DataProcessing.Files
         public static void UpdateBoatTypesList(string path)
         {
             string dataFile = File.ReadAllText(path);
+
             _logger.log(LoggingLevel.DEBUG, "UpdateBoatTypesList()", $"Read file {path} : " + dataFile);
-            var infoFile = System.Text.Json.JsonSerializer.Deserialize<BoatType>(dataFile);
-            if (!BoatType.BoatTypesList.Contains(infoFile))
+            try
             {
-                BoatType.BoatTypesList.Add(infoFile);
-                _logger.log(LoggingLevel.INFO, "UpdateAllBoatTypesList", "New boat type added from file");
+                var infoFile = JsonConvert.DeserializeObject<BoatType>(dataFile);
+
+                if (!BoatType.BoatTypesList.Contains(infoFile))
+                {
+                    BoatType.BoatTypesList.Add(infoFile);
+                    _logger.log(LoggingLevel.INFO, "UpdateAllBoatTypesList", "New boat type added from file");
+                }
+            }
+            catch (System.Exception e)
+            {
+                _logger.log(LoggingLevel.ERROR, "UpdateAllBoatTypesList", $"Error during read file {path} : " + e.Message);
             }
         }
 
@@ -57,23 +69,18 @@ namespace RaceManager.DataProcessing.Files
         /// <param name="DataBoat"> all information of boat</param>
         public static void CreateBoatJson(BoatType DataBoat)
         {
-            //var DataBoat = new BoatType()
-            //{
-            //    Name = Name,
-            //    HullLength = HullLength,
-            //    OverallLength = OverallLength,
-            //    HullWidth = HullWidth,
-            //    OverallWidth = OverallWidth,
-            //    Draft = Draft,
-            //    AirDraft = AirDraft,
-            //    Weight = Weight,
-            //    Polar = polar
-            //};
             string pathFile = pathDataBoat + DataBoat.Name + "_" + DataBoat.ID + ".json";
-            string jsonString = System.Text.Json.JsonSerializer.Serialize(DataBoat);
+
+            DirectoryInfo di = new DirectoryInfo(pathDataBoat);
+            var directories = di.GetFiles("*" + DataBoat.ID + ".json", SearchOption.AllDirectories);
+            foreach (FileInfo d in directories)
+            {
+                File.Delete(d.FullName);
+            }
+            string jsonString = JsonConvert.SerializeObject(DataBoat);
             File.Create(pathFile).Close();
             WriteInFile.WriteFilePath(pathFile, jsonString);
-            UpdateJsonData();
+            //UpdateJsonData();
         }
     }
 }

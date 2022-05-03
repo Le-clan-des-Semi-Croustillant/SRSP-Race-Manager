@@ -4,7 +4,11 @@ using System.Net.Sockets;
 using System.Threading;
 using System.Text;
 
-namespace RaceManager.Communication
+using Communication.DataProcessing.Files;
+using Communication.DataProcessing;
+using Communication.DataProcessing.Json;
+
+namespace Communication
 {
     //public class ClientTest
     //{
@@ -45,7 +49,7 @@ namespace RaceManager.Communication
         // The response from the remote device.  
         private static String response = String.Empty;
 
-        private static void StartClient(int port, int num)
+        private static void StartClient(string ip, int port, IMessageType info)
         {
             // Connect to a remote device.  
             try
@@ -53,7 +57,7 @@ namespace RaceManager.Communication
                 // Establish the remote endpoint for the socket.  
                 // The name of the
                 // remote device is "host.contoso.com".  
-                IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());
+                IPHostEntry ipHostInfo = Dns.Resolve(ip);
                 IPAddress ipAddress = ipHostInfo.AddressList[0];
                 IPEndPoint remoteEP = new IPEndPoint(ipAddress, port);
 
@@ -108,23 +112,33 @@ namespace RaceManager.Communication
                 //string NamePlayer = "Sky";
 
                 //string test = JsonParse.JsonSerialiseConnection(TypeMessage, Id, IdGame, NMEA, Boat, IdPlayer, NamePlayer);
-                var serialiseJsonInfo = new JsonIConnection
+                if (info == IMessageType.BOATLISTREQUEST)
                 {
-                    TypeMessage = IMessageType.BOATLISTREQUEST,
-                };
-                string SendMessage = System.Text.Json.JsonSerializer.Serialize(serialiseJsonInfo);
+                    var serialiseJsonInfo = new JsonIConnection
+                    {
+                        TypeMessage = IMessageType.BOATLISTREQUEST,
+                    };
+                    
+                    string SendMessage = JsonConvert.SerializeObject(serialiseJsonInfo);
+                    
+                    Console.WriteLine("Message send : " + SendMessage);
+                    Send(client, SendMessage);
+                    //Send(client, "This is a test<EOF>");
+                    sendDone.WaitOne();
 
-                Console.WriteLine("Message send : " + SendMessage);
-                Send(client, SendMessage);
-                //Send(client, "This is a test<EOF>");
-                sendDone.WaitOne();
+                    // Receive the response from the remote device.  
+                    Receive(client);
+                    receiveDone.WaitOne();
 
-                // Receive the response from the remote device.  
-                Receive(client);
-                receiveDone.WaitOne();
+                    // Write the response to the console.  
+                    Console.WriteLine("Response received : {0}\n", response);
 
-                // Write the response to the console.  
-                Console.WriteLine("Response received : {0}\n", response);
+                    FileManageData.SaveData(response);
+                }
+
+
+
+
 
                 // Release the socket.  
                 client.Shutdown(SocketShutdown.Both);
@@ -254,10 +268,13 @@ namespace RaceManager.Communication
         {
             //for (int i = 0; i < 6; i++)
             //{
-                StartClient(45879, 0);
-                Thread.Sleep(3000);
+            string ip = Dns.GetHostName();
+            int port = 45879;
+            IMessageType info = IMessageType.BOATLISTREQUEST;
+            StartClient(ip, port ,info);
+            Thread.Sleep(3000);
             //}
-            Thread.Sleep(10000);
+            Thread.Sleep(100000);
             return 0;
         }
     }
