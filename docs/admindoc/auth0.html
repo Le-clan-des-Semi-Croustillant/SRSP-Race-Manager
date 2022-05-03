@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Serveur API documentation </title>
+    <title>Authentication provider (Auth0) </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Serveur API documentation ">
-    <meta name="generator" content="docfx 2.59.2.0">
+    <meta name="title" content="Authentication provider (Auth0) ">
+    <meta name="generator" content="docfx 2.59.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -84,8 +84,14 @@
                     <li class="">
                       <a href="intro.html" title="Introduction" class="">Introduction</a>
                     </li>
+                    <li class="">
+                      <a href="deployment.html" title="Deployment" class="">Deployment</a>
+                    </li>
                     <li class="active">
-                      <a href="serverapi.html" title="Server Specification" class="active">Server Specification</a>
+                      <a href="auth0.html" title="Authentication" class="active">Authentication</a>
+                    </li>
+                    <li class="">
+                      <a href="logger.html" title="Logger" class="">Logger</a>
                     </li>
                   </ul>        </div>
               </div>
@@ -95,41 +101,43 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="serveur-api-documentation">Serveur API documentation</h1>
+<h1 id="authentication-provider-auth0">Authentication provider (Auth0)</h1>
 
-<p><a href="../misc/API_serveur.zip">Here is some specifications for understanding I/O of the tcp socket of the RaceManager.</a></p>
-<h2 id="overview">Overview</h2>
-<table>
-<thead>
-<tr>
-<th>MessageType Entrée</th>
-<th>description</th>
-<th>Json reçu</th>
-<th>MessageType Sortie</th>
-<th>description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>BOATLISTREQUEST</td>
-<td>Reçois une demande pour la liste des bateaux et des polaires existants</td>
-<td><code>{ &quot;TypeMessage&quot; : &quot;BOATLISTREQUEST&quot; }</code></td>
-<td>BOATLIST</td>
-<td>Envoie du fichier data.json et des fichiers contenus dans boat et pol</td>
-</tr>
-<tr>
-<td>RACELISTUPDATE</td>
-<td>Reçois une demande pour la liste des courses</td>
-<td><code>{ &quot;TypeMessage&quot; : &quot;RACELISTUPDATE&quot; }</code></td>
-<td>RACELIST</td>
-<td>Envoie du fichier data.json et des fichiers contenus dans race</td>
-</tr>
-</tbody>
-</table>
-<!-- | MessageType Entrée |  Json reçu |  MessageType Sortie |
-| ----------- | ----------- | ----------- |
-| BOATLISTREQUEST | { "TypeMessage" : "BOATLISTREQUEST" } |  BOATLIST |
-| RACELISTUPDATE  | { "TypeMessage" : "RACELISTUPDATE" }  |  RACELIST | -->
+<h2 id="create-your-own-authentication-provider">Create your own authentication provider</h2>
+<ol>
+<li><p><a href="https://auth0.com/signup">Create a new Auth0 account</a> if you don't have one</p>
+</li>
+<li><p><a href="https://manage.auth0.com/#/applications">Create a new app </a> (regular wab application) in your Auth0 account with the name you want to use for your application (we recommend naming your application with the name of your domain).</p>
+</li>
+<li><p>Go in your new app settings and note the <code>Client ID</code> and <code>Domain</code>, you will need them later.</p>
+</li>
+<li><p>Still in your new app settings, go to Application URL and enter callbacks urls (ex: <code>http://localhost:5078/callback</code>) and logout urls (ex: <code>http://localhost:5078/</code>) and save settings.</p>
+</li>
+<li><p>Create a new API with name <code>rm-perm</code> and <code>https://racemanager</code> as identifier.</p>
+</li>
+<li><p>Go in the API settings and turn on <code>Enable RBAC</code> and <code>Add Permissions in the Access Token</code></p>
+</li>
+<li><p>Add a new permission in your API, enter <code>access:rm</code> as scope and the description you want.</p>
+</li>
+<li><p>Go in User Management section then in Roles. Create a new one named <code>RaceManager</code></p>
+</li>
+<li><p>Click on this new role and go in permission section, then add permission and select <code>access:rm</code> of <code>rm-perm</code></p>
+</li>
+</ol>
+<h2 id="use-the-brand-new-authentication-provider">Use the brand new authentication provider</h2>
+<ol>
+<li>Go in <code>appsettings.json</code> and add these lines</li>
+</ol>
+<pre><code class="lang-json">&quot;Auth0&quot;: {
+	&quot;Domain&quot;: &quot;&lt;THE AUTH0 DOMAINE NAME&gt;&quot;,
+    &quot;ClientId&quot;: &quot;THE AUTH0 CLIENT ID&quot;,
+    &quot;Audience&quot;: &quot;https://racemanager&quot;
+  }
+</code></pre>
+<ol start="2">
+<li>In the Auth0 database you can attach the <code>RaceManager</code> to any user for giving administrator access to the Race Manager.</li>
+</ol>
+<p>See the <a href="https://benjaminvertonghen.medium.com/role-based-acces-control-with-blazor-and-auth0-i-ffd9656e6f01">auth0 documentation</a> for more information about the authentication provider.</p>
 </article>
           </div>
           
@@ -138,7 +146,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/blob/polarfiles/docfx/admindoc/serverapi.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/blob/polarfiles/docfx/admindoc/auth0.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

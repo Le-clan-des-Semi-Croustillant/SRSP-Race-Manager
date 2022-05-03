@@ -13,6 +13,28 @@ references:
   commentId: N:RaceManager.Communication
   fullName: RaceManager.Communication
   nameWithType: RaceManager.Communication
+- uid: RaceManager.Communication.AsynchronousClient
+  name: AsynchronousClient
+  href: api/RaceManager.Communication.AsynchronousClient.html
+  commentId: T:RaceManager.Communication.AsynchronousClient
+  fullName: RaceManager.Communication.AsynchronousClient
+  nameWithType: AsynchronousClient
+- uid: RaceManager.Communication.AsynchronousClient.Main(System.String[])
+  name: Main(String[])
+  href: api/RaceManager.Communication.AsynchronousClient.html#RaceManager_Communication_AsynchronousClient_Main_System_String___
+  commentId: M:RaceManager.Communication.AsynchronousClient.Main(System.String[])
+  name.vb: Main(String())
+  fullName: RaceManager.Communication.AsynchronousClient.Main(System.String[])
+  fullName.vb: RaceManager.Communication.AsynchronousClient.Main(System.String())
+  nameWithType: AsynchronousClient.Main(String[])
+  nameWithType.vb: AsynchronousClient.Main(String())
+- uid: RaceManager.Communication.AsynchronousClient.Main*
+  name: Main
+  href: api/RaceManager.Communication.AsynchronousClient.html#RaceManager_Communication_AsynchronousClient_Main_
+  commentId: Overload:RaceManager.Communication.AsynchronousClient.Main
+  isSpec: "True"
+  fullName: RaceManager.Communication.AsynchronousClient.Main
+  nameWithType: AsynchronousClient.Main
 - uid: RaceManager.Communication.AsyncServer
   name: AsyncServer
   href: api/RaceManager.Communication.AsyncServer.html
@@ -25,6 +47,108 @@ references:
   commentId: F:RaceManager.Communication.AsyncServer.allDone
   fullName: RaceManager.Communication.AsyncServer.allDone
   nameWithType: AsyncServer.allDone
+- uid: RaceManager.Communication.AsyncServer.Client
+  name: AsyncServer.Client
+  href: api/RaceManager.Communication.AsyncServer.Client.html
+  commentId: T:RaceManager.Communication.AsyncServer.Client
+  fullName: RaceManager.Communication.AsyncServer.Client
+  nameWithType: AsyncServer.Client
+- uid: RaceManager.Communication.AsyncServer.Client.#ctor
+  name: Client()
+  href: api/RaceManager.Communication.AsyncServer.Client.html#RaceManager_Communication_AsyncServer_Client__ctor
+  commentId: M:RaceManager.Communication.AsyncServer.Client.#ctor
+  fullName: RaceManager.Communication.AsyncServer.Client.Client()
+  nameWithType: AsyncServer.Client.Client()
+- uid: RaceManager.Communication.AsyncServer.Client.#ctor*
+  name: Client
+  href: api/RaceManager.Communication.AsyncServer.Client.html#RaceManager_Communication_AsyncServer_Client__ctor_
+  commentId: Overload:RaceManager.Communication.AsyncServer.Client.#ctor
+  isSpec: "True"
+  fullName: RaceManager.Communication.AsyncServer.Client.Client
+  nameWithType: AsyncServer.Client.Client
+- uid: RaceManager.Communication.AsyncServer.Client.buffer
+  name: buffer
+  href: api/RaceManager.Communication.AsyncServer.Client.html#RaceManager_Communication_AsyncServer_Client_buffer
+  commentId: F:RaceManager.Communication.AsyncServer.Client.buffer
+  fullName: RaceManager.Communication.AsyncServer.Client.buffer
+  nameWithType: AsyncServer.Client.buffer
+- uid: RaceManager.Communication.AsyncServer.Client.BufferSize
+  name: BufferSize
+  href: api/RaceManager.Communication.AsyncServer.Client.html#RaceManager_Communication_AsyncServer_Client_BufferSize
+  commentId: F:RaceManager.Communication.AsyncServer.Client.BufferSize
+  fullName: RaceManager.Communication.AsyncServer.Client.BufferSize
+  nameWithType: AsyncServer.Client.BufferSize
+- uid: RaceManager.Communication.AsyncServer.Client.Handler
+  name: Handler
+  href: api/RaceManager.Communication.AsyncServer.Client.html#RaceManager_Communication_AsyncServer_Client_Handler
+  commentId: P:RaceManager.Communication.AsyncServer.Client.Handler
+  fullName: RaceManager.Communication.AsyncServer.Client.Handler
+  nameWithType: AsyncServer.Client.Handler
+- uid: RaceManager.Communication.AsyncServer.Client.Handler*
+  name: Handler
+  href: api/RaceManager.Communication.AsyncServer.Client.html#RaceManager_Communication_AsyncServer_Client_Handler_
+  commentId: Overload:RaceManager.Communication.AsyncServer.Client.Handler
+  isSpec: "True"
+  fullName: RaceManager.Communication.AsyncServer.Client.Handler
+  nameWithType: AsyncServer.Client.Handler
+- uid: RaceManager.Communication.AsyncServer.Client.IpAddress
+  name: IpAddress
+  href: api/RaceManager.Communication.AsyncServer.Client.html#RaceManager_Communication_AsyncServer_Client_IpAddress
+  commentId: P:RaceManager.Communication.AsyncServer.Client.IpAddress
+  fullName: RaceManager.Communication.AsyncServer.Client.IpAddress
+  nameWithType: AsyncServer.Client.IpAddress
+- uid: RaceManager.Communication.AsyncServer.Client.IpAddress*
+  name: IpAddress
+  href: api/RaceManager.Communication.AsyncServer.Client.html#RaceManager_Communication_AsyncServer_Client_IpAddress_
+  commentId: Overload:RaceManager.Communication.AsyncServer.Client.IpAddress
+  isSpec: "True"
+  fullName: RaceManager.Communication.AsyncServer.Client.IpAddress
+  nameWithType: AsyncServer.Client.IpAddress
+- uid: RaceManager.Communication.AsyncServer.Client.Listener
+  name: Listener
+  href: api/RaceManager.Communication.AsyncServer.Client.html#RaceManager_Communication_AsyncServer_Client_Listener
+  commentId: P:RaceManager.Communication.AsyncServer.Client.Listener
+  fullName: RaceManager.Communication.AsyncServer.Client.Listener
+  nameWithType: AsyncServer.Client.Listener
+- uid: RaceManager.Communication.AsyncServer.Client.Listener*
+  name: Listener
+  href: api/RaceManager.Communication.AsyncServer.Client.html#RaceManager_Communication_AsyncServer_Client_Listener_
+  commentId: Overload:RaceManager.Communication.AsyncServer.Client.Listener
+  isSpec: "True"
+  fullName: RaceManager.Communication.AsyncServer.Client.Listener
+  nameWithType: AsyncServer.Client.Listener
+- uid: RaceManager.Communication.AsyncServer.Client.Nickname
+  name: Nickname
+  href: api/RaceManager.Communication.AsyncServer.Client.html#RaceManager_Communication_AsyncServer_Client_Nickname
+  commentId: P:RaceManager.Communication.AsyncServer.Client.Nickname
+  fullName: RaceManager.Communication.AsyncServer.Client.Nickname
+  nameWithType: AsyncServer.Client.Nickname
+- uid: RaceManager.Communication.AsyncServer.Client.Nickname*
+  name: Nickname
+  href: api/RaceManager.Communication.AsyncServer.Client.html#RaceManager_Communication_AsyncServer_Client_Nickname_
+  commentId: Overload:RaceManager.Communication.AsyncServer.Client.Nickname
+  isSpec: "True"
+  fullName: RaceManager.Communication.AsyncServer.Client.Nickname
+  nameWithType: AsyncServer.Client.Nickname
+- uid: RaceManager.Communication.AsyncServer.Client.Port
+  name: Port
+  href: api/RaceManager.Communication.AsyncServer.Client.html#RaceManager_Communication_AsyncServer_Client_Port
+  commentId: P:RaceManager.Communication.AsyncServer.Client.Port
+  fullName: RaceManager.Communication.AsyncServer.Client.Port
+  nameWithType: AsyncServer.Client.Port
+- uid: RaceManager.Communication.AsyncServer.Client.Port*
+  name: Port
+  href: api/RaceManager.Communication.AsyncServer.Client.html#RaceManager_Communication_AsyncServer_Client_Port_
+  commentId: Overload:RaceManager.Communication.AsyncServer.Client.Port
+  isSpec: "True"
+  fullName: RaceManager.Communication.AsyncServer.Client.Port
+  nameWithType: AsyncServer.Client.Port
+- uid: RaceManager.Communication.AsyncServer.Client.sb
+  name: sb
+  href: api/RaceManager.Communication.AsyncServer.Client.html#RaceManager_Communication_AsyncServer_Client_sb
+  commentId: F:RaceManager.Communication.AsyncServer.Client.sb
+  fullName: RaceManager.Communication.AsyncServer.Client.sb
+  nameWithType: AsyncServer.Client.sb
 - uid: RaceManager.Communication.AsyncServer.IsRunning
   name: IsRunning()
   href: api/RaceManager.Communication.AsyncServer.html#RaceManager_Communication_AsyncServer_IsRunning
@@ -347,6 +471,36 @@ references:
   isSpec: "True"
   fullName: RaceManager.Communication.ServerHub.UpdateStatus
   nameWithType: ServerHub.UpdateStatus
+- uid: RaceManager.Communication.StateObject
+  name: StateObject
+  href: api/RaceManager.Communication.StateObject.html
+  commentId: T:RaceManager.Communication.StateObject
+  fullName: RaceManager.Communication.StateObject
+  nameWithType: StateObject
+- uid: RaceManager.Communication.StateObject.buffer
+  name: buffer
+  href: api/RaceManager.Communication.StateObject.html#RaceManager_Communication_StateObject_buffer
+  commentId: F:RaceManager.Communication.StateObject.buffer
+  fullName: RaceManager.Communication.StateObject.buffer
+  nameWithType: StateObject.buffer
+- uid: RaceManager.Communication.StateObject.BufferSize
+  name: BufferSize
+  href: api/RaceManager.Communication.StateObject.html#RaceManager_Communication_StateObject_BufferSize
+  commentId: F:RaceManager.Communication.StateObject.BufferSize
+  fullName: RaceManager.Communication.StateObject.BufferSize
+  nameWithType: StateObject.BufferSize
+- uid: RaceManager.Communication.StateObject.sb
+  name: sb
+  href: api/RaceManager.Communication.StateObject.html#RaceManager_Communication_StateObject_sb
+  commentId: F:RaceManager.Communication.StateObject.sb
+  fullName: RaceManager.Communication.StateObject.sb
+  nameWithType: StateObject.sb
+- uid: RaceManager.Communication.StateObject.workSocket
+  name: workSocket
+  href: api/RaceManager.Communication.StateObject.html#RaceManager_Communication_StateObject_workSocket
+  commentId: F:RaceManager.Communication.StateObject.workSocket
+  fullName: RaceManager.Communication.StateObject.workSocket
+  nameWithType: StateObject.workSocket
 - uid: RaceManager.DataProcessing.Files
   name: RaceManager.DataProcessing.Files
   href: api/RaceManager.DataProcessing.Files.html

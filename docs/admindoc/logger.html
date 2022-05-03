@@ -5,16 +5,16 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Welcome to the SRSP : Race Manager documentation </title>
+    <title>Logger </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Welcome to the SRSP : Race Manager documentation ">
+    <meta name="title" content="Logger ">
     <meta name="generator" content="docfx 2.59.0.0">
     
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/docfx.vendor.css">
-    <link rel="stylesheet" href="styles/docfx.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <meta property="docfx:navrel" content="toc">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
     <meta property="docfx:tocrel" content="toc">
     
     
@@ -33,8 +33,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="index.html">
-                <img id="logo" class="svg" src="logo.svg" alt="">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -46,13 +46,13 @@
                 
                 <ul class="nav level1 navbar-nav">
                       <li>
-                          <a href="userdoc/intro.html" title="User Documentation">User Documentation</a>
+                          <a href="../userdoc/intro.html" title="User Documentation">User Documentation</a>
                       </li>
                       <li>
-                          <a href="admindoc/intro.html" title="Admin Documentation">Admin Documentation</a>
+                          <a href="../admindoc/intro.html" title="Admin Documentation">Admin Documentation</a>
                       </li>
                       <li>
-                          <a href="api/index.html" title="Developer Documentation">Developer Documentation</a>
+                          <a href="../api/index.html" title="Developer Documentation">Developer Documentation</a>
                       </li>
                 </ul>    </div>
           </div>
@@ -67,12 +67,55 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        <div class="article row grid">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="intro.html" title="Introduction" class="">Introduction</a>
+                    </li>
+                    <li class="">
+                      <a href="deployment.html" title="Deployment" class="">Deployment</a>
+                    </li>
+                    <li class="">
+                      <a href="auth0.html" title="Authentication" class="">Authentication</a>
+                    </li>
+                    <li class="active">
+                      <a href="logger.html" title="Logger" class="active">Logger</a>
+                    </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="welcome-to-the-srsp--race-manager-documentation">Welcome to the <em>SRSP : Race Manager</em> documentation</h1>
+<h1 id="logger">Logger</h1>
 
-<p>Checkout the user documentation or the developer documentation.</p>
+<p>The logger is used to log the application. It is used to log the errors and the information.
+Into the <code>appsettings.json</code> you can set several parameters, you can set loggers levels for example.</p>
+<pre><code class="lang-json">&quot;Logging&quot;: {
+	&quot;LogLevel&quot;: {
+	// The values can be: &quot;Debug&quot;, &quot;Information&quot;, &quot;Warning&quot;, &quot;Error&quot;
+	&quot;Default&quot;: &quot;Warning&quot;, // Default log level for all loggers if not specified
+	&quot;Program&quot;: &quot;Information&quot;, // Log level for the logger &quot;Program&quot; (initialisation of the application)) 
+	&quot;Microsoft.AspNetCore&quot;: &quot;Warning&quot;
+	&quot;AsyncServer&quot;: &quot;Information&quot;, // Log level for the &quot;Server&quot;
+	// {...}
+	}
+}
+</code></pre>
 </article>
           </div>
           
@@ -81,7 +124,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/blob/polarfiles/docfx/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/blob/polarfiles/docfx/admindoc/logger.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -134,11 +177,11 @@
             </div>
           </div>
         </div>
-        <script type="text/javascript" src="styles/toggle-theme.js"></script>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
       </footer>    </div>
     
-    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="styles/docfx.js"></script>
-    <script type="text/javascript" src="styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

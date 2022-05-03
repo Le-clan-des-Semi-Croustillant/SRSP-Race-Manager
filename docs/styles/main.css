@@ -455,7 +455,9 @@ input:checked + .slider:before {
     width: 18%;
   }
   .article.grid-right {
-    margin-left: 19%;
+    margin-left: 22%;
+    margin-right: 22%;
+
   }
   .sideaffix {
     width: 11.5%;

@@ -1,4 +1,8 @@
 - name: Introduction
   href: intro.md
-- name: Server Specification
-  href: serverapi.md
+- name: Deployment
+  href: deployment.md
+- name: Authentication
+  href: auth0.md
+- name: Logger
+  href: logger.md

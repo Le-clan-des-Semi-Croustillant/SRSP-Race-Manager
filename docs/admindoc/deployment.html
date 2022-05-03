@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> </title>
+    <title>Deployment </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" ">
+    <meta name="title" content="Deployment ">
     <meta name="generator" content="docfx 2.59.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -85,23 +85,14 @@
                       <a href="intro.html" title="Introduction" class="">Introduction</a>
                     </li>
                     <li class="active">
-                      <a href="authentification.html" title="Authentification" class="active">Authentification</a>
+                      <a href="deployment.html" title="Deployment" class="active">Deployment</a>
                     </li>
                     <li class="">
-                      <a href="add_edit_delete_boat_types.html" title="Add, Edit, Delete boat types" class="">Add, Edit, Delete boat types</a>
+                      <a href="auth0.html" title="Authentication" class="">Authentication</a>
                     </li>
                     <li class="">
-                      <span class="expand-stub"></span>
-                      <a class="">Other options</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="configuration.html" title="Configuration" class="">Configuration</a>
-                          </li>
-                          <li class="">
-                            <a href="documentation_and_code.html" title="Documentation and Code" class="">Documentation and Code</a>
-                          </li>
-                        </ul>  </li>
+                      <a href="logger.html" title="Logger" class="">Logger</a>
+                    </li>
                   </ul>        </div>
               </div>
             </div>
@@ -110,11 +101,77 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="deployment">Deployment</h1>
 
-<p>In order to use the Race Manager, you have to click on login and if you don't have an account you have to register, which will send a registration request to the administrator.
-<img src="../images/connexion.PNG" alt="Alt text"></p>
-<p>The administrator will have to validate the registration and you will have to confirm your account with the confirmation email.
-Once this is done, you will have to log out and log in again to be able to fully use the Race Manager.</p>
+<p>Available platforms : Windows, Linux (x86 and armhf)</p>
+<h2 id="local-usage-">Local usage :</h2>
+<p>Just launch the exectuable in the executable directory as a normal app, use <code>--urls &quot;http://localhost:5000&quot;</code> if you want to specify the port.</p>
+<h2 id="linux-server-">Linux Server :</h2>
+<ol>
+<li>Install .NET on linux <a href="https://docs.microsoft.com/fr-fr/dotnet/core/install/linux">https://docs.microsoft.com/fr-fr/dotnet/core/install/linux</a></li>
+<li>Unzip the <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/releases/">last releases</a> to <code>/var/www/dotnet/RaceManager/</code></li>
+<li>You can deploy the application by using a service or by the normal way as detailed below</li>
+<li><a href="auth0.html">Set the authentication authority with Auth0</a></li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you want to deploy the application on arm64 linux, you have to install armhf dependancies.</p>
+</div>
+<h3 id="deploy-using-a-service">Deploy using a service</h3>
+<ul>
+<li>Create the service file
+<ul>
+<li><p>sudo nano /etc/systemd/system/RaceManager.service</p>
+<pre><code class="lang-sh">[Unit]
+Description=Example .NET Web API App running on CentOS 7
+
+[Service]
+WorkingDirectory=/var/www/dotnet
+ExecStart=/var/www/dotnet/RaceManager --urls &quot;{host}:{port}&quot;
+#Replace {host} and the {port} by the address you want (http://localhost:5000 or http://example.com:5000) https to configure but possible to launch it in https
+Restart=always
+# Restart service after 10 seconds if the dotnet service crashes:
+RestartSec=10
+KillSignal=SIGINT
+SyslogIdentifier=dotnet-example
+User=root
+Environment=ASPNETCORE_ENVIRONMENT=Production
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+</li>
+<li><p>Run the following commands to start the service:</p>
+<pre><code class="lang-sh">sudo systemctl enable RaceManager.service #to start the service at system startup
+</code></pre>
+<pre><code class="lang-sh">sudo systemctl daemon-reload #to reload services
+</code></pre>
+<pre><code class="lang-sh">sudo systemctl start RaceManager.service #to start the service
+</code></pre>
+<pre><code class="lang-sh">sudo systemctl status RaceManager.service #to see the status of the service
+</code></pre>
+</li>
+<li><p>To stop the service :</p>
+<pre><code class="lang-sh">sudo systemctl kill RaceManager.service #to force stop the service
+</code></pre>
+<pre><code class="lang-sh">sudo systemctl stop RaceManager.service #to stop the service
+</code></pre>
+</li>
+<li><p>Pour désactiver le service :</p>
+<pre><code class="lang-sh">sudo systemctl disable RaceManager.service #to disable the service
+</code></pre>
+</li>
+<li><p>To manually launch the Race Manager:</p>
+<pre><code class="lang-sh">/var/www/dotnet/RaceManager --urls &quot;{host}:{port}&quot; #launch this commant to /var/www/dotnet/RaceManager
+#Replace {host} and the {port} by the address you want (http://localhost:5000 or http://example.com:5000) https to configure but possible to launch it in https
+</code></pre>
+<p>He exist this tutorial for more information about the installation on linux and with Ngix/apache <a href="https://docs.microsoft.com/fr-fr/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-6.0">https://docs.microsoft.com/fr-fr/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-6.0</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="deploy-on-a-windows-server-">Deploy on a Windows server :</h2>
+<p>See the <a href="https://docs.microsoft.com/fr-fr/aspnet/core/host-and-deploy/?view=aspnetcore-6.0">Microsoft documentation</a></p>
 </article>
           </div>
           
@@ -123,7 +180,7 @@ Once this is done, you will have to log out and log in again to be able to fully
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/blob/polarfiles/docfx/userdoc/authentification.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/blob/polarfiles/docfx/admindoc/deployment.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
