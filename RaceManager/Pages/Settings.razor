@@ -6,7 +6,7 @@
 @using RaceManager.Reading
 @using RaceManager.Communication
 @inject NavigationManager navigationManager
-@attribute [Authorize]
+@attribute [Authorize(Roles = "RaceManager")]
 
 <PageTitle>Settings</PageTitle>
 <div class="parent">
