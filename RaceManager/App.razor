@@ -3,18 +3,10 @@
 
     <Router AppAssembly="@typeof(App).Assembly">
         <Found Context="routeData">
-            <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)">
-                <Authorizing>
-                    <p>@Locales.Waiting</p>
-                </Authorizing>
-                <NotAuthorized>
-                    <h1>@Locales.Pardon</h1>
-                    <p>@Locales.NotAuthorized</p>
-                </NotAuthorized>
-            </AuthorizeRouteView>
 
-            @*<RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />*@
-            <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+
+            <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+            @*<FocusOnNavigate RouteData="@routeData" Selector="h1" />*@
 
 
         </Found>
