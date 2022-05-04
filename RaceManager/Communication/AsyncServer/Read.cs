@@ -98,7 +98,7 @@ namespace RaceManager.Communication
                     //close handler socket
                     //handler.Shutdown(SocketShutdown.Both);
                     handler.Close();
-                    handler.Dispose();
+                    //handler.Dispose();
                 }
                 else
                 {
