@@ -3,8 +3,12 @@
 
 namespace RaceManager.Security
 {
+    /// <summary>
+    ///  A SignalR hub for the homemade authentication service.
+    /// </summary>
     public class LoginHub : Hub
     {
+
         private static RMLogger logger = new RMLogger("LoginHub");
         private static IConfiguration Configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json", optional: true, reloadOnChange: false)
     .Build();
@@ -32,6 +36,9 @@ namespace RaceManager.Security
             return base.OnConnectedAsync();
         }
 
+        /// <summary>
+        /// Return to the client if the provided password is correct.
+        /// </summary>
         public async Task IsPasswordMatching(string password)
         {
             if (password == AdminPassword)

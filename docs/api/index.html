@@ -344,12 +344,6 @@
                           <li class="">
                             <a href="RaceManager.Pages.ErrorModel.html" title="ErrorModel" class="">ErrorModel</a>
                           </li>
-                          <li class="">
-                            <a href="RaceManager.Pages.LoginModel.html" title="LoginModel" class="">LoginModel</a>
-                          </li>
-                          <li class="">
-                            <a href="RaceManager.Pages.LogoutModel.html" title="LogoutModel" class="">LogoutModel</a>
-                          </li>
                         </ul>  </li>
                     <li class="">
                       <span class="expand-stub"></span>
@@ -372,6 +366,15 @@
                             <a href="RaceManager.Reading.Polar.html" title="Polar" class="">Polar</a>
                           </li>
                         </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="RaceManager.Security.html" title="RaceManager.Security" class="">RaceManager.Security</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="RaceManager.Security.LoginHub.html" title="LoginHub" class="">LoginHub</a>
+                          </li>
+                        </ul>  </li>
                   </ul>        </div>
               </div>
             </div>
@@ -384,8 +387,30 @@
 
 <p>At your left, you can find the API documentation. It is generated from the source code with docfx. It contains the description of the source code and the documentation of the functions.</p>
 <h2 id="environment-and-dependencies">Environment and dependencies</h2>
-<p>This project was made on Visual Studio 2022 using .Net 6.0 .
+<p>This project was made on Visual Studio 2022 using .Net 6.0 as a Blazor Server project (ASP.Net), you will need ASP.Net Core package.
 Authentication provider is auth0 (<a href="https://auth0.com/">https://auth0.com/</a>).</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>In order to host the Race Manager using auth0, you need to configure the authentication provider. see <a href="../admindoc/auth0.html">Authentication</a></p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>There is a version without the authentication provider, you can use it to test the application or for local utilisation.</p>
+</div>
+<h2 id="documentation">Documentation</h2>
+<p>The documentation is generated from the source code with <a href="https://dotnet.github.io/docfx/index.html">docfx</a>. It contains the description of the source code and the documentation of the functions. In the docfx folder you will find 3 scripts:</p>
+<ul>
+<li><code>installDocfx.ps1</code> : to install docfx (administrator rights required)</li>
+<li><code>generateDocs.ps1</code> : to generate the documentation</li>
+<li><code>cleanObj.ps1</code> : to clean the obj folder</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>- If any script fails, you can try to past the content of this script in powershell<br>
+- If for some reason you can't install docfx, you can <a href="https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html#2-use-docfx-as-a-command-line-tool">install docfx manually</a>.<br>
+- If generatedDocs.ps1 fails, you can try to clean the obj folder with cleanObj.ps1.<br>
+- If you have any question, please consider the official documentation of <a href="https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html">docfx</a>.</p>
+</div>
 <h2 id="serveur-api-documentation">Serveur API documentation</h2>
 <p><a href="../misc/API_serveur.zip">Here is some specifications for understanding I/O of the tcp socket of the RaceManager.</a></p>
 <table>
@@ -409,13 +434,19 @@ Authentication provider is auth0 (<a href="https://auth0.com/">https://auth0.com
 </tbody>
 </table>
 <h2 id="development-choices">Development choices</h2>
-<p>We chose to develop the back-end and front-end of the Race Manager but also the Simple simulator with the C# language. For the simple reason that it allows us to help a colleague blocking on a point more easily, indeed if the server part of the Race Manager had been made in Java. Then, it would have been more difficult for us to work efficiently on the Race Manager interface (C#) and the server (Java) at the same time. We also used the Blazor plugin to develop the Race Manager GUI, because it has a very rich and clear documentation, and it allows to have excellent rendering with a lower algorithmic complexity.</p>
-<p>The many loggers implemented in the source code allow to see what is going on in the code, so we can debug the program more easily. We used DocFx to generate the documentation, you will find on DocFx a good part of the documentation. However, when we thought it was necessary we added comments in functions, which you can see directly in the source code.</p>
-<p>Rather than develop a security portal to manage the connections, we preferred to use an existing service which is <strong>Auth0</strong>. Since we are new to computer security, we thought it would be more useful and secure to use an existing service that is more experienced than us.</p>
+<p>       We chose to develop the back-end and front-end of the Race Manager but also the Simple simulator with the C# language. For the simple reason that it allows us to help a colleague blocking on a point more easily, indeed if the server part of the Race Manager had been made in Java. Then, it would have been more difficult for us to work efficiently on the Race Manager interface (C#) and the server (Java) at the same time. We also used the Blazor server framework to develop the Race Manager, because it has a very rich and clear documentation, and it allows to have excellent rendering with a lower algorithmic complexity.</p>
+<p>       The many loggers implemented in the source code allow to see what is going on in the code, so we can debug the program more easily. We used DocFx to generate the documentation, you will find on DocFx a good part of the documentation. However, when we thought it was necessary we added comments in functions, which you can see directly in the source code.</p>
+<p>       Rather than develop a security portal to manage the connections, we preferred to use an existing service which is <strong>Auth0</strong>. Since we are new to computer security, we thought it would be more useful and secure to use an existing service that is more experienced than us.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Auth0 is not quite appropriate for our needs, but it is a good choice for a static website authentication service, that's why you will find a <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/tree/simple-autht">branch without Auth0</a> and its <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/releases/tag/RaceManagerv1.1">prerelease</a>.</p>
+</div>
 <h2 id="development-track">Development track</h2>
 <p>Here we will list the ways to improve V1 :</p>
-<p>-We do not check the integrity of polar files in the Race Manager when a user wants to upload a polar file. It is possible to check this and notify the user, as we have done when the user enters a wrong port number.
--When a user downloads a polar file, he can download malicious code directly to the server, the security aspect can be improved in future versions of the Race Manager.</p>
+<ul>
+<li>We do not check the integrity of polar files in the Race Manager when a user wants to upload a polar file. It is possible to check this and notify the user, as we have done when the user enters a wrong port number.</li>
+<li>When a user downloads a polar file, he can download malicious code directly to the server, the security aspect can be improved in future versions of the Race Manager.</li>
+</ul>
 </article>
           </div>
           
@@ -424,7 +455,7 @@ Authentication provider is auth0 (<a href="https://auth0.com/">https://auth0.com
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/blob/polarfiles/docfx/api/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Race-Manager/blob/simple-auth/docfx/api/index.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

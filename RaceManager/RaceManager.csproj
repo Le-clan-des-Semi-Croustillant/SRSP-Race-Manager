@@ -13,18 +13,22 @@
     <Compile Remove="Communication\SendFile\**" />
     <Compile Remove="dataResources\**" />
     <Compile Remove="index\gpx\**" />
+    <Compile Remove="Pages\BoatTypesManagement\**" />
     <Content Remove="Communication\NewFolder\**" />
     <Content Remove="Communication\SendFile\**" />
     <Content Remove="dataResources\**" />
     <Content Remove="index\gpx\**" />
+    <Content Remove="Pages\BoatTypesManagement\**" />
     <EmbeddedResource Remove="Communication\NewFolder\**" />
     <EmbeddedResource Remove="Communication\SendFile\**" />
     <EmbeddedResource Remove="dataResources\**" />
     <EmbeddedResource Remove="index\gpx\**" />
+    <EmbeddedResource Remove="Pages\BoatTypesManagement\**" />
     <None Remove="Communication\NewFolder\**" />
     <None Remove="Communication\SendFile\**" />
     <None Remove="dataResources\**" />
     <None Remove="index\gpx\**" />
+    <None Remove="Pages\BoatTypesManagement\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -39,10 +43,6 @@
     <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="6.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Pages\BoatTypesManagement\" />
   </ItemGroup>
 
   <ItemGroup>

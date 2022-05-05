@@ -6585,44 +6585,6 @@ references:
   isSpec: "True"
   fullName: RaceManager.Pages.ErrorModel.ShowRequestId
   nameWithType: ErrorModel.ShowRequestId
-- uid: RaceManager.Pages.LoginModel
-  name: LoginModel
-  href: api/RaceManager.Pages.LoginModel.html
-  commentId: T:RaceManager.Pages.LoginModel
-  fullName: RaceManager.Pages.LoginModel
-  nameWithType: LoginModel
-- uid: RaceManager.Pages.LoginModel.OnGet(System.String)
-  name: OnGet(String)
-  href: api/RaceManager.Pages.LoginModel.html#RaceManager_Pages_LoginModel_OnGet_System_String_
-  commentId: M:RaceManager.Pages.LoginModel.OnGet(System.String)
-  fullName: RaceManager.Pages.LoginModel.OnGet(System.String)
-  nameWithType: LoginModel.OnGet(String)
-- uid: RaceManager.Pages.LoginModel.OnGet*
-  name: OnGet
-  href: api/RaceManager.Pages.LoginModel.html#RaceManager_Pages_LoginModel_OnGet_
-  commentId: Overload:RaceManager.Pages.LoginModel.OnGet
-  isSpec: "True"
-  fullName: RaceManager.Pages.LoginModel.OnGet
-  nameWithType: LoginModel.OnGet
-- uid: RaceManager.Pages.LogoutModel
-  name: LogoutModel
-  href: api/RaceManager.Pages.LogoutModel.html
-  commentId: T:RaceManager.Pages.LogoutModel
-  fullName: RaceManager.Pages.LogoutModel
-  nameWithType: LogoutModel
-- uid: RaceManager.Pages.LogoutModel.OnGet
-  name: OnGet()
-  href: api/RaceManager.Pages.LogoutModel.html#RaceManager_Pages_LogoutModel_OnGet
-  commentId: M:RaceManager.Pages.LogoutModel.OnGet
-  fullName: RaceManager.Pages.LogoutModel.OnGet()
-  nameWithType: LogoutModel.OnGet()
-- uid: RaceManager.Pages.LogoutModel.OnGet*
-  name: OnGet
-  href: api/RaceManager.Pages.LogoutModel.html#RaceManager_Pages_LogoutModel_OnGet_
-  commentId: Overload:RaceManager.Pages.LogoutModel.OnGet
-  isSpec: "True"
-  fullName: RaceManager.Pages.LogoutModel.OnGet
-  nameWithType: LogoutModel.OnGet
 - uid: RaceManager.Reading
   name: RaceManager.Reading
   href: api/RaceManager.Reading.html
@@ -7110,3 +7072,41 @@ references:
   commentId: F:RaceManager.RMLogger.LogLevel
   fullName: RaceManager.RMLogger.LogLevel
   nameWithType: RMLogger.LogLevel
+- uid: RaceManager.Security
+  name: RaceManager.Security
+  href: api/RaceManager.Security.html
+  commentId: N:RaceManager.Security
+  fullName: RaceManager.Security
+  nameWithType: RaceManager.Security
+- uid: RaceManager.Security.LoginHub
+  name: LoginHub
+  href: api/RaceManager.Security.LoginHub.html
+  commentId: T:RaceManager.Security.LoginHub
+  fullName: RaceManager.Security.LoginHub
+  nameWithType: LoginHub
+- uid: RaceManager.Security.LoginHub.IsPasswordMatching(System.String)
+  name: IsPasswordMatching(String)
+  href: api/RaceManager.Security.LoginHub.html#RaceManager_Security_LoginHub_IsPasswordMatching_System_String_
+  commentId: M:RaceManager.Security.LoginHub.IsPasswordMatching(System.String)
+  fullName: RaceManager.Security.LoginHub.IsPasswordMatching(System.String)
+  nameWithType: LoginHub.IsPasswordMatching(String)
+- uid: RaceManager.Security.LoginHub.IsPasswordMatching*
+  name: IsPasswordMatching
+  href: api/RaceManager.Security.LoginHub.html#RaceManager_Security_LoginHub_IsPasswordMatching_
+  commentId: Overload:RaceManager.Security.LoginHub.IsPasswordMatching
+  isSpec: "True"
+  fullName: RaceManager.Security.LoginHub.IsPasswordMatching
+  nameWithType: LoginHub.IsPasswordMatching
+- uid: RaceManager.Security.LoginHub.OnConnectedAsync
+  name: OnConnectedAsync()
+  href: api/RaceManager.Security.LoginHub.html#RaceManager_Security_LoginHub_OnConnectedAsync
+  commentId: M:RaceManager.Security.LoginHub.OnConnectedAsync
+  fullName: RaceManager.Security.LoginHub.OnConnectedAsync()
+  nameWithType: LoginHub.OnConnectedAsync()
+- uid: RaceManager.Security.LoginHub.OnConnectedAsync*
+  name: OnConnectedAsync
+  href: api/RaceManager.Security.LoginHub.html#RaceManager_Security_LoginHub_OnConnectedAsync_
+  commentId: Overload:RaceManager.Security.LoginHub.OnConnectedAsync
+  isSpec: "True"
+  fullName: RaceManager.Security.LoginHub.OnConnectedAsync
+  nameWithType: LoginHub.OnConnectedAsync

@@ -613,10 +613,6 @@
   "RaceManager.Pages.ErrorModel.OnGet": "RaceManager.Pages.ErrorModel.yml",
   "RaceManager.Pages.ErrorModel.RequestId": "RaceManager.Pages.ErrorModel.yml",
   "RaceManager.Pages.ErrorModel.ShowRequestId": "RaceManager.Pages.ErrorModel.yml",
-  "RaceManager.Pages.LoginModel": "RaceManager.Pages.LoginModel.yml",
-  "RaceManager.Pages.LoginModel.OnGet(System.String)": "RaceManager.Pages.LoginModel.yml",
-  "RaceManager.Pages.LogoutModel": "RaceManager.Pages.LogoutModel.yml",
-  "RaceManager.Pages.LogoutModel.OnGet": "RaceManager.Pages.LogoutModel.yml",
   "RaceManager.Reading": "RaceManager.Reading.yml",
   "RaceManager.Reading.AField": "RaceManager.Reading.AField.yml",
   "RaceManager.Reading.AField.FieldContent": "RaceManager.Reading.AField.yml",
@@ -662,5 +658,9 @@
   "RaceManager.RMLogger.contextPrefix": "RaceManager.RMLogger.yml",
   "RaceManager.RMLogger.DefaultLoggingLevel": "RaceManager.RMLogger.yml",
   "RaceManager.RMLogger.log(RaceManager.LoggingLevel,System.String,System.Object)": "RaceManager.RMLogger.yml",
-  "RaceManager.RMLogger.LogLevel": "RaceManager.RMLogger.yml"
+  "RaceManager.RMLogger.LogLevel": "RaceManager.RMLogger.yml",
+  "RaceManager.Security": "RaceManager.Security.yml",
+  "RaceManager.Security.LoginHub": "RaceManager.Security.LoginHub.yml",
+  "RaceManager.Security.LoginHub.IsPasswordMatching(System.String)": "RaceManager.Security.LoginHub.yml",
+  "RaceManager.Security.LoginHub.OnConnectedAsync": "RaceManager.Security.LoginHub.yml"
 }
