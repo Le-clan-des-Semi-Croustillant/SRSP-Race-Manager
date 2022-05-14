@@ -51,14 +51,19 @@
             /// <param name="message"> data you want write on file</param>
             public static void WriteFilePath(string path, dynamic message)
             {
+                //Console.WriteLine(message.Length);
+                //int taille = message.Length;
+                //Console.WriteLine(message[taille-1]);
+
                 try
                 {
-                    using (StreamWriter sw = File.AppendText(path))
-                    {
-                        sw.WriteLine(message);
-                        sw.Close();
-                        sw.Dispose();
-                    }
+                    //using (StreamWriter sw = File.AppendText(path))
+                    //{
+                    //    sw.WriteLine(message);
+                    //    sw.Close();
+                    //    sw.Dispose();
+                    //}
+                    File.WriteAllText(path, message);                    
                 }
                 catch (Exception e)
                 {

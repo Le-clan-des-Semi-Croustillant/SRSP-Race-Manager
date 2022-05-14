@@ -106,7 +106,6 @@ namespace RaceManager.Pages
                         await _pSelected.OpenReadStream().CopyToAsync(ms);
 
                         string content = System.Text.Encoding.UTF8.GetString(ms.ToArray());
-
                         pol.File = FileManageData.CreateFilePolaire(pol.Name, pol.ID, content);
 
                         _btSelected.PolarFileList.Add(pol);
