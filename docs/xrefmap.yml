@@ -6585,6 +6585,44 @@ references:
   isSpec: "True"
   fullName: RaceManager.Pages.ErrorModel.ShowRequestId
   nameWithType: ErrorModel.ShowRequestId
+- uid: RaceManager.Pages.LoginModel
+  name: LoginModel
+  href: api/RaceManager.Pages.LoginModel.html
+  commentId: T:RaceManager.Pages.LoginModel
+  fullName: RaceManager.Pages.LoginModel
+  nameWithType: LoginModel
+- uid: RaceManager.Pages.LoginModel.OnGet(System.String)
+  name: OnGet(String)
+  href: api/RaceManager.Pages.LoginModel.html#RaceManager_Pages_LoginModel_OnGet_System_String_
+  commentId: M:RaceManager.Pages.LoginModel.OnGet(System.String)
+  fullName: RaceManager.Pages.LoginModel.OnGet(System.String)
+  nameWithType: LoginModel.OnGet(String)
+- uid: RaceManager.Pages.LoginModel.OnGet*
+  name: OnGet
+  href: api/RaceManager.Pages.LoginModel.html#RaceManager_Pages_LoginModel_OnGet_
+  commentId: Overload:RaceManager.Pages.LoginModel.OnGet
+  isSpec: "True"
+  fullName: RaceManager.Pages.LoginModel.OnGet
+  nameWithType: LoginModel.OnGet
+- uid: RaceManager.Pages.LogoutModel
+  name: LogoutModel
+  href: api/RaceManager.Pages.LogoutModel.html
+  commentId: T:RaceManager.Pages.LogoutModel
+  fullName: RaceManager.Pages.LogoutModel
+  nameWithType: LogoutModel
+- uid: RaceManager.Pages.LogoutModel.OnGet
+  name: OnGet()
+  href: api/RaceManager.Pages.LogoutModel.html#RaceManager_Pages_LogoutModel_OnGet
+  commentId: M:RaceManager.Pages.LogoutModel.OnGet
+  fullName: RaceManager.Pages.LogoutModel.OnGet()
+  nameWithType: LogoutModel.OnGet()
+- uid: RaceManager.Pages.LogoutModel.OnGet*
+  name: OnGet
+  href: api/RaceManager.Pages.LogoutModel.html#RaceManager_Pages_LogoutModel_OnGet_
+  commentId: Overload:RaceManager.Pages.LogoutModel.OnGet
+  isSpec: "True"
+  fullName: RaceManager.Pages.LogoutModel.OnGet
+  nameWithType: LogoutModel.OnGet
 - uid: RaceManager.Reading
   name: RaceManager.Reading
   href: api/RaceManager.Reading.html
