@@ -164,10 +164,6 @@
     name: BoatTypesManagement
   - uid: RaceManager.Pages.ErrorModel
     name: ErrorModel
-  - uid: RaceManager.Pages.LoginModel
-    name: LoginModel
-  - uid: RaceManager.Pages.LogoutModel
-    name: LogoutModel
 - uid: RaceManager.Reading
   name: RaceManager.Reading
   items:
@@ -182,3 +178,8 @@
     name: BoatTypesListHub
   - uid: RaceManager.Reading.Polar
     name: Polar
+- uid: RaceManager.Security
+  name: RaceManager.Security
+  items:
+  - uid: RaceManager.Security.LoginHub
+    name: LoginHub

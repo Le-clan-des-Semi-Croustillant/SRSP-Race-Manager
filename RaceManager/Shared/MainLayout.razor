@@ -3,7 +3,10 @@
 @using RaceManager.Reading
 @using RaceManager.Language
 @using System.Timers
+@using Newtonsoft.Json;
+
 @inherits LayoutComponentBase
+@inject NavigationManager navigationManager
 
 <PageTitle>Race Manager</PageTitle>
 
@@ -15,43 +18,70 @@
     <main>
 
         <div class="top-row px-4">
-            
+
             <a href="@Locales.Github" target="_blank">@Locales.SeethisprojectonGithub </a>
             <a class="ahref" href="@Locales.Page" target="_blank">@Locales.Viewdocs</a>
 
-            <div style="padding:5px" @onclick="UpdateStatus">
+            <div style="padding:20px" @onclick="UpdateStatus">
                 @if (_loaded)
                 {
                     @if (AsyncServer.IsRunning())
                     {
-                        <label style="color: #03ec00; margin-right: 5px"> @Locales.ServerRunning </label>
+                        <label style="color: #03ec00; margin-right: 10px"> @Locales.ServerRunning </label>
                     }
                     else
                     {
-                        <label style="color: red; margin-right: 5px"> @Locales.ServerNotRunning</label>
+                        <label style="color: red; margin-right: 10px"> @Locales.ServerNotRunning</label>
                     }
-@*                    <gg-icon class="gg-sync" style="float: right"></gg-icon>
-*@                }
-            </div>
 
-            <AccessControl />
+                }
+            </div>
+            <span>
+                <label>Password : </label>
+                <input type="password" @bind-value="@password">
+                <button @onclick="AskIfPasswordCorrect">Login</button>
+            </span>
         </div>
 
         <article class="content px-4">
-            @Body
+            @if (IsAuthorized)
+            {
+                @Body
+            }
+            else
+            {
+                <div class="alert alert-danger">@Locales.NotAuthorized</div>
+            }
         </article>
     </main>
 </div>
 
 @code
 {
-    int i = 0;
+    private HubConnection? _hubConnection;
     private bool _loaded = false;
     private System.Timers.Timer aTimer = new System.Timers.Timer(3000);
+    private bool IsAuthorized = false;
+    private string password = "";
+    private RMLogger logger = new RMLogger("Authorization");
+
 
 
     protected override async Task OnInitializedAsync()
     {
+
+        _hubConnection = new HubConnectionBuilder().WithUrl(navigationManager.ToAbsoluteUri("/loginhub")).AddNewtonsoftJsonProtocol(opts =>
+       opts.PayloadSerializerSettings.TypeNameHandling = TypeNameHandling.Auto).Build();
+        
+        _hubConnection.On<bool>("passwordMatch", (match) =>
+        {
+            logger.log(LoggingLevel.DEBUG, "passwordMatch()", $"matching is {match}");
+            IsAuthorized = match;
+            InvokeAsync(StateHasChanged);
+        });
+       
+       await _hubConnection.StartAsync();
+
         aTimer.Elapsed += TickUpdate;
 
         aTimer.Start();
@@ -66,8 +96,18 @@
 
     private void UpdateStatus()
     {
-        i++;
         InvokeAsync(() => { StateHasChanged(); });
     }
+
+    private async Task AskIfPasswordCorrect()
+    {
+        if (_hubConnection != null)
+        {
+            logger.log(LoggingLevel.DEBUG, "AskIfPasswordCorrect()","Asking if password is correct");
+            await _hubConnection.SendAsync("IsPasswordMatching", password);
+        }
+    }
+
+    
 
 }

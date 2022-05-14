@@ -12,7 +12,8 @@ using RaceManager.DataProcessing.Files;
 using RaceManager.Reading;
 using Newtonsoft.Json;
 using static RaceManager.DataProcessing.Files.FileManageData;
-using Auth0.AspNetCore.Authentication; 
+using RaceManager.Security;
+//using Auth0.AspNetCore.Authentication; 
 
 //using RaceManager.Communication;
 //using RaceManager.DataProcessing.Files;
@@ -44,16 +45,16 @@ builder.Services.AddResponseCompression(opts =>
 builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
 
-logger.log(LoggingLevel.INFO, "Initialisation", $"Client ID = {builder.Configuration["Auth0:ClientId"]}");
-logger.log(LoggingLevel.INFO, "Initialisation", $"Domain = {builder.Configuration["Auth0:Domain"]}");
+//logger.log(LoggingLevel.INFO, "Initialisation", $"Client ID = {builder.Configuration["Auth0:ClientId"]}");
+//logger.log(LoggingLevel.INFO, "Initialisation", $"Domain = {builder.Configuration["Auth0:Domain"]}");
 logger.log(LoggingLevel.INFO, "Initialisation", $"{builder.Configuration.GetFileProvider().GetFileInfo("appsettings.json").PhysicalPath}");
 
-builder.Services
-    .AddAuth0WebAppAuthentication(options => {
-        options.Domain = builder.Configuration["Auth0:Domain"];
-        options.ClientId = builder.Configuration["Auth0:ClientId"];
-        //options.
-    });
+//builder.Services
+//    .AddAuth0WebAppAuthentication(options => {
+//        options.Domain = builder.Configuration["Auth0:Domain"];
+//        options.ClientId = builder.Configuration["Auth0:ClientId"];
+//        //options.
+//    });
 //builder.Services.AddOidcAuthentication(options =>
 //{
 //    builder.Configuration.Bind("Auth0", options.ProviderOptions);
@@ -74,12 +75,13 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-app.UseAuthentication();
-app.UseAuthorization();
+//app.UseAuthentication();
+//app.UseAuthorization();
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapHub<ServerHub>("/serverhub");
     endpoints.MapHub<BoatTypesListHub>("/boattypeshub");
+    endpoints.MapHub<LoginHub>("/loginhub");
 
 });
 app.MapBlazorHub();

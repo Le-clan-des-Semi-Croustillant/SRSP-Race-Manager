@@ -262,7 +262,7 @@
     <value>Le serveur est en arrêt</value>
   </data>
   <data name="ServerRunning" xml:space="preserve">
-    <value>Le serveur est en route</value>
+    <value>Le serveur est en marche</value>
   </data>
   <data name="Weight" xml:space="preserve">
     <value>Poids</value>
@@ -325,6 +325,6 @@
     <value>Détermination de l'état de la session, veuillez patienter...</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Bienvenue au SRSP-Race-Manager.</value>
+    <value>Bienvenue sur le SRSP-Race-Manager.</value>
   </data>
 </root>
